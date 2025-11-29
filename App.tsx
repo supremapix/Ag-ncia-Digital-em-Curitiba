@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
@@ -7,6 +7,7 @@ import { Services } from './pages/Services';
 import { Contact } from './pages/Contact';
 import { LocationSEO } from './pages/LocationSEO';
 import { Portfolio } from './pages/Portfolio';
+import { NotFound } from './pages/NotFound';
 import { FloatingButtons } from './components/FloatingButtons';
 import { SocialSection } from './components/SocialSection';
 
@@ -45,6 +46,9 @@ const App: React.FC = () => {
             <Route path="/contato" element={<Contact />} />
             {/* Dynamic Route for SEO Locations */}
             <Route path="/site-em-:slug" element={<LocationSEO />} />
+            
+            {/* Catch-all Route for 404 Errors */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         {/* Social Section appears on all pages before footer */}
