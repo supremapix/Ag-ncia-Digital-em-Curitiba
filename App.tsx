@@ -7,6 +7,7 @@ import { Services } from './pages/Services';
 import { Contact } from './pages/Contact';
 import { LocationSEO } from './pages/LocationSEO';
 import { Portfolio } from './pages/Portfolio';
+import { About } from './pages/About';
 import { NotFound } from './pages/NotFound';
 import { FloatingButtons } from './components/FloatingButtons';
 import { SocialSection } from './components/SocialSection';
@@ -19,17 +20,6 @@ const ScrollToTop = () => {
   }, [pathname]);
   return null;
 };
-
-const About = () => (
-  <div className="py-20 container mx-auto px-4">
-    <h1 className="text-4xl font-bold mb-6 text-brand-dark">Sobre a Suprema Site</h1>
-    <div className="prose max-w-none text-gray-700">
-      <p>A <strong>OSKAFI WEB SITES LTDA ME</strong>, atuando sob o nome fantasia Suprema Site, é uma agência digital consolidada em Curitiba, Paraná.</p>
-      <p>Com mais de uma década de experiência, nos especializamos em criar soluções web que realmente funcionam. Não vendemos apenas sites; vendemos ferramentas de crescimento para o seu negócio.</p>
-      <p>Localizados no coração do bairro Rebouças, atendemos clientes de todo o Brasil com a mesma dedicação e qualidade técnica.</p>
-    </div>
-  </div>
-);
 
 const App: React.FC = () => {
   return (

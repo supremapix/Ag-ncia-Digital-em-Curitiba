@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { VideoPlayer } from '../components/VideoPlayer';
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -132,6 +133,11 @@ export const Contact: React.FC = () => {
                 <p className="text-sm text-gray-500 mt-4">CNPJ</p>
                 <p className="font-mono text-gray-700">15.083.543/0001-97</p>
               </div>
+            </div>
+            
+            {/* Video at bottom */}
+            <div className="mt-8">
+               <VideoPlayer />
             </div>
           </div>
         </div>
