@@ -299,6 +299,133 @@ export const LocationSEO: React.FC = () => {
               </div>
             </div>
 
+            {/* Pricing Comparison Table */}
+            <article className="prose max-w-none mt-16">
+              <h2 className="text-3xl font-bold text-brand-dark mb-6 flex items-center gap-3 border-b pb-4 border-gray-200">
+                <DollarSign className="text-brand-primary" size={32} />
+                Compare Nossos Planos para {locationName}
+              </h2>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse bg-white shadow-lg rounded-xl overflow-hidden">
+                  <thead>
+                    <tr className="bg-brand-dark text-white">
+                      <th className="p-4 text-left font-bold">Recursos</th>
+                      <th className="p-4 text-center font-bold bg-gray-700">Site Express</th>
+                      <th className="p-4 text-center font-bold bg-brand-primary">Site Profissional</th>
+                      <th className="p-4 text-center font-bold bg-gray-700">Loja Virtual</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-sm">
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">Prazo de Entrega</td>
+                      <td className="p-4 text-center">6-48h</td>
+                      <td className="p-4 text-center bg-blue-50">3-7 dias</td>
+                      <td className="p-4 text-center">7-15 dias</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">Páginas Incluídas</td>
+                      <td className="p-4 text-center">1-3</td>
+                      <td className="p-4 text-center bg-blue-50">5-10</td>
+                      <td className="p-4 text-center">Ilimitadas</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">Design Responsivo</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">SEO Básico</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">SEO Avançado</td>
+                      <td className="p-4 text-center text-gray-400">-</td>
+                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">Integração WhatsApp</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">Formulário de Contato</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">Google Maps</td>
+                      <td className="p-4 text-center text-gray-400">-</td>
+                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">Galeria de Fotos</td>
+                      <td className="p-4 text-center text-gray-400">-</td>
+                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">Sistema de Pagamentos</td>
+                      <td className="p-4 text-center text-gray-400">-</td>
+                      <td className="p-4 text-center bg-blue-50 text-gray-400">-</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">Painel Administrativo</td>
+                      <td className="p-4 text-center text-gray-400">-</td>
+                      <td className="p-4 text-center bg-blue-50 text-gray-400">Opcional</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">Controle de Estoque</td>
+                      <td className="p-4 text-center text-gray-400">-</td>
+                      <td className="p-4 text-center bg-blue-50 text-gray-400">-</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-4 font-semibold">Certificado SSL</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
+                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
+                    </tr>
+                    <tr className="bg-gray-50">
+                      <td className="p-4 font-bold text-lg">Investimento Inicial</td>
+                      <td className="p-4 text-center font-bold text-brand-primary text-lg">A partir de<br/>R$ 497</td>
+                      <td className="p-4 text-center font-bold text-brand-primary text-xl bg-blue-100">A partir de<br/>R$ 997</td>
+                      <td className="p-4 text-center font-bold text-brand-primary text-lg">A partir de<br/>R$ 1.997</td>
+                    </tr>
+                    <tr>
+                      <td className="p-4"></td>
+                      <td className="p-4 text-center">
+                        <a href="https://wa.me/5541987001004?text=Quero%20or%C3%A7amento%20Site%20Express" className="inline-block bg-brand-accent hover:bg-yellow-500 text-brand-dark font-bold py-2 px-4 rounded transition text-sm">
+                          Solicitar
+                        </a>
+                      </td>
+                      <td className="p-4 text-center bg-blue-50">
+                        <a href="https://wa.me/5541987001004?text=Quero%20or%C3%A7amento%20Site%20Profissional" className="inline-block bg-brand-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition text-sm">
+                          Mais Popular
+                        </a>
+                      </td>
+                      <td className="p-4 text-center">
+                        <a href="https://wa.me/5541987001004?text=Quero%20or%C3%A7amento%20Loja%20Virtual" className="inline-block bg-brand-accent hover:bg-yellow-500 text-brand-dark font-bold py-2 px-4 rounded transition text-sm">
+                          Solicitar
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-center text-gray-600 mt-6 italic">
+                Valores promocionais para empresas de {locationName}. Consulte condições especiais via WhatsApp.
+              </p>
+            </article>
+
             {/* FAQ Accordion */}
             <div className="mt-16 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
               <div className="bg-brand-dark p-6">

@@ -239,40 +239,40 @@ export const Home: React.FC = () => {
           </div>
 
           {/* Cidades */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm mb-8">
-             <h3 className="text-xl font-bold text-brand-primary mb-6 flex items-center gap-2">
-               <MapPin size={24} />
+          <div className="bg-white p-8 rounded-2xl shadow-lg mb-8 border border-gray-200">
+             <h3 className="text-2xl font-bold text-brand-primary mb-6 flex items-center gap-3 pb-4 border-b border-gray-200">
+               <MapPin size={28} />
                Cidades da Região Metropolitana
              </h3>
-             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                {cities.map((city) => (
-                 <Link 
-                   key={city} 
+                 <Link
+                   key={city}
                    to={`/site-em-${slugify(city)}`}
-                   className="flex items-center gap-2 text-gray-600 hover:text-brand-primary transition-colors text-sm hover:underline"
+                   className="flex items-center justify-between gap-2 bg-gradient-to-r from-gray-50 to-white hover:from-brand-primary hover:to-blue-600 text-gray-700 hover:text-white px-4 py-3 rounded-lg border border-gray-200 hover:border-brand-primary transition-all font-medium text-sm shadow-sm hover:shadow-md group"
                  >
-                   <ChevronRight size={14} className="text-brand-accent" />
-                   Criação de sites em {city}
+                   <span>Sites em {city}</span>
+                   <ChevronRight size={16} className="text-brand-accent group-hover:text-white transition-colors" />
                  </Link>
                ))}
              </div>
           </div>
 
           {/* Bairros */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm">
-             <h3 className="text-xl font-bold text-brand-primary mb-6 flex items-center gap-2">
-               <MapPin size={24} />
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+             <h3 className="text-2xl font-bold text-brand-primary mb-6 flex items-center gap-3 pb-4 border-b border-gray-200">
+               <MapPin size={28} />
                Bairros de Curitiba
              </h3>
-             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                {neighborhoods.map((bairro) => (
-                 <Link 
-                   key={bairro} 
+                 <Link
+                   key={bairro}
                    to={`/site-em-${slugify(bairro)}`}
-                   className="flex items-center gap-2 text-gray-600 hover:text-brand-primary transition-colors text-sm hover:underline"
+                   className="flex items-center justify-between gap-2 bg-gradient-to-r from-gray-50 to-white hover:from-brand-accent hover:to-yellow-400 text-gray-700 hover:text-brand-dark px-4 py-3 rounded-lg border border-gray-200 hover:border-brand-accent transition-all font-medium text-sm shadow-sm hover:shadow-md group"
                  >
-                   <ChevronRight size={14} className="text-brand-accent" />
-                   Sites no {bairro}
+                   <span>Sites no {bairro}</span>
+                   <ChevronRight size={16} className="text-brand-primary group-hover:text-brand-dark transition-colors" />
                  </Link>
                ))}
              </div>
