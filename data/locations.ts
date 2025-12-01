@@ -1,10 +1,10 @@
 export const cities = [
-  "Adrianópolis", "Agudos do Sul", "Almirante Tamandaré", "Araucária", "Balsa Nova", 
+  "Curitiba", "Adrianópolis", "Agudos do Sul", "Almirante Tamandaré", "Araucária", "Balsa Nova", 
   "Bocaiúva do Sul", "Campina Grande do Sul", "Campo do Tenente", "Campo Largo", 
   "Campo Magro", "Cerro Azul", "Colombo", "Contenda", "Doutor Ulysses", 
   "Fazenda Rio Grande", "Itaperuçu", "Lapa", "Mandirituba", "Piên", "Pinhais", 
   "Piraquara", "Quatro Barras", "Quitandinha", "Rio Branco do Sul", "Rio Negro", 
-  "São José dos Pinhais", "Tijucas do Sul", "Tunas do Paraná", "Curitiba"
+  "São José dos Pinhais", "Tijucas do Sul", "Tunas do Paraná"
 ];
 
 export const neighborhoods = [
@@ -27,7 +27,7 @@ export const neighborhoods = [
   "São Lourenço", "São Miguel", "Vila Pantanal", "Seminário", "Sítio Cercado", 
   "Taboão", "Tarumã", "Tatuquara", "Tingui", "Uberaba", "Umbará", "Vila Izabel", 
   "Vista Alegre", "Xaxim", "Santa Quitéria Velha", "Portão Velho", "Guaíra Velho", 
-  "Uberaba de Cima", "Uberaba de Baixo", "São Braz Velho", "Vila Verde", 
+  "Uberaba de Cima", "Uberaba de Baixo", "São Braz Velho", "Cidade Industrial", "Vila Verde", 
   "Vila Barigui", "Caiuá", "Xaxim Velho", "Fazendinha-Portão", "Campo Comprido Velho", 
   "Bacacheri Velho", "Capão da Imbuia Velho", "Pinheirinho Velho", "Vila São Pedro", 
   "Vila Osternack", "Neo Ville", "Vila Formosa", "Vila Sandra", "Conjunto Caiuá", 
@@ -51,5 +51,7 @@ export const slugify = (text: string) => {
 // Helper to get formatted name from slug
 export const getNameFromSlug = (slug: string) => {
   const allLocations = [...cities, ...neighborhoods];
-  return allLocations.find(loc => slugify(loc) === slug) || slug.replace(/-/g, ' ');
+  const found = allLocations.find(loc => slugify(loc) === slug);
+  // Fallback: capitalize words if not found in list (handling potential dynamic url inputs)
+  return found || slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 };

@@ -160,6 +160,9 @@ export const LocationSEO: React.FC = () => {
                 <MapPin className="text-brand-primary" size={32} />
                 O Crescimento Digital e as Oportunidades em {locationName}
               </h2>
+              <div className="mb-6">
+                <img src={`https://picsum.photos/800/400?random=${slug.length}`} alt={`Paisagem urbana representando ${locationName}`} className="w-full h-auto rounded-xl shadow-md object-cover" />
+              </div>
               <div className="text-gray-700 leading-relaxed space-y-4 text-justify">
                 <p>
                   A região de <strong>{locationName}</strong> vive um momento único de transformação digital e econômica. Nos últimos anos, observamos uma mudança drástica no comportamento do consumidor local. Se antes a decisão de compra começava ao caminhar pelas ruas comerciais de {locationName}, hoje ela começa invariavelmente na tela de um smartphone. Dados recentes apontam que mais de 85% das buscas por serviços e produtos locais são iniciadas no Google. Isso significa que, para o empresário de {locationName}, não estar presente digitalmente não é mais uma opção, é um risco vital para a sobrevivência do negócio.
@@ -187,17 +190,21 @@ export const LocationSEO: React.FC = () => {
                   Para atender a demanda sofisticada e diversificada de {locationName}, a Suprema Sites Express desenvolveu um portfólio de soluções que cobre todas as etapas da jornada digital. Entendemos que cada negócio tem uma necessidade específica, e por isso não acreditamos em "receitas de bolo" prontas. Nossos projetos são modulares e escaláveis.
                 </p>
                 
-                <h3 className="text-xl font-bold text-brand-dark mt-4">Sites Institucionais Express</h3>
-                <p>
-                  Ideal para profissionais liberais, prestadores de serviços e pequenas empresas de {locationName}. O site institucional é o seu cartão de visitas digital, mas com superpoderes. Ele trabalha 24 horas por dia, 7 dias por semana, explicando quem você é, o que você faz e por que o cliente deve escolher você. Desenvolvemos estruturas que transmitem autoridade imediata, com galerias de fotos, seções de "Sobre Nós" humanizadas e integração total com mapas e redes sociais.
-                </p>
+                <div className="flex flex-col md:flex-row gap-6 my-8">
+                  <div className="bg-blue-50 p-6 rounded-lg flex-1 border border-blue-100">
+                    <h3 className="text-xl font-bold text-brand-dark mb-3">Sites Institucionais</h3>
+                    <p className="text-sm">O cartão de visitas digital com superpoderes para profissionais de {locationName}. Transmita autoridade imediata 24h por dia.</p>
+                  </div>
+                  <div className="bg-green-50 p-6 rounded-lg flex-1 border border-green-100">
+                    <h3 className="text-xl font-bold text-brand-dark mb-3">Lojas Virtuais</h3>
+                    <p className="text-sm">Expanda suas vendas além de {locationName}. Pagamentos via Pix e Cartão, cálculo de frete e gestão de estoque completa.</p>
+                  </div>
+                </div>
 
-                <h3 className="text-xl font-bold text-brand-dark mt-4">Lojas Virtuais (E-commerce)</h3>
                 <p>
                   Quer expandir suas vendas para além das fronteiras de {locationName}? Nossas lojas virtuais são robustas e seguras. Integramos os principais meios de pagamento do mercado (Pix, Cartão de Crédito, Boleto) e sistemas de cálculo automático de frete (Correios, Transportadoras). O painel de gestão é intuitivo, permitindo que você mesmo cadastre produtos, controle o estoque e gerencie pedidos, sem depender de programadores para cada pequena alteração.
                 </p>
 
-                <h3 className="text-xl font-bold text-brand-dark mt-4">Landing Pages de Alta Conversão</h3>
                 <p>
                   Se o seu objetivo é vender um produto específico ou captar leads (contatos) para sua equipe comercial em {locationName}, a Landing Page é a ferramenta perfeita. Focada em uma única ação, ela elimina distrações e guia o visitante através de uma narrativa persuasiva (copywriting) até o botão de compra ou cadastro. É a estrutura fundamental para quem investe em Tráfego Pago (Google Ads ou Facebook Ads), garantindo que o dinheiro investido em anúncios traga o máximo retorno possível (ROI).
                 </p>
@@ -210,6 +217,9 @@ export const LocationSEO: React.FC = () => {
                 <Rocket className="text-brand-primary" size={32} />
                 Por que a Suprema é a Escolha Certa em {locationName}?
               </h2>
+              <div className="mb-6">
+                <img src={`https://picsum.photos/800/400?random=${slug.length + 1}`} alt="Equipe trabalhando em projeto web" className="w-full h-auto rounded-xl shadow-md object-cover" />
+              </div>
               <div className="text-gray-700 leading-relaxed space-y-4 text-justify">
                 <p>
                   O mercado de criação de sites está cheio de promessas vazias e amadorismo. Em {locationName}, muitos empresários já tiveram experiências frustrantes com "sobrinhos" que somem no meio do projeto ou agências que demoram meses para entregar um site básico. A Suprema Sites Express nasceu para combater exatamente isso. Nossa filosofia é baseada em três pilares inegociáveis que nos tornaram referência na região.
@@ -298,133 +308,6 @@ export const LocationSEO: React.FC = () => {
                  ))}
               </div>
             </div>
-
-            {/* Pricing Comparison Table */}
-            <article className="prose max-w-none mt-16">
-              <h2 className="text-3xl font-bold text-brand-dark mb-6 flex items-center gap-3 border-b pb-4 border-gray-200">
-                <DollarSign className="text-brand-primary" size={32} />
-                Compare Nossos Planos para {locationName}
-              </h2>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse bg-white shadow-lg rounded-xl overflow-hidden">
-                  <thead>
-                    <tr className="bg-brand-dark text-white">
-                      <th className="p-4 text-left font-bold">Recursos</th>
-                      <th className="p-4 text-center font-bold bg-gray-700">Site Express</th>
-                      <th className="p-4 text-center font-bold bg-brand-primary">Site Profissional</th>
-                      <th className="p-4 text-center font-bold bg-gray-700">Loja Virtual</th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-sm">
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">Prazo de Entrega</td>
-                      <td className="p-4 text-center">6-48h</td>
-                      <td className="p-4 text-center bg-blue-50">3-7 dias</td>
-                      <td className="p-4 text-center">7-15 dias</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">Páginas Incluídas</td>
-                      <td className="p-4 text-center">1-3</td>
-                      <td className="p-4 text-center bg-blue-50">5-10</td>
-                      <td className="p-4 text-center">Ilimitadas</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">Design Responsivo</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">SEO Básico</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">SEO Avançado</td>
-                      <td className="p-4 text-center text-gray-400">-</td>
-                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">Integração WhatsApp</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">Formulário de Contato</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">Google Maps</td>
-                      <td className="p-4 text-center text-gray-400">-</td>
-                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">Galeria de Fotos</td>
-                      <td className="p-4 text-center text-gray-400">-</td>
-                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">Sistema de Pagamentos</td>
-                      <td className="p-4 text-center text-gray-400">-</td>
-                      <td className="p-4 text-center bg-blue-50 text-gray-400">-</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">Painel Administrativo</td>
-                      <td className="p-4 text-center text-gray-400">-</td>
-                      <td className="p-4 text-center bg-blue-50 text-gray-400">Opcional</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">Controle de Estoque</td>
-                      <td className="p-4 text-center text-gray-400">-</td>
-                      <td className="p-4 text-center bg-blue-50 text-gray-400">-</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="p-4 font-semibold">Certificado SSL</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center bg-blue-50 text-green-600 font-bold">✓</td>
-                      <td className="p-4 text-center text-green-600 font-bold">✓</td>
-                    </tr>
-                    <tr className="bg-gray-50">
-                      <td className="p-4 font-bold text-lg">Investimento Inicial</td>
-                      <td className="p-4 text-center font-bold text-brand-primary text-lg">A partir de<br/>R$ 497</td>
-                      <td className="p-4 text-center font-bold text-brand-primary text-xl bg-blue-100">A partir de<br/>R$ 997</td>
-                      <td className="p-4 text-center font-bold text-brand-primary text-lg">A partir de<br/>R$ 1.997</td>
-                    </tr>
-                    <tr>
-                      <td className="p-4"></td>
-                      <td className="p-4 text-center">
-                        <a href="https://wa.me/5541987001004?text=Quero%20or%C3%A7amento%20Site%20Express" className="inline-block bg-brand-accent hover:bg-yellow-500 text-brand-dark font-bold py-2 px-4 rounded transition text-sm">
-                          Solicitar
-                        </a>
-                      </td>
-                      <td className="p-4 text-center bg-blue-50">
-                        <a href="https://wa.me/5541987001004?text=Quero%20or%C3%A7amento%20Site%20Profissional" className="inline-block bg-brand-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition text-sm">
-                          Mais Popular
-                        </a>
-                      </td>
-                      <td className="p-4 text-center">
-                        <a href="https://wa.me/5541987001004?text=Quero%20or%C3%A7amento%20Loja%20Virtual" className="inline-block bg-brand-accent hover:bg-yellow-500 text-brand-dark font-bold py-2 px-4 rounded transition text-sm">
-                          Solicitar
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p className="text-center text-gray-600 mt-6 italic">
-                Valores promocionais para empresas de {locationName}. Consulte condições especiais via WhatsApp.
-              </p>
-            </article>
 
             {/* FAQ Accordion */}
             <div className="mt-16 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
