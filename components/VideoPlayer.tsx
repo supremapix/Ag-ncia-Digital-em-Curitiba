@@ -7,7 +7,7 @@ export const VideoPlayer: React.FC = () => {
       <div className="relative pt-[56.25%] group">
         <iframe
           className="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/scecnDWM5cg?autoplay=0&rel=0&showinfo=0&modestbranding=1"
+          src="https://www.youtube.com/embed/gPXYU8O4v-o?autoplay=0&rel=0&showinfo=0&modestbranding=1"
           title="Suprema Sites - Criação de Sites Profissionais"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
