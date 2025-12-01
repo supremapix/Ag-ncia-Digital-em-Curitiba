@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { cities, neighborhoods, slugify } from '../data/locations';
 import { LeadForm } from '../components/LeadForm';
 import { VideoPlayer } from '../components/VideoPlayer';
+import { Accordion } from '../components/Accordion';
 
 export const Home: React.FC = () => {
   return (
