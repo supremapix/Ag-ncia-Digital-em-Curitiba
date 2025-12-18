@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { getNameFromSlug, cities, slugify } from '../data/locations';
 import { Accordion } from '../components/Accordion';
 import { LeadForm } from '../components/LeadForm';
@@ -8,7 +8,9 @@ import { CheckCircle, MapPin, Globe, Rocket, Shield, PenTool, Clock, TrendingUp,
 
 export const LocationSEO: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
+  const location = useLocation();
   const locationName = getNameFromSlug(slug || '');
+  const currentPath = location.pathname;
 
   useEffect(() => {
     // Dynamic SEO Title & Meta
@@ -20,14 +22,14 @@ export const LocationSEO: React.FC = () => {
     // Canonical URL update
     let linkCanonical = document.querySelector("link[rel='canonical']");
     if (linkCanonical) {
-      linkCanonical.setAttribute('href', `https://www.supremasite.com.br/site-em-${slug}`);
+      linkCanonical.setAttribute('href', `https://www.supremasite.com.br${currentPath}`);
     } else {
        const link = document.createElement('link');
        link.rel = 'canonical';
-       link.href = `https://www.supremasite.com.br/site-em-${slug}`;
+       link.href = `https://www.supremasite.com.br${currentPath}`;
        document.head.appendChild(link);
     }
-  }, [locationName, slug]);
+  }, [locationName, slug, currentPath]);
 
   // Schema Markup for Local Business specific to this location
   const jsonLd = {
@@ -35,7 +37,7 @@ export const LocationSEO: React.FC = () => {
     "@type": "ProfessionalService",
     "name": `Suprema Sites Express - ${locationName}`,
     "image": "https://www.supremasite.com.br/logo.png",
-    "url": `https://www.supremasite.com.br/site-em-${slug}`,
+    "url": `https://www.supremasite.com.br${currentPath}`,
     "telephone": "+5541987001004",
     "address": {
       "@type": "PostalAddress",
