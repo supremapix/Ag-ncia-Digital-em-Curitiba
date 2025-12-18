@@ -21,7 +21,7 @@ const projects = [
   { url: "https://desentopeadp.com.br", title: "Desentope ADP", category: "Desentupidora" },
   { url: "https://assistencia.lojabyltech.com.br", title: "Byltech Assistência", category: "Tecnologia" },
   { url: "https://www.byltech.com.br", title: "Byltech Loja", category: "E-commerce" },
-  { url: "https://jetron.com.br", title: "Jetron", category: "Indústria Tecnológica" },
+  { url: "https://www.jetron.com.br", title: "Jetron", category: "Indústria Tecnológica" },
   { url: "https://fotometal.com.br", title: "Fotometal", category: "Indústria Gráfica" },
   { url: "https://www.moraesacrilicos.com.br", title: "Moraes Acrílicos", category: "Produtos Personalizados" },
   { url: "https://ateliebeleza.app.br", title: "Ateliê Beleza", category: "Beleza e Estética" },
