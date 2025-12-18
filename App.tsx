@@ -34,8 +34,10 @@ const App: React.FC = () => {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/sobre" element={<About />} />
             <Route path="/contato" element={<Contact />} />
-            {/* Dynamic Route for SEO Locations */}
+            {/* Dynamic Routes for SEO Locations */}
             <Route path="/site-em-:slug" element={<LocationSEO />} />
+            <Route path="/bairros/:slug" element={<LocationSEO />} />
+            <Route path="/cidades/:slug" element={<LocationSEO />} />
             
             {/* Catch-all Route for 404 Errors */}
             <Route path="*" element={<NotFound />} />

@@ -76,24 +76,104 @@ export const LocationSEO: React.FC = () => {
 
   const faqItems = [
     {
-      question: `Quanto custa criar um site profissional em ${locationName}?`,
-      answer: `O valor do investimento para empresas em ${locationName} varia de acordo com a complexidade do projeto (Site Institucional, Loja Virtual, Landing Page). A Suprema Sites Express possui planos flexíveis e acessíveis, focados no melhor custo-benefício da região. Nosso foco é entregar uma ferramenta que se pague rapidamente através de novos clientes. Entre em contato via WhatsApp para um orçamento personalizado e sem compromisso.`
+      question: `1. Quanto custa criar um site profissional?`,
+      answer: `O investimento em um site profissional varia conforme a complexidade do projeto. Sites institucionais básicos começam a partir de R$ 1.500, enquanto lojas virtuais e projetos personalizados podem custar entre R$ 3.000 e R$ 15.000. O valor depende de funcionalidades, design customizado, integrações e recursos especiais. Na Suprema Site, oferecemos orçamentos transparentes e adaptados à realidade do seu negócio em ${locationName}.`
     },
     {
-      question: `Vocês atendem presencialmente empresas de ${locationName}?`,
-      answer: `Nossa base principal está localizada no bairro Rebouças, em Curitiba, mas nossa estrutura de atendimento abrange ${locationName} de forma completa. Realizamos reuniões via vídeo chamada com compartilhamento de tela para agilizar o processo, mas também estamos disponíveis para reuniões presenciais dependendo do escopo do projeto. A distância não é barreira; a tecnologia nos aproxima.`
+      question: `2. Qual a diferença entre site institucional e loja virtual?`,
+      answer: `O site institucional apresenta sua empresa, serviços e informações de contato, sendo ideal para gerar leads e credibilidade. Já a loja virtual permite vendas online diretas, com carrinho de compras, pagamento integrado e gestão de produtos. Empresas em ${locationName} podem começar com um site institucional e evoluir para e-commerce conforme o negócio cresce.`
     },
     {
-      question: `Qual o prazo real de entrega para um site em ${locationName}?`,
-      answer: `Somos conhecidos como "Suprema Sites Express" por um motivo. Para sites institucionais e landing pages, nosso prazo médio de entrega é de 6h a 48h úteis após o recebimento de todo o material (textos, logos e fotos). Sabemos que em ${locationName} o mercado é dinâmico e você não pode esperar semanas para colocar sua ideia no ar.`
+      question: `3. Em quanto tempo um site fica pronto?`,
+      answer: `O prazo médio para desenvolvimento de um site profissional é de 15 a 45 dias úteis. Sites institucionais simples podem ficar prontos em 2-3 semanas, enquanto projetos complexos com funcionalidades personalizadas podem levar 6-8 semanas. O prazo depende do fornecimento de conteúdo, aprovações e complexidade técnica.`
     },
     {
-      question: `O site ajuda minha empresa de ${locationName} a aparecer no Google?`,
-      answer: `Com certeza. Todos os nossos projetos são desenvolvidos com a mentalidade "SEO First". Isso significa que a estrutura do código, os títulos, as meta tags e a velocidade de carregamento são otimizados para que o Google "ame" seu site. Nosso objetivo é aumentar sua visibilidade em até 300% nas buscas locais feitas por pessoas em ${locationName}.`
+      question: `4. Vale a pena ter um site ou só redes sociais?`,
+      answer: `Ter um site próprio é fundamental! Enquanto redes sociais são ótimas para engajamento, o site é o único canal que você controla 100%. Clientes buscam empresas no Google, e um site profissional transmite credibilidade, melhora o SEO e permite vendas ou captação de leads sem depender de algoritmos de terceiros. Para negócios em ${locationName}, o site é a base digital essencial.`
     },
     {
-      question: `Como funciona o suporte para clientes de ${locationName}?`,
-      answer: `Oferecemos suporte técnico contínuo e humanizado. Se houver qualquer problema técnico com a hospedagem ou funcionamento do site, nossa equipe resolve rapidamente. Para clientes de ${locationName}, disponibilizamos canais diretos via WhatsApp e telefone. Você nunca ficará na mão.`
+      question: `5. O que um site profissional precisa ter?`,
+      answer: `Todo site profissional precisa de: design responsivo (funcionar em celulares), velocidade de carregamento, SSL (segurança), SEO otimizado, informações claras sobre a empresa, formulários de contato ou WhatsApp integrado, fotos profissionais e textos bem escritos. Também é essencial ter Google Analytics para medir resultados.`
+    },
+    {
+      question: `6. Site pronto ou site personalizado: qual escolher?`,
+      answer: `Sites prontos (templates) são mais baratos e rápidos, mas limitados em personalização e exclusividade. Sites personalizados são únicos, adaptados à sua marca e necessidades, permitindo qualquer funcionalidade desejada. Para empresas que querem se destacar em ${locationName}, recomendamos o site personalizado para melhor retorno sobre investimento.`
+    },
+    {
+      question: `7. Como criar um site que apareça no Google?`,
+      answer: `Para aparecer no Google, o site precisa de: SEO técnico (títulos, meta descriptions, URLs amigáveis), conteúdo relevante com palavras-chave, velocidade de carregamento, versão mobile, SSL, links internos e externos, Google My Business configurado e conteúdo atualizado regularmente. Na Suprema Site, todos os sites são desenvolvidos com otimização SEO desde o início.`
+    },
+    {
+      question: `8. O que é SEO e por que é importante para sites?`,
+      answer: `SEO (Search Engine Optimization) é o conjunto de técnicas para melhorar o posicionamento do site nos resultados do Google. É importante porque 75% dos usuários não passam da primeira página de busca. Com SEO bem feito, seu site atrai visitantes qualificados gratuitamente, aumentando vendas e leads sem depender de anúncios pagos.`
+    },
+    {
+      question: `9. Meu site vai funcionar no celular?`,
+      answer: `Sim! Todo site profissional desenvolvido pela Suprema Site é responsivo, ou seja, se adapta automaticamente a smartphones, tablets e computadores. Mais de 70% dos acessos à internet vêm de celulares, então essa funcionalidade é obrigatória e já incluída em todos os nossos projetos.`
+    },
+    {
+      question: `10. Site em WordPress é seguro?`,
+      answer: `Sim, WordPress é seguro quando bem configurado! É a plataforma mais usada no mundo (43% dos sites). A segurança depende de: manter sistema atualizado, usar plugins confiáveis, ter SSL, backup automático, senhas fortes e hospedagem de qualidade. Nossos sites WordPress incluem todas essas proteções desde o início.`
+    },
+    {
+      question: `11. Qual a melhor plataforma para criar um site?`,
+      answer: `Depende do objetivo! WordPress é ideal para sites institucionais e blogs (flexível e SEO-friendly). Shopify e WooCommerce são ótimos para e-commerce. Para sites personalizados com funcionalidades específicas, desenvolvimento em React/Next.js pode ser melhor. Analisamos seu negócio em ${locationName} para recomendar a melhor solução.`
+    },
+    {
+      question: `12. Site precisa de manutenção mensal?`,
+      answer: `Sim, recomendamos manutenção mensal para: atualizar sistema e plugins (segurança), fazer backup, monitorar velocidade, corrigir eventuais bugs, atualizar conteúdo e otimizar SEO. A manutenção previne problemas graves e mantém o site funcionando perfeitamente. Oferecemos planos a partir de R$ 150/mês.`
+    },
+    {
+      question: `13. O que é hospedagem de site e domínio?`,
+      answer: `Domínio é o endereço do seu site (exemplo: suaempresa.com.br). Hospedagem é o servidor onde os arquivos do site ficam armazenados. É como um imóvel: o domínio é o endereço e a hospedagem é o terreno. Ambos têm custo anual, geralmente entre R$ 40 (domínio) e R$ 300-800 (hospedagem de qualidade) por ano.`
+    },
+    {
+      question: `14. Como deixar meu site rápido?`,
+      answer: `Para ter um site rápido: use hospedagem de qualidade, otimize imagens (compressão e formatos modernos), minimize código CSS/JS, use cache, escolha temas leves, evite excesso de plugins e use CDN. Sites rápidos têm melhor SEO, menor taxa de rejeição e mais conversões. Todos os nossos projetos são otimizados para velocidade máxima.`
+    },
+    {
+      question: `15. Site ajuda a vender mais?`,
+      answer: `Sim! Um site profissional aumenta vendas porque: gera credibilidade (90% dos consumidores pesquisam online antes de comprar), funciona 24/7 captando leads, melhora posicionamento no Google, facilita que clientes encontrem você e permite mostrar produtos/serviços com detalhes. Clientes em ${locationName} relatam aumento médio de 40% em contatos após lançar site profissional.`
+    },
+    {
+      question: `16. Como gerar leads com um site?`,
+      answer: `Para gerar leads, o site precisa de: formulários estratégicos, call-to-actions claros, ofertas de conteúdo (e-books, consultorias gratuitas), botão de WhatsApp visível, páginas de captura, chat online, SEO para atrair tráfego qualificado e integração com e-mail marketing. Criamos estratégias de conversão personalizadas para cada negócio.`
+    },
+    {
+      question: `17. Qual a importância do design para um site?`,
+      answer: `O design é crucial! 94% da primeira impressão de um site vem do design. Um layout profissional transmite confiança, facilita navegação, guia o visitante para ações desejadas e reforça a identidade da marca. Design ruim afasta clientes em segundos. Investimos em designs modernos, limpos e focados em conversão.`
+    },
+    {
+      question: `18. O que é UX e UI em criação de sites?`,
+      answer: `UX (User Experience) é a experiência do usuário: como ele navega e interage com o site. UI (User Interface) é a interface visual: cores, botões, tipografia. UX garante que o site seja fácil e intuitivo. UI garante que seja bonito e agradável. Ambos trabalham juntos para criar sites que convertem e encantam visitantes.`
+    },
+    {
+      question: `19. Como integrar WhatsApp no site?`,
+      answer: `A integração do WhatsApp é feita com um botão flutuante ou fixo que abre conversa direta com seu número comercial. Pode incluir mensagem pré-definida e estar visível em todas as páginas. É a forma mais eficaz de contato, pois 98% dos brasileiros usam WhatsApp. Incluímos essa integração em todos os sites sem custo adicional.`
+    },
+    {
+      question: `20. Site com formulário ou botão direto?`,
+      answer: `O ideal é ter ambos! Formulários capturam informações completas e organizam leads. Botões diretos (WhatsApp, telefone) facilitam contato imediato para clientes com urgência. A estratégia depende do seu modelo de negócio. Recomendamos testar e medir qual gera mais conversões para seu público em ${locationName}.`
+    },
+    {
+      question: `21. Como criar um site para empresa local?`,
+      answer: `Sites para empresas locais precisam de: SEO local otimizado (nome da cidade/bairro), Google My Business integrado, endereço e telefone visíveis, depoimentos de clientes locais, fotos da região, mapa incorporado e conteúdo sobre a área de atuação. Isso ajuda a aparecer em buscas como "serviço em ${locationName}".`
+    },
+    {
+      question: `22. Site precisa ter blog?`,
+      answer: `Sim, ter um blog é altamente recomendado! Blogs melhoram SEO (conteúdo novo atrai Google), educam clientes, estabelecem autoridade, geram tráfego orgânico e aumentam tempo no site. Posts sobre dúvidas comuns, tendências e dicas posicionam sua empresa como referência. Criamos estratégias de conteúdo para blogs eficientes.`
+    },
+    {
+      question: `23. Como proteger um site contra ataques?`,
+      answer: `Para proteger seu site: use SSL (HTTPS), mantenha sistema e plugins atualizados, instale firewall, faça backup diário automático, use senhas fortes, limite tentativas de login, escolha hospedagem segura e monitore atividades suspeitas. Implementamos todas essas proteções e oferecemos monitoramento constante nos planos de manutenção.`
+    },
+    {
+      question: `24. Qual a diferença entre site barato e site profissional?`,
+      answer: `Sites baratos geralmente usam templates genéricos, têm design básico, SEO fraco, código não otimizado, suporte limitado e podem ter problemas de segurança. Sites profissionais têm design único, código limpo, SEO estratégico, velocidade otimizada, segurança reforçada e suporte contínuo. O profissional é um investimento com retorno, não apenas um custo.`
+    },
+    {
+      question: `25. Como atualizar conteúdo do site sozinho?`,
+      answer: `Com WordPress ou CMS similar, você pode atualizar textos, imagens, publicar posts de blog e editar páginas através de um painel administrativo intuitivo, sem conhecimento técnico. Oferecemos treinamento completo para sua equipe operar o site autonomamente. Para alterações de design ou funcionalidades, nossa equipe está sempre disponível.`
     }
   ];
 
@@ -309,10 +389,10 @@ export const LocationSEO: React.FC = () => {
               </div>
             </div>
 
-            {/* FAQ Accordion */}
+            {/* FAQ Accordion - 25 Perguntas e Respostas */}
             <div className="mt-16 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
               <div className="bg-brand-dark p-6">
-                <h2 className="text-2xl font-bold text-white text-center">Dúvidas Frequentes sobre Sites em {locationName}</h2>
+                <h2 className="text-2xl font-bold text-white text-center">25 Perguntas e Respostas sobre Criação de Sites em {locationName}</h2>
               </div>
               <div className="p-6">
                 <Accordion items={faqItems} />
@@ -358,7 +438,7 @@ export const LocationSEO: React.FC = () => {
                      {cities.map(city => (
                        <Link 
                          key={city} 
-                         to={`/site-em-${slugify(city)}`}
+                         to={`/cidades/${slugify(city)}`}
                          className={`text-sm px-3 py-2 rounded transition-colors flex justify-between items-center group ${locationName === city ? 'bg-brand-primary text-white font-bold' : 'bg-white hover:bg-gray-200 text-gray-700'}`}
                        >
                          {city}

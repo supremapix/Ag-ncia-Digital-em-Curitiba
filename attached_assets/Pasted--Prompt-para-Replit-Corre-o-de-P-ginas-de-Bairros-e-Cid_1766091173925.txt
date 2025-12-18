@@ -1,0 +1,259 @@
+# Prompt para Replit: Correção de Páginas de Bairros e Cidades
+
+## OBJETIVO
+Corrigir os erros 404 nas páginas de bairros e cidades do site Suprema Site (https://www.supremasite.com.br) e criar páginas funcionais com conteúdo otimizado para SEO local.
+
+## PROBLEMA ATUAL
+- Quando clicado nos links de bairros/cidades na home, o site retorna erro 404
+- As páginas não existem ou não estão sendo roteadas corretamente
+
+## SOLUÇÃO NECESSÁRIA
+
+### 1. ESTRUTURA DE ARQUIVOS
+Criar a seguinte estrutura de páginas:
+
+```
+/bairros/
+  - centro-curitiba.html
+  - batel.html
+  - agua-verde.html
+  - [outros-bairros].html
+
+/cidades/
+  - curitiba.html
+  - sao-jose-dos-pinhais.html
+  - colombo.html
+  - [outras-cidades].html
+```
+
+### 2. TEMPLATE BASE PARA CADA PÁGINA
+Cada página de bairro/cidade deve conter:
+
+**Estrutura HTML:**
+- Header com logo e menu de navegação
+- Hero section com título específico: "Criação de Sites em [Nome do Bairro/Cidade]"
+- Seção de introdução personalizada
+- Seção com as 25 perguntas e respostas
+- Call-to-action para contato
+- Footer
+
+### 3. CONTEÚDO PRINCIPAL - 25 PERGUNTAS E RESPOSTAS
+
+Cada página deve incluir uma seção FAQ com as seguintes perguntas e respostas detalhadas:
+
+#### **1. Quanto custa criar um site profissional?**
+*Resposta:* O investimento em um site profissional varia conforme a complexidade do projeto. Sites institucionais básicos começam a partir de R$ 1.500, enquanto lojas virtuais e projetos personalizados podem custar entre R$ 3.000 e R$ 15.000. O valor depende de funcionalidades, design customizado, integrações e recursos especiais. Na Suprema Site, oferecemos orçamentos transparentes e adaptados à realidade do seu negócio em [Nome do Bairro/Cidade].
+
+#### **2. Qual a diferença entre site institucional e loja virtual?**
+*Resposta:* O site institucional apresenta sua empresa, serviços e informações de contato, sendo ideal para gerar leads e credibilidade. Já a loja virtual permite vendas online diretas, com carrinho de compras, pagamento integrado e gestão de produtos. Empresas em [Nome do Bairro/Cidade] podem começar com um site institucional e evoluir para e-commerce conforme o negócio cresce.
+
+#### **3. Em quanto tempo um site fica pronto?**
+*Resposta:* O prazo médio para desenvolvimento de um site profissional é de 15 a 45 dias úteis. Sites institucionais simples podem ficar prontos em 2-3 semanas, enquanto projetos complexos com funcionalidades personalizadas podem levar 6-8 semanas. O prazo depende do fornecimento de conteúdo, aprovações e complexidade técnica.
+
+#### **4. Vale a pena ter um site ou só redes sociais?**
+*Resposta:* Ter um site próprio é fundamental! Enquanto redes sociais são ótimas para engajamento, o site é o único canal que você controla 100%. Clientes buscam empresas no Google, e um site profissional transmite credibilidade, melhora o SEO e permite vendas ou captação de leads sem depender de algoritmos de terceiros. Para negócios em [Nome do Bairro/Cidade], o site é a base digital essencial.
+
+#### **5. O que um site profissional precisa ter?**
+*Resposta:* Todo site profissional precisa de: design responsivo (funcionar em celulares), velocidade de carregamento, SSL (segurança), SEO otimizado, informações claras sobre a empresa, formulários de contato ou WhatsApp integrado, fotos profissionais e textos bem escritos. Também é essencial ter Google Analytics para medir resultados.
+
+#### **6. Site pronto ou site personalizado: qual escolher?**
+*Resposta:* Sites prontos (templates) são mais baratos e rápidos, mas limitados em personalização e exclusividade. Sites personalizados são únicos, adaptados à sua marca e necessidades, permitindo qualquer funcionalidade desejada. Para empresas que querem se destacar em [Nome do Bairro/Cidade], recomendamos o site personalizado para melhor retorno sobre investimento.
+
+#### **7. Como criar um site que apareça no Google?**
+*Resposta:* Para aparecer no Google, o site precisa de: SEO técnico (títulos, meta descriptions, URLs amigáveis), conteúdo relevante com palavras-chave, velocidade de carregamento, versão mobile, SSL, links internos e externos, Google My Business configurado e conteúdo atualizado regularmente. Na Suprema Site, todos os sites são desenvolvidos com otimização SEO desde o início.
+
+#### **8. O que é SEO e por que é importante para sites?**
+*Resposta:* SEO (Search Engine Optimization) é o conjunto de técnicas para melhorar o posicionamento do site nos resultados do Google. É importante porque 75% dos usuários não passam da primeira página de busca. Com SEO bem feito, seu site atrai visitantes qualificados gratuitamente, aumentando vendas e leads sem depender de anúncios pagos.
+
+#### **9. Meu site vai funcionar no celular?**
+*Resposta:* Sim! Todo site profissional desenvolvido pela Suprema Site é responsivo, ou seja, se adapta automaticamente a smartphones, tablets e computadores. Mais de 70% dos acessos à internet vêm de celulares, então essa funcionalidade é obrigatória e já incluída em todos os nossos projetos.
+
+#### **10. Site em WordPress é seguro?**
+*Resposta:* Sim, WordPress é seguro quando bem configurado! É a plataforma mais usada no mundo (43% dos sites). A segurança depende de: manter sistema atualizado, usar plugins confiáveis, ter SSL, backup automático, senhas fortes e hospedagem de qualidade. Nossos sites WordPress incluem todas essas proteções desde o início.
+
+#### **11. Qual a melhor plataforma para criar um site?**
+*Resposta:* Depende do objetivo! WordPress é ideal para sites institucionais e blogs (flexível e SEO-friendly). Shopify e WooCommerce são ótimos para e-commerce. Para sites personalizados com funcionalidades específicas, desenvolvimento em React/Next.js pode ser melhor. Analisamos seu negócio em [Nome do Bairro/Cidade] para recomendar a melhor solução.
+
+#### **12. Site precisa de manutenção mensal?**
+*Resposta:* Sim, recomendamos manutenção mensal para: atualizar sistema e plugins (segurança), fazer backup, monitorar velocidade, corrigir eventuais bugs, atualizar conteúdo e otimizar SEO. A manutenção previne problemas graves e mantém o site funcionando perfeitamente. Oferecemos planos a partir de R$ 150/mês.
+
+#### **13. O que é hospedagem de site e domínio?**
+*Resposta:* Domínio é o endereço do seu site (exemplo: suaempresa.com.br). Hospedagem é o servidor onde os arquivos do site ficam armazenados. É como um imóvel: o domínio é o endereço e a hospedagem é o terreno. Ambos têm custo anual, geralmente entre R$ 40 (domínio) e R$ 300-800 (hospedagem de qualidade) por ano.
+
+#### **14. Como deixar meu site rápido?**
+*Resposta:* Para ter um site rápido: use hospedagem de qualidade, otimize imagens (compressão e formatos modernos), minimize código CSS/JS, use cache, escolha temas leves, evite excesso de plugins e use CDN. Sites rápidos têm melhor SEO, menor taxa de rejeição e mais conversões. Todos os nossos projetos são otimizados para velocidade máxima.
+
+#### **15. Site ajuda a vender mais?**
+*Resposta:* Sim! Um site profissional aumenta vendas porque: gera credibilidade (90% dos consumidores pesquisam online antes de comprar), funciona 24/7 captando leads, melhora posicionamento no Google, facilita que clientes encontrem você e permite mostrar produtos/serviços com detalhes. Clientes em [Nome do Bairro/Cidade] relatam aumento médio de 40% em contatos após lançar site profissional.
+
+#### **16. Como gerar leads com um site?**
+*Resposta:* Para gerar leads, o site precisa de: formulários estratégicos, call-to-actions claros, ofertas de conteúdo (e-books, consultorias gratuitas), botão de WhatsApp visível, páginas de captura, chat online, SEO para atrair tráfego qualificado e integração com e-mail marketing. Criamos estratégias de conversão personalizadas para cada negócio.
+
+#### **17. Qual a importância do design para um site?**
+*Resposta:* O design é crucial! 94% da primeira impressão de um site vem do design. Um layout profissional transmite confiança, facilita navegação, guia o visitante para ações desejadas e reforça a identidade da marca. Design ruim afasta clientes em segundos. Investimos em designs modernos, limpos e focados em conversão.
+
+#### **18. O que é UX e UI em criação de sites?**
+*Resposta:* UX (User Experience) é a experiência do usuário: como ele navega e interage com o site. UI (User Interface) é a interface visual: cores, botões, tipografia. UX garante que o site seja fácil e intuitivo. UI garante que seja bonito e agradável. Ambos trabalham juntos para criar sites que convertem e encantam visitantes.
+
+#### **19. Como integrar WhatsApp no site?**
+*Resposta:* A integração do WhatsApp é feita com um botão flutuante ou fixo que abre conversa direta com seu número comercial. Pode incluir mensagem pré-definida e estar visível em todas as páginas. É a forma mais eficaz de contato, pois 98% dos brasileiros usam WhatsApp. Incluímos essa integração em todos os sites sem custo adicional.
+
+#### **20. Site com formulário ou botão direto?**
+*Resposta:* O ideal é ter ambos! Formulários capturam informações completas e organizam leads. Botões diretos (WhatsApp, telefone) facilitam contato imediato para clientes com urgência. A estratégia depende do seu modelo de negócio. Recomendamos testar e medir qual gera mais conversões para seu público em [Nome do Bairro/Cidade].
+
+#### **21. Como criar um site para empresa local?**
+*Resposta:* Sites para empresas locais precisam de: SEO local otimizado (nome da cidade/bairro), Google My Business integrado, endereço e telefone visíveis, depoimentos de clientes locais, fotos da região, mapa incorporado e conteúdo sobre a área de atuação. Isso ajuda a aparecer em buscas como "serviço em [Nome do Bairro/Cidade]".
+
+#### **22. Site precisa ter blog?**
+*Resposta:* Sim, ter um blog é altamente recomendado! Blogs melhoram SEO (conteúdo novo atrai Google), educam clientes, estabelecem autoridade, geram tráfego orgânico e aumentam tempo no site. Posts sobre dúvidas comuns, tendências e dicas posicionam sua empresa como referência. Criamos estratégias de conteúdo para blogs eficientes.
+
+#### **23. Como proteger um site contra ataques?**
+*Resposta:* Para proteger seu site: use SSL (HTTPS), mantenha sistema e plugins atualizados, instale firewall, faça backup diário automático, use senhas fortes, limite tentativas de login, escolha hospedagem segura e monitore atividades suspeitas. Implementamos todas essas proteções e oferecemos monitoramento constante nos planos de manutenção.
+
+#### **24. Qual a diferença entre site barato e site profissional?**
+*Resposta:* Sites baratos geralmente usam templates genéricos, têm design básico, SEO fraco, código não otimizado, suporte limitado e podem ter problemas de segurança. Sites profissionais têm design único, código limpo, SEO estratégico, velocidade otimizada, segurança reforçada e suporte contínuo. O profissional é um investimento com retorno, não apenas um custo.
+
+#### **25. Como atualizar conteúdo do site sozinho?**
+*Resposta:* Com WordPress ou CMS similar, você pode atualizar textos, imagens, publicar posts de blog e editar páginas através de um painel administrativo intuitivo, sem conhecimento técnico. Oferecemos treinamento completo para sua equipe operar o site autonomamente. Para alterações de design ou funcionalidades, nossa equipe está sempre disponível.
+
+---
+
+## 4. PERSONALIZAÇÃO POR LOCALIDADE
+
+Para cada bairro/cidade, personalize:
+
+**Título da página:**
+- "Criação de Sites em [Nome do Bairro/Cidade] | Suprema Site"
+
+**Introdução personalizada (exemplo):**
+```
+Sua empresa em [Nome do Bairro/Cidade] merece um site profissional! 
+A Suprema Site é especializada em criação de sites para negócios locais, 
+combinando design moderno, tecnologia de ponta e estratégias de SEO para 
+fazer sua empresa ser encontrada no Google e conquistar mais clientes na região.
+```
+
+**Call-to-action com localização:**
+- "Solicite um orçamento para seu site em [Nome do Bairro/Cidade]"
+- "Atendemos empresas em [Nome do Bairro/Cidade] e toda a região metropolitana"
+
+## 5. OTIMIZAÇÃO SEO PARA CADA PÁGINA
+
+**Meta tags obrigatórias:**
+```html
+<title>Criação de Sites em [Bairro/Cidade] | Suprema Site Curitiba</title>
+<meta name="description" content="Criação de sites profissionais em [Bairro/Cidade]. Desenvolvimento web com SEO, design responsivo e suporte completo. Orçamento gratuito!">
+<meta name="keywords" content="criação de sites [bairro/cidade], desenvolvimento web [bairro/cidade], sites profissionais [bairro/cidade]">
+```
+
+**Schema.org LocalBusiness:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Suprema Site - Criação de Sites em [Bairro/Cidade]",
+  "areaServed": "[Bairro/Cidade]",
+  "url": "https://www.supremasite.com.br/[bairros|cidades]/[slug]"
+}
+```
+
+## 6. ROTEAMENTO E NAVEGAÇÃO
+
+**Configurar rotas:**
+- `/bairros/[slug-do-bairro]`
+- `/cidades/[slug-da-cidade]`
+
+**Links no menu/home:**
+- Atualizar todos os links de bairros/cidades na home para apontar corretamente
+- Adicionar breadcrumbs: Home > Bairros > [Nome do Bairro]
+
+## 7. ELEMENTOS VISUAIS
+
+Cada página deve ter:
+- Imagem hero com vista/referência do bairro/cidade (stock photo ou real)
+- Ícones para as 25 perguntas (FAQ style)
+- Botão WhatsApp flutuante
+- Formulário de contato ao final
+- Mapa incorporado (Google Maps) da região
+
+## 8. CHECKLIST TÉCNICO
+
+- [ ] Criar estrutura de pastas /bairros e /cidades
+- [ ] Gerar páginas para os principais bairros de Curitiba (Centro, Batel, Água Verde, Boqueirão, CIC, Portão, Santa Felicidade, Cabral, Alto da XV, Mercês)
+- [ ] Gerar páginas para cidades da região (São José dos Pinhais, Colombo, Pinhais, Araucária, Fazenda Rio Grande)
+- [ ] Implementar template HTML responsivo
+- [ ] Adicionar as 25 perguntas e respostas em cada página
+- [ ] Configurar meta tags SEO únicas por página
+- [ ] Testar responsividade mobile
+- [ ] Verificar velocidade de carregamento
+- [ ] Testar todos os links e formulários
+- [ ] Configurar sitemap.xml incluindo novas páginas
+- [ ] Adicionar structured data (Schema)
+- [ ] Implementar breadcrumbs
+- [ ] Testar em diferentes navegadores
+
+## 9. EXEMPLO DE CÓDIGO BASE
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Sites em [Bairro/Cidade] | Suprema Site</title>
+    <meta name="description" content="Criação de sites profissionais em [Bairro/Cidade]. Desenvolvimento web com SEO, design responsivo e suporte completo.">
+    <!-- Restante do head -->
+</head>
+<body>
+    <header>
+        <!-- Logo e Menu -->
+    </header>
+    
+    <section class="hero">
+        <h1>Criação de Sites Profissionais em [Bairro/Cidade]</h1>
+        <p>Desenvolva seu site com quem entende do mercado local</p>
+    </section>
+    
+    <section class="intro">
+        <h2>Sua Empresa em [Bairro/Cidade] Merece um Site de Qualidade</h2>
+        <p>[Conteúdo personalizado sobre o bairro/cidade]</p>
+    </section>
+    
+    <section class="faq">
+        <h2>Perguntas Frequentes Sobre Criação de Sites</h2>
+        
+        <div class="faq-item">
+            <h3>1. Quanto custa criar um site profissional?</h3>
+            <p>[Resposta completa]</p>
+        </div>
+        
+        <!-- Repetir para as 25 perguntas -->
+        
+    </section>
+    
+    <section class="cta">
+        <h2>Solicite Seu Orçamento Gratuito</h2>
+        <form>
+            <!-- Formulário de contato -->
+        </form>
+    </section>
+    
+    <footer>
+        <!-- Footer -->
+    </footer>
+</body>
+</html>
+```
+
+## 10. PRÓXIMOS PASSOS APÓS IMPLEMENTAÇÃO
+
+1. Testar todos os links da home
+2. Verificar erro 404 resolvido
+3. Submeter sitemap atualizado ao Google Search Console
+4. Monitorar indexação das novas páginas
+5. Acompanhar métricas de SEO local
+
+---
+
+**OBSERVAÇÃO IMPORTANTE:** 
+Este prompt deve ser executado no Replit para criar todas as páginas de uma vez, garantindo consistência de design, conteúdo otimizado para SEO e correção completa dos erros 404.
