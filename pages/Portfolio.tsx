@@ -24,6 +24,23 @@ const projects = [
   { url: "https://jetron.com.br", title: "Jetron", category: "Indústria Tecnológica" },
   { url: "https://fotometal.com.br", title: "Fotometal", category: "Indústria Gráfica" },
   { url: "https://www.moraesacrilicos.com.br", title: "Moraes Acrílicos", category: "Produtos Personalizados" },
+  { url: "https://ateliebeleza.app.br", title: "Ateliê Beleza", category: "Beleza e Estética" },
+  { url: "https://www.ehssaude.com.br", title: "EHS Saúde", category: "Saúde e Bem-estar" },
+  { url: "https://www.acquateccalhas.com.br", title: "Acquatec Calhas", category: "Construção Civil" },
+  { url: "https://www.jcclimatizar.pro/", title: "JC Climatizar", category: "Climatização" },
+  { url: "https://www.adpservicos.app.br", title: "ADP Serviços", category: "Serviços Gerais" },
+  { url: "https://www.3avia.social.br", title: "3ª Via Social", category: "Social Media" },
+  { url: "https://bcrefrigeracaosc.com.br", title: "BC Refrigeração SC", category: "Refrigeração" },
+  { url: "https://www.desentopeadp.com.br", title: "Desentope ADP Principal", category: "Desentupidora" },
+  { url: "https://omegarevestimentos.com.br", title: "Omega Revestimentos PR", category: "Acabamentos" },
+  { url: "https://www.alumimec.com.br", title: "Alumimec", category: "Esquadrias" },
+  { url: "https://www.eletronicadosgames.com.br/", title: "Eletrônica dos Games", category: "Games e Tecnologia" },
+  { url: "https://bio.supremamidia.com.br/", title: "Suprema Mídia Bio", category: "Link Bio" },
+  { url: "https://lp.carpluscwb.com.br", title: "Car Plus CWB", category: "Automotivo" },
+  { url: "https://royalcleanlavanderia.top", title: "Royal Clean Lavanderia", category: "Lavanderia" },
+  { url: "https://www.decellyss.com.br", title: "Decellyss", category: "Beleza e Estética" },
+  { url: "https://barbeariabarbercue.shop/", title: "Barbearia Barbercue", category: "Barbearia" },
+  { url: "https://divasdamicro.app.br", title: "Divas da Micro", category: "Micropigmentação" },
 ];
 
 export const Portfolio: React.FC = () => {
