@@ -183,7 +183,7 @@ export const Home: React.FC = () => {
                    {cities.map((city) => (
                      <Link 
                        key={city} 
-                       to={`/cidades/${slugify(city)}`}
+                       to={`/site-em-${slugify(city)}`}
                        className="group flex items-center gap-3 bg-white p-3 rounded-lg border border-gray-100 hover:border-brand-primary hover:shadow-md transition-all"
                      >
                        <div className="bg-blue-50 text-brand-primary p-1.5 rounded-full group-hover:bg-brand-primary group-hover:text-white transition-colors">
@@ -211,7 +211,7 @@ export const Home: React.FC = () => {
                    {neighborhoods.map((bairro) => (
                      <Link 
                        key={bairro} 
-                       to={`/bairros/${slugify(bairro)}`}
+                       to={`/site-em-${slugify(bairro)}`}
                        className="group flex items-center gap-3 bg-white p-3 rounded-lg border border-gray-100 hover:border-brand-primary hover:shadow-md transition-all"
                      >
                        <div className="bg-blue-50 text-brand-primary p-1.5 rounded-full group-hover:bg-brand-primary group-hover:text-white transition-colors">
