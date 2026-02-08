@@ -1,32 +1,45 @@
+
 import React from 'react';
 import { ExternalLink, TrendingUp, BarChart, CheckCircle, Smartphone } from 'lucide-react';
 import { LeadForm } from '../components/LeadForm';
 
-const projects = [
-  { url: "https://www.ehssaude.com.br", title: "EHS Saúde", category: "Saúde e Segurança" },
-  { url: "https://www.lojabyltech.com.br", title: "Loja Byltech", category: "E-commerce Tech" },
-  { url: "https://www.eletronicadosgames.com.br", title: "Eletrônica dos Games", category: "Games e Consoles" },
-  { url: "https://www.barbeiro.curitiba.br/", title: "Barbeiro Curitiba", category: "Beleza e Estética" },
-  { url: "https://www.gouveiacuritiba.com.br/", title: "Gouveia Imóveis", category: "Imobiliária" },
-  { url: "https://www.engenhariadopaver.com.br/", title: "Engenharia do Paver", category: "Construção Civil" },
-  { url: "https://www.mundodoscalheiros.com.br/", title: "Mundo dos Calheiros", category: "Indústria e Serviços" },
-  { url: "https://www.atuarios.com.br/", title: "Atuários Independentes", category: "Consultoria" },
-  { url: "https://rvmpersianas.app.br", title: "RVM Persianas App", category: "Decoração" },
-  { url: "https://servicoshidraulicosadp.app.br/", title: "ADP Hidráulica", category: "Manutenção 24h" },
-  { url: "https://www.cicarelli.adv.br/", title: "Cicarelli Advogados", category: "Jurídico" },
-  { url: "https://rvmpersianas.com.br/santa-catarina/blumenau.html", title: "RVM Blumenau", category: "SEO Local" },
-  { url: "https://burgerfilms.com.br/", title: "Burger Films", category: "Produtora de Vídeo" },
-  { url: "https://pousadaviladitalia.com.br", title: "Pousada Vila d'Italia", category: "Turismo e Hotelaria" },
-  { url: "https://sc.omegarevestimentos.com.br/", title: "Omega Revestimentos", category: "Acabamentos" },
-  { url: "https://eurocalhas.supremasite.com.br/", title: "Euro Calhas", category: "Serviços Express" },
-  { url: "https://encanadorpalladium24h.supremamidia.com", title: "Encanador Palladium", category: "Emergência 24h" },
-  { url: "https://encanadores24h.desentopeadp.com.br", title: "Encanadores 24h", category: "Desentupidora" },
-  { url: "https://desentopeadp.com.br", title: "Desentope ADP", category: "Desentupidora" },
-  { url: "https://assistencia.lojabyltech.com.br", title: "Byltech Assistência", category: "Tecnologia" },
-  { url: "https://www.byltech.com.br", title: "Byltech Loja", category: "E-commerce" },
-  { url: "https://jetron.com.br", title: "Jetron", category: "Indústria Tecnológica" },
-  { url: "https://fotometal.com.br", title: "Fotometal", category: "Indústria Gráfica" },
-  { url: "https://www.moraesacrilicos.com.br", title: "Moraes Acrílicos", category: "Produtos Personalizados" },
+interface Project {
+  url: string;
+  title: string;
+  category: string;
+  growth: string;
+}
+
+const projects: Project[] = [
+  { url: "https://www.bcrefrigeracaosc.com.br", title: "BC Refrigeração", category: "Climatização", growth: "1900%" },
+  { url: "https://barbeariabarbercue.shop", title: "Barber Cue", category: "Barbearia Premium", growth: "850%" },
+  { url: "https://www.servicosadp.shop", title: "Serviços ADP", category: "Manutenção Express", growth: "1200%" },
+  { url: "https://www.jcclimatizar.pro", title: "JC Climatizar", category: "Ar Condicionado", growth: "700%" },
+  { url: "https://www.lavanderiainovata.com.br", title: "Lavanderia Inovata", category: "Serviços Têxteis", growth: "550%" },
+  { url: "https://www.burgerfilms.com.br", title: "Burger Films", category: "Produtora de Vídeo", growth: "450%" },
+  { url: "https://www.ehssaude.com.br", title: "EHS Saúde", category: "Saúde e Segurança", growth: "380%" },
+  { url: "https://www.lojabyltech.com.br", title: "Loja Byltech", category: "E-commerce Tech", growth: "310%" },
+  { url: "https://www.eletronicadosgames.com.br", title: "Eletrônica dos Games", category: "Games e Consoles", growth: "420%" },
+  { url: "https://www.barbeiro.curitiba.br/", title: "Barbeiro Curitiba", category: "Beleza e Estética", growth: "590%" },
+  { url: "https://www.gouveiacuritiba.com.br/", title: "Gouveia Imóveis", category: "Imobiliária", growth: "340%" },
+  { url: "https://www.engenhariadopaver.com.br/", title: "Engenharia do Paver", category: "Construção Civil", growth: "620%" },
+  { url: "https://www.mundodoscalheiros.com.br/", title: "Mundo dos Calheiros", category: "Indústria e Serviços", growth: "410%" },
+  { url: "https://www.atuarios.com.br/", title: "Atuários Independentes", category: "Consultoria", growth: "305%" },
+  { url: "https://rvmpersianas.app.br", title: "RVM Persianas App", category: "Decoração", growth: "780%" },
+  { url: "https://servicoshidraulicosadp.app.br/", title: "ADP Hidráulica", category: "Manutenção 24h", growth: "940%" },
+  { url: "https://www.cicarelli.adv.br/", title: "Cicarelli Advogados", category: "Jurídico", growth: "330%" },
+  { url: "https://rvmpersianas.com.br/santa-catarina/blumenau.html", title: "RVM Blumenau", category: "SEO Local", growth: "1100%" },
+  { url: "https://pousadaviladitalia.com.br", title: "Pousada Vila d'Italia", category: "Turismo e Hotelaria", growth: "480%" },
+  { url: "https://sc.omegarevestimentos.com.br/", title: "Omega Revestimentos", category: "Acabamentos", growth: "520%" },
+  { url: "https://eurocalhas.supremasite.com.br/", title: "Euro Calhas", category: "Serviços Express", growth: "890%" },
+  { url: "https://encanadorpalladium24h.supremamidia.com", title: "Encanador Palladium", category: "Emergência 24h", growth: "1450%" },
+  { url: "https://encanadores24h.desentopeadp.com.br", title: "Encanadores 24h", category: "Desentupidora", growth: "1600%" },
+  { url: "https://desentopeadp.com.br", title: "Desentope ADP", category: "Desentupidora", growth: "1750%" },
+  { url: "https://assistencia.lojabyltech.com.br", title: "Byltech Assistência", category: "Tecnologia", growth: "390%" },
+  { url: "https://www.byltech.com.br", title: "Byltech Loja", category: "E-commerce", growth: "440%" },
+  { url: "https://jetron.com.br", title: "Jetron", category: "Indústria Tecnológica", growth: "360%" },
+  { url: "https://fotometal.com.br", title: "Fotometal", category: "Indústria Gráfica", growth: "320%" },
+  { url: "https://www.moraesacrilicos.com.br", title: "Moraes Acrílicos", category: "Produtos Personalizados", growth: "405%" },
 ];
 
 export const Portfolio: React.FC = () => {
@@ -40,7 +53,7 @@ export const Portfolio: React.FC = () => {
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
             Confira empresas reais que transformaram sua presença digital. 
-            Nossos clientes experimentam um aumento médio de <strong className="text-green-400">300% na visibilidade do Google</strong> ao ano.
+            Nossos clientes experimentam um aumento médio entre <strong className="text-green-400">300% e 1900% na visibilidade do Google</strong> ao ano.
           </p>
         </div>
       </section>
@@ -81,7 +94,7 @@ export const Portfolio: React.FC = () => {
                 
                 <div className="mb-4">
                    <p className="text-gray-600 text-sm leading-relaxed border-l-4 border-green-500 pl-3">
-                     <strong>Projeto Realizado:</strong> Otimização SEO avançada e aumento de visibilidade no Google em <span className="text-green-600 font-bold">300% ao ano</span>.
+                     <strong>Resultado Real:</strong> Otimização SEO de alta performance com crescimento de <span className="text-green-600 font-bold">{project.growth} ao ano</span>.
                    </p>
                 </div>
 
@@ -110,7 +123,7 @@ export const Portfolio: React.FC = () => {
                 <h2 className="text-3xl font-bold text-brand-dark mb-4">Quer entrar para essa lista de sucesso?</h2>
                 <p className="text-gray-600 mb-6 text-lg">
                   Seu site pode estar no ar em <strong>menos de 48 horas</strong>. Não perca mais clientes para a concorrência.
-                  Solicite agora e ganhe a otimização inicial para o Google.
+                  Solicite agora e ganhe a otimização inicial para o Google com foco em resultados reais.
                 </p>
                 <a 
                   href="https://wa.me/5541987001004" 
