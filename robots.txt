@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap oficial da Suprema Site
 Sitemap: https://www.supremasite.com.br/sitemap.xml
-
-# Impedir indexação de arquivos de sistema (opcional)
-Disallow: /dist/
-Disallow: /node_modules/
