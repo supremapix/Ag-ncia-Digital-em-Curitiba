@@ -6,25 +6,18 @@
   <url><loc>https://www.supremasite.com.br/#/portfolio</loc><priority>0.8</priority></url>
   <url><loc>https://www.supremasite.com.br/#/contato</loc><priority>0.7</priority></url>
 
-  <!-- Principais SC -->
-  <url><loc>https://www.supremasite.com.br/#/site-em/florianopolis</loc><priority>0.9</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/joinville</loc><priority>0.8</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/blumenau</loc><priority>0.8</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/balneario-camboriu</loc><priority>0.8</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/itajaí</loc><priority>0.8</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/chapeco</loc><priority>0.8</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/criciuma</loc><priority>0.8</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/palhoca</loc><priority>0.8</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/lages</loc><priority>0.8</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/jaragua-do-sul</loc><priority>0.8</priority></url>
+  <!-- Principais Rio Grande do Sul -->
+  <url><loc>https://www.supremasite.com.br/#/site-em/porto-alegre</loc><priority>0.9</priority></url>
+  <url><loc>https://www.supremasite.com.br/#/site-em/caxias-do-sul</loc><priority>0.8</priority></url>
+  <url><loc>https://www.supremasite.com.br/#/site-em/canoas</loc><priority>0.8</priority></url>
+  <url><loc>https://www.supremasite.com.br/#/site-em/pelotas</loc><priority>0.8</priority></url>
+  <url><loc>https://www.supremasite.com.br/#/site-em/santa-maria</loc><priority>0.8</priority></url>
+  <url><loc>https://www.supremasite.com.br/#/site-em/gravatai</loc><priority>0.8</priority></url>
+  <url><loc>https://www.supremasite.com.br/#/site-em/novo-hamburgo</loc><priority>0.8</priority></url>
+  <url><loc>https://www.supremasite.com.br/#/site-em/passo-fundo</loc><priority>0.8</priority></url>
+  <url><loc>https://www.supremasite.com.br/#/site-em/rio-grande</loc><priority>0.8</priority></url>
+  <url><loc>https://www.supremasite.com.br/#/site-em/bento-goncalves</loc><priority>0.8</priority></url>
+  <url><loc>https://www.supremasite.com.br/#/site-em/gramado</loc><priority>0.8</priority></url>
 
-  <!-- Outras SC (Exemplo de padrão) -->
-  <url><loc>https://www.supremasite.com.br/#/site-em/anitapolis</loc><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/antonio-carlos</loc><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/apiuna</loc><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/ararangua</loc><priority>0.7</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/itajai</loc><priority>0.7</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/gaspar</loc><priority>0.7</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/brusque</loc><priority>0.7</priority></url>
-  <url><loc>https://www.supremasite.com.br/#/site-em/navegantes</loc><priority>0.7</priority></url>
+  <!-- Outras SC & PR já existentes mantidas via lógica dinâmica -->
 </urlset>

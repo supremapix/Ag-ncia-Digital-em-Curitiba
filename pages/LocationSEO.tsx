@@ -1,7 +1,7 @@
 
 import React, { useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getNameFromSlug, getRegionFromSlug, scCities, cities, neighborhoods, slugify } from '../data/locations';
+import { getNameFromSlug, getRegionFromSlug, rsCities, scCities, cities, neighborhoods, slugify } from '../data/locations';
 import { LeadForm } from '../components/LeadForm';
 import { VideoPlayer } from '../components/VideoPlayer';
 import { Accordion } from '../components/Accordion';
@@ -19,6 +19,13 @@ export const LocationSEO: React.FC = () => {
   useEffect(() => {
     document.title = `Criação de Sites em ${locationName}, ${region} | Suprema Site Express`;
     
+    // Coordenadas baseadas no estado
+    const coords = {
+      "PR": { lat: "-25.4284", lng: "-49.2733" },
+      "SC": { lat: "-27.5954", lng: "-48.5480" },
+      "RS": { lat: "-30.0346", lng: "-51.2177" }
+    };
+
     const schemaMarkup = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
@@ -34,8 +41,8 @@ export const LocationSEO: React.FC = () => {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": region === "PR" ? "-25.4284" : "-27.5954",
-        "longitude": region === "PR" ? "-49.2733" : "-48.5480"
+        "latitude": coords[region as keyof typeof coords]?.lat || "-25.4284",
+        "longitude": coords[region as keyof typeof coords]?.lng || "-49.2733"
       }
     };
 
@@ -50,11 +57,12 @@ export const LocationSEO: React.FC = () => {
   }, [locationName, slug, region]);
 
   const generateContent = (title: string, index: number) => {
+    const regionName = region === 'PR' ? 'Paraná' : (region === 'SC' ? 'Santa Catarina' : 'Rio Grande do Sul');
     const texts = [
-      `A visibilidade digital em ${locationName} é crucial para o sucesso de qualquer negócio no estado de ${region}. Com o aumento da concorrência, estar na primeira página do Google não é apenas uma vantagem, é uma necessidade para empresas de ${locationName}. Nossa equipe utiliza inteligência de dados para mapear o comportamento de busca dos consumidores de ${locationName}, criando sites que convertem cliques em faturamento real.`,
-      `O SEO Local para ${locationName} foca em palavras-chave geolocalizadas. Quando alguém em ${locationName} busca por seu serviço, sua empresa precisa ser a primeira opção. Nós dominamos as técnicas que colocam marcas de ${locationName} no topo do Google Maps, garantindo fluxo constante de leads qualificados de toda a região de ${region}.`,
-      `Performance técnica é o que nos diferencia em ${locationName}. Usamos tecnologia React e infraestrutura Cloud para garantir que o morador de ${locationName} acesse seu site em milissegundos. No mercado de ${region}, cada segundo de espera é um cliente perdido. Nossos sites em ${locationName} são otimizados para Core Web Vitals, garantindo prioridade nos algoritmos modernos do Google.`,
-      `O suporte próximo é um valor fundamental para nossos clientes em ${locationName}. Atuamos com transparência e relatórios de ROI. Empresas em ${locationName} que iniciaram conosco viram um salto de visibilidade de até 1900% ao ano, consolidando-se como líderes de mercado em seus nichos em ${region}.`
+      `A visibilidade digital em ${locationName} é crucial para o sucesso de qualquer negócio no estado do ${regionName}. No mercado gaúcho e sulista, estar na primeira página do Google é um diferencial competitivo decisivo para empresas de ${locationName}. Nossa equipe utiliza inteligência de dados para mapear o comportamento de busca dos consumidores de ${locationName}, criando sites que convertem cliques em faturamento real.`,
+      `O SEO Local para ${locationName} foca em palavras-chave geolocalizadas. Quando alguém em ${locationName} ou em qualquer cidade do ${regionName} busca por seu serviço, sua empresa precisa ser a primeira opção. Nós dominamos as técnicas que colocam marcas de ${locationName} no topo do Google Maps, garantindo fluxo constante de leads qualificados.`,
+      `Performance técnica é o que nos diferencia em ${locationName}. Usamos tecnologia React e infraestrutura Cloud para garantir que o morador de ${locationName} acesse seu site em milissegundos. No mercado altamente profissional do ${regionName}, cada segundo de espera é um cliente perdido. Nossos sites em ${locationName} são otimizados para Core Web Vitals.`,
+      `O suporte próximo é um valor fundamental para nossos clientes em ${locationName}. Atuamos com transparência e relatórios de ROI em todo o ${regionName}. Empresas em ${locationName} que iniciaram conosco viram um salto de visibilidade de até 1900% ao ano, consolidando-se como referências regionais.`
     ];
     return texts[index % texts.length] + " " + texts[(index + 1) % texts.length];
   };
@@ -86,14 +94,14 @@ export const LocationSEO: React.FC = () => {
         <div className="absolute inset-0 bg-brand-primary/10 opacity-30 pointer-events-none"></div>
         <div className="container mx-auto px-4 relative z-10 text-center animate-slide-up">
           <span className="bg-brand-primary text-white font-black text-[10px] uppercase tracking-[0.4em] px-5 py-2 rounded-full border border-white/20 mb-8 inline-block">
-            SEO Estratégico em {locationName} / {region}
+            Estratégia Local: {locationName} / {region}
           </span>
           <h1 className="text-5xl md:text-8xl font-black mb-8 leading-tight tracking-tighter">
             DOMINE O GOOGLE EM <br/>
             <span className="text-brand-accent uppercase">{locationName}</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed mb-16 font-medium">
-            Sua empresa no topo das buscas em <strong>{locationName}</strong>. Sites rápidos, otimizados e focados em gerar orçamentos reais em todo o <strong>{region === 'PR' ? 'Paraná' : 'Santa Catarina'}</strong>.
+            Sua empresa no topo das buscas em <strong>{locationName}</strong>. Sites rápidos, otimizados e focados em gerar orçamentos reais em todo o <strong>{region === 'PR' ? 'Paraná' : (region === 'SC' ? 'Santa Catarina' : 'Rio Grande do Sul')}</strong>.
           </p>
           <a href="https://wa.me/5541987001004" className="shimmer-btn text-brand-dark font-black px-12 py-6 rounded-2xl text-xl shadow-2xl hover:scale-105 transition-transform inline-block">
             Atendimento Express em {locationName}
@@ -106,14 +114,14 @@ export const LocationSEO: React.FC = () => {
         <div className="container mx-auto px-4">
            <div className="flex flex-col lg:flex-row gap-20">
               <div className="lg:w-1/2">
-                 <h2 className="text-4xl md:text-5xl font-black text-brand-dark mb-8 leading-tight">Por que empresas em {locationName} escolhem a Suprema?</h2>
+                 <h2 className="text-4xl md:text-5xl font-black text-brand-dark mb-8 leading-tight">Por que empresas de {locationName} escolhem a Suprema?</h2>
                  <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-                   Clique em cada tópico para descobrir como nossa engenharia de performance pode transformar a realidade digital da sua marca em <strong>{locationName}</strong> e em todo o estado de <strong>{region}</strong>.
+                   Nossa engenharia de performance é desenhada para a realidade competitiva de <strong>{locationName}</strong> e de todo o <strong>{region}</strong>.
                  </p>
                  <div className="space-y-6">
-                    <div className="flex items-center gap-4 text-brand-dark font-black"><CheckCircle className="text-green-500" size={24}/> Sites otimizados para a realidade de {locationName}</div>
-                    <div className="flex items-center gap-4 text-brand-dark font-black"><CheckCircle className="text-green-500" size={24}/> Foco total na jornada de compra regional</div>
-                    <div className="flex items-center gap-4 text-brand-dark font-black"><CheckCircle className="text-green-500" size={24}/> Otimização para Google Maps Local {region}</div>
+                    <div className="flex items-center gap-4 text-brand-dark font-black"><CheckCircle className="text-green-500" size={24}/> Sites otimizados para buscas em {locationName}</div>
+                    <div className="flex items-center gap-4 text-brand-dark font-black"><CheckCircle className="text-green-500" size={24}/> Foco em conversão regional no {region}</div>
+                    <div className="flex items-center gap-4 text-brand-dark font-black"><CheckCircle className="text-green-500" size={24}/> Otimização especializada para Google Maps {region}</div>
                  </div>
                  <div className="mt-12 hidden lg:block">
                    <VideoPlayer />
@@ -131,18 +139,18 @@ export const LocationSEO: React.FC = () => {
         <div className="container mx-auto px-4">
            <div className="flex flex-col lg:flex-row gap-20 items-center">
               <div className="lg:w-1/2">
-                 <h2 className="text-3xl md:text-5xl font-black mb-8 leading-none">Solicite um Diagnóstico para {locationName}</h2>
+                 <h2 className="text-3xl md:text-5xl font-black mb-8 leading-none">Cresça em {locationName}</h2>
                  <p className="text-gray-400 text-xl mb-10 leading-relaxed">
-                   Nossa equipe está pronta para analisar seu mercado em {locationName} e propor a melhor estratégia de crescimento digital em {region}.
+                   Análise gratuita de mercado para sua empresa em {locationName}. Atendimento prioritário para o estado de {region}.
                  </p>
                  <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
                        <span className="block text-brand-accent text-3xl font-black mb-1">+1900%</span>
-                       <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Growth em {region}</span>
+                       <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Growth Local</span>
                     </div>
                     <div className="bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
                        <span className="block text-brand-primary text-3xl font-black mb-1">48h</span>
-                       <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Entrega Express</span>
+                       <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Tempo de Entrega</span>
                     </div>
                  </div>
               </div>
