@@ -1,5 +1,6 @@
 {
-  "name": "Suprema Site - Criação de Sites Profissionais",
-  "description": "Agência especializada em criação de sites otimizados, lojas virtuais e SEO em Curitiba e Região Metropolitana.",
-  "requestFramePermissions": []
+  "name": "Suprema Site - Criação de Sites Profissionais Curitiba",
+  "description": "Agência de alta performance para criação de sites, SEO e Landing Pages. Atendemos Curitiba e 29 cidades da RMC. Crescimento de até 1900% ao ano.",
+  "requestFramePermissions": [],
+  "sitemap": "https://www.supremasite.com.br/sitemap.xml"
 }

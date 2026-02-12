@@ -1,122 +1,95 @@
-import React from 'react';
-import { MapPin, Phone, Mail, Instagram, Facebook, Link as LinkIcon } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
-// Custom TikTok Icon
-const TikTokIcon = ({ size = 20, className = "" }: { size?: number, className?: string }) => (
-  <svg 
-    width={size} 
-    height={size} 
-    viewBox="0 0 24 24" 
-    fill="currentColor" 
-    className={className}
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z" />
-  </svg>
-);
+import React from 'react';
+import { MapPin, Phone, Mail, Instagram, Facebook, Heart, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Logo } from './Logo';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-16 pb-8 border-t-4 border-brand-accent">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+    <footer className="bg-brand-dark text-gray-400 pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
           
-          {/* Company Info */}
           <div>
-            <h3 className="text-white text-xl font-bold mb-4 flex items-center gap-2">
-              SUPREMA<span className="text-brand-accent">SITE</span>
-            </h3>
-            <p className="text-sm mb-6 leading-relaxed">
-              Especialistas em desenvolvimento web e marketing digital. 
-              Levamos sua empresa para o próximo nível com sites de alta performance e estratégias de SEO focadas em resultados.
+            <Logo size={56} className="mb-8" />
+            <p className="text-sm leading-relaxed mb-8 font-medium">
+              A agência número #1 em Curitiba para criação de sites que vendem. Tecnologia de ponta, SEO local agressivo e suporte humano especializado.
             </p>
-            <div>
-              <h4 className="text-white text-xs font-bold uppercase tracking-wider mb-3">Siga a Suprema Mídia</h4>
-              <div className="flex gap-4">
-                <a href="https://www.instagram.com/suprema_midia/" target="_blank" rel="noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-brand-accent hover:text-brand-dark transition-colors" aria-label="Instagram">
-                  <Instagram size={18} />
-                </a>
-                <a href="https://www.facebook.com/supremamidiactba/" target="_blank" rel="noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-brand-accent hover:text-brand-dark transition-colors" aria-label="Facebook">
-                  <Facebook size={18} />
-                </a>
-                <a href="https://www.tiktok.com/@suprema_midia/" target="_blank" rel="noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-brand-accent hover:text-brand-dark transition-colors" aria-label="TikTok">
-                  <TikTokIcon size={18} />
-                </a>
-                <a href="https://bio.supremamidia.com.br/" target="_blank" rel="noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-brand-accent hover:text-brand-dark transition-colors" aria-label="Bio Links">
-                  <LinkIcon size={18} />
-                </a>
-              </div>
+            <div className="flex gap-4">
+              <a href="https://instagram.com/suprema_midia" className="bg-white/5 p-3 rounded-xl hover:bg-brand-primary hover:text-white transition-all"><Instagram size={20}/></a>
+              <a href="https://facebook.com/supremamidiactba" className="bg-white/5 p-3 rounded-xl hover:bg-brand-primary hover:text-white transition-all"><Facebook size={20}/></a>
+              <a href="https://www.supremasite.com.br" className="bg-white/5 p-3 rounded-xl hover:bg-brand-primary hover:text-white transition-all"><Globe size={20}/></a>
             </div>
           </div>
 
-          {/* Contact */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4 border-b border-gray-700 pb-2 inline-block">Contato</h3>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-3">
-                <MapPin className="text-brand-accent shrink-0 mt-1" size={18} />
-                <span>
-                  Av. Sete de Setembro, 2775 - 9º andar<br/>
-                  Rebouças, Curitiba - PR, 80230-010
-                </span>
+            <h4 className="text-white font-black uppercase tracking-[0.2em] text-[11px] mb-8">Onde Estamos</h4>
+            <ul className="space-y-6 text-sm">
+              <li className="flex gap-4">
+                <MapPin size={24} className="text-brand-accent shrink-0" />
+                <span className="leading-relaxed">Av. Sete de Setembro, 2775 - 9º andar<br/><strong className="text-white">Batel / Rebouças</strong><br/>Curitiba - PR, 80230-010</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="text-brand-accent shrink-0" size={18} />
-                <a href="tel:41987001004" className="hover:text-white">(41) 98700-1004</a>
+              <li className="flex gap-4 items-center">
+                <Phone size={20} className="text-brand-primary shrink-0" />
+                <a href="tel:41987001004" className="hover:text-white font-bold tracking-tighter">(41) 98700-1004</a>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail className="text-brand-accent shrink-0" size={18} />
-                <a href="mailto:supremamidiabatel@gmail.com" className="hover:text-white">supremamidiabatel@gmail.com</a>
+              <li className="flex gap-4 items-center">
+                <Mail size={20} className="text-brand-accent shrink-0" />
+                <a href="mailto:supremamidiabatel@gmail.com" className="hover:text-white">contato@supremasite.com.br</a>
               </li>
             </ul>
           </div>
 
-          {/* Services */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4 border-b border-gray-700 pb-2 inline-block">Serviços</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link to="/servicos" className="hover:text-brand-accent">Criação de Sites</Link></li>
-              <li><Link to="/servicos" className="hover:text-brand-accent">Lojas Virtuais (E-commerce)</Link></li>
-              <li><Link to="/servicos" className="hover:text-brand-accent">Otimização SEO Local</Link></li>
-              <li><Link to="/servicos" className="hover:text-brand-accent">Landing Pages</Link></li>
-              <li><Link to="/servicos" className="hover:text-brand-accent">Gestão de Tráfego</Link></li>
+            <h4 className="text-white font-black uppercase tracking-[0.2em] text-[11px] mb-8">Especialidades</h4>
+            <ul className="space-y-4 text-sm font-medium">
+              <li><Link to="/servicos" className="hover:text-brand-primary flex items-center gap-2">SEO Local de Elite</Link></li>
+              <li><Link to="/servicos" className="hover:text-brand-primary flex items-center gap-2">Sites Institucionais Express</Link></li>
+              <li><Link to="/servicos" className="hover:text-brand-primary flex items-center gap-2">Lojas Virtuais de Alta Conversão</Link></li>
+              <li><Link to="/servicos" className="hover:text-brand-primary flex items-center gap-2">Landing Pages Vendedoras</Link></li>
+              <li><Link to="/servicos" className="hover:text-brand-primary flex items-center gap-2">Gestão de Google Ads</Link></li>
             </ul>
           </div>
 
-          {/* Local SEO Areas */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4 border-b border-gray-700 pb-2 inline-block">Áreas de Atuação</h3>
-            <ul className="space-y-1 text-xs text-gray-400">
-              <li>Criação de Sites em Curitiba</li>
-              <li>Sites em São José dos Pinhais</li>
-              <li>Sites em Colombo</li>
-              <li>Sites em Araucária</li>
-              <li>Sites em Pinhais</li>
-              <li>Sites em Campo Largo</li>
-              <li>Sites em Almirante Tamandaré</li>
-              <li>Atendimento em todo o Paraná</li>
+            <h4 className="text-white font-black uppercase tracking-[0.2em] text-[11px] mb-8">Informações</h4>
+            <ul className="space-y-4 text-sm font-medium">
+              <li><Link to="/portfolio" className="hover:text-brand-primary underline decoration-brand-accent decoration-2">Ver Portfólio 2025</Link></li>
+              <li><Link to="/sobre" className="hover:text-brand-primary">Conheça nossa Agência</Link></li>
+              <li><a href="https://wa.me/5541987001004" className="hover:text-brand-primary">Trabalhe Conosco</a></li>
+              <li><Link to="/contato" className="hover:text-brand-primary">Suporte ao Cliente</Link></li>
             </ul>
           </div>
         </div>
 
-        {/* Map Embed */}
-        <div className="w-full h-48 bg-gray-800 rounded-lg overflow-hidden mb-8">
-           <iframe 
-             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.835492677843!2d-49.26998982361665!3d-25.44376483340621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce470716b0811%3A0x6649721490288863!2sAv.%20Sete%20de%20Setembro%2C%202775%20-%20Rebou%C3%A7as%2C%20Curitiba%20-%20PR%2C%2080230-010!5e0!3m2!1spt-BR!2sbr!4v1715000000000!5m2!1spt-BR!2sbr" 
-             width="100%" 
-             height="100%" 
-             style={{border:0}} 
-             allowFullScreen 
-             loading="lazy" 
-             referrerPolicy="no-referrer-when-downgrade">
-           </iframe>
+        <div className="pt-12 border-t border-white/5 flex flex-col items-center text-center gap-8">
+          <div className="flex flex-col items-center gap-3">
+             <div className="flex items-center gap-4 text-white text-xl md:text-2xl font-black">
+                <span>Desenvolvido com</span>
+                <div className="relative">
+                  <Heart size={48} fill="#ef4444" stroke="#ef4444" className="animate-heart-beat" />
+                  <div className="absolute inset-0 bg-red-500 blur-xl opacity-40 animate-pulse"></div>
+                </div>
+                <span>por Suprema Mídia</span>
+             </div>
+             <p className="text-[10px] text-gray-600 font-bold uppercase tracking-[0.3em]">
+               OSKAFI WEB SITES LTDA ME | CNPJ: 15.083.543/0001-97
+             </p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-6 text-[10px] font-black uppercase tracking-widest text-gray-500">
+             <Link to="/sitemap.xml" className="hover:text-white transition-colors">Sitemap</Link>
+             <span className="text-white/10">|</span>
+             <span>Todos os Direitos Reservados &copy; {new Date().getFullYear()}</span>
+             <span className="text-white/10">|</span>
+             <Link to="/privacidade" className="hover:text-white transition-colors">Privacidade</Link>
+          </div>
         </div>
-
-        <div className="border-t border-gray-800 pt-8 text-center text-xs text-gray-500">
-          <p>&copy; {new Date().getFullYear()} OSKAFI WEB SITES LTDA ME - CNPJ: 15.083.543/0001-97. Todos os direitos reservados.</p>
-          <p className="mt-2">Av. Sete de Setembro, 2775 - 9º andar ou Piso G6 - Acesso pelo elevador azul ou vermelho.</p>
-        </div>
+      </div>
+      
+      {/* Decorative logo background */}
+      <div className="absolute -bottom-20 -right-20 opacity-[0.03] rotate-12 pointer-events-none">
+         <Logo size={400} />
       </div>
     </footer>
   );
