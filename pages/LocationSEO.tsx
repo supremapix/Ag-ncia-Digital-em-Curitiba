@@ -29,7 +29,7 @@ export const LocationSEO: React.FC = () => {
       linkCanonical.setAttribute('rel', 'canonical');
       document.head.appendChild(linkCanonical);
     }
-    linkCanonical.setAttribute('href', `https://www.supremasite.com.br/site-em-${slug}`);
+    linkCanonical.setAttribute('href', `https://www.supremasite.com.br/site-em/${slug}`);
   }, [locationName, slug]);
 
   // Função para gerar blocos de texto longos para SEO (simulando 300+ palavras cada)
@@ -145,7 +145,7 @@ export const LocationSEO: React.FC = () => {
               {[...cities, ...neighborhoods].slice(0, 40).map((loc, idx) => (
                 <Link 
                   key={idx} 
-                  to={`/site-em-${slugify(loc)}`}
+                  to={`/site-em/${slugify(loc)}`}
                   className="px-4 py-2 bg-gray-50 hover:bg-brand-primary hover:text-white border border-gray-200 rounded-full text-xs font-bold transition-all"
                 >
                   {loc}

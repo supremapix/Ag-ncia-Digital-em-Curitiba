@@ -50,7 +50,7 @@ export const LocationTicker: React.FC = () => {
                   {cityDisplayList.map((loc, i) => (
                     <Link 
                       key={i} 
-                      to={`/site-em-${slugify(loc.name)}`}
+                      to={`/site-em/${slugify(loc.name)}`}
                       className="bg-white/5 hover:bg-brand-primary p-5 rounded-2xl border border-white/5 text-gray-400 hover:text-white transition-all duration-300 flex items-center justify-between group"
                     >
                       <div className="flex items-center gap-3">
@@ -69,7 +69,7 @@ export const LocationTicker: React.FC = () => {
                   {neighborhoodDisplayList.map((loc, i) => (
                     <Link 
                       key={i} 
-                      to={`/site-em-${slugify(loc.name)}`}
+                      to={`/site-em/${slugify(loc.name)}`}
                       className="bg-white/5 hover:bg-brand-accent p-5 rounded-2xl border border-white/5 text-gray-400 hover:text-brand-dark transition-all duration-300 flex items-center justify-between group"
                     >
                       <div className="flex items-center gap-3">

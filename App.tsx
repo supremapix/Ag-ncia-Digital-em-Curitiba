@@ -44,7 +44,8 @@ const App: React.FC = () => {
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/sobre" element={<About />} />
               <Route path="/contato" element={<Contact />} />
-              <Route path="/site-em-:slug" element={<LocationSEO />} />
+              {/* Rota corrigida para padrão de segmento único */}
+              <Route path="/site-em/:slug" element={<LocationSEO />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </PageWrapper>
