@@ -5,28 +5,28 @@ export const Logo: React.FC<{ size?: number; className?: string }> = ({ size = 4
   return (
     <div className={`flex items-center gap-3 group cursor-pointer ${className}`}>
       <div className="relative" style={{ width: size, height: size }}>
-        {/* Camada de brilho externa */}
-        <div className="absolute inset-0 bg-brand-primary opacity-0 group-hover:opacity-40 blur-xl transition-all duration-700 rounded-lg"></div>
+        {/* Camada de brilho externa para efeito premium */}
+        <div className="absolute inset-0 bg-brand-primary opacity-0 group-hover:opacity-30 blur-xl transition-all duration-700 rounded-lg"></div>
         
         <svg 
           viewBox="0 0 100 100" 
           className="relative z-10 w-full h-full transform transition-all duration-500 group-hover:scale-110 group-active:scale-95 animate-logo-glow"
         >
-          {/* Fundo Preto */}
-          <rect width="100" height="100" fill="#050a14" rx="4" />
+          {/* Fundo Preto Sólido */}
+          <rect width="100" height="100" fill="#050a14" rx="2" />
           
-          {/* Moldura Externa (Estilo Suprema Mídia) */}
+          {/* Moldura Branca (Contorno Externo) */}
           <path 
-            d="M15 15 H 85 V 85 H 15 V 15" 
+            d="M12 12 H 88 V 88 H 12 V 12" 
             fill="none" 
             stroke="white" 
-            strokeWidth="6" 
+            strokeWidth="5" 
             strokeLinejoin="miter"
           />
           
-          {/* O "S" Estilizado (Geometria Exata da Imagem) */}
+          {/* O "S" Geométrico - Fiel ao Pixel da imagem anexada */}
           <path 
-            d="M75 28 H 30 C 25 28 25 45 30 45 H 70 C 75 45 75 62 70 62 H 25" 
+            d="M78 28 H 28 V 50 H 72 V 72 H 22" 
             fill="none" 
             stroke="white" 
             strokeWidth="9" 
@@ -35,16 +35,16 @@ export const Logo: React.FC<{ size?: number; className?: string }> = ({ size = 4
             className="group-hover:stroke-brand-accent transition-colors duration-500"
           />
           
-          {/* Detalhe da moldura inferior */}
-          <path d="M15 85 L 15 75" stroke="white" strokeWidth="6" />
+          {/* Detalhe de quebra da moldura inferior esquerda */}
+          <path d="M12 88 L 12 75" stroke="white" strokeWidth="5" />
         </svg>
       </div>
       <div className="flex flex-col">
         <span className="text-white font-black text-2xl leading-none tracking-tighter group-hover:text-brand-accent transition-colors">
           SUPREMA<span className="text-brand-primary">MÍDIA</span>
         </span>
-        <span className="text-[9px] text-gray-500 font-bold uppercase tracking-[0.3em] leading-none mt-1 group-hover:text-white transition-colors">
-          Performance Digital
+        <span className="text-[9px] text-gray-400 font-bold uppercase tracking-[0.4em] leading-none mt-1 group-hover:text-white transition-colors">
+          Performance
         </span>
       </div>
     </div>
