@@ -1,10 +1,12 @@
 
 import React from 'react';
-import { CheckCircle, BarChart, Smartphone, Globe, Zap, ArrowRight } from 'lucide-react';
+import { CheckCircle, BarChart, Smartphone, Globe, Zap, ArrowRight, Shield, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { LeadForm } from '../components/LeadForm';
 import { VideoPlayer } from '../components/VideoPlayer';
 import { LocationTicker } from '../components/LocationTicker';
+import { FAQAccordionTicker } from '../components/FAQAccordionTicker';
+import { ReviewsTicker } from '../components/ReviewsTicker';
 
 export const Home: React.FC = () => {
   return (
@@ -46,6 +48,25 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Stats Section */}
+      <section className="bg-white py-12 border-b border-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+             {[
+               { val: "15.000+", label: "Leads Gerados" },
+               { val: "10+ ANOS", label: "De Mercado" },
+               { val: "1.100+", label: "Cidades no Sul" },
+               { val: "48h", label: "Entrega Expressa" },
+             ].map((stat, i) => (
+               <div key={i} className="text-center">
+                  <span className="block text-3xl md:text-5xl font-black text-brand-dark tracking-tighter">{stat.val}</span>
+                  <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">{stat.label}</span>
+               </div>
+             ))}
+          </div>
+        </div>
+      </section>
+
       {/* Service Highlights */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
@@ -64,6 +85,12 @@ export const Home: React.FC = () => {
            </div>
         </div>
       </section>
+
+      {/* Reviews Ticker Section */}
+      <ReviewsTicker />
+
+      {/* FAQ Ticker Section */}
+      <FAQAccordionTicker />
 
       {/* Infinite Ticker for SEO Locations */}
       <LocationTicker />
