@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -14,19 +14,15 @@ import { NotFound } from './pages/NotFound';
 import { FloatingButtons } from './components/FloatingButtons';
 import { SocialSection } from './components/SocialSection';
 
-// Page transition wrapper component
 const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { pathname } = useLocation();
-  const [animationKey, setAnimationKey] = useState(0);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-    // Force re-triggering of animations
-    setAnimationKey(prev => prev + 1);
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }, [pathname]);
 
   return (
-    <div key={animationKey} className="page-enter">
+    <div className="animate-fade-in">
       {children}
     </div>
   );
