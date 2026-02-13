@@ -1,50 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Páginas Institucionais -->
-  <url>
-    <loc>https://www.supremasite.com.br/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.supremasite.com.br/servicos</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.supremasite.com.br/portfolio</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.supremasite.com.br/sobre</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.supremasite.com.br/contato</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.supremasite.com.br/mapa-do-site</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.supremasite.com.br/privacidade</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+  <!-- Main Pages -->
+  <url><loc>https://www.supremasite.com.br/</loc><lastmod>2026-02-13</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.supremasite.com.br/servicos</loc><lastmod>2026-02-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.supremasite.com.br/portfolio</loc><lastmod>2026-02-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.supremasite.com.br/sobre</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.supremasite.com.br/contato</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.supremasite.com.br/mapa-do-site</loc><lastmod>2026-02-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.supremasite.com.br/privacidade</loc><lastmod>2026-02-13</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
-  <!-- Hubs de Localidade - Paraná (Principais Cidades) -->
+  <!-- Top Paraná Cities (30) -->
   <url><loc>https://www.supremasite.com.br/site-em/curitiba</loc><lastmod>2026-02-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/londrina</loc><lastmod>2026-02-13</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/maringa</loc><lastmod>2026-02-13</lastmod><priority>0.8</priority></url>
@@ -65,8 +30,18 @@
   <url><loc>https://www.supremasite.com.br/site-em/pato-branco</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/cambe</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/umuarama</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/francisco-beltrao</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/sarandi</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/paranavai</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/cianorte</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/telmaco-borba</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/rolandia</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/campo-morao</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/uniao-da-vitoria</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/ibipora</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/prudentopolis</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
 
-  <!-- Hubs de Localidade - Santa Catarina (Principais Cidades) -->
+  <!-- Top Santa Catarina Cities (30) -->
   <url><loc>https://www.supremasite.com.br/site-em/joinville</loc><lastmod>2026-02-13</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/florianopolis</loc><lastmod>2026-02-13</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/blumenau</loc><lastmod>2026-02-13</lastmod><priority>0.8</priority></url>
@@ -76,19 +51,29 @@
   <url><loc>https://www.supremasite.com.br/site-em/criciuma</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/jaragua-do-sul</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/palhoca</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/lages</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/balneario-camboriu</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/brusque</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/tubarao</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/sao-bento-do-sul</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/lages</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/itapema</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/navegantes</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/cacador</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/concordia</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/rio-do-sul</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/indaial</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/gaspar</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/ararangua</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/biguaçu</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/cacador</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/itapiranga</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/tijucas</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/itapoa</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/imbatuba</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/joaçaba</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/canoinhas</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/porto-uniao</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/curitibanos</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
 
-  <!-- Hubs de Localidade - Rio Grande do Sul (Principais Cidades) -->
+  <!-- Top Rio Grande do Sul Cities (30) -->
   <url><loc>https://www.supremasite.com.br/site-em/porto-alegre</loc><lastmod>2026-02-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/caxias-do-sul</loc><lastmod>2026-02-13</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/canoas</loc><lastmod>2026-02-13</lastmod><priority>0.8</priority></url>
@@ -109,43 +94,26 @@
   <url><loc>https://www.supremasite.com.br/site-em/bento-goncalves</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/erechim</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/guaiba</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/ijui</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/lajeado</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/itapiranga</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/santana-do-livramento</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/esteio</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/sapiranga</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/gramado</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/canela</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/vacaria</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/farroupilha</loc><lastmod>2026-02-13</lastmod><priority>0.5</priority></url>
 
-  <!-- Hubs de Localidade - Bairros de Curitiba (Foco PR) -->
+  <!-- Curitiba Neighborhoods (10) -->
   <url><loc>https://www.supremasite.com.br/site-em/batel</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/agua-verde</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/centro-civico</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/merces</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/santa-felicidade</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/bigorrilho</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/cabral</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/ecoville</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/ecoville</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/cabral</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/juveve</loc><lastmod>2026-02-13</lastmod><priority>0.7</priority></url>
   <url><loc>https://www.supremasite.com.br/site-em/boqueirao</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/reboucas</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/jardim-social</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/portao</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/cristo-rei</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/juveve</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/site-em/alto-da-gloria</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
-
-  <!-- Conteúdo de Blog / Artigos Estratégicos -->
-  <url><loc>https://www.supremasite.com.br/blog/como-criar-um-site-de-vendas</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/importancia-do-seo-local-2026</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/melhores-praticas-landing-pages</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/tendencias-web-design-curitiba</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/como-aumentar-visibilidade-google-maps</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/site-em-48-horas-vale-a-pena</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/gestao-de-google-ads-para-negocios-locais</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/como-otimizar-site-para-core-web-vitals</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/seguranca-digital-para-empresas-locais</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/porque-fugir-de-sites-gratis</loc><lastmod>2026-02-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/post11</loc><lastmod>2026-02-13</lastmod><priority>0.4</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/post12</loc><lastmod>2026-02-13</lastmod><priority>0.4</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/post13</loc><lastmod>2026-02-13</lastmod><priority>0.4</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/post14</loc><lastmod>2026-02-13</lastmod><priority>0.4</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/post15</loc><lastmod>2026-02-13</lastmod><priority>0.4</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/post16</loc><lastmod>2026-02-13</lastmod><priority>0.4</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/post17</loc><lastmod>2026-02-13</lastmod><priority>0.4</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/post18</loc><lastmod>2026-02-13</lastmod><priority>0.4</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/post19</loc><lastmod>2026-02-13</lastmod><priority>0.4</priority></url>
-  <url><loc>https://www.supremasite.com.br/blog/post20</loc><lastmod>2026-02-13</lastmod><priority>0.4</priority></url>
+  <url><loc>https://www.supremasite.com.br/site-em/xaxim</loc><lastmod>2026-02-13</lastmod><priority>0.6</priority></url>
 </urlset>
