@@ -17,9 +17,10 @@ export const LocationSEO: React.FC = () => {
   const region = useMemo(() => getRegionFromSlug(slug || ''), [slug]);
 
   useEffect(() => {
+    const regionFullName = region === 'PR' ? 'Paraná' : (region === 'SC' ? 'Santa Catarina' : 'Rio Grande do Sul');
     document.title = `Criação de Sites em ${locationName}, ${region} | Suprema Site Express`;
     
-    // Coordenadas baseadas no estado
+    // Coordenadas baseadas no estado para o Google Maps Schema
     const coords = {
       "PR": { lat: "-25.4284", lng: "-49.2733" },
       "SC": { lat: "-27.5954", lng: "-48.5480" },
@@ -28,11 +29,15 @@ export const LocationSEO: React.FC = () => {
 
     const schemaMarkup = {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "ProfessionalService",
       "name": `Suprema Mídia - Criação de Sites em ${locationName}`,
-      "description": `Especialistas em criação de sites rápidos e SEO local em ${locationName}, ${region}.`,
+      "alternateName": "Suprema Site Express",
+      "description": `Especialistas em criação de sites profissionais, landing pages e SEO local em ${locationName}, ${region}. Projetos entregues em 48h com foco em resultados reais.`,
       "url": `https://www.supremasite.com.br/site-em/${slug}`,
+      "logo": "https://www.supremasite.com.br/logo.png",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80",
       "telephone": "+5541987001004",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": locationName,
@@ -43,6 +48,47 @@ export const LocationSEO: React.FC = () => {
         "@type": "GeoCoordinates",
         "latitude": coords[region as keyof typeof coords]?.lat || "-25.4284",
         "longitude": coords[region as keyof typeof coords]?.lng || "-49.2733"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": locationName,
+        "sameAs": `https://pt.wikipedia.org/wiki/${locationName.replace(/\s+/g, '_')}`
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de Desenvolvimento Web",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Criação de Sites Institucionais",
+              "description": "Sites rápidos e otimizados entregues em até 48 horas."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SEO Local Avançado",
+              "description": "Otimização para busca orgânica e Google Maps para dominar a região."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Landing Pages de Alta Conversão",
+              "description": "Páginas focadas em vendas para campanhas de Google Ads e Redes Sociais."
+            }
+          }
+        ]
       }
     };
 
@@ -52,7 +98,12 @@ export const LocationSEO: React.FC = () => {
     document.head.appendChild(script);
 
     return () => {
-      document.head.removeChild(script);
+      const scripts = document.head.getElementsByTagName('script');
+      for (let i = 0; i < scripts.length; i++) {
+        if (scripts[i].type === 'application/ld+json' && scripts[i].text.includes(locationName)) {
+          document.head.removeChild(scripts[i]);
+        }
+      }
     };
   }, [locationName, slug, region]);
 
