@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MapPin, Phone, Mail, Instagram, Facebook, Heart, Globe } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Facebook, Heart, Globe, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
 
@@ -78,7 +78,13 @@ export const Footer: React.FC = () => {
           </div>
           
           <div className="flex flex-wrap justify-center gap-6 text-[10px] font-black uppercase tracking-widest text-gray-500">
-             <Link to="/sitemap.xml" className="hover:text-white transition-colors">Sitemap</Link>
+             <Link to="/mapa-do-site" className="hover:text-white transition-colors flex items-center gap-1">
+               <Globe size={12} /> Mapa do Site
+             </Link>
+             <span className="text-white/10">|</span>
+             <a href="/sitemap.xml" target="_blank" className="hover:text-white transition-colors flex items-center gap-1">
+               <FileText size={12} /> XML
+             </a>
              <span className="text-white/10">|</span>
              <span>Todos os Direitos Reservados &copy; {new Date().getFullYear()}</span>
              <span className="text-white/10">|</span>

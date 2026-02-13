@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
@@ -9,6 +9,7 @@ import { Contact } from './pages/Contact';
 import { LocationSEO } from './pages/LocationSEO';
 import { Portfolio } from './pages/Portfolio';
 import { About } from './pages/About';
+import { Sitemap } from './pages/Sitemap';
 import { NotFound } from './pages/NotFound';
 import { FloatingButtons } from './components/FloatingButtons';
 import { SocialSection } from './components/SocialSection';
@@ -44,7 +45,7 @@ const App: React.FC = () => {
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/sobre" element={<About />} />
               <Route path="/contato" element={<Contact />} />
-              {/* Rota corrigida para padrão de segmento único */}
+              <Route path="/mapa-do-site" element={<Sitemap />} />
               <Route path="/site-em/:slug" element={<LocationSEO />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
