@@ -150,21 +150,21 @@ export const Portfolio: React.FC = () => {
       <section className="py-12 md:py-20 bg-gray-50 overflow-hidden relative">
         <div className="container mx-auto px-4 h-[600px] md:h-[1000px] flex flex-row gap-4 md:gap-10 location-mask pause-on-hover">
           {/* Column 1 - Primary on Mobile */}
-          <div className="flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '100s' } as any}>
+          <div className="flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '2s' } as any}>
             {[...track1, ...track1].map((p, i) => (
               <div key={`t1-${p.id}-${i}`} className="w-full">{renderProjectCard(p)}</div>
             ))}
           </div>
           
           {/* Column 2 - Visible from md up */}
-          <div className="hidden md:flex flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '130s' } as any}>
+          <div className="hidden md:flex flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '3s' } as any}>
             {[...track2, ...track2].map((p, i) => (
               <div key={`t2-${p.id}-${i}`} className="w-full">{renderProjectCard(p)}</div>
             ))}
           </div>
 
           {/* Column 3 - Visible from lg up */}
-          <div className="hidden lg:flex flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '115s' } as any}>
+          <div className="hidden lg:flex flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '2.5s' } as any}>
             {[...track3, ...track3].map((p, i) => (
               <div key={`t3-${p.id}-${i}`} className="w-full">{renderProjectCard(p)}</div>
             ))}
