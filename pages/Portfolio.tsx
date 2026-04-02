@@ -51,23 +51,13 @@ const baseProjects: Project[] = [
 ];
 
 export const Portfolio: React.FC = () => {
-  const extendedProjects = useMemo(() => {
-    // Duplicate projects to create a "thousands" feel
-    return Array.from({ length: 100 }).map((_, i) => {
-      const base = baseProjects[i % baseProjects.length];
-      return {
-        ...base,
-        id: i
-      };
-    });
-  }, []);
+  const track1 = useMemo(() => [...baseProjects].sort(() => Math.random() - 0.5), []);
+  const track2 = useMemo(() => [...baseProjects].sort(() => Math.random() - 0.5), []);
+  const track3 = useMemo(() => [...baseProjects].sort(() => Math.random() - 0.5), []);
 
-  const track1 = extendedProjects.slice(0, 33);
-  const track2 = extendedProjects.slice(33, 66);
-  const track3 = extendedProjects.slice(66, 100);
-
-  const renderProjectCard = (project: any) => (
+  const renderProjectCard = (project: any, index: number) => (
     <div 
+      key={`${project.title}-${index}`}
       className="group relative bg-white rounded-2xl md:rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-full"
     >
       <div className="h-32 md:h-48 relative overflow-hidden bg-gray-900">
@@ -150,23 +140,23 @@ export const Portfolio: React.FC = () => {
       <section className="py-12 md:py-20 bg-gray-50 overflow-hidden relative">
         <div className="container mx-auto px-4 h-[600px] md:h-[1000px] flex flex-row gap-4 md:gap-10 location-mask pause-on-hover">
           {/* Column 1 - Primary on Mobile */}
-          <div className="flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '2s' } as any}>
+          <div className="flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '4s' } as any}>
             {[...track1, ...track1].map((p, i) => (
-              <div key={`t1-${p.id}-${i}`} className="w-full">{renderProjectCard(p)}</div>
+              <div key={`t1-${i}`} className="w-full">{renderProjectCard(p, i)}</div>
             ))}
           </div>
           
           {/* Column 2 - Visible from md up */}
-          <div className="hidden md:flex flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '3s' } as any}>
+          <div className="hidden md:flex flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '6s' } as any}>
             {[...track2, ...track2].map((p, i) => (
-              <div key={`t2-${p.id}-${i}`} className="w-full">{renderProjectCard(p)}</div>
+              <div key={`t2-${i}`} className="w-full">{renderProjectCard(p, i)}</div>
             ))}
           </div>
 
           {/* Column 3 - Visible from lg up */}
-          <div className="hidden lg:flex flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '2.5s' } as any}>
+          <div className="hidden lg:flex flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '5s' } as any}>
             {[...track3, ...track3].map((p, i) => (
-              <div key={`t3-${p.id}-${i}`} className="w-full">{renderProjectCard(p)}</div>
+              <div key={`t3-${i}`} className="w-full">{renderProjectCard(p, i)}</div>
             ))}
           </div>
         </div>
