@@ -10,6 +10,7 @@ import { LocationSEO } from './pages/LocationSEO';
 import { Portfolio } from './pages/Portfolio';
 import { About } from './pages/About';
 import { Blog } from './pages/Blog';
+import { BlogPost } from './pages/BlogPost';
 import { Sitemap } from './pages/Sitemap';
 import { Privacy } from './pages/Privacy';
 import { NotFound } from './pages/NotFound';
@@ -43,6 +44,7 @@ const App: React.FC = () => {
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/sobre" element={<About />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:id" element={<BlogPost />} />
               <Route path="/contato" element={<Contact />} />
               <Route path="/mapa-do-site" element={<Sitemap />} />
               <Route path="/privacidade" element={<Privacy />} />
