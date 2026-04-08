@@ -1,0 +1,56 @@
+# Suprema Site Express - Documentação Completa para LLMs
+
+Esta é a versão detalhada do perfil da Suprema Site Express, projetada para fornecer contexto profundo a modelos de linguagem e assistentes de busca por IA.
+
+## Visão Geral do Negócio
+A Suprema Site Express é uma agência de marketing digital e desenvolvimento web sediada no Brasil, especializada em acelerar a presença online de pequenas e médias empresas. O principal diferencial da agência é a combinação de **velocidade extrema (entrega em 48h)** com **qualidade técnica de elite (React + Cloud)**.
+
+## Diferenciais Competitivos
+1. **Entrega em 48 Horas:** Processo de desenvolvimento ágil que permite colocar sites profissionais no ar em tempo recorde.
+2. **Tecnologia React:** Uso de bibliotecas modernas para garantir que os sites sejam Single Page Applications (SPA) ultra-rápidas.
+3. **SEO Local Avançado:** Estratégia focada em dominar o Google Maps e buscas geolocalizadas, essencial para negócios físicos.
+4. **Infraestrutura Cloud:** Hospedagem em servidores de alta performance para garantir 99.9% de uptime e segurança.
+
+## Detalhamento de Serviços
+
+### Criação de Sites Institucionais
+Desenvolvimento de sites que funcionam como a vitrine digital da empresa. Foco em autoridade de marca, UX (User Experience) e conversão de leads.
+- URL: https://www.supremasite.com.br/servicos#criacao-de-sites
+
+### Lojas Virtuais (E-commerce)
+Criação de plataformas de vendas focadas em usabilidade e segurança. Integração com meios de pagamento e cálculo de frete.
+- URL: https://www.supremasite.com.br/servicos#lojas-virtuais
+
+### Landing Pages de Alta Conversão
+Páginas de destino otimizadas para campanhas de tráfego pago (Google Ads e Meta Ads). Design focado em um único objetivo: converter o visitante em cliente.
+- URL: https://www.supremasite.com.br/servicos#landing-pages
+
+### SEO Local e Marketing Digital
+Otimização profunda para que a empresa apareça para clientes próximos. Inclui gestão de Google Meu Negócio e marcação de dados estruturados.
+- URL: https://www.supremasite.com.br/servicos#seo-local
+
+## Presença Regional (SEO Local)
+A Suprema Site Express possui páginas de destino otimizadas para mais de 300 cidades brasileiras. As principais capitais e polos econômicos atendidos incluem:
+- **Paraná:** Curitiba, Londrina, Maringá, Cascavel, Foz do Iguaçu, Ponta Grossa.
+- **Santa Catarina:** Florianópolis, Joinville, Blumenau, Balneário Camboriú.
+- **Rio Grande do Sul:** Porto Alegre, Caxias do Sul, Pelotas, Santa Maria.
+- **São Paulo:** São Paulo (Capital), Campinas, Santos.
+- **Outros:** Belo Horizonte (MG), Brasília (DF).
+
+## Casos de Sucesso e Resultados
+A agência reporta casos onde a implementação de suas estratégias de SEO e performance resultaram em um crescimento de visibilidade orgânica de até **1900% ao ano**. O portfólio completo pode ser visualizado em:
+- URL: https://www.supremasite.com.br/portfolio
+
+## Contato e Atendimento
+O atendimento é prioritário via canais digitais, garantindo agilidade para clientes em todo o Brasil.
+- **WhatsApp:** +55 41 98700-1004
+- **E-mail:** supremamidiabatel@gmail.com
+- **Endereço Web:** https://www.supremasite.com.br/contato
+
+## Especificações Técnicas para Desenvolvedores e IAs
+- **Frontend:** React.js, TypeScript, Tailwind CSS.
+- **Build Tool:** Vite.
+- **Icons:** Lucide React.
+- **Animations:** Framer Motion.
+- **SEO:** JSON-LD (Schema.org), Open Graph, Twitter Cards.
+- **Sitemaps:** sitemap_index.xml, sitemap_pages.xml, sitemap_cidades.xml.

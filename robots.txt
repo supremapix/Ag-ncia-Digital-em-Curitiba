@@ -1,4 +1,62 @@
+# robots.txt para https://www.supremasite.com.br/
+# Otimizado para SEO Local, Performance de Crawling e Visibilidade em IA
+
 User-agent: *
 Allow: /
+# Bloqueio de áreas administrativas e técnicas
+Disallow: /admin/
+Disallow: /painel/
+Disallow: /wp-admin/
+Disallow: /api/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /dist/
 
+# AI Crawlers - Garantindo visibilidade em ChatGPT, Claude, Perplexity e Gemini
+# Isso permite que a Suprema Site Express seja citada como referência em buscas de IA
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Bloqueio de bots de redes sociais/scrapers agressivos (conforme solicitado)
+User-agent: Bytespider
+Disallow: /
+
+# Configurações para bots de busca principais
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Crawl-delay para bots de menor relevância para preservar recursos do servidor
+User-agent: YandexBot
+Crawl-delay: 10
+
+User-agent: Baiduspider
+Crawl-delay: 10
+
+User-agent: Mail.RU_Bot
+Crawl-delay: 10
+
+# Sitemaps - Referenciando as 3 variações principais
 Sitemap: https://www.supremasite.com.br/sitemap.xml
+Sitemap: https://www.supremasite.com.br/sitemap-cidades.xml
+Sitemap: https://www.supremasite.com.br/sitemap-servicos.xml

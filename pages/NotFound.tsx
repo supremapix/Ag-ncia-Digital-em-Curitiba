@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Home, ArrowLeft } from 'lucide-react';
 
 export const NotFound: React.FC = () => {
+  useEffect(() => {
+    document.title = "Página Não Encontrada | Suprema Site Express";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', "Desculpe, a página que você procura não foi encontrada. Volte para a página inicial da Suprema Site Express.");
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center text-center px-4">
       <div className="bg-white p-10 rounded-2xl shadow-xl border border-gray-100 max-w-lg w-full">

@@ -1,7 +1,15 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export const Privacy: React.FC = () => {
+  useEffect(() => {
+    document.title = "Política de Privacidade | Suprema Site Express";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', "Leia nossa política de privacidade e saiba como protegemos seus dados na Suprema Site Express.");
+    }
+  }, []);
+
   return (
     <div className="bg-white min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-4 max-w-4xl">

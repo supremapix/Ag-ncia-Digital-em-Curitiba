@@ -1,5 +1,5 @@
 
-import React, { useMemo } from 'react';
+import React, { useMemo, useEffect } from 'react';
 import { ExternalLink, TrendingUp, BarChart, CheckCircle, Smartphone, Globe, Shield, Zap } from 'lucide-react';
 import { LeadForm } from '../components/LeadForm';
 
@@ -51,64 +51,67 @@ const baseProjects: Project[] = [
 ];
 
 export const Portfolio: React.FC = () => {
-  const track1 = useMemo(() => [...baseProjects].sort(() => Math.random() - 0.5), []);
-  const track2 = useMemo(() => [...baseProjects].sort(() => Math.random() - 0.5), []);
-  const track3 = useMemo(() => [...baseProjects].sort(() => Math.random() - 0.5), []);
+  useEffect(() => {
+    document.title = "Portfólio de Sites Profissionais | Suprema Site Express";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', "Confira nosso portfólio com milhares de sites criados em todo o Brasil. Projetos de alta performance, SEO local e conversão garantida para sua empresa.");
+    }
+  }, []);
 
   const renderProjectCard = (project: any, index: number) => (
     <div 
       key={`${project.title}-${index}`}
-      className="group relative bg-white rounded-2xl md:rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-full"
+      className="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"
     >
-      <div className="h-32 md:h-48 relative overflow-hidden bg-gray-900">
+      <div className="h-48 md:h-56 relative overflow-hidden bg-gray-900">
         {/* Real Screenshot using WordPress mshots */}
         <img 
-          src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.url)}?w=600`}
+          src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.url)}?w=800`}
           alt={project.title}
-          className="w-full h-full object-cover object-top opacity-60 group-hover:opacity-40 group-hover:scale-110 transition-all duration-700"
+          className="w-full h-full object-cover object-top opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
           referrerPolicy="no-referrer"
           loading="lazy"
         />
         
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-80"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent opacity-60"></div>
         
-        <div className="absolute bottom-3 md:bottom-4 left-4 md:left-6 right-4 md:right-6">
-          <div className="flex items-center gap-2 md:gap-3">
-            <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:bg-brand-accent transition-colors">
-              <span className="text-sm md:text-lg font-black text-white group-hover:text-brand-dark">{project.title.charAt(0)}</span>
-            </div>
-            <div className="min-w-0">
-              <h3 className="text-xs md:text-sm font-black text-white truncate leading-none mb-1">
-                {project.title}
-              </h3>
-              <span className="text-[8px] md:text-[9px] font-black text-white/60 uppercase tracking-[0.15em] md:tracking-[0.2em]">{project.category}</span>
-            </div>
-          </div>
-        </div>
-        
-        {/* Hover Link - Touch friendly */}
+        {/* Hover Link - Premium Overlay */}
         <a 
           href={project.url} 
           target="_blank" 
           rel="noreferrer"
-          className="absolute inset-0 z-20 flex items-center justify-center bg-brand-primary/90 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"
+          className="absolute inset-0 z-20 flex items-center justify-center bg-brand-dark/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
-          <span className="bg-white text-brand-primary font-black px-4 md:px-6 py-2 rounded-full text-xs md:text-base flex items-center gap-2 transform translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
-            Ver Projeto <ExternalLink size={14} />
+          <span className="bg-white text-brand-dark font-black px-6 py-3 rounded-xl text-sm flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl">
+            Visitar Website <ExternalLink size={16} />
           </span>
         </a>
       </div>
 
-      <div className="p-4 md:p-6 flex-grow flex flex-col">
-        <div className="bg-green-50 border-l-4 border-green-500 p-2 md:p-3 mb-3 md:mb-4 rounded-r-lg">
-          <p className="text-[9px] md:text-[11px] text-green-800 font-bold leading-tight">
-            Crescimento de <span className="text-green-600 text-xs md:text-sm">{project.growth}</span> ao ano no Google.
-          </p>
+      <div className="p-6 flex-grow flex flex-col">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-10 h-10 rounded-xl bg-brand-primary/10 flex items-center justify-center text-brand-primary font-black">
+            {project.title.charAt(0)}
+          </div>
+          <div className="min-w-0">
+            <h3 className="text-base font-black text-brand-dark truncate leading-none mb-1">
+              {project.title}
+            </h3>
+            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">{project.category}</span>
+          </div>
         </div>
 
-        <div className="mt-auto flex flex-wrap gap-1 md:gap-1.5">
-          {project.tags.slice(0, 2).map((tag: string, i: number) => (
-            <span key={i} className="text-[8px] md:text-[9px] font-black uppercase tracking-wider bg-gray-100 text-gray-500 px-1.5 md:px-2 py-0.5 md:py-1 rounded-md">
+        <div className="bg-brand-light border-l-4 border-brand-accent p-3 mb-4 rounded-r-xl">
+          <div className="flex items-center gap-2 text-brand-dark font-bold text-xs">
+            <TrendingUp size={14} className="text-brand-accent" />
+            <span>Crescimento de <span className="text-brand-primary text-sm">{project.growth}</span></span>
+          </div>
+        </div>
+
+        <div className="mt-auto flex flex-wrap gap-2">
+          {project.tags.map((tag: string, i: number) => (
+            <span key={i} className="text-[9px] font-black uppercase tracking-wider bg-gray-50 text-gray-400 border border-gray-100 px-2 py-1 rounded-lg">
               {tag}
             </span>
           ))}
@@ -127,8 +130,8 @@ export const Portfolio: React.FC = () => {
             Portfólio de Alta Performance
           </span>
           <h1 className="text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-[0.9]">
-            MILHARES DE SITES <br />
-            <span className="text-brand-accent italic">QUE VENDEM</span>
+            Portfólio de Sites Profissionais e <br />
+            <span className="text-brand-accent italic">Cases de Sucesso</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto font-medium leading-relaxed">
             Nossa fábrica de resultados não para. Explore uma pequena amostra dos projetos que dominam o Google em todo o Brasil.
@@ -136,48 +139,30 @@ export const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Infinite Wall Section */}
-      <section className="py-12 md:py-20 bg-gray-50 overflow-hidden relative">
-        <div className="container mx-auto px-4 h-[600px] md:h-[1000px] flex flex-row gap-4 md:gap-10 location-mask pause-on-hover">
-          {/* Column 1 - Primary on Mobile */}
-          <div className="flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '4s' } as any}>
-            {[...track1, ...track1].map((p, i) => (
-              <div key={`t1-${i}`} className="w-full">{renderProjectCard(p, i)}</div>
-            ))}
-          </div>
-          
-          {/* Column 2 - Visible from md up */}
-          <div className="hidden md:flex flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '6s' } as any}>
-            {[...track2, ...track2].map((p, i) => (
-              <div key={`t2-${i}`} className="w-full">{renderProjectCard(p, i)}</div>
-            ))}
+      {/* Projects Grid Section */}
+      <section className="py-24 bg-gray-50 relative">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-4 tracking-tighter">
+                Galeria de Resultados: Projetos que <span className="text-brand-primary">Dominam o Google</span>
+              </h2>
+              <p className="text-gray-600 font-medium">
+                Explore nossa seleção completa de cases de sucesso. Projetos desenvolvidos com foco total em conversão, velocidade e posicionamento no Google.
+              </p>
+            </div>
+            <div className="bg-white px-6 py-3 rounded-2xl border border-gray-100 shadow-sm flex items-center gap-3">
+              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-bold text-gray-900">{baseProjects.length} Projetos Ativos</span>
+            </div>
           </div>
 
-          {/* Column 3 - Visible from lg up */}
-          <div className="hidden lg:flex flex-1 flex flex-col gap-4 md:gap-8 animate-v will-change-transform" style={{ '--duration': '5s' } as any}>
-            {[...track3, ...track3].map((p, i) => (
-              <div key={`t3-${i}`} className="w-full">{renderProjectCard(p, i)}</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+            {baseProjects.map((project, index) => (
+              <div key={index} className="h-full">
+                {renderProjectCard(project, index)}
+              </div>
             ))}
-          </div>
-        </div>
-
-        {/* Floating Stats Overlay - Optimized for Mobile */}
-        <div className="absolute bottom-10 md:bottom-20 left-1/2 -translate-x-1/2 z-30 w-full max-w-4xl px-4">
-          <div className="bg-brand-dark/95 backdrop-blur-2xl border border-white/10 p-6 md:p-8 rounded-[2rem] md:rounded-[3rem] shadow-2xl flex flex-row justify-around md:justify-center gap-4 md:gap-12 text-center">
-            <div className="flex-1 md:flex-none">
-              <span className="block text-2xl md:text-4xl font-black text-brand-accent tracking-tighter">1.1k+</span>
-              <span className="text-[8px] md:text-[10px] text-gray-500 font-bold uppercase tracking-widest">Sites</span>
-            </div>
-            <div className="w-px h-8 md:h-12 bg-white/10"></div>
-            <div className="flex-1 md:flex-none">
-              <span className="block text-2xl md:text-4xl font-black text-white tracking-tighter">1900%</span>
-              <span className="text-[8px] md:text-[10px] text-gray-500 font-bold uppercase tracking-widest">ROI Max</span>
-            </div>
-            <div className="w-px h-8 md:h-12 bg-white/10"></div>
-            <div className="flex-1 md:flex-none">
-              <span className="block text-2xl md:text-4xl font-black text-brand-primary tracking-tighter">48H</span>
-              <span className="text-[8px] md:text-[10px] text-gray-500 font-bold uppercase tracking-widest">Entrega</span>
-            </div>
           </div>
         </div>
       </section>

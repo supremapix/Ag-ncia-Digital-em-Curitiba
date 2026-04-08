@@ -100,7 +100,7 @@ export const ReviewsTicker: React.FC = () => {
                 alt="Google" 
                 className="h-8" 
               />
-              <h2 className="text-2xl md:text-3xl font-black text-gray-900 tracking-tight">Avaliações no Google</h2>
+              <h3 className="text-2xl md:text-3xl font-black text-gray-900 tracking-tight">Avaliações no Google</h3>
             </div>
             <div className="flex items-center gap-4">
               <div className="text-4xl md:text-5xl font-black text-gray-900">4.8</div>

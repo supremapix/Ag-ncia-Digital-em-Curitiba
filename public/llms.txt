@@ -1,0 +1,34 @@
+# Suprema Site Express
+
+> Agência digital brasileira especializada em criação de sites profissionais, lojas virtuais e SEO local de alta performance. Focada em resultados reais para PMEs, com entrega express em 48 horas e tecnologia de ponta (React + Cloud).
+
+## Serviços
+- [Criação de Sites Profissionais](https://www.supremasite.com.br/servicos#criacao-de-sites): Sites institucionais rápidos e otimizados.
+- [Lojas Virtuais (E-commerce)](https://www.supremasite.com.br/servicos#lojas-virtuais): Plataformas de vendas robustas e seguras.
+- [Landing Pages](https://www.supremasite.com.br/servicos#landing-pages): Páginas de alta conversão para tráfego pago.
+- [SEO Local e Marketing Digital](https://www.supremasite.com.br/servicos#seo-local): Domínio do Google Maps e buscas regionais.
+
+## Cobertura Geográfica
+Atendimento em todo o território brasileiro, com landing pages otimizadas para mais de 300 cidades, incluindo:
+- [Curitiba, PR](https://www.supremasite.com.br/site-em/curitiba)
+- [Londrina, PR](https://www.supremasite.com.br/site-em/londrina)
+- [São Paulo, SP](https://www.supremasite.com.br/site-em/sao-paulo)
+- [Florianópolis, SC](https://www.supremasite.com.br/site-em/florianopolis)
+- [Porto Alegre, RS](https://www.supremasite.com.br/site-em/porto-alegre)
+
+## Sobre a Empresa
+- [Nossa História e Diferenciais](https://www.supremasite.com.br/sobre): Foco em performance técnica e atendimento humanizado.
+- [Política de Privacidade](https://www.supremasite.com.br/privacidade): Compromisso com a segurança de dados.
+
+## Portfólio
+- [Casos de Sucesso](https://www.supremasite.com.br/portfolio): Projetos reais que geraram crescimento de visibilidade de até 1900%.
+
+## Contato
+- [Página de Contato](https://www.supremasite.com.br/contato)
+- WhatsApp: [+55 41 98700-1004](https://wa.me/5541987001004)
+- E-mail: supremamidiabatel@gmail.com
+
+## Informações Técnicas para LLMs
+- **Tecnologia:** React, Vite, Tailwind CSS, Cloud Infrastructure.
+- **Performance:** Foco em Core Web Vitals e carregamento em < 1s.
+- **SEO:** Implementação profunda de JSON-LD e dados estruturados.

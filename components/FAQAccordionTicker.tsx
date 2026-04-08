@@ -60,7 +60,7 @@ export const FAQAccordionTicker: React.FC = () => {
   return (
     <section className="py-24 bg-gray-50 overflow-hidden relative">
       <div className="container mx-auto px-4 mb-16 text-center">
-        <h2 className="text-4xl md:text-6xl font-black text-brand-dark mb-4 tracking-tighter uppercase">FAQ <span className="text-brand-primary">DINÂMICO</span></h2>
+        <h3 className="text-4xl md:text-6xl font-black text-brand-dark mb-4 tracking-tighter uppercase">FAQ <span className="text-brand-primary">DINÂMICO</span></h3>
         <p className="text-gray-500 font-medium">As principais dúvidas sobre sites e visibilidade no sul do Brasil.</p>
       </div>
 

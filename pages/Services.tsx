@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { VideoPlayer } from '../components/VideoPlayer';
 import { Accordion } from '../components/Accordion';
 import { LeadForm } from '../components/LeadForm';
@@ -7,6 +7,14 @@ import { LeadForm } from '../components/LeadForm';
 import { TrendingUp, Target, Zap, Award, CheckCircle } from 'lucide-react';
 
 export const Services: React.FC = () => {
+  useEffect(() => {
+    document.title = "Nossos Serviços | Criação de Sites e Marketing Digital | Suprema Site";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', "Conheça nossas soluções em criação de sites profissionais, SEO local, Google Meu Negócio e marketing digital para empresas que buscam resultados reais.");
+    }
+  }, []);
+
   const faqItems = [
     {
       question: "O site será meu ou pagarei aluguel?",
@@ -24,7 +32,7 @@ export const Services: React.FC = () => {
       <div className="bg-brand-dark text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-brand-primary opacity-5 transform -skew-y-6 translate-y-20"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-black mb-6 animate-slide-up">Nossas Soluções Digitais</h1>
+          <h1 className="text-4xl md:text-6xl font-black mb-6 animate-slide-up">Nossas Soluções Digitais: Criação de Sites e Marketing</h1>
           <p className="text-gray-300 max-w-3xl mx-auto text-xl leading-relaxed animate-slide-up" style={{ animationDelay: '0.1s' }}>
             Não criamos apenas sites. Construímos máquinas de vendas capazes de gerar um <strong>crescimento de até 1900%</strong> na sua presença online.
           </p>
@@ -35,6 +43,9 @@ export const Services: React.FC = () => {
         
         {/* Highlight Grid */}
         <div className="grid md:grid-cols-4 gap-6 mb-20 -mt-24 relative z-20">
+           <div className="hidden">
+             <h2>Serviços Especializados para o Crescimento da sua Empresa</h2>
+           </div>
            {[
              { icon: <TrendingUp className="text-green-500" />, title: "+1900% Visibilidade", desc: "Performance de SEO Local" },
              { icon: <Zap className="text-brand-accent" />, title: "Entrega 48h", desc: "Agilidade absoluta" },

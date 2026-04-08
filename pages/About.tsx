@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { VideoPlayer } from '../components/VideoPlayer';
 import { Accordion } from '../components/Accordion';
 import { CheckCircle, Award, Users, Clock } from 'lucide-react';
 
 export const About: React.FC = () => {
+  useEffect(() => {
+    document.title = "Sobre Nós | Suprema Site Express - Tecnologia e Performance";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', "Conheça a Suprema Site Express. Somos especialistas em criação de sites profissionais com foco em resultados, velocidade e SEO local.");
+    }
+  }, []);
+
   const faqItems = [
     {
       question: "Onde a Suprema Site está localizada?",

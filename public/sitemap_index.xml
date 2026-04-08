@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sitemap_index.xml - Índice Geral de Sitemaps para supremasite.com.br -->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.supremasite.com.br/sitemap_pages.xml</loc>
+    <lastmod>2026-04-08</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.supremasite.com.br/sitemap_cidades.xml</loc>
+    <lastmod>2026-04-08</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.supremasite.com.br/sitemap_bairros.xml</loc>
+    <lastmod>2026-04-08</lastmod>
+  </sitemap>
+</sitemapindex>

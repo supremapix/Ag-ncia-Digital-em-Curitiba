@@ -1,8 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
 import { VideoPlayer } from '../components/VideoPlayer';
 
 export const Contact: React.FC = () => {
+  useEffect(() => {
+    document.title = "Contato | Suprema Site Express - Criação de Sites em 48h";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', "Entre em contato com a Suprema Site Express. Solicite um orçamento para a criação do seu site profissional ou loja virtual com entrega expressa em 48h.");
+    }
+  }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -24,12 +32,12 @@ export const Contact: React.FC = () => {
   return (
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center text-brand-dark mb-12">Fale Conosco</h1>
+        <h1 className="text-4xl font-bold text-center text-brand-dark mb-12">Fale Conosco: Solicite seu Orçamento de Site Profissional</h1>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Form */}
           <div className="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
-            <h2 className="text-2xl font-bold mb-6 text-brand-dark">Envie uma mensagem</h2>
+            <h2 className="text-2xl font-bold mb-6 text-brand-dark">Envie uma Mensagem para nossa Equipe de Especialistas</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
@@ -91,12 +99,12 @@ export const Contact: React.FC = () => {
           {/* Contact Info & Pix */}
           <div className="space-y-8">
             <div className="bg-brand-dark text-white p-8 rounded-xl shadow-lg">
-              <h2 className="text-2xl font-bold mb-6">Informações de Contato</h2>
+              <h2 className="text-2xl font-bold mb-6">Informações de Contato e Localização em Curitiba</h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <MapPin className="text-brand-accent mt-1" size={24} />
                   <div>
-                    <h3 className="font-bold text-lg">Endereço</h3>
+                    <h3 className="font-bold text-lg">Endereço, Telefone e E-mail da Suprema Site Express</h3>
                     <p className="text-gray-300">Av. Sete de Setembro, 2775 - 9º andar</p>
                     <p className="text-gray-400 text-sm">Acesso pelo elevador azul ou vermelho</p>
                     <p className="text-gray-300">Rebouças, Curitiba - PR, 80230-010</p>
@@ -122,7 +130,7 @@ export const Contact: React.FC = () => {
 
             {/* Payment / Pix Info */}
             <div className="bg-white border border-brand-accent p-8 rounded-xl shadow-md">
-              <h3 className="text-xl font-bold text-brand-dark mb-4 text-center border-b pb-2">Dados para Pagamento (PIX)</h3>
+              <h2 className="text-xl font-bold text-brand-dark mb-4 text-center border-b pb-2">Dados para Pagamento e Faturamento (PIX)</h2>
               <div className="space-y-3 text-center">
                 <p className="text-sm text-gray-500">Razão Social</p>
                 <p className="font-bold text-gray-800">OSKAFI WEB SITES LTDA ME</p>

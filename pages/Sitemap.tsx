@@ -1,10 +1,18 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { cities, scCities, rsCities, neighborhoods, slugify } from '../data/locations';
 import { MapPin, Globe, Landmark, Search, ChevronRight } from 'lucide-react';
 
 export const Sitemap: React.FC = () => {
+  useEffect(() => {
+    document.title = "Mapa do Site | Suprema Site Express";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', "Navegue por todas as páginas e localidades atendidas pela Suprema Site Express. Encontre o serviço ideal para sua empresa.");
+    }
+  }, []);
+
   const [searchTerm, setSearchTerm] = useState('');
 
   const filterList = (list: string[]) => 
