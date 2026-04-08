@@ -19,7 +19,7 @@ export const blogPosts: BlogPostContent[] = [
     date: "08 Abr, 2026",
     author: "Omar Skafi",
     category: "Negócios",
-    image: "https://images.unsplash.com/photo-1551288049-bbbda5366392?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800",
     tags: ["Preço Site", "Investimento Digital", "Agência Web"],
     content: `
       <h2>O Mercado de Desenvolvimento Web em 2025</h2>
