@@ -22,7 +22,7 @@ const baseProjects: Project[] = [
   { url: "https://www.bsescapamentos.com.br/", title: "BS Escapamentos", category: "Serviços Automotivos", growth: "680%", tags: ["Local", "Ads"] },
   { url: "https://www.impactorecuperacoes.com.br", title: "Impacto Recuperações", category: "Recuperação de Crédito", growth: "540%", tags: ["B2B", "Performance"] },
   { url: "https://suncellbrasil.com.br/", title: "Suncell Brasil", category: "Energia Solar", growth: "920%", tags: ["Sustentabilidade", "SEO"] },
-  { url: "https://autosocorro.aloanuncio.com", title: "Auto Socorro", category: "Guincho 24h", growth: "1150%", tags: ["Emergência", "Ads"] },
+  { url: "https://autosocorro.aloanuncio.com.br/", title: "Auto Socorro", category: "Guincho 24h", growth: "1150%", tags: ["Emergência", "Ads"] },
   { url: "https://www.celularescuritibashopcell.com.br", title: "Shop Cell", category: "Assistência Técnica", growth: "470%", tags: ["E-commerce", "Local"] },
   { url: "https://www.divasespacodabeleza.com.br", title: "Divas Beleza", category: "Salão de Beleza", growth: "390%", tags: ["Estética", "Design"] },
   { url: "https://www.barbeiro.curitiba.br/", title: "Barbeiro Curitiba", category: "Beleza e Estética", growth: "590%", tags: ["SEO Local", "UX"] },
@@ -36,6 +36,13 @@ const baseProjects: Project[] = [
   { url: "https://www.engenhariadopaver.com.br/", title: "Engenharia do Paver", category: "Construção Civil", growth: "620%", tags: ["Infraestrutura", "B2B"] },
   { url: "https://www.mundodoscalheiros.com.br/", title: "Mundo dos Calheiros", category: "Indústria e Serviços", growth: "410%", tags: ["Indústria", "SEO"] },
   { url: "https://www.atuarios.com.br/", title: "Atuários Independentes", category: "Consultoria", growth: "305%", tags: ["Finanças", "Corporate"] },
+  { url: "https://www.kydrywall.com.br/", title: "KY Drywall", category: "Gesso e Drywall", growth: "610%", tags: ["Construção", "Design"] },
+  { url: "https://www.rvmpersianaspr.com.br/", title: "RVM Persianas PR", category: "Decoração", growth: "820%", tags: ["Local", "Ads"] },
+  { url: "https://www.rvmpersianas.com.br/", title: "RVM Persianas", category: "Decoração Premium", growth: "950%", tags: ["E-commerce", "SEO"] },
+  { url: "https://www.vidracarianatal.com.br", title: "Vidraçaria Natal", category: "Vidraçaria", growth: "430%", tags: ["Local", "Serviços"] },
+  { url: "https://www.ecoservy.com.br", title: "Ecoservy", category: "Soluções Ambientais", growth: "315%", tags: ["B2B", "Sustentabilidade"] },
+  { url: "https://servicos.araujocalhas.com.br/", title: "Araújo Calhas Express", category: "Calhas e Rufos", growth: "1250%", tags: ["Ads", "Performance"] },
+  { url: "https://calha.aloanuncio.com.br", title: "Calha Alô Anúncio", category: "Serviços 24h", growth: "1400%", tags: ["Emergência", "Ads"] },
   { url: "https://rvmpersianas.app.br", title: "RVM Persianas App", category: "Decoração", growth: "780%", tags: ["App", "Mobile"] },
   { url: "https://servicoshidraulicosadp.app.br/", title: "ADP Hidráulica", category: "Manutenção 24h", growth: "940%", tags: ["Emergência", "Ads"] },
   { url: "https://www.cicarelli.adv.br/", title: "Cicarelli Advogados", category: "Jurídico", growth: "330%", tags: ["Direito", "Corporate"] },
@@ -49,6 +56,9 @@ const baseProjects: Project[] = [
   { url: "https://fotometal.com.br", title: "Fotometal", category: "Indústria Gráfica", growth: "320%", tags: ["Indústria", "B2B"] },
   { url: "https://www.moraesacrilicos.com.br", title: "Moraes Acrílicos", category: "Produtos Personalizados", growth: "405%", tags: ["E-commerce", "Design"] },
 ];
+
+import { TypewriterText } from '../src/components/TypewriterText';
+import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
 
 export const Portfolio: React.FC = () => {
   useEffect(() => {
@@ -133,9 +143,34 @@ export const Portfolio: React.FC = () => {
             Portfólio de Sites Profissionais e <br />
             <span className="text-brand-accent italic">Cases de Sucesso</span>
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto font-medium leading-relaxed">
-            Nossa fábrica de resultados não para. Explore uma pequena amostra dos projetos que dominam o Google em todo o Brasil.
-          </p>
+          <div className="min-h-[60px] mb-10">
+            <TypewriterText 
+              phrases={PERSUASIVE_PHRASES}
+              className="text-xl text-gray-400 max-w-3xl mx-auto font-medium leading-relaxed"
+              speed={40}
+              delay={3000}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Highlight Section */}
+      <section className="bg-brand-primary py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="p-6 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20">
+              <span className="block text-4xl md:text-6xl font-black text-white tracking-tighter mb-2">+3.800</span>
+              <span className="text-brand-accent font-bold uppercase tracking-widest text-xs">Sites feitos em nossa jornada</span>
+            </div>
+            <div className="p-6 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20">
+              <span className="block text-4xl md:text-6xl font-black text-white tracking-tighter mb-2">+1.100</span>
+              <span className="text-brand-accent font-bold uppercase tracking-widest text-xs">Sites entregues este ano</span>
+            </div>
+            <div className="p-6 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20">
+              <span className="block text-4xl md:text-6xl font-black text-white tracking-tighter mb-2">100%</span>
+              <span className="text-brand-accent font-bold uppercase tracking-widest text-xs">Foco em Performance e ROI</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -145,7 +180,7 @@ export const Portfolio: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-4 tracking-tighter">
-                Galeria de Resultados: Projetos que <span className="text-brand-primary">Dominam o Google</span>
+                Alguns de nossos <span className="text-brand-primary">Projetos Ativos</span>
               </h2>
               <p className="text-gray-600 font-medium">
                 Explore nossa seleção completa de cases de sucesso. Projetos desenvolvidos com foco total em conversão, velocidade e posicionamento no Google.
@@ -153,7 +188,7 @@ export const Portfolio: React.FC = () => {
             </div>
             <div className="bg-white px-6 py-3 rounded-2xl border border-gray-100 shadow-sm flex items-center gap-3">
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-bold text-gray-900">{baseProjects.length} Projetos Ativos</span>
+              <span className="text-sm font-bold text-gray-900">Exibindo {baseProjects.length} Cases de Sucesso</span>
             </div>
           </div>
 

@@ -3,6 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { getNameFromSlug, getRegionFromSlug } from '../data/locations';
 import { cityData } from '../data/cityData';
 import { LeadForm } from '../components/LeadForm';
+import { TypewriterText } from '../src/components/TypewriterText';
+import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
 import { 
   Layout, Smartphone, Search, Zap, Target, Clock, Headphones, TrendingUp, ChevronRight, Star
 } from 'lucide-react';
@@ -139,9 +141,14 @@ export const LocationSEO: React.FC = () => {
             Criação de Sites Profissionais em <br/>
             <span className="text-brand-accent uppercase">{locationName}, {richData?.stateSigla || region}</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed mb-12 font-medium">
-            Sites profissionais para empresas em <strong>{locationName}</strong>. Entrega em 48h, SEO local para {richData?.neighborhoods.slice(0, 3).join(', ') || 'principais bairros'} e toda a {richData?.region || 'região'}.
-          </p>
+          <div className="min-h-[60px] mb-12">
+            <TypewriterText 
+              phrases={PERSUASIVE_PHRASES}
+              className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium"
+              speed={40}
+              delay={3000}
+            />
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://wa.me/5541987001004" className="shimmer-btn text-brand-dark font-black px-10 py-5 rounded-xl text-lg shadow-2xl hover:scale-105 transition-transform">
               Solicitar Orçamento em {locationName}

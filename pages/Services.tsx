@@ -6,6 +6,9 @@ import { LeadForm } from '../components/LeadForm';
 // Added CheckCircle to imports
 import { TrendingUp, Target, Zap, Award, CheckCircle } from 'lucide-react';
 
+import { TypewriterText } from '../src/components/TypewriterText';
+import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
+
 export const Services: React.FC = () => {
   useEffect(() => {
     document.title = "Nossos Serviços | Criação de Sites e Marketing Digital | Suprema Site";
@@ -33,9 +36,14 @@ export const Services: React.FC = () => {
         <div className="absolute inset-0 bg-brand-primary opacity-5 transform -skew-y-6 translate-y-20"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-black mb-6 animate-slide-up">Nossas Soluções Digitais: Criação de Sites e Marketing</h1>
-          <p className="text-gray-300 max-w-3xl mx-auto text-xl leading-relaxed animate-slide-up" style={{ animationDelay: '0.1s' }}>
-            Não criamos apenas sites. Construímos máquinas de vendas capazes de gerar um <strong>crescimento de até 1900%</strong> na sua presença online.
-          </p>
+          <div className="min-h-[60px] mb-6">
+            <TypewriterText 
+              phrases={PERSUASIVE_PHRASES}
+              className="text-gray-300 max-w-3xl mx-auto text-xl leading-relaxed"
+              speed={40}
+              delay={3000}
+            />
+          </div>
         </div>
       </div>
 

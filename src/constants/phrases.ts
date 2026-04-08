@@ -1,0 +1,28 @@
+
+export const PERSUASIVE_PHRASES = [
+  "Criação de sites de alta performance em 48 horas.",
+  "Domine a primeira página do Google com SEO Local.",
+  "Transformamos cliques em clientes reais e recorrentes.",
+  "Tecnologia React para carregamento instantâneo e seguro.",
+  "Sua empresa invisível é lucro para a concorrência.",
+  "Sites otimizados para conversão máxima e baixo bounce rate.",
+  "Design focado em UX para uma experiência de usuário impecável.",
+  "Aumente seu faturamento com uma presença digital sólida.",
+  "Otimização Core Web Vitals para ranking superior no Google.",
+  "Landing Pages que vendem enquanto você dorme.",
+  "Estrutura técnica impecável para indexação imediata.",
+  "Mais de 5.000 projetos entregues com sucesso no Brasil.",
+  "Sua marca merece a melhor tecnologia do mercado web.",
+  "Sites responsivos que funcionam perfeitamente em qualquer tela.",
+  "Segurança SSL e hospedagem premium inclusas no projeto.",
+  "Suporte técnico especializado e atendimento personalizado.",
+  "Foco total em ROI e crescimento acelerado do seu negócio.",
+  "Não apenas um site, mas uma máquina de gerar leads.",
+  "Arquitetura de informação planejada para conversão.",
+  "Velocidade luz: seu site carregando em menos de 1 segundo.",
+  "Integração completa com WhatsApp e redes sociais.",
+  "Relatórios de performance e acompanhamento de resultados.",
+  "O melhor custo-benefício para sua presença digital.",
+  "Inovação constante para manter sua empresa no topo.",
+  "Suprema Site Express: a evolução do seu negócio online."
+];

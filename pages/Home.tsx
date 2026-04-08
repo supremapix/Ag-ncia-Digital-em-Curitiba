@@ -9,6 +9,9 @@ import { FAQAccordionTicker } from '../components/FAQAccordionTicker';
 import { StaticFAQ } from '../components/StaticFAQ';
 import { ReviewsTicker } from '../components/ReviewsTicker';
 
+import { TypewriterText } from '../src/components/TypewriterText';
+import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
+
 export const Home: React.FC = () => {
   useEffect(() => {
     document.title = "Criação de Sites Profissionais em 48h | Suprema Site";
@@ -32,9 +35,14 @@ export const Home: React.FC = () => {
                 <h1 className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9] tracking-tighter">
                   Criação de Sites Profissionais e Rápidos | <span className="text-brand-primary">Suprema Site</span>
                 </h1>
-                <h2 className="text-xl lg:text-2xl text-gray-400 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                  Soluções em Desenvolvimento Web para Pequenas e Médias Empresas brasileiras que precisam de presença digital de alto impacto.
-                </h2>
+                <div className="min-h-[100px] md:min-h-[80px] mb-10">
+                  <TypewriterText 
+                    phrases={PERSUASIVE_PHRASES}
+                    className="text-xl lg:text-2xl text-gray-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium"
+                    speed={40}
+                    delay={3000}
+                  />
+                </div>
                 <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
                   <a 
                     href="https://wa.me/5541987001004" 

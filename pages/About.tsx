@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { CheckCircle, Award, Users, Clock, Shield, Zap, Target, MapPin, Phone, Mail, FileText, BarChart, Search, Globe, TrendingUp } from 'lucide-react';
 import { motion } from 'motion/react';
 
+import { TypewriterText } from '../src/components/TypewriterText';
+import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
+
 export const About: React.FC = () => {
   useEffect(() => {
     document.title = "Quem Somos | Suprema Site Express - Autoridade em Criação de Sites";
@@ -90,9 +93,14 @@ export const About: React.FC = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 max-w-3xl mx-auto text-center leading-tight">
             Quem somos: a Suprema Site Express e nossa missão digital
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto text-center">
-            Transformando a presença online de empresas brasileiras com tecnologia de ponta e foco em resultados reais.
-          </p>
+          <div className="min-h-[60px]">
+            <TypewriterText 
+              phrases={PERSUASIVE_PHRASES}
+              className="text-xl text-gray-300 max-w-2xl mx-auto text-center block"
+              speed={40}
+              delay={3000}
+            />
+          </div>
         </div>
       </section>
 

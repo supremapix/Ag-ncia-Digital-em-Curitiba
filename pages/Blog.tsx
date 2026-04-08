@@ -3,6 +3,9 @@ import { Calendar, User, ArrowRight, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogData';
 
+import { TypewriterText } from '../src/components/TypewriterText';
+import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
+
 export const Blog: React.FC = () => {
   useEffect(() => {
     document.title = "Blog | Suprema Site Express - Dicas de SEO e Criação de Sites";
@@ -18,9 +21,14 @@ export const Blog: React.FC = () => {
       <section className="bg-brand-dark text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter">Blog Suprema Site Express</h1>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Estratégias de marketing digital, tecnologia e SEO para acelerar o crescimento da sua empresa.
-          </p>
+          <div className="min-h-[60px]">
+            <TypewriterText 
+              phrases={PERSUASIVE_PHRASES}
+              className="text-xl text-gray-400 max-w-2xl mx-auto"
+              speed={40}
+              delay={3000}
+            />
+          </div>
         </div>
       </section>
 
