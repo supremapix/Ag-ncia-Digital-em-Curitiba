@@ -6,6 +6,7 @@ import { LeadForm } from '../components/LeadForm';
 import { VideoPlayer } from '../components/VideoPlayer';
 import { LocationTicker } from '../components/LocationTicker';
 import { FAQAccordionTicker } from '../components/FAQAccordionTicker';
+import { StaticFAQ } from '../components/StaticFAQ';
 import { ReviewsTicker } from '../components/ReviewsTicker';
 
 export const Home: React.FC = () => {
@@ -188,27 +189,8 @@ export const Home: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-white">
-        <div className="container mx-auto px-4 pt-24 text-center">
-           <h2 className="text-4xl md:text-6xl font-black text-brand-dark mb-4 tracking-tighter">Perguntas Frequentes sobre Criação de Sites e Marketing Digital</h2>
-           <h3 className="text-xl text-gray-500 font-medium mb-8">Dúvidas Comuns sobre Prazos, Custos e Manutenção de Sites</h3>
-           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto text-left mb-16">
-              <div className="p-6 bg-gray-50 rounded-2xl border border-gray-100">
-                 <h4 className="font-bold text-brand-dark mb-2">Quanto custa para criar um site profissional para minha empresa?</h4>
-                 <p className="text-sm text-gray-500">Nossos projetos são personalizados, focando no melhor custo-benefício para o seu nicho.</p>
-              </div>
-              <div className="p-6 bg-gray-50 rounded-2xl border border-gray-100">
-                 <h4 className="font-bold text-brand-dark mb-2">O site já vem otimizado para aparecer na primeira página do Google?</h4>
-                 <p className="text-sm text-gray-500">Sim, aplicamos SEO técnico e semântico desde a primeira linha de código.</p>
-              </div>
-              <div className="p-6 bg-gray-50 rounded-2xl border border-gray-100">
-                 <h4 className="font-bold text-brand-dark mb-2">Terei suporte técnico após a entrega do meu projeto digital?</h4>
-                 <p className="text-sm text-gray-500">Suporte humanizado via WhatsApp para garantir que seu site nunca pare de vender.</p>
-              </div>
-           </div>
-        </div>
-        <FAQAccordionTicker />
-      </section>
+      <StaticFAQ />
+      <FAQAccordionTicker />
 
       {/* Final CTA Section */}
       <section className="py-24 bg-brand-primary text-white text-center relative overflow-hidden">
