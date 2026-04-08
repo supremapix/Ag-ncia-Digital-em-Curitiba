@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { CheckCircle, Award, Users, Clock, Shield, Zap, Target, MapPin, Phone, Mail, FileText } from 'lucide-react';
+import { CheckCircle, Award, Users, Clock, Shield, Zap, Target, MapPin, Phone, Mail, FileText, BarChart, Search, Globe, TrendingUp } from 'lucide-react';
+import { motion } from 'motion/react';
 
 export const About: React.FC = () => {
   useEffect(() => {
@@ -19,16 +20,18 @@ export const About: React.FC = () => {
 
   const team = [
     {
-      name: "Ricardo Santos",
-      role: "Fundador e Especialista em Sites",
-      bio: "Com vasta experiência em arquitetura de sistemas e visão de negócios, lidera a estratégia técnica da agência.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400"
+      name: "Omar Skafi",
+      role: "Analista e Fundador",
+      bio: "Especialista em análise de mercado e estratégia digital, liderando a visão de crescimento da agência.",
+      icon: <BarChart size={64} className="text-brand-primary" />,
+      color: "bg-blue-50"
     },
     {
-      name: "Ana Paula Ribeiro",
-      role: "Especialista em SEO e Performance",
-      bio: "Especialista em algoritmos de busca e comportamento do consumidor digital, focada em gerar ROI real para nossos clientes.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400"
+      name: "Lizdaiane",
+      role: "Especialista em SEO",
+      bio: "Expert em otimização para motores de busca e performance, garantindo que nossos clientes dominem o Google.",
+      icon: <TrendingUp size={64} className="text-brand-accent" />,
+      color: "bg-amber-50"
     }
   ];
 
@@ -151,13 +154,28 @@ export const About: React.FC = () => {
         <h2 className="text-3xl font-bold text-brand-dark mb-12 text-center">Nossa equipe</h2>
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {team.map((member, idx) => (
-            <div key={idx} className="flex flex-col items-center text-center">
-              <img 
-                src={member.image} 
-                alt={member.name} 
-                className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-brand-primary/10"
-                referrerPolicy="no-referrer"
-              />
+            <div key={idx} className="flex flex-col items-center text-center group">
+              <motion.div 
+                initial={{ scale: 0.8, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.5, delay: idx * 0.2 }}
+                className={`w-48 h-48 rounded-full ${member.color} flex items-center justify-center mb-6 border-4 border-brand-primary/10 shadow-inner overflow-hidden relative`}
+              >
+                <motion.div
+                  animate={{ 
+                    y: [0, -10, 0],
+                    rotate: [0, 5, -5, 0]
+                  }}
+                  transition={{ 
+                    duration: 4, 
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                >
+                  {member.icon}
+                </motion.div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent pointer-events-none"></div>
+              </motion.div>
               <h3 className="text-2xl font-bold text-brand-dark mb-2">{member.name}</h3>
               <p className="text-brand-primary font-medium mb-4">{member.role}</p>
               <p className="text-gray-600">{member.bio}</p>
