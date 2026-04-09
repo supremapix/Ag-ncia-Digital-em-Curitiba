@@ -12,6 +12,7 @@ interface Project {
 }
 
 const baseProjects: Project[] = [
+  { url: "https://www.aloanuncio.com.br/", title: "Alô Anúncio", category: "Portal de Classificados", growth: "2500%", tags: ["Destaque", "Portal", "SEO"] },
   { url: "https://www.bcrefrigeracaosc.com.br", title: "BC Refrigeração", category: "Climatização", growth: "1900%", tags: ["SEO", "Performance"] },
   { url: "https://barbeariabarbercue.shop", title: "Barber Cue", category: "Barbearia Premium", growth: "850%", tags: ["Design", "Local"] },
   { url: "https://www.servicosadp.shop", title: "Serviços ADP", category: "Manutenção Express", growth: "1200%", tags: ["Ads", "Conversão"] },
@@ -57,7 +58,8 @@ const baseProjects: Project[] = [
   { url: "https://www.moraesacrilicos.com.br", title: "Moraes Acrílicos", category: "Produtos Personalizados", growth: "405%", tags: ["E-commerce", "Design"] },
   { url: "https://www.associacaobarnabe.org", title: "Associação Barnabé", category: "ONG / Social", growth: "210%", tags: ["Social", "Institucional"] },
   { url: "https://lavanderias.aloanuncio.com.br/", title: "Lavanderias Alô Anúncio", category: "Lavanderia", growth: "640%", tags: ["Local", "Ads"] },
-  { url: "https://agroarkafla.com.br", title: "Agro Arkafla", category: "Agronegócio", growth: "380%", tags: ["Agro", "B2B"] },
+  { url: "https://www.agroarkafla.com/", title: "Agro Arkafla Global", category: "Agronegócio", growth: "380%", tags: ["Agro", "B2B"] },
+  { url: "https://www.agroarkafla.com.br/", title: "Agro Arkafla Brasil", category: "Agronegócio", growth: "380%", tags: ["Agro", "B2B"] },
   { url: "https://servicosnobairro.com.br", title: "Serviços no Bairro", category: "Guia Local", growth: "1550%", tags: ["Local", "SEO"] },
   { url: "https://prodentcuritiba.com.br", title: "Prodent Curitiba", category: "Odontologia", growth: "420%", tags: ["Saúde", "Local"] },
   { url: "https://xiaomishopcell.com", title: "Xiaomi Shop Cell", category: "Eletrônicos", growth: "890%", tags: ["E-commerce", "Xiaomi"] },
@@ -228,7 +230,7 @@ export const Portfolio: React.FC = () => {
             </div>
             <div className="bg-white px-6 py-3 rounded-2xl border border-gray-100 shadow-sm flex items-center gap-3">
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-bold text-gray-900">Exibindo {baseProjects.length} Cases de Sucesso</span>
+              <span className="text-sm font-bold text-gray-900">Exibindo alguns de nossos projetos de sucesso</span>
             </div>
           </div>
 
