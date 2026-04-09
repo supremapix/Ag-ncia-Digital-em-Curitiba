@@ -55,6 +55,23 @@ const baseProjects: Project[] = [
   { url: "https://desentopeadp.com.br", title: "Desentope ADP", category: "Desentupidora", growth: "1750%", tags: ["Líder", "SEO"] },
   { url: "https://fotometal.com.br", title: "Fotometal", category: "Indústria Gráfica", growth: "320%", tags: ["Indústria", "B2B"] },
   { url: "https://www.moraesacrilicos.com.br", title: "Moraes Acrílicos", category: "Produtos Personalizados", growth: "405%", tags: ["E-commerce", "Design"] },
+  { url: "https://www.associacaobarnabe.org", title: "Associação Barnabé", category: "ONG / Social", growth: "210%", tags: ["Social", "Institucional"] },
+  { url: "https://lavanderias.aloanuncio.com.br/", title: "Lavanderias Alô Anúncio", category: "Lavanderia", growth: "640%", tags: ["Local", "Ads"] },
+  { url: "https://agroarkafla.com.br", title: "Agro Arkafla", category: "Agronegócio", growth: "380%", tags: ["Agro", "B2B"] },
+  { url: "https://servicosnobairro.com.br", title: "Serviços no Bairro", category: "Guia Local", growth: "1550%", tags: ["Local", "SEO"] },
+  { url: "https://prodentcuritiba.com.br", title: "Prodent Curitiba", category: "Odontologia", growth: "420%", tags: ["Saúde", "Local"] },
+  { url: "https://xiaomishopcell.com", title: "Xiaomi Shop Cell", category: "Eletrônicos", growth: "890%", tags: ["E-commerce", "Xiaomi"] },
+  { url: "https://filhodeogum.com", title: "Filho de Ogum", category: "Religioso / Consultoria", growth: "720%", tags: ["Espiritual", "Design"] },
+  { url: "https://curitibacanecas.com", title: "Curitiba Canecas", category: "Brindes Personalizados", growth: "530%", tags: ["E-commerce", "Brindes"] },
+  { url: "https://amftur.com.br", title: "AMF Tur", category: "Turismo e Transporte", growth: "460%", tags: ["Turismo", "Viagens"] },
+  { url: "https://coracaodailha.com.br", title: "Coração da Ilha", category: "Pousada / Turismo", growth: "510%", tags: ["Turismo", "Litoral"] },
+  { url: "https://beatrizfauthpsicologa.com.br", title: "Beatriz Fauth Psicóloga", category: "Saúde Mental", growth: "390%", tags: ["Psicologia", "Local"] },
+  { url: "https://decorartdivisorias.com.br", title: "Decorart Divisórias", category: "Divisórias e Forros", growth: "580%", tags: ["Construção", "Design"] },
+  { url: "https://erghoprev.com.br", title: "Erghoprev", category: "Medicina do Trabalho", growth: "440%", tags: ["Saúde", "B2B"] },
+  { url: "https://casaspinheirao.curitiba.br", title: "Casas Pinheirão", category: "Imobiliária / Construção", growth: "670%", tags: ["Imóveis", "Local"] },
+  { url: "https://agape-mudancas-curitiba-91.vercel.app/", title: "Ágape Mudanças", category: "Mudanças e Transportes", growth: "1280%", tags: ["Logística", "Ads"] },
+  { url: "https://abbamudancas.com.br", title: "Abba Mudanças", category: "Mudanças", growth: "1150%", tags: ["Logística", "Local"] },
+  { url: "https://ateliebeleza.app.br", title: "Ateliê da Beleza", category: "Estética", growth: "410%", tags: ["Beleza", "Design"] },
 ];
 
 import { TypewriterText } from '../src/components/TypewriterText';
@@ -130,6 +147,29 @@ export const Portfolio: React.FC = () => {
     </div>
   );
 
+  const tracks = useMemo(() => {
+    const shuffled = [...baseProjects].sort(() => Math.random() - 0.5);
+    const t1 = shuffled.slice(0, Math.ceil(shuffled.length / 3));
+    const t2 = shuffled.slice(Math.ceil(shuffled.length / 3), Math.ceil(2 * shuffled.length / 3));
+    const t3 = shuffled.slice(Math.ceil(2 * shuffled.length / 3));
+    return [t1, t2, t3];
+  }, []);
+
+  const renderTrack = (projects: Project[], speed: string, reverse = false) => (
+    <div className="flex-1 min-w-[300px] overflow-hidden relative pause-on-hover">
+      <div 
+        className={`flex flex-col gap-8 gpu-accelerated ${reverse ? 'animate-marquee-v-rev' : 'animate-marquee-v'}`}
+        style={{ animationDuration: speed } as any}
+      >
+        {[...projects, ...projects].map((project, i) => (
+          <div key={i} className="w-full">
+            {renderProjectCard(project, i)}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
@@ -175,7 +215,7 @@ export const Portfolio: React.FC = () => {
       </section>
 
       {/* Projects Grid Section */}
-      <section className="py-24 bg-gray-50 relative">
+      <section className="py-24 bg-gray-50 relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div className="max-w-2xl">
@@ -192,14 +232,20 @@ export const Portfolio: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-            {baseProjects.map((project, index) => (
-              <div key={index} className="h-full">
-                {renderProjectCard(project, index)}
-              </div>
-            ))}
+          <div className="h-[800px] relative location-mask flex flex-col md:flex-row gap-8">
+            {renderTrack(tracks[0], '120s')}
+            <div className="hidden md:block flex-1">
+              {renderTrack(tracks[1], '150s', true)}
+            </div>
+            <div className="hidden lg:block flex-1">
+              {renderTrack(tracks[2], '135s')}
+            </div>
           </div>
         </div>
+
+        {/* Decorative background elements */}
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-gray-50 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-gray-50 to-transparent z-10 pointer-events-none"></div>
       </section>
 
       {/* Features Grid */}
