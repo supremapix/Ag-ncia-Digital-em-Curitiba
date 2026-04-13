@@ -1,12 +1,12 @@
 import React, { useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getNameFromSlug, getRegionFromSlug } from '../data/locations';
+import { getNameFromSlug, getRegionFromSlug, neighborhoods } from '../data/locations';
 import { cityData } from '../data/cityData';
 import { LeadForm } from '../components/LeadForm';
 import { TypewriterText } from '../src/components/TypewriterText';
 import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
 import { 
-  Layout, Smartphone, Search, Zap, Target, Clock, Headphones, TrendingUp, ChevronRight, Star
+  Layout, Smartphone, Search, Zap, Target, Clock, Headphones, TrendingUp, ChevronRight, Star, CheckCircle
 } from 'lucide-react';
 
 export const LocationSEO: React.FC = () => {
@@ -161,38 +161,95 @@ export const LocationSEO: React.FC = () => {
       </section>
 
       {/* Contexto da Cidade */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-8">
-              Por que ter um site profissional em {locationName} faz diferença?
-            </h2>
-            <p className="text-gray-600 text-xl leading-relaxed">
-              {richData?.context || `A visibilidade digital em ${locationName} é crucial para o sucesso de qualquer negócio. No mercado altamente competitivo de hoje, estar na primeira página do Google é um diferencial decisivo. Nossa equipe utiliza inteligência de dados para mapear o comportamento de busca dos consumidores de ${locationName}, criando sites que convertem cliques em faturamento real.`}
-            </p>
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-black text-brand-dark mb-8 leading-tight">
+                  Estratégia Digital de Alta Performance em <span className="text-brand-primary">{locationName}</span>
+                </h2>
+                <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
+                  <p>
+                    {richData?.context || `A visibilidade digital em ${locationName} é crucial para o sucesso de qualquer negócio. No mercado altamente competitivo de hoje, estar na primeira página do Google é um diferencial decisivo. Nossa equipe utiliza inteligência de dados para mapear o comportamento de busca dos consumidores de ${locationName}, criando sites que convertem cliques em faturamento real.`}
+                  </p>
+                  <p>
+                    Não entregamos apenas um site; entregamos uma <strong>máquina de vendas semântica</strong>. Isso significa que seu site em {locationName} será compreendido perfeitamente pelos algoritmos do Google, destacando seus diferenciais competitivos e autoridade no setor de {richData?.strongSegment || 'serviços e comércio'}.
+                  </p>
+                </div>
+                <div className="mt-10 flex items-center gap-4 p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                  <div className="w-12 h-12 bg-green-500/10 text-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <CheckCircle size={24} />
+                  </div>
+                  <p className="text-sm font-bold text-gray-700">
+                    Foco total em conversão e autoridade local para empresas de {locationName}.
+                  </p>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="absolute -inset-4 bg-brand-primary/10 rounded-[2rem] blur-2xl"></div>
+                <div className="relative bg-brand-dark rounded-[2rem] p-8 shadow-2xl border border-white/10">
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="h-4 bg-white/10 rounded-full w-3/4"></div>
+                    <div className="h-4 bg-white/10 rounded-full w-1/2"></div>
+                    <div className="grid grid-cols-3 gap-4 py-4">
+                      <div className="h-20 bg-brand-primary/20 rounded-xl"></div>
+                      <div className="h-20 bg-brand-primary/20 rounded-xl"></div>
+                      <div className="h-20 bg-brand-primary/20 rounded-xl"></div>
+                    </div>
+                    <div className="h-4 bg-white/10 rounded-full w-full"></div>
+                    <div className="h-4 bg-white/10 rounded-full w-5/6"></div>
+                  </div>
+                  <div className="mt-8 pt-8 border-t border-white/10 flex justify-between items-center">
+                    <div className="flex gap-2">
+                      <div className="w-8 h-8 rounded-lg bg-brand-primary/30"></div>
+                      <div className="w-8 h-8 rounded-lg bg-brand-primary/30"></div>
+                    </div>
+                    <div className="text-brand-accent font-black text-xl">99/100 Speed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Serviços */}
-      <section className="py-20 bg-gray-50">
+      {/* SEO Semântico e Design Premium */}
+      <section className="py-24 bg-brand-dark text-white overflow-hidden">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-16 text-center">
-            Nossos Serviços para Empresas em {locationName}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h2 className="text-3xl md:text-5xl font-black mb-6">Design Premium & SEO Semântico</h2>
+            <p className="text-gray-400 text-xl">
+              Unimos a estética de elite com a engenharia de dados para que seu site em {locationName} seja imbatível.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: `Sites Profissionais para ${locationName}`, desc: "Desenvolvimento de sites institucionais rápidos e otimizados.", icon: <Layout /> },
-              { title: `Lojas Virtuais para ${richData?.strongSegment || 'Comércio Local'}`, desc: "E-commerce completo para vender seus produtos em todo o Brasil.", icon: <Smartphone /> },
-              { title: `SEO Local em ${locationName} e Região ${richData?.region || ''}`, desc: "Domine o Google Maps e as buscas locais na sua região.", icon: <Search /> },
-              { title: `Landing Pages para Negócios em ${locationName}`, desc: "Páginas de alta conversão para suas campanhas de anúncios.", icon: <Target /> }
-            ].map((service, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all group">
-                <div className="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center text-brand-primary mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors">
-                  {React.cloneElement(service.icon as React.ReactElement, { size: 28 })}
-                </div>
-                <h3 className="text-xl font-black text-brand-dark mb-4">{service.title}</h3>
-                <p className="text-gray-500 leading-relaxed">{service.desc}</p>
+              { 
+                title: "Arquitetura Semântica", 
+                desc: `Estruturamos o código para que o Google entenda exatamente o que sua empresa faz em ${locationName}, priorizando termos de alta intenção de compra.`,
+                icon: <Search className="text-brand-primary" />
+              },
+              { 
+                title: "UX Design de Elite", 
+                desc: "Interfaces intuitivas que guiam o usuário de Curitiba até o botão de WhatsApp, reduzindo a taxa de rejeição e aumentando os leads.",
+                icon: <Layout className="text-brand-primary" />
+              },
+              { 
+                title: "Otimização Mobile-First", 
+                desc: `Com mais de 80% das buscas em ${locationName} vindo de celulares, seu site será leve, rápido e perfeito em qualquer tela.`,
+                icon: <Smartphone className="text-brand-primary" />
+              }
+            ].map((item, idx) => (
+              <div key={idx} className="p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all">
+                <div className="mb-6">{item.icon}</div>
+                <h3 className="text-2xl font-black mb-4">{item.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -200,19 +257,54 @@ export const LocationSEO: React.FC = () => {
       </section>
 
       {/* Bairros */}
-      <section className="py-20 bg-white border-y border-gray-100">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-8">
-            Bairros e Regiões de {locationName} que Atendemos
-          </h2>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-12">
-            Nossa agência atende empresas em todos os bairros de <strong>{locationName}</strong>, incluindo {richData?.neighborhoods.join(', ') || 'toda a região metropolitana'}. Se você busca criação de sites em {locationName}, estamos prontos para te atender.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {(richData?.neighborhoods || []).map((bairro, idx) => (
-              <span key={idx} className="bg-gray-100 text-gray-600 px-4 py-2 rounded-full text-sm font-bold">
-                {bairro}
-              </span>
+      <section className="py-24 bg-white border-y border-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-8">
+              Presença Total em {locationName}
+            </h2>
+            <p className="text-gray-600 text-xl leading-relaxed">
+              Nossa estratégia de <strong>SEO Local</strong> garante que sua empresa domine as buscas em todos os bairros e regiões de <strong>{locationName}</strong>. Se o seu cliente está procurando por você, ele vai te encontrar.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {(richData?.neighborhoods || neighborhoods.slice(0, 18)).map((bairro, idx) => (
+              <div key={idx} className="bg-gray-50 border border-gray-100 p-4 rounded-xl text-center hover:border-brand-primary/30 hover:bg-white transition-all group">
+                <span className="text-gray-600 font-bold text-sm group-hover:text-brand-primary transition-colors">
+                  {bairro}
+                </span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <p className="text-gray-400 font-medium italic">
+              * Atendemos todos os 75 bairros oficiais e dezenas de vilas e regiões de {locationName}.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Processo de Criação */}
+      <section className="py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-6">Nosso Processo Express em {locationName}</h2>
+            <p className="text-gray-600 text-xl">
+              Eficiência e qualidade técnica para colocar sua empresa no topo em tempo recorde.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {[
+              { step: "01", title: "Briefing Estratégico", desc: `Mapeamos seus objetivos e o mercado de ${locationName}.` },
+              { step: "02", title: "Design Premium", desc: "Criamos uma interface exclusiva focada em conversão." },
+              { step: "03", title: "Desenvolvimento", desc: "Codificação limpa com React para máxima velocidade." },
+              { step: "04", title: "SEO & Lançamento", desc: `Otimização local para ${locationName} e publicação.` }
+            ].map((item, idx) => (
+              <div key={idx} className="relative p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
+                <span className="text-6xl font-black text-brand-primary/10 absolute top-4 right-4">{item.step}</span>
+                <h3 className="text-xl font-black text-brand-dark mb-4 relative z-10">{item.title}</h3>
+                <p className="text-gray-500 leading-relaxed relative z-10">{item.desc}</p>
+              </div>
             ))}
           </div>
         </div>

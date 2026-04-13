@@ -1,15 +1,22 @@
 
 export const neighborhoods = [
-  "Vila Parolin", "Vila Torres", "Jardim Schaffer", "Vila Sabará", "Boqueirão de Baixo", 
-  "Boqueirão de Cima", "Tanguá", "Vila Zumbi", "Abranches de Baixo", "Abranches de Cima", 
-  "Vila Nossa Senhora da Luz", "Vila Oficinas", "Vila Fanny", "Vila Hauer", "Batel Soho", 
-  "Alto da Rua XV", "CIC Norte", "CIC Central", "CIC Sul", "Vila Guaíra", "Centro Histórico", 
-  "Ecoville", "Água Verde", "Ahú", "Alto Boqueirão", "Alto da Glória", "Bacacheri", "Batel", 
-  "Bigorrilho", "Boa Vista", "Bom Retiro", "Boqueirão", "Cabral", "Cajuru", "Campo Comprido", 
-  "Capão Raso", "Centro", "Centro Cívico", "Cristo Rei", "Fazendinha", "Hauer", "Juvevê", 
-  "Mercês", "Novo Mundo", "Portão", "Rebouças", "Santa Cândida", "Santa Felicidade", 
-  "Santa Quitéria", "São Francisco", "São Lourenço", "Seminário", "Sítio Cercado", 
-  "Tarumã", "Tatuquara", "Uberaba", "Umbará", "Xaxim"
+  // Bairros Oficiais de Curitiba (75 bairros)
+  "Abranches", "Água Verde", "Ahú", "Alto Boqueirão", "Alto da Glória", "Alto da Rua XV", "Atuba", "Augusta", 
+  "Bacacheri", "Bairro Alto", "Barreirinha", "Batel", "Bigorrilho", "Boa Vista", "Bom Retiro", "Boqueirão", 
+  "Butiatuvinha", "Cabral", "Cachoeira", "Cajuru", "Campina do Siqueira", "Campo Comprido", "Campo de Santana", 
+  "Capão Raso", "Capão da Imbuia", "Cascatinha", "Caximba", "Centro", "Centro Cívico", "Cidade Industrial (CIC)", 
+  "Cristo Rei", "Fanny", "Fazendinha", "Ganchinho", "Guabirotuba", "Guaíra", "Hauer", "Hugo Lange", 
+  "Jardim Botânico", "Jardim Social", "Jardim das Américas", "Juvevê", "Lamenha Pequena", "Lindóia", "Mercês", 
+  "Mossunguê", "Novo Mundo", "Orleans", "Parolin", "Pilarzinho", "Pinheirinho", "Portão", "Prado Velho", 
+  "Rebouças", "Riviera", "Santa Cândida", "Santa Felicidade", "Santa Quitéria", "Santo Inácio", "Seminário", 
+  "Sítio Cercado", "São Braz", "São Francisco", "São João", "São Lourenço", "São Miguel", "Taboão", "Tarumã", 
+  "Tatuquara", "Tingui", "Uberaba", "Umbará", "Vila Izabel", "Vista Alegre", "Xaxim",
+  // Bairros NÃO Oficiais (Vilas e Regiões Populares)
+  "Vila Sandra", "Vila Verde", "Vila Nossa Senhora da Luz", "Vitória Régia", "Caiuá", "Sabará", "Gabineto", 
+  "Itatiaia", "Santa Helena", "Conquista", "Barigui", "Osvaldo Cruz", "Atenas", "Neoville", "Vila Pantanal", 
+  "Vila Torres", "Vila Hauer", "Vila Oficinas", "Vila Guaíra", "Vila Osternack", "Vila São Pedro", "Vila Audi", 
+  "Vila Parolin", "Vila das Torres", "Jardim Gabineto", "Jardim Itatiaia", "Jardim da Ordem", "Jardim Kosmos", 
+  "Jardim Alvorada", "Ecoville", "Centro Histórico", "Batel Soho", "Jardim Schaffer", "Tanguá", "Vila Zumbi"
 ];
 
 export const cities = [

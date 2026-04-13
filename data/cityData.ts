@@ -18,13 +18,19 @@ export const cityData: Record<string, CityDetail> = {
     state: "Paraná",
     stateSigla: "PR",
     region: "Região Metropolitana de Curitiba (RMC)",
-    context: "Curitiba consolidou-se como o 'Vale do Pinhão', um dos ecossistemas de inovação mais vibrantes do Brasil. Para uma empresa curitibana, ter um site não é mais apenas uma questão de presença, mas de autoridade técnica. O consumidor da capital é exigente e busca agilidade; um site que demora a carregar ou que não possui um design responsivo é descartado em segundos. Em bairros como o Batel e o Centro Cívico, onde a concentração de serviços de alto padrão é imensa, a disputa pelo topo do Google (SEO Local) define quem fatura e quem fica invisível. A economia diversificada da RMC exige sites que falem a língua tanto do setor de serviços quanto da robusta indústria da Cidade Industrial de Curitiba (CIC).",
-    strongSegment: "Tecnologia, Finanças e Indústria (CIC)",
-    neighborhoods: ["Centro", "Batel", "Bigorrilho", "Água Verde", "Portão", "CIC", "Boa Vista", "Cajuru"],
+    context: "Curitiba consolidou-se como o 'Vale do Pinhão', um dos ecossistemas de inovação mais vibrantes do Brasil. Para uma empresa curitibana, ter um site não é mais apenas uma questão de presença, mas de autoridade técnica. O consumidor da capital é exigente e busca agilidade; um site que demora a carregar ou que não possui um design responsivo é descartado em segundos. Em bairros como o Batel e o Centro Cívico, onde a concentração de serviços de alto padrão é imensa, a disputa pelo topo do Google (SEO Local) define quem fatura e quem fica invisível. A economia diversificada da RMC exige sites que falem a língua tanto do setor de serviços quanto da robusta indústria da Cidade Industrial de Curitiba (CIC), que embora seja um bairro oficial gigante, abriga dezenas de vilas e regiões como Vila Sandra, Neoville e Vitória Régia, cada uma com suas particularidades comerciais.",
+    strongSegment: "Tecnologia, Finanças, Indústria (CIC) e Comércio Local",
+    neighborhoods: [
+      "Centro", "Batel", "Bigorrilho", "Água Verde", "Portão", "CIC", "Boa Vista", "Cajuru", 
+      "Santa Felicidade", "Juvevê", "Cabral", "Rebouças", "Alto da XV", "Jardim Botânico", 
+      "Novo Mundo", "Pinheirinho", "Sítio Cercado", "Xaxim", "Boqueirão", "Uberaba", 
+      "Vila Sandra", "Neoville", "Vila Verde", "Caiuá", "Vitória Régia", "Sabará"
+    ],
     faqs: [
-      { question: "Quanto tempo leva a entrega em Curitiba?", answer: "Devido à nossa infraestrutura local, entregamos projetos em 48h úteis após o envio de todo o conteúdo." },
-      { question: "O site ajuda no ranqueamento do Google Maps em Curitiba?", answer: "Sim, implementamos Schema.org específico para o endereço da sua empresa na capital paranaense." },
-      { question: "Vocês atendem indústrias na CIC?", answer: "Sim, desenvolvemos portais corporativos robustos para o setor industrial curitibano." }
+      { question: "Quanto tempo leva a entrega em Curitiba?", answer: "Devido à nossa infraestrutura local na capital, entregamos projetos profissionais em 48h úteis após o envio de todo o conteúdo." },
+      { question: "O site ajuda no ranqueamento do Google Maps em Curitiba?", answer: "Sim, implementamos Schema.org específico e otimização de SEO Local para que sua empresa apareça para clientes em bairros específicos de Curitiba." },
+      { question: "Vocês atendem indústrias na CIC e vilas da região?", answer: "Sim, desenvolvemos portais corporativos robustos para o setor industrial da CIC e landing pages de alta conversão para comércios em vilas como Vila Sandra e Neoville." },
+      { question: "O site é otimizado para o público exigente de Curitiba?", answer: "Com certeza. Utilizamos tecnologias de ponta (React/Vite) para garantir a velocidade e o design premium que o mercado curitibano demanda." }
     ]
   },
   "londrina": {
