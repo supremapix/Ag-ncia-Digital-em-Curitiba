@@ -12,6 +12,7 @@ interface Project {
 }
 
 const baseProjects: Project[] = [
+  { url: "https://ateliebeleza.app.br", title: "Ateliê Beleza", category: "Beleza e Estética", growth: "1450%", tags: ["Destaque", "Design", "Premium"] },
   { url: "https://www.aloanuncio.com.br/", title: "Alô Anúncio", category: "Portal de Classificados", growth: "2500%", tags: ["Destaque", "Portal", "SEO"] },
   { url: "https://www.bcrefrigeracaosc.com.br", title: "BC Refrigeração", category: "Climatização", growth: "1900%", tags: ["SEO", "Performance"] },
   { url: "https://barbeariabarbercue.shop", title: "Barber Cue", category: "Barbearia Premium", growth: "850%", tags: ["Design", "Local"] },
