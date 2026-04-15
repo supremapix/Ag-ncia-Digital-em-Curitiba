@@ -12,6 +12,7 @@ interface Project {
 }
 
 const baseProjects: Project[] = [
+  { url: "https://www.lp.carpluspneuseoficina.com.br/", title: "Car Plus Pneus & Oficina", category: "Mecânica e Pneus", growth: "1350%", tags: ["Prioridade", "Landing Page", "Ads"] },
   { url: "https://www.carpluspneus.shop/", title: "Car Plus Pneus", category: "Serviços Automotivos", growth: "1100%", tags: ["Destaque", "E-commerce", "Ads"] },
   { url: "https://ateliebeleza.app.br", title: "Ateliê Beleza", category: "Beleza e Estética", growth: "1450%", tags: ["Destaque", "Design", "Premium"] },
   { url: "https://www.aloanuncio.com.br/", title: "Alô Anúncio", category: "Portal de Classificados", growth: "2500%", tags: ["Destaque", "Portal", "SEO"] },
