@@ -14,11 +14,68 @@ import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
 
 export const Home: React.FC = () => {
   useEffect(() => {
-    document.title = "Criação de Sites Profissionais em 48h | Suprema Site";
+    document.title = "Criação de Sites Profissionais e Lojas de Vendas | Suprema Site";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', "Especialistas em criação de sites profissionais, lojas virtuais e landing pages. Entrega em 48h com SEO local para empresas em todo Brasil. Peça seu orçamento!");
+      metaDesc.setAttribute('content', "Especialistas em criação de sites profissionais, agência de desenvolvimento de sites e lojas virtuais. Desenvolvemos seu site em 48h com foco em vendas em todo o Brasil!");
     }
+
+    // FAQ Schema
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quem faz site profissional com entrega rápida no Brasil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Suprema Site Express é especialista em criação de sites profissionais com entrega em até 48 horas. Atendemos todo o Brasil com foco em performance e resultados."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais são as melhores empresas que criam sites de vendas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Empresas como a Suprema Site Express se destacam por criar sites de vendas (e-commerce) otimizados para conversão, integrando meios de pagamento e SEO avançado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como encontrar uma agência de desenvolvimento de sites confiável?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para escolher uma agência de desenvolvimento de sites, verifique o portfólio, tempo de mercado e depoimentos de clientes. A Suprema Site tem mais de 10 anos de experiência e milhares de projetos entregues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o valor de um site para empresas pequenas e médias?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O valor de um site para empresas varia conforme a complexidade, mas oferecemos soluções escaláveis que cabem no orçamento de PMEs que buscam crescimento digital."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a vantagem de contratar um desenvolvedor de sites especialista?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contratar um desenvolvedor de sites especialista garante que seu projeto siga as melhores práticas de SEO, velocidade (Core Web Vitals) e segurança, garantindo maior ROI."
+          }
+        }
+      ]
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
   }, []);
 
   return (
@@ -33,7 +90,7 @@ export const Home: React.FC = () => {
                   Suprema Mídia & Performance
                 </span>
                 <h1 className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9] tracking-tighter">
-                  Criação de Sites Profissionais e Rápidos | <span className="text-brand-primary">Suprema Site</span>
+                  Especialistas em Criação de <span className="text-brand-primary">Sites Profissionais</span> e Lojas de Venda Online
                 </h1>
                 <div className="min-h-[100px] md:min-h-[80px] mb-10">
                   <TypewriterText 
@@ -88,8 +145,8 @@ export const Home: React.FC = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-black text-brand-dark mb-4 tracking-tighter">Soluções em Desenvolvimento Web para Pequenas e Médias Empresas</h2>
-              <p className="text-gray-500 max-w-2xl mx-auto">Tecnologia de ponta para elevar o patamar digital do seu negócio.</p>
+              <h2 className="text-4xl md:text-6xl font-black text-brand-dark mb-4 tracking-tighter">Agência de Desenvolvimento de Sites Focada em Resultados Reais</h2>
+              <p className="text-gray-500 max-w-2xl mx-auto">Tecnologia de ponta e especialistas em site para empresas que buscam liderança digital.</p>
            </div>
            <div className="grid md:grid-cols-3 gap-10">
               <div className="bg-gray-50 p-10 rounded-[2.5rem] border border-gray-100 hover:shadow-2xl transition-all group">
@@ -194,6 +251,64 @@ export const Home: React.FC = () => {
            </div>
         </div>
         <LocationTicker />
+      </section>
+
+      {/* SEO Content Section */}
+      <section className="py-24 bg-white border-t border-gray-100">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="prose prose-lg max-w-none text-gray-600">
+            <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-8 tracking-tighter text-center">
+              A Melhor Agência de Desenvolvimento de Sites para Sua Empresa
+            </h2>
+            <p className="mb-6 leading-relaxed">
+              No cenário digital altamente competitivo de hoje, encontrar <strong>quem faz site profissional</strong> com qualidade e estratégia é o primeiro passo para o sucesso de qualquer negócio. A Suprema Site não é apenas mais uma entre as centenas de <strong>empresas que criam sites de vendas</strong> no mercado; somos um parceiro estratégico focado em performance, conversão e resultados reais. Nosso trabalho como uma <strong>agência de desenvolvimento de sites</strong> de elite é garantir que sua marca seja encontrada por quem realmente quer comprar seus produtos ou serviços, transformando cliques em faturamento.
+            </p>
+            <p className="mb-6 leading-relaxed">
+              Ter um <strong>site para empresas</strong> que transmita autoridade é fundamental. O consumidor moderno é exigente e realiza pesquisas profundas antes de fechar qualquer negócio. Se sua empresa não possui uma presença digital sólida, você está entregando clientes de bandeja para a concorrência. Quando nos tornamos o seu <strong>desenvolvedor de sites</strong>, injetamos tecnologia de ponta para que sua marca se destaque. Nossos <strong>sites profissionais</strong> são construídos para serem rápidos, seguros e, acima de tudo, persuasivos.
+            </p>
+            
+            <h3 className="text-2xl font-black text-brand-dark mb-4 uppercase tracking-tight">
+              Desenvolvemos seu site com Foco em SEO e Experiência do Usuário (UX)
+            </h3>
+            <p className="mb-6 leading-relaxed">
+              Acreditamos que a estética deve caminhar junto com a inteligência de dados. Quando <strong>desenvolvemos seu site</strong>, cada linha de código é otimizada para os algoritmos de busca do Google. Utilizamos a tecnologia React e Vite, as mesmas pilhas tecnológicas usadas por gigantes do Vale do Silício, para garantir que seus <strong>sites profissionais</strong> carreguem em milissegundos. Mais do que um design bonito, um <strong>site para empresas</strong> de sucesso precisa ser funcional em todos os dispositivos. Como seu <strong>desenvolvedor de sites</strong> parceiro, implementamos as melhores práticas de UX (User Experience) para guiar o visitante de forma intuitiva até o fechamento do negócio.
+            </p>
+            <p className="mb-6 leading-relaxed">
+              O diferencial de trabalhar com uma <strong>agência de desenvolvimento de sites</strong> como a Suprema é o nosso compromisso com o SEO Local. Se você quer que sua empresa seja a primeira opção em sua região, nossa estratégia de Ranqueamento Semântico é imbatível. Nós entendemos o que o seu cliente busca e como ele busca em Curitiba e em todo o Brasil. Isso nos coloca à frente de outras <strong>empresas que criam sites de vendas</strong>, que muitas vezes entregam apenas o visual e esquecem o que realmente traz o tráfego qualificado.
+            </p>
+
+            <h3 className="text-2xl font-black text-brand-dark mb-4 uppercase tracking-tight">
+              Up Sites: Elevando o Patamar da sua Presença Digital e Performance
+            </h3>
+            <p className="mb-6 leading-relaxed">
+              O conceito de <strong>up sites</strong> no mercado atual vai muito além de apenas atualizar um layout antigo. Trata-se de uma modernização sistêmica e tecnológica completa da sua vitrine digital. Atuamos como um <strong>desenvolvedor de sites</strong> que possui visão de negócios, entendendo que cada segundo de atraso no carregamento custa dinheiro para sua empresa. Se você precisa de <strong>sites profissionais</strong> que passem credibilidade imediata e convertam leads frios em clientes quentes, nosso processo de design premium é a solução que você buscava. 
+            </p>
+            <p className="mb-6 leading-relaxed">
+              Enquanto muitas <strong>empresas que criam sites de vendas</strong> focam apenas em volume, nós focamos em qualidade e escalabilidade. Entendemos que um <strong>site para empresas</strong> deve estar pronto para crescer junto com o negócio. Por isso, quando <strong>desenvolvemos seu site</strong>, pensamos na integração futura com CRMs, sistemas de automação de marketing e ferramentas de análise de dados. Este é o verdadeiro poder dos <strong>up sites</strong>: tecnologia que trabalha para você.
+            </p>
+
+            <h3 className="text-2xl font-black text-brand-dark mb-4 uppercase tracking-tight">
+              Por que escolher a Suprema como quem faz site profissional para você?
+            </h3>
+            <p className="mb-6 leading-relaxed">
+              Escolher a Suprema significa optar por transparência, agilidade e resultados comprovados por milhares de clientes. Enquanto a maioria das <strong>agências de desenvolvimento de sites</strong> tradicionais demoram meses para entregar um projeto básico, nós <strong>desenvolvemos seu site</strong> completo em apenas 48 horas úteis, sem abrir mão da qualidade. Somos referência como uma das principais <strong>empresas que criam sites de vendas</strong> no Sul do Brasil, estendendo nossa expertise tecnológica para empresas de todos os portes em todo o território nacional.
+            </p>
+            <p className="mb-6 leading-relaxed">
+              Se você está procurando <strong>quem faz site profissional</strong> com um suporte humano e atendimento personalizado via WhatsApp, sua busca termina aqui. Como seu <strong>desenvolvedor de sites</strong> de confiança, não apenas entregamos um projeto e desaparecemos. Oferecemos uma parceria de longo prazo através de consultorias em presença digital para garantir que seu <strong>site para empresas</strong> continue gerando lucros contínuos. No mercado dinâmico de <strong>up sites</strong>, a evolução nunca para, e ter especialistas ao seu lado é a única forma de manter sua empresa no topo do Google e da mente dos seus consumidores. Através de <strong>sites profissionais</strong> de alta performance, nós construímos pontes entre marcas visionárias e seus clientes ideais.
+            </p>
+
+            <div className="bg-brand-dark text-white p-10 rounded-[2.5rem] mt-12 text-center border border-white/10 shadow-2xl">
+              <h4 className="text-2xl font-black mb-6">Pronto para ter um dos melhores sites profissionais do mercado?</h4>
+              <p className="mb-8 text-gray-400">Fale agora com nossa equipe e descubra por que somos a agência de desenvolvimento de sites preferida por centenas de empresários no Brasil.</p>
+              <a 
+                href="https://wa.me/5541987001004" 
+                className="inline-block bg-brand-primary text-white font-black py-4 px-10 rounded-2xl hover:scale-105 transition-all"
+              >
+                Solicitar Meu Orçamento Grátis
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* FAQ Section */}
