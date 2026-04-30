@@ -310,32 +310,6 @@ export const LocationSEO: React.FC = () => {
         </div>
       </section>
 
-      {/* Processo de Criação */}
-      <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-6">Nosso Processo Express em {locationName}</h2>
-            <p className="text-gray-600 text-xl">
-              Eficiência e qualidade técnica para colocar sua empresa no topo em tempo recorde.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { step: "01", title: "Briefing Estratégico", desc: `Mapeamos seus objetivos e o mercado de ${locationName}.` },
-              { step: "02", title: "Design Premium", desc: "Criamos uma interface exclusiva focada em conversão." },
-              { step: "03", title: "Desenvolvimento", desc: "Codificação limpa com React para máxima velocidade." },
-              { step: "04", title: "SEO & Lançamento", desc: `Otimização local para ${locationName} e publicação.` }
-            ].map((item, idx) => (
-              <div key={idx} className="relative p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
-                <span className="text-6xl font-black text-brand-primary/10 absolute top-4 right-4">{item.step}</span>
-                <h3 className="text-xl font-black text-brand-dark mb-4 relative z-10">{item.title}</h3>
-                <p className="text-gray-500 leading-relaxed relative z-10">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Diferenciais */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">

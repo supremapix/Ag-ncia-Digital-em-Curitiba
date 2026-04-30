@@ -277,6 +277,29 @@ export const About: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO Keywords Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-brand-dark mb-12">Especialidades e Palavras-Chave de Domínio</h2>
+          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+            {[
+              "Criação de Site Profissional", "SEO Local Avançado", "Design Premium UX/UI", 
+              "Performance Core Web Vitals", "Landing Page de Conversão", "Desenvolvimento em React/Vite", 
+              "Agência de Sites Curitiba", "E-commerce de Alta Performance", "Consultoria em Presença Digital", 
+              "Autoridade no Google", "Sites Institucionais em 48h", "Hospedagem Cloud Segura", 
+              "Web Design Mobile-First", "Estratégia de Leads Qualificados", "ROI Digital Garantido"
+            ].map((term, idx) => (
+              <span key={idx} className="bg-brand-primary/5 text-brand-primary px-6 py-3 rounded-2xl font-bold text-sm border border-brand-primary/10">
+                {term}
+              </span>
+            ))}
+          </div>
+          <p className="text-center text-gray-400 mt-10 text-sm max-w-2xl mx-auto italic">
+            Estas são as tecnologias e estratégias que dominamos para garantir que sua empresa não apenas tenha um site, mas uma ferramenta de geração de lucro real.
+          </p>
+        </div>
+      </section>
+
       {/* Values Section */}
       <section className="py-20 container mx-auto px-4">
         <h2 className="text-3xl font-bold text-brand-dark mb-12 text-center">Nossos Valores</h2>
