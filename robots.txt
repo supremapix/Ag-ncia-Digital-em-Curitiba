@@ -56,7 +56,9 @@ Crawl-delay: 10
 User-agent: Mail.RU_Bot
 Crawl-delay: 10
 
-# Sitemaps - Referenciando as 3 variações principais
+# Sitemaps - Referenciando o Índice Geral e sub-sitemaps oficiais
 Sitemap: https://www.supremasite.com.br/sitemap.xml
-Sitemap: https://www.supremasite.com.br/sitemap-cidades.xml
-Sitemap: https://www.supremasite.com.br/sitemap-servicos.xml
+Sitemap: https://www.supremasite.com.br/sitemap_index.xml
+Sitemap: https://www.supremasite.com.br/sitemap_pages.xml
+Sitemap: https://www.supremasite.com.br/sitemap_cidades.xml
+Sitemap: https://www.supremasite.com.br/sitemap_bairros.xml
