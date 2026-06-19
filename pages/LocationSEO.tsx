@@ -18,28 +18,111 @@ interface LocalSegmentDetail {
 }
 
 function getDynamicLocalSegment(name: string, region: string, isNeighborhood: boolean): LocalSegmentDetail {
-  const slugified = name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const slugified = name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-');
   
   if (isNeighborhood) {
-    // Curitiba Neighborhoods
-    if (['batel', 'centro-civico', 'cabral', 'juveve', 'merces', 'bigorrilho', 'ecoville', 'alto-da-gloria'].includes(slugified)) {
+    // Curitiba Neighborhood categories
+    const cicSubdivisions = [
+      'vila-sandra', 'vila-verde', 'vila-nossa-senhora-da-luz', 'vitoria-regia', 'caiua', 'sabara', 
+      'gabineto', 'itatiaia', 'santa-helena', 'conquista', 'barigui', 'osvaldo-cruz', 'atenas', 
+      'neoville', 'cic-central', 'nossa-senhora-da-luz', 'barigui-regiao-cic', 'augusta-regiao', 
+      'riviera-regiao', 'sao-miguel-regiao-cic', 'cic', 'cidade-industrial-cic'
+    ];
+    
+    const southSubdivisions = [
+      'pinheirinho-velho', 'sitio-cercado-velho', 'umbara-de-baixo', 'umbara-de-cima', 'capao-raso-velho', 
+      'portao-velho', 'vila-osternack', 'vila-sao-pedro', 'jardim-da-ordem', 'pinheirinho', 'sitio-cercado', 
+      'umbara', 'capao-raso', 'portao', 'tatuquara', 'ganchinho', 'novo-mundo', 'lindoia', 'fanny'
+    ];
+    
+    const boqueiraoHauerXaximList = [
+      'carmo', 'hauer-velho', 'xaxim-velho', 'boqueirao-alto', 'boqueirao-velho', 'vila-hauer', 
+      'boqueirao', 'hauer', 'xaxim', 'guabirotuba', 'alto-boqueirao'
+    ];
+    
+    const cajuruUberabaCapaoList = [
+      'vila-pantanal', 'cajuru-alto', 'uberaba-velho', 'uberaba-de-cima', 'jardim-das-torres', 
+      'vila-audi', 'vila-oficinas', 'cajuru', 'uberaba', 'capao-da-imbuia', 'jardim-das-americas', 'taruma', 'prado-velho', 'vila-prado'
+    ];
+    
+    const centroCivicoBatelClassic = [
+      'batel', 'centro-civico', 'cabral', 'juveve', 'merces', 'bigorrilho', 'ecoville', 'alto-da-gloria', 
+      'centro', 'centro-historico', 'batel-soho', 'jardim-social', 'hugo-lange', 'cristo-rei', 'alto-da-rua-xv',
+      'agua-verde', 'vila-izabel', 'seminario', 'ahu', 'parolin', 'vila-parolin', 'reboucas'
+    ];
+    
+    const norteSubdivisions = [
+      'bairro-alto-norte', 'bairro-alto-velho', 'tingui-velho', 'boa-vista-norte', 'jardim-kosmos', 
+      'bairro-alto', 'boa-vista', 'tingui', 'bacacheri', 'santa-candida', 'barreirinha', 'atuba', 
+      'abranches', 'pilarzinho', 'taboao', 'vista-alegre', 'bom-retiro', 'sao-lourenco', 'sao-francisco'
+    ];
+    
+    const santaFelicidadeOrleansBraz = [
+      'orleans-velho', 'sao-braz-alto', 'santa-felicidade-norte', 'jardim-gabineto', 'jardim-itatiaia', 
+      'jardim-alvorada', 'jardim-alvor', 'santa-felicidade', 'orleans', 'sao-braz', 'butiatuvinha', 
+      'vista-alegre', 'cascatinha', 'santo-inacio', 'sao-joao'
+    ];
+
+    if (centroCivicoBatelClassic.includes(slugified)) {
       return {
-        strongSegment: "Clínicas de Estética, Consultórios Médicos Premium, Escritórios de Advocacia de Elite, Arquitetura e Negócios de Alto Padrão",
-        context: `Como um dos bairros de maior IDH e poder aquisitivo de Curitiba, o ${name} abriga clínicas e escritórios altamente gabaritados que disputam clientes de alto ticket. Para consolidar presença junto a esse público sofisticado, ter um site extremamente seguro, ágil em React com UX refinada e campanhas direcionadas de SEO Local é a maior alavanca de faturamento sustentável da região.`,
+        strongSegment: "Escritórios de Advocacia de Elite, Clínicas Médicas Premium, Consultórios de Estética Avançada, Arquitetura e Negócios de Alto Padrão",
+        context: `Bairros nobres e condomínios de alto padrão de Curitiba — como o Batel, Cabral, Centro Cívico, Ecoville, Champagnat e subzonas como o(a) ${name} — exigem uma presença corporativa extremamente elegante e de alta credibilidade. Desenvolvemos interfaces de elite com tipografia refinada e semântica Schema avançada no Google para conectar sua marca B2B ou clínica de elite ao perfil de consumidor de faturamento elevado em Curitiba.`,
         strongKeywords: [`Criação de site de luxo no ${name}`, `Advogados especializados em ${name}`, `SEO Local focado em ${name} Curitiba`, `Clínicas médicas no ${name}`]
       };
     }
-    if (['cic', 'reboucas', 'hauer', 'boqueirao', 'pinheirinho', 'uberaba', 'taruma', 'cajuru'].includes(slugified)) {
+    
+    if (cicSubdivisions.includes(slugified)) {
       return {
-        strongSegment: "Indústrias Metal-Mecânicas, Centros de Distribuição, Oficinas de Alta Tecnologia, Empresas de Logística e Comércios Fortes de Auto-Peças",
-        context: `A região do ${name} destaca-se pela fortíssima veia industrial e fabril em Curitiba, integrando importantes hubs de distribuição e comércio técnico B2B. Sites corporativos de alta performance com carregamento abaixo de 1s e focados no público de engenharia, compras e parcerias industriais são fundamentais para assegurar cotações e contratos recorrentes.`,
+        strongSegment: "Empresas Metal-Mecânicas, Centros de Distribuição Logística, Oficinas de Alta Tecnologia, Projetos e comércios técnicos Industriais B2B",
+        context: `A Cidade Industrial de Curitiba (CIC) e suas subdivisões — como ${name}, Vila Sandra, Vila Verde e Vitória Régia — representam o principal pulmão de produção do estado. Para indústrias, prestadores e distribuidores técnicos que atuam nessa região de alto PIB, contar com portais institucionais velozes focados em geração de orçamentos e captação de leads B2B no(a) ${name} é indispensável para alavancar novos contratos mercantis.`,
         strongKeywords: [`Desenvolvimento de portais industriais no ${name}`, `Instalações de logística ${name}`, `Comércio B2B Curitiba ${name}`, `SEO de alta conversão ${name}`]
       };
     }
+    
+    if (southSubdivisions.includes(slugified)) {
+      return {
+        strongSegment: "Comércio Varejista Forte, Clínicas Odontológicas Gerais, Prestadores de Serviços Multidisciplinares, Pet Shops e Academias de Bairro",
+        context: `A vibrante Região Sul de Curitiba — integrando o Pinheirinho, Sítio Cercado, Umbará e subzonas populares de alta atividade como ${name}, Portão Velho e Vila Osternack — caracteriza-se pela intensa independência comercial e circulação diária de consumidores. Para despontar frente à concorrência regional, o método ideal do(a) ${name} é dominar o topo das pesquisas orgânicas e o Google Maps Pro para canalizar chamadas expressas diretamente ao WhatsApp comercial da sua empresa.`,
+        strongKeywords: [`Dentistas especializados no ${name}`, `Preço de sites no ${name}`, `Serviços por WhatsApp no ${name}`, `SEO Google Maps no ${name}`]
+      };
+    }
+
+    if (boqueiraoHauerXaximList.includes(slugified)) {
+      return {
+        strongSegment: "Distribuidoras de Autopeças, Comunicação Visual de Alta Velocidade, Metalurgia Pesada e Grandes Lojas de Varejo e Serviços",
+        context: `O tradicional cinturão comercial de Boqueirão, Hauer e Xaxim, com suas vilas ativas como o(a) ${name}, Hauer Velho ou Carmo, é o porto seguro de milhares de oficinas corporativas e distribuidores atacadistas de Curitiba. Na Suprema Site Express, estruturamos websites de altíssima performance para garantir que os empreendimentos do(a) ${name} se apropriem dos mais produtivos fluxos de buscas regionais por suprimentos e manufaturados.`,
+        strongKeywords: [`Empresas comerciais no ${name}`, `Gráficas expressas no ${name}`, `SEO Local focado em ${name} Curitiba`, `Orçamento de sites no ${name}`]
+      };
+    }
+
+    if (cajuruUberabaCapaoList.includes(slugified)) {
+      return {
+        strongSegment: "Empresas de Instalações, Transportadoras Rodoviárias, Construtoras Civis, Oficinas de Manutenção e Serviços Técnicos Especializados",
+        context: `A zona leste meridional de Curitiba — englobando o Cajuru, Uberaba, Capão da Imbuia e loteamentos populares concorridos como o(a) ${name}, Vila Pantanal ou Vila Oficinas — desponta como via expressa estratégica de conexões intermunicipais. Exibir uma plataforma digital moderna e responsiva garante que os prestadores do(a) ${name} faturem contratos operacionais de alto valor recorrente junto ao público qualificado de Curitiba.`,
+        strongKeywords: [`Sites de prestação de serviços no ${name}`, `SEO Google Maps ${name} Curitiba`, `Preço de landing page no ${name}`, `Suporte premium no ${name}`]
+      };
+    }
+
+    if (norteSubdivisions.includes(slugified)) {
+      return {
+        strongSegment: "Consultórios Odontológicos, Clínicas de Fisioterapia, Escolas de Idiomas, Supermercados, Lojas de Conveniência e Serviços Domésticos",
+        context: `A densa Região Norte de Curitiba — interligando o Boa Vista, Bairro Alto, Tingui, Bacacheri e subdivisões dinâmicas como o(a) ${name}, Bairro Alto Norte ou Tingui Velho — abriga um fortíssimo ecossistema de consumo de proximidade e serviços cotidianos. Desenvolver portais leves e rápidos na Suprema Site Express permite que suas operações no(a) ${name} liderem as intenções de busca localizadas nos mecanismos de recomendação.`,
+        strongKeywords: [`Clínicas odontológicas no ${name}`, `Advogados no ${name} Curitiba`, `Criação de site profissional ${name}`, `E-commerce no ${name}`]
+      };
+    }
+
+    if (santaFelicidadeOrleansBraz.includes(slugified)) {
+      return {
+        strongSegment: "Gastronomia Tradicional Italiana, Cantinas e Vinícolas, Indústrias Moveleiras, Estúdios de Arquitetura de Interiores e Construtoras de Casas",
+        context: `A célebre rota turística e residencial de Santa Felicidade, Orleans e São Braz — conectando áreas cobiçadas como o(a) ${name}, Jardim Gabineto e Orleans Velho — unifica uma potente herança de consumo gastronômico e alta expansão imobiliária. Um portal mobile-first moderno e otimizado para o(a) ${name} capta reservas imediatas de mesas e atrai investidores residenciais Premium com usabilidade impecável.`,
+        strongKeywords: [`Criação de sites de arquitetura no ${name}`, `SEO para restaurantes no ${name}`, `Móveis sob medida no ${name}`, `SEO Local ${name} Curitiba`]
+      };
+    }
+
     return {
-      strongSegment: "Comércio Varejista Regional, Clínicas Odontológicas Gerais, Prestadores de Serviços Locais, Pet Shops e Academias",
-      context: `Com forte independência econômica e grande fluxo de pedestres, o bairro ${name} possui um mercado local denso. Para encher a agenda de prestadores e comércios no ${name}, a prioridade número um é aparecer com destaque no topo das buscas regionais e do Google Maps de raio curto para quem reside na vizinhança.`,
-      strongKeywords: [`Dentistas especializados no ${name}`, `Preço de sites no ${name}`, `Serviços por WhatsApp no ${name}`, `SEO Google Maps no ${name}`]
+      strongSegment: "Comércio Geral Consolidado, Prestadores de Serviços Qualificados, Clínicas Privadas e Soluções Comerciais de Bairro",
+      context: `O bairro de ${name} possui um público dinâmico que busca serviços e opções comerciais de vizinhança primordialmente pelo smartphone. Garantir que sua marca no(a) ${name} carregue abaixo de 1s e exiba chamadas para ação eficientes pelo WhatsApp potencializa sua fidelização e captação orgânica de clientes locais de Curitiba.`,
+      strongKeywords: [`Preço de sites no ${name}`, `Serviços por WhatsApp no ${name}`, `SEO Google Maps no ${name}`, `Sites profissionais no ${name}`]
     };
   }
 

@@ -11,12 +11,17 @@ export const neighborhoods = [
   "Rebouças", "Riviera", "Santa Cândida", "Santa Felicidade", "Santa Quitéria", "Santo Inácio", "Seminário", 
   "Sítio Cercado", "São Braz", "São Francisco", "São João", "São Lourenço", "São Miguel", "Taboão", "Tarumã", 
   "Tatuquara", "Tingui", "Uberaba", "Umbará", "Vila Izabel", "Vista Alegre", "Xaxim",
-  // Bairros NÃO Oficiais (Vilas e Regiões Populares)
+  // Bairros NÃO Oficiais (Vilas, Loteamentos e Regiões Populares - Altamente buscados)
   "Vila Sandra", "Vila Verde", "Vila Nossa Senhora da Luz", "Vitória Régia", "Caiuá", "Sabará", "Gabineto", 
   "Itatiaia", "Santa Helena", "Conquista", "Barigui", "Osvaldo Cruz", "Atenas", "Neoville", "Vila Pantanal", 
   "Vila Torres", "Vila Hauer", "Vila Oficinas", "Vila Guaíra", "Vila Osternack", "Vila São Pedro", "Vila Audi", 
   "Vila Parolin", "Vila das Torres", "Jardim Gabineto", "Jardim Itatiaia", "Jardim da Ordem", "Jardim Kosmos", 
-  "Jardim Alvorada", "Ecoville", "Centro Histórico", "Batel Soho", "Jardim Schaffer", "Tanguá", "Vila Zumbi"
+  "Jardim Alvor", "Jardim Alvorada", "Ecoville", "Centro Histórico", "Batel Soho", "Jardim Schaffer", "Tanguá", 
+  "Vila Zumbi", "CIC Central", "Nossa Senhora da Luz", "Barigui (região CIC)", "Augusta (região)", "Riviera (região)", 
+  "São Miguel (região CIC)", "Pinheirinho Velho", "Sítio Cercado Velho", "Umbará de Baixo", "Umbará de Cima", 
+  "Capão Raso Velho", "Portão Velho", "Carmo", "Hauer Velho", "Xaxim Velho", "Boqueirão Alto", "Boqueirão Velho", 
+  "Cajuru Alto", "Uberaba Velho", "Uberaba de Cima", "Jardim das Torres", "Vila Prado", "Bairro Alto Norte", 
+  "Bairro Alto Velho", "Tingui Velho", "Boa Vista Norte", "Orleans Velho", "São Braz Alto", "Santa Felicidade Norte"
 ];
 
 export const cities = [
@@ -46,7 +51,7 @@ export const cities = [
   "Jacarezinho", "Jaguapitã", "Jaguariaíva", "Jandaia do Sul", "Janiópolis", "Japira", "Japurá", 
   "Jataizinho", "Jesuítas", "Joaquim Távora", "Jundiaí do Sul", "Juranda", "Jussara", "Kaloré", 
   "Lapa", "Laranjal", "Laranjeiras do Sul", "Leópolis", "Lidianópolis", "Loanda", "Lobato", 
-  "Londrina", "Luiziana", "Lunardelli", "Lupionópolis", "Mallet", "Mamborê", "Marilândia do Sul", 
+  "Londrina", "Luiziana", "Lunardelli", "Lupionópolis", "Mallet", "Mamborê", "Mandirituba", "Marilândia do Sul", 
   "Marilena", "Mariluz", "Marmeleiro", "Maringá", "Mariópolis", "Maripá", "Marquinho", "Marumbi", 
   "Matinhos", "Mato Rico", "Mauá da Serra", "Medianeira", "Mercedes", "Mirador", "Miraselva", 
   "Missal", "Moreira Sales", "Morretes", "Munhoz de Mello", "Nossa Senhora das Graças", 
