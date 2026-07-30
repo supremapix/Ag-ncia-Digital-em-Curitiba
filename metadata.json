@@ -1,6 +1,8 @@
 {
-  "name": "Criação de Sites Profissionais em 48h | Suprema Site",
-  "description": "Precisa de um site para empresas com entrega rápida? Agência de sites líder em criação de sites profissionais em 48 horas. Peça seu orçamento agora!",
+  "name": "Suprema Sites Express | Criação de Sites, Sistemas Web, Apps e IA",
+  "description": "Líder em Criação de Sites Profissionais, Lojas Virtuais, Sistemas Web (ERP/CRM), Aplicativos Android/iOS, Agentes de IA e SEO em todo o Brasil. Entrega em 48h!",
   "requestFramePermissions": [],
-  "sitemap": "https://www.supremasite.com.br/sitemap.xml"
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

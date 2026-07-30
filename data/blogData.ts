@@ -1,4 +1,3 @@
-
 export interface BlogPostContent {
   id: number;
   title: string;
@@ -14,359 +13,114 @@ export interface BlogPostContent {
 export const blogPosts: BlogPostContent[] = [
   {
     id: 1,
-    title: "Quanto custa criar um site profissional no Brasil em 2025?",
-    excerpt: "Descubra os valores reais para criar um site profissional em 2025. Analisamos preços de freelancers, agências e plataformas para você investir certo.",
-    date: "08 Abr, 2026",
+    title: "Quanto custa criar um sistema web sob medida no Brasil?",
+    excerpt: "Descubra quanto custa desenvolver um sistema web, ERP ou CRM personalizado. Analisamos escopo, banco de dados, licenças e por que sistemas próprios economizam no longo prazo.",
+    date: "28 Jul, 2026",
     author: "Omar Skafi",
-    category: "Negócios",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800",
-    tags: ["Preço Site", "Investimento Digital", "Agência Web"],
+    category: "Sistemas Web",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+    tags: ["Sistema Web", "Custo de Software", "ERP Customizado"],
     content: `
-      <h2>O Mercado de Desenvolvimento Web em 2025</h2>
-      <p>Investir em um site profissional é uma das decisões mais críticas para qualquer empresa brasileira em 2025. Com a digitalização acelerada, o site deixou de ser apenas um cartão de visitas para se tornar o principal canal de vendas e autoridade de uma marca.</p>
+      <h2>Quanto Custa Desenvolver um Software Empresarial Sob Medida?</h2>
+      <p>Desenvolver um <strong>Sistema Web sob medida</strong> ou um <strong>ERP / CRM personalizado</strong> é um dos investimentos mais estratégicos para empresas que desejam escalar operações, eliminar tarefas manuais e ter relatórios em tempo real sem pagar mensalidades abusivas por usuário.</p>
       
-      <h3>Fatores que Influenciam o Preço</h3>
-      <p>O custo de um site varia drasticamente dependendo de vários fatores:</p>
+      <h3>Variáveis que Definem o Custo de um Sistema</h3>
+      <p>O preço de um sistema varia conforme a complexidade técnica e integrações necessárias:</p>
       <ul>
-        <li><strong>Tecnologia:</strong> Sites em React ou Next.js tendem a ter um investimento inicial maior devido à complexidade, mas oferecem performance superior.</li>
-        <li><strong>Design:</strong> Templates prontos são mais baratos, enquanto designs exclusivos focados em conversão exigem mais horas de trabalho.</li>
-        <li><strong>Funcionalidades:</strong> Integrações com CRMs, sistemas de pagamento e áreas de membros aumentam o valor.</li>
+        <li><strong>Escopo Operacional:</strong> Sistemas com múltiplos perfis de acesso (Admin, Vendedor, Cliente, Gerente) exigem regras de permissão rigorosas.</li>
+        <li><strong>Integrações de API:</strong> Conexões com emissão de NF-e/NFC-e, gateways de pagamento (Pix, cartão), APIs do WhatsApp e transportadoras.</li>
+        <li><strong>Dashboards & Relatórios BI:</strong> Gráficos interativos para tomada de decisão com dados consolidados.</li>
       </ul>
 
-      <h3>Estimativas de Preços no Brasil</h3>
-      <p>Baseado no mercado atual, aqui estão as faixas de preço estimadas:</p>
+      <h3>Estimativas Médias do Mercado Brasileiro</h3>
       <ul>
-        <li><strong>Landing Pages:</strong> R$ 1.500 a R$ 4.500.</li>
-        <li><strong>Sites Institucionais:</strong> R$ 3.000 a R$ 12.000.</li>
-        <li><strong>E-commerce (Lojas Virtuais):</strong> R$ 5.000 a R$ 50.000+.</li>
+        <li><strong>Sistemas Web Iniciais / Painel Administrativo:</strong> R$ 4.500 a R$ 12.000.</li>
+        <li><strong>ERPs & CRMs Personalizados para PMEs:</strong> R$ 8.000 a R$ 35.000.</li>
+        <li><strong>Sistemas Corporativos de Grande Porte:</strong> R$ 40.000+.</li>
       </ul>
 
-      <h3>Por que a Suprema Site Express é o melhor custo-benefício?</h3>
-      <p>Na Suprema, eliminamos a burocracia. Entregamos sites em React de alta performance em 48 horas, com preços competitivos que permitem que pequenas empresas tenham a mesma tecnologia de grandes corporações.</p>
+      <h3>Por que a Suprema Sites Express é a Escolha Certa?</h3>
+      <p>Na Suprema, desenvolvemos softwares web com arquitetura moderna em React, Node.js e PostgreSQL. O código-fonte pertence 100% à sua empresa, garantindo independência e zero taxas abusivas por usuário adicional.</p>
     `
   },
   {
     id: 2,
-    title: "Site no Wix vs Site Profissional: qual escolher para sua empresa?",
-    excerpt: "Comparativo completo: Wix vs Site Profissional em React. Entenda as limitações de SEO, performance e propriedade que impactam sua empresa.",
-    date: "05 Abr, 2026",
+    title: "Quando vale a pena desenvolver um aplicativo mobile para sua empresa?",
+    excerpt: "Seu negócio precisa de um app nativo para Android e iPhone ou de um PWA? Saiba quando o investimento se paga rapidamente com retenção e vendas.",
+    date: "25 Jul, 2026",
     author: "Lizdaiane",
-    category: "Tecnologia",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-    tags: ["Wix", "React", "Desenvolvimento Web"],
+    category: "Aplicativos",
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800",
+    tags: ["Aplicativo Mobile", "React Native", "Android & iOS"],
     content: `
-      <h2>A Ilusão do "Grátis" e "Fácil"</h2>
-      <p>Muitos empreendedores começam pelo Wix pela facilidade do "arrasta e solta". No entanto, o que parece uma economia inicial pode se tornar um prejuízo estratégico a longo prazo.</p>
-      
-      <h3>Performance e Core Web Vitals</h3>
-      <p>O Google prioriza a experiência do usuário. Sites construídos em plataformas como o Wix carregam muitos scripts desnecessários, o que prejudica a velocidade. Já um site profissional em React é otimizado para carregar apenas o essencial, garantindo notas máximas no Google PageSpeed.</p>
+      <h2>O Momento Certo de Investir em um App Próprio</h2>
+      <p>Muitos empresários se perguntam se um aplicativo mobile é necessário. A resposta depende de como você se relaciona com seus clientes e se o uso recorrente é um pilar da sua receita.</p>
 
-      <h3>SEO e Indexação</h3>
-      <p>Embora o Wix tenha melhorado seu SEO, ele ainda oferece menos controle sobre a estrutura técnica do que um site desenvolvido sob medida. Na Suprema, configuramos cada meta tag e schema.org manualmente para garantir que o Google entenda exatamente o que sua empresa faz.</p>
+      <h3>Casos em que um Aplicativo Trás ROI Imediato</h3>
+      <ul>
+        <li><strong>Empresas de Delivery & Alimentação:</strong> Elimina comissões de 27% cobradas por iFood e Rappi.</li>
+        <li><strong>Clínicas, Barbearias & Salões:</strong> Facilita agendamento de horários em 2 cliques.</li>
+        <li><strong>Empresas de Serviços 24h & Logística:</strong> Permite envio de notificações push instantâneas.</li>
+        <li><strong>Programas de Fidelidade & Cashback:</strong> Retém o cliente dentro da sua própria plataforma.</li>
+      </ul>
 
-      <h3>Propriedade do Código</h3>
-      <p>No Wix, você "aluga" o site. Se parar de pagar, perde tudo. Com a Suprema Site Express, o código é seu. Você tem total liberdade e propriedade sobre sua presença digital.</p>
+      <h3>React Native e Flutter: Agilidade e Economia</h3>
+      <p>Na Suprema Sites Express, programamos com React Native e Flutter, o que permite criar um único código de altíssima performance para publicar simultaneamente na Google Play Store e Apple App Store.</p>
     `
   },
   {
     id: 3,
-    title: "Como aparecer no Google Maps: guia para pequenas empresas",
-    excerpt: "Quer atrair clientes próximos? Aprenda como colocar sua empresa no Google Maps e otimizar seu perfil para aparecer no topo das buscas locais.",
-    date: "02 Abr, 2026",
-    author: "Lizdaiane",
-    category: "SEO Local",
-    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=800",
-    tags: ["Google Maps", "Google Meu Negócio", "SEO Local"],
+    title: "ERP Pronto vs ERP Personalizado: qual a melhor escolha?",
+    excerpt: "Sistemas prontos cobram mensalidades por usuário e exigem que sua empresa mude processos. Veja as vantagens de um ERP feito sob medida.",
+    date: "22 Jul, 2026",
+    author: "Omar Skafi",
+    category: "ERP & Gestão",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+    tags: ["ERP", "Software Sob Medida", "Gestão Empresarial"],
     content: `
-      <h2>O Poder da Proximidade</h2>
-      <p>Se você tem um negócio físico ou atende uma região específica, aparecer no Google Maps não é opcional — é vital. Mais de 80% das buscas locais resultam em uma visita ou ligação em menos de 24 horas.</p>
-      
-      <h3>Passo 1: Reivindique seu Perfil</h3>
-      <p>O primeiro passo é criar ou reivindicar sua ficha no Google Meu Negócio. Certifique-se de que o nome, endereço e telefone (NAP) sejam idênticos em toda a web.</p>
+      <h2>A Armadilha do ERP Pronto</h2>
+      <p>Softwares ERP de prateleira parecem mais baratos inicialmente. No entanto, conforme sua equipe cresce, o custo por usuário se torna proibitivo. Além disso, a empresa precisa se adaptar ao sistema, e não o contrário.</p>
 
-      <h3>Passo 2: Otimização de Conteúdo</h3>
-      <p>Não basta apenas existir. Você precisa de fotos de alta qualidade, uma descrição rica em palavras-chave e, principalmente, avaliações positivas constantes.</p>
-
-      <h3>Passo 3: A Conexão com seu Site</h3>
-      <p>O Google cruza as informações do seu mapa com o seu site. Ter um site otimizado para SEO Local, como os que desenvolvemos na Suprema, aumenta drasticamente suas chances de aparecer no "Local Pack" (os 3 primeiros resultados do mapa).</p>
+      <h3>Vantagens do ERP Personalizado</h3>
+      <ul>
+        <li><strong>Zero Mensalidades por Usuário:</strong> Adicione 10 ou 100 colaboradores sem custos adicionais.</li>
+        <li><strong>Processos Exatos do Seu Negócio:</strong> Telas e fluxos construídos sob medida para a sua operação.</li>
+        <li><strong>Propriedade do Código-Fonte:</strong> O software torna-se um ativo valioso da sua empresa.</li>
+      </ul>
     `
   },
   {
     id: 4,
-    title: "O que é SEO local e por que sua empresa em Curitiba precisa disso",
-    excerpt: "Entenda como o SEO Local pode colocar sua empresa de Curitiba na frente da concorrência. Atraia clientes que já estão procurando por você na região.",
-    date: "30 Mar, 2026",
-    author: "Omar Skafi",
-    category: "SEO Local",
-    image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800",
-    tags: ["Curitiba", "SEO Local", "Marketing Regional"],
+    title: "React vs WordPress em 2026: Qual tecnologia escolher para seu site?",
+    excerpt: "Velocidade, segurança e nota no Google Core Web Vitals. Veja o comparativo definitivo entre React/Vite e WordPress.",
+    date: "18 Jul, 2026",
+    author: "Lizdaiane",
+    category: "Tecnologia",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
+    tags: ["React", "WordPress", "Desenvolvimento Web"],
     content: `
-      <h2>Dominando o Mercado de Curitiba</h2>
-      <p>Curitiba é um dos mercados mais competitivos do Brasil. Para se destacar aqui, não basta apenas "fazer SEO" genérico; você precisa de SEO Local.</p>
-      
-      <h3>O que diferencia o SEO Local?</h3>
-      <p>Enquanto o SEO tradicional foca em palavras-chave globais, o SEO Local foca em intenções de busca baseadas em localização, como "criação de sites em Curitiba" ou "dentista no Batel".</p>
+      <h2>A Evolução do Desenvolvimento Web</h2>
+      <p>Embora o WordPress tenha dominado os últimos anos, a web moderna exige velocidade instantânea. O Google penaliza sites lentos cheios de plugins pesados.</p>
 
-      <h3>Sinais de Autoridade Local</h3>
-      <p>Para ranquear bem em Curitiba, o Google analisa:</p>
-      <ul>
-        <li>Citações locais em diretórios.</li>
-        <li>Páginas de destino específicas para bairros ou cidades da região metropolitana.</li>
-        <li>Backlinks de outros sites curitibanos.</li>
-      </ul>
-
-      <p>Na Suprema Site Express, somos especialistas em Curitiba. Sabemos como os curitibanos buscam e como posicionar sua marca para ser a primeira opção deles.</p>
+      <h3>Por que Desenvolvemos em React e Vite?</h3>
+      <p>React é a tecnologia utilizada por gigantes como Facebook, Netflix e Airbnb. Ao criar um site em React, o carregamento das páginas ocorre sem recarregar a tela, oferecendo uma experiência de aplicativo super fluida com nota 100 no Google PageSpeed.</p>
     `
   },
   {
     id: 5,
-    title: "Landing page vs site completo: quando usar cada um",
-    excerpt: "Não sabe se precisa de uma Landing Page ou um Site Institucional? Entenda as diferenças e qual opção traz o melhor retorno para sua campanha.",
-    date: "25 Mar, 2026",
-    author: "Lizdaiane",
-    category: "Marketing",
-    image: "https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=800",
-    tags: ["Landing Page", "Site Institucional", "Conversão"],
-    content: `
-      <h2>Foco vs Abrangência</h2>
-      <p>A escolha entre uma Landing Page e um site completo depende exclusivamente do seu objetivo de marketing atual.</p>
-      
-      <h3>Quando usar uma Landing Page?</h3>
-      <p>Se você está rodando anúncios no Google Ads ou Meta Ads para um produto ou serviço específico, a Landing Page é a escolha certa. Ela tem um único objetivo: conversão. Sem distrações, sem menus complexos, apenas uma oferta e um botão de ação.</p>
-
-      <h3>Quando usar um Site Completo?</h3>
-      <p>O site institucional é sua casa digital. Ele serve para construir autoridade, contar sua história, listar todos os seus serviços e atrair tráfego orgânico via blog. É essencial para o branding a longo prazo.</p>
-
-      <p>Muitas empresas de sucesso usam ambos: um site robusto para SEO e várias Landing Pages para suas campanhas de tráfego pago.</p>
-    `
-  },
-  {
-    id: 6,
-    title: "5 erros que afastam clientes do seu site (e como corrigir)",
-    excerpt: "Seu site recebe visitas mas não gera vendas? Confira os 5 erros mais comuns que afastam clientes e aprenda como corrigi-los agora.",
-    date: "20 Mar, 2026",
+    title: "Como usar Inteligência Artificial e Agentes no WhatsApp da sua Empresa",
+    excerpt: "Aprenda como implementar Agentes de IA no WhatsApp para atender clientes, tirar dúvidas e agendar vendas 24 horas por dia.",
+    date: "14 Jul, 2026",
     author: "Omar Skafi",
-    category: "UX Design",
-    image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=800",
-    tags: ["UX Design", "Conversão", "Erros Web"],
+    category: "IA Empresarial",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
+    tags: ["Inteligência Artificial", "WhatsApp Bot", "Agentes de IA"],
     content: `
-      <h2>Por que seu site não converte?</h2>
-      <p>Ter tráfego é apenas metade da batalha. Se os visitantes chegam e saem sem comprar, você tem um problema de conversão.</p>
-      
-      <h3>1. Lentidão no Carregamento</h3>
-      <p>Se o site demora mais de 3 segundos para carregar, você perde 50% dos visitantes. Velocidade é dinheiro.</p>
+      <h2>A Revolução do Atendimento com IA no WhatsApp</h2>
+      <p>O WhatsApp é o principal canal de vendas do Brasil. Deixar clientes esperando por respostas durante a noite ou finais de semana custa milhares de reais em vendas perdidas.</p>
 
-      <h3>2. Falta de Responsividade</h3>
-      <p>Se o seu site é difícil de navegar no celular, você está ignorando 80% do seu público potencial.</p>
-
-      <h3>3. CTAs (Chamadas para Ação) Confusas</h3>
-      <p>O cliente não deve adivinhar o que fazer. Botões como "Fale Conosco" ou "Compre Agora" devem ser claros e visíveis.</p>
-
-      <h3>4. Design Datado</h3>
-      <p>Um site que parece de 2010 transmite insegurança. O design moderno gera confiança imediata.</p>
-
-      <h3>5. Conteúdo Pobre</h3>
-      <p>Se você não explica claramente como resolve o problema do cliente, ele buscará quem explique.</p>
-    `
-  },
-  {
-    id: 7,
-    title: "Como criar uma loja virtual do zero em 2025: passo a passo",
-    excerpt: "Quer vender online? Siga este passo a passo para criar sua loja virtual em 2025, desde a escolha da plataforma até a primeira venda.",
-    date: "15 Mar, 2026",
-    author: "Lizdaiane",
-    category: "E-commerce",
-    image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=800",
-    tags: ["E-commerce", "Vendas Online", "Loja Virtual"],
-    content: `
-      <h2>O Boom do E-commerce em 2025</h2>
-      <p>Vender online nunca foi tão acessível, mas a competição nunca foi tão alta. Para ter sucesso, você precisa de uma estrutura profissional.</p>
-      
-      <h3>Passo 1: Planejamento de Nicho e Logística</h3>
-      <p>Antes de abrir a loja, defina quem é seu público e como você entregará os produtos. A logística é o coração do e-commerce.</p>
-
-      <h3>Passo 2: Escolha da Tecnologia</h3>
-      <p>Para lojas que buscam escala, recomendamos soluções robustas. Na Suprema, criamos interfaces de e-commerce em React que são extremamente rápidas, reduzindo o abandono de carrinho.</p>
-
-      <h3>Passo 3: Meios de Pagamento e Segurança</h3>
-      <p>Ofereça Pix, cartão e boleto. Garanta que seu site tenha certificado SSL e siga as normas da LGPD para proteger os dados dos seus clientes.</p>
-    `
-  },
-  {
-    id: 8,
-    title: "Core Web Vitals: o que são e por que impactam seu negócio",
-    excerpt: "Entenda o que são os Core Web Vitals e como a velocidade e estabilidade do seu site influenciam diretamente no seu ranking e nas suas vendas.",
-    date: "10 Mar, 2026",
-    author: "Omar Skafi",
-    category: "Tecnologia",
-    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800",
-    tags: ["Core Web Vitals", "Google Ranking", "Performance"],
-    content: `
-      <h2>A Nova Métrica do Google</h2>
-      <p>O Google não avalia mais apenas o conteúdo. Ele avalia a experiência técnica através dos Core Web Vitals.</p>
-      
-      <h3>LCP (Largest Contentful Paint)</h3>
-      <p>Mede o tempo que o maior elemento da página leva para carregar. Deve ser menor que 2.5 segundos.</p>
-
-      <h3>FID (First Input Delay)</h3>
-      <p>Mede a interatividade. Quanto tempo leva para o site responder ao primeiro clique do usuário?</p>
-
-      <h3>CLS (Cumulative Layout Shift)</h3>
-      <p>Mede a estabilidade visual. Sabe quando você vai clicar em algo e o layout "pula"? Isso é um CLS ruim.</p>
-
-      <p>Na Suprema Site Express, todos os nossos sites são otimizados para passar com nota máxima em todos esses critérios, garantindo vantagem competitiva no ranking.</p>
-    `
-  },
-  {
-    id: 9,
-    title: "Criação de sites para restaurantes: guia completo",
-    excerpt: "Seu restaurante precisa de mais do que um Instagram. Aprenda como um site profissional pode aumentar suas reservas e pedidos diretos sem taxas.",
-    date: "05 Mar, 2026",
-    author: "Lizdaiane",
-    category: "Nicho",
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800",
-    tags: ["Restaurantes", "Gastronomia", "Site para Restaurante"],
-    content: `
-      <h2>Além do Instagram</h2>
-      <p>Muitos restaurantes dependem apenas do Instagram e iFood. Isso é um erro estratégico. Você está deixando sua marca nas mãos de terceiros e pagando taxas altas.</p>
-      
-      <h3>Cardápio Digital Otimizado</h3>
-      <p>Um site permite um cardápio interativo, fácil de ler no celular e otimizado para o Google. Quando alguém busca "restaurante perto de mim", seu site deve ser o primeiro a aparecer.</p>
-
-      <h3>Reservas e Pedidos Diretos</h3>
-      <p>Com um site próprio, você pode aceitar reservas e pedidos de delivery sem pagar comissões de 27% para aplicativos, aumentando sua margem de lucro imediatamente.</p>
-    `
-  },
-  {
-    id: 10,
-    title: "Sites para clínicas e consultórios: requisitos e boas práticas",
-    excerpt: "Guia completo para médicos e profissionais da saúde. Como criar um site que transmite confiança e facilita o agendamento de consultas.",
-    date: "01 Mar, 2026",
-    author: "Omar Skafi",
-    category: "Nicho",
-    image: "https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&q=80&w=800",
-    tags: ["Saúde", "Clínicas", "Marketing Médico"],
-    content: `
-      <h2>Ética e Confiança na Saúde</h2>
-      <p>Para profissionais da saúde, o site é uma extensão do consultório. Ele deve transmitir autoridade, higiene e acolhimento.</p>
-      
-      <h3>Conteúdo Educativo</h3>
-      <p>O Google valoriza sites de saúde que oferecem informações precisas e úteis (E-E-A-T). Ter um blog médico ajuda a posicionar o profissional como referência na sua especialidade.</p>
-
-      <h3>Facilidade de Agendamento</h3>
-      <p>Integrações com sistemas de agenda online reduzem o trabalho da recepção e facilitam a vida do paciente, que pode marcar uma consulta às 23h de um domingo.</p>
-    `
-  },
-  {
-    id: 11,
-    title: "Como escolher a melhor agência de sites para sua empresa",
-    excerpt: "Não erre na contratação! Saiba o que avaliar ao escolher uma agência de sites para garantir um projeto de sucesso e sem dores de cabeça.",
-    date: "25 Fev, 2026",
-    author: "Omar Skafi",
-    category: "Negócios",
-    image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=800",
-    tags: ["Agência Web", "Contratação", "Dicas de Negócios"],
-    content: `
-      <h2>O Barato que Sai Caro</h2>
-      <p>Contratar uma agência de sites é um investimento em longo prazo. Escolher apenas pelo menor preço é o caminho mais rápido para o arrependimento.</p>
-      
-      <h3>O que avaliar no portfólio?</h3>
-      <p>Não olhe apenas a estética. Teste a velocidade dos sites que a agência já fez. Verifique se eles funcionam bem no celular e se aparecem no Google.</p>
-
-      <h3>Suporte e Tecnologia</h3>
-      <p>A agência oferece suporte após a entrega? Qual tecnologia eles usam? Fuja de agências que usam ferramentas obsoletas que deixarão seu site lento e vulnerável.</p>
-    `
-  },
-  {
-    id: 12,
-    title: "Site responsivo: por que 80% das buscas vêm do celular",
-    excerpt: "Ter um site que funciona no celular não é mais luxo, é obrigação. Entenda por que o Google prioriza sites responsivos e como isso afeta suas vendas.",
-    date: "20 Fev, 2026",
-    author: "Lizdaiane",
-    category: "UX Design",
-    image: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&q=80&w=800",
-    tags: ["Mobile First", "Responsividade", "UX"],
-    content: `
-      <h2>O Mundo é Mobile</h2>
-      <p>Se o seu site foi pensado primeiro para o desktop e "adaptado" para o celular, você está fazendo errado. O conceito hoje é Mobile-First.</p>
-      
-      <h3>A Experiência do Polegar</h3>
-      <p>Um site responsivo de verdade considera o tamanho dos botões para o toque humano, a legibilidade do texto sem zoom e a velocidade em conexões 4G/5G.</p>
-
-      <h3>Impacto no Google</h3>
-      <p>O Google usa o "Mobile-First Indexing". Isso significa que ele avalia a versão mobile do seu site para decidir seu ranking, mesmo para buscas feitas no computador.</p>
-    `
-  },
-  {
-    id: 13,
-    title: "Como escolher entre as melhores empresas que criam sites de vendas para seu negócio",
-    excerpt: "Encontrar a parceira ideal é o primeiro passo para o sucesso do seu e-commerce. Saiba o que considerar ao avaliar empresas que criam sites de vendas.",
-    date: "29 Abr, 2026",
-    author: "Omar Skafi",
-    category: "E-commerce",
-    image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=800",
-    tags: ["Sites de Vendas", "E-commerce", "Negócios Online"],
-    content: `
-      <h2>O Desafio de Encontrar Empresas que Criam Sites de Vendas de Qualidade</h2>
-      <p>No mercado atual, a oferta de <strong>empresas que criam sites de vendas</strong> é vasta, mas a qualidade técnica e o foco em conversão variam drasticamente. Escolher a empresa errada pode significar um site lento, difícil de gerenciar e que não converte visitantes em compradores.</p>
-      
-      <h3>O que avaliar em empresas que criam sites de vendas?</h3>
-      <p>Ao pesquisar por <strong>empresas que criam sites de vendas</strong>, considere os seguintes pontos cruciais:</p>
-      <ul>
-        <li><strong>Velocidade de Carregamento:</strong> No e-commerce, cada milissegundo conta. Verifique se a empresa utiliza tecnologias modernas como React.</li>
-        <li><strong>Otimização Mobile:</strong> A maioria das compras online hoje é feita via smartphone.</li>
-        <li><strong>Experiência em SEO:</strong> O site precisa ser amigável aos motores de busca desde o primeiro dia.</li>
-      </ul>
-
-      <p>A Suprema Site se destaca entre as <strong>empresas que criam sites de vendas</strong> pela nossa entrega recorde e foco total em performance de vendas.</p>
-    `
-  },
-  {
-    id: 14,
-    title: "Site para empresas: Guia definitivo para contratar um desenvolvedor de sites especialista",
-    excerpt: "Não sabe por onde começar? Este guia ajuda você a entender por que um desenvolvedor de sites especialista é essencial para o seu site para empresas.",
-    date: "28 Abr, 2026",
-    author: "Lizdaiane",
-    category: "Negócios",
-    image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800",
-    tags: ["Site para Empresas", "Desenvolvimento Web", "Contratação"],
-    content: `
-      <h2>A Importância de um Site para Empresas Estratégico</h2>
-      <p>Um <strong>site para empresas</strong> não é apenas uma despesa, é o ativo digital mais importante da sua marca. Ele trabalha para você 24 horas por dia, 7 dias por semana. Mas para que ele seja eficaz, você precisa de um <strong>desenvolvedor de sites</strong> que entenda de estratégia, não apenas de código.</p>
-      
-      <h3>Por que contratar um desenvolvedor de sites profissional?</h3>
-      <p>Muitas vezes, ao tentar economizar no <strong>site para empresas</strong>, o empresário acaba com um projeto amador que afasta clientes. Um <strong>desenvolvedor de sites</strong> especialista garante:</p>
-      <ul>
-        <li>Segurança de dados e conformidade com a LGPD.</li>
-        <li>Arquitetura de informação voltada para a jornada do cliente.</li>
-        <li>Escalabilidade para que seu site cresça com seu negócio.</li>
-      </ul>
-
-      <p>Na Suprema, cada <strong>site para empresas</strong> que entregamos é assinado por um <strong>desenvolvedor de sites</strong> sênior focado em resultados.</p>
-    `
-  },
-  {
-    id: 15,
-    title: "Investimento em Up Sites: Por que sua empresa precisa de sites profissionais em 2024",
-    excerpt: "Sua vitrine digital está datada? Descubra como o conceito de Up Sites e a criação de sites profissionais podem revitalizar sua marca e aumentar lucros.",
-    date: "27 Abr, 2026",
-    author: "Omar Skafi",
-    category: "Tecnologia",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-    tags: ["Up Sites", "Sites Profissionais", "Inovação"],
-    content: `
-      <h2>A Revolução dos Up Sites no Mercado Digital</h2>
-      <p>O termo <strong>up sites</strong> refere-se à evolução contínua da sua presença digital. Em um mundo onde a tecnologia muda a cada trimestre, manter <strong>sites profissionais</strong> atualizados é a única forma de manter sua competitividade e autoridade.</p>
-      
-      <h3>Os benefícios de investir em sites profissionais de nova geração</h3>
-      <p>Diferente de sites construídos em plataformas limitadas, os <strong>sites profissionais</strong> desenvolvidos sob medida oferecem:</p>
-      <ul>
-        <li>Menor taxa de rejeição devido à velocidade extrema.</li>
-        <li>Melhor posicionamento orgânico com SEO avançado.</li>
-        <li>Integrações mais profundas com ferramentas de vendas.</li>
-      </ul>
-
-      <p>O investimento em <strong>up sites</strong> é o que separa as empresas que apenas existem online daquelas que dominam o seu nicho. Garantir que você tenha <strong>sites profissionais</strong> é o nosso compromisso na Suprema Site Express.</p>
+      <h3>O que é um Agente de IA Treinado?</h3>
+      <p>Ao contrário dos chatbots tradicionais com menus engessados, um Agente de IA baseado em LLMs como o Gemini da Google entende mensagens de voz, textos complexos e gírias. Ele consulta o catálogo da sua empresa, verifica preços e realiza o agendamento de forma totalmente humanizada.</p>
     `
   }
 ];

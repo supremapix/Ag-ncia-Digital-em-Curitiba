@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# LLM & AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.supremasite.com.br/sitemap_index.xml
+Sitemap: https://www.supremasite.com.br/sitemap.xml
+Sitemap: https://www.supremasite.com.br/sitemap_pages.xml
+Sitemap: https://www.supremasite.com.br/sitemap_cidades.xml
+Sitemap: https://www.supremasite.com.br/sitemap_bairros.xml

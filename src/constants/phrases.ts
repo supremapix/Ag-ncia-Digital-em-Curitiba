@@ -1,18 +1,16 @@
-
 export const PERSUASIVE_PHRASES = [
-  "Criação de Site Profissional em 48h",
-  "Otimização de SEO Local Avançado",
-  "Design Premium focado em UX",
-  "Performance Nota 100 no Google",
+  "Criação de Sites Profissionais em 48h",
+  "Sistemas Web & ERP/CRM Sob Medida",
+  "Aplicativos Android e iOS de Alta Performance",
+  "Agentes de IA Empresarial & Automação WhatsApp",
+  "Lojas Virtuais Otimizadas para Vender 24h",
+  "SEO Semântico, LLM SEO & Dominância Google/IA",
   "Landing Pages de Altíssima Conversão",
-  "Desenvolvimento Site Express Curitiba",
-  "Loja Virtual de Alta Performance",
-  "Estratégia de Autoridade Digital",
-  "Core Web Vitals Nota Máxima",
-  "Google Maps Empresa no Topo",
-  "Tecnologia React / Vite de Elite",
-  "Consultoria em Presença Online",
-  "Hospedagem Ultra-Rápida Inclusa",
-  "Suporte VIP via WhatsApp 24h",
-  "Garantia de ROI em seu Site"
+  "Design UX/UI Premium e Autoridade Digital",
+  "Core Web Vitals Nota 100 com React & Cloud",
+  "Google Maps & SEO Local em Primeiro Lugar",
+  "Automação Comercial e Integrações via API",
+  "Painéis Administrativos & Dashboards BI",
+  "Suporte VIP via WhatsApp com Especialistas",
+  "Garantia de Performance, Segurança e ROI"
 ];

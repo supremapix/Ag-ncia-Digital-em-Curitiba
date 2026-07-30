@@ -1,9 +1,11 @@
-
 import React, { useEffect } from 'react';
-import { CheckCircle, BarChart, Smartphone, Globe, Zap, ArrowRight, Shield, TrendingUp } from 'lucide-react';
+import { 
+  Globe, ShoppingCart, Smartphone, Cpu, Bot, TrendingUp, CheckCircle, 
+  Zap, ArrowRight, ShieldCheck, Sparkles, Clock, Star, Users, MapPin, 
+  Layers, Lock, Phone, MessageSquare, BarChart3, ChevronRight 
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { LeadForm } from '../components/LeadForm';
-import { VideoPlayer } from '../components/VideoPlayer';
 import { LocationTicker } from '../components/LocationTicker';
 import { FAQAccordionTicker } from '../components/FAQAccordionTicker';
 import { StaticFAQ } from '../components/StaticFAQ';
@@ -14,10 +16,10 @@ import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
 
 export const Home: React.FC = () => {
   useEffect(() => {
-    document.title = "Criação de Sites Profissionais e Lojas de Vendas | Suprema Site";
+    document.title = "Suprema Sites Express | Criação de Sites, Sistemas Web, Apps e IA";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', "Especialistas em criação de sites profissionais, agência de desenvolvimento de sites e lojas virtuais. Desenvolvemos seu site em 48h com foco em vendas em todo o Brasil!");
+      metaDesc.setAttribute('content', "Especialistas em Criação de Sites Profissionais, Lojas Virtuais, Sistemas Web (ERP/CRM), Aplicativos Android/iOS, Agentes de IA e SEO em todo o Brasil. Entrega expressa em 48h!");
     }
 
     // FAQ Schema
@@ -27,42 +29,34 @@ export const Home: React.FC = () => {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Quem faz site profissional com entrega rápida no Brasil?",
+          "name": "Quem faz site profissional com entrega rápida em até 48 horas?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A Suprema Site Express é especialista em criação de sites profissionais com entrega em até 48 horas. Atendemos todo o Brasil com foco em performance e resultados."
+            "text": "A Suprema Sites Express é a agência líder na criação de sites profissionais com entrega expressa em até 48 horas. Desenvolvemos com React e infraestrutura Cloud para máxima velocidade e SEO."
           }
         },
         {
           "@type": "Question",
-          "name": "Quais são as melhores empresas que criam sites de vendas?",
+          "name": "Qual o valor de um sistema web ou ERP sob medida para empresas?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Empresas como a Suprema Site Express se destacam por criar sites de vendas (e-commerce) otimizados para conversão, integrando meios de pagamento e SEO avançado."
+            "text": "O investimento em um sistema web sob medida varia conforme as funcionalidades (financeiro, estoque, CRM, faturamento). Na Suprema, oferecemos soluções com excelente custo-benefício e total propriedade do código."
           }
         },
         {
           "@type": "Question",
-          "name": "Como encontrar uma agência de desenvolvimento de sites confiável?",
+          "name": "Como criar um aplicativo para Android e iPhone para minha empresa?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Para escolher uma agência de desenvolvimento de sites, verifique o portfólio, tempo de mercado e depoimentos de clientes. A Suprema Site tem mais de 10 anos de experiência e milhares de projetos entregues."
+            "text": "Desenvolvemos aplicativos nativos e híbridos usando React Native e Flutter, com publicação na Google Play Store e Apple App Store, além de PWAs sem necessidade de download."
           }
         },
         {
           "@type": "Question",
-          "name": "Qual o valor de um site para empresas pequenas e médias?",
+          "name": "Como implementar Inteligência Artificial e Agentes no WhatsApp da empresa?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "O valor de um site para empresas varia conforme a complexidade, mas oferecemos soluções escaláveis que cabem no orçamento de PMEs que buscam crescimento digital."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Qual a vantagem de contratar um desenvolvedor de sites especialista?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Contratar um desenvolvedor de sites especialista garante que seu projeto siga as melhores práticas de SEO, velocidade (Core Web Vitals) e segurança, garantindo maior ROI."
+            "text": "Integramos Agentes de IA treinados com os dados do seu negócio para atender, qualificar e agendar clientes 24 horas por dia diretamente no WhatsApp e no seu site."
           }
         }
       ]
@@ -74,264 +68,391 @@ export const Home: React.FC = () => {
     document.head.appendChild(script);
 
     return () => {
-      document.head.removeChild(script);
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
     };
   }, []);
 
   return (
-    <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative bg-brand-dark text-white py-24 lg:py-36 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-5"></div>
+    <div className="flex flex-col bg-gray-50">
+      
+      {/* HERO SECTION */}
+      <section className="relative bg-brand-dark text-white py-20 lg:py-32 overflow-hidden border-b border-white/10">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/40 via-brand-dark to-brand-dark"></div>
+        
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-16">
-             <div className="lg:w-3/5 text-center lg:text-left animate-slide-up">
-                <span className="text-brand-accent font-black tracking-[0.3em] uppercase mb-6 inline-block px-4 py-2 bg-white/5 rounded-full border border-white/10 text-xs">
-                  Suprema Mídia & Performance
-                </span>
-                <h1 className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9] tracking-tighter">
-                  Especialistas em Criação de <span className="text-brand-primary">Sites Profissionais</span> e Lojas de Venda Online
-                </h1>
-                <div className="min-h-[100px] md:min-h-[80px] mb-10">
-                  <TypewriterText 
-                    phrases={PERSUASIVE_PHRASES}
-                    className="text-xl lg:text-2xl text-gray-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium"
-                    speed={40}
-                    delay={3000}
-                  />
-                </div>
-                <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
-                  <a 
-                    href="https://wa.me/5541987001004" 
-                    className="shimmer-btn text-brand-dark font-black py-5 px-12 rounded-2xl text-xl transition-all transform hover:scale-105 shadow-2xl"
-                  >
-                    Começar Meu Projeto Agora
-                  </a>
-                  <Link 
-                    to="/portfolio" 
-                    className="bg-white/5 border border-white/10 hover:bg-white/10 text-white font-bold py-5 px-12 rounded-2xl text-xl transition-all flex items-center justify-center gap-2"
-                  >
-                    Portfólio <ArrowRight size={20}/>
-                  </Link>
-                </div>
-             </div>
-             <div className="lg:w-2/5 w-full animate-fade-in delay-300">
-                <LeadForm />
-             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="bg-white py-12 border-b border-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-             {[
-               { val: "15.000+", label: "Leads Gerados" },
-               { val: "10+ ANOS", label: "De Mercado" },
-               { val: "1.100+", label: "Cidades no Sul" },
-               { val: "48h", label: "Entrega Expressa" },
-             ].map((stat, i) => (
-               <div key={i} className="text-center">
-                  <span className="block text-3xl md:text-5xl font-black text-brand-dark tracking-tighter">{stat.val}</span>
-                  <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">{stat.label}</span>
-               </div>
-             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-           <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-black text-brand-dark mb-4 tracking-tighter">Agência de Desenvolvimento de Sites Focada em Resultados Reais</h2>
-              <p className="text-gray-500 max-w-2xl mx-auto">Tecnologia de ponta e especialistas em site para empresas que buscam liderança digital.</p>
-           </div>
-           <div className="grid md:grid-cols-3 gap-10">
-              <div className="bg-gray-50 p-10 rounded-[2.5rem] border border-gray-100 hover:shadow-2xl transition-all group">
-                 <div className="mb-8 text-brand-primary"><Globe size={40} /></div>
-                 <h3 className="text-2xl font-black text-brand-dark mb-4">Sites Institucionais e Corporativos de Alta Performance</h3>
-                 <p className="text-gray-600 mb-6">Sua empresa com uma vitrine digital profissional e autoridade imediata.</p>
-                 <div className="space-y-3">
-                    <h4 className="text-sm font-bold text-brand-dark flex items-center gap-2"><CheckCircle size={16} className="text-brand-primary"/> Design Responsivo Otimizado para Dispositivos Móveis</h4>
-                    <h4 className="text-sm font-bold text-brand-dark flex items-center gap-2"><CheckCircle size={16} className="text-brand-primary"/> Integração Estratégica com WhatsApp e Redes Sociais</h4>
-                 </div>
-              </div>
-              <div className="bg-gray-50 p-10 rounded-[2.5rem] border border-gray-100 hover:shadow-2xl transition-all group">
-                 <div className="mb-8 text-brand-accent"><Shield size={40} /></div>
-                 <h3 className="text-2xl font-black text-brand-dark mb-4">Lojas Virtuais e E-commerce para Vendas Online</h3>
-                 <p className="text-gray-600 mb-6">Venda seus produtos 24h por dia com uma plataforma robusta e segura.</p>
-                 <div className="space-y-3">
-                    <h4 className="text-sm font-bold text-brand-dark flex items-center gap-2"><CheckCircle size={16} className="text-brand-primary"/> Sistemas de Pagamento Seguros e Checkout Simplificado</h4>
-                    <h4 className="text-sm font-bold text-brand-dark flex items-center gap-2"><CheckCircle size={16} className="text-brand-primary"/> Gestão de Produtos e Estoque de Fácil Operação</h4>
-                 </div>
-              </div>
-              <div className="bg-gray-50 p-10 rounded-[2.5rem] border border-gray-100 hover:shadow-2xl transition-all group">
-                 <div className="mb-8 text-purple-600"><TrendingUp size={40} /></div>
-                 <h3 className="text-2xl font-black text-brand-dark mb-4">Landing Pages de Alta Conversão para Campanhas de Tráfego</h3>
-                 <p className="text-gray-600 mb-6">Páginas focadas em um único objetivo: transformar visitantes em clientes.</p>
-                 <div className="space-y-3">
-                    <h4 className="text-sm font-bold text-brand-dark flex items-center gap-2"><CheckCircle size={16} className="text-brand-primary"/> Foco Total em Geração de Leads e Vendas Diretas</h4>
-                    <h4 className="text-sm font-bold text-brand-dark flex items-center gap-2"><CheckCircle size={16} className="text-brand-primary"/> Copywriting Persuasivo e Gatilhos Mentais de Venda</h4>
-                 </div>
-              </div>
-           </div>
-        </div>
-      </section>
-
-      {/* Differentiators Section */}
-      <section className="py-24 bg-brand-dark text-white overflow-hidden">
-        <div className="container mx-auto px-4">
-           <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter">Por que a Suprema Site Express é a Melhor Escolha para seu Negócio?</h2>
-           </div>
-           <div className="grid md:grid-cols-3 gap-12">
-              <div className="text-center">
-                 <div className="w-20 h-20 bg-brand-primary/20 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                    <Zap size={40} className="text-brand-primary" />
-                 </div>
-                 <h3 className="text-2xl font-black mb-4">Entrega Recorde: Seu Site Profissional Pronto em até 48 Horas</h3>
-                 <h4 className="text-gray-400 font-medium">Metodologia Ágil de Desenvolvimento Sem Burocracia</h4>
-              </div>
-              <div className="text-center">
-                 <div className="w-20 h-20 bg-brand-accent/20 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                    <Smartphone size={40} className="text-brand-accent" />
-                 </div>
-                 <h3 className="text-2xl font-black mb-4">Tecnologia de Ponta com React e Performance Máxima</h3>
-                 <h4 className="text-gray-400 font-medium">Carregamento Instantâneo e Excelência em Core Web Vitals</h4>
-              </div>
-              <div className="text-center">
-                 <div className="w-20 h-20 bg-purple-600/20 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                    <BarChart size={40} className="text-purple-400" />
-                 </div>
-                 <h3 className="text-2xl font-black mb-4">SEO Local Estratégico para Dominar as Buscas na sua Região</h3>
-                 <h4 className="text-gray-400 font-medium">Otimização Completa para Google Meu Negócio e Mapas</h4>
-              </div>
-           </div>
-        </div>
-      </section>
-
-      {/* Social Proof Section */}
-      <section className="bg-gray-50">
-        <div className="container mx-auto px-4 pt-24 text-center">
-           <h2 className="text-4xl md:text-6xl font-black text-brand-dark mb-4 tracking-tighter">Resultados que Falam por Nós: Prova Social e Casos de Sucesso</h2>
-           <h3 className="text-xl text-gray-500 font-medium mb-12">Depoimentos de Empreendedores que Transformaram sua Presença Digital</h3>
-           <h5 className="text-brand-primary font-black uppercase tracking-widest text-sm mb-8">O que dizem nossos parceiros em Curitiba e Região Sul</h5>
-        </div>
-        <ReviewsTicker />
-      </section>
-
-      {/* Portfolio Highlight Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4 text-center">
-           <h3 className="text-4xl font-black text-brand-dark mb-12">Portfólio de Projetos Recentes e Histórias de Crescimento</h3>
-           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100">
-                 <h6 className="text-xl font-black text-brand-dark mb-2">Case: Expansão Digital para Clínicas e Consultórios</h6>
-                 <p className="text-gray-500 text-sm">Aumento de 300% nos agendamentos via site.</p>
-              </div>
-              <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100">
-                 <h6 className="text-xl font-black text-brand-dark mb-2">Case: Digitalização de Serviços de Advocacia e Consultoria</h6>
-                 <p className="text-gray-500 text-sm">Autoridade local consolidada em menos de 30 dias.</p>
-              </div>
-           </div>
-        </div>
-      </section>
-
-      {/* Geographic Coverage Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-4 text-center">
-           <h2 className="text-4xl md:text-6xl font-black text-brand-dark mb-8 tracking-tighter">Presença Nacional: Atendimento Especializado em Todo o Brasil</h2>
-           <h3 className="text-2xl font-black text-gray-600 mb-12">Criação de Sites no Paraná, Santa Catarina e Rio Grande do Sul</h3>
-           <div className="flex flex-wrap justify-center gap-8 mb-12">
-              <h5 className="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100 text-brand-dark font-bold">Destaque: Sites Profissionais em Curitiba, Londrina e Maringá</h5>
-              <h5 className="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100 text-brand-dark font-bold">Destaque: Presença Digital em Florianópolis, Joinville e Blumenau</h5>
-              <h5 className="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100 text-brand-dark font-bold">Destaque: Desenvolvimento Web em Porto Alegre e Caxias do Sul</h5>
-           </div>
-        </div>
-        <LocationTicker />
-      </section>
-
-      {/* SEO Content Section */}
-      <section className="py-24 bg-white border-t border-gray-100">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="prose prose-lg max-w-none text-gray-600">
-            <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-8 tracking-tighter text-center">
-              A Melhor Agência de Desenvolvimento de Sites para Sua Empresa
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              No cenário digital altamente competitivo de hoje, encontrar <strong>quem faz site profissional</strong> com qualidade e estratégia é o primeiro passo para o sucesso de qualquer negócio. A Suprema Site não é apenas mais uma entre as centenas de <strong>empresas que criam sites de vendas</strong> no mercado; somos um parceiro estratégico focado em performance, conversão e resultados reais. Nosso trabalho como uma <strong>agência de desenvolvimento de sites</strong> de elite é garantir que sua marca seja encontrada por quem realmente quer comprar seus produtos ou serviços, transformando cliques em faturamento.
-            </p>
-            <p className="mb-6 leading-relaxed">
-              Ter um <strong>site para empresas</strong> que transmita autoridade é fundamental. O consumidor moderno é exigente e realiza pesquisas profundas antes de fechar qualquer negócio. Se sua empresa não possui uma presença digital sólida, você está entregando clientes de bandeja para a concorrência. Quando nos tornamos o seu <strong>desenvolvedor de sites</strong>, injetamos tecnologia de ponta para que sua marca se destaque. Nossos <strong>sites profissionais</strong> são construídos para serem rápidos, seguros e, acima de tudo, persuasivos.
-            </p>
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             
-            <h3 className="text-2xl font-black text-brand-dark mb-4 uppercase tracking-tight">
-              Desenvolvemos seu site com Foco em SEO e Experiência do Usuário (UX)
-            </h3>
-            <p className="mb-6 leading-relaxed">
-              Acreditamos que a estética deve caminhar junto com a inteligência de dados. Quando <strong>desenvolvemos seu site</strong>, cada linha de código é otimizada para os algoritmos de busca do Google. Utilizamos a tecnologia React e Vite, as mesmas pilhas tecnológicas usadas por gigantes do Vale do Silício, para garantir que seus <strong>sites profissionais</strong> carreguem em milissegundos. Mais do que um design bonito, um <strong>site para empresas</strong> de sucesso precisa ser funcional em todos os dispositivos. Como seu <strong>desenvolvedor de sites</strong> parceiro, implementamos as melhores práticas de UX (User Experience) para guiar o visitante de forma intuitiva até o fechamento do negócio.
-            </p>
-            <p className="mb-6 leading-relaxed">
-              O diferencial de trabalhar com uma <strong>agência de desenvolvimento de sites</strong> como a Suprema é o nosso compromisso com o SEO Local. Se você quer que sua empresa seja a primeira opção em sua região, nossa estratégia de Ranqueamento Semântico é imbatível. Nós entendemos o que o seu cliente busca e como ele busca em Curitiba e em todo o Brasil. Isso nos coloca à frente de outras <strong>empresas que criam sites de vendas</strong>, que muitas vezes entregam apenas o visual e esquecem o que realmente traz o tráfego qualificado.
-            </p>
+            <div className="lg:w-7/12 text-center lg:text-left">
+              <span className="inline-flex items-center gap-2 text-brand-accent font-black tracking-[0.2em] uppercase mb-6 px-4 py-2 bg-white/5 rounded-full border border-white/10 text-xs">
+                <Sparkles size={14} /> Suprema Sites Express & Software House
+              </span>
 
-            <h3 className="text-2xl font-black text-brand-dark mb-4 uppercase tracking-tight">
-              Up Sites: Elevando o Patamar da sua Presença Digital e Performance
-            </h3>
-            <p className="mb-6 leading-relaxed">
-              O conceito de <strong>up sites</strong> no mercado atual vai muito além de apenas atualizar um layout antigo. Trata-se de uma modernização sistêmica e tecnológica completa da sua vitrine digital. Atuamos como um <strong>desenvolvedor de sites</strong> que possui visão de negócios, entendendo que cada segundo de atraso no carregamento custa dinheiro para sua empresa. Se você precisa de <strong>sites profissionais</strong> que passem credibilidade imediata e convertam leads frios em clientes quentes, nosso processo de design premium é a solução que você buscava. 
-            </p>
-            <p className="mb-6 leading-relaxed">
-              Enquanto muitas <strong>empresas que criam sites de vendas</strong> focam apenas em volume, nós focamos em qualidade e escalabilidade. Entendemos que um <strong>site para empresas</strong> deve estar pronto para crescer junto com o negócio. Por isso, quando <strong>desenvolvemos seu site</strong>, pensamos na integração futura com CRMs, sistemas de automação de marketing e ferramentas de análise de dados. Este é o verdadeiro poder dos <strong>up sites</strong>: tecnologia que trabalha para você.
-            </p>
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black mb-6 leading-[0.95] tracking-tighter">
+                Criação de <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-amber-300">Sites, Sistemas Web, Apps</span> e Inteligência Artificial
+              </h1>
 
-            <h3 className="text-2xl font-black text-brand-dark mb-4 uppercase tracking-tight">
-              Por que escolher a Suprema como quem faz site profissional para você?
-            </h3>
-            <p className="mb-6 leading-relaxed">
-              Escolher a Suprema significa optar por transparência, agilidade e resultados comprovados por milhares de clientes. Enquanto a maioria das <strong>agências de desenvolvimento de sites</strong> tradicionais demoram meses para entregar um projeto básico, nós <strong>desenvolvemos seu site</strong> completo em apenas 48 horas úteis, sem abrir mão da qualidade. Somos referência como uma das principais <strong>empresas que criam sites de vendas</strong> no Sul do Brasil, estendendo nossa expertise tecnológica para empresas de todos os portes em todo o território nacional.
-            </p>
-            <p className="mb-6 leading-relaxed">
-              Se você está procurando <strong>quem faz site profissional</strong> com um suporte humano e atendimento personalizado via WhatsApp, sua busca termina aqui. Como seu <strong>desenvolvedor de sites</strong> de confiança, não apenas entregamos um projeto e desaparecemos. Oferecemos uma parceria de longo prazo através de consultorias em presença digital para garantir que seu <strong>site para empresas</strong> continue gerando lucros contínuos. No mercado dinâmico de <strong>up sites</strong>, a evolução nunca para, e ter especialistas ao seu lado é a única forma de manter sua empresa no topo do Google e da mente dos seus consumidores. Através de <strong>sites profissionais</strong> de alta performance, nós construímos pontes entre marcas visionárias e seus clientes ideais.
-            </p>
+              <p className="text-lg lg:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0 font-medium leading-relaxed">
+                Desenvolvemos <strong>Sites Profissionais</strong>, <strong>Lojas Virtuais</strong>, <strong>Sistemas Web (ERP/CRM)</strong>, <strong>Aplicativos Android/iOS</strong>, <strong>Agentes de IA</strong> e <strong>SEO Dominante</strong> para impulsionar empresas em todo o Brasil.
+              </p>
 
-            <div className="bg-brand-dark text-white p-10 rounded-[2.5rem] mt-12 text-center border border-white/10 shadow-2xl">
-              <h4 className="text-2xl font-black mb-6">Pronto para ter um dos melhores sites profissionais do mercado?</h4>
-              <p className="mb-8 text-gray-400">Fale agora com nossa equipe e descubra por que somos a agência de desenvolvimento de sites preferida por centenas de empresários no Brasil.</p>
-              <a 
-                href="https://wa.me/5541987001004" 
-                className="inline-block bg-brand-primary text-white font-black py-4 px-10 rounded-2xl hover:scale-105 transition-all"
-              >
-                Solicitar Meu Orçamento Grátis
-              </a>
+              <div className="min-h-[50px] mb-8 bg-white/5 border border-white/10 p-4 rounded-2xl max-w-xl mx-auto lg:mx-0">
+                <TypewriterText 
+                  phrases={PERSUASIVE_PHRASES}
+                  className="text-base lg:text-lg text-amber-300 font-bold leading-snug"
+                  speed={35}
+                  delay={2500}
+                />
+              </div>
+
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+                <a 
+                  href="https://wa.me/5541987001004" 
+                  className="shimmer-btn text-brand-dark font-black py-4 px-10 rounded-2xl text-lg transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center gap-2"
+                >
+                  <Phone size={20} /> Solicitar Projeto
+                </a>
+                <Link 
+                  to="/portfolio" 
+                  className="bg-white/10 border border-white/20 hover:bg-white/20 text-white font-bold py-4 px-10 rounded-2xl text-lg transition-all flex items-center justify-center gap-2"
+                >
+                  Ver Portfólio Completo <ArrowRight size={20}/>
+                </Link>
+              </div>
+
+              {/* Indicators */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 pt-6 border-t border-white/10 text-xs font-bold text-gray-300">
+                <div className="flex items-center gap-1.5"><CheckCircle size={15} className="text-emerald-400 shrink-0"/> +3.800 Projetos</div>
+                <div className="flex items-center gap-1.5"><CheckCircle size={15} className="text-emerald-400 shrink-0"/> +1.100 Cidades</div>
+                <div className="flex items-center gap-1.5"><CheckCircle size={15} className="text-emerald-400 shrink-0"/> Entrega 48h</div>
+                <div className="flex items-center gap-1.5"><CheckCircle size={15} className="text-emerald-400 shrink-0"/> Nota 5.0 Google</div>
+                <div className="flex items-center gap-1.5"><CheckCircle size={15} className="text-emerald-400 shrink-0"/> Código 100% Seu</div>
+              </div>
+
+            </div>
+
+            {/* Lead Form Box */}
+            <div className="lg:w-5/12 w-full">
+              <LeadForm />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* STATS HIGHLIGHT */}
+      <section className="bg-white py-10 border-b border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+            <div>
+              <span className="block text-3xl md:text-5xl font-black text-brand-dark tracking-tighter">+3.800</span>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Projetos Entregues</span>
+            </div>
+            <div>
+              <span className="block text-3xl md:text-5xl font-black text-brand-primary tracking-tighter">48 Horas</span>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Entrega Expressa</span>
+            </div>
+            <div>
+              <span className="block text-3xl md:text-5xl font-black text-amber-500 tracking-tighter">1.100+</span>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Cidades Atendidas</span>
+            </div>
+            <div>
+              <span className="block text-3xl md:text-5xl font-black text-purple-600 tracking-tighter">+1900%</span>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Aumento em SEO Local</span>
+            </div>
+            <div className="col-span-2 md:col-span-1">
+              <span className="block text-3xl md:text-5xl font-black text-emerald-600 tracking-tighter">★ 5.0</span>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Avaliações no Google</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* SECTION: QUAL SOLUÇÃO SUA EMPRESA PRECISA? */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <span className="text-brand-primary font-black uppercase text-xs tracking-[0.25em] mb-2 block">
+              Soluções Completas de Engenharia Digital
+            </span>
+            <h2 className="text-3xl md:text-6xl font-black text-brand-dark tracking-tighter">
+              Qual solução sua empresa precisa hoje?
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto mt-4 text-base font-medium">
+              Desenvolvimento sob medida para posicionar sua marca no topo do mercado, gerar leads qualificados e automatizar processos operacionais.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            {/* Card 1: Site Profissional */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+              <div>
+                <div className="w-14 h-14 bg-blue-50 text-brand-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-primary group-hover:text-white transition-all">
+                  <Globe size={28} />
+                </div>
+                <h3 className="text-2xl font-black text-brand-dark mb-3">🌐 Site Profissional</h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  Sites institucionais e corporativos de alta velocidade, responsivos e otimizados para converter visitantes em clientes pagantes.
+                </p>
+                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Design Exclusivo UX/UI</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Carregamento Instantâneo (&lt;1s)</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Botão WhatsApp em Destaque</li>
+                </ul>
+              </div>
+              <Link to="/servicos" className="text-brand-primary font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Saber Mais <ChevronRight size={16} />
+              </Link>
+            </div>
+
+            {/* Card 2: Loja Virtual */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+              <div>
+                <div className="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all">
+                  <ShoppingCart size={28} />
+                </div>
+                <h3 className="text-2xl font-black text-brand-dark mb-3">🛒 Loja Virtual / E-commerce</h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  Plataformas de e-commerce robustas e seguras para vender 24/7 com checkout simplificado, Pix, cartão e cálculo automático de frete.
+                </p>
+                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Checkout Seguro MercadoPago/PagSeguro</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Gestão Fácil de Estoque</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Otimizado para Compras no Celular</li>
+                </ul>
+              </div>
+              <Link to="/servicos" className="text-amber-600 font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Saber Mais <ChevronRight size={16} />
+              </Link>
+            </div>
+
+            {/* Card 3: Aplicativo Mobile */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+              <div>
+                <div className="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all">
+                  <Smartphone size={28} />
+                </div>
+                <h3 className="text-2xl font-black text-brand-dark mb-3">📱 Aplicativo Mobile</h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  Aplicativos Android e iOS em React Native e Flutter, além de PWAs leves para conectar sua empresa diretamente ao smartphone do cliente.
+                </p>
+                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Publicação nas Lojas Play Store & App Store</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Notificações Push & Fidelização</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Integração com Câmera e GPS</li>
+                </ul>
+              </div>
+              <Link to="/servicos" className="text-purple-600 font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Saber Mais <ChevronRight size={16} />
+              </Link>
+            </div>
+
+            {/* Card 4: Sistema Web & ERP/CRM */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+              <div>
+                <div className="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                  <Cpu size={28} />
+                </div>
+                <h3 className="text-2xl font-black text-brand-dark mb-3">⚙ Sistema Web & ERP/CRM</h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  Sistemas sob medida para automação comercial, gestão financeira, controle de estoque, CRM de clientes e dashboards de BI.
+                </p>
+                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Painel Administrativo Personalizado</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Integrações de API e NFe/NFCe</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Sem Mensalidades por Usuário</li>
+                </ul>
+              </div>
+              <Link to="/servicos" className="text-indigo-600 font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Saber Mais <ChevronRight size={16} />
+              </Link>
+            </div>
+
+            {/* Card 5: IA Empresarial */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+              <div>
+                <div className="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+                  <Bot size={28} />
+                </div>
+                <h3 className="text-2xl font-black text-brand-dark mb-3">🤖 IA Empresarial & Agentes</h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  Agentes Inteligentes no WhatsApp e site treinados com os dados da sua empresa para atender, qualificar leads e agendar 24/7.
+                </p>
+                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Agentes com Gemini 1.5 API</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Respostas Humanizadas em Segundos</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Automação de Vendas pelo WhatsApp</li>
+                </ul>
+              </div>
+              <Link to="/servicos" className="text-emerald-600 font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Saber Mais <ChevronRight size={16} />
+              </Link>
+            </div>
+
+            {/* Card 6: SEO & Google Maps */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+              <div>
+                <div className="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-red-600 group-hover:text-white transition-all">
+                  <TrendingUp size={28} />
+                </div>
+                <h3 className="text-2xl font-black text-brand-dark mb-3">📈 SEO & Google Maps</h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  SEO Semântico e Otimização para Google Meu Negócio, ChatGPT, Gemini, Copilot e Perplexity para colocar sua empresa no topo.
+                </p>
+                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Dominância em SEO Local na Sua Cidade</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Preparado para IA (LLM SEO)</li>
+                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Relatórios Mensais de Posição</li>
+                </ul>
+              </div>
+              <Link to="/servicos" className="text-red-600 font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Saber Mais <ChevronRight size={16} />
+              </Link>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION: COMO FUNCIONA - TIMELINE */}
+      <section className="py-20 bg-brand-dark text-white relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <span className="text-amber-400 font-black uppercase text-xs tracking-[0.25em] mb-2 block">
+              Processo Ágil Sem Burocracia
+            </span>
+            <h2 className="text-3xl md:text-6xl font-black tracking-tighter">
+              Como Funciona a Criação do seu Projeto
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto mt-4 text-base font-medium">
+              Da ideia ao ar em tempo recorde com acompanhamento direto pelo WhatsApp.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            {[
+              { num: "01", title: "Planejamento", desc: "Briefing rápido e definição da estratégia do projeto." },
+              { num: "02", title: "Layout UI/UX", desc: "Criação do design moderno focado na sua marca." },
+              { num: "03", title: "Desenvolvimento", desc: "Programação limpa e veloz em React / Node." },
+              { num: "04", title: "Aprovação", desc: "Você revisa o projeto antes da publicação." },
+              { num: "05", title: "Publicação", desc: "Lançamento no domínio com SSL e hospedagem." },
+              { num: "06", title: "Crescimento", desc: "SEO e suporte contínuo para gerar vendas." },
+            ].map((step, idx) => (
+              <div key={idx} className="bg-white/5 border border-white/10 p-6 rounded-2xl relative hover:border-amber-400 transition-all">
+                <span className="text-3xl font-black text-amber-400 block mb-2">{step.num}</span>
+                <h4 className="text-lg font-black text-white mb-2">{step.title}</h4>
+                <p className="text-xs text-gray-400 leading-relaxed font-medium">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION: DIFERENCIAIS */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <span className="text-brand-primary font-black uppercase text-xs tracking-[0.25em] mb-2 block">
+              Por que a Suprema Sites Express é Referência?
+            </span>
+            <h2 className="text-3xl md:text-6xl font-black text-brand-dark tracking-tighter">
+              Diferenciais que Tecem Nosso Sucesso
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+              <Clock className="w-10 h-10 text-amber-500 mb-4" />
+              <h3 className="text-xl font-black text-brand-dark mb-2">Entrega em 48h</h3>
+              <p className="text-xs text-gray-600 leading-relaxed font-medium">Metodologia ágil sem prazos infinitos. Seu projeto no ar gerando receita rápido.</p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+              <Zap className="w-10 h-10 text-blue-500 mb-4" />
+              <h3 className="text-xl font-black text-brand-dark mb-2">Core Web Vitals 95+</h3>
+              <p className="text-xs text-gray-600 leading-relaxed font-medium">Carregamento instantâneo no celular. O Google prioriza sites ultrarrápidos.</p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+              <Bot className="w-10 h-10 text-emerald-500 mb-4" />
+              <h3 className="text-xl font-black text-brand-dark mb-2">Pronto para IA (LLM SEO)</h3>
+              <p className="text-xs text-gray-600 leading-relaxed font-medium">Conteúdo e Schema estruturados para ChatGPT, Gemini, Perplexity e Bing AI.</p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+              <Lock className="w-10 h-10 text-purple-500 mb-4" />
+              <h3 className="text-xl font-black text-brand-dark mb-2">Código 100% Seu</h3>
+              <p className="text-xs text-gray-600 leading-relaxed font-medium">Sem aluguel abusivo. Você é dono total do seu site, aplicativo e banco de dados.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* REVIEWS & PROOF */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-4 text-center mb-10">
+          <h2 className="text-3xl md:text-5xl font-black text-brand-dark tracking-tighter mb-2">O que dizem nossos clientes no Sul do Brasil</h2>
+          <p className="text-gray-500 font-medium">Depoimentos reais de empresários que transformaram seus resultados digitais.</p>
+        </div>
+        <ReviewsTicker />
+      </section>
+
+      {/* LOCATION TICKER */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center mb-8">
+          <h2 className="text-3xl md:text-5xl font-black text-brand-dark tracking-tighter">Atendimento Especializado em Mais de 1.100 Cidades</h2>
+          <p className="text-gray-500 text-sm font-medium mt-2">Atendemos Paraná, Santa Catarina, Rio Grande do Sul e todo o Brasil com SEO Local focado na sua região.</p>
+        </div>
+        <LocationTicker />
+      </section>
+
+      {/* SEO ARTICLE / INSTITUTIONAL CONTENT */}
+      <section className="py-20 bg-gray-50 border-t border-gray-200">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <article className="prose prose-lg max-w-none text-gray-700 font-medium">
+            <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-6 tracking-tight text-center">
+              A Maior Referência em Criação de Sites, Sistemas e Software no Sul do Brasil
+            </h2>
+            <p className="mb-4">
+              A <strong>Suprema Sites Express</strong> consolida-se como a principal escolha para empresários e líderes corporativos que necessitam de <strong>Criação de Sites Profissionais</strong>, <strong>Sistemas Web sob medida (ERP/CRM)</strong>, <strong>Lojas Virtuais</strong>, <strong>Aplicativos para Android e iPhone</strong> e soluções integradas com <strong>Inteligência Artificial</strong>.
+            </p>
+            <p className="mb-4">
+              Diferente de agências tradicionais que entregam modelos genéricos e lentos, nosso time de desenvolvedores seniores utiliza pilhas tecnológicas de última geração, incluindo <strong>React, Vite, Node.js e Tailwind CSS</strong>. Essa arquitetura garante notas elevadas no <strong>Google Core Web Vitals</strong>, carregamento instantâneo em redes móveis e segurança inegociável em conformidade com a <strong>LGPD</strong>.
+            </p>
+            
+            <h3 className="text-2xl font-black text-brand-dark mt-8 mb-4">
+              SEO Semântico, LLM SEO e Dominância em Buscas Tradicionais e de IA
+            </h3>
+            <p className="mb-4">
+              Com as mudanças trazidas pelas visões gerais de Inteligência Artificial do Google (Google AI Overviews) e assistentes como <strong>ChatGPT, Gemini, Claude e Perplexity</strong>, ter um site comum já não é suficiente. Estruturamos toda a arquitetura de informação com dados em dados estruturados <strong>Schema.org (Organization, LocalBusiness, SoftwareApplication, Service, FAQPage)</strong> para garantir que seu negócio seja citado como referência absoluta quando um potencial cliente realizar uma pesquisa.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* FAQ & ACCORDION */}
       <StaticFAQ />
       <FAQAccordionTicker />
 
-      {/* Final CTA Section */}
-      <section className="py-24 bg-brand-primary text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-brand-dark opacity-10"></div>
+      {/* FINAL CTA */}
+      <section className="py-20 bg-brand-primary text-white text-center relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
-           <h2 className="text-4xl md:text-7xl font-black mb-8 tracking-tighter">Comece sua Transformação Digital com a Suprema Site Express</h2>
-           <h3 className="text-2xl md:text-3xl font-bold mb-12 opacity-90">Solicite um Orçamento Personalizado e Gratuito Agora Mesmo</h3>
-           <div className="flex flex-col items-center gap-6">
-              <a 
-                href="https://wa.me/5541987001004" 
-                className="bg-white text-brand-primary font-black py-6 px-16 rounded-[2rem] text-2xl hover:scale-105 transition-all shadow-2xl"
-              >
-                Falar com Especialista
-              </a>
-              <h6 className="text-sm font-black uppercase tracking-[0.2em] opacity-70">Atendimento via WhatsApp disponível para consultoria imediata</h6>
-           </div>
+          <h2 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter">Pronto para Dominar o Mercado Digital?</h2>
+          <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto mb-10 font-bold">
+            Fale agora mesmo com nossos especialistas via WhatsApp e solicite um orçamento sem compromisso.
+          </p>
+          <a 
+            href="https://wa.me/5541987001004" 
+            className="inline-block bg-white text-brand-primary font-black py-6 px-16 rounded-full text-2xl hover:scale-105 transition-all shadow-2xl"
+          >
+            Chamar no WhatsApp (41) 98700-1004
+          </a>
         </div>
       </section>
+
     </div>
   );
 };

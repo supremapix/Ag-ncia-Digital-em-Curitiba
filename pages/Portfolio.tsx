@@ -1,301 +1,513 @@
-
-import React, { useMemo, useEffect } from 'react';
-import { ExternalLink, TrendingUp, BarChart, CheckCircle, Smartphone, Globe, Shield, Zap } from 'lucide-react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { 
+  Building2, Scale, Utensils, Car, Home as HomeIcon, ShoppingBag, Factory, Smartphone, 
+  Receipt, Hotel, Wrench, Droplet, Blinds, HardHat, GraduationCap, Dumbbell, Bot, Cpu, 
+  Search, Filter, ArrowUpRight, CheckCircle2, Sparkles, Layers, ShieldCheck, Zap, Globe
+} from 'lucide-react';
 import { LeadForm } from '../components/LeadForm';
-
-interface Project {
-  url: string;
-  title: string;
-  category: string;
-  growth: string;
-  tags: string[];
-}
-
-const baseProjects: Project[] = [
-  { url: "https://www.lp.carpluspneuseoficina.com.br/", title: "Car Plus Pneus & Oficina", category: "Mecânica e Pneus", growth: "1350%", tags: ["Prioridade", "Landing Page", "Ads"] },
-  { url: "https://www.carpluspneus.shop/", title: "Car Plus Pneus", category: "Serviços Automotivos", growth: "1100%", tags: ["Destaque", "E-commerce", "Ads"] },
-  { url: "https://ateliebeleza.app.br", title: "Ateliê Beleza", category: "Beleza e Estética", growth: "1450%", tags: ["Destaque", "Design", "Premium"] },
-  { url: "https://www.aloanuncio.com.br/", title: "Alô Anúncio", category: "Portal de Classificados", growth: "2500%", tags: ["Destaque", "Portal", "SEO"] },
-  { url: "https://www.bcrefrigeracaosc.com.br", title: "BC Refrigeração", category: "Climatização", growth: "1900%", tags: ["SEO", "Performance"] },
-  { url: "https://barbeariabarbercue.shop", title: "Barber Cue", category: "Barbearia Premium", growth: "850%", tags: ["Design", "Local"] },
-  { url: "https://www.servicosadp.shop", title: "Serviços ADP", category: "Manutenção Express", growth: "1200%", tags: ["Ads", "Conversão"] },
-  { url: "https://www.jcclimatizar.pro", title: "JC Climatizar", category: "Ar Condicionado", growth: "700%", tags: ["SEO", "Mobile"] },
-  { url: "https://www.lavanderiainovata.com.br", title: "Lavanderia Inovata", category: "Serviços Têxteis", growth: "550%", tags: ["Design", "UX"] },
-  { url: "https://www.burgerfilms.com.br", title: "Burger Films", category: "Produtora de Vídeo", growth: "450%", tags: ["Branding", "Video"] },
-  { url: "https://www.ehssaude.com.br", title: "EHS Saúde", category: "Saúde e Segurança", growth: "380%", tags: ["Institucional", "SEO"] },
-  { url: "https://www.bsescapamentos.com.br/", title: "BS Escapamentos", category: "Serviços Automotivos", growth: "680%", tags: ["Local", "Ads"] },
-  { url: "https://www.impactorecuperacoes.com.br", title: "Impacto Recuperações", category: "Recuperação de Crédito", growth: "540%", tags: ["B2B", "Performance"] },
-  { url: "https://suncellbrasil.com.br/", title: "Suncell Brasil", category: "Energia Solar", growth: "920%", tags: ["Sustentabilidade", "SEO"] },
-  { url: "https://autosocorro.aloanuncio.com.br/", title: "Auto Socorro", category: "Guincho 24h", growth: "1150%", tags: ["Emergência", "Ads"] },
-  { url: "https://www.celularescuritibashopcell.com.br", title: "Shop Cell", category: "Assistência Técnica", growth: "470%", tags: ["E-commerce", "Local"] },
-  { url: "https://www.divasespacodabeleza.com.br", title: "Divas Beleza", category: "Salão de Beleza", growth: "390%", tags: ["Estética", "Design"] },
-  { url: "https://www.barbeiro.curitiba.br/", title: "Barbeiro Curitiba", category: "Beleza e Estética", growth: "590%", tags: ["SEO Local", "UX"] },
-  { url: "https://www.alweletromotores.com.br", title: "ALW Eletromotores", category: "Motores Elétricos", growth: "510%", tags: ["Indústria", "B2B"] },
-  { url: "https://www.sultoldos.app.br", title: "Sul Toldos", category: "Coberturas e Toldos", growth: "630%", tags: ["Arquitetura", "SEO"] },
-  { url: "https://www.araujocalhas.com.br", title: "Araújo Calhas", category: "Calhas e Rufos", growth: "740%", tags: ["Construção", "Ads"] },
-  { url: "https://www.pvsdecore.com.br", title: "PVS Decore", category: "Decoração de Interiores", growth: "420%", tags: ["Design", "Premium"] },
-  { url: "https://www.attivadigital.com.br", title: "Attiva Digital", category: "Marketing Digital", growth: "880%", tags: ["Agência", "Performance"] },
-  { url: "https://www.omegarevestimentos.com.br", title: "Omega Revestimentos", category: "Revestimentos", growth: "560%", tags: ["Acabamentos", "SEO"] },
-  { url: "https://www.gouveiacuritiba.com.br/", title: "Gouveia Imóveis", category: "Imobiliária", growth: "340%", tags: ["Imóveis", "Local"] },
-  { url: "https://www.engenhariadopaver.com.br/", title: "Engenharia do Paver", category: "Construção Civil", growth: "620%", tags: ["Infraestrutura", "B2B"] },
-  { url: "https://www.mundodoscalheiros.com.br/", title: "Mundo dos Calheiros", category: "Indústria e Serviços", growth: "410%", tags: ["Indústria", "SEO"] },
-  { url: "https://www.atuarios.com.br/", title: "Atuários Independentes", category: "Consultoria", growth: "305%", tags: ["Finanças", "Corporate"] },
-  { url: "https://www.kydrywall.com.br/", title: "KY Drywall", category: "Gesso e Drywall", growth: "610%", tags: ["Construção", "Design"] },
-  { url: "https://www.rvmpersianaspr.com.br/", title: "RVM Persianas PR", category: "Decoração", growth: "820%", tags: ["Local", "Ads"] },
-  { url: "https://www.rvmpersianas.com.br/", title: "RVM Persianas", category: "Decoração Premium", growth: "950%", tags: ["E-commerce", "SEO"] },
-  { url: "https://www.vidracarianatal.com.br", title: "Vidraçaria Natal", category: "Vidraçaria", growth: "430%", tags: ["Local", "Serviços"] },
-  { url: "https://www.ecoservy.com.br", title: "Ecoservy", category: "Soluções Ambientais", growth: "315%", tags: ["B2B", "Sustentabilidade"] },
-  { url: "https://servicos.araujocalhas.com.br/", title: "Araújo Calhas Express", category: "Calhas e Rufos", growth: "1250%", tags: ["Ads", "Performance"] },
-  { url: "https://calha.aloanuncio.com.br", title: "Calha Alô Anúncio", category: "Serviços 24h", growth: "1400%", tags: ["Emergência", "Ads"] },
-  { url: "https://rvmpersianas.app.br", title: "RVM Persianas App", category: "Decoração", growth: "780%", tags: ["App", "Mobile"] },
-  { url: "https://servicoshidraulicosadp.app.br/", title: "ADP Hidráulica", category: "Manutenção 24h", growth: "940%", tags: ["Emergência", "Ads"] },
-  { url: "https://www.cicarelli.adv.br/", title: "Cicarelli Advogados", category: "Jurídico", growth: "330%", tags: ["Direito", "Corporate"] },
-  { url: "https://rvmpersianas.com.br/santa-catarina/blumenau.html", title: "RVM Blumenau", category: "SEO Local", growth: "1100%", tags: ["SEO", "Local"] },
-  { url: "https://pousadaviladitalia.com.br", title: "Pousada Vila d'Italia", category: "Turismo e Hotelaria", growth: "480%", tags: ["Turismo", "Booking"] },
-  { url: "https://sc.omegarevestimentos.com.br/", title: "Omega Revestimentos SC", category: "Acabamentos", growth: "520%", tags: ["Regional", "SEO"] },
-  { url: "https://eurocalhas.supremasite.com.br/", title: "Euro Calhas", category: "Serviços Express", growth: "890%", tags: ["Express", "Ads"] },
-  { url: "https://encanadorpalladium24h.supremamidia.com", title: "Encanador Palladium", category: "Emergência 24h", growth: "1450%", tags: ["Local", "24h"] },
-  { url: "https://encanadores24h.desentopeadp.com.br", title: "Encanadores 24h", category: "Desentupidora", growth: "1600%", tags: ["Performance", "Ads"] },
-  { url: "https://desentopeadp.com.br", title: "Desentope ADP", category: "Desentupidora", growth: "1750%", tags: ["Líder", "SEO"] },
-  { url: "https://fotometal.com.br", title: "Fotometal", category: "Indústria Gráfica", growth: "320%", tags: ["Indústria", "B2B"] },
-  { url: "https://www.moraesacrilicos.com.br", title: "Moraes Acrílicos", category: "Produtos Personalizados", growth: "405%", tags: ["E-commerce", "Design"] },
-  { url: "https://www.associacaobarnabe.org", title: "Associação Barnabé", category: "ONG / Social", growth: "210%", tags: ["Social", "Institucional"] },
-  { url: "https://lavanderias.aloanuncio.com.br/", title: "Lavanderias Alô Anúncio", category: "Lavanderia", growth: "640%", tags: ["Local", "Ads"] },
-  { url: "https://www.agroarkafla.com/", title: "Agro Arkafla Global", category: "Agronegócio", growth: "380%", tags: ["Agro", "B2B"] },
-  { url: "https://www.agroarkafla.com.br/", title: "Agro Arkafla Brasil", category: "Agronegócio", growth: "380%", tags: ["Agro", "B2B"] },
-  { url: "https://servicosnobairro.com.br", title: "Serviços no Bairro", category: "Guia Local", growth: "1550%", tags: ["Local", "SEO"] },
-  { url: "https://prodentcuritiba.com.br", title: "Prodent Curitiba", category: "Odontologia", growth: "420%", tags: ["Saúde", "Local"] },
-  { url: "https://xiaomishopcell.com", title: "Xiaomi Shop Cell", category: "Eletrônicos", growth: "890%", tags: ["E-commerce", "Xiaomi"] },
-  { url: "https://filhodeogum.com", title: "Filho de Ogum", category: "Religioso / Consultoria", growth: "720%", tags: ["Espiritual", "Design"] },
-  { url: "https://curitibacanecas.com", title: "Curitiba Canecas", category: "Brindes Personalizados", growth: "530%", tags: ["E-commerce", "Brindes"] },
-  { url: "https://amftur.com.br", title: "AMF Tur", category: "Turismo e Transporte", growth: "460%", tags: ["Turismo", "Viagens"] },
-  { url: "https://coracaodailha.com.br", title: "Coração da Ilha", category: "Pousada / Turismo", growth: "510%", tags: ["Turismo", "Litoral"] },
-  { url: "https://beatrizfauthpsicologa.com.br", title: "Beatriz Fauth Psicóloga", category: "Saúde Mental", growth: "390%", tags: ["Psicologia", "Local"] },
-  { url: "https://decorartdivisorias.com.br", title: "Decorart Divisórias", category: "Divisórias e Forros", growth: "580%", tags: ["Construção", "Design"] },
-  { url: "https://erghoprev.com.br", title: "Erghoprev", category: "Medicina do Trabalho", growth: "440%", tags: ["Saúde", "B2B"] },
-  { url: "https://casaspinheirao.curitiba.br", title: "Casas Pinheirão", category: "Imobiliária / Construção", growth: "670%", tags: ["Imóveis", "Local"] },
-  { url: "https://agape-mudancas-curitiba-91.vercel.app/", title: "Ágape Mudanças", category: "Mudanças e Transportes", growth: "1280%", tags: ["Logística", "Ads"] },
-  { url: "https://abbamudancas.com.br", title: "Abba Mudanças", category: "Mudanças", growth: "1150%", tags: ["Logística", "Local"] },
-  { url: "https://ateliebeleza.app.br", title: "Ateliê da Beleza", category: "Estética", growth: "410%", tags: ["Beleza", "Design"] },
-];
-
 import { TypewriterText } from '../src/components/TypewriterText';
 import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
 
+interface PortfolioProject {
+  id: string;
+  title: string;
+  category: 'site' | 'ecommerce' | 'sistema' | 'app' | 'ia';
+  categoryLabel: string;
+  segment: string;
+  city: string;
+  iconType: string;
+  technologies: string[];
+  goal: string;
+  services: string[];
+  growth: string;
+  featured?: boolean;
+}
+
+const portfolioProjects: PortfolioProject[] = [
+  {
+    id: '1',
+    title: 'Car Plus Pneus & Oficina Express',
+    category: 'site',
+    categoryLabel: 'Site Profissional + Ads',
+    segment: 'Auto Center & Mecânica',
+    city: 'Curitiba - PR',
+    iconType: 'car',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Google Ads API', 'WhatsApp Bot'],
+    goal: 'Captar clientes em busca urgente de troca de pneus e mecânica na grande Curitiba.',
+    services: ['Landing Page de Alta Conversão', 'SEO Local no Google Maps', 'Campanhas de Google Ads', 'Integração WhatsApp Direct'],
+    growth: '+1350% de Leads',
+    featured: true
+  },
+  {
+    id: '2',
+    title: 'Clínica Odontológica Prodent',
+    category: 'site',
+    categoryLabel: 'Site Institucional + Sistema',
+    segment: 'Clínica & Saúde',
+    city: 'Curitiba - PR',
+    iconType: 'clinic',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'SEO Semântico', 'Schema.org'],
+    goal: 'Digitalizar agendamento de consultas e posicionar a clínica no topo do Google Batel/Rebouças.',
+    services: ['Portal da Clínica', 'Sistema de Agendamento Online', 'SEO Local para Dentistas', 'Branding Digital'],
+    growth: '+420% Agendamentos',
+    featured: true
+  },
+  {
+    id: '3',
+    title: 'Cicarelli & Associados Advogados',
+    category: 'site',
+    categoryLabel: 'Site de Autoridade Corporate',
+    segment: 'Advocacia & Jurídico',
+    city: 'Curitiba - PR',
+    iconType: 'law',
+    technologies: ['React', 'Vite', 'Tailwind CSS', 'Schema Speakable', 'Cloudflare SSL'],
+    goal: 'Transmitir máxima credibilidade jurídica e captar causas corporativas B2B no Paraná.',
+    services: ['Design UI/UX Luxo', 'Arquitetura de Conteúdo Jurídico', 'SEO Semântico', 'Formulário Criptografado'],
+    growth: '+330% Consultas B2B'
+  },
+  {
+    id: '4',
+    title: 'Gouveia Imóveis Selecionados',
+    category: 'sistema',
+    categoryLabel: 'Sistema Web + Portal',
+    segment: 'Imobiliária',
+    city: 'Curitiba & Litoral - PR',
+    iconType: 'realestate',
+    technologies: ['React', 'Next.js', 'PostgreSQL', 'Faceted Search API', 'WhatsApp CRM'],
+    goal: 'Plataforma completa para gestão de imóveis de alto padrão com busca inteligente por bairro.',
+    services: ['Portal Imobiliário Responsivo', 'Sistema CRM Interno para Corretores', 'Otimização de Fotos & WebP', 'Mapeamento Geográfico'],
+    growth: '+340% Negócios Fechados',
+    featured: true
+  },
+  {
+    id: '5',
+    title: 'Ateliê Beleza & Estética VIP',
+    category: 'app',
+    categoryLabel: 'Aplicativo Web / PWA',
+    segment: 'Beleza & Estética',
+    city: 'Joinville - SC',
+    iconType: 'beauty',
+    technologies: ['React Native Web', 'PWA', 'Tailwind', 'Push Notifications', 'Pix Payments'],
+    goal: 'Aplicativo para agendamento de horários, notificações de retorno e pagamento via Pix.',
+    services: ['Aplicativo PWA sem instalação', 'Painel da Cabeleireira/Esteticista', 'Confirmação Automática por WhatsApp', 'Gestão de Fidelidade'],
+    growth: '+1450% Retenção'
+  },
+  {
+    id: '6',
+    title: 'Desentope ADP 24h Express',
+    category: 'site',
+    categoryLabel: 'Landing Page de Emergência',
+    segment: 'Desentupidora & Serviços 24h',
+    city: 'Curitiba, Pinhais & São José - PR',
+    iconType: 'drain',
+    technologies: ['React', 'Vite', 'Google Ads Call API', 'Core Web Vitals 100', 'GeoLocation API'],
+    goal: 'Dominar o mercado de chamados de emergência 24h com atendimento em até 15 minutos.',
+    services: ['Landing Page Ultra-Rápida (<1s)', 'Geo-direcionamento por Bairro', 'Botão de Ligação Direta', 'Gestão de Google Ads Agressivo'],
+    growth: '+1750% Chamados 24h',
+    featured: true
+  },
+  {
+    id: '7',
+    title: 'RVM Persianas & Decoração Premium',
+    category: 'ecommerce',
+    categoryLabel: 'Loja Virtual Customizada',
+    segment: 'Persianas & Decoração',
+    city: 'Blumenau - SC & Curitiba - PR',
+    iconType: 'blinds',
+    technologies: ['React', 'Node.js', 'MercadoPago SDK', 'Calculadora de Medidas Custom', 'SEO E-commerce'],
+    goal: 'Venda de persianas sob medida online com simulador de preço por metro quadrado.',
+    services: ['E-commerce sob medida', 'Calculadora dinâmica de m²', 'Integração com Frete e Correios', 'SEO para Decoração'],
+    growth: '+950% Vendas Nacionais'
+  },
+  {
+    id: '8',
+    title: 'Agro Arkafla Global',
+    category: 'site',
+    categoryLabel: 'Portal B2B Internacional',
+    segment: 'Agronegócio',
+    city: 'Maringá & Londrina - PR',
+    iconType: 'agro',
+    technologies: ['React', 'TypeScript', 'i18n Multilingual', 'Tailwind CSS', 'Schema.org'],
+    goal: 'Conectar produtores de grãos e commodities ao mercado de exportação em inglês e português.',
+    services: ['Design Institucional Internacional', 'Versão Multilíngue (PT/EN)', 'Catálogo de Grãos e Fertilizantes', 'Formulário de Cotação B2B'],
+    growth: '+380% Contratos de Exportação'
+  },
+  {
+    id: '9',
+    title: 'SmartERP para Clínicas & Oftalmo',
+    category: 'sistema',
+    categoryLabel: 'Sistema Web ERP / CRM',
+    segment: 'Sistema para Clínicas',
+    city: 'Porto Alegre - RS',
+    iconType: 'system',
+    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'REST API', 'Prontuário Eletrônico'],
+    goal: 'Sistema corporativo de gestão médica, prontuário eletrônico e faturamento TISS/TUSS.',
+    services: ['Desenvolvimento de ERP sob medida', 'Painel Administrativo Completo', 'Módulo Financeiro e DRE', 'Certificação Digital ICP-Brasil'],
+    growth: '100% Eficiência Operacional',
+    featured: true
+  },
+  {
+    id: '10',
+    title: 'Assistência Técnica Shop Cell',
+    category: 'ecommerce',
+    categoryLabel: 'Loja Virtual + Orçamento',
+    segment: 'Assistência Técnica & Eletrônicos',
+    city: 'Curitiba - PR',
+    iconType: 'tech',
+    technologies: ['React', 'Node.js', 'WooCommerce API Sync', 'PagSeguro', 'WhatsApp CRM'],
+    goal: 'Venda de peças de reposição e agendamento de conserto de smartphones e Xiaomi.',
+    services: ['E-commerce de Eletrônicos', 'Consulta de Status de Conserto Online', 'Integração Pix Automático', 'SEO para Xiaomi/iPhone'],
+    growth: '+890% Faturamento Online'
+  },
+  {
+    id: '11',
+    title: 'Agente de IA para Atendimento WhatsApp',
+    category: 'ia',
+    categoryLabel: 'Agente de IA Empresarial',
+    segment: 'Inteligência Artificial & Automação',
+    city: 'Atendimento Nacional',
+    iconType: 'ai',
+    technologies: ['Gemini 1.5 Flash API', 'Python', 'Node.js', 'WhatsApp Business API', 'Vector DB'],
+    goal: 'Agente inteligente 24/7 capaz de qualificar leads, agendar reuniões e responder dúvidas com linguagem natural.',
+    services: ['Desenvolvimento de Agente de IA', 'Treinamento de LLM com dados da empresa', 'Integração WhatsApp & CRM', 'Dashboard de Métricas de Conversão'],
+    growth: '98% Resposta Instantânea',
+    featured: true
+  },
+  {
+    id: '12',
+    title: 'App Delivery & Cardápio Restaurante Sabor',
+    category: 'app',
+    categoryLabel: 'Aplicativo Mobile iOS & Android',
+    segment: 'Restaurante & Gastronomia',
+    city: 'Florianópolis - SC',
+    iconType: 'restaurant',
+    technologies: ['React Native', 'Flutter', 'Firebase Realtime', 'iFood API Integration', 'Pix QR Code'],
+    goal: 'Aplicativo de delivery próprio eliminando comissões abusivas de plataformas terceiras.',
+    services: ['Aplicativo Android e iPhone', 'Cardápio Digital com Fotos HD', 'Painel da Cozinha em Tempo Real', 'Programa de Fidelidade Cashback'],
+    growth: 'Zero Comissões 3.000 pedidos/mês'
+  },
+  {
+    id: '13',
+    title: 'Pousada Vila d Italia',
+    category: 'site',
+    categoryLabel: 'Site com Reserva Direta',
+    segment: 'Hotelaria & Turismo',
+    city: 'Gramado - RS & Litoral',
+    iconType: 'hotel',
+    technologies: ['React', 'Tailwind CSS', 'Engine de Reservas', 'Stripe Payments', 'Weather API'],
+    goal: 'Aumentar reservas diretas sem comissão para Booking ou Airbnb.',
+    services: ['Website com Galeria Imersiva 360°', 'Motor de Reservas em Tempo Real', 'Integração de Pagamento de Diárias', 'SEO para Turismo no Sul'],
+    growth: '+480% Reservas Diretas'
+  },
+  {
+    id: '14',
+    title: 'Engenharia do Paver & Pavimentação',
+    category: 'site',
+    categoryLabel: 'Site B2B Industrial',
+    segment: 'Construção Civil & Engenharia',
+    city: 'Curitiba & Ponta Grossa - PR',
+    iconType: 'construction',
+    technologies: ['React', 'Vite', 'SEO B2B', 'Calculadora de M² de Paver', 'Cloudflare'],
+    goal: 'Atrair construtoras, condomínios e prefeituras para obras de pavimentação intertravada.',
+    services: ['Site Corporativo B2B', 'Calculadora de Orçamento por M²', 'SEO para Obras e Engenharia', 'Apresentação Institucional'],
+    growth: '+620% Cotações de Grandes Obras'
+  },
+  {
+    id: '15',
+    title: 'Escola Modelo de Ensino',
+    category: 'site',
+    categoryLabel: 'Portal Educacional + Matrículas',
+    segment: 'Educação & Escola',
+    city: 'Caxias do Sul - RS',
+    iconType: 'school',
+    technologies: ['React', 'Node.js', 'Portal do Aluno Integration', 'Tailwind', 'Accessibility WCAG'],
+    goal: 'Aumentar matrículas escolares para o novo ano letivo e agendamento de visitas à escola.',
+    services: ['Portal Educacional Acessível', 'Formulário de Pré-Matrícula', 'Agendamento de Visita Guiada', 'Galeria de Ambientes e Fotos'],
+    growth: '+310% Matrículas Antecipadas'
+  },
+  {
+    id: '16',
+    title: 'CrossFit & Academia PowerFit',
+    category: 'app',
+    categoryLabel: 'Web App + Check-in',
+    segment: 'Academia & Fitness',
+    city: 'Londrina - PR',
+    iconType: 'fitness',
+    technologies: ['React', 'Firebase', 'PWA', 'QR Code Check-in', 'Stripe Subscriptions'],
+    goal: 'Permitir check-in de aulas, renovação de planos de musculação e treino no celular.',
+    services: ['Aplicativo de Treino e Check-in', 'Pagamento de Mensalidade Recorrente', 'Ranking de Desempenho de Alunos', 'SEO Local de Fitness'],
+    growth: '+590% Alunos Ativos'
+  }
+];
+
 export const Portfolio: React.FC = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string>('todos');
+  const [searchQuery, setSearchQuery] = useState<string>('');
+
   useEffect(() => {
-    document.title = "Portfólio de Sites Profissionais | Suprema Site Express";
+    document.title = "Portfólio de Sites, Sistemas, Aplicativos e IA | Suprema Sites Express";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', "Confira nosso portfólio com milhares de sites criados em todo o Brasil. Projetos de alta performance, SEO local e conversão garantida para sua empresa.");
+      metaDesc.setAttribute('content', "Conheça o portfólio da Suprema Sites Express: Projetos reais de Sites Profissionais, Lojas Virtuais, Sistemas Web (ERP/CRM), Aplicativos Android/iOS e Agentes de IA no Sul do Brasil.");
     }
   }, []);
 
-  const renderProjectCard = (project: any, index: number) => (
-    <div 
-      key={`${project.title}-${index}`}
-      className="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"
-    >
-      <div className="h-48 md:h-56 relative overflow-hidden bg-gray-900">
-        {/* Real Screenshot using WordPress mshots */}
-        <img 
-          src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.url)}?w=800`}
-          alt={project.title}
-          className="w-full h-full object-cover object-top opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-          referrerPolicy="no-referrer"
-          loading="lazy"
-        />
-        
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent opacity-60"></div>
-        
-        {/* Hover Link - Premium Overlay */}
-        <a 
-          href={project.url} 
-          target="_blank" 
-          rel="noreferrer"
-          className="absolute inset-0 z-20 flex items-center justify-center bg-brand-dark/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        >
-          <span className="bg-white text-brand-dark font-black px-6 py-3 rounded-xl text-sm flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-xl">
-            Visitar Website <ExternalLink size={16} />
-          </span>
-        </a>
-      </div>
+  const filteredProjects = useMemo(() => {
+    return portfolioProjects.filter(project => {
+      const matchesCategory = selectedCategory === 'todos' || project.category === selectedCategory;
+      const matchesSearch = searchQuery === '' || 
+        project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        project.segment.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        project.city.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        project.technologies.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()));
+      
+      return matchesCategory && matchesSearch;
+    });
+  }, [selectedCategory, searchQuery]);
 
-      <div className="p-6 flex-grow flex flex-col">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-10 h-10 rounded-xl bg-brand-primary/10 flex items-center justify-center text-brand-primary font-black">
-            {project.title.charAt(0)}
-          </div>
-          <div className="min-w-0">
-            <h3 className="text-base font-black text-brand-dark truncate leading-none mb-1">
-              {project.title}
-            </h3>
-            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">{project.category}</span>
-          </div>
-        </div>
-
-        <div className="bg-brand-light border-l-4 border-brand-accent p-3 mb-4 rounded-r-xl">
-          <div className="flex items-center gap-2 text-brand-dark font-bold text-xs">
-            <TrendingUp size={14} className="text-brand-accent" />
-            <span>Crescimento de <span className="text-brand-primary text-sm">{project.growth}</span></span>
-          </div>
-        </div>
-
-        <div className="mt-auto flex flex-wrap gap-2">
-          {project.tags.map((tag: string, i: number) => (
-            <span key={i} className="text-[9px] font-black uppercase tracking-wider bg-gray-50 text-gray-400 border border-gray-100 px-2 py-1 rounded-lg">
-              {tag}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-
-  const tracks = useMemo(() => {
-    const shuffled = [...baseProjects].sort(() => Math.random() - 0.5);
-    const t1 = shuffled.slice(0, Math.ceil(shuffled.length / 3));
-    const t2 = shuffled.slice(Math.ceil(shuffled.length / 3), Math.ceil(2 * shuffled.length / 3));
-    const t3 = shuffled.slice(Math.ceil(2 * shuffled.length / 3));
-    return [t1, t2, t3];
-  }, []);
-
-  const renderTrack = (projects: Project[], speed: string, reverse = false) => (
-    <div className="flex-1 min-w-[300px] overflow-hidden relative pause-on-hover">
-      <div 
-        className={`flex flex-col gap-8 gpu-accelerated ${reverse ? 'animate-marquee-v-rev' : 'animate-marquee-v'}`}
-        style={{ animationDuration: speed } as any}
-      >
-        {[...projects, ...projects].map((project, i) => (
-          <div key={i} className="w-full">
-            {renderProjectCard(project, i)}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+  const renderSegmentIcon = (iconType: string) => {
+    const iconClass = "w-10 h-10 text-brand-primary group-hover:text-brand-accent transition-colors";
+    switch (iconType) {
+      case 'car': return <Car className={iconClass} />;
+      case 'clinic': return <Building2 className={iconClass} />;
+      case 'law': return <Scale className={iconClass} />;
+      case 'realestate': return <HomeIcon className={iconClass} />;
+      case 'beauty': return <Sparkles className={iconClass} />;
+      case 'drain': return <Droplet className={iconClass} />;
+      case 'blinds': return <Blinds className={iconClass} />;
+      case 'agro': return <Factory className={iconClass} />;
+      case 'system': return <Cpu className={iconClass} />;
+      case 'tech': return <Wrench className={iconClass} />;
+      case 'ai': return <Bot className={iconClass} />;
+      case 'restaurant': return <Utensils className={iconClass} />;
+      case 'hotel': return <Hotel className={iconClass} />;
+      case 'construction': return <HardHat className={iconClass} />;
+      case 'school': return <GraduationCap className={iconClass} />;
+      case 'fitness': return <Dumbbell className={iconClass} />;
+      default: return <Globe className={iconClass} />;
+    }
+  };
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-brand-dark">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10"></div>
+      <section className="relative pt-28 pb-20 overflow-hidden bg-brand-dark text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-primary/20 via-brand-dark to-purple-900/20 opacity-80"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <span className="inline-block px-4 py-2 bg-brand-primary/20 border border-brand-primary/30 rounded-full text-brand-primary text-xs font-black uppercase tracking-[0.3em] mb-6">
-            Portfólio de Alta Performance
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full text-brand-accent text-xs font-black uppercase tracking-[0.25em] mb-6">
+            <Sparkles size={14} /> Portfólio de Alta Performance e Engenharia Digital
           </span>
-          <h1 className="text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-[0.9]">
-            Portfólio de Sites Profissionais e <br />
-            <span className="text-brand-accent italic">Cases de Sucesso</span>
+          <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter leading-tight">
+            Cases de Sucesso em <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-amber-300 to-brand-primary">
+              Sites, Sistemas, Apps & IA
+            </span>
           </h1>
-          <div className="min-h-[60px] mb-10">
+          <div className="min-h-[50px] mb-8">
             <TypewriterText 
               phrases={PERSUASIVE_PHRASES}
-              className="text-xl text-gray-400 max-w-3xl mx-auto font-medium leading-relaxed"
+              className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-medium leading-relaxed"
               speed={40}
               delay={3000}
             />
           </div>
-        </div>
-      </section>
 
-      {/* Stats Highlight Section */}
-      <section className="bg-brand-primary py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-6 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20">
-              <span className="block text-4xl md:text-6xl font-black text-white tracking-tighter mb-2">+3.800</span>
-              <span className="text-brand-accent font-bold uppercase tracking-widest text-xs">Sites feitos em nossa jornada</span>
+          <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Sem capturas genéricas. Cada projeto abaixo representa uma arquitetura completa desenhada para empresas que exigem velocidade, ranqueamento orgânico no Google e conversão real de receita.
+          </p>
+
+          {/* Quick Stats Bar */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <div className="bg-white/5 border border-white/10 p-4 rounded-2xl backdrop-blur-sm">
+              <span className="block text-2xl md:text-4xl font-black text-amber-400">+3.800</span>
+              <span className="text-[10px] text-gray-400 uppercase font-bold tracking-widest">Projetos Entregues</span>
             </div>
-            <div className="p-6 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20">
-              <span className="block text-4xl md:text-6xl font-black text-white tracking-tighter mb-2">+1.100</span>
-              <span className="text-brand-accent font-bold uppercase tracking-widest text-xs">Sites entregues este ano</span>
+            <div className="bg-white/5 border border-white/10 p-4 rounded-2xl backdrop-blur-sm">
+              <span className="block text-2xl md:text-4xl font-black text-blue-400">48 Horas</span>
+              <span className="text-[10px] text-gray-400 uppercase font-bold tracking-widest">Entrega Expressa</span>
             </div>
-            <div className="p-6 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20">
-              <span className="block text-4xl md:text-6xl font-black text-white tracking-tighter mb-2">100%</span>
-              <span className="text-brand-accent font-bold uppercase tracking-widest text-xs">Foco em Performance e ROI</span>
+            <div className="bg-white/5 border border-white/10 p-4 rounded-2xl backdrop-blur-sm">
+              <span className="block text-2xl md:text-4xl font-black text-green-400">Core Web Vitals</span>
+              <span className="text-[10px] text-gray-400 uppercase font-bold tracking-widest">Nota 95-100 Google</span>
+            </div>
+            <div className="bg-white/5 border border-white/10 p-4 rounded-2xl backdrop-blur-sm">
+              <span className="block text-2xl md:text-4xl font-black text-purple-400">100% Sul do BR</span>
+              <span className="text-[10px] text-gray-400 uppercase font-bold tracking-widest">Atendimento Regional</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Projects Grid Section */}
-      <section className="py-24 bg-gray-50 relative overflow-hidden">
+      {/* Filter and Search Bar */}
+      <section className="py-8 bg-white border-b border-gray-100 sticky top-[72px] z-30 shadow-sm">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-            <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-4 tracking-tighter">
-                Alguns de nossos <span className="text-brand-primary">Projetos Ativos</span>
-              </h2>
-              <p className="text-gray-600 font-medium">
-                Explore nossa seleção completa de cases de sucesso. Projetos desenvolvidos com foco total em conversão, velocidade e posicionamento no Google.
-              </p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            
+            {/* Category Filter Buttons */}
+            <div className="flex flex-wrap gap-2 w-full md:w-auto justify-center md:justify-start">
+              {[
+                { id: 'todos', label: 'Todos os Projetos' },
+                { id: 'site', label: '🌐 Sites Profissionais' },
+                { id: 'ecommerce', label: '🛒 Lojas Virtuais' },
+                { id: 'sistema', label: '⚙ Sistemas Web / ERP' },
+                { id: 'app', label: '📱 Aplicativos Mobile' },
+                { id: 'ia', label: '🤖 Agentes de IA' },
+              ].map(tab => (
+                <button
+                  key={tab.id}
+                  onClick={() => setSelectedCategory(tab.id)}
+                  className={`px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all duration-300 flex items-center gap-1.5 ${
+                    selectedCategory === tab.id
+                      ? 'bg-brand-dark text-white shadow-lg shadow-brand-dark/20 scale-105'
+                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
             </div>
-            <div className="bg-white px-6 py-3 rounded-2xl border border-gray-100 shadow-sm flex items-center gap-3">
-              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-bold text-gray-900">Exibindo alguns de nossos projetos de sucesso</span>
-            </div>
-          </div>
 
-          <div className="h-[800px] relative location-mask flex flex-col md:flex-row gap-8">
-            {renderTrack(tracks[0], '120s')}
-            <div className="hidden md:block flex-1">
-              {renderTrack(tracks[1], '150s', true)}
+            {/* Search Input */}
+            <div className="relative w-full md:w-80">
+              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400" size={16} />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={e => setSearchQuery(e.target.value)}
+                placeholder="Buscar por segmento, cidade ou tecnologia..."
+                className="w-full pl-10 pr-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs font-bold text-brand-dark focus:bg-white focus:outline-none focus:border-brand-primary transition-all"
+              />
             </div>
-            <div className="hidden lg:block flex-1">
-              {renderTrack(tracks[2], '135s')}
-            </div>
+
           </div>
         </div>
-
-        {/* Decorative background elements */}
-        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-gray-50 to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-gray-50 to-transparent z-10 pointer-events-none"></div>
       </section>
 
-      {/* Features Grid */}
-      <section className="py-24 bg-white">
+      {/* Projects Display Grid */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { icon: <Globe className="text-blue-500" />, title: "Alcance Nacional", desc: "Sites otimizados para qualquer cidade do Brasil." },
-              { icon: <Shield className="text-green-500" />, title: "Segurança Total", desc: "Hospedagem premium com SSL e proteção DDoS." },
-              { icon: <Zap className="text-yellow-500" />, title: "Velocidade Luz", desc: "Carregamento instantâneo em qualquer conexão." },
-              { icon: <TrendingUp className="text-purple-500" />, title: "Foco em ROI", desc: "Design planejado para converter cliques em dinheiro." },
-            ].map((f, i) => (
-              <div key={i} className="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-primary/30 transition-colors">
-                <div className="mb-6">{f.icon}</div>
-                <h3 className="text-xl font-black text-brand-dark mb-3">{f.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
+          
+          <div className="mb-8 flex justify-between items-center">
+            <h2 className="text-xl font-black text-brand-dark tracking-tight">
+              Mostrando <span className="text-brand-primary">{filteredProjects.length}</span> projetos encontrados
+            </h2>
+            <span className="text-xs font-bold text-gray-500 uppercase tracking-widest flex items-center gap-1">
+              <ShieldCheck size={14} className="text-green-500" /> Ícones Vetoriais Interativos (Zero Print Genérico)
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredProjects.map((project) => (
+              <div 
+                key={project.id}
+                className="group bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all duration-500 flex flex-col justify-between relative overflow-hidden"
+              >
+                {/* Background Glow Effect on Hover */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 rounded-full blur-2xl group-hover:bg-brand-primary/15 transition-all"></div>
+
+                <div>
+                  {/* Top Badge Row */}
+                  <div className="flex justify-between items-start mb-6 gap-2">
+                    <div className="p-4 bg-brand-primary/10 rounded-2xl border border-brand-primary/20 group-hover:scale-110 group-hover:bg-brand-primary group-hover:text-white transition-all duration-300">
+                      {renderSegmentIcon(project.iconType)}
+                    </div>
+                    
+                    <div className="text-right">
+                      <span className="inline-block px-3 py-1 bg-amber-50 border border-amber-200 text-amber-700 text-[10px] font-black rounded-lg uppercase tracking-wider mb-1">
+                        {project.growth}
+                      </span>
+                      <div className="text-[10px] text-gray-400 font-bold uppercase tracking-widest block">
+                        📍 {project.city}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Title & Category */}
+                  <span className="text-xs font-black uppercase tracking-widest text-brand-primary mb-1 block">
+                    {project.categoryLabel}
+                  </span>
+                  <h3 className="text-2xl font-black text-brand-dark mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                    {project.title}
+                  </h3>
+
+                  {/* Goal Paragraph */}
+                  <div className="bg-gray-50 p-4 rounded-2xl border border-gray-100 mb-6">
+                    <span className="text-[10px] font-black uppercase text-gray-400 tracking-wider block mb-1">🎯 Objetivo do Projeto:</span>
+                    <p className="text-xs text-gray-600 font-medium leading-relaxed">
+                      {project.goal}
+                    </p>
+                  </div>
+
+                  {/* Services List */}
+                  <div className="mb-6 space-y-2">
+                    <span className="text-[10px] font-black uppercase text-gray-400 tracking-wider block mb-2">⚡ Serviços Realizados:</span>
+                    {project.services.map((service, idx) => (
+                      <div key={idx} className="flex items-center gap-2 text-xs font-bold text-gray-700">
+                        <CheckCircle2 size={14} className="text-emerald-500 shrink-0" />
+                        <span>{service}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Footer Technologies Badges */}
+                <div className="pt-6 border-t border-gray-100 mt-auto">
+                  <span className="text-[10px] font-black uppercase text-gray-400 tracking-wider block mb-2">🛠 Tecnologias Utilizadas:</span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {project.technologies.map((tech, i) => (
+                      <span key={i} className="text-[10px] font-bold bg-brand-dark/5 text-brand-dark border border-brand-dark/10 px-2.5 py-1 rounded-lg">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <a 
+                    href="https://wa.me/5541987001004"
+                    className="mt-6 w-full py-3 bg-brand-dark hover:bg-brand-primary text-white text-xs font-black rounded-xl uppercase tracking-wider flex items-center justify-center gap-2 transition-colors shadow-md"
+                  >
+                    Quero um Projeto Similar <ArrowUpRight size={14} />
+                  </a>
+                </div>
+
               </div>
             ))}
           </div>
+
+          {filteredProjects.length === 0 && (
+            <div className="text-center py-20 bg-white rounded-3xl border border-gray-100">
+              <Bot className="w-16 h-16 text-gray-300 mx-auto mb-4" />
+              <h3 className="text-2xl font-black text-brand-dark mb-2">Nenhum projeto encontrado</h3>
+              <p className="text-gray-500 text-sm">Tente ajustar a busca ou trocar o filtro selecionado.</p>
+            </div>
+          )}
+
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-brand-dark relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-brand-primary/10 blur-[120px] rounded-full"></div>
+      <section className="py-20 bg-brand-dark text-white relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="bg-white rounded-[4rem] p-10 md:p-20 flex flex-col lg:flex-row items-center gap-16 shadow-2xl">
+          <div className="bg-white/5 border border-white/10 rounded-[3rem] p-10 md:p-16 backdrop-blur-xl flex flex-col lg:flex-row items-center justify-between gap-12">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl md:text-6xl font-black text-brand-dark mb-8 tracking-tighter leading-tight">
-                SEU SITE PODE SER O <br />
-                <span className="text-brand-primary">PRÓXIMO CASE</span> DE SUCESSO.
+              <span className="text-amber-400 text-xs font-black uppercase tracking-[0.3em] mb-4 block">
+                Pronto para ser a próxima referência do seu setor?
+              </span>
+              <h2 className="text-3xl md:text-6xl font-black tracking-tighter mb-6 leading-tight">
+                Transforme sua Ideia em um <span className="text-brand-primary">Ativo Digital</span> de Alto Retorno.
               </h2>
-              <p className="text-xl text-gray-600 mb-10 leading-relaxed font-medium">
-                Não deixe sua empresa invisível. Junte-se aos milhares de empreendedores que já transformaram seus negócios com a Suprema Mídia.
+              <p className="text-gray-300 text-base leading-relaxed mb-8 font-medium">
+                Sua empresa merece mais que um modelo pronto. Desenvolvemos sites, sistemas web, aplicativos e integrações com Inteligência Artificial que geram resultados imediatos.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a 
                   href="https://wa.me/5541987001004" 
-                  className="bg-brand-accent hover:bg-yellow-500 text-brand-dark font-black py-5 px-10 rounded-2xl text-xl shadow-xl transition-all transform hover:-translate-y-1"
+                  className="shimmer-btn text-brand-dark font-black px-8 py-4 rounded-2xl text-lg shadow-2xl transition-all"
                 >
-                  Falar com Especialista
+                  Solicitar Proposta Grátis
                 </a>
               </div>
             </div>
-            <div className="lg:w-1/2 w-full">
+            <div className="lg:w-5/12 w-full">
               <LeadForm />
             </div>
           </div>
@@ -304,4 +516,3 @@ export const Portfolio: React.FC = () => {
     </div>
   );
 };
-
