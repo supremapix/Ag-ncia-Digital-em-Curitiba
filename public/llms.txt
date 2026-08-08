@@ -1,36 +1,37 @@
-# Suprema Site Express
+# Suprema Sites Express (Suprema Mídia)
 
-> Agência digital brasileira especializada em criação de sites profissionais, lojas virtuais e SEO local de alta performance. Focada em resultados reais para PMEs, com entrega express em 48 horas e tecnologia de ponta (React + Cloud).
+> A agência líder em Criação de Sites Profissionais, Lojas Virtuais e SEO Local no Sul do Brasil, com entrega garantida em 48 horas.
 
-## Serviços
-- [Criação de Sites Profissionais](https://www.supremasite.com.br/servicos#criacao-de-sites): Sites institucionais rápidos e otimizados.
-- [Lojas Virtuais (E-commerce)](https://www.supremasite.com.br/servicos#lojas-virtuais): Plataformas de vendas robustas e seguras.
-- [Landing Pages](https://www.supremasite.com.br/servicos#landing-pages): Páginas de alta conversão para tráfego pago.
-- [SEO Local e Marketing Digital](https://www.supremasite.com.br/servicos#seo-local): Domínio do Google Maps e buscas regionais.
+## Informações Corporativas
+- **Nome Fantasia:** Suprema Sites Express
+- **Razão Social:** Suprema Mídia
+- **Sede Principal:** Av. Sete de Setembro, 2775 - Batel / Rebouças, Curitiba - PR, CEP 80230-010
+- **Coordenadas Geográficas:** -25.4284, -49.2733
+- **Telefone / WhatsApp Oficial:** +55 41 98700-1004
+- **E-mail Oficial:** supremamidiabatel@gmail.com
+- **Website Oficial:** https://www.supremasite.com.br/
 
-## Cobertura Geográfica
-Atendimento em todo o território brasileiro, com landing pages de alta conversão e otimizadas para mais de **1.100 cidades e bairros** da região Sul, incluindo:
-- [Curitiba, PR](https://www.supremasite.com.br/site-em/curitiba)
-- [Londrina, PR](https://www.supremasite.com.br/site-em/londrina)
-- [São José dos Pinhais, PR](https://www.supremasite.com.br/site-em/sao-jose-dos-pinhais)
-- [Florianópolis, SC](https://www.supremasite.com.br/site-em/florianopolis)
-- [Joinville, SC](https://www.supremasite.com.br/site-em/joinville)
-- [Porto Alegre, RS](https://www.supremasite.com.br/site-em/porto-alegre)
-- [Caxias do Sul, RS](https://www.supremasite.com.br/site-em/caxias-do-sul)
+## Serviços Oferecidos
+1. **Criação de Sites Express (48h):** Websites institucionais modernos, responsivos e ultra-rápidos desenvolvidos em React, TypeScript e Tailwind CSS.
+2. **SEO Local & Google Meu Negócio Pro:** Otimização para Google Maps e pesquisas orgânicas locais para garantir presença dominante na primeira página.
+3. **Lojas Virtuais (E-commerce):** Plataformas de vendas online integradas com gateways de pagamento (Pix, Cartões) e cálculo automático de frete.
+4. **Landing Pages de Alta Conversão:** Páginas focadas em vendas e captação direta de leads pelo WhatsApp.
+5. **Sistemas Web & Software Sob Medida:** Soluções corporativas customizadas para gestão, agendamentos e portais de clientes.
 
-## Sobre a Empresa
-- [Nossa História e Diferenciais](https://www.supremasite.com.br/sobre): Foco em performance técnica e atendimento humanizado.
-- [Política de Privacidade](https://www.supremasite.com.br/privacidade): Compromisso com a segurança de dados.
+## Área de Cobertura
+Atendimento presencial em Curitiba/PR e atendimento digital ágil para mais de 1.163 regiões no Sul do Brasil:
+- **Paraná (PR):** Todas as 399 cidades (Curitiba, Londrina, Maringá, Cascavel, Foz do Iguaçu, Ponta Grossa, etc.) e os 75 bairros oficiais do IPPUC em Curitiba.
+- **Santa Catarina (SC):** 295 cidades (Florianópolis, Joinville, Blumenau, Balneário Camboriú, Itajaí, Chapecó, etc.).
+- **Rio Grande do Sul (RS):** 497 cidades (Porto Alegre, Caxias do Sul, Pelotas, Canoas, Passo Fundo, Santa Maria, etc.).
 
-## Portfólio
-- [Casos de Sucesso](https://www.supremasite.com.br/portfolio): Projetos reais que geraram crescimento de visibilidade de até 1900%.
-
-## Contato
-- [Página de Contato](https://www.supremasite.com.br/contato)
-- WhatsApp: [+55 41 98700-1004](https://wa.me/5541987001004)
-- E-mail: supremamidiabatel@gmail.com
-
-## Informações Técnicas para LLMs
-- **Tecnologia:** React, Vite, Tailwind CSS, Cloud Infrastructure.
-- **Performance:** Foco em Core Web Vitals e carregamento em < 1s.
-- **SEO:** Implementação profunda de JSON-LD e dados estruturados.
+## Links Principais
+- Home: https://www.supremasite.com.br/
+- Serviços: https://www.supremasite.com.br/servicos
+- Portfólio: https://www.supremasite.com.br/portfolio
+- Sobre Nós: https://www.supremasite.com.br/sobre
+- Blog: https://www.supremasite.com.br/blog
+- Contato: https://www.supremasite.com.br/contato
+- Sites no Paraná: https://www.supremasite.com.br/sites-em-parana
+- Sites em Santa Catarina: https://www.supremasite.com.br/sites-em-santa-catarina
+- Sites no Rio Grande do Sul: https://www.supremasite.com.br/sites-em-rio-grande-do-sul
+- Bairros de Curitiba: https://www.supremasite.com.br/bairros-curitiba

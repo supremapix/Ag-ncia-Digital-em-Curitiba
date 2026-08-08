@@ -54,6 +54,33 @@ export const Sitemap: React.FC = () => {
         </div>
       </div>
 
+      {/* Pillar Pages Quick Links */}
+      <div className="container mx-auto px-4 mt-8">
+        <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm mb-12">
+          <h2 className="text-xl font-black text-brand-dark mb-4 flex items-center gap-2">
+            <Globe className="text-brand-primary" size={20} /> Páginas Pilar por Estado e Região
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <Link to="/sites-em-parana" className="p-4 bg-brand-dark text-white rounded-xl hover:bg-brand-primary transition-colors flex items-center justify-between font-bold text-sm">
+              <span>Sites no Paraná (PR)</span>
+              <ChevronRight size={16} />
+            </Link>
+            <Link to="/sites-em-santa-catarina" className="p-4 bg-brand-dark text-white rounded-xl hover:bg-brand-primary transition-colors flex items-center justify-between font-bold text-sm">
+              <span>Sites em Santa Catarina (SC)</span>
+              <ChevronRight size={16} />
+            </Link>
+            <Link to="/sites-em-rio-grande-do-sul" className="p-4 bg-brand-dark text-white rounded-xl hover:bg-brand-primary transition-colors flex items-center justify-between font-bold text-sm">
+              <span>Sites no Rio Grande do Sul (RS)</span>
+              <ChevronRight size={16} />
+            </Link>
+            <Link to="/bairros-curitiba" className="p-4 bg-brand-dark text-white rounded-xl hover:bg-brand-primary transition-colors flex items-center justify-between font-bold text-sm">
+              <span>Bairros de Curitiba (IPPUC)</span>
+              <ChevronRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Lists */}
       <div className="container mx-auto px-4 mt-16">
         <div className="grid grid-cols-1 gap-12">

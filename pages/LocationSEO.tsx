@@ -796,12 +796,14 @@ export const LocationSEO: React.FC = () => {
           </div>
           <div className="space-y-4">
             {localizedFaqs.map((faq, idx) => (
-              <div key={idx} className="border border-gray-100 rounded-2xl p-6 hover:border-brand-primary/30 transition-colors bg-gray-50/50">
-                <h3 className="text-base md:text-lg font-black text-brand-dark mb-3 flex items-start gap-3">
-                  <ChevronRight className="text-brand-primary flex-shrink-0 mt-1" size={18} /> {faq.question}
-                </h3>
-                <p className="text-gray-500 leading-relaxed text-sm pl-7">{faq.answer}</p>
-              </div>
+              <details key={idx} className="border border-gray-100 rounded-2xl p-6 hover:border-brand-primary/30 transition-colors bg-gray-50/50 group">
+                <summary className="text-base md:text-lg font-black text-brand-dark cursor-pointer flex items-center justify-between">
+                  <span className="flex items-center gap-3">
+                    <ChevronRight className="text-brand-primary flex-shrink-0 group-open:rotate-90 transition-transform" size={18} /> {faq.question}
+                  </span>
+                </summary>
+                <p className="text-gray-500 leading-relaxed text-sm pt-4 pl-7">{faq.answer}</p>
+              </details>
             ))}
           </div>
         </div>

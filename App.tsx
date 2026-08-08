@@ -14,6 +14,10 @@ import { BlogPost } from './pages/BlogPost';
 import { Sitemap } from './pages/Sitemap';
 import { Privacy } from './pages/Privacy';
 import { NotFound } from './pages/NotFound';
+import { PillarParana } from './pages/PillarParana';
+import { PillarSantaCatarina } from './pages/PillarSantaCatarina';
+import { PillarRioGrandeDoSul } from './pages/PillarRioGrandeDoSul';
+import { PillarBairrosCuritiba } from './pages/PillarBairrosCuritiba';
 import { FloatingButtons } from './components/FloatingButtons';
 import { SocialSection } from './components/SocialSection';
 
@@ -48,6 +52,10 @@ const App: React.FC = () => {
               <Route path="/contato" element={<Contact />} />
               <Route path="/mapa-do-site" element={<Sitemap />} />
               <Route path="/privacidade" element={<Privacy />} />
+              <Route path="/sites-em-parana" element={<PillarParana />} />
+              <Route path="/sites-em-santa-catarina" element={<PillarSantaCatarina />} />
+              <Route path="/sites-em-rio-grande-do-sul" element={<PillarRioGrandeDoSul />} />
+              <Route path="/bairros-curitiba" element={<PillarBairrosCuritiba />} />
               <Route path="/site-em/:slug" element={<LocationSEO />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
