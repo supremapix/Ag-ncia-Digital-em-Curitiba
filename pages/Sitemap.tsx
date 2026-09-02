@@ -78,6 +78,36 @@ export const Sitemap: React.FC = () => {
               <ChevronRight size={16} />
             </Link>
           </div>
+
+          <h3 className="text-sm font-black text-gray-500 uppercase tracking-wider mt-6 mb-3">
+            Especialidades e Hubs de Intenção em Curitiba
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+            <Link to="/agencia-seo-curitiba" className="p-3 bg-gray-50 border border-gray-200 text-brand-dark rounded-xl hover:bg-brand-primary hover:text-white transition-colors flex items-center justify-between font-bold text-xs">
+              <span>Agência SEO Curitiba</span>
+              <ChevronRight size={14} />
+            </Link>
+            <Link to="/agencia-marketing-digital-curitiba" className="p-3 bg-gray-50 border border-gray-200 text-brand-dark rounded-xl hover:bg-brand-primary hover:text-white transition-colors flex items-center justify-between font-bold text-xs">
+              <span>Agência Marketing Digital Curitiba</span>
+              <ChevronRight size={14} />
+            </Link>
+            <Link to="/google-ads-curitiba" className="p-3 bg-gray-50 border border-gray-200 text-brand-dark rounded-xl hover:bg-brand-primary hover:text-white transition-colors flex items-center justify-between font-bold text-xs">
+              <span>Google Ads & Tráfego Pago Curitiba</span>
+              <ChevronRight size={14} />
+            </Link>
+            <Link to="/seo-local-curitiba" className="p-3 bg-gray-50 border border-gray-200 text-brand-dark rounded-xl hover:bg-brand-primary hover:text-white transition-colors flex items-center justify-between font-bold text-xs">
+              <span>SEO Local & Google Maps Curitiba</span>
+              <ChevronRight size={14} />
+            </Link>
+            <Link to="/site-em/curitiba" className="p-3 bg-gray-50 border border-gray-200 text-brand-dark rounded-xl hover:bg-brand-primary hover:text-white transition-colors flex items-center justify-between font-bold text-xs">
+              <span>Criação de Sites Curitiba</span>
+              <ChevronRight size={14} />
+            </Link>
+            <Link to="/ia-marketing-curitiba" className="p-3 bg-gray-50 border border-gray-200 text-brand-dark rounded-xl hover:bg-brand-primary hover:text-white transition-colors flex items-center justify-between font-bold text-xs">
+              <span>IA, GEO e Automação Curitiba</span>
+              <ChevronRight size={14} />
+            </Link>
+          </div>
         </div>
       </div>
 

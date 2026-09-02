@@ -23,6 +23,19 @@ const faqs = [
     ]
   },
   {
+    category: "SEO, Google Ads & IA em Curitiba",
+    questions: [
+      { q: "O que faz uma agência de SEO em Curitiba?", a: "Uma agência de SEO em Curitiba otimiza a arquitetura técnica, o conteúdo semântico, os dados Schema.org e o perfil do Google Meu Negócio da sua empresa. O objetivo é posicioná-la organicamente no topo das pesquisas do Google e do Google Maps quando clientes buscarem pelos seus produtos e serviços." },
+      { q: "Qual a diferença entre SEO e tráfego pago?", a: "O SEO foca na construção de autoridade orgânica e tráfego contínuo no site sem custo por clique. O tráfego pago (Google Ads) exibe anúncios no topo da busca imediatamente mediante investimento direto em mídia, sendo ideal para campanhas de curto prazo." },
+      { q: "A Suprema trabalha com Google Ads?", a: "Sim. A Suprema Sites Express (Suprema Mídia) planeja, executa e gerencia campanhas de Google Ads integradas a landing pages de alta conversão, unindo tráfego pago imediato a estratégias sólidas de SEO." },
+      { q: "Como aparecer no Google Maps em Curitiba?", a: "Para se destacar no Google Maps em Curitiba, é preciso realizar a otimização completa do Google Meu Negócio, garantir consistência de dados (NAP: Nome, Endereço e Telefone), obter avaliações reais e utilizar marcação de dados estruturados e SEO Local nos bairros atendidos." },
+      { q: "SEO ajuda uma empresa a aparecer no ChatGPT e Gemini?", a: "Sim! Através das práticas de GEO (Generative Engine Optimization) e AIO (AI Optimization), organizamos os dados e conteúdos do site em formato semântico e estruturado, permitindo que modelos de inteligência artificial citem sua empresa ao responderem perguntas dos usuários." },
+      { q: "A Suprema cria sites já preparados para SEO?", a: "Sim. Todos os sites criados pela Suprema Sites Express nascem com SEO técnico avançado, carregamento ultra-rápido (<1s), estrutura limpa em React e marcação de Schema.org pronta para rápida indexação no Google." },
+      { q: "O que é GEO e AIO?", a: "GEO (Generative Engine Optimization) e AIO (AI Optimization) são técnicas de otimização voltadas para mecanismos de inteligência artificial (ChatGPT, Gemini, Perplexity e Copilot), garantindo que sua marca seja compreendida e recomendada pelos modelos de linguagem." },
+      { q: "Quanto custa contratar serviços de SEO?", a: "O valor varia de acordo com o escopo e os objetivos da sua empresa em Curitiba. Oferecemos diagnósticos e planos sob medida que cabem no orçamento do seu negócio com excelente relação custo-benefício. Entre em contato pelo WhatsApp para um orçamento sem compromisso." }
+    ]
+  },
+  {
     category: "Técnico/SEO",
     questions: [
       { q: "O site vai aparecer no Google?", a: "Sim, todos os sites desenvolvidos pela Suprema Site Express são entregues com otimização de SEO base para indexação imediata no Google. Implementamos dados estruturados, mapas do site e configurações de velocidade que facilitam a leitura pelos robôs de busca. Além disso, focamos em SEO Local para que sua empresa apareça com destaque para clientes que buscam pelos seus serviços na sua região e no Google Maps." },

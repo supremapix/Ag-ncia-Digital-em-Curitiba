@@ -18,6 +18,11 @@ import { PillarParana } from './pages/PillarParana';
 import { PillarSantaCatarina } from './pages/PillarSantaCatarina';
 import { PillarRioGrandeDoSul } from './pages/PillarRioGrandeDoSul';
 import { PillarBairrosCuritiba } from './pages/PillarBairrosCuritiba';
+import { AgenciaSeoCuritiba } from './pages/AgenciaSeoCuritiba';
+import { AgenciaMarketingCuritiba } from './pages/AgenciaMarketingCuritiba';
+import { GoogleAdsCuritiba } from './pages/GoogleAdsCuritiba';
+import { SeoLocalCuritiba } from './pages/SeoLocalCuritiba';
+import { IaMarketingCuritiba } from './pages/IaMarketingCuritiba';
 import { FloatingButtons } from './components/FloatingButtons';
 import { SocialSection } from './components/SocialSection';
 
@@ -56,6 +61,11 @@ const App: React.FC = () => {
               <Route path="/sites-em-santa-catarina" element={<PillarSantaCatarina />} />
               <Route path="/sites-em-rio-grande-do-sul" element={<PillarRioGrandeDoSul />} />
               <Route path="/bairros-curitiba" element={<PillarBairrosCuritiba />} />
+              <Route path="/agencia-seo-curitiba" element={<AgenciaSeoCuritiba />} />
+              <Route path="/agencia-marketing-digital-curitiba" element={<AgenciaMarketingCuritiba />} />
+              <Route path="/google-ads-curitiba" element={<GoogleAdsCuritiba />} />
+              <Route path="/seo-local-curitiba" element={<SeoLocalCuritiba />} />
+              <Route path="/ia-marketing-curitiba" element={<IaMarketingCuritiba />} />
               <Route path="/site-em/:slug" element={<LocationSEO />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

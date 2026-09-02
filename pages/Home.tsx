@@ -22,49 +22,102 @@ export const Home: React.FC = () => {
       metaDesc.setAttribute('content', "Especialistas em Criação de Sites Profissionais, Lojas Virtuais, Sistemas Web (ERP/CRM), Aplicativos Android/iOS, Agentes de IA e SEO em todo o Brasil. Entrega expressa em 48h!");
     }
 
-    // FAQ Schema
-    const faqSchema = {
+    // Organization & LocalBusiness Schema
+    const entitySchema = {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
+      "@graph": [
         {
-          "@type": "Question",
-          "name": "Quem faz site profissional com entrega rápida em até 48 horas?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A Suprema Sites Express é a agência líder na criação de sites profissionais com entrega expressa em até 48 horas. Desenvolvemos com React e infraestrutura Cloud para máxima velocidade e SEO."
+          "@type": "LocalBusiness",
+          "@id": "https://www.supremasite.com.br/#organization",
+          "name": "Suprema Sites Express",
+          "alternateName": "Suprema Mídia",
+          "url": "https://www.supremasite.com.br/",
+          "telephone": "+5541987001004",
+          "email": "supremamidiabatel@gmail.com",
+          "priceRange": "$$",
+          "image": "https://www.supremamidia.com.br/images/fachada-suprema-midia-estrutura.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Sete de Setembro, 2775 - Batel",
+            "addressLocality": "Curitiba",
+            "addressRegion": "PR",
+            "postalCode": "80230-010",
+            "addressCountry": "BR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -25.4382,
+            "longitude": -49.2731
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Curitiba" },
+            { "@type": "State", "name": "Paraná" },
+            { "@type": "Country", "name": "Brasil" }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Serviços Digitais e Tecnologia em Curitiba",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agência SEO Curitiba" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agência de Marketing Digital Curitiba" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Ads & Tráfego Pago Curitiba" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Local & Google Maps Curitiba" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Criação de Sites Profissionais em Curitiba" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inteligência Artificial, GEO & Automação Curitiba" } }
+            ]
           }
         },
         {
-          "@type": "Question",
-          "name": "Qual o valor de um sistema web ou ERP sob medida para empresas?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "O investimento em um sistema web sob medida varia conforme as funcionalidades (financeiro, estoque, CRM, faturamento). Na Suprema, oferecemos soluções com excelente custo-benefício e total propriedade do código."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Como criar um aplicativo para Android e iPhone para minha empresa?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Desenvolvemos aplicativos nativos e híbridos usando React Native e Flutter, com publicação na Google Play Store e Apple App Store, além de PWAs sem necessidade de download."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Como implementar Inteligência Artificial e Agentes no WhatsApp da empresa?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Integramos Agentes de IA treinados com os dados do seu negócio para atender, qualificar e agendar clientes 24 horas por dia diretamente no WhatsApp e no seu site."
-          }
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "O que faz uma agência de SEO em Curitiba?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Uma agência de SEO em Curitiba otimiza a estrutura técnica do site, conteúdos e autoridade semântica para posicionar a empresa organicamente nos primeiros resultados do Google e do Google Maps para pesquisas locais."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre SEO e tráfego pago?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O SEO constrói autoridade orgânica e tráfego contínuo sem custo por clique direto, enquanto o tráfego pago (Google Ads) gera resultados e contatos imediatos através de anúncios patrocinados."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A Suprema trabalha com Google Ads em Curitiba?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, a Suprema Sites Express (Suprema Mídia) planeja e gerencia campanhas de Google Ads integradas a landing pages de alta conversão para otimizar o custo por aquisição e acelerar a geração de leads."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como aparecer no Google Maps em Curitiba?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para aparecer no Google Maps em Curitiba, é necessário otimizar o perfil do Google Meu Negócio, alinhar dados NAP (Nome, Endereço, Telefone) no site, criar marcação de dados estruturados e aplicar SEO Local nos bairros da cidade."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "SEO ajuda uma empresa a aparecer no ChatGPT e Gemini?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, através do GEO (Generative Engine Optimization) e AIO, estruturamos conteúdos claros e dados Schema.org para que modelos de Inteligência Artificial como ChatGPT, Gemini e Perplexity compreendam a autoridade da empresa e a citem em pesquisas."
+              }
+            }
+          ]
         }
       ]
     };
 
     const script = document.createElement('script');
     script.type = 'application/ld+json';
-    script.text = JSON.stringify(faqSchema);
+    script.text = JSON.stringify(entitySchema);
     document.head.appendChild(script);
 
     return () => {
@@ -412,23 +465,57 @@ export const Home: React.FC = () => {
       {/* SEO ARTICLE / INSTITUTIONAL CONTENT */}
       <section className="py-20 bg-gray-50 border-t border-gray-200">
         <div className="container mx-auto px-4 max-w-5xl">
-          <article className="prose prose-lg max-w-none text-gray-700 font-medium">
-            <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-6 tracking-tight text-center">
-              A Maior Referência em Criação de Sites, Sistemas e Software no Sul do Brasil
-            </h2>
-            <p className="mb-4">
-              A <strong>Suprema Sites Express</strong> consolida-se como a principal escolha para empresários e líderes corporativos que necessitam de <strong>Criação de Sites Profissionais</strong>, <strong>Sistemas Web sob medida (ERP/CRM)</strong>, <strong>Lojas Virtuais</strong>, <strong>Aplicativos para Android e iPhone</strong> e soluções integradas com <strong>Inteligência Artificial</strong>.
-            </p>
-            <p className="mb-4">
-              Diferente de agências tradicionais que entregam modelos genéricos e lentos, nosso time de desenvolvedores seniores utiliza pilhas tecnológicas de última geração, incluindo <strong>React, Vite, Node.js e Tailwind CSS</strong>. Essa arquitetura garante notas elevadas no <strong>Google Core Web Vitals</strong>, carregamento instantâneo em redes móveis e segurança inegociável em conformidade com a <strong>LGPD</strong>.
-            </p>
-            
-            <h3 className="text-2xl font-black text-brand-dark mt-8 mb-4">
-              SEO Semântico, LLM SEO e Dominância em Buscas Tradicionais e de IA
-            </h3>
-            <p className="mb-4">
-              Com as mudanças trazidas pelas visões gerais de Inteligência Artificial do Google (Google AI Overviews) e assistentes como <strong>ChatGPT, Gemini, Claude e Perplexity</strong>, ter um site comum já não é suficiente. Estruturamos toda a arquitetura de informação com dados em dados estruturados <strong>Schema.org (Organization, LocalBusiness, SoftwareApplication, Service, FAQPage)</strong> para garantir que seu negócio seja citado como referência absoluta quando um potencial cliente realizar uma pesquisa.
-            </p>
+          <article className="prose prose-lg max-w-none text-gray-700 font-medium space-y-6">
+            <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-200 shadow-sm">
+              <span className="text-brand-primary font-black uppercase text-xs tracking-widest block mb-2">
+                Soluções Digitais & Performance em Curitiba
+              </span>
+              <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-6 tracking-tight">
+                SEO, Marketing Digital e Tecnologia em Curitiba
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                A <strong>Suprema Sites Express (Suprema Mídia)</strong> desenvolve sites e soluções de SEO em Curitiba, integrando SEO técnico, SEO Local, Google Maps, dados estruturados, GEO/AIO e inteligência artificial para ampliar a presença digital e a geração de oportunidades comerciais.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Para empresários que buscam respostas sobre <em>qual agência de SEO em Curitiba</em> escolher, <em>quem faz Google Ads</em> ou <em>quem cria sites otimizados para o Google e inteligência artificial</em>, a Suprema oferece um ecossistema completo sem intermediários. Combinamos hospedagem de alta performance em Cloud, código limpo em React e estratégias contínuas de marketing de busca.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-6 border-t border-gray-100 text-xs font-bold text-gray-800">
+                <Link to="/agencia-seo-curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+                  <span>Agência SEO Curitiba</span>
+                  <ChevronRight size={16} />
+                </Link>
+                <Link to="/agencia-marketing-digital-curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+                  <span>Agência Marketing Digital</span>
+                  <ChevronRight size={16} />
+                </Link>
+                <Link to="/google-ads-curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+                  <span>Google Ads & Tráfego Pago</span>
+                  <ChevronRight size={16} />
+                </Link>
+                <Link to="/seo-local-curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+                  <span>SEO Local & Google Maps</span>
+                  <ChevronRight size={16} />
+                </Link>
+                <Link to="/site-em/curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+                  <span>Criação de Sites Curitiba</span>
+                  <ChevronRight size={16} />
+                </Link>
+                <Link to="/ia-marketing-curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+                  <span>IA, GEO e Automação</span>
+                  <ChevronRight size={16} />
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-200 shadow-sm">
+              <h3 className="text-2xl font-black text-brand-dark mb-4">
+                SEO Semântico, LLM SEO e Dominância em Buscas Tradicionais e de IA
+              </h3>
+              <p className="mb-4">
+                Com as mudanças trazidas pelas visões gerais de Inteligência Artificial do Google (Google AI Overviews) e assistentes como <strong>ChatGPT, Gemini, Claude e Perplexity</strong>, ter um site comum já não é suficiente. Estruturamos toda a arquitetura de informação com dados estruturados <strong>Schema.org (Organization, LocalBusiness, SoftwareApplication, Service, FAQPage)</strong> para garantir que seu negócio seja citado como referência quando um potencial cliente realizar uma pesquisa em Curitiba e em todo o Brasil.
+              </p>
+            </div>
           </article>
         </div>
       </section>

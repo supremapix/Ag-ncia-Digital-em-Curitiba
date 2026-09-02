@@ -92,6 +92,36 @@ const routesToPrerender = [
     title: 'Criação de Sites em Curitiba (PR) | Agência Sede no Batel (48h)',
     description: 'Criação de sites profissionais e SEO Local em Curitiba. Agência com sede na Av. Sete de Setembro, 2775 (Batel). Entrega ágil em 48h!',
     canonical: 'https://www.supremasite.com.br/site-em/curitiba'
+  },
+  {
+    path: '/agencia-seo-curitiba',
+    title: 'Agência de SEO em Curitiba | Consultoria & Otimização de Sites | Suprema',
+    description: 'Especialistas em SEO em Curitiba. Estratégias de otimização de sites, SEO técnico, SEO Local e GEO/AIO para colocar sua empresa na primeira página do Google e em IA.',
+    canonical: 'https://www.supremasite.com.br/agencia-seo-curitiba'
+  },
+  {
+    path: '/agencia-marketing-digital-curitiba',
+    title: 'Agência de Marketing Digital em Curitiba | Performance & SEO | Suprema',
+    description: 'Agência de marketing digital em Curitiba. Estratégias integradas de SEO, tráfego pago, desenvolvimento de sites e inteligência artificial para empresas.',
+    canonical: 'https://www.supremasite.com.br/agencia-marketing-digital-curitiba'
+  },
+  {
+    path: '/google-ads-curitiba',
+    title: 'Google Ads & Tráfego Pago em Curitiba | Agência de Mídia | Suprema',
+    description: 'Gestão profissional de Google Ads e tráfego pago em Curitiba. Campanhas otimizadas na Rede de Pesquisa, Google Maps e Remarketing com foco em ROI.',
+    canonical: 'https://www.supremasite.com.br/google-ads-curitiba'
+  },
+  {
+    path: '/seo-local-curitiba',
+    title: 'SEO Local & Google Maps em Curitiba | Google Meu Negócio | Suprema',
+    description: 'Especialistas em SEO Local e Google Maps em Curitiba. Otimização do Google Meu Negócio, presença nos bairros e atração de clientes locais.',
+    canonical: 'https://www.supremasite.com.br/seo-local-curitiba'
+  },
+  {
+    path: '/ia-marketing-curitiba',
+    title: 'IA, GEO & AIO em Curitiba | SEO para Inteligência Artificial | Suprema',
+    description: 'Soluções de IA, GEO (Generative Engine Optimization) e AIO em Curitiba. Otimize sua empresa para aparecer em respostas do ChatGPT, Gemini e Perplexity.',
+    canonical: 'https://www.supremasite.com.br/ia-marketing-curitiba'
   }
 ];
 
