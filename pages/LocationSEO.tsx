@@ -351,7 +351,7 @@ export const LocationSEO: React.FC = () => {
         "name": `Suprema Site Express - ${locationName}`,
         "description": `Criação de sites de altíssima performance, e-commerce profissional e SEO Local em ${locationName}, ${stateSigla}. Projetos estruturados em React com entrega ágil em 48h.`,
         "url": `https://www.supremasite.com.br/site-em/${slug}`,
-        "telephone": "+5541987001004",
+        "telephone": "+5541992721004",
         "image": "https://www.supremasite.com.br/logo.png",
         "address": {
           "@type": "PostalAddress",
@@ -460,7 +460,7 @@ export const LocationSEO: React.FC = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href={`https://wa.me/5541987001004?text=${encodeURIComponent(`Olá! Estou na região de ${locationName} (${region}) e gostaria de receber um orçamento de criação de site profissional.`)}`} 
+              href={`https://wa.me/5541992721004?text=${encodeURIComponent(`Olá! Estou na região de ${locationName} (${region}) e gostaria de receber um orçamento de criação de site profissional.`)}`} 
               className="shimmer-btn text-brand-dark font-black px-10 py-5 rounded-xl text-lg shadow-2xl hover:scale-105 transition-transform"
             >
               Consultar Orçamento para {locationName}
@@ -821,7 +821,7 @@ export const LocationSEO: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
-              href={`https://wa.me/5541987001004?text=${encodeURIComponent(`Olá! Gostaria de receber atendimento prioritário para criar um site profissional focado na região de ${locationName}.`)}`}
+              href={`https://wa.me/5541992721004?text=${encodeURIComponent(`Olá! Gostaria de receber atendimento prioritário para criar um site profissional focado na região de ${locationName}.`)}`}
               className="w-full sm:w-auto bg-brand-dark hover:bg-[#0d1627] text-white font-black px-12 py-5 rounded-2xl text-lg shadow-2xl transition-all transform hover:-translate-y-1 block"
             >
               Falar pelo WhatsApp

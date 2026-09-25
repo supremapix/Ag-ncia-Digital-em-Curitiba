@@ -113,7 +113,7 @@ export const ReviewsTicker: React.FC = () => {
             </div>
           </div>
           <a 
-            href="https://wa.me/5541987001004"
+            href="https://wa.me/5541992721004"
             className="bg-brand-primary hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-2xl transition-all shadow-lg shadow-blue-500/20 flex items-center gap-2"
           >
             Ver Todas no Google Maps

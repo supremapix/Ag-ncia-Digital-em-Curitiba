@@ -23,7 +23,7 @@ export const VideoPlayer: React.FC = () => {
           <p className="text-gray-400 text-sm mt-1">Descubra o método para aumentar sua visibilidade em 300%.</p>
         </div>
         <a 
-          href="https://wa.me/5541987001004" 
+          href="https://wa.me/5541992721004" 
           target="_blank"
           rel="noreferrer"
           className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg whitespace-nowrap transition-colors shadow-lg animate-pulse"

@@ -59,7 +59,7 @@ export const Services: React.FC = () => {
 
           <div className="flex justify-center gap-4">
             <a 
-              href="https://wa.me/5541987001004" 
+              href="https://wa.me/5541992721004" 
               className="shimmer-btn text-brand-dark font-black px-8 py-4 rounded-2xl text-base shadow-2xl flex items-center gap-2"
             >
               <Phone size={18} /> Falar com Consultor Técnico
@@ -114,7 +114,7 @@ export const Services: React.FC = () => {
                     <div className="flex items-center gap-2 font-bold text-xs text-gray-700"><CheckCircle size={16} className="text-emerald-500 shrink-0"/> Integração com WhatsApp Direct</div>
                     <div className="flex items-center gap-2 font-bold text-xs text-gray-700"><CheckCircle size={16} className="text-emerald-500 shrink-0"/> Formulários Criptografados</div>
                   </div>
-                  <a href="https://wa.me/5541987001004" className="inline-flex items-center gap-2 bg-brand-dark hover:bg-brand-primary text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
+                  <a href="https://wa.me/5541992721004" className="inline-flex items-center gap-2 bg-brand-dark hover:bg-brand-primary text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
                     Solicitar Site Profissional <ArrowRight size={16}/>
                   </a>
                 </div>
@@ -153,7 +153,7 @@ export const Services: React.FC = () => {
                     <div className="flex items-center gap-2 font-bold text-xs text-gray-700"><CheckCircle size={16} className="text-emerald-500 shrink-0"/> Funil de Vendas CRM</div>
                     <div className="flex items-center gap-2 font-bold text-xs text-gray-700"><CheckCircle size={16} className="text-emerald-500 shrink-0"/> Dashboards BI & Relatórios</div>
                   </div>
-                  <a href="https://wa.me/5541987001004" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-brand-dark text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
+                  <a href="https://wa.me/5541992721004" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-brand-dark text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
                     Orçar Sistema Sob Medida <ArrowRight size={16}/>
                   </a>
                 </div>
@@ -193,7 +193,7 @@ export const Services: React.FC = () => {
                     <div className="flex items-center gap-2 font-bold text-xs text-gray-700"><CheckCircle size={16} className="text-emerald-500 shrink-0"/> Pagamentos com Pix e Cartão</div>
                     <div className="flex items-center gap-2 font-bold text-xs text-gray-700"><CheckCircle size={16} className="text-emerald-500 shrink-0"/> Modo Offline & Sincronização</div>
                   </div>
-                  <a href="https://wa.me/5541987001004" className="inline-flex items-center gap-2 bg-purple-600 hover:bg-brand-dark text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
+                  <a href="https://wa.me/5541992721004" className="inline-flex items-center gap-2 bg-purple-600 hover:bg-brand-dark text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
                     Solicitar Projeto de App <ArrowRight size={16}/>
                   </a>
                 </div>
@@ -231,7 +231,7 @@ export const Services: React.FC = () => {
                     <div className="flex items-center gap-2 font-bold text-xs text-gray-700"><CheckCircle size={16} className="text-emerald-500 shrink-0"/> Treinamento com Base de Conhecimento</div>
                     <div className="flex items-center gap-2 font-bold text-xs text-gray-700"><CheckCircle size={16} className="text-emerald-500 shrink-0"/> Integração com CRM & Google Calendar</div>
                   </div>
-                  <a href="https://wa.me/5541987001004" className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-brand-dark text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
+                  <a href="https://wa.me/5541992721004" className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-brand-dark text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
                     Conhecer Agentes de IA <ArrowRight size={16}/>
                   </a>
                 </div>
@@ -262,7 +262,7 @@ export const Services: React.FC = () => {
                   <p className="text-gray-600 leading-relaxed mb-6">
                     Plataformas de vendas online construídas com checkout transparente, integração com gateways brasileiros (MercadoPago, PagSeguro, Asaas) e cálculo instantâneo de frete com Melhor Envio e Correios.
                   </p>
-                  <a href="https://wa.me/5541987001004" className="inline-flex items-center gap-2 bg-amber-500 hover:bg-brand-dark text-brand-dark hover:text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
+                  <a href="https://wa.me/5541992721004" className="inline-flex items-center gap-2 bg-amber-500 hover:bg-brand-dark text-brand-dark hover:text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
                     Criar Minha Loja Virtual <ArrowRight size={16}/>
                   </a>
                 </div>
@@ -293,7 +293,7 @@ export const Services: React.FC = () => {
                   <p className="text-gray-600 leading-relaxed mb-6">
                     Estratégias de ranqueamento semântico que posicionam sua empresa em primeiro lugar no Google Meu Negócio e preparam sua presença para buscas em inteligências artificiais como ChatGPT, Gemini e Copilot.
                   </p>
-                  <a href="https://wa.me/5541987001004" className="inline-flex items-center gap-2 bg-red-600 hover:bg-brand-dark text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
+                  <a href="https://wa.me/5541992721004" className="inline-flex items-center gap-2 bg-red-600 hover:bg-brand-dark text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
                     Dominar Buscas na Minha Cidade <ArrowRight size={16}/>
                   </a>
                 </div>
@@ -327,7 +327,7 @@ export const Services: React.FC = () => {
                 Avaliamos o perfil da sua empresa e indicamos a melhor solução técnica entre sites, sistemas web, aplicativos ou automação com Inteligência Artificial.
               </p>
               <a 
-                href="https://wa.me/5541987001004" 
+                href="https://wa.me/5541992721004" 
                 className="shimmer-btn text-brand-dark font-black px-8 py-4 rounded-2xl text-lg shadow-2xl inline-block"
               >
                 Falar com Engenheiro Digital

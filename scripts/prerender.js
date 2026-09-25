@@ -54,7 +54,7 @@ const routesToPrerender = [
   {
     path: '/contato',
     title: 'Contato | Fale com a Suprema Sites Express no WhatsApp',
-    description: 'Entre em contato com a equipe da Suprema Sites Express. Atendimento rápido via WhatsApp (+55 41 98700-1004) ou e-mail supremamidiabatel@gmail.com.',
+    description: 'Entre em contato com a equipe da Suprema Sites Express. Atendimento rápido via WhatsApp (+55 41 99272-1004) ou e-mail supremamidiabatel@gmail.com.',
     canonical: 'https://www.supremasite.com.br/contato'
   },
   {

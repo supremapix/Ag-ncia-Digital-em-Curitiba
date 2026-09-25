@@ -121,7 +121,7 @@ export const BlogPost: React.FC = () => {
                 Desenvolvemos sites de alta performance em React com foco total em SEO e conversão.
               </p>
               <a 
-                href="https://wa.me/5541987001004" 
+                href="https://wa.me/5541992721004" 
                 className="block w-full bg-brand-primary text-white text-center py-4 rounded-xl font-bold hover:bg-brand-primary/90 transition-colors relative z-10"
               >
                 Solicitar Orçamento

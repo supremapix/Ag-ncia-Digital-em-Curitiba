@@ -22,7 +22,7 @@ export const GoogleAdsCuritiba: React.FC = () => {
         'postalCode': '80230-010',
         'addressCountry': 'BR'
       },
-      'telephone': '+5541987001004',
+      'telephone': '+5541992721004',
       'url': 'https://www.supremasite.com.br/'
     },
     'areaServed': {
@@ -74,7 +74,7 @@ export const GoogleAdsCuritiba: React.FC = () => {
 
               <div className="flex flex-wrap gap-4 mb-8">
                 <a
-                  href="https://wa.me/5541987001004?text=Olá,%20quero%20anunciar%20minha%20empresa%20no%20Google%20Ads%20em%20Curitiba"
+                  href="https://wa.me/5541992721004?text=Olá,%20quero%20anunciar%20minha%20empresa%20no%20Google%20Ads%20em%20Curitiba"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-amber-500 hover:bg-amber-600 text-brand-dark font-black px-8 py-4 rounded-xl shadow-lg shadow-amber-500/30 flex items-center gap-2 text-base transition-all"

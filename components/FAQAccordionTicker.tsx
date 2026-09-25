@@ -85,7 +85,7 @@ export const FAQAccordionTicker: React.FC = () => {
               <div className="bg-gray-50 p-8 rounded-[2rem] border border-gray-100 text-gray-600 text-lg italic leading-relaxed">
                 "{allFAQs[selectedFAQIndex].answer}"
               </div>
-              <a href="https://wa.me/5541987001004" className="mt-8 w-full bg-brand-primary text-white font-black py-5 rounded-2xl hover:bg-brand-dark transition-all text-center block">
+              <a href="https://wa.me/5541992721004" className="mt-8 w-full bg-brand-primary text-white font-black py-5 rounded-2xl hover:bg-brand-dark transition-all text-center block">
                 Falar com Consultor no WhatsApp
               </a>
             </div>

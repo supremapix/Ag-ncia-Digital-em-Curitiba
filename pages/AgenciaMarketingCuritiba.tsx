@@ -22,7 +22,7 @@ export const AgenciaMarketingCuritiba: React.FC = () => {
         'postalCode': '80230-010',
         'addressCountry': 'BR'
       },
-      'telephone': '+5541987001004',
+      'telephone': '+5541992721004',
       'url': 'https://www.supremasite.com.br/'
     },
     'areaServed': {
@@ -51,6 +51,20 @@ export const AgenciaMarketingCuritiba: React.FC = () => {
       />
 
       <section className="bg-brand-dark text-white pt-28 pb-20 relative overflow-hidden">
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            preload="auto"
+            className="w-full h-full object-cover opacity-45 filter saturate-110"
+          >
+            <source src="https://img.supremasite.com.br/seo-omar.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14] via-[#070b14]/85 to-[#070b14]/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]" />
+        </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-6">
             <Link to="/" className="hover:text-brand-primary">Home</Link>
@@ -74,7 +88,7 @@ export const AgenciaMarketingCuritiba: React.FC = () => {
 
               <div className="flex flex-wrap gap-4 mb-8">
                 <a
-                  href="https://wa.me/5541987001004?text=Olá,%20quero%20conhecer%20as%20soluções%20da%20agência%20de%20marketing%20digital%20em%20Curitiba"
+                  href="https://wa.me/5541992721004?text=Olá,%20quero%20conhecer%20as%20soluções%20da%20agência%20de%20marketing%20digital%20em%20Curitiba"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-brand-primary hover:bg-blue-600 text-white font-black px-8 py-4 rounded-xl shadow-lg shadow-brand-primary/30 flex items-center gap-2 text-base transition-all"

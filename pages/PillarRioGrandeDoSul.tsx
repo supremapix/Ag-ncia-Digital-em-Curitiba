@@ -60,7 +60,7 @@ export const PillarRioGrandeDoSul: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a
-                href="https://wa.me/5541987001004?text=Olá,%20quero%20um%20site%20profissional%20no%20Rio%20Grande%20do%20Sul"
+                href="https://wa.me/5541992721004?text=Olá,%20quero%20um%20site%20profissional%20no%20Rio%20Grande%20do%20Sul"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-brand-primary hover:bg-blue-600 text-white font-black px-8 py-4 rounded-xl shadow-lg shadow-brand-primary/30 flex items-center gap-2 text-base transition-all"

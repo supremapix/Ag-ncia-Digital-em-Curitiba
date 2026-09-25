@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, ShieldCheck, ArrowRight, ArrowLeft, Check, Sparkles, Star, Award, Clock } from 'lucide-react';
+import { Send, ShieldCheck, ArrowRight, ArrowLeft, Check, Clock, Award, Star } from 'lucide-react';
 
 interface LeadFormProps {
   locationName?: string;
@@ -31,193 +31,170 @@ export const LeadForm: React.FC<LeadFormProps> = ({ locationName }) => {
     e.preventDefault();
     if (!formData.name || !formData.phone) return;
     
-    const text = `*Solicitação de Orçamento Suprema Site Express*\n\n*Solução Ideal:* ${selectedSolution}\n*Nome:* ${formData.name}\n*WhatsApp/Telefone:* ${formData.phone}\n*Empresa / Segmento:* ${formData.segment || 'Não informado'}\n*Local de Interesse:* ${formData.cityInput}\n\n*Olá! Gostaria de receber atendimento prioritário e iniciar meu projeto de criação de site para minha empresa na região de ${formData.cityInput}.*`;
+    const text = `*Solicitação de Orçamento Suprema Site Express*\n\n*Solução Ideal:* ${selectedSolution}\n*Nome:* ${formData.name}\n*WhatsApp/Telefone:* ${formData.phone}\n*Empresa / Segmento:* ${formData.segment || 'Não informado'}\n*Local de Interesse:* ${formData.cityInput}\n\n*Olá! Gostaria de receber atendimento prioritário e iniciar meu projeto na região de ${formData.cityInput}.*`;
     const encodedText = encodeURIComponent(text);
-    window.open(`https://wa.me/5541987001004?text=${encodedText}`, '_blank');
+    window.open(`https://wa.me/5541992721004?text=${encodedText}`, '_blank');
   };
 
   const solutions = [
-    { title: 'Site Express (Entrega 48h)', desc: 'Site institucional rápido de alta performance' },
-    { title: 'Landing Page de Alta Conversão', desc: 'Foco total em capturar leads e gerar vendas rápidas' },
-    { title: 'Loja Virtual / E-commerce de Elite', desc: 'Estruturação completa com meios de pagamento inclusos' },
-    { title: 'SEO Local & Google Meu Negócio Pro', desc: 'Posicionamento no topo das buscas regionais do Google' }
+    { title: 'Site Express (Entrega 48h)', desc: 'Site institucional corporativo em React' },
+    { title: 'Landing Page de Alta Conversão', desc: 'Foco total em vendas rápidas e geração de leads' },
+    { title: 'Loja Virtual / E-commerce', desc: 'Plataforma completa com checkout e frete' },
+    { title: 'SEO Local & Google Maps', desc: 'Dominância nos primeiros resultados do Google' }
   ];
 
   return (
-    <div id="lead-form-container" className="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-2xl border border-gray-100 relative overflow-hidden group">
-      <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 blur-3xl rounded-full -mr-16 -mt-16 group-hover:bg-brand-primary/10 transition-colors"></div>
-      
-      <div className="relative z-10">
-        <div className="flex justify-between items-center mb-6">
-          <span className="bg-brand-primary/10 text-brand-primary font-black text-[10px] tracking-widest uppercase px-3 py-1.5 rounded-full inline-block">
-            Formulário Inteligente — Passo {step} de 2
-          </span>
-          <div className="flex gap-1.5">
-            <div className={`w-2 h-2 rounded-full ${step === 1 ? 'bg-brand-primary' : 'bg-gray-200'}`}></div>
-            <div className={`w-2 h-2 rounded-full ${step === 2 ? 'bg-brand-primary' : 'bg-gray-200'}`}></div>
-          </div>
+    <div id="lead-form-container" className="bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-slate-200 text-slate-900">
+      <div className="flex justify-between items-center mb-6 border-b border-slate-100 pb-4">
+        <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
+          Orçamento Rápido · Etapa {step} de 2
+        </span>
+        <div className="flex gap-1.5">
+          <div className={`w-2 h-2 rounded-full ${step === 1 ? 'bg-brand-primary' : 'bg-slate-200'}`}></div>
+          <div className={`w-2 h-2 rounded-full ${step === 2 ? 'bg-brand-primary' : 'bg-slate-200'}`}></div>
         </div>
+      </div>
 
-        {step === 1 ? (
-          <div className="animate-fade-in">
-            <h3 className="text-3xl font-black mb-2 text-brand-dark tracking-tighter">Qual solução digital sua empresa precisa?</h3>
-            <p className="text-gray-500 mb-8 text-sm font-medium">Selecione uma opção para receber uma proposta personalizada.</p>
-            
-            <div className="space-y-3 mb-8">
-              {solutions.map((sol, idx) => (
-                <button
-                  key={idx}
-                  type="button"
-                  id={`solution-btn-${idx}`}
-                  onClick={() => setSelectedSolution(sol.title)}
-                  className={`w-full text-left p-4 rounded-2xl border transition-all flex items-start gap-4 ${
-                    selectedSolution === sol.title 
-                      ? 'border-brand-primary bg-brand-primary/5 ring-2 ring-brand-primary/20' 
-                      : 'border-gray-100 hover:border-gray-200 hover:bg-gray-50'
-                  }`}
-                >
-                  <div className={`w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 mt-1 transition-all ${
-                    selectedSolution === sol.title ? 'border-brand-primary bg-brand-primary text-white' : 'border-gray-300 bg-white'
-                  }`}>
-                    {selectedSolution === sol.title && <Check size={12} strokeWidth={4} />}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-800 text-sm md:text-base">{sol.title}</h4>
-                    <p className="text-xs text-gray-400 mt-0.5">{sol.desc}</p>
-                  </div>
-                </button>
-              ))}
+      {step === 1 ? (
+        <div className="animate-fade-in">
+          <h3 className="text-xl md:text-2xl font-bold mb-2 text-slate-900 tracking-tight">Qual o objetivo do seu projeto?</h3>
+          <p className="text-slate-500 mb-6 text-xs font-normal">Selecione a solução para receber a estimativa.</p>
+          
+          <div className="space-y-2.5 mb-6">
+            {solutions.map((sol, idx) => (
+              <button
+                key={idx}
+                type="button"
+                id={`solution-btn-${idx}`}
+                onClick={() => setSelectedSolution(sol.title)}
+                className={`w-full text-left p-3.5 rounded-xl border transition-all flex items-start gap-3 ${
+                  selectedSolution === sol.title 
+                    ? 'border-brand-primary bg-blue-50/50' 
+                    : 'border-slate-200 hover:border-slate-300 hover:bg-slate-50'
+                }`}
+              >
+                <div className={`w-4 h-4 rounded-full border flex items-center justify-center flex-shrink-0 mt-0.5 transition-all ${
+                  selectedSolution === sol.title ? 'border-brand-primary bg-brand-primary text-white' : 'border-slate-300 bg-white'
+                }`}>
+                  {selectedSolution === sol.title && <Check size={10} strokeWidth={3} />}
+                </div>
+                <div>
+                  <h4 className="font-bold text-slate-800 text-xs md:text-sm">{sol.title}</h4>
+                  <p className="text-[11px] text-slate-500 mt-0.5">{sol.desc}</p>
+                </div>
+              </button>
+            ))}
+          </div>
+
+          <button
+            type="button"
+            id="next-step-btn"
+            onClick={nextStep}
+            className="w-full bg-brand-primary hover:bg-blue-600 text-white font-bold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md text-sm"
+          >
+            <span>Avançar para contato</span>
+            <ArrowRight size={16} />
+          </button>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-4 animate-fade-in">
+          <h3 className="text-xl md:text-2xl font-bold mb-1 text-slate-900 tracking-tight">Informações de contato</h3>
+          <p className="text-slate-500 mb-4 text-xs font-normal">Receba a proposta diretamente pelo WhatsApp.</p>
+
+          <div className="space-y-1">
+            <label className="text-[11px] font-bold uppercase tracking-wider text-slate-500">Seu Nome</label>
+            <input 
+              type="text" 
+              name="name"
+              id="form-name-input"
+              required
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-primary focus:bg-white focus:outline-none transition-colors font-medium text-slate-900 text-sm"
+              placeholder="Nome completo"
+            />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-3">
+            <div className="space-y-1">
+              <label className="text-[11px] font-bold uppercase tracking-wider text-slate-500">WhatsApp / Telefone</label>
+              <input 
+                type="tel" 
+                name="phone"
+                id="form-phone-input"
+                required
+                value={formData.phone}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-primary focus:bg-white focus:outline-none transition-colors font-medium text-slate-900 text-sm"
+                placeholder="(41) 90000-0000"
+              />
             </div>
+            <div className="space-y-1">
+              <label className="text-[11px] font-bold uppercase tracking-wider text-slate-500">Segmento</label>
+              <input 
+                type="text" 
+                name="segment"
+                id="form-segment-input"
+                value={formData.segment}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-primary focus:bg-white focus:outline-none transition-colors font-medium text-slate-900 text-sm"
+                placeholder="Ex: Medicina, Advocacia, Vendas"
+              />
+            </div>
+          </div>
 
+          <div className="space-y-1">
+            <label className="text-[11px] font-bold uppercase tracking-wider text-slate-500">Cidade / Região</label>
+            <input 
+              type="text" 
+              name="cityInput"
+              id="form-city-input"
+              required
+              value={formData.cityInput}
+              onChange={handleChange}
+              className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-brand-primary focus:bg-white focus:outline-none transition-colors font-medium text-slate-900 text-sm"
+              placeholder="Ex: Curitiba, Batel, Joinville"
+            />
+          </div>
+
+          <div className="flex gap-3 pt-2">
             <button
               type="button"
-              id="next-step-btn"
-              onClick={nextStep}
-              className="w-full bg-brand-primary hover:bg-blue-700 text-white font-black py-4 px-6 rounded-2xl flex items-center justify-center gap-2 transition-all shadow-xl shadow-blue-500/10 hover:shadow-blue-500/20 text-base"
+              id="prev-step-btn"
+              onClick={prevStep}
+              className="flex-1 border border-slate-200 hover:border-slate-300 text-slate-600 font-semibold py-3.5 rounded-xl flex items-center justify-center gap-1.5 transition-colors text-xs"
             >
-              Próxima Etapa <ArrowRight size={18} />
+              <ArrowLeft size={14} /> Voltar
+            </button>
+            
+            <button 
+              type="submit" 
+              id="submit-lead-btn"
+              className="flex-[2] bg-brand-primary hover:bg-blue-600 text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md text-xs uppercase tracking-wider"
+            >
+              <Send size={14} /> Solicitar Proposta
             </button>
           </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="space-y-5 animate-fade-in">
-            <h3 className="text-3xl font-black mb-2 text-brand-dark tracking-tighter">Por favor, informe seus dados</h3>
-            <p className="text-gray-500 mb-6 text-sm font-medium">Seus dados são confidenciais e protegidos pela LGPD.</p>
+        </form>
+      )}
 
-            <div className="space-y-1">
-              <label className="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-1">Seu Nome</label>
-              <input 
-                type="text" 
-                name="name"
-                id="form-name-input"
-                required
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full px-5 py-3.5 rounded-2xl bg-gray-50 border border-gray-200 focus:border-brand-primary focus:bg-white focus:ring-4 focus:ring-brand-primary/5 outline-none transition-all font-medium text-brand-dark"
-                placeholder="Ex: Roberto Oliveira"
-              />
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="space-y-1">
-                <label className="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-1">WhatsApp / Celular</label>
-                <input 
-                  type="tel" 
-                  name="phone"
-                  id="form-phone-input"
-                  required
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-5 py-3.5 rounded-2xl bg-gray-50 border border-gray-200 focus:border-brand-primary focus:bg-white focus:ring-4 focus:ring-brand-primary/5 outline-none transition-all font-medium text-brand-dark"
-                  placeholder="(00) 90000-0000"
-                />
-              </div>
-              <div className="space-y-1">
-                <label className="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-1">Seu Segmento de Negócio</label>
-                <input 
-                  type="text" 
-                  name="segment"
-                  id="form-segment-input"
-                  value={formData.segment}
-                  onChange={handleChange}
-                  className="w-full px-5 py-3.5 rounded-2xl bg-gray-50 border border-gray-200 focus:border-brand-primary focus:bg-white focus:ring-4 focus:ring-brand-primary/5 outline-none transition-all font-medium text-brand-dark"
-                  placeholder="Ex: Clínica, Advocacia, Loja"
-                />
-              </div>
-            </div>
-
-            <div className="space-y-1">
-              <label className="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-1">Cidade ou Bairro de Atendimento</label>
-              <input 
-                type="text" 
-                name="cityInput"
-                id="form-city-input"
-                required
-                value={formData.cityInput}
-                onChange={handleChange}
-                className="w-full px-5 py-3.5 rounded-2xl bg-gray-50 border border-gray-200 focus:border-brand-primary focus:bg-white focus:ring-4 focus:ring-brand-primary/5 outline-none transition-all font-medium text-brand-dark"
-                placeholder="Ex: Batel, Curitiba, Joinville"
-              />
-            </div>
-
-            <div className="flex gap-3 pt-3">
-              <button
-                type="button"
-                id="prev-step-btn"
-                onClick={prevStep}
-                className="flex-[1] border border-gray-200 hover:border-gray-300 text-gray-500 font-bold py-4 rounded-2xl flex items-center justify-center gap-2 transition-all bg-white"
-              >
-                <ArrowLeft size={16} /> Voltar
-              </button>
-              
-              <button 
-                type="submit" 
-                id="submit-lead-btn"
-                className="flex-[2] bg-brand-primary hover:bg-blue-700 text-white font-black py-4 rounded-2xl flex items-center justify-center gap-2 transition-all shadow-xl shadow-blue-500/15 text-sm md:text-base"
-              >
-                <Send size={16} /> Enviar no WhatsApp
-              </button>
-            </div>
-          </form>
-        )}
-
-        {/* Dynamic trust seals to boost CRO (Tarefa 3) */}
-        <div className="mt-8 pt-8 border-t border-gray-100 grid grid-cols-2 gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-brand-primary/5 flex items-center justify-center text-brand-primary flex-shrink-0">
-              <Clock size={14} />
-            </div>
-            <div>
-              <span className="block text-[10px] font-black text-gray-800 uppercase tracking-tight">Entrega Express</span>
-              <span className="block text-[9px] text-gray-400 font-bold uppercase">Lançamento em 48 Horas</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-brand-primary/5 flex items-center justify-center text-brand-primary flex-shrink-0">
-              <Star size={14} fill="currentColor" />
-            </div>
-            <div>
-              <span className="block text-[10px] font-black text-gray-800 uppercase tracking-tight">Melhor Avaliação</span>
-              <span className="block text-[9px] text-gray-400 font-bold uppercase">Nota 5.0 Google Business</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-brand-primary/5 flex items-center justify-center text-brand-primary flex-shrink-0">
-              <Award size={14} />
-            </div>
-            <div>
-              <span className="block text-[10px] font-black text-gray-800 uppercase tracking-tight">SEO Comprovado</span>
-              <span className="block text-[9px] text-gray-400 font-bold uppercase">Até +1900% Visibilidade</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-brand-primary/5 flex items-center justify-center text-brand-primary flex-shrink-0">
-              <ShieldCheck size={14} />
-            </div>
-            <div>
-              <span className="block text-[10px] font-black text-gray-800 uppercase tracking-tight">Privacidade Total</span>
-              <span className="block text-[9px] text-gray-400 font-bold uppercase">LGPD 100% Conforme</span>
-            </div>
-          </div>
+      {/* Trust Markers */}
+      <div className="mt-6 pt-6 border-t border-slate-100 grid grid-cols-2 gap-3 text-[11px] font-medium text-slate-500">
+        <div className="flex items-center gap-2">
+          <Clock size={14} className="text-brand-primary shrink-0" />
+          <span>Entrega em 48h</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Star size={14} className="text-amber-500 shrink-0" />
+          <span>Nota 5.0 no Google</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Award size={14} className="text-brand-primary shrink-0" />
+          <span>SEO Estruturado</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <ShieldCheck size={14} className="text-emerald-600 shrink-0" />
+          <span>LGPD em Conformidade</span>
         </div>
       </div>
     </div>

@@ -462,7 +462,7 @@ export const Portfolio: React.FC = () => {
                   </div>
 
                   <a 
-                    href="https://wa.me/5541987001004"
+                    href="https://wa.me/5541992721004"
                     className="mt-6 w-full py-3 bg-brand-dark hover:bg-brand-primary text-white text-xs font-black rounded-xl uppercase tracking-wider flex items-center justify-center gap-2 transition-colors shadow-md"
                   >
                     Quero um Projeto Similar <ArrowUpRight size={14} />
@@ -500,7 +500,7 @@ export const Portfolio: React.FC = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="https://wa.me/5541987001004" 
+                  href="https://wa.me/5541992721004" 
                   className="shimmer-btn text-brand-dark font-black px-8 py-4 rounded-2xl text-lg shadow-2xl transition-all"
                 >
                   Solicitar Proposta Grátis

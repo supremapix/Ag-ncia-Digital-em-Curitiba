@@ -52,7 +52,7 @@ const faqs = [
       { q: "Fazem sites para cidades pequenas?", a: "Sim, atendemos empresas de todos os portes em cidades de qualquer tamanho. O SEO Local é, inclusive, uma das estratégias mais poderosas para pequenas cidades, pois permite que você domine as buscas regionais e se torne a principal referência na sua localidade. Na Suprema Site Express, adaptamos a estratégia de visibilidade do seu site para o tamanho do seu mercado, garantindo que seus clientes locais te encontrem facilmente." },
       { q: "Tem alguma reunião presencial ou é tudo online?", a: "Realizamos a maior parte do nosso atendimento de forma online para garantir a agilidade da entrega em 48 horas, mas estamos disponíveis para reuniões presenciais em nossa sede em Curitiba sob agendamento. O modelo digital nos permite reduzir custos e acelerar processos, beneficiando o cliente com prazos menores e preços mais competitivos. Utilizamos WhatsApp, chamadas de vídeo e e-mail para manter uma comunicação fluida e eficiente durante todo o projeto." },
       { q: "Atendem todo o Brasil?", a: "Sim, atendemos todos os 27 estados do Brasil. Já desenvolvemos projetos para empresas de norte a sul, adaptando a linguagem e a estratégia de SEO para as particularidades de cada região. Independentemente de onde sua empresa esteja localizada, a Suprema Site Express possui a expertise necessária para criar um site profissional que conecte sua marca ao seu público-alvo nacional ou regional com máxima eficácia técnica." },
-      { q: "Qual o WhatsApp para falar com um especialista?", a: "Você pode falar diretamente com um especialista da Suprema Site Express através do WhatsApp pelo número +55 (41) 98700-1004. Estamos prontos para tirar todas as suas dúvidas, enviar orçamentos personalizados e iniciar o projeto do seu novo site profissional imediatamente. Nosso atendimento é humanizado, ágil e focado em encontrar a melhor solução digital para o crescimento real da sua empresa no mercado brasileiro." }
+      { q: "Qual o WhatsApp para falar com um especialista?", a: "Você pode falar diretamente com um especialista da Suprema Site Express através do WhatsApp pelo número +55 (41) 99272-1004. Estamos prontos para tirar todas as suas dúvidas, enviar orçamentos personalizados e iniciar o projeto do seu novo site profissional imediatamente. Nosso atendimento é humanizado, ágil e focado em encontrar a melhor solução digital para o crescimento real da sua empresa no mercado brasileiro." }
     ]
   }
 ];
@@ -107,7 +107,7 @@ export const StaticFAQ: React.FC = () => {
                           {faq.a}
                           <div className="mt-4 pt-4 border-t border-gray-200 flex items-center gap-2 text-brand-primary font-bold text-sm">
                             <MessageCircle size={16} />
-                            <a href="https://wa.me/5541987001004" className="hover:underline">
+                            <a href="https://wa.me/5541992721004" className="hover:underline">
                               Ainda com dúvida? Fale no WhatsApp
                             </a>
                           </div>

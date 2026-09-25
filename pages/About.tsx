@@ -70,7 +70,7 @@ export const About: React.FC = () => {
             },
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+55-41-98700-1004",
+              "telephone": "+55-41-99272-1004",
               "contactType": "customer service"
             },
             "member": team.map(member => ({
@@ -262,14 +262,14 @@ export const About: React.FC = () => {
                 <Phone className="text-brand-primary mt-1" size={20} />
                 <div>
                   <p className="font-bold text-brand-dark">Telefone</p>
-                  <p className="text-gray-600">+55 (41) 98700-1004</p>
+                  <p className="text-gray-600">+55 (41) 99272-1004</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="text-brand-primary mt-1" size={20} />
                 <div>
                   <p className="font-bold text-brand-dark">E-mail Oficial</p>
-                  <p className="text-gray-600">contato@supremasite.com.br</p>
+                  <p className="text-gray-600">supremamidiabatel@gmail.com</p>
                 </div>
               </div>
             </div>

@@ -29,7 +29,7 @@ export const Contact: React.FC = () => {
     e.preventDefault();
     const text = `*Novo Contato via Site*\n\n*Nome:* ${formData.name}\n*Telefone:* ${formData.phone}\n*Email:* ${formData.email}\n*Mensagem:* ${formData.message}`;
     const encodedText = encodeURIComponent(text);
-    window.open(`https://wa.me/5541987001004?text=${encodedText}`, '_blank');
+    window.open(`https://wa.me/5541992721004?text=${encodedText}`, '_blank');
   };
 
   return (
@@ -123,7 +123,7 @@ export const Contact: React.FC = () => {
                     <MapPin className="text-brand-accent mt-1" size={24} />
                     <div>
                       <h3 className="font-bold text-lg">Endereço, Telefone e E-mail da Suprema Site Express</h3>
-                      <p className="text-gray-300">Av. Sete de Setembro, 2775 - 9º andar</p>
+                      <p className="text-gray-300">Av. Sete de Setembro, 2775 - 6º andar</p>
                       <p className="text-gray-400 text-sm">Acesso pelo elevador azul ou vermelho</p>
                       <p className="text-gray-300">Rebouças, Curitiba - PR, 80230-010</p>
                       <a href="https://share.google/j6UoHq8uuHfvwOfiW" target="_blank" rel="noreferrer" className="text-brand-accent hover:underline text-sm mt-2 block">Ver no Google Maps</a>
@@ -133,7 +133,7 @@ export const Contact: React.FC = () => {
                     <Phone className="text-brand-accent" size={24} />
                     <div>
                       <h3 className="font-bold text-lg">Telefone / WhatsApp</h3>
-                      <p className="text-gray-300">(41) 98700-1004</p>
+                      <p className="text-gray-300">(41) 99272-1004</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">

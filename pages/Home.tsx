@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { 
-  Globe, ShoppingCart, Smartphone, Cpu, Bot, TrendingUp, CheckCircle, 
-  Zap, ArrowRight, ShieldCheck, Sparkles, Clock, Star, Users, MapPin, 
-  Layers, Lock, Phone, MessageSquare, BarChart3, ChevronRight 
+  Globe, ShoppingCart, Smartphone, Cpu, Bot, TrendingUp, Check, 
+  Zap, ArrowRight, Clock, Lock, ChevronRight, PhoneCall, Play 
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { LeadForm } from '../components/LeadForm';
@@ -32,7 +31,7 @@ export const Home: React.FC = () => {
           "name": "Suprema Sites Express",
           "alternateName": "Suprema Mídia",
           "url": "https://www.supremasite.com.br/",
-          "telephone": "+5541987001004",
+          "telephone": "+5541992721004",
           "email": "supremamidiabatel@gmail.com",
           "priceRange": "$$",
           "image": "https://www.supremamidia.com.br/images/fachada-suprema-midia-estrutura.png",
@@ -128,60 +127,87 @@ export const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col bg-gray-50">
+    <div className="flex flex-col bg-[#f8fafc]">
       
-      {/* HERO SECTION */}
-      <section className="relative bg-brand-dark text-white py-20 lg:py-32 overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/40 via-brand-dark to-brand-dark"></div>
+      {/* HERO SECTION - Elegant Cinema Background Video */}
+      <section className="relative bg-[#070b14] text-white py-20 lg:py-28 border-b border-white/10 overflow-hidden min-h-[85vh] flex items-center">
         
-        <div className="container mx-auto px-4 relative z-10">
+        {/* Background Video 01 (Omar SEO 01) with High Visibility Gradient Overlay */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            preload="auto"
+            className="w-full h-full object-cover opacity-50 scale-105 filter saturate-110 contrast-105 transition-opacity duration-700"
+          >
+            <source src="https://img.supremasite.com.br/omar-seo.mp4" type="video/mp4" />
+          </video>
+          {/* Subtle dual gradient overlay for 100% text readability + high video prominence */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14] via-[#070b14]/75 to-[#070b14]/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]/60" />
+        </div>
+
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             
             <div className="lg:w-7/12 text-center lg:text-left">
-              <span className="inline-flex items-center gap-2 text-brand-accent font-black tracking-[0.2em] uppercase mb-6 px-4 py-2 bg-white/5 rounded-full border border-white/10 text-xs">
-                <Sparkles size={14} /> Suprema Sites Express & Software House
-              </span>
+              {/* Clean Kicker Metadata */}
+              <div className="flex items-center gap-2 justify-center lg:justify-start text-xs font-bold uppercase tracking-[0.2em] text-brand-primary mb-5">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>01</span>
+                <span>·</span>
+                <span>Engenharia Digital & SEO em Curitiba</span>
+              </div>
 
-              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black mb-6 leading-[0.95] tracking-tighter">
-                Criação de <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-amber-300">Sites, Sistemas Web, Apps</span> e Inteligência Artificial
+              <h1 className="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl mb-6 leading-[1.02] tracking-tight text-white max-w-3xl drop-shadow-md">
+                Criação de Sites, Sistemas Web e SEO Dominante
               </h1>
 
-              <p className="text-lg lg:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0 font-medium leading-relaxed">
-                Desenvolvemos <strong>Sites Profissionais</strong>, <strong>Lojas Virtuais</strong>, <strong>Sistemas Web (ERP/CRM)</strong>, <strong>Aplicativos Android/iOS</strong>, <strong>Agentes de IA</strong> e <strong>SEO Dominante</strong> para impulsionar empresas em todo o Brasil.
+              <p className="text-base lg:text-lg text-slate-200 mb-8 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                Desenvolvemos <strong>Sites Profissionais</strong>, <strong>Lojas Virtuais</strong>, <strong>Sistemas Web (ERP/CRM)</strong>, <strong>Aplicativos Native</strong> e <strong>Estratégia SEO</strong> para empresas que buscam alta performance e geração real de clientes.
               </p>
 
-              <div className="min-h-[50px] mb-8 bg-white/5 border border-white/10 p-4 rounded-2xl max-w-xl mx-auto lg:mx-0">
+              {/* Technical Typewriter Bar */}
+              <div className="mb-8 bg-black/40 border border-white/15 p-4 rounded-xl max-w-xl mx-auto lg:mx-0 backdrop-blur-md shadow-2xl">
                 <TypewriterText 
                   phrases={PERSUASIVE_PHRASES}
-                  className="text-base lg:text-lg text-amber-300 font-bold leading-snug"
+                  className="text-sm lg:text-base text-amber-400 font-semibold leading-snug"
                   speed={35}
                   delay={2500}
                 />
               </div>
 
-              {/* CTAs */}
+              {/* Single Focal Primary CTA + Secondary Link */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
                 <a 
-                  href="https://wa.me/5541987001004" 
-                  className="shimmer-btn text-brand-dark font-black py-4 px-10 rounded-2xl text-lg transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center gap-2"
+                  href="https://wa.me/5541992721004" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-brand-primary hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-xl text-sm transition-all shadow-xl shadow-blue-900/40 flex items-center justify-center gap-2 active:scale-95"
                 >
-                  <Phone size={20} /> Solicitar Projeto
+                  <PhoneCall size={18} />
+                  <span>Solicitar Orçamento no WhatsApp</span>
                 </a>
                 <Link 
                   to="/portfolio" 
-                  className="bg-white/10 border border-white/20 hover:bg-white/20 text-white font-bold py-4 px-10 rounded-2xl text-lg transition-all flex items-center justify-center gap-2"
+                  className="border border-white/25 hover:border-white/50 bg-black/30 backdrop-blur-sm text-slate-200 hover:text-white font-semibold py-4 px-8 rounded-xl text-sm transition-all flex items-center justify-center gap-2"
                 >
-                  Ver Portfólio Completo <ArrowRight size={20}/>
+                  <span>Ver Prova de Impacto</span>
+                  <ArrowRight size={16}/>
                 </Link>
               </div>
 
-              {/* Indicators */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 pt-6 border-t border-white/10 text-xs font-bold text-gray-300">
-                <div className="flex items-center gap-1.5"><CheckCircle size={15} className="text-emerald-400 shrink-0"/> +3.800 Projetos</div>
-                <div className="flex items-center gap-1.5"><CheckCircle size={15} className="text-emerald-400 shrink-0"/> +1.100 Cidades</div>
-                <div className="flex items-center gap-1.5"><CheckCircle size={15} className="text-emerald-400 shrink-0"/> Entrega 48h</div>
-                <div className="flex items-center gap-1.5"><CheckCircle size={15} className="text-emerald-400 shrink-0"/> Nota 5.0 Google</div>
-                <div className="flex items-center gap-1.5"><CheckCircle size={15} className="text-emerald-400 shrink-0"/> Código 100% Seu</div>
+              {/* Clean Proof Bar with Unboxed Separators */}
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 pt-6 border-t border-white/15 text-xs font-semibold text-slate-300 tabular-nums">
+                <span>+3.800 Projetos</span>
+                <span>·</span>
+                <span>Entrega em 48h</span>
+                <span>·</span>
+                <span>100% Código Próprio</span>
+                <span>·</span>
+                <span>Nota 5.0 no Google</span>
               </div>
 
             </div>
@@ -195,174 +221,170 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* STATS HIGHLIGHT */}
-      <section className="bg-white py-10 border-b border-gray-200">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
-            <div>
-              <span className="block text-3xl md:text-5xl font-black text-brand-dark tracking-tighter">+3.800</span>
-              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Projetos Entregues</span>
+      {/* STATS HIGHLIGHT - Tabular Numerals & High Contrast */}
+      <section className="bg-white py-12 border-b border-slate-200">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center tabular-nums">
+            <div className="border-r border-slate-100 last:border-r-0 pr-4">
+              <span className="block text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">+3.800</span>
+              <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1 block">Projetos Entregues</span>
             </div>
-            <div>
-              <span className="block text-3xl md:text-5xl font-black text-brand-primary tracking-tighter">48 Horas</span>
-              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Entrega Expressa</span>
+            <div className="border-r border-slate-100 last:border-r-0 pr-4">
+              <span className="block text-3xl md:text-4xl font-extrabold text-brand-primary tracking-tight">48 Horas</span>
+              <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1 block">Prazo de Entrega</span>
             </div>
-            <div>
-              <span className="block text-3xl md:text-5xl font-black text-amber-500 tracking-tighter">1.100+</span>
-              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Cidades Atendidas</span>
+            <div className="border-r border-slate-100 last:border-r-0 pr-4">
+              <span className="block text-3xl md:text-4xl font-extrabold text-amber-600 tracking-tight">1.100+</span>
+              <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1 block">Cidades Atendidas</span>
             </div>
-            <div>
-              <span className="block text-3xl md:text-5xl font-black text-purple-600 tracking-tighter">+1900%</span>
-              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Aumento em SEO Local</span>
+            <div className="border-r border-slate-100 last:border-r-0 pr-4">
+              <span className="block text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">+1900%</span>
+              <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1 block">Crescimento SEO Local</span>
             </div>
             <div className="col-span-2 md:col-span-1">
-              <span className="block text-3xl md:text-5xl font-black text-emerald-600 tracking-tighter">★ 5.0</span>
-              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Avaliações no Google</span>
+              <span className="block text-3xl md:text-4xl font-extrabold text-emerald-600 tracking-tight">5.0 ★</span>
+              <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1 block">Avaliações Google</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION: QUAL SOLUÇÃO SUA EMPRESA PRECISA? */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <span className="text-brand-primary font-black uppercase text-xs tracking-[0.25em] mb-2 block">
-              Soluções Completas de Engenharia Digital
-            </span>
-            <h2 className="text-3xl md:text-6xl font-black text-brand-dark tracking-tighter">
-              Qual solução sua empresa precisa hoje?
+      {/* SECTION: CAPABILITIES & SERVICES - Bento Grid Structure */}
+      <section className="py-20 bg-[#f8fafc]">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl mb-16">
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-brand-primary mb-3">
+              <span>02</span>
+              <span>·</span>
+              <span>Engenharia & Soluções Digitais</span>
+            </div>
+            <h2 className="font-display text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+              Especialidades e Projetos sob Medida
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mt-4 text-base font-medium">
-              Desenvolvimento sob medida para posicionar sua marca no topo do mercado, gerar leads qualificados e automatizar processos operacionais.
+            <p className="text-slate-600 mt-4 text-base font-normal leading-relaxed">
+              Estruturas digitais desenvolvidas com foco absoluto em conversão, velocidade de carregamento e autoridade técnica nos buscadores.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* Card 1: Site Profissional */}
-            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+            <div className="bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-brand-primary/50 transition-all group flex flex-col justify-between shadow-sm hover:shadow-md">
               <div>
-                <div className="w-14 h-14 bg-blue-50 text-brand-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-primary group-hover:text-white transition-all">
-                  <Globe size={28} />
-                </div>
-                <h3 className="text-2xl font-black text-brand-dark mb-3">🌐 Site Profissional</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                  Sites institucionais e corporativos de alta velocidade, responsivos e otimizados para converter visitantes em clientes pagantes.
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-4">01. Web Engineering</span>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Site Profissional Institucional</h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                  Desenvolvimento em React + Tailwind com foco em autoridade corporativa, UX refinada e carregamento sub-segundo.
                 </p>
-                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Design Exclusivo UX/UI</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Carregamento Instantâneo (&lt;1s)</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Botão WhatsApp em Destaque</li>
-                </ul>
+                <div className="space-y-2 mb-8 text-xs font-medium text-slate-700 border-t border-slate-100 pt-4">
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Design UX/UI Exclusivo</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Desempenho Core Web Vitals 95+</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Captura de Leads Integrada</div>
+                </div>
               </div>
-              <Link to="/servicos" className="text-brand-primary font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                Saber Mais <ChevronRight size={16} />
+              <Link to="/servicos" className="text-brand-primary font-bold text-xs uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Ver detalhes da solução</span>
+                <ChevronRight size={14} />
               </Link>
             </div>
 
             {/* Card 2: Loja Virtual */}
-            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+            <div className="bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-brand-primary/50 transition-all group flex flex-col justify-between shadow-sm hover:shadow-md">
               <div>
-                <div className="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all">
-                  <ShoppingCart size={28} />
-                </div>
-                <h3 className="text-2xl font-black text-brand-dark mb-3">🛒 Loja Virtual / E-commerce</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                  Plataformas de e-commerce robustas e seguras para vender 24/7 com checkout simplificado, Pix, cartão e cálculo automático de frete.
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-4">02. E-Commerce Platform</span>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Loja Virtual de Alta Conversão</h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                  Plataformas de vendas diretas com checkout otimizado, gestão de estoque intuitiva e integrações de pagamento via Pix e Cartão.
                 </p>
-                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Checkout Seguro MercadoPago/PagSeguro</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Gestão Fácil de Estoque</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Otimizado para Compras no Celular</li>
-                </ul>
+                <div className="space-y-2 mb-8 text-xs font-medium text-slate-700 border-t border-slate-100 pt-4">
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Checkout Transparente Sem Fricção</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Cálculo Automático de Frete</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Layout Responsivo Mobile-First</div>
+                </div>
               </div>
-              <Link to="/servicos" className="text-amber-600 font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                Saber Mais <ChevronRight size={16} />
+              <Link to="/servicos" className="text-brand-primary font-bold text-xs uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Ver detalhes da solução</span>
+                <ChevronRight size={14} />
               </Link>
             </div>
 
             {/* Card 3: Aplicativo Mobile */}
-            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+            <div className="bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-brand-primary/50 transition-all group flex flex-col justify-between shadow-sm hover:shadow-md">
               <div>
-                <div className="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all">
-                  <Smartphone size={28} />
-                </div>
-                <h3 className="text-2xl font-black text-brand-dark mb-3">📱 Aplicativo Mobile</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                  Aplicativos Android e iOS em React Native e Flutter, além de PWAs leves para conectar sua empresa diretamente ao smartphone do cliente.
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-4">03. Mobile Apps</span>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Aplicativo Android & iOS</h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                  Soluções mobile nativas em React Native e PWAs leves para conectar sua empresa diretamente ao cotidiano dos seus clientes.
                 </p>
-                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Publicação nas Lojas Play Store & App Store</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Notificações Push & Fidelização</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Integração com Câmera e GPS</li>
-                </ul>
+                <div className="space-y-2 mb-8 text-xs font-medium text-slate-700 border-t border-slate-100 pt-4">
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Publicação nas Lojas Oficiais</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Notificações Push & Engajamento</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Integrações via REST API</div>
+                </div>
               </div>
-              <Link to="/servicos" className="text-purple-600 font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                Saber Mais <ChevronRight size={16} />
+              <Link to="/servicos" className="text-brand-primary font-bold text-xs uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Ver detalhes da solução</span>
+                <ChevronRight size={14} />
               </Link>
             </div>
 
             {/* Card 4: Sistema Web & ERP/CRM */}
-            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+            <div className="bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-brand-primary/50 transition-all group flex flex-col justify-between shadow-sm hover:shadow-md">
               <div>
-                <div className="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all">
-                  <Cpu size={28} />
-                </div>
-                <h3 className="text-2xl font-black text-brand-dark mb-3">⚙ Sistema Web & ERP/CRM</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                  Sistemas sob medida para automação comercial, gestão financeira, controle de estoque, CRM de clientes e dashboards de BI.
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-4">04. Custom Systems</span>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Sistema Web (ERP / CRM)</h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                  Sistemas corporativos sob medida para automação de processos, gestão de vendas, relatórios e dashboards em tempo real.
                 </p>
-                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Painel Administrativo Personalizado</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Integrações de API e NFe/NFCe</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Sem Mensalidades por Usuário</li>
-                </ul>
+                <div className="space-y-2 mb-8 text-xs font-medium text-slate-700 border-t border-slate-100 pt-4">
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Painel Administrativo Personalizado</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Integrações NFe & Gateways</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Sem Mensalidades por Usuário</div>
+                </div>
               </div>
-              <Link to="/servicos" className="text-indigo-600 font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                Saber Mais <ChevronRight size={16} />
+              <Link to="/servicos" className="text-brand-primary font-bold text-xs uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Ver detalhes da solução</span>
+                <ChevronRight size={14} />
               </Link>
             </div>
 
             {/* Card 5: IA Empresarial */}
-            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+            <div className="bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-brand-primary/50 transition-all group flex flex-col justify-between shadow-sm hover:shadow-md">
               <div>
-                <div className="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all">
-                  <Bot size={28} />
-                </div>
-                <h3 className="text-2xl font-black text-brand-dark mb-3">🤖 IA Empresarial & Agentes</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                  Agentes Inteligentes no WhatsApp e site treinados com os dados da sua empresa para atender, qualificar leads e agendar 24/7.
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-4">05. AI Agents</span>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Agentes de Inteligência Artificial</h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                  Agentes virtuais treinados com o conhecimento da sua empresa para qualificar leads e realizar agendamentos 24/7 via WhatsApp.
                 </p>
-                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Agentes com Gemini 1.5 API</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Respostas Humanizadas em Segundos</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Automação de Vendas pelo WhatsApp</li>
-                </ul>
+                <div className="space-y-2 mb-8 text-xs font-medium text-slate-700 border-t border-slate-100 pt-4">
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Respostas Contextuais em Segundos</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Qualificação Automática de Vendas</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Integração com CRM Existente</div>
+                </div>
               </div>
-              <Link to="/servicos" className="text-emerald-600 font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                Saber Mais <ChevronRight size={16} />
+              <Link to="/servicos" className="text-brand-primary font-bold text-xs uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Ver detalhes da solução</span>
+                <ChevronRight size={14} />
               </Link>
             </div>
 
             {/* Card 6: SEO & Google Maps */}
-            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-brand-primary/30 transition-all group flex flex-col justify-between">
+            <div className="bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-brand-primary/50 transition-all group flex flex-col justify-between shadow-sm hover:shadow-md">
               <div>
-                <div className="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-red-600 group-hover:text-white transition-all">
-                  <TrendingUp size={28} />
-                </div>
-                <h3 className="text-2xl font-black text-brand-dark mb-3">📈 SEO & Google Maps</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                  SEO Semântico e Otimização para Google Meu Negócio, ChatGPT, Gemini, Copilot e Perplexity para colocar sua empresa no topo.
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-4">06. Search Visibility</span>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">SEO Técnico & Google Maps</h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                  Otimização semântica e GEO/AIO para colocar sua empresa no topo do Google Maps, ChatGPT e buscadores modernos.
                 </p>
-                <ul className="space-y-2 mb-6 text-xs font-bold text-gray-700">
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Dominância em SEO Local na Sua Cidade</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Preparado para IA (LLM SEO)</li>
-                  <li className="flex items-center gap-2"><CheckCircle size={14} className="text-emerald-500"/> Relatórios Mensais de Posição</li>
-                </ul>
+                <div className="space-y-2 mb-8 text-xs font-medium text-slate-700 border-t border-slate-100 pt-4">
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Dominância em Pesquisas Locais</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Marcação de Dados Estruturados Schema</div>
+                  <div className="flex items-center gap-2"><Check size={14} className="text-brand-primary shrink-0"/> Otimização para IA (GEO/AIO)</div>
+                </div>
               </div>
-              <Link to="/servicos" className="text-red-600 font-black text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                Saber Mais <ChevronRight size={16} />
+              <Link to="/servicos" className="text-brand-primary font-bold text-xs uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Ver detalhes da solução</span>
+                <ChevronRight size={14} />
               </Link>
             </div>
 
@@ -370,150 +392,171 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION: COMO FUNCIONA - TIMELINE */}
-      <section className="py-20 bg-brand-dark text-white relative overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <span className="text-amber-400 font-black uppercase text-xs tracking-[0.25em] mb-2 block">
-              Processo Ágil Sem Burocracia
-            </span>
-            <h2 className="text-3xl md:text-6xl font-black tracking-tighter">
-              Como Funciona a Criação do seu Projeto
+      {/* SECTION: EXECUTION TIMELINE - Background Video 02 (Omar SEO 02) */}
+      <section className="py-24 bg-[#070b14] text-white relative overflow-hidden">
+        
+        {/* Background Video 02 (Omar SEO 02) */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            preload="auto"
+            className="w-full h-full object-cover opacity-45 scale-105 filter saturate-110 contrast-105"
+          >
+            <source src="https://img.supremasite.com.br/seo-omar.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14] via-[#070b14]/85 to-[#070b14]/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]" />
+        </div>
+
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
+          <div className="max-w-2xl mb-16">
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-amber-400 mb-3">
+              <span>03</span>
+              <span>·</span>
+              <span>Metodologia Ágil & Execução</span>
+            </div>
+            <h2 className="font-display text-3xl md:text-5xl font-extrabold tracking-tight drop-shadow">
+              Etapas do Desenvolvimento
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto mt-4 text-base font-medium">
-              Da ideia ao ar em tempo recorde com acompanhamento direto pelo WhatsApp.
+            <p className="text-slate-300 mt-4 text-base font-normal">
+              Processo de entrega transparente com acompanhamento direto do projeto e visibilidade técnica total.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {[
-              { num: "01", title: "Planejamento", desc: "Briefing rápido e definição da estratégia do projeto." },
-              { num: "02", title: "Layout UI/UX", desc: "Criação do design moderno focado na sua marca." },
-              { num: "03", title: "Desenvolvimento", desc: "Programação limpa e veloz em React / Node." },
-              { num: "04", title: "Aprovação", desc: "Você revisa o projeto antes da publicação." },
-              { num: "05", title: "Publicação", desc: "Lançamento no domínio com SSL e hospedagem." },
-              { num: "06", title: "Crescimento", desc: "SEO e suporte contínuo para gerar vendas." },
+              { num: "01", title: "Estratégia", desc: "Alinhamento de objetivos e arquitetura das telas." },
+              { num: "02", title: "Interface UI/UX", desc: "Criação de layout exclusivo e de alta legibilidade." },
+              { num: "03", title: "Programação", desc: "Desenvolvimento do código limpo em React." },
+              { num: "04", title: "Validação", desc: "Revisão detalhada antes da publicação oficial." },
+              { num: "05", title: "Lançamento", desc: "Publicação no servidor com SSL e SEO inicial." },
+              { num: "06", title: "Evolução", desc: "Acompanhamento contínuo e estratégia de busca." },
             ].map((step, idx) => (
-              <div key={idx} className="bg-white/5 border border-white/10 p-6 rounded-2xl relative hover:border-amber-400 transition-all">
-                <span className="text-3xl font-black text-amber-400 block mb-2">{step.num}</span>
-                <h4 className="text-lg font-black text-white mb-2">{step.title}</h4>
-                <p className="text-xs text-gray-400 leading-relaxed font-medium">{step.desc}</p>
+              <div key={idx} className="bg-black/50 border border-white/15 p-6 rounded-xl hover:border-amber-400/60 transition-all backdrop-blur-md shadow-xl">
+                <span className="text-2xl font-extrabold text-amber-400 block mb-3 tabular-nums">{step.num}</span>
+                <h4 className="text-base font-bold text-white mb-2">{step.title}</h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-normal">{step.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION: DIFERENCIAIS */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <span className="text-brand-primary font-black uppercase text-xs tracking-[0.25em] mb-2 block">
-              Por que a Suprema Sites Express é Referência?
-            </span>
-            <h2 className="text-3xl md:text-6xl font-black text-brand-dark tracking-tighter">
-              Diferenciais que Tecem Nosso Sucesso
+      {/* SECTION: DIFFERENTIALS */}
+      <section className="py-20 bg-white border-b border-slate-200">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-2xl mb-16">
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-brand-primary mb-3">
+              <span>04</span>
+              <span>·</span>
+              <span>Pilares da Agência</span>
+            </div>
+            <h2 className="font-display text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+              Diferenciais da Suprema
             </h2>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
-            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-              <Clock className="w-10 h-10 text-amber-500 mb-4" />
-              <h3 className="text-xl font-black text-brand-dark mb-2">Entrega em 48h</h3>
-              <p className="text-xs text-gray-600 leading-relaxed font-medium">Metodologia ágil sem prazos infinitos. Seu projeto no ar gerando receita rápido.</p>
+            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200/80">
+              <Clock className="w-8 h-8 text-amber-600 mb-4" />
+              <h3 className="text-lg font-bold text-slate-900 mb-2">Entrega Expressa em 48h</h3>
+              <p className="text-xs text-slate-600 leading-relaxed font-normal">Processos otimizados para colocar sua estrutura digital no ar sem prazos longos.</p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-              <Zap className="w-10 h-10 text-blue-500 mb-4" />
-              <h3 className="text-xl font-black text-brand-dark mb-2">Core Web Vitals 95+</h3>
-              <p className="text-xs text-gray-600 leading-relaxed font-medium">Carregamento instantâneo no celular. O Google prioriza sites ultrarrápidos.</p>
+            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200/80">
+              <Zap className="w-8 h-8 text-brand-primary mb-4" />
+              <h3 className="text-lg font-bold text-slate-900 mb-2">Core Web Vitals 95+</h3>
+              <p className="text-xs text-slate-600 leading-relaxed font-normal">Velocidade extrema de carregamento priorizada pelos algoritmos do Google.</p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-              <Bot className="w-10 h-10 text-emerald-500 mb-4" />
-              <h3 className="text-xl font-black text-brand-dark mb-2">Pronto para IA (LLM SEO)</h3>
-              <p className="text-xs text-gray-600 leading-relaxed font-medium">Conteúdo e Schema estruturados para ChatGPT, Gemini, Perplexity e Bing AI.</p>
+            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200/80">
+              <Bot className="w-8 h-8 text-emerald-600 mb-4" />
+              <h3 className="text-lg font-bold text-slate-900 mb-2">Estrutura Pronta para IA</h3>
+              <p className="text-xs text-slate-600 leading-relaxed font-normal">Dados estruturados Schema.org para citabilidade em ChatGPT, Gemini e Perplexity.</p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-              <Lock className="w-10 h-10 text-purple-500 mb-4" />
-              <h3 className="text-xl font-black text-brand-dark mb-2">Código 100% Seu</h3>
-              <p className="text-xs text-gray-600 leading-relaxed font-medium">Sem aluguel abusivo. Você é dono total do seu site, aplicativo e banco de dados.</p>
+            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200/80">
+              <Lock className="w-8 h-8 text-purple-600 mb-4" />
+              <h3 className="text-lg font-bold text-slate-900 mb-2">Propriedade Integral</h3>
+              <p className="text-xs text-slate-600 leading-relaxed font-normal">Código e banco de dados pertencem a você, sem dependências de plataformas fechadas.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* REVIEWS & PROOF */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4 text-center mb-10">
-          <h2 className="text-3xl md:text-5xl font-black text-brand-dark tracking-tighter mb-2">O que dizem nossos clientes no Sul do Brasil</h2>
-          <p className="text-gray-500 font-medium">Depoimentos reais de empresários que transformaram seus resultados digitais.</p>
+      <section className="bg-slate-50 py-16">
+        <div className="container mx-auto px-4 lg:px-8 text-center mb-10">
+          <h2 className="font-display text-2xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-2">Depoimentos de Empresários Atendidos</h2>
+          <p className="text-slate-500 font-normal text-sm">Avaliações consolidadas sobre nossos projetos e consultorias.</p>
         </div>
         <ReviewsTicker />
       </section>
 
       {/* LOCATION TICKER */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 text-center mb-8">
-          <h2 className="text-3xl md:text-5xl font-black text-brand-dark tracking-tighter">Atendimento Especializado em Mais de 1.100 Cidades</h2>
-          <p className="text-gray-500 text-sm font-medium mt-2">Atendemos Paraná, Santa Catarina, Rio Grande do Sul e todo o Brasil com SEO Local focado na sua região.</p>
+        <div className="container mx-auto px-4 lg:px-8 text-center mb-8">
+          <h2 className="font-display text-2xl md:text-4xl font-extrabold text-slate-900 tracking-tight">Atendimento Regional em Mais de 1.100 Cidades</h2>
+          <p className="text-slate-500 text-sm font-normal mt-2">Cobertura em todo o Paraná, Santa Catarina e Rio Grande do Sul.</p>
         </div>
         <LocationTicker />
       </section>
 
       {/* SEO ARTICLE / INSTITUTIONAL CONTENT */}
-      <section className="py-20 bg-gray-50 border-t border-gray-200">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <article className="prose prose-lg max-w-none text-gray-700 font-medium space-y-6">
-            <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-200 shadow-sm">
-              <span className="text-brand-primary font-black uppercase text-xs tracking-widest block mb-2">
-                Soluções Digitais & Performance em Curitiba
+      <section className="py-20 bg-slate-50 border-t border-slate-200">
+        <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
+          <article className="space-y-8">
+            <div className="bg-white p-8 md:p-12 rounded-2xl border border-slate-200 shadow-sm">
+              <span className="text-xs font-bold text-brand-primary uppercase tracking-widest block mb-3">
+                Presença Digital e Tecnologia
               </span>
-              <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-6 tracking-tight">
+              <h2 className="font-display text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 tracking-tight">
                 SEO, Marketing Digital e Tecnologia em Curitiba
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-slate-700 leading-relaxed mb-4 text-sm font-normal">
                 A <strong>Suprema Sites Express (Suprema Mídia)</strong> desenvolve sites e soluções de SEO em Curitiba, integrando SEO técnico, SEO Local, Google Maps, dados estruturados, GEO/AIO e inteligência artificial para ampliar a presença digital e a geração de oportunidades comerciais.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-slate-700 leading-relaxed mb-6 text-sm font-normal">
                 Para empresários que buscam respostas sobre <em>qual agência de SEO em Curitiba</em> escolher, <em>quem faz Google Ads</em> ou <em>quem cria sites otimizados para o Google e inteligência artificial</em>, a Suprema oferece um ecossistema completo sem intermediários. Combinamos hospedagem de alta performance em Cloud, código limpo em React e estratégias contínuas de marketing de busca.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-6 border-t border-gray-100 text-xs font-bold text-gray-800">
-                <Link to="/agencia-seo-curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 pt-6 border-t border-slate-100 text-xs font-bold text-slate-800">
+                <Link to="/agencia-seo-curitiba" className="p-3.5 bg-slate-50 hover:bg-brand-primary hover:text-white rounded-lg transition-colors flex items-center justify-between border border-slate-200">
                   <span>Agência SEO Curitiba</span>
-                  <ChevronRight size={16} />
+                  <ChevronRight size={14} />
                 </Link>
-                <Link to="/agencia-marketing-digital-curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+                <Link to="/agencia-marketing-digital-curitiba" className="p-3.5 bg-slate-50 hover:bg-brand-primary hover:text-white rounded-lg transition-colors flex items-center justify-between border border-slate-200">
                   <span>Agência Marketing Digital</span>
-                  <ChevronRight size={16} />
+                  <ChevronRight size={14} />
                 </Link>
-                <Link to="/google-ads-curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+                <Link to="/google-ads-curitiba" className="p-3.5 bg-slate-50 hover:bg-brand-primary hover:text-white rounded-lg transition-colors flex items-center justify-between border border-slate-200">
                   <span>Google Ads & Tráfego Pago</span>
-                  <ChevronRight size={16} />
+                  <ChevronRight size={14} />
                 </Link>
-                <Link to="/seo-local-curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+                <Link to="/seo-local-curitiba" className="p-3.5 bg-slate-50 hover:bg-brand-primary hover:text-white rounded-lg transition-colors flex items-center justify-between border border-slate-200">
                   <span>SEO Local & Google Maps</span>
-                  <ChevronRight size={16} />
+                  <ChevronRight size={14} />
                 </Link>
-                <Link to="/site-em/curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+                <Link to="/site-em/curitiba" className="p-3.5 bg-slate-50 hover:bg-brand-primary hover:text-white rounded-lg transition-colors flex items-center justify-between border border-slate-200">
                   <span>Criação de Sites Curitiba</span>
-                  <ChevronRight size={16} />
+                  <ChevronRight size={14} />
                 </Link>
-                <Link to="/ia-marketing-curitiba" className="p-4 bg-gray-50 hover:bg-brand-primary hover:text-white rounded-xl transition-colors flex items-center justify-between border border-gray-200">
+                <Link to="/ia-marketing-curitiba" className="p-3.5 bg-slate-50 hover:bg-brand-primary hover:text-white rounded-lg transition-colors flex items-center justify-between border border-slate-200">
                   <span>IA, GEO e Automação</span>
-                  <ChevronRight size={16} />
+                  <ChevronRight size={14} />
                 </Link>
               </div>
             </div>
 
-            <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-200 shadow-sm">
-              <h3 className="text-2xl font-black text-brand-dark mb-4">
-                SEO Semântico, LLM SEO e Dominância em Buscas Tradicionais e de IA
+            <div className="bg-white p-8 md:p-12 rounded-2xl border border-slate-200 shadow-sm">
+              <h3 className="font-display text-xl font-bold text-slate-900 mb-4">
+                SEO Semântico, LLM SEO e Visibilidade de Marca
               </h3>
-              <p className="mb-4">
-                Com as mudanças trazidas pelas visões gerais de Inteligência Artificial do Google (Google AI Overviews) e assistentes como <strong>ChatGPT, Gemini, Claude e Perplexity</strong>, ter um site comum já não é suficiente. Estruturamos toda a arquitetura de informação com dados estruturados <strong>Schema.org (Organization, LocalBusiness, SoftwareApplication, Service, FAQPage)</strong> para garantir que seu negócio seja citado como referência quando um potencial cliente realizar uma pesquisa em Curitiba e em todo o Brasil.
+              <p className="text-slate-700 text-sm leading-relaxed font-normal">
+                Com as atualizações de inteligência artificial do Google e assistentes como <strong>ChatGPT, Gemini, Claude e Perplexity</strong>, estruturamos a arquitetura de informação com dados Schema.org para garantir que seu negócio seja citado como autoridade em Curitiba e em todo o Brasil.
               </p>
             </div>
           </article>
@@ -524,18 +567,37 @@ export const Home: React.FC = () => {
       <StaticFAQ />
       <FAQAccordionTicker />
 
-      {/* FINAL CTA */}
-      <section className="py-20 bg-brand-primary text-white text-center relative overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter">Pronto para Dominar o Mercado Digital?</h2>
-          <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto mb-10 font-bold">
-            Fale agora mesmo com nossos especialistas via WhatsApp e solicite um orçamento sem compromisso.
+      {/* FINAL CTA - High-Visibility Video Section */}
+      <section className="py-24 bg-[#070b14] text-white text-center relative border-t border-white/10 overflow-hidden">
+        
+        {/* Background Video (Omar SEO 02) */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            preload="auto"
+            className="w-full h-full object-cover opacity-50 scale-105 filter saturate-110"
+          >
+            <source src="https://img.supremasite.com.br/seo-omar.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-[#070b14]/75 to-[#070b14]/70" />
+        </div>
+
+        <div className="container mx-auto px-4 lg:px-8 max-w-4xl relative z-10">
+          <h2 className="font-display text-3xl md:text-5xl font-extrabold mb-6 tracking-tight drop-shadow">Pronto para Iniciar o seu Projeto?</h2>
+          <p className="text-base md:text-lg text-slate-200 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+            Fale diretamente com nossa equipe técnica via WhatsApp e receba um direcionamento focado nas necessidades da sua empresa.
           </p>
           <a 
-            href="https://wa.me/5541987001004" 
-            className="inline-block bg-white text-brand-primary font-black py-6 px-16 rounded-full text-2xl hover:scale-105 transition-all shadow-2xl"
+            href="https://wa.me/5541992721004" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-brand-primary hover:bg-blue-600 text-white font-bold py-4 px-10 rounded-xl text-base transition-all shadow-2xl shadow-blue-900/50 active:scale-95"
           >
-            Chamar no WhatsApp (41) 98700-1004
+            <PhoneCall size={18} />
+            <span>Chamar no WhatsApp (41) 99272-1004</span>
           </a>
         </div>
       </section>
