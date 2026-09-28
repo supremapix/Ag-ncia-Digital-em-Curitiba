@@ -109,15 +109,27 @@ let sitemapCidadesXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
 
-const allCities = [...new Set([...cities, ...scCities, ...rsCities])].sort();
+// Only include highly useful cities with high commercial demand (South regions and top capitals)
+const strategicCities = [
+  "Curitiba", "Londrina", "Maringá", "Cascavel", "Foz do Iguaçu", "Ponta Grossa", "São José dos Pinhais", 
+  "Colombo", "Guarapuava", "Paranaguá", "Apucarana", "Toledo", "Pinhais", "Campo Largo", "Arapongas", 
+  "Fazenda Rio Grande", "Araucária", "Piraquara", "Guaratuba", "Matinhos", "Lapa",
+  "Joinville", "Florianópolis", "Blumenau", "São José", "Chapecó", "Criciúma", "Itajaí", "Jaraguá do Sul", 
+  "Palhoça", "Lages", "Balneário Camboriú", "Brusque", "Itapema", "Navegantes",
+  "Porto Alegre", "Caxias do Sul", "Canoas", "Pelotas", "Gravataí", "Santa Maria", "Viamão", "Novo Hamburgo", 
+  "São Leopoldo", "Rio Grande", "Passo Fundo", "Bento Gonçalves", "Gramado",
+  "São Paulo", "Campinas", "Santos", "Belo Horizonte", "Brasília"
+];
 
-allCities.forEach(city => {
+const curatedCities = [...new Set(strategicCities)].sort();
+
+curatedCities.forEach(city => {
   const slug = slugify(city);
   // High priorities for major capitals/strategic cities
   let priority = '0.7';
-  if (['curitiba', 'londrina', 'maringa', 'florianopolis', 'joinville', 'porto-alegre', 'caxias-do-sul'].includes(slug)) {
+  if (['curitiba', 'londrina', 'maringa', 'florianopolis', 'joinville', 'porto-alegre', 'caxias-do-sul', 'sao-paulo', 'brasilia'].includes(slug)) {
     priority = '0.9';
-  } else if (['cascavel', 'foz-do-iguacu', 'ponta-grossa', 'blumenau', 'balneario-camboriu', 'lages', 'criciuma', 'pelotas', 'santa-maria'].includes(slug)) {
+  } else if (['cascavel', 'foz-do-iguacu', 'ponta-grossa', 'blumenau', 'balneario-camboriu', 'lages', 'criciuma', 'pelotas', 'santa-maria', 'fazenda-rio-grande', 'sao-jose-dos-pinhais'].includes(slug)) {
     priority = '0.8';
   }
   
@@ -138,10 +150,24 @@ let sitemapBairrosXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
 
-neighborhoods.forEach(b => {
+// Filter to highly commercial and search-demanded neighborhoods of Curitiba
+const targetBairros = [
+  "Abranches", "Água Verde", "Ahú", "Alto Boqueirão", "Alto da Glória", "Alto da Rua XV", "Atuba", 
+  "Bacacheri", "Bairro Alto", "Barreirinha", "Batel", "Bigorrilho", "Boa Vista", "Bom Retiro", "Boqueirão", 
+  "Cabral", "Cajuru", "Capão Raso", "Capão da Imbuia", "Centro", "Centro Cívico", "Cidade Industrial (CIC)", 
+  "Cristo Rei", "Fanny", "Fazendinha", "Guabirotuba", "Hauer", "Hugo Lange", "Jardim Botânico", "Jardim Social", 
+  "Jardim das Américas", "Juvevê", "Mercês", "Novo Mundo", "Orleans", "Parolin", "Pilarzinho", "Pinheirinho", 
+  "Portão", "Prado Velho", "Rebouças", "Santa Cândida", "Santa Felicidade", "Seminário", "Sítio Cercado", 
+  "São Braz", "São Francisco", "São Lourenço", "Tarumã", "Tatuquara", "Tingui", "Uberaba", "Umbará", 
+  "Vila Izabel", "Vista Alegre", "Xaxim", "Ecoville", "Centro Histórico", "Batel Soho"
+];
+
+const curatedBairros = [...new Set(targetBairros)].sort();
+
+curatedBairros.forEach(b => {
   const slug = slugify(b);
   let priority = '0.6';
-  if (['batel', 'agua-verde', 'centro-civico', 'bigorrilho', 'ecoville', 'merces', 'cabral', 'juveve'].includes(slug)) {
+  if (['batel', 'agua-verde', 'centro-civico', 'bigorrilho', 'ecoville', 'merces', 'cabral', 'juveve', 'portao', 'abranches'].includes(slug)) {
     priority = '0.7';
   }
   sitemapBairrosXml += `  <url>
