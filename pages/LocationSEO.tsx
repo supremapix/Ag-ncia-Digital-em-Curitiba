@@ -439,33 +439,49 @@ export const LocationSEO: React.FC = () => {
   return (
     <div className="bg-white">
       {/* 1. HERO SECTION WITH DEEP LOCAL BINDINGS */}
-      <section className="relative bg-brand-dark text-white py-24 lg:py-40 overflow-hidden">
-        <div className="absolute inset-0 bg-brand-primary/10 opacity-30 pointer-events-none"></div>
+      <section className="relative bg-[#070b14] text-white py-24 lg:py-40 overflow-hidden min-h-[60vh] flex items-center">
+        {/* Background Video 01 (Omar SEO 01) with High Visibility & Elegant Overlays */}
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            preload="auto"
+            className="w-full h-full object-cover opacity-50 scale-105 filter saturate-110 contrast-105"
+          >
+            <source src="https://img.supremasite.com.br/omar-seo.mp4" type="video/mp4" />
+          </video>
+          {/* Cinema Gradient overlays */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14] via-[#070b14]/85 to-[#070b14]/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]" />
+        </div>
+
         <div className="container mx-auto px-4 relative z-10 text-center animate-slide-up">
-          <div className="inline-flex gap-2 items-center bg-brand-primary text-white font-black text-[10px] uppercase tracking-[0.4em] px-5 py-2 rounded-full border border-white/20 mb-8">
-            <Compass size={12} className="text-brand-accent animate-spin-slow" />
-            Estratégia Hiper-Local: {locationName} / {region}
+          <div className="inline-flex gap-2 items-center bg-brand-primary text-white font-extrabold text-[10px] uppercase tracking-[0.4em] px-5 py-2.5 rounded-full border border-white/20 mb-8 backdrop-blur-md">
+            <Compass size={12} className="text-amber-400 animate-spin-slow" />
+            <span>Estratégia Hiper-Local: {locationName} / {region}</span>
           </div>
-          <h1 className="text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tighter">
+          <h1 className="text-4xl md:text-7xl font-display font-extrabold mb-8 leading-[1.05] tracking-tight text-white drop-shadow-md">
             Criação de Sites no <br/>
-            <span className="text-brand-accent uppercase">{isCuritibaNeighborhood ? `Bairro ${locationName}` : locationName}</span>
+            <span className="text-amber-400 uppercase">{isCuritibaNeighborhood ? `Bairro ${locationName}` : locationName}</span>
           </h1>
-          <div className="min-h-[60px] mb-12">
+          <div className="min-h-[60px] mb-12 max-w-3xl mx-auto">
             <TypewriterText 
               phrases={PERSUASIVE_PHRASES}
-              className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium"
+              className="text-lg md:text-xl text-slate-200 leading-relaxed font-medium"
               speed={40}
               delay={3000}
             />
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-20">
             <a 
               href={`https://wa.me/5541992721004?text=${encodeURIComponent(`Olá! Estou na região de ${locationName} (${region}) e gostaria de receber um orçamento de criação de site profissional.`)}`} 
-              className="shimmer-btn text-brand-dark font-black px-10 py-5 rounded-xl text-lg shadow-2xl hover:scale-105 transition-transform"
+              className="bg-brand-primary hover:bg-blue-600 text-white font-extrabold px-10 py-5 rounded-xl text-lg shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2"
             >
-              Consultar Orçamento para {locationName}
+              <span>Consultar Orçamento para {locationName}</span>
             </a>
-            <Link to="/portfolio" className="bg-white/10 hover:bg-white/20 text-white font-bold px-10 py-5 rounded-xl text-lg border border-white/20 transition-all">
+            <Link to="/portfolio" className="bg-black/40 backdrop-blur-sm hover:bg-white/10 text-white font-bold px-10 py-5 rounded-xl text-lg border border-white/20 transition-all flex items-center justify-center">
               Ver Projetos Recentes
             </Link>
           </div>
