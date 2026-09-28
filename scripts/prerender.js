@@ -187,7 +187,8 @@ const curatedCities = [
   { slug: "campinas", name: "Campinas", stateSigla: "SP", state: "São Paulo", region: "Interior de SP", strongSegment: "Polo Tecnológico, Universidades de Pesquisa, Logística de Cargas Pesadas e Agronegócio" },
   { slug: "santos", name: "Santos", stateSigla: "SP", state: "São Paulo", region: "Baixada Santista", strongSegment: "Logística Portuária de Grande Porte, Turismo, Serviços Aduaneiros e Comércio de Varejo" },
   { slug: "belo-horizonte", name: "Belo Horizonte", stateSigla: "MG", state: "Minas Gerais", region: "Grande BH", strongSegment: "Polo de Startups, Economia de Serviços, Gastronomia Tradicional e Clínicas Médicas" },
-  { slug: "brasilia", name: "Brasília", stateSigla: "DF", state: "Distrito Federal", region: "Distrito Federal", strongSegment: "Serviços Jurídicos de Elite, Assessorias de Governo, Serviços Corporativos Premium e Clínicas de Especialidades" }
+  { slug: "brasilia", name: "Brasília", stateSigla: "DF", state: "Distrito Federal", region: "Distrito Federal", strongSegment: "Serviços Jurídicos de Elite, Assessorias de Governo, Serviços Corporativos Premium e Clínicas de Especialidades" },
+  { slug: "paranagua", name: "Paranaguá", stateSigla: "PR", state: "Paraná", region: "Litoral Paranaense", strongSegment: "Logística Portuária, Importação e Exportação, Despacho Aduaneiro e Serviços Portuários" }
 ];
 
 const curatedBairros = [
@@ -200,7 +201,7 @@ const curatedBairros = [
   { slug: "cabral", name: "Cabral", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Estúdios de Arquitetura, Clínicas Veterinárias de Elite, Construtoras de Luxo e Cafeterias Premium" },
   { slug: "juveve", name: "Juvevê", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Consultórios Médicos, Estúdios de Fotografia, Serviços de TI e Gastronomia Conceito" },
   { slug: "boqueirao", name: "Boqueirão", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Distribuidoras de Autopeças, Comunicação Visual, Metalurgia Leve e Lojas de Tintas" },
-  { slug: "cic", name: "Cidade Industrial (CIC)", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Metalúrgicas de Cargas, Logística e Distribuição, Indústrias Químicas e Usinagem Técnica" },
+  { slug: "cidade-industrial-cic", name: "Cidade Industrial (CIC)", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Metalúrgicas de Cargas, Logística e Distribuição, Indústrias Químicas e Usinagem Técnica" },
   { slug: "sitio-cercado", name: "Sítio Cercado", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Lojas de Varejo de Moda, Farmácias de Manipulação, Assistências Técnicas e Academias" },
   { slug: "pinheirinho", name: "Pinheirinho", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Distribuidoras de Alimentos, Revendedoras de Veículos, Clínicas de Fisioterapia e Comércios Fortes" },
   { slug: "santa-felicidade", name: "Santa Felicidade", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Restaurantes Tradicionais, Vinícolas, Móveis Planejados de Alto Padrão e Arquitetura" },
@@ -211,7 +212,8 @@ const curatedBairros = [
   { slug: "novo-mundo", name: "Novo Mundo", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Lojas de Eletrodomésticos, Construtoras Civis, Clínicas de Estética e Comércio de Móveis" },
   { slug: "vista-alegre", name: "Vista Alegre", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Radiodifusão, Clínicas Veterinárias, Escolas e Gastronomia Familiar" },
   { slug: "centro", name: "Centro", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Escritórios de Cobrança, Imobiliárias Populares, Clínicas de Especialidades e Comércio Geral" },
-  { slug: "reboucas", name: "Rebouças", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Gráficas de Grande Porte, Comunicação Visual, Concessionárias de Carros e Escritórios Criativos" }
+  { slug: "reboucas", name: "Rebouças", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Gráficas de Grande Porte, Comunicação Visual, Concessionárias de Carros e Escritórios Criativos" },
+  { slug: "alto-boqueirao", name: "Alto Boqueirão", type: "Bairro", parentCity: "Curitiba", stateSigla: "PR", strongSegment: "Varejo de Proximidade, Farmácias de Manipulação, Academias Locais, Serviços e Comércio Geral" }
 ];
 
 // Combine all dynamic localized pages to pre-render
@@ -234,6 +236,18 @@ const localizedRoutes = [
 
 // Custom context texts based on location to ensure dynamic, high-quality content without doorway filters
 function generateContext(loc) {
+  if (loc.slug === 'paranagua') {
+    return `Paranaguá abriga o maior porto graneleiro da América Latina, sendo um centro estratégico de exportação, importação e logística aduaneira do Brasil. Empresas de Paranaguá, prestadores de serviços portuários e despachantes aduaneiros demandam sites de alto nível institucional e velozes para se comunicar com clientes de todo o mundo. Desenvolvemos soluções em React extremamente rápidas e com SEO técnico completo para destacar sua marca no mercado internacional e litorâneo.`;
+  }
+
+  if (loc.slug === 'alto-boqueirao') {
+    return `O bairro Alto Boqueirão em Curitiba (PR) destaca-se por sua densidade populacional e dinâmico varejo de vizinhança. Comércios locais, distribuidoras, consultórios e prestadores de serviços no Alto Boqueirão precisam de páginas rápidas de alta conversão (landing pages) integradas ao WhatsApp para atrair ligações imediatas de moradores da própria região. Desenvolvemos sites modernos em React focados em capturar orçamentos de proximidade.`;
+  }
+
+  if (loc.slug === 'cidade-industrial-cic') {
+    return `A Cidade Industrial de Curitiba (CIC) é o maior distrito industrial de Curitiba e do Paraná, concentrando gigantes de manufatura, metalurgia, química e operadores logísticos. Empresas B2B na CIC necessitam de sites institucionais robustos e de altíssima credibilidade corporativa para conquistar grandes contratos industriais. Criamos plataformas leves em React e otimizadas para motores de busca e inteligência artificial.`;
+  }
+
   if (loc.isBairro) {
     return `O bairro ${loc.name} em Curitiba (PR) possui um comércio forte e independente. Empresas e consultórios localizados no bairro ${loc.name} demandam uma presença digital impecável para atrair clientes locais que usam o smartphone para buscar serviços próximos. Atendemos comércios, clínicas e prestadores em todo o ${loc.name} com sites desenvolvidos em React para carregamento abaixo de 1 segundo, aumentando o número de ligações e orçamentos via WhatsApp.`;
   }
