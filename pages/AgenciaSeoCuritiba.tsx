@@ -61,12 +61,12 @@ export const AgenciaSeoCuritiba: React.FC = () => {
             muted 
             playsInline 
             preload="auto"
-            className="w-full h-full object-cover opacity-45 filter saturate-110"
+            className="w-full h-full object-cover opacity-65 filter saturate-110"
           >
             <source src="https://img.supremasite.com.br/omar-seo.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14] via-[#070b14]/85 to-[#070b14]/60" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14]/90 via-[#070b14]/75 to-[#070b14]/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]/45" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-6">

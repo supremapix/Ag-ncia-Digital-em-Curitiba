@@ -15,11 +15,11 @@ export const Footer: React.FC = () => {
           muted 
           playsInline 
           preload="auto"
-          className="w-full h-full object-cover opacity-30 filter saturate-110 contrast-105"
+          className="w-full h-full object-cover opacity-55 filter saturate-110 contrast-105"
         >
           <source src="https://img.supremasite.com.br/omar-seo.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-[#070b14]/90 to-[#070b14]/85" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-[#070b14]/75 to-[#070b14]/80" />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">

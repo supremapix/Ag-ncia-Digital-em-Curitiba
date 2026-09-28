@@ -140,13 +140,13 @@ export const Home: React.FC = () => {
             muted 
             playsInline 
             preload="auto"
-            className="w-full h-full object-cover opacity-50 scale-105 filter saturate-110 contrast-105 transition-opacity duration-700"
+            className="w-full h-full object-cover opacity-70 scale-105 filter saturate-110 contrast-105 transition-opacity duration-700"
           >
             <source src="https://img.supremasite.com.br/omar-seo.mp4" type="video/mp4" />
           </video>
           {/* Subtle dual gradient overlay for 100% text readability + high video prominence */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14] via-[#070b14]/75 to-[#070b14]/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14]/90 via-[#070b14]/65 to-[#070b14]/35" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]/50" />
         </div>
 
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -403,11 +403,11 @@ export const Home: React.FC = () => {
             muted 
             playsInline 
             preload="auto"
-            className="w-full h-full object-cover opacity-45 scale-105 filter saturate-110 contrast-105"
+            className="w-full h-full object-cover opacity-65 scale-105 filter saturate-110 contrast-105"
           >
             <source src="https://img.supremasite.com.br/seo-omar.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14] via-[#070b14]/85 to-[#070b14]/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14]/90 via-[#070b14]/75 to-[#070b14]/45" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]" />
         </div>
 
@@ -578,11 +578,11 @@ export const Home: React.FC = () => {
             muted 
             playsInline 
             preload="auto"
-            className="w-full h-full object-cover opacity-50 scale-105 filter saturate-110"
+            className="w-full h-full object-cover opacity-65 scale-105 filter saturate-110"
           >
             <source src="https://img.supremasite.com.br/seo-omar.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-[#070b14]/75 to-[#070b14]/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-[#070b14]/65 to-[#070b14]/60" />
         </div>
 
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl relative z-10">

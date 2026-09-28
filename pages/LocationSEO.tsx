@@ -448,13 +448,13 @@ export const LocationSEO: React.FC = () => {
             muted 
             playsInline 
             preload="auto"
-            className="w-full h-full object-cover opacity-50 scale-105 filter saturate-110 contrast-105"
+            className="w-full h-full object-cover opacity-70 scale-105 filter saturate-110 contrast-105"
           >
             <source src="https://img.supremasite.com.br/omar-seo.mp4" type="video/mp4" />
           </video>
           {/* Cinema Gradient overlays */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14] via-[#070b14]/85 to-[#070b14]/60" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#070b14]/90 via-[#070b14]/70 to-[#070b14]/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]/45" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10 text-center animate-slide-up">
