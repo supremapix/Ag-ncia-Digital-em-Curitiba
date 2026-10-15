@@ -1,33 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Manrope:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-brand-dark: #070b14;
-  --color-brand-primary: #2563eb;
-  --color-brand-accent: #d97706;
-  --color-brand-light: #f8fafc;
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-brand-dark: #111318;
+  --color-warm-white: #F3F1EB;
+  --color-cobalt: #2456F5;
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-sans: 'Manrope', sans-serif;
 }
 
-@keyframes heartBeat {
-  0% { transform: scale(1); }
-  14% { transform: scale(1.15); }
-  28% { transform: scale(1); }
-  42% { transform: scale(1.15); }
-  70% { transform: scale(1); }
+.filete {
+  border-left: 4px solid #2456F5;
+  padding-left: 1rem;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-heart-beat {
-  animation: heartBeat 1.4s infinite ease-in-out;
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.3s ease-out forwards;
+.cut-corner {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
 }
 
 html {
@@ -36,7 +24,11 @@ html {
 }
 
 body {
-  background-color: #050a14;
-  color: #f8fafc;
+  background-color: #F3F1EB;
+  color: #111318;
   min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Barlow Condensed', sans-serif !important;
 }
