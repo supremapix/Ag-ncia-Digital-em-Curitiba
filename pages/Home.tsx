@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { PhoneCall } from 'lucide-react';
+import { PhoneCall, ArrowUpRight } from 'lucide-react';
 import { LeadForm } from '../components/LeadForm';
 import { StaticFAQ } from '../components/StaticFAQ';
 import { TypewriterText } from '../src/components/TypewriterText';
-import { blogPosts } from '../data/blogData';
 import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
 
 export const Home: React.FC = () => {
@@ -165,17 +164,81 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* PROJECTS SECTION - Real Case Study */}
-      <section id="portfolio" className="py-20 bg-warm-white">
-        <div className="container mx-auto px-4">
-          <h2 className="font-display text-4xl mb-12 filete">Projetos Selecionados</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 cut-corner border border-slate-200">
-              <img src={blogPosts[5].image} alt={blogPosts[5].title} className="w-full h-80 object-cover mb-6" />
-              <h3 className="font-display text-3xl mb-3">{blogPosts[5].title}</h3>
-              <p className="text-slate-600 mb-6 text-sm">{blogPosts[5].excerpt}</p>
-              <Link to="/portfolio" className="text-cobalt font-bold border-b border-cobalt">Ver estudo de caso</Link>
+      {/* PROJECTS SECTION - Últimos Projetos Feitos com letreiro */}
+      <section id="portfolio" className="py-20 bg-warm-white overflow-hidden">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+            <div>
+              <span className="text-cobalt text-xs font-black uppercase tracking-[0.25em] mb-3 block">Trabalhos Recentes</span>
+              <h2 className="font-display text-4xl md:text-5xl font-black tracking-tight">Últimos Projetos Feitos</h2>
             </div>
+            <Link to="/portfolio" className="inline-flex items-center gap-2 text-cobalt font-bold text-sm border-b-2 border-cobalt pb-1 hover:gap-3 transition-all">
+              Ver todos os projetos <ArrowUpRight size={16} />
+            </Link>
+          </div>
+        </div>
+
+        {/* Letreiro com os últimos projetos */}
+        <div className="relative border-y border-slate-200 bg-white/60 backdrop-blur-sm py-5 mb-12 overflow-hidden">
+          <div className="ticker-track">
+            {[1, 2].map(dup => (
+              <div key={dup} className="flex items-center shrink-0" aria-hidden={dup === 1}>
+                {[
+                  'Car Plus Pneus & Oficina',
+                  'Clínica Prodent',
+                  'Gouveia Imóveis',
+                  'Desentope ADP 24h',
+                  'RVM Persianas',
+                  'Agro Arkafla Global',
+                  'SmartERP Clínicas',
+                  'Shop Cell',
+                  'Restaurante Sabor',
+                  'Pousada Vila d\'Italia',
+                  'Engenharia do Paver',
+                  'Escola Modelo',
+                  'PowerFit Academia',
+                  'Purific Curitiba Centro'
+                ].map((nome, i) => (
+                  <span key={i} className="flex items-center gap-6 px-6 text-sm font-bold text-brand-dark/80 whitespace-nowrap">
+                    <span className="w-2 h-2 bg-cobalt rotate-45 inline-block" />
+                    {nome}
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { img: '/cases/car-plus.png', titulo: 'Car Plus Pneus & Oficina', segmento: 'Auto Center · Curitiba', resultado: '+1350% de Leads' },
+              { img: '/cases/prodent.png', titulo: 'Clínica Odontológica Prodent', segmento: 'Clínica & Saúde · Curitiba', resultado: '+420% Agendamentos' },
+              { img: '/cases/gouveia.png', titulo: 'Gouveia Imóveis Selecionados', segmento: 'Imobiliária · Curitiba', resultado: '+340% Negócios' },
+              { img: '/cases/desentope-adp.png', titulo: 'Desentope ADP 24h Express', segmento: 'Serviços 24h · Curitiba', resultado: '+1750% Chamados' },
+              { img: '/cases/rvm-persianas.png', titulo: 'RVM Persianas Premium', segmento: 'Decoração · Blumenau/SC', resultado: '+950% Vendas' },
+              { img: '/cases/purific-curitiba.png', titulo: 'Purific Curitiba Centro', segmento: 'Purificadores · Curitiba', resultado: 'SEO, GEO & AIO' }
+            ].map((p, i) => (
+              <Link
+                key={i}
+                to="/portfolio"
+                className="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-cobalt/30 transition-all duration-500"
+              >
+                <div className="relative overflow-hidden">
+                  <img src={p.img} alt={p.titulo} loading="lazy" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <span className="absolute top-3 right-3 bg-brand-dark/80 backdrop-blur-sm text-amber-400 text-[10px] font-black uppercase tracking-wider px-3 py-1.5 rounded-lg border border-white/20">
+                    {p.resultado}
+                  </span>
+                </div>
+                <div className="p-6">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-cobalt block mb-1.5">{p.segmento}</span>
+                  <h3 className="font-display text-2xl font-black text-brand-dark group-hover:text-cobalt transition-colors mb-2">{p.titulo}</h3>
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-dark/60 group-hover:text-cobalt transition-colors">
+                    Ver estudo de caso <ArrowUpRight size={14} />
+                  </span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

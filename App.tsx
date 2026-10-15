@@ -24,6 +24,7 @@ import { GoogleAdsCuritiba } from './pages/GoogleAdsCuritiba';
 import { SeoLocalCuritiba } from './pages/SeoLocalCuritiba';
 import { IaMarketingCuritiba } from './pages/IaMarketingCuritiba';
 import { FloatingButtons } from './components/FloatingButtons';
+import { SupremaBanner } from './components/SupremaBanner';
 import { SocialSection } from './components/SocialSection';
 
 const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -73,6 +74,7 @@ const App: React.FC = () => {
         </main>
         <SocialSection />
         <Footer />
+        <SupremaBanner />
         <FloatingButtons />
       </div>
     </Router>

@@ -10,6 +10,7 @@ import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
 
 interface PortfolioProject {
   id: string;
+  image: string;
   title: string;
   category: 'site' | 'ecommerce' | 'sistema' | 'app' | 'ia';
   categoryLabel: string;
@@ -26,6 +27,7 @@ interface PortfolioProject {
 const portfolioProjects: PortfolioProject[] = [
   {
     id: '1',
+    image: '/cases/car-plus.png',
     title: 'Car Plus Pneus & Oficina Express',
     category: 'site',
     categoryLabel: 'Site Profissional + Ads',
@@ -40,6 +42,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '2',
+    image: '/cases/prodent.png',
     title: 'Clínica Odontológica Prodent',
     category: 'site',
     categoryLabel: 'Site Institucional + Sistema',
@@ -54,6 +57,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '3',
+    image: '/cases/cicarelli.png',
     title: 'Cicarelli & Associados Advogados',
     category: 'site',
     categoryLabel: 'Site de Autoridade Corporate',
@@ -67,6 +71,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '4',
+    image: '/cases/gouveia.png',
     title: 'Gouveia Imóveis Selecionados',
     category: 'sistema',
     categoryLabel: 'Sistema Web + Portal',
@@ -81,6 +86,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '5',
+    image: '/cases/atelie-beleza.png',
     title: 'Ateliê Beleza & Estética VIP',
     category: 'app',
     categoryLabel: 'Aplicativo Web / PWA',
@@ -94,6 +100,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '6',
+    image: '/cases/desentope-adp.png',
     title: 'Desentope ADP 24h Express',
     category: 'site',
     categoryLabel: 'Landing Page de Emergência',
@@ -108,6 +115,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '7',
+    image: '/cases/rvm-persianas.png',
     title: 'RVM Persianas & Decoração Premium',
     category: 'ecommerce',
     categoryLabel: 'Loja Virtual Customizada',
@@ -121,6 +129,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '8',
+    image: '/cases/agro-arkafla.png',
     title: 'Agro Arkafla Global',
     category: 'site',
     categoryLabel: 'Portal B2B Internacional',
@@ -134,6 +143,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '9',
+    image: '/cases/smarterp.png',
     title: 'SmartERP para Clínicas & Oftalmo',
     category: 'sistema',
     categoryLabel: 'Sistema Web ERP / CRM',
@@ -148,6 +158,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '10',
+    image: '/cases/shop-cell.png',
     title: 'Assistência Técnica Shop Cell',
     category: 'ecommerce',
     categoryLabel: 'Loja Virtual + Orçamento',
@@ -161,6 +172,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '11',
+    image: '/cases/agente-ia.png',
     title: 'Agente de IA para Atendimento WhatsApp',
     category: 'ia',
     categoryLabel: 'Agente de IA Empresarial',
@@ -175,6 +187,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '12',
+    image: '/cases/restaurante-sabor.png',
     title: 'App Delivery & Cardápio Restaurante Sabor',
     category: 'app',
     categoryLabel: 'Aplicativo Mobile iOS & Android',
@@ -188,6 +201,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '13',
+    image: '/cases/pousada-vila-ditalia.png',
     title: 'Pousada Vila d Italia',
     category: 'site',
     categoryLabel: 'Site com Reserva Direta',
@@ -201,6 +215,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '14',
+    image: '/cases/engenharia-paver.png',
     title: 'Engenharia do Paver & Pavimentação',
     category: 'site',
     categoryLabel: 'Site B2B Industrial',
@@ -214,6 +229,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '15',
+    image: '/cases/escola-modelo.png',
     title: 'Escola Modelo de Ensino',
     category: 'site',
     categoryLabel: 'Portal Educacional + Matrículas',
@@ -227,6 +243,7 @@ const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '16',
+    image: '/cases/powerfit.png',
     title: 'CrossFit & Academia PowerFit',
     category: 'app',
     categoryLabel: 'Web App + Check-in',
@@ -420,6 +437,20 @@ export const Portfolio: React.FC = () => {
                         📍 {project.city}
                       </div>
                     </div>
+                  </div>
+
+                  {/* Case Image */}
+                  <div className="relative rounded-2xl overflow-hidden mb-6 border border-gray-100 shadow-sm group-hover:shadow-xl transition-all duration-500">
+                    <img
+                      src={project.image}
+                      alt={`Site do case ${project.title} - ${project.segment}`}
+                      loading="lazy"
+                      className="w-full h-44 md:h-52 object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 via-transparent to-transparent" />
+                    <span className="absolute bottom-3 left-3 text-white text-[10px] font-black uppercase tracking-widest bg-brand-dark/70 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-white/20">
+                      {project.categoryLabel}
+                    </span>
                   </div>
 
                   {/* Title & Category */}

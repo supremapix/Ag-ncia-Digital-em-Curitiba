@@ -130,7 +130,7 @@ export const blogPosts: BlogPostContent[] = [
     date: "15 Out, 2026",
     author: "Omar Skafi",
     category: "Reformulação & SEO",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800",
+    image: "/cases/purific-curitiba.png",
     tags: ["Reformulação", "SEO", "GEO", "AIO", "Purific"],
     content: `
       <h2>Modernização da Presença Digital: Purific Curitiba Centro</h2>

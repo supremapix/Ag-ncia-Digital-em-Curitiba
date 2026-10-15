@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
     <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled ? 'bg-warm-white py-3.5 shadow-sm' : 'bg-brand-dark py-5'}`}>
       <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3">
-          <Logo size={scrolled ? 36 : 42} />
+          <Logo size={scrolled ? 36 : 42} dark={scrolled} />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
