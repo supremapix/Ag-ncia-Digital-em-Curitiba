@@ -122,5 +122,29 @@ export const blogPosts: BlogPostContent[] = [
       <h3>O que é um Agente de IA Treinado?</h3>
       <p>Ao contrário dos chatbots tradicionais com menus engessados, um Agente de IA baseado em LLMs como o Gemini da Google entende mensagens de voz, textos complexos e gírias. Ele consulta o catálogo da sua empresa, verifica preços e realiza o agendamento de forma totalmente humanizada.</p>
     `
+  },
+  {
+    id: 6,
+    title: "Reformulação de Site e Estratégia de SEO, GEO e AIO: Purific Curitiba Centro",
+    excerpt: "Conheça nosso projeto de reformulação completa para a Purific Curitiba Centro. Unimos design moderno, SEO Local avançado, GEO e AIO para dominar o Google e Inteligências Artificiais.",
+    date: "15 Out, 2026",
+    author: "Omar Skafi",
+    category: "Reformulação & SEO",
+    image: "https://images.unsplash.com/photo-1542385153-611099182390?auto=format&fit=crop&q=80&w=800",
+    tags: ["Reformulação", "SEO", "GEO", "AIO", "Purific"],
+    content: `
+      <h2>Modernização da Presença Digital: Purific Curitiba Centro</h2>
+      <p>Desenvolvemos a reformulação completa do site da <strong>Purific Curitiba Centro</strong>. O desafio foi transformar um portal antigo em uma máquina de conversão alinhada com as novas demandas de busca do Google e IAs generativas.</p>
+      
+      <h3>O que incluímos no projeto:</h3>
+      <ul>
+        <li><strong>Reformulação de Design:</strong> Layout responsivo focado em conversão e experiência do usuário.</li>
+        <li><strong>SEO Local Avançado:</strong> Otimização extrema para buscas de proximidade em Curitiba.</li>
+        <li><strong>GEO (Generative Engine Optimization):</strong> Estratégia focada em garantir que a Purific apareça nas respostas de IAs como ChatGPT, Gemini e Perplexity.</li>
+        <li><strong>AIO (AI Optimization):</strong> Otimização técnica para que o conteúdo da empresa seja citado em respostas diretas de IAs.</li>
+      </ul>
+
+      <p>O resultado foi uma presença digital muito mais robusta, garantindo que quem busca por soluções da Purific na região central de Curitiba encontre a empresa no topo dos resultados, seja em buscas tradicionais ou assistentes inteligentes.</p>
+    `
   }
 ];
