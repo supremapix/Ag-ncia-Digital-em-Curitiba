@@ -205,3 +205,8 @@ html { scroll-padding-top:100px; }
 @media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.project-card:hover .project-image img,.studio-button:hover{transform:none}}
 
 @media(max-width:650px){.hero-foot,.stage-label,.stage-caption,.project-heading p,.portfolio-intro-bottom>span{font-size:9px}.stage-caption{letter-spacing:.02em}.stage-caption>span:first-child{max-width:230px}.browser-bar span{font-size:8px}.stage-secondary>span{font-size:9px}}
+/* Phone QA: avoid extra headline wrapping and decorative overlap at 360px. */
+@media(max-width:650px) {
+  .hero-copy h1 {font-size:clamp(64px,19vw,112px);}
+  .hero-star {top:0;bottom:auto;right:0;width:50px;height:50px;}
+}
