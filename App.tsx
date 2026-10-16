@@ -46,7 +46,7 @@ const App: React.FC = () => {
     <Router>
       <div className="flex flex-col min-h-screen font-sans bg-gray-50">
         <Header />
-        <main className="flex-grow">
+        <main id="main-content" className="flex-grow" tabIndex={-1}>
           <PageWrapper>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -74,7 +74,7 @@ const App: React.FC = () => {
         </main>
         <SocialSection />
         <Footer />
-        <SupremaBanner />
+
         <FloatingButtons />
       </div>
     </Router>
@@ -82,3 +82,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+

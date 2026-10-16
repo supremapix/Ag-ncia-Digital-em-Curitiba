@@ -1,92 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowUpRight, Phone, MessageCircle, ChevronRight, MapPin } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { ArrowUpRight, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Logo } from './Logo';
-
 export const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 30);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const navLinks = [
-    { name: 'Início', path: '/' },
-    { name: 'Serviços', path: '/servicos' },
-    { name: 'Portfólio', path: '/portfolio' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Sobre a Agência', path: '/sobre' },
-    { name: 'Contato e Suporte', path: '/contato' },
-  ];
-
-  const isActive = (path: string) => location.pathname === path;
-
-  return (
-    <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled ? 'bg-warm-white py-3.5 shadow-sm' : 'bg-brand-dark py-5'}`}>
-      <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-3">
-          <Logo size={scrolled ? 36 : 42} dark={scrolled} />
-        </Link>
-
-        <nav className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`text-sm font-bold font-display tracking-wide transition-colors ${
-                isActive(link.path) 
-                  ? (scrolled ? 'text-cobalt' : 'text-white')
-                  : (scrolled ? 'text-brand-dark hover:text-cobalt' : 'text-warm-white/70 hover:text-white')
-              }`}
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="hidden lg:flex items-center">
-          <a 
-            href="https://wa.me/5541992721004" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-cobalt hover:bg-blue-700 text-white text-sm font-bold px-6 py-3 rounded-sm transition-all active:scale-95 whitespace-nowrap"
-          >
-            <span>Falar no WhatsApp</span>
-          </a>
-        </div>
-
-        <button 
-          className="lg:hidden flex items-center gap-2 bg-white/5 border border-white/10 text-white px-4 py-2.5 rounded-sm hover:bg-white/10 text-sm font-bold"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? "FECHAR" : "MENU"}
-        </button>
-      </div>
-
-      <div 
-        className={`lg:hidden fixed inset-0 z-50 bg-brand-dark transition-all duration-300 ${
-          isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
-      >
-        <div className="flex flex-col min-h-screen p-6 justify-center">
-          <nav className="space-y-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setIsMenuOpen(false)}
-                className="text-4xl font-display font-black text-warm-white hover:text-cobalt"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      </div>
-    </header>
-  );
+  const [open,setOpen]=useState(false); const location=useLocation(); const toggle=useRef<HTMLButtonElement>(null);
+  useEffect(()=>setOpen(false),[location.pathname]);
+  useEffect(()=>{if(!open)return;const onKey=(e:KeyboardEvent)=>{if(e.key==='Escape'){setOpen(false);toggle.current?.focus();}};window.addEventListener('keydown',onKey);return()=>window.removeEventListener('keydown',onKey);},[open]);
+  const links=[['Início','/'],['Serviços','/servicos'],['Portfólio','/portfolio'],['Blog','/blog'],['Sobre','/sobre'],['Contato','/contato']];
+  return <header className="studio-header"><a className="skip-link" href="#main-content">Pular para o conteúdo</a><div className="studio-shell header-inner"><Link className="studio-logo" to="/" aria-label="Suprema Sites, início"><Logo size={40}/></Link><button ref={toggle} className="menu-toggle" aria-expanded={open} aria-controls="primary-navigation" onClick={()=>setOpen(!open)}>{open?'Fechar':'Menu'}{open?<X size={21}/>:<Menu size={21}/>}</button><nav id="primary-navigation" aria-label="Navegação principal" className={open?'primary-navigation is-open':'primary-navigation'}>{links.map(([name,url])=><Link key={url} to={url} aria-current={location.pathname===url?'page':undefined}>{name}</Link>)}<a className="header-cta" href="https://wa.me/5541992721004">Começar projeto <ArrowUpRight size={17}/></a></nav></div></header>;
 };
