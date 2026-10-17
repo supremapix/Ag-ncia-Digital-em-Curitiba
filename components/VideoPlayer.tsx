@@ -20,7 +20,7 @@ export const VideoPlayer: React.FC = () => {
             <Play size={20} fill="currentColor" />
             Veja como transformamos negócios
           </h3>
-          <p className="text-gray-400 text-sm mt-1">Descubra o método para aumentar sua visibilidade em 300%.</p>
+          <p className="text-gray-400 text-sm mt-1">Conheça nosso trabalho de presença e visibilidade digital.</p>
         </div>
         <a 
           href="https://wa.me/5541992721004" 

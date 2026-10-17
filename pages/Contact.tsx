@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { LeadForm } from '../components/LeadForm';
 import { VideoPlayer } from '../components/VideoPlayer';
 
 import { TypewriterText } from '../src/components/TypewriterText';
@@ -7,33 +8,15 @@ import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
 
 export const Contact: React.FC = () => {
   useEffect(() => {
-    document.title = "Contato | Suprema Site Express - Criação de Sites em 48h";
+    document.title = "Contato | Suprema Site Express - Criação de Sites com prazo sob consulta";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', "Entre em contato com a Suprema Site Express. Solicite um orçamento para a criação do seu site profissional ou loja virtual com entrega expressa em 48h.");
+      metaDesc.setAttribute('content', "Entre em contato com a Suprema Site Express. Solicite um orçamento para a criação do seu site profissional ou loja virtual com entrega expressa com prazo sob consulta.");
     }
   }, []);
 
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: ''
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const text = `*Novo Contato via Site*\n\n*Nome:* ${formData.name}\n*Telefone:* ${formData.phone}\n*Email:* ${formData.email}\n*Mensagem:* ${formData.message}`;
-    const encodedText = encodeURIComponent(text);
-    window.open(`https://wa.me/5541992721004?text=${encodedText}`, '_blank');
-  };
-
   return (
-    <div className="bg-white">
+    <div className="bg-white contact-page">
       {/* Hero Section */}
       <section className="bg-brand-dark text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-brand-primary opacity-5 transform skew-y-3 translate-y-10"></div>
@@ -54,64 +37,8 @@ export const Contact: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Form */}
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
-              <h2 className="text-2xl font-bold mb-6 text-brand-dark">Envie uma Mensagem para nossa Equipe de Especialistas</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
-                  <input 
-                    type="text" 
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
-                    placeholder="Seu nome"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">WhatsApp / Telefone</label>
-                  <input 
-                    type="tel" 
-                    name="phone"
-                    required
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
-                    placeholder="(41) 99999-9999"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
-                  <input 
-                    type="email" 
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
-                    placeholder="seu@email.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Como podemos ajudar?</label>
-                  <textarea 
-                    name="message"
-                    required
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
-                    placeholder="Descreva seu projeto..."
-                  ></textarea>
-                </div>
-                <button 
-                  type="submit" 
-                  className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-lg flex items-center justify-center gap-2 transition-colors"
-                >
-                  <Send size={20} />
-                  Enviar para WhatsApp
-                </button>
-              </form>
+            <div className="min-w-0">
+              <LeadForm />
             </div>
 
             {/* Contact Info & Pix */}

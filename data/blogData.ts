@@ -126,7 +126,7 @@ export const blogPosts: BlogPostContent[] = [
   {
     id: 6,
     title: "Reformulação de Site e Estratégia de SEO, GEO e AIO: Purific Curitiba Centro",
-    excerpt: "Conheça nosso projeto de reformulação completa para a Purific Curitiba Centro. Unimos design moderno, SEO Local avançado, GEO e AIO para dominar o Google e Inteligências Artificiais.",
+    excerpt: "Conheça nosso projeto de reformulação completa para a Purific Curitiba Centro. Unimos design moderno, SEO Local avançado, GEO e AIO para trabalhar a presença em buscas e mecanismos de IA.",
     date: "15 Out, 2026",
     author: "Omar Skafi",
     category: "Reformulação & SEO",
@@ -140,11 +140,11 @@ export const blogPosts: BlogPostContent[] = [
       <ul>
         <li><strong>Reformulação de Design:</strong> Layout responsivo focado em conversão e experiência do usuário.</li>
         <li><strong>SEO Local Avançado:</strong> Otimização extrema para buscas de proximidade em Curitiba.</li>
-        <li><strong>GEO (Generative Engine Optimization):</strong> Estratégia focada em garantir que a Purific apareça nas respostas de IAs como ChatGPT, Gemini e Perplexity.</li>
+        <li><strong>GEO (Generative Engine Optimization):</strong> Estratégia para estruturar informações da Purific para mecanismos de IA, sem garantia de citação.</li>
         <li><strong>AIO (AI Optimization):</strong> Otimização técnica para que o conteúdo da empresa seja citado em respostas diretas de IAs.</li>
       </ul>
 
-      <p>O resultado foi uma presença digital muito mais robusta, garantindo que quem busca por soluções da Purific na região central de Curitiba encontre a empresa no topo dos resultados, seja em buscas tradicionais ou assistentes inteligentes.</p>
+      <p>O projeto organizou a apresentação digital da Purific na região central de Curitiba. A estrutura busca facilitar a compreensão dos serviços por visitantes e mecanismos de busca; não representa garantia de posição ou de citação por assistentes.</p>
     `
   }
 ];

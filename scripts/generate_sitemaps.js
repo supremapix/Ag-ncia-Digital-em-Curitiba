@@ -77,7 +77,8 @@ const currentDate = new Date().toISOString().split('T')[0];
 console.log('Gerando sitemap_pages.xml...');
 const mainPages = [
   { path: '', priority: '1.0', changefreq: 'daily' },
-  { path: 'servicos', priority: '0.9', changefreq: 'weekly' },
+  { path: 'presenca-local', priority: '0.9', changefreq: 'weekly' },
+    { path: 'servicos', priority: '0.9', changefreq: 'weekly' },
   { path: 'portfolio', priority: '0.9', changefreq: 'weekly' },
   { path: 'sobre', priority: '0.8', changefreq: 'monthly' },
   { path: 'blog', priority: '0.8', changefreq: 'weekly' },

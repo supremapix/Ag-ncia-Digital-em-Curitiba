@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowDown, ArrowUpRight, Asterisk } from 'lucide-react';
+import { RegionalOffer } from '../components/RegionalOffer';
+import { regionalFaq } from '../data/regionalOffer';
 import { LeadForm } from '../components/LeadForm';
 import { StaticFAQ } from '../components/StaticFAQ';
 import { Reveal, ProjectCard, PortfolioStage } from '../components/Showcase';
@@ -12,7 +14,7 @@ export const Home: React.FC = () => {
     document.title = "Suprema Sites Express | Criação de Sites, Sistemas Web, Apps e IA";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', "Especialistas em Criação de Sites Profissionais, Lojas Virtuais, Sistemas Web (ERP/CRM), Aplicativos Android/iOS, Agentes de IA e SEO em todo o Brasil. Entrega expressa em 48h!");
+      metaDesc.setAttribute('content', "Criação do site por R$ 1.680 em pagamento único, com 60 meses de hospedagem. Conheça o plano regional para trabalhar sua presença local.");
     }
 
     // Organization & LocalBusiness Schema
@@ -62,48 +64,7 @@ export const Home: React.FC = () => {
         },
         {
           "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "O que faz uma agência de SEO em Curitiba?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Uma agência de SEO em Curitiba otimiza a estrutura técnica do site, conteúdos e autoridade semântica para posicionar a empresa organicamente nos primeiros resultados do Google e do Google Maps para pesquisas locais."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Qual a diferença entre SEO e tráfego pago?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "O SEO constrói autoridade orgânica e tráfego contínuo sem custo por clique direto, enquanto o tráfego pago (Google Ads) gera resultados e contatos imediatos através de anúncios patrocinados."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "A Suprema trabalha com Google Ads em Curitiba?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim, a Suprema Sites Express (Suprema Mídia) planeja e gerencia campanhas de Google Ads integradas a landing pages de alta conversão para otimizar o custo por aquisição e acelerar a geração de leads."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Como aparecer no Google Maps em Curitiba?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Para aparecer no Google Maps em Curitiba, é necessário otimizar o perfil do Google Meu Negócio, alinhar dados NAP (Nome, Endereço, Telefone) no site, criar marcação de dados estruturados e aplicar SEO Local nos bairros da cidade."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "SEO ajuda uma empresa a aparecer no ChatGPT e Gemini?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim, através do GEO (Generative Engine Optimization) e AIO, estruturamos conteúdos claros e dados Schema.org para que modelos de Inteligência Artificial como ChatGPT, Gemini e Perplexity compreendam a autoridade da empresa e a citem em pesquisas."
-              }
-            }
-          ]
+          "mainEntity": regionalFaq.map(item => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } }))
         }
       ]
     };
@@ -128,14 +89,15 @@ export const Home: React.FC = () => {
           <div className="hero-copy">
             <p className="eyebrow"><span className="status-dot" /> ESTÚDIO DIGITAL · CURITIBA, BRASIL</p>
             <h1>O digital<br />não precisa<br />ser <em>igual.</em><Asterisk className="hero-star" aria-hidden="true" /></h1>
-            <p className="hero-description">Sua marca tem personalidade. Seu site também deve ter. Criamos sites, sistemas e experiências digitais para tirar o seu negócio do comum.</p>
-            <div className="hero-actions"><a className="studio-button orange" href="#portfolio">Explore os projetos <ArrowDown size={19} /></a><a className="text-link" href="https://wa.me/5541992721004">Vamos conversar <ArrowUpRight size={19} /></a></div>
+            <p className="hero-description">Seu site, sua identidade e presença nas localidades em que sua empresa atende. Conheça a criação do site e o plano regional.</p>
+            <div className="hero-actions"><Link className="studio-button orange" to="/presenca-local">Conheça a oferta local <ArrowUpRight size={19} /></Link><a className="text-link" href="https://wa.me/5541992721004">Vamos conversar <ArrowUpRight size={19} /></a></div>
           </div>
           <PortfolioStage />
         </div>
         <div className="studio-shell hero-foot"><span>DESIGN COM PRESENÇA. CÓDIGO COM PROPÓSITO.</span><span>ROLE PARA DESCOBRIR <ArrowDown size={14}/></span></div>
       </section>
       <div className="statement-band" aria-label="Design, tecnologia e estratégia"><span>DESIGN</span><Asterisk aria-hidden="true"/><span>TECNOLOGIA</span><Asterisk aria-hidden="true"/><span>ESTRATÉGIA</span><Asterisk aria-hidden="true"/><span>SUPREMA</span></div>
+      <RegionalOffer />
       <section className="selected-work studio-shell" id="portfolio">
         <Reveal><div className="section-intro"><div><p className="eyebrow">01 / TRABALHOS SELECIONADOS</p><h2>Menos promessa.<br /><em>Mais presença.</em></h2></div><div><p>De negócios locais a plataformas digitais. Uma seleção do nosso portfólio, com diferentes desafios e identidades.</p><Link className="text-link dark-link" to="/portfolio">Explore o portfólio completo <ArrowUpRight size={20}/></Link></div></div></Reveal>
         <div className="project-grid">{['1','4','6','7'].map((id,i)=><ProjectCard key={id} project={portfolioProjects.find(p=>p.id===id)!} index={i} />)}</div>

@@ -1,3 +1,4 @@
+import { CommercialTerms } from '../components/CommercialTerms';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Zap, Globe } from 'lucide-react';
@@ -32,7 +33,7 @@ export const PillarSantaCatarina: React.FC = () => {
   return (
     <div className="bg-brand-dark min-h-screen text-white pt-28 pb-20">
       <SEOHead 
-        title="Criação de Sites em Santa Catarina (SC) | Entrega em 48h"
+        title="Criação de Sites em Santa Catarina (SC) | Entrega com prazo sob consulta"
         description="Agência especializada em criação de sites profissionais, e-commerce e SEO local para todas as cidades de Santa Catarina. Sites em React com máxima performance."
         canonicalUrl="https://www.supremasite.com.br/sites-em-santa-catarina/"
         schema={pillarSchema}
@@ -56,7 +57,7 @@ export const PillarSantaCatarina: React.FC = () => {
               Criação de Sites Profissionais em <span className="text-brand-accent">Santa Catarina</span>
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              A Suprema Sites Express impulsiona o mercado catarinense com sites de altíssima conversão, lojas virtuais e landing pages de alta velocidade entregues em 48h para empresas de SC.
+              A Suprema Sites Express impulsiona o mercado catarinense com sites de altíssima conversão, lojas virtuais e landing pages de alta velocidade entregues com prazo sob consulta para empresas de SC.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a
@@ -138,6 +139,7 @@ export const PillarSantaCatarina: React.FC = () => {
           </div>
         </div>
       </div>
+      <CommercialTerms />
     </div>
   );
 };

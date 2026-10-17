@@ -1,3 +1,4 @@
+import { CommercialTerms } from '../components/CommercialTerms';
 import React, { useEffect } from 'react';
 import { CheckCircle, Award, Users, Clock, Shield, Zap, Target, MapPin, Phone, Mail, FileText, BarChart, Search, Globe, TrendingUp } from 'lucide-react';
 import { motion } from 'motion/react';
@@ -10,14 +11,13 @@ export const About: React.FC = () => {
     document.title = "Quem Somos | Suprema Site Express - Autoridade em Criação de Sites";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', "Conheça a história, a equipe e a expertise da Suprema Site Express. Especialistas em React, SEO Local e entrega em 48h com foco em E-E-A-T.");
+      metaDesc.setAttribute('content', "Conheça a história, a equipe e a expertise da Suprema Site Express. Especialistas em React, SEO Local e entrega com prazo sob consulta com foco em E-E-A-T.");
     }
   }, []);
 
   const stats = [
     { label: "Clientes Atendidos", value: "+1.200", icon: <Users className="text-brand-primary" /> },
     { label: "Anos de Experiência", value: "+6", icon: <Clock className="text-brand-primary" /> },
-    { label: "Aumento de Visibilidade", value: "1.900%", icon: <Zap className="text-brand-primary" /> },
     { label: "Estados Atendidos", value: "27", icon: <Target className="text-brand-primary" /> }
   ];
 
@@ -32,7 +32,7 @@ export const About: React.FC = () => {
     {
       name: "Lizdaiane",
       role: "Especialista em SEO",
-      bio: "Expert em otimização para motores de busca e performance, garantindo que nossos clientes dominem o Google.",
+      bio: "Expert em otimização para motores de busca e performance, trabalhando a presença dos nossos clientes nas buscas.",
       icon: <TrendingUp size={64} className="text-brand-accent" />,
       color: "bg-amber-50"
     }
@@ -94,7 +94,7 @@ export const About: React.FC = () => {
             Quem somos: a Suprema Site Express e nossa missão digital
           </h1>
           <div className="min-h-[60px]">
-            <TypewriterText 
+            <TypewriterText
               phrases={PERSUASIVE_PHRASES}
               className="text-xl text-gray-300 max-w-2xl mx-auto text-center block"
               speed={40}
@@ -115,7 +115,7 @@ export const About: React.FC = () => {
               Fundada em 2018 no coração de Curitiba, a Suprema Site Express (também conhecida como Suprema Mídia) nasceu com um propósito claro: transformar a presença digital de pequenas e médias empresas brasileiras. O que começou como um escritório focado no mercado local paranaense rapidamente se expandiu para todo o território nacional, impulsionado por uma metodologia que une velocidade e performance técnica.
             </p>
             <p>
-              Nossa jornada é marcada pela busca incessante por soluções que não apenas "pareçam bonitas", mas que funcionem como verdadeiras máquinas de vendas. Entendemos que o empresário brasileiro precisa de agilidade, e foi assim que consolidamos nossa famosa entrega em 48 horas. Hoje, orgulhamo-nos de ser uma autoridade em SEO Local e desenvolvimento em React, ajudando negócios de todos os 27 estados a alcançarem o topo do Google. Nossa missão continua sendo a mesma: democratizar a tecnologia de ponta e garantir que cada cliente tenha uma vitrine digital de alta autoridade.
+              Nossa jornada é marcada pela busca incessante por soluções que não apenas "pareçam bonitas", mas que funcionem como verdadeiras máquinas de vendas. Entendemos que o empresário brasileiro precisa de agilidade, e por isso definimos o prazo de cada projeto na proposta. Hoje, orgulhamo-nos de ser uma autoridade em SEO Local e desenvolvimento em React, ajudando negócios de todos os 27 estados a desenvolverem sua presença nas buscas. Nossa missão continua sendo a mesma: democratizar a tecnologia de ponta e garantir que cada cliente tenha uma vitrine digital de alta autoridade.
             </p>
           </div>
         </div>
@@ -148,7 +148,7 @@ export const About: React.FC = () => {
               <div className="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-6">
                 <Clock className="text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-brand-dark mb-4">Entrega ágil: sites em 48 horas</h3>
+              <h3 className="text-xl font-bold text-brand-dark mb-4">Entrega ágil: sites com prazo sob consulta</h3>
               <p className="text-gray-600">
                 Desenvolvemos um fluxo de trabalho otimizado que nos permite entregar projetos profissionais em tempo recorde, sem comprometer a qualidade técnica ou a segurança.
               </p>
@@ -163,19 +163,19 @@ export const About: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {team.map((member, idx) => (
             <div key={idx} className="flex flex-col items-center text-center group">
-              <motion.div 
+              <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.5, delay: idx * 0.2 }}
                 className={`w-48 h-48 rounded-full ${member.color} flex items-center justify-center mb-6 border-4 border-brand-primary/10 shadow-inner overflow-hidden relative`}
               >
                 <motion.div
-                  animate={{ 
+                  animate={{
                     y: [0, -10, 0],
                     rotate: [0, 5, -5, 0]
                   }}
-                  transition={{ 
-                    duration: 4, 
+                  transition={{
+                    duration: 4,
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
@@ -206,25 +206,6 @@ export const About: React.FC = () => {
                 <div className="text-gray-400">{stat.label}</div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications Section */}
-      <section className="py-20 container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-brand-dark mb-12">Certificações e Parceiros</h2>
-        <div className="flex flex-wrap justify-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all">
-          <div className="flex flex-col items-center">
-            <Award size={48} className="mb-2 text-brand-primary" />
-            <span className="font-bold">Google Partner</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <Shield size={48} className="mb-2 text-brand-primary" />
-            <span className="font-bold">AWS Certified</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <CheckCircle size={48} className="mb-2 text-brand-primary" />
-            <span className="font-bold">React Specialist</span>
           </div>
         </div>
       </section>
@@ -283,11 +264,11 @@ export const About: React.FC = () => {
           <h2 className="text-3xl font-bold text-brand-dark mb-12">Especialidades e Palavras-Chave de Domínio</h2>
           <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
             {[
-              "Criação de Site Profissional", "SEO Local Avançado", "Design Premium UX/UI", 
-              "Performance Core Web Vitals", "Landing Page de Conversão", "Desenvolvimento em React/Vite", 
-              "Agência de Sites Curitiba", "E-commerce de Alta Performance", "Consultoria em Presença Digital", 
-              "Autoridade no Google", "Sites Institucionais em 48h", "Hospedagem Cloud Segura", 
-              "Web Design Mobile-First", "Estratégia de Leads Qualificados", "ROI Digital Garantido"
+              "Criação de Site Profissional", "SEO Local Avançado", "Design Premium UX/UI",
+              "Performance Core Web Vitals", "Landing Page de Conversão", "Desenvolvimento em React/Vite",
+              "Agência de Sites Curitiba", "E-commerce de Alta Performance", "Consultoria em Presença Digital",
+              "Autoridade no Google", "Sites Institucionais com prazo sob consulta", "Hospedagem Cloud Segura",
+              "Web Design Mobile-First", "Estratégia de Leads Qualificados", "Estratégia de Presença Digital"
             ].map((term, idx) => (
               <span key={idx} className="bg-brand-primary/5 text-brand-primary px-6 py-3 rounded-2xl font-bold text-sm border border-brand-primary/10">
                 {term}
@@ -295,7 +276,7 @@ export const About: React.FC = () => {
             ))}
           </div>
           <p className="text-center text-gray-400 mt-10 text-sm max-w-2xl mx-auto italic">
-            Estas são as tecnologias e estratégias que dominamos para garantir que sua empresa não apenas tenha um site, mas uma ferramenta de geração de lucro real.
+            Estas são as tecnologias e estratégias que dominamos para apresentar sua empresa e facilitar o contato com interessados.
           </p>
         </div>
       </section>
@@ -312,6 +293,7 @@ export const About: React.FC = () => {
           ))}
         </div>
       </section>
+      <CommercialTerms />
     </div>
   );
 };

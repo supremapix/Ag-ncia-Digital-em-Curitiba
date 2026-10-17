@@ -27,7 +27,7 @@ export const cityData: Record<string, CityDetail> = {
       "Vila Sandra", "Neoville", "Vila Verde", "Caiuá", "Vitória Régia", "Sabará"
     ],
     faqs: [
-      { question: "Quanto tempo leva a entrega em Curitiba?", answer: "Devido à nossa infraestrutura local na capital, entregamos projetos profissionais em 48h úteis após o envio de todo o conteúdo." },
+      { question: "Quanto tempo leva a entrega em Curitiba?", answer: "Devido à nossa infraestrutura local na capital, entregamos projetos profissionais com prazo sob consulta após o envio de todo o conteúdo." },
       { question: "O site ajuda no ranqueamento do Google Maps em Curitiba?", answer: "Sim, implementamos Schema.org específico e otimização de SEO Local para que sua empresa apareça para clientes em bairros específicos de Curitiba." },
       { question: "Vocês atendem indústrias na CIC e vilas da região?", answer: "Sim, desenvolvemos portais corporativos robustos para o setor industrial da CIC e landing pages de alta conversão para comércios em vilas como Vila Sandra e Neoville." },
       { question: "O site é otimizado para o público exigente de Curitiba?", answer: "Com certeza. Utilizamos tecnologias de ponta (React/Vite) para garantir a velocidade e o design premium que o mercado curitibano demanda." }
@@ -104,7 +104,7 @@ export const cityData: Record<string, CityDetail> = {
     neighborhoods: ["Centro", "Contorno", "Uvaranas", "Jardim Carvalho"],
     faqs: [
       { question: "Como um site ajuda minha transportadora em Ponta Grossa?", answer: "Criamos sites que facilitam a cotação de fretes e apresentam sua frota e certificações de forma profissional em Ponta Grossa." },
-      { question: "Vocês atendem o comércio de Uvaranas?", answer: "Sim, otimizamos sites para lojistas e prestadores de serviço que querem dominar o bairro e a cidade de Ponta Grossa." },
+      { question: "Vocês atendem o comércio de Uvaranas?", answer: "Sim, otimizamos sites para lojistas e prestadores de serviço que querem ampliar a presença no bairro e na cidade de Ponta Grossa." },
       { question: "Qual o diferencial para indústrias de Ponta Grossa?", answer: "Focamos em design sóbrio, performance técnica e SEO focado em termos B2B para o mercado de Ponta Grossa." }
     ]
   },
@@ -206,7 +206,7 @@ export const cityData: Record<string, CityDetail> = {
       { question: "Como vencer a concorrência digital em Porto Alegre?", answer: "Com um site ultra-rápido e uma estratégia de SEO Local focada nos bairros de Porto Alegre." },
       { question: "Vocês atendem clínicas médicas em Porto Alegre?", answer: "Sim, criamos sites para profissionais da saúde em Porto Alegre seguindo todas as normas éticas." },
       { question: "O site é integrado com sistemas de agendamento?", answer: "Sim, podemos integrar diversas ferramentas para facilitar seu negócio em Porto Alegre." },
-      { question: "Qual o diferencial da Suprema em Porto Alegre?", answer: "Nossa entrega em 48h e foco total em performance para o mercado competitivo de Porto Alegre." },
+      { question: "Qual o diferencial da Suprema em Porto Alegre?", answer: "Nossa entrega com prazo sob consulta e foco total em performance para o mercado competitivo de Porto Alegre." },
       { question: "Como funciona a manutenção do site em Porto Alegre?", answer: "Cuidamos de toda a parte técnica para que você foque apenas em atender seus clientes em Porto Alegre." }
     ]
   },
@@ -223,8 +223,8 @@ export const cityData: Record<string, CityDetail> = {
       { question: "Vocês fazem sites para indústrias de Caxias do Sul?", answer: "Sim, desenvolvemos portais corporativos robustos para o setor industrial de Caxias do Sul." },
       { question: "O site ajuda na exportação para empresas de Caxias?", answer: "Sim, criamos sites multilíngues para indústrias de Caxias do Sul que buscam o mercado externo." },
       { question: "Vocês atendem vinícolas da região de Caxias?", answer: "Sim, criamos experiências digitais únicas para o setor de enoturismo de Caxias do Sul." },
-      { question: "O site é otimizado para o Google na Serra Gaúcha?", answer: "Sim, focamos em dominar as buscas em Caxias do Sul e cidades vizinhas." },
-      { question: "Qual o prazo de entrega em Caxias do Sul?", answer: "Mantemos nosso padrão de entrega express em até 48 horas para Caxias do Sul." }
+      { question: "O site é otimizado para o Google na Serra Gaúcha?", answer: "Sim, focamos em trabalhar a presença nas buscas em Caxias do Sul e cidades vizinhas." },
+      { question: "Qual o prazo de entrega em Caxias do Sul?", answer: "Mantemos nosso padrão de entrega express com prazo sob consulta para Caxias do Sul." }
     ]
   },
   "pelotas": {
@@ -240,7 +240,7 @@ export const cityData: Record<string, CityDetail> = {
       { question: "Como atrair estudantes em Pelotas pelo site?", answer: "Com um design moderno, mobile-first e conteúdo otimizado para o público de Pelotas." },
       { question: "Vocês criam sites para o setor de doces em Pelotas?", answer: "Sim, desenvolvemos vitrines digitais encantadoras para o tradicional setor de doces de Pelotas." },
       { question: "O site é rápido no Wi-Fi das universidades de Pelotas?", answer: "Sim, a leveza dos nossos sites garante acesso rápido em qualquer rede de Pelotas." },
-      { question: "Vocês fazem SEO para empresas de Pelotas?", answer: "Sim, focamos em posicionar seu negócio no topo das buscas em Pelotas e região sul." },
+      { question: "Vocês fazem SEO para empresas de Pelotas?", answer: "Sim, trabalhamos a presença do seu negócio nas buscas em Pelotas e região sul." },
       { question: "Como solicitar orçamento em Pelotas?", answer: "Fale conosco pelo WhatsApp, atendemos Pelotas com prioridade." }
     ]
   },
@@ -272,7 +272,7 @@ export const cityData: Record<string, CityDetail> = {
     neighborhoods: ["Itaim Bibi", "Vila Olímpia", "Pinheiros", "Jardins", "Moema", "Brooklin", "Tatuapé", "Santana"],
     faqs: [
       { question: "Como se destacar no Google em uma cidade como São Paulo?", answer: "Através de SEO técnico de elite e uma estratégia de conteúdo focada em nichos específicos dentro de São Paulo." },
-      { question: "Vocês entregam sites em 48h mesmo para São Paulo?", answer: "Sim, nossa metodologia express atende empresas de São Paulo com a mesma agilidade e qualidade." },
+      { question: "Vocês entregam sites com prazo sob consulta mesmo para São Paulo?", answer: "Sim, nossa metodologia express atende empresas de São Paulo com a mesma agilidade e qualidade." },
       { question: "O site suporta alto volume de acessos em SP?", answer: "Sim, utilizamos infraestrutura Cloud escalável para suportar o tráfego intenso de São Paulo." },
       { question: "Vocês fazem landing pages para agências de SP?", answer: "Sim, somos parceiros de diversas agências em São Paulo para entrega de LPs de alta conversão." },
       { question: "Como funciona o atendimento para São Paulo?", answer: "Atendimento 100% digital e ágil via WhatsApp e vídeo-chamada para empresas de São Paulo." }
@@ -289,7 +289,7 @@ export const cityData: Record<string, CityDetail> = {
     neighborhoods: ["Cambuí", "Barão Geraldo", "Taquaral", "Guanabara", "Parque Prado", "Nova Campinas"],
     faqs: [
       { question: "Vocês atendem empresas de tecnologia em Campinas?", answer: "Sim, criamos sites para o ecossistema de inovação e TI de Campinas." },
-      { question: "O site é otimizado para buscas no interior de SP?", answer: "Sim, focamos em dominar o mercado de Campinas e região metropolitana." },
+      { question: "O site é otimizado para buscas no interior de SP?", answer: "Sim, focamos em apresentar serviços em Campinas e região metropolitana." },
       { question: "Vocês fazem e-commerce para empresas de Campinas?", answer: "Sim, desenvolvemos lojas virtuais robustas para o forte comércio de Campinas." },
       { question: "Qual a velocidade do site em Campinas?", answer: "Nossos sites carregam em menos de 1 segundo, ideal para o público ágil de Campinas." },
       { question: "Como solicitar orçamento em Campinas?", answer: "Entre em contato pelo nosso WhatsApp para um atendimento personalizado em Campinas." }
@@ -324,8 +324,8 @@ export const cityData: Record<string, CityDetail> = {
     faqs: [
       { question: "Como um site ajuda minha startup em BH?", answer: "Um site bem desenhado passa a credibilidade necessária para captar clientes e investidores em Belo Horizonte." },
       { question: "Vocês criam sites para restaurantes em BH?", answer: "Sim, desenvolvemos vitrines digitais deliciosas para o forte setor gastronômico de BH." },
-      { question: "O site é otimizado para o Google em Minas?", answer: "Sim, focamos em posicionar sua empresa no topo das buscas em Belo Horizonte e Minas Gerais." },
-      { question: "Qual o prazo para empresas de BH?", answer: "Mantemos nosso compromisso de entrega em 48h para todas as empresas de Belo Horizonte." },
+      { question: "O site é otimizado para o Google em Minas?", answer: "Sim, trabalhamos a presença da sua empresa nas buscas em Belo Horizonte e Minas Gerais." },
+      { question: "Qual o prazo para empresas de BH?", answer: "Mantemos nosso compromisso de entrega com prazo sob consulta para todas as empresas de Belo Horizonte." },
       { question: "Como falar com a Suprema em BH?", answer: "Estamos disponíveis no WhatsApp para atender o mercado mineiro com agilidade." }
     ]
   },

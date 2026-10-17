@@ -9,7 +9,7 @@ export const VideoEmbed: React.FC<{ className?: string }> = ({ className = '' })
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
     'name': SUPREMA_MEDIA.video.title,
-    'description': 'Conheça a Suprema Sites Express, a agência líder em criação de sites profissionais, e-commerce e SEO local com entrega em 48 horas em Curitiba e todo o Brasil.',
+    'description': 'Conheça a Suprema Sites Express, a agência líder em criação de sites profissionais, e-commerce e SEO local com prazo de entrega sob consulta em Curitiba e todo o Brasil.',
     'thumbnailUrl': SUPREMA_MEDIA.video.thumbnail,
     'uploadDate': '2024-01-15T08:00:00+03:00',
     'contentUrl': SUPREMA_MEDIA.video.watchUrl,

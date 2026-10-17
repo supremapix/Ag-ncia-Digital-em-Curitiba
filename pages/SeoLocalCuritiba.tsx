@@ -1,3 +1,4 @@
+import { CommercialTerms } from '../components/CommercialTerms';
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, CheckCircle2, ArrowRight, Navigation, Building, Star, Search, ShieldCheck } from 'lucide-react';
@@ -63,7 +64,7 @@ export const SeoLocalCuritiba: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-red-500/20 border border-red-500/40 text-red-400 font-black text-xs uppercase tracking-widest rounded-full mb-4">
-                <MapPin size={14} /> Dominância Regional no Google Maps
+                <MapPin size={14} /> Presença Regional no Google Maps
               </span>
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
                 SEO Local & <span className="text-red-400">Google Maps</span> em Curitiba
@@ -139,6 +140,7 @@ export const SeoLocalCuritiba: React.FC = () => {
           </div>
         </div>
       </section>
+      <CommercialTerms />
     </div>
   );
 };

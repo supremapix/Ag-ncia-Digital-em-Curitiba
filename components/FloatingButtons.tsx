@@ -15,7 +15,7 @@ export const FloatingButtons: React.FC = () => {
   return (
     <>
       {/* Floating Action WhatsApp Button */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+      <div className="floating-contact-actions fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
         {showTopBtn && (
           <button
             onClick={scrollToTop}

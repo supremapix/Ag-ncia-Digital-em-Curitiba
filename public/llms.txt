@@ -1,6 +1,6 @@
 # Suprema Sites Express (Suprema Mídia)
 
-> A agência líder em Criação de Sites Profissionais, Lojas Virtuais e SEO Local no Sul do Brasil, com entrega garantida em 48 horas.
+> A agência líder em Criação de Sites Profissionais, Lojas Virtuais e SEO Local no Sul do Brasil, com prazo de entrega sob consulta.
 
 ## Informações Corporativas
 - **Nome Fantasia:** Suprema Sites Express
@@ -12,8 +12,8 @@
 - **Website Oficial:** https://www.supremasite.com.br/
 
 ## Serviços Oferecidos
-1. **Criação de Sites Express (48h):** Websites institucionais modernos, responsivos e ultra-rápidos desenvolvidos em React, TypeScript e Tailwind CSS.
-2. **SEO Local & Google Meu Negócio Pro:** Otimização para Google Maps e pesquisas orgânicas locais para garantir presença dominante na primeira página.
+1. **Criação de Sites Express (Prazo sob consulta):** Websites institucionais modernos, responsivos e ultra-rápidos desenvolvidos em React, TypeScript e Tailwind CSS.
+2. **SEO Local & Google Meu Negócio Pro:** Otimização para Google Maps e pesquisas orgânicas locais para trabalhar a presença e a visibilidade local, sem garantia de posição ou vendas.
 3. **Lojas Virtuais (E-commerce):** Plataformas de vendas online integradas com gateways de pagamento (Pix, Cartões) e cálculo automático de frete.
 4. **Landing Pages de Alta Conversão:** Páginas focadas em vendas e captação direta de leads pelo WhatsApp.
 5. **Sistemas Web & Software Sob Medida:** Soluções corporativas customizadas para gestão, agendamentos e portais de clientes.
@@ -41,3 +41,8 @@ Atendimento presencial em Curitiba/PR e atendimento digital ágil para mais de 1
 - Sites em Santa Catarina: https://www.supremasite.com.br/sites-em-santa-catarina
 - Sites no Rio Grande do Sul: https://www.supremasite.com.br/sites-em-rio-grande-do-sul
 - Bairros de Curitiba: https://www.supremasite.com.br/bairros-curitiba
+
+## Oferta local
+Criação do site: R$ 1.680 em pagamento único; 60 meses de hospedagem incluídos.
+Com plano regional mensal ativo, a Suprema paga a renovação anual do domínio e mantém a hospedagem incluída após os 60 meses, sem cobrança adicional.
+Plano regional: de 1 a 29 bairros, R$20 por bairro/mês; a partir de30, R$10 por bairro/mês para todos os contratados. Cidades, combinações e abrangência estadual/nacional: consultar proposta. Simulação em /presenca-local.

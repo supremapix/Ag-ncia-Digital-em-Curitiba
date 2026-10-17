@@ -3,6 +3,7 @@ import {
   Globe, ShoppingCart, Smartphone, Cpu, Bot, TrendingUp, CheckCircle, 
   ArrowRight, Shield, Zap, Sparkles, Phone, Code, BarChart, Layers, Database, MessageSquare
 } from 'lucide-react';
+import { RegionalOffer } from '../components/RegionalOffer';
 import { LeadForm } from '../components/LeadForm';
 import { TypewriterText } from '../src/components/TypewriterText';
 import { PERSUASIVE_PHRASES } from '../src/constants/phrases';
@@ -30,6 +31,7 @@ export const Services: React.FC = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen">
+      <RegionalOffer />
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 overflow-hidden bg-brand-dark text-white">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-brand-dark to-purple-900/30 opacity-90"></div>
@@ -54,7 +56,7 @@ export const Services: React.FC = () => {
           </div>
 
           <p className="text-sm md:text-base text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed font-medium">
-            Da criação de sites institucionais expressos em 48 horas ao desenvolvimento de ERPs e Agentes de IA customizados. Atendemos empresas de todos os portes no Sul do Brasil e em todo o país.
+            Da criação de sites institucionais expressos com prazo sob consulta ao desenvolvimento de ERPs e Agentes de IA customizados. Atendemos empresas de todos os portes no Sul do Brasil e em todo o país.
           </p>
 
           <div className="flex justify-center gap-4">
@@ -106,7 +108,7 @@ export const Services: React.FC = () => {
                     Criação de Sites Profissionais e Landing Pages
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-6">
-                    Desenvolvemos sites institucionais, portais corporativos e landing pages otimizadas com foco em conversão e velocidade extrema. Entrega recorde em até 48 horas úteis.
+                    Desenvolvemos sites institucionais, portais corporativos e landing pages otimizadas com foco em conversão e velocidade extrema. Prazo definido na proposta.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                     <div className="flex items-center gap-2 font-bold text-xs text-gray-700"><CheckCircle size={16} className="text-emerald-500 shrink-0"/> Design UX/UI Exclusivo</div>
@@ -291,10 +293,10 @@ export const Services: React.FC = () => {
                     SEO Local, Google Maps & LLM SEO (IAs)
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-6">
-                    Estratégias de ranqueamento semântico que posicionam sua empresa em primeiro lugar no Google Meu Negócio e preparam sua presença para buscas em inteligências artificiais como ChatGPT, Gemini e Copilot.
+                    Estratégias de conteúdo e estrutura para trabalhar a presença da sua empresa no Google Meu Negócio e preparam sua presença para buscas em inteligências artificiais como ChatGPT, Gemini e Copilot.
                   </p>
                   <a href="https://wa.me/5541992721004" className="inline-flex items-center gap-2 bg-red-600 hover:bg-brand-dark text-white text-xs font-black py-4 px-8 rounded-xl transition-all">
-                    Dominar Buscas na Minha Cidade <ArrowRight size={16}/>
+                    Trabalhar Minha Presença Local <ArrowRight size={16}/>
                   </a>
                 </div>
                 <div className="lg:w-1/2 bg-gray-50 p-8 rounded-3xl border border-gray-100">

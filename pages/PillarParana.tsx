@@ -1,3 +1,4 @@
+import { CommercialTerms } from '../components/CommercialTerms';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight, ShieldCheck, Zap, Globe, CheckCircle2 } from 'lucide-react';
@@ -25,15 +26,15 @@ export const PillarParana: React.FC = () => {
       '@type': 'State',
       'name': 'Paraná'
     },
-    'description': 'Líder em criação de sites profissionais, landing pages e e-commerce com entrega em 48h para todas as cidades do Estado do Paraná.',
+    'description': 'Líder em criação de sites profissionais, landing pages e e-commerce com prazo de entrega sob consulta para todas as cidades do Estado do Paraná.',
     'url': 'https://www.supremasite.com.br/sites-em-parana/'
   };
 
   return (
     <div className="bg-brand-dark min-h-screen text-white pt-28 pb-20">
       <SEOHead 
-        title="Criação de Sites no Paraná (PR) | Todas as Cidades em 48h"
-        description="Agência especializada em criação de sites profissionais, lojas virtuais e SEO local para todas as cidades do Paraná. Entrega rápida em 48h com suporte humanizado."
+        title="Criação de Sites no Paraná (PR) | Todas as Cidades com prazo sob consulta"
+        description="Agência especializada em criação de sites profissionais, lojas virtuais e SEO local para todas as cidades do Paraná. Entrega rápida com prazo sob consulta com suporte humanizado."
         canonicalUrl="https://www.supremasite.com.br/sites-em-parana/"
         schema={pillarSchema}
       />
@@ -56,7 +57,7 @@ export const PillarParana: React.FC = () => {
               Criação de Sites Profissionais no <span className="text-brand-accent">Paraná</span>
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              A Suprema Sites Express atende todas as 399 cidades do Paraná com sites ultra-rápidos desenvolvidos em React, otimização de SEO Local para Google Meu Negócio e garantia de entrega em até 48 horas.
+              A Suprema Sites Express atende todas as 399 cidades do Paraná com sites ultra-rápidos desenvolvidos em React, otimização de SEO Local para Google Meu Negócio e entrega com prazo sob consulta.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a
@@ -136,7 +137,7 @@ export const PillarParana: React.FC = () => {
                 Qual o prazo de entrega de um site para empresas do Paraná?
               </summary>
               <p className="mt-4 text-gray-300 text-sm leading-relaxed">
-                Entregamos sites institucionais prontos e funcionais em até 48 horas após o envio das informações da empresa.
+                Entregamos sites institucionais prontos e funcionais com prazo sob consulta após o envio das informações da empresa.
               </p>
             </details>
 
@@ -145,12 +146,13 @@ export const PillarParana: React.FC = () => {
                 O site inclui otimização de SEO Local para o Google Meu Negócio no PR?
               </summary>
               <p className="mt-4 text-gray-300 text-sm leading-relaxed">
-                Sim! Todos os projetos incluem otimização completa de palavras-chave regionais para garantir visibilidade no Google Maps e nas buscas orgânicas da sua cidade.
+                Sim! Todos os projetos incluem otimização completa de palavras-chave regionais para trabalhar a presença no Google Maps e nas buscas orgânicas da sua cidade, sem garantia de posição.
               </p>
             </details>
           </div>
         </div>
       </div>
+      <CommercialTerms />
     </div>
   );
 };

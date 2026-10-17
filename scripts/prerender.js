@@ -21,10 +21,11 @@ const templateHtml = fs.readFileSync(templatePath, 'utf8');
 
 // 1. Static main pages
 const staticPages = [
+  { path: '/presenca-local', title: 'Site e presença local | Suprema Sites', description: "Criação do site por R$ 1.680 em pagamento único, com 60 meses de hospedagem. Conheça o plano regional para trabalhar sua presença local.", canonical: 'https://www.supremasite.com.br/presenca-local' },
   {
     path: '/',
-    title: 'Suprema Sites Express | Criação de Sites Profissionais em Curitiba (48h)',
-    description: 'Criamos sites profissionais, landing pages e e-commerce de alta performance em Curitiba e todo o Brasil com entrega em 48h. Solicite seu orçamento!',
+    title: 'Site e presença local | Suprema Sites',
+    description: "Criação do site por R$ 1.680 em pagamento único, com 60 meses de hospedagem. Conheça o plano regional para trabalhar sua presença local.",
     canonical: 'https://www.supremasite.com.br/'
   },
   {
@@ -35,7 +36,7 @@ const staticPages = [
   },
   {
     path: '/portfolio',
-    title: 'Portfólio de Sites | Projetos Entregues em 48h - Suprema Sites Express',
+    title: 'Portfólio de Sites | Projetos Entregues com prazo sob consulta - Suprema Sites Express',
     description: 'Confira nosso portfólio com dezenas de sites profissionais, e-commerce e landing pages criadas para empresas de Curitiba, Paraná e todo o Sul.',
     canonical: 'https://www.supremasite.com.br/portfolio'
   },
@@ -71,32 +72,32 @@ const staticPages = [
   },
   {
     path: '/sites-em-parana',
-    title: 'Criação de Sites no Paraná (PR) | Todas as Cidades em 48h',
-    description: 'Agência especializada em criação de sites profissionais, lojas virtuais e SEO local para todas as cidades do Paraná. Entrega rápida em 48h.',
+    title: 'Criação de Sites no Paraná (PR) | Todas as Cidades com prazo sob consulta',
+    description: 'Agência especializada em criação de sites profissionais, lojas virtuais e SEO local para todas as cidades do Paraná. Entrega rápida com prazo sob consulta.',
     canonical: 'https://www.supremasite.com.br/sites-em-parana'
   },
   {
     path: '/sites-em-santa-catarina',
-    title: 'Criação de Sites em Santa Catarina (SC) | Entrega em 48h',
+    title: 'Criação de Sites em Santa Catarina (SC) | Entrega com prazo sob consulta',
     description: 'Agência especializada em criação de sites profissionais, e-commerce e SEO local para todas as cidades de Santa Catarina. Sites em React.',
     canonical: 'https://www.supremasite.com.br/sites-em-santa-catarina'
   },
   {
     path: '/sites-em-rio-grande-do-sul',
-    title: 'Criação de Sites no Rio Grande do Sul (RS) | Entrega 48h',
+    title: 'Criação de Sites no Rio Grande do Sul (RS) | Prazo sob consulta',
     description: 'Agência especializada em criação de sites profissionais, lojas virtuais e SEO local para Porto Alegre, Caxias do Sul e todo o Rio Grande do Sul.',
     canonical: 'https://www.supremasite.com.br/sites-em-rio-grande-do-sul'
   },
   {
     path: '/bairros-curitiba',
-    title: 'Criação de Sites nos Bairros de Curitiba (IPPUC) | 48h',
+    title: 'Criação de Sites nos Bairros de Curitiba (IPPUC) | Prazo sob consulta',
     description: 'Agência especializada em criação de sites profissionais e SEO Local nos 75 bairros oficiais de Curitiba e regiões metropolitana.',
     canonical: 'https://www.supremasite.com.br/bairros-curitiba'
   },
   {
     path: '/agencia-seo-curitiba',
     title: 'Agência de SEO em Curitiba | Consultoria & Otimização de Sites | Suprema',
-    description: 'Especialistas em SEO em Curitiba. Estratégias de otimização de sites, SEO técnico, SEO Local e GEO/AIO para colocar sua empresa na primeira página do Google e em IA.',
+    description: 'Especialistas em SEO em Curitiba. Estratégias de otimização de sites, SEO técnico, SEO Local e GEO/AIO para trabalhar a presença da sua empresa nas buscas e em mecanismos de IA.',
     canonical: 'https://www.supremasite.com.br/agencia-seo-curitiba'
   },
   {
@@ -222,14 +223,14 @@ const localizedRoutes = [
     ...c,
     isBairro: false,
     title: `Criação de Sites em ${c.name}, ${c.stateSigla} | Suprema Site Express`,
-    description: `Desenvolvimento profissional de sites de alta performance, lojas virtuais e SEO Local em ${c.name}, ${c.stateSigla}. Projetos exclusivos em React com entrega em 48h!`,
+    description: `Desenvolvimento profissional de sites de alta performance, lojas virtuais e SEO Local em ${c.name}, ${c.stateSigla}. Projetos exclusivos em React com prazo de entrega sob consulta!`,
     canonical: `https://www.supremasite.com.br/site-em/${c.slug}`
   })),
   ...curatedBairros.map(b => ({
     ...b,
     isBairro: true,
     title: `Criação de Sites no Bairro ${b.name} — Curitiba (PR) | Suprema Site Express`,
-    description: `Desenvolvemos sites profissionais com design premium em React e SEO Local no bairro ${b.name} em Curitiba. Entrega rápida de 48h com foco em resultados reais!`,
+    description: `Desenvolvemos sites profissionais com design premium em React e SEO Local no bairro ${b.name} em Curitiba. Entrega rápida com prazo sob consulta com foco em resultados reais!`,
     canonical: `https://www.supremasite.com.br/site-em/${b.slug}`
   }))
 ];
@@ -257,16 +258,16 @@ function generateContext(loc) {
   }
 
   if (loc.slug === 'fazenda-rio-grande') {
-    return `Fazenda Rio Grande é uma das cidades de maior crescimento industrial e demográfico na Região Metropolitana de Curitiba (RMC). Com o surgimento de novos polos comerciais e distritos industriais de transformação, as empresas em Fazenda Rio Grande necessitam de uma vitrine digital de alto nível para competir com marcas da capital. Desenvolvemos landing pages velozes e portais B2B que garantem indexação e atração contínua de contratos em Fazenda Rio Grande e municípios adjacentes.`;
+    return `Fazenda Rio Grande é uma das cidades de maior crescimento industrial e demográfico na Região Metropolitana de Curitiba (RMC). Com o surgimento de novos polos comerciais e distritos industriais de transformação, as empresas em Fazenda Rio Grande necessitam de uma vitrine digital de alto nível para competir com marcas da capital. Desenvolvemos landing pages velozes e portais B2B que trabalham a presença digital e a apresentação dos serviços em Fazenda Rio Grande e municípios adjacentes.`;
   }
 
   if (loc.slug === 'sao-jose-dos-pinhais') {
-    return `São José dos Pinhais, um dos maiores PIBs do Paraná, abriga um gigante cinturão metalmecânico, montadoras de renome global, e o Aeroporto Internacional Afonso Pena. Essa dinâmica exige uma comunicação corporativa extremamente profissional. Desenvolvemos sites institucionais estruturados em React e sistemas leves sob medida para indústrias, transportadoras e comércios que buscam dominar as consultas de pesquisa comercial de alto nível em São José dos Pinhais.`;
+    return `São José dos Pinhais, um dos maiores PIBs do Paraná, abriga um gigante cinturão metalmecânico, montadoras de renome global, e o Aeroporto Internacional Afonso Pena. Essa dinâmica exige uma comunicação corporativa extremamente profissional. Desenvolvemos sites institucionais estruturados em React e sistemas leves sob medida para indústrias, transportadoras e comércios que buscam ampliar a presença nas consultas comerciais em São José dos Pinhais.`;
   }
 
   // General fallbacks per state
   if (loc.stateSigla === 'PR') {
-    return `A cidade de ${loc.name} (PR) destaca-se por sua economia forte e integrada. Desenvolver um site profissional na Suprema Site Express para o mercado de ${loc.name} garante que sua empresa seja apresentada com alto padrão de design corporativo. Otimizamos toda a semântica de busca local no Google, no Bing e nos mecanismos de IA de ${loc.name} para assegurar visitas orgânicas qualificadas e geração contínua de novos leads comerciais.`;
+    return `A cidade de ${loc.name} (PR) destaca-se por sua economia forte e integrada. Desenvolver um site profissional na Suprema Site Express para o mercado de ${loc.name} garante que sua empresa seja apresentada com alto padrão de design corporativo. Otimizamos toda a semântica de busca local no Google, no Bing e nos mecanismos de IA de ${loc.name} para trabalhar a presença digital nas localidades atendidas, sem garantir visitas ou novos contratos.`;
   }
   if (loc.stateSigla === 'SC') {
     return `O mercado catarinense em ${loc.name} (SC) é reconhecido pela solidez cultural e forte empreendedorismo na indústria, comércio de luxo ou tecnologia. Nossa equipe desenvolve sites institucionais responsivos e lojas virtuais de alta conversão estruturados em React para impulsionar suas vendas na região de ${loc.name}. Garantimos velocidade Core Web Vitals 95+ e suporte rápido pelo WhatsApp.`;
@@ -275,7 +276,7 @@ function generateContext(loc) {
     return `A presença digital para marcas comerciais e indústrias tradicionais em ${loc.name} (RS) é essencial para escalar vendas e faturamento de forma sustentável. Criamos portais institucionais robustos, sistemas corporativos sob medida e landing pages em React otimizadas para celulares na região de ${loc.name}, com marcação avançada Schema.org para indexação garantida e rápida nos buscadores.`;
   }
   
-  return `Desenvolvemos sites de alto nível institucional e técnico para empresas na região de ${loc.name}. Unimos design UX minimalista, tipografia Plus Jakarta Sans impecável e carregamento de carregamento expresso em React para garantir que sua empresa domine o Google localmente e atraia orçamentos qualificados diariamente.`;
+  return `Desenvolvemos sites de alto nível institucional e técnico para empresas na região de ${loc.name}. Unimos design UX minimalista, tipografia Plus Jakarta Sans impecável e carregamento de carregamento expresso em React para trabalhar a presença local da empresa e facilitar o contato de interessados.`;
 }
 
 // Generate static pre-rendered HTML for each dynamic localized page
@@ -314,7 +315,7 @@ localizedRoutes.forEach(loc => {
         <div class="container mx-auto px-4 flex justify-between items-center max-w-6xl">
           <div class="flex items-center gap-2">
             <span class="font-extrabold text-xl tracking-tight text-white uppercase">Suprema Site Express</span>
-            <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded">PRONTIDÃO 48h</span>
+            <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded">PRAZO SOB CONSULTA</span>
           </div>
           <a href="https://wa.me/5541992721004" class="text-sm font-bold bg-brand-primary text-white px-5 py-2.5 rounded-lg">Falar no WhatsApp (41) 99272-1004</a>
         </div>
@@ -328,7 +329,7 @@ localizedRoutes.forEach(loc => {
             Criação de Sites em <span class="text-amber-400">${loc.name}</span>
           </h1>
           <p class="text-base md:text-lg text-slate-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Desenvolvimento de sites profissionais, landing pages, e-commerce e portais B2B de altíssima performance para empresas na região de <strong>${loc.name}</strong>. Atendimento técnico especializado e entrega rápida em até 48 horas.
+            Desenvolvimento de sites profissionais, landing pages, e-commerce e portais B2B de altíssima performance para empresas na região de <strong>${loc.name}</strong>. Atendimento técnico especializado e entrega rápida com prazo sob consulta.
           </p>
           <div class="inline-block bg-white/5 border border-white/10 px-5 py-3 rounded-xl mb-4">
             <span class="text-amber-400 text-sm font-bold">★ Velocidade extrema Core Web Vitals 95+ para atrair clientes em ${loc.name}</span>
@@ -390,15 +391,15 @@ localizedRoutes.forEach(loc => {
           <div class="space-y-6">
             <div class="border-b border-slate-200 pb-4">
               <h3 class="text-base font-bold text-slate-900 mb-1">Qual o prazo de entrega do site em ${loc.name}?</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">Nosso prazo de entrega para sites institucionais express e landing pages é de até 48 horas úteis após o recebimento de todo o conteúdo necessário para preenchimento da página.</p>
+              <p class="text-sm text-slate-600 leading-relaxed">Nosso prazo de entrega para sites institucionais express e landing pages é com prazo sob consulta após o recebimento de todo o conteúdo necessário para preenchimento da página.</p>
             </div>
             <div class="border-b border-slate-200 pb-4">
               <h3 class="text-base font-bold text-slate-900 mb-1">Vocês entregam o site pronto com otimização SEO em ${loc.name}?</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">Com certeza! Todo site que criamos já é otimizado com dados estruturados da Schema.org de forma autorreferente para a região de ${loc.name}, facilitando o ranqueamento imediato e indexação nos motores de busca.</p>
+              <p class="text-sm text-slate-600 leading-relaxed">Com certeza! Todo site que criamos já é otimizado com dados estruturados da Schema.org de forma autorreferente para a região de ${loc.name}, facilitando a compreensão do conteúdo pelos mecanismos de busca, sem garantia de indexação, posição ou prazo de ranking.</p>
             </div>
             <div class="border-b border-slate-200 pb-4">
-              <h3 class="text-base font-bold text-slate-900 mb-1">O código do site pertence a quem?</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">O código-fonte e o domínio pertencem integralmente a você. Não cobramos mensalidades obrigatórias de licença de uso ou plataformas amarradas; você tem propriedade integral.</p>
+              <h3 class="text-base font-bold text-slate-900 mb-1">Quais são as condições de criação, hospedagem e domínio?</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">Criação do site: R$ 1.680 em pagamento único, com 60 meses de hospedagem. Plano regional mensal separado. Com o plano ativo, a Suprema paga a renovação anual do domínio e mantém a hospedagem incluída após os 60 meses. Sem plano ativo, consulte renovação. Projetos estaduais/nacionais e serviços distintos têm escopo e orçamento próprios.</p>
             </div>
           </div>
         </div>

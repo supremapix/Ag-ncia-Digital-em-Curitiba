@@ -1,3 +1,4 @@
+import { CommercialTerms } from '../components/CommercialTerms';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight, Zap, CheckCircle2 } from 'lucide-react';
@@ -29,8 +30,8 @@ export const PillarBairrosCuritiba: React.FC = () => {
   return (
     <div className="bg-brand-dark min-h-screen text-white pt-28 pb-20">
       <SEOHead 
-        title="Criação de Sites nos Bairros de Curitiba (IPPUC) | 48h"
-        description="Agência especializada em criação de sites profissionais e SEO Local nos 75 bairros oficiais de Curitiba e regiões metropolitana. Sede no Batel com entrega em 48h."
+        title="Criação de Sites nos Bairros de Curitiba (IPPUC) | Prazo sob consulta"
+        description="Agência especializada em criação de sites profissionais e SEO Local nos 75 bairros oficiais de Curitiba e regiões metropolitana. Sede no Batel com prazo de entrega sob consulta."
         canonicalUrl="https://www.supremasite.com.br/bairros-curitiba/"
         schema={pillarSchema}
       />
@@ -47,7 +48,7 @@ export const PillarBairrosCuritiba: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <span className="inline-block px-4 py-1.5 bg-brand-primary/20 border border-brand-primary/40 text-brand-primary font-black text-xs uppercase tracking-widest rounded-full mb-4">
-              Domínio Total em Curitiba
+              Presença Local em Curitiba
             </span>
             <h1 className="text-3xl md:text-5xl font-black leading-tight text-white mb-6">
               Criação de Sites nos Bairros de <span className="text-brand-accent">Curitiba</span>
@@ -126,6 +127,7 @@ export const PillarBairrosCuritiba: React.FC = () => {
           </div>
         )}
       </div>
+      <CommercialTerms />
     </div>
   );
 };

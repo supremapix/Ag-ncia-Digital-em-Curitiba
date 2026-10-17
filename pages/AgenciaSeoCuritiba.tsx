@@ -1,3 +1,4 @@
+import { CommercialTerms } from '../components/CommercialTerms';
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, CheckCircle2, ArrowRight, Search, ShieldCheck, Zap, Globe, BarChart3, Bot, Sparkles, MapPin } from 'lucide-react';
@@ -39,7 +40,7 @@ export const AgenciaSeoCuritiba: React.FC = () => {
     document.title = "Agência de SEO em Curitiba | Consultoria & Otimização de Sites | Suprema";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', "Especialistas em SEO em Curitiba. Estratégias de otimização de sites, SEO técnico, SEO Local e GEO/AIO para colocar sua empresa na primeira página do Google e em IA.");
+      metaDesc.setAttribute('content', "Especialistas em SEO em Curitiba. Estratégias de otimização de sites, SEO técnico, SEO Local e GEO/AIO para trabalhar a presença da sua empresa nas buscas e em mecanismos de IA.");
     }
   }, []);
 
@@ -47,7 +48,7 @@ export const AgenciaSeoCuritiba: React.FC = () => {
     <div className="bg-gray-50 min-h-screen">
       <SEOHead 
         title="Agência de SEO em Curitiba | Consultoria & Otimização de Sites | Suprema"
-        description="Especialistas em SEO em Curitiba. Estratégias de otimização de sites, SEO técnico, SEO Local e GEO/AIO para colocar sua empresa na primeira página do Google e em IA."
+        description="Especialistas em SEO em Curitiba. Estratégias de otimização de sites, SEO técnico, SEO Local e GEO/AIO para trabalhar a presença da sua empresa nas buscas e em mecanismos de IA."
         canonicalUrl="https://www.supremasite.com.br/agencia-seo-curitiba"
         schema={seoSchema}
       />
@@ -122,7 +123,7 @@ export const AgenciaSeoCuritiba: React.FC = () => {
               A <strong>Suprema Sites Express</strong> desenvolve sites e soluções de SEO em Curitiba, integrando SEO técnico, SEO Local, Google Maps, dados estruturados, GEO/AIO e inteligência artificial.
             </p>
             <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
-              Empresas em Curitiba que buscam uma <strong>consultoria de SEO</strong> ou <strong>empresa de SEO</strong> encontram na Suprema uma abordagem pragmática: combinamos a velocidade da infraestrutura em React com código limpo e marcação semântica para garantir indexação rápida e leitura precisa pelos algoritmos de busca.
+              Empresas em Curitiba que buscam uma <strong>consultoria de SEO</strong> ou <strong>empresa de SEO</strong> encontram na Suprema uma abordagem pragmática: combinamos a velocidade da infraestrutura em React com código limpo e marcação semântica para facilitar a compreensão do conteúdo pelos mecanismos de busca, sem garantia de indexação ou posição.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 pt-6 border-t border-gray-200 text-xs font-bold text-gray-700">
               <div className="flex items-center gap-2"><CheckCircle2 className="text-emerald-500" size={16}/> SEO Técnico & Core Web Vitals</div>
@@ -217,6 +218,7 @@ export const AgenciaSeoCuritiba: React.FC = () => {
           </div>
         </div>
       </section>
+      <CommercialTerms />
     </div>
   );
 };

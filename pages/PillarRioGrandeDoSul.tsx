@@ -1,3 +1,4 @@
+import { CommercialTerms } from '../components/CommercialTerms';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Zap, Globe } from 'lucide-react';
@@ -32,7 +33,7 @@ export const PillarRioGrandeDoSul: React.FC = () => {
   return (
     <div className="bg-brand-dark min-h-screen text-white pt-28 pb-20">
       <SEOHead 
-        title="Criação de Sites no Rio Grande do Sul (RS) | Entrega 48h"
+        title="Criação de Sites no Rio Grande do Sul (RS) | Prazo sob consulta"
         description="Agência especializada em criação de sites profissionais, lojas virtuais e SEO local para Porto Alegre, Caxias do Sul e todo o Rio Grande do Sul."
         canonicalUrl="https://www.supremasite.com.br/sites-em-rio-grande-do-sul/"
         schema={pillarSchema}
@@ -56,7 +57,7 @@ export const PillarRioGrandeDoSul: React.FC = () => {
               Criação de Sites Profissionais no <span className="text-brand-accent">Rio Grande do Sul</span>
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              A Suprema Sites Express é a escolha ideal para negócios gaúchos que precisam de sites modernos em React, lojas virtuais e SEO Local agressivo com entrega garantida em 48 horas.
+              A Suprema Sites Express é a escolha ideal para negócios gaúchos que precisam de sites modernos em React, lojas virtuais e SEO Local agressivo com prazo de entrega sob consulta.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a
@@ -123,6 +124,7 @@ export const PillarRioGrandeDoSul: React.FC = () => {
           </div>
         </div>
       </div>
+      <CommercialTerms />
     </div>
   );
 };

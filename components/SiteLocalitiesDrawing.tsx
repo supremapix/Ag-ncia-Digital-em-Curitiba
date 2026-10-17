@@ -1,0 +1,12 @@
+import React from 'react';
+import { motion, useReducedMotion } from 'motion/react';
+export const SiteLocalitiesDrawing = () => {
+  const reduce = useReducedMotion();
+  return <div className="site-localities-drawing"><div><p className="eyebrow">SITE + LOCALIDADES</p><h3>Uma base digital.<br/>Conexões com sua região.</h3><p>Seu site apresenta a empresa. A estratégia regional trabalha a presença nas localidades contratadas.</p></div>
+    <motion.svg viewBox="0 0 600 320" role="img" aria-labelledby="drawing-title" initial={reduce ? false : 'hidden'} whileInView="visible" viewport={{once:true,amount:.3}}>
+      <title id="drawing-title">Ilustração: um site se conecta a quatro localidades. Não é um mapa real nem representa resultados.</title>
+      <motion.rect x="180" y="70" width="240" height="180" rx="12" fill="#fff" stroke="#111318" strokeWidth="3" variants={{hidden:{pathLength:0,opacity:0},visible:{pathLength:1,opacity:1}}} transition={{duration:reduce?0:.7}}/>
+      <motion.g variants={{hidden:{opacity:0},visible:{opacity:1}}} transition={{delay:reduce?0:.5,duration:reduce?0:.4}}><path d="M180 102H420" stroke="#111318" strokeWidth="2"/><circle cx="198" cy="87" r="3" fill="#ff7b38"/><circle cx="210" cy="87" r="3" fill="#2456f5"/><rect x="202" y="121" width="110" height="12" rx="3" fill="#111318"/><rect x="202" y="146" width="193" height="8" rx="3" fill="#d5dcf0"/><rect x="202" y="163" width="163" height="8" rx="3" fill="#d5dcf0"/><rect x="202" y="191" width="88" height="30" rx="4" fill="#ff7b38"/><text x="321" y="216" fill="#111318" fontSize="17" fontWeight="700">Seu site</text></motion.g>
+      {[[80,50,180,112],[520,50,420,112],[80,270,180,210],[520,270,420,210]].map(([x,y,endX,endY],index)=><g key={index}><motion.path d={`M${endX} ${endY} L${x} ${y}`} stroke="#2456f5" strokeWidth="3" fill="none" variants={{hidden:{pathLength:0},visible:{pathLength:1}}} transition={{delay:reduce?0:.9+index*.18,duration:reduce?0:.5}}/><motion.g variants={{hidden:{opacity:0},visible:{opacity:1}}} transition={{delay:reduce?0:1.2+index*.18,duration:reduce?0:.3}}><circle cx={x} cy={y} r="18" fill="#2456f5"/><circle cx={x} cy={y} r="6" fill="#fff"/><text x={x} y={y<160?y-28:y+38} textAnchor="middle" fill="#111318" fontSize="15" fontWeight="700">Localidade {index+1}</text></motion.g></g>)}
+    </motion.svg><small>Ilustração da estratégia. Não é um mapa geográfico nem uma previsão de resultados.</small></div>;
+};

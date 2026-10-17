@@ -1,3 +1,4 @@
+import { CommercialTerms } from '../components/CommercialTerms';
 import React, { useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getNameFromSlug, getRegionFromSlug, neighborhoods, slugify } from '../data/locations';
@@ -82,7 +83,7 @@ function getDynamicLocalSegment(name: string, region: string, isNeighborhood: bo
     if (southSubdivisions.includes(slugified)) {
       return {
         strongSegment: "Comércio Varejista Forte, Clínicas Odontológicas Gerais, Prestadores de Serviços Multidisciplinares, Pet Shops e Academias de Bairro",
-        context: `A vibrante Região Sul de Curitiba — integrando o Pinheirinho, Sítio Cercado, Umbará e subzonas populares de alta atividade como ${name}, Portão Velho e Vila Osternack — caracteriza-se pela intensa independência comercial e circulação diária de consumidores. Para despontar frente à concorrência regional, o método ideal do(a) ${name} é dominar o topo das pesquisas orgânicas e o Google Maps Pro para canalizar chamadas expressas diretamente ao WhatsApp comercial da sua empresa.`,
+        context: `A vibrante Região Sul de Curitiba — integrando o Pinheirinho, Sítio Cercado, Umbará e subzonas populares de alta atividade como ${name}, Portão Velho e Vila Osternack — caracteriza-se pela intensa independência comercial e circulação diária de consumidores. Para despontar frente à concorrência regional, o método ideal do(a) ${name} é trabalhar a presença nas pesquisas locais e facilitar o acesso diretamente ao WhatsApp comercial da sua empresa.`,
         strongKeywords: [`Dentistas especializados no ${name}`, `Preço de sites no ${name}`, `Serviços por WhatsApp no ${name}`, `SEO Google Maps no ${name}`]
       };
     }
@@ -98,7 +99,7 @@ function getDynamicLocalSegment(name: string, region: string, isNeighborhood: bo
     if (cajuruUberabaCapaoList.includes(slugified)) {
       return {
         strongSegment: "Empresas de Instalações, Transportadoras Rodoviárias, Construtoras Civis, Oficinas de Manutenção e Serviços Técnicos Especializados",
-        context: `A zona leste meridional de Curitiba — englobando o Cajuru, Uberaba, Capão da Imbuia e loteamentos populares concorridos como o(a) ${name}, Vila Pantanal ou Vila Oficinas — desponta como via expressa estratégica de conexões intermunicipais. Exibir uma plataforma digital moderna e responsiva garante que os prestadores do(a) ${name} faturem contratos operacionais de alto valor recorrente junto ao público qualificado de Curitiba.`,
+        context: `A zona leste meridional de Curitiba — englobando o Cajuru, Uberaba, Capão da Imbuia e loteamentos populares concorridos como o(a) ${name}, Vila Pantanal ou Vila Oficinas — desponta como via expressa estratégica de conexões intermunicipais. Exibir uma plataforma digital moderna e responsiva ajuda os prestadores do(a) ${name} a apresentar seus serviços ao público de Curitiba.`,
         strongKeywords: [`Sites de prestação de serviços no ${name}`, `SEO Google Maps ${name} Curitiba`, `Preço de landing page no ${name}`, `Suporte premium no ${name}`]
       };
     }
@@ -136,14 +137,14 @@ function getDynamicLocalSegment(name: string, region: string, isNeighborhood: bo
                       "Silos Industriais, Agro-Logística, Transportadoras Rodoviárias e Comércio Central Consolidado";
       return {
         strongSegment: segment,
-        context: `Como um dos polos propulsores do interior paranaense, a cidade de ${name} atrai investidores de todo o sul e fomenta alta competitividade orgânica. Empresas em ${name} exigem ferramentas modernas em React para capturar leads móveis em tempo recorde e garantir liderança frente à concorrência paranaense.`,
+        context: `Como um dos polos propulsores do interior paranaense, a cidade de ${name} atrai investidores de todo o sul e fomenta alta competitividade orgânica. Empresas em ${name} exigem ferramentas modernas em React para capturar leads móveis em tempo recorde e apresentar seus diferenciais no mercado paranaense.`,
         strongKeywords: [`Criação de sites profissionais em ${name}`, `SEO Local focado em ${name} PR`, `Empresas de tecnologia em ${name}`, `WhatsApp Leads ${name}`]
       };
     }
     if (['guaratuba', 'matinhos', 'paranagua', 'pontal-do-parana', 'morretes', 'antonina'].includes(slugified)) {
       return {
         strongSegment: "Turismo Coletivo, Setor Imobiliário Marítimo, Hotéis de Lazer, Cooperativas Náuticas e Operadores Alfandegários",
-        context: `Com uma dinâmica impulsionada pelo porto e turismo de veraneio, a cidade de ${name} atrai milhares de visitantes e investidores sazonais. Sites indexados com marcação Schema e otimização Google Maps garantem captação contínua de clientes no litoral e interior o ano inteiro.`,
+        context: `Com uma dinâmica impulsionada pelo porto e turismo de veraneio, a cidade de ${name} atrai milhares de visitantes e investidores sazonais. Sites indexados com marcação Schema e otimização Google Maps ajudam a apresentar serviços a interessados no litoral e no interior.`,
         strongKeywords: [`Salgueiros em ${name}`, `Imobiliárias confiáveis em ${name}`, `Turismo local em ${name}`, `Desenvolvimento de sites ${name}`]
       };
     }
@@ -161,7 +162,7 @@ function getDynamicLocalSegment(name: string, region: string, isNeighborhood: bo
     if (['joinville', 'blumenau', 'brusque', 'jaragua-do-sul', 'chapeco', 'lages', 'cacador', 'concordia'].includes(slugified)) {
       return {
         strongSegment: "Manufatura Metal-Mecânica, Indústria Metalúrgica Pesada, Polos Têxteis Industriais, Logística de Carga e Exportações",
-        context: `Marcada por solidez cultural e produtores de renome internacional, a cidade de ${name} alimenta uma cadeia de serviços B2B extremamente técnica. Dispor de um ecossistema digital institucional de alta velocidade e com estruturação semântica de ponta garante relevância em consultas comerciais estratégicas de compras em ${name}.`,
+        context: `Marcada por solidez cultural e produtores de renome internacional, a cidade de ${name} alimenta uma cadeia de serviços B2B extremamente técnica. Dispor de um ecossistema digital institucional de alta velocidade e com estruturação semântica de ponta contribui para apresentar serviços em consultas comerciais em ${name}.`,
         strongKeywords: [`Empresas B2B em ${name}`, `Suporte de TI em ${name}`, `Logística de frotas ${name}`, `Marketing orgânico ${name}`]
       };
     }
@@ -172,7 +173,7 @@ function getDynamicLocalSegment(name: string, region: string, isNeighborhood: bo
     if (['porto-alegre', 'caxias-do-sul', 'novo-hamburgo', 'canoas', 'pelotas', 'passo-fundo', 'santa-maria', 'rio-grande'].includes(slugified)) {
       return {
         strongSegment: "Hospitais Privados, Clínicas Oftalmológicas, Indústrias Metalúrgicas de Carga, Empresas de TI e Comércio Atacadista",
-        context: `Os grandes polos industriais e comerciais gaúchos como ${name} requerem inovação para se destacar no faturamento estadual. Desenvolver com React e implementar estratégias de SEO Local com Schema avançado garante captação acelerada de orçamentos e agendamentos inteligentes em ${name}.`,
+        context: `Os grandes polos industriais e comerciais gaúchos como ${name} requerem inovação para se destacar no faturamento estadual. Desenvolver com React e implementar estratégias de SEO Local com Schema avançado ajuda a apresentar serviços e canais de contato em ${name}.`,
         strongKeywords: [`Clínicas médicas prestigiadas em ${name}`, `Consultor de SEO de alta performance ${name}`, `Desenvolvimento web ${name}`, `Aparecer na primeira página ${name}`]
       };
     }
@@ -324,8 +325,8 @@ export const LocationSEO: React.FC = () => {
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       const descContent = isCuritibaNeighborhood
-        ? `Criamos sites de altíssima velocidade e conversão no bairro ${locationName} em Curitiba. Entrega em 48h, SEO local e design premium em React. Solicite orçamento!`
-        : `Design premium e criação de sites em ${locationName}, ${stateSigla}. Garanta até +1900% de visibilidade no Google com SEO Local de precisão e entrega rápida de 48h.`;
+        ? `Criamos sites de altíssima velocidade e conversão no bairro ${locationName} em Curitiba. Entrega com prazo sob consulta, SEO local e design premium em React. Solicite orçamento!`
+        : `Design premium e criação de sites em ${locationName}, ${stateSigla}. Trabalhe sua presença nas buscas locais, com escopo e prazo definidos na proposta.`;
       metaDesc.setAttribute('content', descContent);
       
       // Update Social meta details
@@ -349,7 +350,7 @@ export const LocationSEO: React.FC = () => {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": `Suprema Site Express - ${locationName}`,
-        "description": `Criação de sites de altíssima performance, e-commerce profissional e SEO Local em ${locationName}, ${stateSigla}. Projetos estruturados em React com entrega ágil em 48h.`,
+        "description": `Criação de sites de altíssima performance, e-commerce profissional e SEO Local em ${locationName}, ${stateSigla}. Projetos estruturados em React com entrega ágil com prazo sob consulta.`,
         "url": `https://www.supremasite.com.br/site-em/${slug}`,
         "telephone": "+5541992721004",
         "image": "https://www.supremasite.com.br/logo.png",
@@ -419,11 +420,11 @@ export const LocationSEO: React.FC = () => {
     return [
       {
         question: `Quanto tempo leva para lançar um site em ${locationName}?`,
-        answer: `Nosso processo express de desenvolvimento na região de ${locationName} garante a entrega total do seu site profissional ou landing page em até 48 horas úteis após o recebimento dos materiais e briefing estratégico.`
+        answer: `Nosso processo express de desenvolvimento na região de ${locationName} planeja a entrega do seu site profissional ou landing page com prazo sob consulta após o recebimento dos materiais e briefing estratégico.`
       },
       {
         question: `O site já vem estruturado para atrair clientes em ${locationName}?`,
-        answer: `Sim, de forma nativa. O site é codificado em React e estruturado com dados semânticos específicos para ${locationName}. Isso ajuda de forma direta e estruturada no SEO Local para que sua marca domine as buscas orgânicas na sua região de atuação de forma sustentável.`
+        answer: `Sim, de forma nativa. O site é codificado em React e estruturado com dados semânticos específicos para ${locationName}. Isso ajuda de forma direta e estruturada no SEO Local para trabalhar a presença da sua marca nas buscas locais, sem garantia de posição, indexação ou volume de vendas.`
       },
       {
         question: `Como funciona o atendimento para empresas com foco no segmento de ${strongSegment}?`,
@@ -431,7 +432,7 @@ export const LocationSEO: React.FC = () => {
       },
       {
         question: `Vocês oferecem suporte continuado estruturado em Curitiba e região?`,
-        answer: `Sim, as empresas no Sul contam com suporte prioritário humanizado e em tempo real via WhatsApp. Garantimos servidores estáveis em nuvem com 99.9% de uptime para que suas páginas locais nunca parem de vender.`
+        answer: `Sim, as empresas no Sul contam com suporte prioritário humanizado e em tempo real via WhatsApp. A criação do site inclui 60 meses de hospedagem. Após esse período, a hospedagem continua incluída sem cobrança adicional enquanto o plano regional mensal estiver ativo.`
       }
     ];
   }, [locationName, strongSegment]);
@@ -498,14 +499,14 @@ export const LocationSEO: React.FC = () => {
                   <Building size={16} /> Economia & Presença Local
                 </div>
                 <h2 className="text-4xl md:text-5xl font-black text-brand-dark mb-8 leading-tight">
-                  Dominando o Mercado Orgânico Digital em <span className="text-brand-primary">{locationName}</span>
+                  Presença Digital em <span className="text-brand-primary">{locationName}</span>
                 </h2>
                 <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                   <p>
                     {localContext}
                   </p>
                   <p>
-                    A Suprema Site Express compreende os desafios logísticos e comerciais específicos da sua região. Nossa equipe especializa-se no setor dominante de <strong className="text-brand-primary">{strongSegment}</strong>. Unimos técnicas de indexação antecipada com layouts limpos e responsivos no framework React. Desta forma, o Google compreende perfeitamente sua relevância semântica espacial, fazendo sua marca ultrapassar os concorrentes tradicionais.
+                    A Suprema Site Express compreende os desafios logísticos e comerciais específicos da sua região. Nossa equipe especializa-se no setor dominante de <strong className="text-brand-primary">{strongSegment}</strong>. Unimos conteúdo organizado e layouts responsivos para apresentar seus serviços. Os resultados de busca dependem de diversos fatores e não são garantidos.
                   </p>
                 </div>
                 <div className="mt-10 flex items-center gap-4 p-6 bg-gray-50 rounded-2xl border border-gray-100">
@@ -699,7 +700,7 @@ export const LocationSEO: React.FC = () => {
               },
               { 
                 title: "Layout Ultra-Leve em Celulares", 
-                desc: `No Sul, mais de 80% dos orçamentos de serviços ocorrem em redes móveis. Garantimos desempenho total mesmo em conexões modestas na região.`,
+                desc: `Projetamos a experiência para facilitar a leitura e o contato também em dispositivos móveis.`,
                 icon: <Smartphone className="text-brand-primary" />
               }
             ].map((item, idx) => (
@@ -751,8 +752,8 @@ export const LocationSEO: React.FC = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {[
-              { title: "Atendimento Express e Lançamento em 48h", desc: "Desenvolvemos sua plataforma de forma ágil e otimizada. Lançamos sua estrutura profissional de marca sem taxas desnecessárias e em tempo recorde.", icon: <Clock /> },
-              { title: "React & Conectores de Ponta", desc: "Construímos o código usando as mesmas metodologias enxutas de alta performance que garantem carregamento instantâneo no celular.", icon: <Zap /> },
+              { title: "Atendimento Express e Lançamento com prazo sob consulta", desc: "Desenvolvemos sua plataforma de forma ágil e otimizada. Lançamos sua estrutura profissional de marca sem taxas desnecessárias e em tempo recorde.", icon: <Clock /> },
+              { title: "React & Conectores de Ponta", desc: "Construímos o código usando as mesmas metodologias enxutas de alta performance que priorizam a experiência de navegação no celular.", icon: <Zap /> },
               { title: "Foco Total em SEO Regional", desc: "Aparecer no Google Maps e nas pesquisas de raio curto em sua cidade é o principal motor para colher leads de faturamento ativo.", icon: <TrendingUp /> },
               { title: "Suporte Imediato via WhatsApp", desc: "Central de atendimento amigável e ágil. Você nunca fica na mão na hora de atualizar ou expandir seu portfólio digital.", icon: <Headphones /> }
             ].map((diff, idx) => (
@@ -851,6 +852,7 @@ export const LocationSEO: React.FC = () => {
           </div>
         </div>
       </section>
+      <CommercialTerms />
     </div>
   );
 };

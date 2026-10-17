@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import { RegionalPresence } from './pages/RegionalPresence';
 import { Home } from './pages/Home';
 import { Services } from './pages/Services';
 import { Contact } from './pages/Contact';
@@ -50,6 +51,7 @@ const App: React.FC = () => {
           <PageWrapper>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/presenca-local" element={<RegionalPresence />} />
               <Route path="/servicos" element={<Services />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/sobre" element={<About />} />

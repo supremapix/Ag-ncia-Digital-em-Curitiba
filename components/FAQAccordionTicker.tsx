@@ -9,10 +9,10 @@ export const FAQAccordionTicker: React.FC = () => {
   const allFAQs = useMemo(() => {
     const locs = [...cities, ...scCities, ...rsCities, ...neighborhoods];
     const templates = [
-      { q: "Como criar um site em [LOC]?", a: "Para criar seu site em [LOC], a Suprema Mídia utiliza React de alta performance, garantindo carregamento ultrarrápido e SEO local para dominar as buscas." },
-      { q: "Quanto custa um site em [LOC]?", a: "Em [LOC], nossos projetos são focados em ROI. Oferecemos sites institucionais e e-commerces com parcelamento facilitado e foco em vendas." },
-      { q: "Como ser o #1 no Google em [LOC]?", a: "Nós otimizamos seu Google Meu Negócio e aplicamos SEO Semântico para que sua empresa de [LOC] apareça no topo." },
-      { q: "Site em 48h em [LOC] é possível?", a: "Sim! Para clientes de [LOC], temos uma linha de produção expressa que entrega sites profissionais com otimização completa em apenas 2 dias." }
+      { q: "Como criar um site em [LOC]?", a: "Planejamos a apresentação da sua empresa e sua área de atendimento. Escopo e prazo serão definidos na proposta." },
+      { q: "Quanto custa criar um site em [LOC]?", a: "A oferta de criação do site custa R$ 1.680 em pagamento único, com 60 meses de hospedagem. O plano regional tem mensalidade separada. E-commerce, sistemas e demais serviços têm propostas próprias." },
+      { q: "Existe garantia de posição no Google em [LOC]?", a: "O trabalho busca ampliar a presença e a visibilidade local, sem garantia de posição, indexação, prazo de ranking ou volume de vendas." },
+      { q: "Como ficam hospedagem e domínio em [LOC]?", a: "Com o plano regional mensal ativo, a Suprema paga a renovação anual do domínio e mantém a hospedagem incluída após os 60 meses iniciais. A mensalidade regional continua paga. Sem plano ativo, consulte as condições de renovação." }
     ];
 
     return locs.map((loc, i) => {

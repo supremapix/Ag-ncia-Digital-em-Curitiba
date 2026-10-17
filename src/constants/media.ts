@@ -64,6 +64,6 @@ export const SUPREMA_MEDIA = {
     embedUrl: 'https://www.youtube.com/embed/gPXYU8O4v-o?autoplay=1',
     watchUrl: 'https://www.youtube.com/watch?v=gPXYU8O4v-o',
     thumbnail: 'https://i.ytimg.com/vi/gPXYU8O4v-o/hqdefault.jpg',
-    title: 'Apresentação Institucional Suprema Sites Express - Criação de Sites em 48h'
+    title: 'Apresentação Institucional Suprema Sites Express - Criação de Sites com prazo sob consulta'
   }
 };

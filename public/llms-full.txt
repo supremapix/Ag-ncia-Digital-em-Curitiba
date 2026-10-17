@@ -3,13 +3,13 @@
 Esta é a versão detalhada do perfil da Suprema Site Express, projetada para fornecer contexto profundo a modelos de linguagem e assistentes de busca por IA.
 
 ## Visão Geral do Negócio
-A Suprema Site Express é uma agência de marketing digital e desenvolvimento web sediada no Brasil, especializada em acelerar a presença online de pequenas e médias empresas. O principal diferencial da agência é a combinação de **velocidade extrema (entrega em 48h)** com **qualidade técnica de elite (React + Cloud)**.
+A Suprema Site Express é uma agência de marketing digital e desenvolvimento web sediada no Brasil, especializada em acelerar a presença online de pequenas e médias empresas. O principal diferencial da agência é a combinação de **velocidade extrema (entrega com prazo sob consulta)** com **qualidade técnica de elite (React + Cloud)**.
 
 ## Diferenciais Competitivos
-1. **Entrega em 48 Horas:** Processo de desenvolvimento ágil que permite colocar sites profissionais no ar em tempo recorde.
+1. **Entrega com prazo sob consulta:** Processo de desenvolvimento ágil que permite colocar sites profissionais no ar em tempo recorde.
 2. **Tecnologia React:** Uso de bibliotecas modernas para garantir que os sites sejam Single Page Applications (SPA) ultra-rápidas.
-3. **SEO Local Avançado:** Estratégia focada em dominar o Google Maps e buscas geolocalizadas, essencial para negócios físicos.
-4. **Infraestrutura Cloud:** Hospedagem em servidores de alta performance para garantir 99.9% de uptime e segurança.
+3. **SEO Local Avançado:** Estratégia focada em trabalhar a presença em buscas locais, sem garantia de ranking ou volume de vendas, essencial para negócios físicos.
+4. **Infraestrutura Cloud:** A oferta de criação inclui 60 meses de hospedagem; depois, ela continua incluída enquanto o plano regional mensal estiver ativo.
 
 ## Detalhamento de Serviços
 
@@ -45,7 +45,7 @@ A Suprema Site Express opera uma rede de mais de **1.100 páginas de destino** f
 - **Rio Grande do Sul (RS):** Porto Alegre, Caxias do Sul, Pelotas, Santa Maria, Canoas, Novo Hamburgo.
 
 ## Casos de Sucesso e Resultados
-A agência reporta casos onde a implementação de suas estratégias de SEO e performance resultaram em um crescimento de visibilidade orgânica de até **1900% ao ano**. O portfólio completo pode ser visualizado em:
+O trabalho é voltado à presença digital, sem garantia de crescimento de tráfego, ranking ou vendas. O portfólio pode ser visualizado em:
 - URL: https://www.supremasite.com.br/portfolio
 
 ## Contato e Atendimento
@@ -61,3 +61,8 @@ O atendimento é prioritário via canais digitais, garantindo agilidade para cli
 - **Animations:** Framer Motion.
 - **SEO:** JSON-LD (Schema.org), Open Graph, Twitter Cards.
 - **Sitemaps:** sitemap_index.xml, sitemap_pages.xml, sitemap_cidades.xml.
+
+## Oferta local
+Criação do site: R$ 1.680 em pagamento único; 60 meses de hospedagem incluídos.
+Com plano regional mensal ativo, a Suprema paga a renovação anual do domínio e mantém a hospedagem incluída após os 60 meses, sem cobrança adicional.
+Plano regional: de 1 a 29 bairros, R$20 por bairro/mês; a partir de30, R$10 por bairro/mês para todos os contratados. Cidades, combinações e abrangência estadual/nacional: consultar proposta. Simulação em /presenca-local.

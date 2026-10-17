@@ -106,7 +106,7 @@ export const GoogleAdsCuritiba: React.FC = () => {
                 <strong>Google Ads (Mídia Paga):</strong> Entrega resultados e leads imediatos assim que o orçamento é ativado. É ideal para lançamentos, promoções sazonais e validação rápida de ofertas.
               </p>
               <p>
-                <strong>SEO (Presença Orgânica):</strong> Constrói autoridade de longo prazo no Google e em assistentes de IA (GEO/AIO), garantindo tráfego contínuo sem custo direto por clique.
+                <strong>SEO (Presença Orgânica):</strong> Constrói autoridade de longo prazo no Google e em assistentes de IA (GEO/AIO), trabalhando a presença orgânica sem custo direto por clique, sem garantia de tráfego.
               </p>
               <p>
                 A Suprema Sites Express desenvolve a estrutura técnica completa (sites, landing pages e rastreamento de conversões) para maximizar o retorno tanto em Google Ads quanto em SEO.
