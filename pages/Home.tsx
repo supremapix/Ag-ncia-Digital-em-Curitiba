@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
     document.title = "Suprema Sites Express | Criação de Sites, Sistemas Web, Apps e IA";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', "Criação do site por R$ 1.680 em pagamento único, com 60 meses de hospedagem. Conheça o plano regional para trabalhar sua presença local.");
+      metaDesc.setAttribute('content', "Criação do site por R$ 1.680 em pagamento único, com 60 meses de hospedagem. Plano regional: mínimo de 11 bairros, a partir de R$ 220/mês.");
     }
 
     // Organization & LocalBusiness Schema

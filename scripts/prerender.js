@@ -21,11 +21,11 @@ const templateHtml = fs.readFileSync(templatePath, 'utf8');
 
 // 1. Static main pages
 const staticPages = [
-  { path: '/presenca-local', title: 'Site e presença local | Suprema Sites', description: "Criação do site por R$ 1.680 em pagamento único, com 60 meses de hospedagem. Conheça o plano regional para trabalhar sua presença local.", canonical: 'https://www.supremasite.com.br/presenca-local' },
+  { path: '/presenca-local', title: 'Site e presença local | Suprema Sites', description: "Criação do site por R$ 1.680 em pagamento único, com 60 meses de hospedagem. Plano regional: mínimo de 11 bairros, a partir de R$ 220/mês.", canonical: 'https://www.supremasite.com.br/presenca-local' },
   {
     path: '/',
     title: 'Site e presença local | Suprema Sites',
-    description: "Criação do site por R$ 1.680 em pagamento único, com 60 meses de hospedagem. Conheça o plano regional para trabalhar sua presença local.",
+    description: "Criação do site por R$ 1.680 em pagamento único, com 60 meses de hospedagem. Plano regional: mínimo de 11 bairros, a partir de R$ 220/mês.",
     canonical: 'https://www.supremasite.com.br/'
   },
   {
@@ -399,7 +399,7 @@ localizedRoutes.forEach(loc => {
             </div>
             <div class="border-b border-slate-200 pb-4">
               <h3 class="text-base font-bold text-slate-900 mb-1">Quais são as condições de criação, hospedagem e domínio?</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">Criação do site: R$ 1.680 em pagamento único, com 60 meses de hospedagem. Plano regional mensal separado. Com o plano ativo, a Suprema paga a renovação anual do domínio e mantém a hospedagem incluída após os 60 meses. Sem plano ativo, consulte renovação. Projetos estaduais/nacionais e serviços distintos têm escopo e orçamento próprios.</p>
+              <p class="text-sm text-slate-600 leading-relaxed">Criação do site: R$ 1.680 em pagamento único, com 60 meses de hospedagem. Plano regional mensal separado: mínimo de 11 bairros (R$ 220/mês). De 11 a 29 bairros, R$ 20 cada/mês; a partir de 30, R$ 10 cada/mês para todos, sem cálculo progressivo. Cidades e regiões administrativas sob consulta. Com o plano ativo, a Suprema paga a renovação anual do domínio e mantém a hospedagem incluída após os 60 meses. Sem plano ativo, consulte renovação. Projetos estaduais/nacionais e serviços distintos têm escopo e orçamento próprios.</p>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ export const FAQAccordionTicker: React.FC = () => {
     const locs = [...cities, ...scCities, ...rsCities, ...neighborhoods];
     const templates = [
       { q: "Como criar um site em [LOC]?", a: "Planejamos a apresentação da sua empresa e sua área de atendimento. Escopo e prazo serão definidos na proposta." },
-      { q: "Quanto custa criar um site em [LOC]?", a: "A oferta de criação do site custa R$ 1.680 em pagamento único, com 60 meses de hospedagem. O plano regional tem mensalidade separada. E-commerce, sistemas e demais serviços têm propostas próprias." },
+      { q: "Quanto custa criar um site em [LOC]?", a: "A oferta de criação do site custa R$ 1.680 em pagamento único, com 60 meses de hospedagem. O plano regional tem mensalidade separada e mínimo de 11 bairros (R$ 220/mês): de 11 a 29, R$ 20 cada; a partir de 30, R$ 10 cada para todos. Cidades e regiões administrativas sob consulta. E-commerce, sistemas e demais serviços têm propostas próprias." },
       { q: "Existe garantia de posição no Google em [LOC]?", a: "O trabalho busca ampliar a presença e a visibilidade local, sem garantia de posição, indexação, prazo de ranking ou volume de vendas." },
       { q: "Como ficam hospedagem e domínio em [LOC]?", a: "Com o plano regional mensal ativo, a Suprema paga a renovação anual do domínio e mantém a hospedagem incluída após os 60 meses iniciais. A mensalidade regional continua paga. Sem plano ativo, consulte as condições de renovação." }
     ];
