@@ -32,7 +32,7 @@ export const PillarParana: React.FC = () => {
   };
 
   return (
-    <div className="bg-brand-dark min-h-screen text-white pt-28 pb-20">
+    <div className="locality-dark bg-brand-dark min-h-screen text-white pt-28 pb-20">
       <SEOHead 
         title="Criação de Sites no Paraná (PR) | Todas as Cidades com prazo sob consulta"
         description="Agência especializada em criação de sites profissionais, lojas virtuais e SEO local para todas as cidades do Paraná. Entrega rápida com prazo sob consulta com suporte humanizado."

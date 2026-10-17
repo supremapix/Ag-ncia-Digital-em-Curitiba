@@ -21,16 +21,16 @@ export const SocialSection: React.FC = () => {
       name: 'Instagram',
       url: 'https://www.instagram.com/suprema_midia/',
       icon: <Instagram size={28} />,
-      colorClass: 'bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500',
-      hoverColor: 'hover:opacity-90',
+      colorClass: 'bg-[#9d174d]',
+      hoverColor: 'hover:bg-[#701037]',
       handle: '@suprema_midia'
     },
     {
       name: 'Facebook',
       url: 'https://www.facebook.com/supremamidiactba/',
       icon: <Facebook size={28} />,
-      colorClass: 'bg-[#1877F2]',
-      hoverColor: 'hover:bg-[#166fe5]',
+      colorClass: 'bg-[#1457a6]',
+      hoverColor: 'hover:bg-[#103f78]',
       handle: 'Suprema Mídia'
     },
     {
@@ -45,8 +45,8 @@ export const SocialSection: React.FC = () => {
       name: 'Bio Links',
       url: 'https://bio.supremamidia.com.br/',
       icon: <LinkIcon size={28} />,
-      colorClass: 'bg-green-600',
-      hoverColor: 'hover:bg-green-700',
+      colorClass: 'bg-[#166534]',
+      hoverColor: 'hover:bg-[#104b27]',
       handle: 'Nossos Links'
     }
   ];
@@ -74,7 +74,7 @@ export const SocialSection: React.FC = () => {
                 {social.icon}
               </div>
               <div className="text-left">
-                <span className="block text-xs font-medium opacity-90 uppercase tracking-wide">Siga no</span>
+                <span className="block text-xs font-medium uppercase tracking-wide">Siga no</span>
                 <span className="block text-lg font-bold leading-none mt-1">{social.name}</span>
               </div>
             </a>

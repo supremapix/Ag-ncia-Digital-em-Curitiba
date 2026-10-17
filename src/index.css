@@ -4,6 +4,8 @@
 
 @theme {
   --color-brand-dark: #111318;
+  --color-brand-primary: #1d4ed8;
+  --color-brand-accent: #fbbf24;
   --color-warm-white: #F3F1EB;
   --color-cobalt: #2456F5;
   --font-display: 'Barlow Condensed', sans-serif;

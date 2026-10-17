@@ -32,7 +32,7 @@ export const PillarRioGrandeDoSul: React.FC = () => {
   };
 
   return (
-    <div className="bg-brand-dark min-h-screen text-white pt-28 pb-20">
+    <div className="locality-dark bg-brand-dark min-h-screen text-white pt-28 pb-20">
       <SEOHead 
         title="Criação de Sites no Rio Grande do Sul (RS) | Prazo sob consulta"
         description="Agência especializada em criação de sites profissionais, lojas virtuais e SEO local para Porto Alegre, Caxias do Sul e todo o Rio Grande do Sul."

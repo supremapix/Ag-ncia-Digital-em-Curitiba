@@ -25,28 +25,7 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         
         <nav className="mb-8 flex flex-wrap gap-6" aria-label="Pesquisa de sites"><Link to="/criacao-de-sites">Guia de criação de sites</Link><Link to="/criacao-de-sites/capitais">Pesquisar capitais</Link><Link to="/criacao-de-sites/como-escolher">Como escolher seu site</Link></nav>
-{/* Top Banner */}
-        <div className="bg-white/5 border border-white/10 p-8 rounded-sm mb-16 backdrop-blur-md">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-center md:text-left">
-              <span className="text-cobalt font-display font-bold uppercase tracking-widest block mb-2">Atendimento Direto</span>
-              <h3 className="text-2xl font-display font-black text-white">Dúvidas ou Orçamento?</h3>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a 
-                href="https://wa.me/5541992721004" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-cobalt hover:bg-blue-700 text-white px-8 py-4 rounded-sm font-bold text-sm transition-all active:scale-95"
-              >
-                WhatsApp: (41) 99272-1004
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* 4 Main Footer Columns */}
+{/* 4 Main Footer Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
           {/* Col 1: About */}

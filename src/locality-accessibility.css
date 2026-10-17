@@ -1,0 +1,37 @@
+/* Explicit foreground/background pairs: shared by every locality template. */
+.locality-surface{--local-text:#172126;--local-muted:#46515d;--local-accent:#1d4ed8;color:var(--local-text)}
+.locality-surface .locality-dark{--local-text:#fff;--local-muted:#d4dce8;--local-accent:#b5ccff;color:var(--local-text);background-color:#111318}
+.locality-surface :is(.regional-card,.region-summary,.coverage-story){--local-text:#fff;--local-muted:#e8efff;--local-accent:#fff}
+.locality-surface :is(.bg-white,.bg-gray-50,.commercial-terms){--local-text:#172126;--local-muted:#46515d;--local-accent:#1d4ed8;color:var(--local-text)}
+.locality-surface :is(h1,h2,h3,h4,h5,h6){color:var(--local-text)}
+.locality-surface :is(.text-gray-300,.text-gray-400,.text-gray-500,.text-gray-600,.text-gray-700,.text-slate-200){color:var(--local-muted)}
+.locality-surface .text-brand-primary{color:var(--local-accent)}
+.locality-surface .text-brand-accent{color:var(--local-accent)}
+.locality-surface .text-brand-dark{color:var(--local-text)}
+.locality-surface .bg-brand-primary{--local-text:#fff;--local-muted:#e8efff;--local-accent:#fff;background:#1d4ed8;color:#fff}
+.locality-surface :is(a,button).bg-brand-primary:hover{background:#173da8;color:#fff}
+.locality-surface [class*="hover:bg-brand-primary"]:hover{background:#1d4ed8;color:#fff;--local-text:#fff;--local-muted:#fff;--local-accent:#fff}
+.locality-surface [class*="hover:text-brand-primary"]:hover{color:var(--local-accent)}
+.locality-surface .locality-hero-content{background:#111318;border:1px solid #49566a;border-radius:24px;padding:36px 24px}
+.locality-surface .absolute.bottom-6.left-6.right-6{background:#111318;padding:12px;border-radius:8px}
+.locality-surface .locality-step{position:static;color:#46515d;opacity:1;font-size:28px;display:block}
+.locality-surface .locality-differences{background:#f3f1eb;color:#172126}
+.locality-surface .locality-differences p{color:#46515d}
+.locality-surface .locality-difference-card{background:white;border:1px solid #c5cbd2;border-radius:18px;padding:24px}
+.locality-surface .locality-difference-card:hover{background:#edf2ff;border-color:#1d4ed8}
+.locality-surface :is(a,button,input,select,summary):focus-visible,.global-promotion :is(a,button):focus-visible{outline:3px solid #111318;outline-offset:4px;box-shadow:0 0 0 7px #fff;border-radius:4px}
+.locality-surface input::placeholder{color:#59626f;opacity:1}
+.global-promotion{background:#e9edf5;color:#172126;padding:64px 24px;border-block:1px solid #c3cad6}
+.promotion-inner{max-width:1240px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.promotion-inner img{display:block;width:100%;height:auto;object-fit:contain;border-radius:20px}
+.promotion-copy h2{font-size:clamp(32px,3.4vw,52px);line-height:1.1;font-weight:800;margin:16px 0;color:#172126}
+.promotion-copy p{font-size:17px;line-height:1.7;margin:16px 0;color:#35404d}
+.promotion-copy .promotion-eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;color:#173da8}
+.promotion-copy a:not(.promotion-cta){color:#173da8;text-decoration:underline;text-underline-offset:3px}
+.promotion-copy a:not(.promotion-cta):hover{color:#111318}
+.promotion-payment strong{overflow-wrap:anywhere;color:#172126}
+.promotion-cta{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-height:56px;background:#1d4ed8;color:#fff;padding:16px 24px;border-radius:10px;font-weight:750;font-size:18px;text-align:center}
+.promotion-cta:hover{background:#173da8;color:#fff}.promotion-cta span{font-size:16px}.promotion-copy .promotion-note{font-size:13px;color:#46515d}
+@media(max-width:760px){.promotion-inner{grid-template-columns:1fr;gap:24px}.global-promotion{padding:36px 18px}.promotion-cta{width:100%}.locality-surface .locality-hero-content{padding:24px 16px}.locality-surface .locality-difference-card{padding:18px;gap:16px}}
+@media(prefers-reduced-motion:reduce){.locality-surface *{animation:none!important;transition:none!important}}
+@media(max-width:480px){.locality-surface .locality-difference-card{flex-direction:column}.locality-surface .locality-differences p{font-size:16px}}

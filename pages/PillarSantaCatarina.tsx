@@ -32,7 +32,7 @@ export const PillarSantaCatarina: React.FC = () => {
   };
 
   return (
-    <div className="bg-brand-dark min-h-screen text-white pt-28 pb-20">
+    <div className="locality-dark bg-brand-dark min-h-screen text-white pt-28 pb-20">
       <SEOHead 
         title="Criação de Sites em Santa Catarina (SC) | Entrega com prazo sob consulta"
         description="Agência especializada em criação de sites profissionais, e-commerce e SEO local para todas as cidades de Santa Catarina. Sites em React com máxima performance."

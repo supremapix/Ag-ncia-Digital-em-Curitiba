@@ -30,7 +30,7 @@ export const FloatingButtons: React.FC = () => {
           href="https://wa.me/5541992721004"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#25D366] text-white px-4 py-3 rounded-full shadow-xl shadow-emerald-950/20 hover:bg-[#20bd5a] transition-all hover:scale-105 active:scale-95 flex items-center gap-2.5 font-bold text-xs tracking-wide"
+          className="bg-[#166534] text-white px-4 py-3 rounded-full shadow-xl shadow-emerald-950/20 hover:bg-[#104b27] transition-all hover:scale-105 active:scale-95 flex items-center gap-2.5 font-bold text-xs tracking-wide"
           title="Falar no WhatsApp"
         >
           <MessageCircle size={22} fill="currentColor" className="text-white" />

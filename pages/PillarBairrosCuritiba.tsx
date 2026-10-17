@@ -28,7 +28,7 @@ export const PillarBairrosCuritiba: React.FC = () => {
   };
 
   return (
-    <div className="bg-brand-dark min-h-screen text-white pt-28 pb-20">
+    <div className="locality-dark bg-brand-dark min-h-screen text-white pt-28 pb-20">
       <SEOHead 
         title="Criação de Sites nos Bairros de Curitiba (IPPUC) | Prazo sob consulta"
         description="Agência especializada em criação de sites profissionais e SEO Local nos 75 bairros oficiais de Curitiba e regiões metropolitana. Sede no Batel com prazo de entrega sob consulta."

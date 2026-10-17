@@ -41,7 +41,7 @@ export const Logo: React.FC<{ size?: number; className?: string; dark?: boolean 
       </div>
       <div className="flex flex-col">
         <span className={`font-black text-2xl leading-none tracking-tighter transition-colors ${dark ? 'text-brand-dark group-hover:text-cobalt' : 'text-white group-hover:text-brand-accent'}`}>
-          SUPREMA<span className={dark ? 'text-cobalt' : 'text-brand-primary'}>SITES</span>
+          SUPREMA<span className={dark ? 'text-cobalt' : 'text-[#b5ccff]'}>SITES</span>
         </span>
         <span className={`text-[9px] font-bold uppercase tracking-[0.4em] leading-none mt-1 transition-colors ${dark ? 'text-gray-500' : 'text-gray-400 group-hover:text-white'}`}>
           Estúdio digital

@@ -26,7 +26,7 @@ import { GoogleAdsCuritiba } from './pages/GoogleAdsCuritiba';
 import { SeoLocalCuritiba } from './pages/SeoLocalCuritiba';
 import { IaMarketingCuritiba } from './pages/IaMarketingCuritiba';
 import { FloatingButtons } from './components/FloatingButtons';
-import { SupremaBanner } from './components/SupremaBanner';
+import { GlobalPromotion } from './components/GlobalPromotion';
 import { SocialSection } from './components/SocialSection';
 
 const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -37,7 +37,7 @@ const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   }, [pathname]);
 
   return (
-    <div className="animate-fade-in">
+    <div className={'animate-fade-in' + (/^\/(site-em\/|sites-em-|bairros-curitiba|presenca-local|criacao-de-sites)/.test(pathname) ? ' locality-surface' : '')}>
       {children}
     </div>
   );
@@ -78,6 +78,7 @@ const App: React.FC = () => {
             </Routes>
           </PageWrapper>
         </main>
+        <GlobalPromotion />
         <SocialSection />
         <Footer />
 

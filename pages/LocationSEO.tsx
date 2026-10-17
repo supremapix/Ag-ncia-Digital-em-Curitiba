@@ -440,7 +440,7 @@ export const LocationSEO: React.FC = () => {
   return (
     <div className="bg-white">
       {/* 1. HERO SECTION WITH DEEP LOCAL BINDINGS */}
-      <section className="relative bg-[#070b14] text-white py-24 lg:py-40 overflow-hidden min-h-[60vh] flex items-center">
+      <section className="locality-dark relative bg-[#070b14] text-white py-24 lg:py-40 overflow-hidden min-h-[60vh] flex items-center">
         {/* Background Video 01 (Omar SEO 01) with High Visibility & Elegant Overlays */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <video 
@@ -458,7 +458,7 @@ export const LocationSEO: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-[#070b14]/45" />
         </div>
 
-        <div className="container mx-auto px-4 relative z-10 text-center animate-slide-up">
+        <div className="locality-hero-content container mx-auto px-4 relative z-10 text-center animate-slide-up">
           <div className="inline-flex gap-2 items-center bg-brand-primary text-white font-extrabold text-[10px] uppercase tracking-[0.4em] px-5 py-2.5 rounded-full border border-white/20 mb-8 backdrop-blur-md">
             <Compass size={12} className="text-amber-400 animate-spin-slow" />
             <span>Estratégia Hiper-Local: {locationName} / {region}</span>
@@ -675,7 +675,7 @@ export const LocationSEO: React.FC = () => {
       </section>
 
       {/* 4. DESIGN PREMIUM & UX CORE */}
-      <section className="py-24 bg-brand-dark text-white overflow-hidden">
+      <section className="locality-dark py-24 bg-brand-dark text-white overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-20 animate-fade-in">
             <span className="text-brand-accent font-black text-[10px] tracking-widest uppercase border border-white/20 px-4 py-2 rounded-full mb-4 inline-block">
@@ -734,7 +734,7 @@ export const LocationSEO: React.FC = () => {
             ].map((item, idx) => (
               <div key={idx} className="relative p-8 bg-gray-50 rounded-3xl border border-gray-100 flex flex-col justify-between">
                 <div>
-                  <span className="text-5xl font-black text-brand-primary/10 absolute top-4 right-4">{item.step}</span>
+                  <span className="locality-step text-5xl font-black">{item.step}</span>
                   <h3 className="text-xl font-black text-brand-dark mb-4 mt-6 relative z-10">{item.title}</h3>
                   <p className="text-gray-500 leading-relaxed text-sm relative z-10">{item.desc}</p>
                 </div>
@@ -745,19 +745,19 @@ export const LocationSEO: React.FC = () => {
       </section>
 
       {/* 6. TRUST BADGES / DIFERENCIAIS */}
-      <section className="py-20 bg-gray-50 border-t border-gray-100">
+      <section className="locality-differences py-20 bg-gray-50 border-t border-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-black text-brand-dark mb-16 text-center">
-            Excelência Comprovada em Desenvolvimento e Performance em {locationName}
+            Desenvolvimento e experiência de navegação em {locationName}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {[
-              { title: "Atendimento Express e Lançamento com prazo sob consulta", desc: "Desenvolvemos sua plataforma de forma ágil e otimizada. Lançamos sua estrutura profissional de marca sem taxas desnecessárias e em tempo recorde.", icon: <Clock /> },
-              { title: "React & Conectores de Ponta", desc: "Construímos o código usando as mesmas metodologias enxutas de alta performance que priorizam a experiência de navegação no celular.", icon: <Zap /> },
-              { title: "Foco Total em SEO Regional", desc: "Aparecer no Google Maps e nas pesquisas de raio curto em sua cidade é o principal motor para colher leads de faturamento ativo.", icon: <TrendingUp /> },
-              { title: "Suporte Imediato via WhatsApp", desc: "Central de atendimento amigável e ágil. Você nunca fica na mão na hora de atualizar ou expandir seu portfólio digital.", icon: <Headphones /> }
+              { title: "Escopo e prazo definidos", desc: "Páginas, funcionalidades, responsabilidades e prazo são combinados na proposta antes do início do projeto.", icon: <Clock /> },
+              { title: "Desenvolvimento em React", desc: "O projeto utiliza React para organizar interfaces e componentes do site.", icon: <Zap /> },
+              { title: "Presença local", desc: "Conteúdo orientado à área real de atendimento. Não há garantia de posição no Google, prazo de ranking ou volume de vendas.", icon: <TrendingUp /> },
+              { title: "Contato pelo WhatsApp", desc: "Converse com a equipe sobre o projeto, as atualizações e as condições de suporte previstas na proposta.", icon: <Headphones /> }
             ].map((diff, idx) => (
-              <div key={idx} className="flex gap-6 p-4 rounded-2xl hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-gray-100">
+              <div key={idx} className="locality-difference-card flex gap-6 p-4 rounded-2xl transition-all">
                 <div className="flex-shrink-0 w-14 h-14 bg-brand-primary text-white rounded-2xl flex items-center justify-center shadow-lg shadow-brand-primary/15">
                   {React.cloneElement(diff.icon as React.ReactElement, { size: 28 })}
                 </div>
@@ -771,35 +771,7 @@ export const LocationSEO: React.FC = () => {
         </div>
       </section>
 
-      {/* 7. REVIEWS */}
-      <section className="py-20 bg-brand-dark text-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black mb-16 text-center">
-            O que dizem os clientes atendidos pela Suprema Site
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[
-              { name: "Julio C. Prado", role: "Sócio Diretor", text: `A entrega foi cumprida à risca em tempo recorde. Meu site para consultório em ${locationName} está excelente e já colhemos orçamentos qualificados recorrentes.` },
-              { name: "Fernanda Alencar", role: "Gestora de Clínicas", text: `Excelente atendimento de pós-venda. O suporte nos atende pelo WhatsApp e a indexação regional nos deu destaque imediato no Google Maps.` },
-              { name: "Mário S. Ramos", role: "Diretor Comercial", text: `Melhor investimento digital que fizemos este ano. O site carrega instantaneamente no celular e nosso faturamento aumentou expressivamente.` }
-            ].map((rev, idx) => (
-              <div key={idx} className="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between relative">
-                <div>
-                  <div className="flex text-brand-accent mb-4">
-                    {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
-                  </div>
-                  <p className="text-gray-300 italic mb-6 text-sm">"{rev.text}"</p>
-                </div>
-                <div className="font-bold border-t border-white/5 pt-4 mt-4">
-                  <span className="block text-white text-sm">{rev.name}</span>
-                  <span className="text-brand-primary text-xs font-medium">{rev.role} — {locationName}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* Depoimentos locais gerados removidos: aguardam evidência real. */}
       {/* 8. FAQ LOCAL ACCORDION FOR DOORWAY COMPLIANCE */}
       <section className="py-20 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -834,12 +806,12 @@ export const LocationSEO: React.FC = () => {
             Preparado para Destacar sua Marca <br/>em {locationName}?
           </h2>
           <p className="text-lg md:text-xl mb-12 opacity-95 max-w-2xl mx-auto leading-relaxed">
-            Consiga autoridade, indexação prioritária, design de elite e atendimento express focados em colher novos leads na região de <strong>{locationName}</strong>. Fale agora com nossa equipe comercial!
+            Converse sobre um site que apresente seus serviços e sua área de atendimento em <strong>{locationName}</strong>. Fale agora com nossa equipe comercial!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
               href={`https://wa.me/5541992721004?text=${encodeURIComponent(`Olá! Gostaria de receber atendimento prioritário para criar um site profissional focado na região de ${locationName}.`)}`}
-              className="w-full sm:w-auto bg-brand-dark hover:bg-[#0d1627] text-white font-black px-12 py-5 rounded-2xl text-lg shadow-2xl transition-all transform hover:-translate-y-1 block"
+              className="locality-dark w-full sm:w-auto bg-brand-dark hover:bg-[#0d1627] text-white font-black px-12 py-5 rounded-2xl text-lg shadow-2xl transition-all transform hover:-translate-y-1 block"
             >
               Falar pelo WhatsApp
             </a>
