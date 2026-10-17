@@ -1,0 +1,628 @@
+{
+  "capitalId": "2211001",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (PI)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PI_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "2211001:bairro:2211001009",
+      "name": "Acarapé",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001007",
+      "name": "Aeroporto",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001108",
+      "name": "Água Mineral",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001117",
+      "name": "Alegre",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001003",
+      "name": "Alto Alegre",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001118",
+      "name": "Angelica",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001030",
+      "name": "Angelim",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001032",
+      "name": "Areias",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001066",
+      "name": "Aroeiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001119",
+      "name": "Árvores Verdes",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001051",
+      "name": "Beira Rio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001033",
+      "name": "Bela Vista",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001013",
+      "name": "Bom Jesus",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001114",
+      "name": "Bom Princípio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001034",
+      "name": "Brasilar",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001011",
+      "name": "Buenos Aires",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001095",
+      "name": "Cabral",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001067",
+      "name": "Campestre",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001035",
+      "name": "Catarina",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001094",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001120",
+      "name": "Chapadinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001121",
+      "name": "Cidade jardim",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001097",
+      "name": "Cidade Nova",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001053",
+      "name": "Colorado",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001052",
+      "name": "Comprida",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001096",
+      "name": "Cristo Rei",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001036",
+      "name": "Distrito Industrial",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001015",
+      "name": "Embrapa",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001037",
+      "name": "Esplanada",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001054",
+      "name": "Extrema",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001068",
+      "name": "Fátima",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001116",
+      "name": "Flor do campo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001098",
+      "name": "Frei Serafim",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001055",
+      "name": "Gurupi",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001069",
+      "name": "Horto",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001099",
+      "name": "Ilhotas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001070",
+      "name": "Iningá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001029",
+      "name": "Itaperu",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001056",
+      "name": "Itararé",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001122",
+      "name": "Jacinta Andrade",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001071",
+      "name": "Jóquei",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001057",
+      "name": "Livramento",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001038",
+      "name": "Lourival Parente",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001104",
+      "name": "Macaúba",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001017",
+      "name": "Mafrense",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001101",
+      "name": "Mafuá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001102",
+      "name": "Marquês de Paranaguá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001020",
+      "name": "Matadouro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001100",
+      "name": "Matinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001019",
+      "name": "Memorare",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001021",
+      "name": "Mocambinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001105",
+      "name": "Monte castelo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001123",
+      "name": "Monte Verde",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001073",
+      "name": "Morada do Sol",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001039",
+      "name": "Morada Nova",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001103",
+      "name": "Morro da Esperança",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001072",
+      "name": "Morros",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001106",
+      "name": "N.S.das Graças",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001075",
+      "name": "Noivos",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001022",
+      "name": "Nova Brasília",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001058",
+      "name": "Novo Horizonte",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001074",
+      "name": "Novo Uruguai",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001023",
+      "name": "Olarias",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001124",
+      "name": "Parque Alvorada",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001125",
+      "name": "Parque Brasil",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001043",
+      "name": "Parque do Piauí",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001059",
+      "name": "Parque Ideal",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001040",
+      "name": "Parque Jacinta",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001041",
+      "name": "Parque Juliana",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001060",
+      "name": "Parque Poti",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001042",
+      "name": "Parque São João",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001126",
+      "name": "Parque Sul",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001127",
+      "name": "Pedra Miúda",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001076",
+      "name": "Pedra Mole",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001004",
+      "name": "Piçarra",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001079",
+      "name": "Piçarreira",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001006",
+      "name": "Pio XII",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001107",
+      "name": "Pirajá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001078",
+      "name": "Planalto",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001002",
+      "name": "Por Enquanto",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001128",
+      "name": "Portal da Alegria",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001077",
+      "name": "Porto do Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001024",
+      "name": "Poti Velho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001025",
+      "name": "Primavera",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001044",
+      "name": "Promorar",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001026",
+      "name": "Real Copagri",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001080",
+      "name": "Recanto das Palmeiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001008",
+      "name": "Redenção",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001062",
+      "name": "Redonda",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001061",
+      "name": "Renascença",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001045",
+      "name": "Saci",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001083",
+      "name": "Samapi",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001046",
+      "name": "Santa Cruz",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001086",
+      "name": "Santa Isabel",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001084",
+      "name": "Santa Lia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001047",
+      "name": "Santa Luzia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001129",
+      "name": "Santa Maria",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001111",
+      "name": "Santa Rosa",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001048",
+      "name": "Santo Antônio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001085",
+      "name": "São Cristóvão",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001087",
+      "name": "São João",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001028",
+      "name": "São Joaquim",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001049",
+      "name": "São Lourenço",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001010",
+      "name": "São Pedro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001063",
+      "name": "São Raimundo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001064",
+      "name": "São Sebastião",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001082",
+      "name": "Satélite",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001081",
+      "name": "Socopó",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001088",
+      "name": "Tabajaras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001012",
+      "name": "Tabuleta",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001109",
+      "name": "Tancredo Neves",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001065",
+      "name": "Todos os Santos",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001014",
+      "name": "Três Andares",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001050",
+      "name": "Triunfo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001089",
+      "name": "Uruguai",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001090",
+      "name": "Vale do Gavião",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001092",
+      "name": "Vale Quem Tem",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001091",
+      "name": "Verde Lar",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001113",
+      "name": "Verdecap",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001018",
+      "name": "Vermelha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001016",
+      "name": "Vila Operária",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001027",
+      "name": "Vila São Francisco",
+      "kind": "bairro"
+    },
+    {
+      "id": "2211001:bairro:2211001093",
+      "name": "Zoobotânico",
+      "kind": "bairro"
+    }
+  ]
+}

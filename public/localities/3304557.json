@@ -1,0 +1,847 @@
+{
+  "verifiedAt": "2026-10-17",
+  "status": "complete",
+  "source": {
+    "title": "Prefeitura do Rio — limites de bairros",
+    "url": "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Cartografia/Limites_administrativos/FeatureServer/4"
+  },
+  "note": "Unidades da camada municipal de limites de bairros consultada nesta data. O cadastro pode ser atualizado pelo município.",
+  "capitalId": "3304557",
+  "localities": [
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:070",
+      "name": "Abolição"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:111",
+      "name": "Acari"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:067",
+      "name": "Água Santa"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:034",
+      "name": "Alto da Boa Vista"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:107",
+      "name": "Anchieta"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:037",
+      "name": "Andaraí"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:116",
+      "name": "Anil"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:166",
+      "name": "Argentino"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:097",
+      "name": "Bancários"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:141",
+      "name": "Bangu"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:128",
+      "name": "Barra da Tijuca"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:152",
+      "name": "Barra de Guaratiba"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:165",
+      "name": "Barra Olímpica"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:112",
+      "name": "Barros Filho"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:012",
+      "name": "Benfica"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:089",
+      "name": "Bento Ribeiro"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:040",
+      "name": "Bonsucesso"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:020",
+      "name": "Botafogo"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:045",
+      "name": "Brás de Pina"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:065",
+      "name": "Cachambi"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:093",
+      "name": "Cacuia"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:004",
+      "name": "Caju"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:129",
+      "name": "Camorim"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:078",
+      "name": "Campinho"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:136",
+      "name": "Campo dos Afonsos"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:144",
+      "name": "Campo Grande"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:082",
+      "name": "Cascadura"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:018",
+      "name": "Catete"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:006",
+      "name": "Catumbi"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:080",
+      "name": "Cavalcanti"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:005",
+      "name": "Centro"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:118",
+      "name": "Cidade de Deus"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:008",
+      "name": "Cidade Nova"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:105",
+      "name": "Cidade Universitária"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:096",
+      "name": "Cocotá"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:110",
+      "name": "Coelho Neto"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:077",
+      "name": "Colégio"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:156",
+      "name": "Complexo do Alemão"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:024",
+      "name": "Copacabana"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:046",
+      "name": "Cordovil"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:019",
+      "name": "Cosme Velho"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:147",
+      "name": "Cosmos"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:113",
+      "name": "Costa Barros"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:119",
+      "name": "Curicica"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:053",
+      "name": "Del Castilho"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:134",
+      "name": "Deodoro"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:068",
+      "name": "Encantado"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:081",
+      "name": "Engenheiro Leal"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:055",
+      "name": "Engenho da Rainha"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:066",
+      "name": "Engenho de Dentro"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:061",
+      "name": "Engenho Novo"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:009",
+      "name": "Estácio"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:015",
+      "name": "Flamengo"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:098",
+      "name": "Freguesia (Ilha)"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:120",
+      "name": "Freguesia (Jacarepaguá)"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:104",
+      "name": "Galeão"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:002",
+      "name": "Gamboa"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:117",
+      "name": "Gardênia Azul"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:029",
+      "name": "Gávea"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:160",
+      "name": "Gericinó"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:016",
+      "name": "Glória"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:038",
+      "name": "Grajaú"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:133",
+      "name": "Grumari"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:106",
+      "name": "Guadalupe"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:151",
+      "name": "Guaratiba"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:050",
+      "name": "Higienópolis"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:087",
+      "name": "Honório Gurgel"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:021",
+      "name": "Humaitá"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:164",
+      "name": "Ilha de Guaratiba"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:010",
+      "name": "Imperial de São Cristóvão"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:167",
+      "name": "Ingleses"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:054",
+      "name": "Inhaúma"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:146",
+      "name": "Inhoaíba"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:025",
+      "name": "Ipanema"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:076",
+      "name": "Irajá"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:127",
+      "name": "Itanhangá"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:163",
+      "name": "Jabour"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:051",
+      "name": "Jacaré"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:115",
+      "name": "Jacarepaguá"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:155",
+      "name": "Jacarezinho"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:049",
+      "name": "Jardim América"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:028",
+      "name": "Jardim Botânico"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:100",
+      "name": "Jardim Carioca"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:099",
+      "name": "Jardim Guanabara"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:137",
+      "name": "Jardim Sulacap"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:126",
+      "name": "Joá"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:027",
+      "name": "Lagoa"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:161",
+      "name": "Lapa"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:017",
+      "name": "Laranjeiras"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:026",
+      "name": "Leblon"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:023",
+      "name": "Leme"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:062",
+      "name": "Lins de Vasconcelos"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:083",
+      "name": "Madureira"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:138",
+      "name": "Magalhães Bastos"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:011",
+      "name": "Mangueira"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:039",
+      "name": "Manguinhos"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:035",
+      "name": "Maracanã"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:157",
+      "name": "Maré"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:090",
+      "name": "Marechal Hermes"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:052",
+      "name": "Maria da Graça"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:063",
+      "name": "Méier"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:102",
+      "name": "Moneró"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:042",
+      "name": "Olaria"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:088",
+      "name": "Osvaldo Cruz"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:148",
+      "name": "Paciência"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:140",
+      "name": "Padre Miguel"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:013",
+      "name": "Paquetá"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:047",
+      "name": "Parada de Lucas"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:108",
+      "name": "Parque Anchieta"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:159",
+      "name": "Parque Colúmbia"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:114",
+      "name": "Pavuna"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:121",
+      "name": "Pechincha"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:153",
+      "name": "Pedra de Guaratiba"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:043",
+      "name": "Penha"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:044",
+      "name": "Penha Circular"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:069",
+      "name": "Piedade"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:071",
+      "name": "Pilares"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:094",
+      "name": "Pitangueiras"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:103",
+      "name": "Portuguesa"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:032",
+      "name": "Praça da Bandeira"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:124",
+      "name": "Praça Seca"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:095",
+      "name": "Praia da Bandeira"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:079",
+      "name": "Quintino Bocaiúva"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:041",
+      "name": "Ramos"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:139",
+      "name": "Realengo"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:132",
+      "name": "Recreio dos Bandeirantes"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:059",
+      "name": "Riachuelo"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:091",
+      "name": "Ribeira"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:109",
+      "name": "Ricardo de Albuquerque"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:007",
+      "name": "Rio Comprido"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:058",
+      "name": "Rocha"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:086",
+      "name": "Rocha Miranda"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:154",
+      "name": "Rocinha"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:060",
+      "name": "Sampaio"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:149",
+      "name": "Santa Cruz"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:014",
+      "name": "Santa Teresa"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:143",
+      "name": "Santíssimo"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:003",
+      "name": "Santo Cristo"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:031",
+      "name": "São Conrado"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:057",
+      "name": "São Francisco Xavier"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:001",
+      "name": "Saúde"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:142",
+      "name": "Senador Camará"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:145",
+      "name": "Senador Vasconcelos"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:150",
+      "name": "Sepetiba"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:123",
+      "name": "Tanque"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:122",
+      "name": "Taquara"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:101",
+      "name": "Tauá"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:033",
+      "name": "Tijuca"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:064",
+      "name": "Todos os Santos"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:056",
+      "name": "Tomás Coelho"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:085",
+      "name": "Turiaçú"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:022",
+      "name": "Urca"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:131",
+      "name": "Vargem Grande"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:130",
+      "name": "Vargem Pequena"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:158",
+      "name": "Vasco da Gama"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:084",
+      "name": "Vaz Lobo"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:073",
+      "name": "Vicente de Carvalho"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:030",
+      "name": "Vidigal"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:048",
+      "name": "Vigário Geral"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:074",
+      "name": "Vila da Penha"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:036",
+      "name": "Vila Isabel"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:162",
+      "name": "Vila Kennedy"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:072",
+      "name": "Vila Kosmos"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:135",
+      "name": "Vila Militar"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:125",
+      "name": "Vila Valqueire"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:075",
+      "name": "Vista Alegre"
+    },
+    {
+      "kind": "bairro",
+      "id": "3304557:bairro:092",
+      "name": "Zumbi"
+    }
+  ]
+}

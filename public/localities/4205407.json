@@ -1,0 +1,293 @@
+{
+  "capitalId": "4205407",
+  "status": "complete",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2026-07-15",
+  "source": {
+    "title": "Prefeitura de Florianópolis — Decreto 29.142/2026",
+    "url": "https://redeplanejamento.pmf.sc.gov.br/pt-BR/planos/bairros"
+  },
+  "note": "56 bairros enumerados na página municipal de delimitação oficial. Distritos e regiões não são somados como bairros.",
+  "localities": [
+    {
+      "id": "4205407:bairro:0",
+      "name": "Abraão",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:1",
+      "name": "Agronômica",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:2",
+      "name": "Alto Ribeirão",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:3",
+      "name": "Armação",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:4",
+      "name": "Balneário",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:5",
+      "name": "Barra da Lagoa",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:6",
+      "name": "Bom Abrigo",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:7",
+      "name": "Cachoeira do Bom Jesus",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:8",
+      "name": "Cacupé",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:9",
+      "name": "Campeche",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:10",
+      "name": "Canasvieiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:11",
+      "name": "Canto",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:12",
+      "name": "Capoeiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:13",
+      "name": "Carianos",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:14",
+      "name": "Carvoeira",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:15",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:16",
+      "name": "Coloninha",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:17",
+      "name": "Coqueiros",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:18",
+      "name": "Córrego Grande",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:19",
+      "name": "Costa da Lagoa",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:20",
+      "name": "Costeira do Pirajubaé",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:21",
+      "name": "Daniela",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:22",
+      "name": "Estreito",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:23",
+      "name": "Ingleses",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:24",
+      "name": "Itacorubi",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:25",
+      "name": "Itaguaçu",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:26",
+      "name": "Jardim Atlântico",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:27",
+      "name": "Jardim Capoeiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:28",
+      "name": "João Paulo",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:29",
+      "name": "José Mendes",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:30",
+      "name": "Jurerê",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:31",
+      "name": "Lagoa da Conceição",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:32",
+      "name": "Moçambique",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:33",
+      "name": "Monte Cristo",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:34",
+      "name": "Monte Verde",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:35",
+      "name": "Morro das Pedras",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:36",
+      "name": "Pantanal",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:37",
+      "name": "Pântano do Sul",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:38",
+      "name": "Ponta das Canas",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:39",
+      "name": "Praia Brava",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:40",
+      "name": "Praia do Forte",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:41",
+      "name": "Ratones",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:42",
+      "name": "Ribeirão da Ilha",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:43",
+      "name": "Rio Tavares",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:44",
+      "name": "Rio Vermelho",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:45",
+      "name": "Saco dos Limões",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:46",
+      "name": "Saco Grande",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:47",
+      "name": "Sambaqui",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:48",
+      "name": "Santa Mônica",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:49",
+      "name": "Santinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:50",
+      "name": "Santo Antônio de Lisboa",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:51",
+      "name": "Tapera da Base",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:52",
+      "name": "Trindade",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:53",
+      "name": "Vargem do Bom Jesus",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:54",
+      "name": "Vargem Grande",
+      "kind": "bairro"
+    },
+    {
+      "id": "4205407:bairro:55",
+      "name": "Vargem Pequena",
+      "kind": "bairro"
+    }
+  ]
+}

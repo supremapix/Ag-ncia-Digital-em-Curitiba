@@ -1,0 +1,2478 @@
+{
+  "capitalId": "3106200",
+  "note": "Cadastro municipal de bairros populares para endereçamento, arquivo de setembro de 2024. Classificação própria da fonte; alterações posteriores ainda não conciliadas. Não representa divisão administrativa nem inventário atual exaustivo.",
+  "referenceDate": "2024-09-02",
+  "source": {
+    "url": "https://ckan.pbh.gov.br/dataset/d890ccf6-d424-43bd-b513-b492306a0957/resource/710e73a6-c0b8-41e5-ad08-b6b9e33564dd/download/20240902_bairro_popular.csv",
+    "title": "PBH — bairros populares para endereçamento"
+  },
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "localities": [
+    {
+      "id": "3106200:bairro-popular:600",
+      "kind": "bairro-popular",
+      "name": "Aarão Reis"
+    },
+    {
+      "id": "3106200:bairro-popular:1483",
+      "kind": "bairro-popular",
+      "name": "Acaba Mundo"
+    },
+    {
+      "id": "3106200:bairro-popular:1267",
+      "kind": "bairro-popular",
+      "name": "Acaiaca"
+    },
+    {
+      "id": "3106200:bairro-popular:1147",
+      "kind": "bairro-popular",
+      "name": "Ademar Maldonado"
+    },
+    {
+      "id": "3106200:bairro-popular:830",
+      "kind": "bairro-popular",
+      "name": "Aeroporto"
+    },
+    {
+      "id": "3106200:bairro-popular:1270",
+      "kind": "bairro-popular",
+      "name": "Águas Claras"
+    },
+    {
+      "id": "3106200:bairro-popular:602",
+      "kind": "bairro-popular",
+      "name": "Alípio de Melo"
+    },
+    {
+      "id": "3106200:bairro-popular:1271",
+      "kind": "bairro-popular",
+      "name": "Alpes"
+    },
+    {
+      "id": "3106200:bairro-popular:1665",
+      "kind": "bairro-popular",
+      "name": "Alta Tensão"
+    },
+    {
+      "id": "3106200:bairro-popular:1272",
+      "kind": "bairro-popular",
+      "name": "Alta Tensão I"
+    },
+    {
+      "id": "3106200:bairro-popular:822",
+      "kind": "bairro-popular",
+      "name": "Alto Barroca"
+    },
+    {
+      "id": "3106200:bairro-popular:603",
+      "kind": "bairro-popular",
+      "name": "Alto Caiçaras"
+    },
+    {
+      "id": "3106200:bairro-popular:1666",
+      "kind": "bairro-popular",
+      "name": "Alto das Antenas"
+    },
+    {
+      "id": "3106200:bairro-popular:604",
+      "kind": "bairro-popular",
+      "name": "Alto dos Pinheiros"
+    },
+    {
+      "id": "3106200:bairro-popular:1246",
+      "kind": "bairro-popular",
+      "name": "Alto Vera Cruz"
+    },
+    {
+      "id": "3106200:bairro-popular:605",
+      "kind": "bairro-popular",
+      "name": "Álvaro Camargos"
+    },
+    {
+      "id": "3106200:bairro-popular:1668",
+      "kind": "bairro-popular",
+      "name": "Ambrosina"
+    },
+    {
+      "id": "3106200:bairro-popular:607",
+      "kind": "bairro-popular",
+      "name": "Anchieta"
+    },
+    {
+      "id": "3106200:bairro-popular:1658",
+      "kind": "bairro-popular",
+      "name": "Andiroba"
+    },
+    {
+      "id": "3106200:bairro-popular:1976",
+      "kind": "bairro-popular",
+      "name": "Antônio Ribeiro de Abreu"
+    },
+    {
+      "id": "3106200:bairro-popular:608",
+      "kind": "bairro-popular",
+      "name": "Aparecida"
+    },
+    {
+      "id": "3106200:bairro-popular:821",
+      "kind": "bairro-popular",
+      "name": "Aparecida Sétima Seção"
+    },
+    {
+      "id": "3106200:bairro-popular:1276",
+      "kind": "bairro-popular",
+      "name": "Apolônia"
+    },
+    {
+      "id": "3106200:bairro-popular:1141",
+      "kind": "bairro-popular",
+      "name": "Araguaia"
+    },
+    {
+      "id": "3106200:bairro-popular:1145",
+      "kind": "bairro-popular",
+      "name": "Átila de Paiva"
+    },
+    {
+      "id": "3106200:bairro-popular:1278",
+      "kind": "bairro-popular",
+      "name": "Bacurau"
+    },
+    {
+      "id": "3106200:bairro-popular:1490",
+      "kind": "bairro-popular",
+      "name": "Bairro das Indústrias I"
+    },
+    {
+      "id": "3106200:bairro-popular:1279",
+      "kind": "bairro-popular",
+      "name": "Bairro das Indústrias II"
+    },
+    {
+      "id": "3106200:bairro-popular:1138",
+      "kind": "bairro-popular",
+      "name": "Bairro Novo das Indústrias"
+    },
+    {
+      "id": "3106200:bairro-popular:612",
+      "kind": "bairro-popular",
+      "name": "Baleia"
+    },
+    {
+      "id": "3106200:bairro-popular:742",
+      "kind": "bairro-popular",
+      "name": "Bandeirantes"
+    },
+    {
+      "id": "3106200:bairro-popular:1282",
+      "kind": "bairro-popular",
+      "name": "Barão Homem de Melo I"
+    },
+    {
+      "id": "3106200:bairro-popular:1281",
+      "kind": "bairro-popular",
+      "name": "Barão Homem de Melo III"
+    },
+    {
+      "id": "3106200:bairro-popular:1280",
+      "kind": "bairro-popular",
+      "name": "Barão Homem de Melo IV"
+    },
+    {
+      "id": "3106200:bairro-popular:1491",
+      "kind": "bairro-popular",
+      "name": "Barreiro"
+    },
+    {
+      "id": "3106200:bairro-popular:617",
+      "kind": "bairro-popular",
+      "name": "Barro Preto"
+    },
+    {
+      "id": "3106200:bairro-popular:616",
+      "kind": "bairro-popular",
+      "name": "Barroca"
+    },
+    {
+      "id": "3106200:bairro-popular:1241",
+      "kind": "bairro-popular",
+      "name": "Beija Flor"
+    },
+    {
+      "id": "3106200:bairro-popular:1286",
+      "kind": "bairro-popular",
+      "name": "Beira-Linha"
+    },
+    {
+      "id": "3106200:bairro-popular:1287",
+      "kind": "bairro-popular",
+      "name": "Bela Vitória"
+    },
+    {
+      "id": "3106200:bairro-popular:1651",
+      "kind": "bairro-popular",
+      "name": "Belém"
+    },
+    {
+      "id": "3106200:bairro-popular:1239",
+      "kind": "bairro-popular",
+      "name": "Belmonte"
+    },
+    {
+      "id": "3106200:bairro-popular:618",
+      "kind": "bairro-popular",
+      "name": "Belvedere"
+    },
+    {
+      "id": "3106200:bairro-popular:1289",
+      "kind": "bairro-popular",
+      "name": "Bernadete"
+    },
+    {
+      "id": "3106200:bairro-popular:619",
+      "kind": "bairro-popular",
+      "name": "Betânia"
+    },
+    {
+      "id": "3106200:bairro-popular:1290",
+      "kind": "bairro-popular",
+      "name": "Biquinhas"
+    },
+    {
+      "id": "3106200:bairro-popular:1291",
+      "kind": "bairro-popular",
+      "name": "Bispo de Maura"
+    },
+    {
+      "id": "3106200:bairro-popular:1659",
+      "kind": "bairro-popular",
+      "name": "Boa Esperança"
+    },
+    {
+      "id": "3106200:bairro-popular:1293",
+      "kind": "bairro-popular",
+      "name": "Boa União I"
+    },
+    {
+      "id": "3106200:bairro-popular:1292",
+      "kind": "bairro-popular",
+      "name": "Boa União II"
+    },
+    {
+      "id": "3106200:bairro-popular:1156",
+      "kind": "bairro-popular",
+      "name": "Boa Viagem"
+    },
+    {
+      "id": "3106200:bairro-popular:620",
+      "kind": "bairro-popular",
+      "name": "Boa Vista"
+    },
+    {
+      "id": "3106200:bairro-popular:621",
+      "kind": "bairro-popular",
+      "name": "Bom Jesus"
+    },
+    {
+      "id": "3106200:bairro-popular:622",
+      "kind": "bairro-popular",
+      "name": "Bonfim"
+    },
+    {
+      "id": "3106200:bairro-popular:1140",
+      "kind": "bairro-popular",
+      "name": "Bonsucesso"
+    },
+    {
+      "id": "3106200:bairro-popular:1150",
+      "kind": "bairro-popular",
+      "name": "Brasil Industrial"
+    },
+    {
+      "id": "3106200:bairro-popular:652",
+      "kind": "bairro-popular",
+      "name": "Braúnas"
+    },
+    {
+      "id": "3106200:bairro-popular:623",
+      "kind": "bairro-popular",
+      "name": "Buritis"
+    },
+    {
+      "id": "3106200:bairro-popular:624",
+      "kind": "bairro-popular",
+      "name": "Cabana do Pai Tomás"
+    },
+    {
+      "id": "3106200:bairro-popular:625",
+      "kind": "bairro-popular",
+      "name": "Cachoeirinha"
+    },
+    {
+      "id": "3106200:bairro-popular:626",
+      "kind": "bairro-popular",
+      "name": "Caetano Furquim"
+    },
+    {
+      "id": "3106200:bairro-popular:627",
+      "kind": "bairro-popular",
+      "name": "Caiçara-Adelaide"
+    },
+    {
+      "id": "3106200:bairro-popular:628",
+      "kind": "bairro-popular",
+      "name": "Caiçaras"
+    },
+    {
+      "id": "3106200:bairro-popular:629",
+      "kind": "bairro-popular",
+      "name": "Calafate"
+    },
+    {
+      "id": "3106200:bairro-popular:630",
+      "kind": "bairro-popular",
+      "name": "Califórnia"
+    },
+    {
+      "id": "3106200:bairro-popular:631",
+      "kind": "bairro-popular",
+      "name": "Camargos"
+    },
+    {
+      "id": "3106200:bairro-popular:2042",
+      "kind": "bairro-popular",
+      "name": "Camilo Torres"
+    },
+    {
+      "id": "3106200:bairro-popular:632",
+      "kind": "bairro-popular",
+      "name": "Campo Alegre"
+    },
+    {
+      "id": "3106200:bairro-popular:633",
+      "kind": "bairro-popular",
+      "name": "Campus UFMG"
+    },
+    {
+      "id": "3106200:bairro-popular:634",
+      "kind": "bairro-popular",
+      "name": "Canaã"
+    },
+    {
+      "id": "3106200:bairro-popular:1298",
+      "kind": "bairro-popular",
+      "name": "Canadá"
+    },
+    {
+      "id": "3106200:bairro-popular:1299",
+      "kind": "bairro-popular",
+      "name": "Candelária"
+    },
+    {
+      "id": "3106200:bairro-popular:906",
+      "kind": "bairro-popular",
+      "name": "Capitão Eduardo"
+    },
+    {
+      "id": "3106200:bairro-popular:635",
+      "kind": "bairro-popular",
+      "name": "Cardoso"
+    },
+    {
+      "id": "3106200:bairro-popular:636",
+      "kind": "bairro-popular",
+      "name": "Carlos Prates"
+    },
+    {
+      "id": "3106200:bairro-popular:637",
+      "kind": "bairro-popular",
+      "name": "Carmo"
+    },
+    {
+      "id": "3106200:bairro-popular:638",
+      "kind": "bairro-popular",
+      "name": "Casa Branca"
+    },
+    {
+      "id": "3106200:bairro-popular:1154",
+      "kind": "bairro-popular",
+      "name": "Castanheira"
+    },
+    {
+      "id": "3106200:bairro-popular:639",
+      "kind": "bairro-popular",
+      "name": "Castelo"
+    },
+    {
+      "id": "3106200:bairro-popular:1485",
+      "kind": "bairro-popular",
+      "name": "CDI Jatobá"
+    },
+    {
+      "id": "3106200:bairro-popular:1303",
+      "kind": "bairro-popular",
+      "name": "Cenáculo"
+    },
+    {
+      "id": "3106200:bairro-popular:642",
+      "kind": "bairro-popular",
+      "name": "Centro"
+    },
+    {
+      "id": "3106200:bairro-popular:643",
+      "kind": "bairro-popular",
+      "name": "Céu Azul"
+    },
+    {
+      "id": "3106200:bairro-popular:1304",
+      "kind": "bairro-popular",
+      "name": "Chácara Leonina"
+    },
+    {
+      "id": "3106200:bairro-popular:644",
+      "kind": "bairro-popular",
+      "name": "Cidade Jardim"
+    },
+    {
+      "id": "3106200:bairro-popular:1487",
+      "kind": "bairro-popular",
+      "name": "Cidade Jardim Taquaril"
+    },
+    {
+      "id": "3106200:bairro-popular:645",
+      "kind": "bairro-popular",
+      "name": "Cidade Nova"
+    },
+    {
+      "id": "3106200:bairro-popular:1161",
+      "kind": "bairro-popular",
+      "name": "Cinquentenário"
+    },
+    {
+      "id": "3106200:bairro-popular:646",
+      "kind": "bairro-popular",
+      "name": "Colégio Batista"
+    },
+    {
+      "id": "3106200:bairro-popular:1306",
+      "kind": "bairro-popular",
+      "name": "Comiteco"
+    },
+    {
+      "id": "3106200:bairro-popular:647",
+      "kind": "bairro-popular",
+      "name": "Concórdia"
+    },
+    {
+      "id": "3106200:bairro-popular:1307",
+      "kind": "bairro-popular",
+      "name": "Cônego Pinheiro"
+    },
+    {
+      "id": "3106200:bairro-popular:1308",
+      "kind": "bairro-popular",
+      "name": "Cônego Pinheiro A"
+    },
+    {
+      "id": "3106200:bairro-popular:835",
+      "kind": "bairro-popular",
+      "name": "Confisco"
+    },
+    {
+      "id": "3106200:bairro-popular:1139",
+      "kind": "bairro-popular",
+      "name": "Conjunto Bonsucesso"
+    },
+    {
+      "id": "3106200:bairro-popular:1492",
+      "kind": "bairro-popular",
+      "name": "Conjunto Califórnia I"
+    },
+    {
+      "id": "3106200:bairro-popular:649",
+      "kind": "bairro-popular",
+      "name": "Conjunto Califórnia II"
+    },
+    {
+      "id": "3106200:bairro-popular:1495",
+      "kind": "bairro-popular",
+      "name": "Conjunto Capitão Eduardo"
+    },
+    {
+      "id": "3106200:bairro-popular:650",
+      "kind": "bairro-popular",
+      "name": "Conjunto Celso Machado"
+    },
+    {
+      "id": "3106200:bairro-popular:1309",
+      "kind": "bairro-popular",
+      "name": "Conjunto Floramar"
+    },
+    {
+      "id": "3106200:bairro-popular:1310",
+      "kind": "bairro-popular",
+      "name": "Conjunto Jardim Filadélfia"
+    },
+    {
+      "id": "3106200:bairro-popular:1160",
+      "kind": "bairro-popular",
+      "name": "Conjunto Jatobá"
+    },
+    {
+      "id": "3106200:bairro-popular:1311",
+      "kind": "bairro-popular",
+      "name": "Conjunto Lagoa"
+    },
+    {
+      "id": "3106200:bairro-popular:1312",
+      "kind": "bairro-popular",
+      "name": "Conjunto Minascaixa"
+    },
+    {
+      "id": "3106200:bairro-popular:1365",
+      "kind": "bairro-popular",
+      "name": "Conjunto Novo Dom Bosco"
+    },
+    {
+      "id": "3106200:bairro-popular:1313",
+      "kind": "bairro-popular",
+      "name": "Conjunto Paulo VI"
+    },
+    {
+      "id": "3106200:bairro-popular:1314",
+      "kind": "bairro-popular",
+      "name": "Conjunto Providência"
+    },
+    {
+      "id": "3106200:bairro-popular:769",
+      "kind": "bairro-popular",
+      "name": "Conjunto Santa Maria"
+    },
+    {
+      "id": "3106200:bairro-popular:1315",
+      "kind": "bairro-popular",
+      "name": "Conjunto São Francisco de Assis"
+    },
+    {
+      "id": "3106200:bairro-popular:1316",
+      "kind": "bairro-popular",
+      "name": "Conjunto Serra Verde"
+    },
+    {
+      "id": "3106200:bairro-popular:1317",
+      "kind": "bairro-popular",
+      "name": "Conjunto Taquaril"
+    },
+    {
+      "id": "3106200:bairro-popular:828",
+      "kind": "bairro-popular",
+      "name": "Copacabana"
+    },
+    {
+      "id": "3106200:bairro-popular:654",
+      "kind": "bairro-popular",
+      "name": "Coqueiros"
+    },
+    {
+      "id": "3106200:bairro-popular:655",
+      "kind": "bairro-popular",
+      "name": "Coração de Jesus"
+    },
+    {
+      "id": "3106200:bairro-popular:656",
+      "kind": "bairro-popular",
+      "name": "Coração Eucarístico"
+    },
+    {
+      "id": "3106200:bairro-popular:1257",
+      "kind": "bairro-popular",
+      "name": "Corumbiara"
+    },
+    {
+      "id": "3106200:bairro-popular:2032",
+      "kind": "bairro-popular",
+      "name": "Cristo Rei"
+    },
+    {
+      "id": "3106200:bairro-popular:657",
+      "kind": "bairro-popular",
+      "name": "Cruzeiro"
+    },
+    {
+      "id": "3106200:bairro-popular:1318",
+      "kind": "bairro-popular",
+      "name": "Custodinha"
+    },
+    {
+      "id": "3106200:bairro-popular:2043",
+      "kind": "bairro-popular",
+      "name": "Dandara"
+    },
+    {
+      "id": "3106200:bairro-popular:1319",
+      "kind": "bairro-popular",
+      "name": "Delta"
+    },
+    {
+      "id": "3106200:bairro-popular:1148",
+      "kind": "bairro-popular",
+      "name": "Diamante"
+    },
+    {
+      "id": "3106200:bairro-popular:1171",
+      "kind": "bairro-popular",
+      "name": "Distrito Industrial do Jatobá"
+    },
+    {
+      "id": "3106200:bairro-popular:658",
+      "kind": "bairro-popular",
+      "name": "Dom Bosco"
+    },
+    {
+      "id": "3106200:bairro-popular:659",
+      "kind": "bairro-popular",
+      "name": "Dom Cabral"
+    },
+    {
+      "id": "3106200:bairro-popular:660",
+      "kind": "bairro-popular",
+      "name": "Dom Joaquim"
+    },
+    {
+      "id": "3106200:bairro-popular:661",
+      "kind": "bairro-popular",
+      "name": "Dom Silvério"
+    },
+    {
+      "id": "3106200:bairro-popular:662",
+      "kind": "bairro-popular",
+      "name": "Dona Clara"
+    },
+    {
+      "id": "3106200:bairro-popular:2040",
+      "kind": "bairro-popular",
+      "name": "Eliana Silva"
+    },
+    {
+      "id": "3106200:bairro-popular:664",
+      "kind": "bairro-popular",
+      "name": "Engenho Nogueira"
+    },
+    {
+      "id": "3106200:bairro-popular:665",
+      "kind": "bairro-popular",
+      "name": "Ermelinda"
+    },
+    {
+      "id": "3106200:bairro-popular:1162",
+      "kind": "bairro-popular",
+      "name": "Ernesto do Nascimento"
+    },
+    {
+      "id": "3106200:bairro-popular:1321",
+      "kind": "bairro-popular",
+      "name": "Esperança"
+    },
+    {
+      "id": "3106200:bairro-popular:666",
+      "kind": "bairro-popular",
+      "name": "Esplanada"
+    },
+    {
+      "id": "3106200:bairro-popular:667",
+      "kind": "bairro-popular",
+      "name": "Estoril"
+    },
+    {
+      "id": "3106200:bairro-popular:1323",
+      "kind": "bairro-popular",
+      "name": "Estrela"
+    },
+    {
+      "id": "3106200:bairro-popular:1324",
+      "kind": "bairro-popular",
+      "name": "Estrela do Oriente"
+    },
+    {
+      "id": "3106200:bairro-popular:669",
+      "kind": "bairro-popular",
+      "name": "Etelvina Carneiro"
+    },
+    {
+      "id": "3106200:bairro-popular:670",
+      "kind": "bairro-popular",
+      "name": "Europa"
+    },
+    {
+      "id": "3106200:bairro-popular:671",
+      "kind": "bairro-popular",
+      "name": "Eymard"
+    },
+    {
+      "id": "3106200:bairro-popular:1325",
+      "kind": "bairro-popular",
+      "name": "Fazendinha"
+    },
+    {
+      "id": "3106200:bairro-popular:926",
+      "kind": "bairro-popular",
+      "name": "Fernão Dias"
+    },
+    {
+      "id": "3106200:bairro-popular:1326",
+      "kind": "bairro-popular",
+      "name": "Flamengo"
+    },
+    {
+      "id": "3106200:bairro-popular:1143",
+      "kind": "bairro-popular",
+      "name": "Flávio de Oliveira"
+    },
+    {
+      "id": "3106200:bairro-popular:677",
+      "kind": "bairro-popular",
+      "name": "Flávio Marques Lisboa"
+    },
+    {
+      "id": "3106200:bairro-popular:678",
+      "kind": "bairro-popular",
+      "name": "Floramar"
+    },
+    {
+      "id": "3106200:bairro-popular:679",
+      "kind": "bairro-popular",
+      "name": "Floresta"
+    },
+    {
+      "id": "3106200:bairro-popular:615",
+      "kind": "bairro-popular",
+      "name": "Frei Leopoldo"
+    },
+    {
+      "id": "3106200:bairro-popular:681",
+      "kind": "bairro-popular",
+      "name": "Funcionários"
+    },
+    {
+      "id": "3106200:bairro-popular:682",
+      "kind": "bairro-popular",
+      "name": "Gameleira"
+    },
+    {
+      "id": "3106200:bairro-popular:807",
+      "kind": "bairro-popular",
+      "name": "Garças"
+    },
+    {
+      "id": "3106200:bairro-popular:684",
+      "kind": "bairro-popular",
+      "name": "Glória"
+    },
+    {
+      "id": "3106200:bairro-popular:812",
+      "kind": "bairro-popular",
+      "name": "Goiânia"
+    },
+    {
+      "id": "3106200:bairro-popular:609",
+      "kind": "bairro-popular",
+      "name": "Graça"
+    },
+    {
+      "id": "3106200:bairro-popular:686",
+      "kind": "bairro-popular",
+      "name": "Grajaú"
+    },
+    {
+      "id": "3106200:bairro-popular:1245",
+      "kind": "bairro-popular",
+      "name": "Granja de Freitas"
+    },
+    {
+      "id": "3106200:bairro-popular:1176",
+      "kind": "bairro-popular",
+      "name": "Granja Werneck"
+    },
+    {
+      "id": "3106200:bairro-popular:1327",
+      "kind": "bairro-popular",
+      "name": "Grota"
+    },
+    {
+      "id": "3106200:bairro-popular:1328",
+      "kind": "bairro-popular",
+      "name": "Grotinha"
+    },
+    {
+      "id": "3106200:bairro-popular:1329",
+      "kind": "bairro-popular",
+      "name": "Guanabara"
+    },
+    {
+      "id": "3106200:bairro-popular:687",
+      "kind": "bairro-popular",
+      "name": "Guarani"
+    },
+    {
+      "id": "3106200:bairro-popular:1330",
+      "kind": "bairro-popular",
+      "name": "Guaratã"
+    },
+    {
+      "id": "3106200:bairro-popular:689",
+      "kind": "bairro-popular",
+      "name": "Gutierrez"
+    },
+    {
+      "id": "3106200:bairro-popular:690",
+      "kind": "bairro-popular",
+      "name": "Havaí"
+    },
+    {
+      "id": "3106200:bairro-popular:691",
+      "kind": "bairro-popular",
+      "name": "Heliópolis"
+    },
+    {
+      "id": "3106200:bairro-popular:692",
+      "kind": "bairro-popular",
+      "name": "Horto"
+    },
+    {
+      "id": "3106200:bairro-popular:1331",
+      "kind": "bairro-popular",
+      "name": "Horto Florestal"
+    },
+    {
+      "id": "3106200:bairro-popular:1332",
+      "kind": "bairro-popular",
+      "name": "Imbaúbas"
+    },
+    {
+      "id": "3106200:bairro-popular:693",
+      "kind": "bairro-popular",
+      "name": "Inconfidência"
+    },
+    {
+      "id": "3106200:bairro-popular:1261",
+      "kind": "bairro-popular",
+      "name": "Indaiá"
+    },
+    {
+      "id": "3106200:bairro-popular:694",
+      "kind": "bairro-popular",
+      "name": "Independência"
+    },
+    {
+      "id": "3106200:bairro-popular:1043",
+      "kind": "bairro-popular",
+      "name": "Ipê"
+    },
+    {
+      "id": "3106200:bairro-popular:698",
+      "kind": "bairro-popular",
+      "name": "Ipiranga"
+    },
+    {
+      "id": "3106200:bairro-popular:2041",
+      "kind": "bairro-popular",
+      "name": "Irmã Dorothy"
+    },
+    {
+      "id": "3106200:bairro-popular:1157",
+      "kind": "bairro-popular",
+      "name": "Itaipu"
+    },
+    {
+      "id": "3106200:bairro-popular:699",
+      "kind": "bairro-popular",
+      "name": "Itapoã"
+    },
+    {
+      "id": "3106200:bairro-popular:1333",
+      "kind": "bairro-popular",
+      "name": "Itatiaia"
+    },
+    {
+      "id": "3106200:bairro-popular:700",
+      "kind": "bairro-popular",
+      "name": "Jaqueline"
+    },
+    {
+      "id": "3106200:bairro-popular:701",
+      "kind": "bairro-popular",
+      "name": "Jaraguá"
+    },
+    {
+      "id": "3106200:bairro-popular:1172",
+      "kind": "bairro-popular",
+      "name": "Jardim Alvorada"
+    },
+    {
+      "id": "3106200:bairro-popular:702",
+      "kind": "bairro-popular",
+      "name": "Jardim América"
+    },
+    {
+      "id": "3106200:bairro-popular:653",
+      "kind": "bairro-popular",
+      "name": "Jardim Atlântico"
+    },
+    {
+      "id": "3106200:bairro-popular:1334",
+      "kind": "bairro-popular",
+      "name": "Jardim do Vale"
+    },
+    {
+      "id": "3106200:bairro-popular:703",
+      "kind": "bairro-popular",
+      "name": "Jardim dos Comerciários"
+    },
+    {
+      "id": "3106200:bairro-popular:834",
+      "kind": "bairro-popular",
+      "name": "Jardim Felicidade"
+    },
+    {
+      "id": "3106200:bairro-popular:2030",
+      "kind": "bairro-popular",
+      "name": "Jardim Getsemani"
+    },
+    {
+      "id": "3106200:bairro-popular:1065",
+      "kind": "bairro-popular",
+      "name": "Jardim Guanabara"
+    },
+    {
+      "id": "3106200:bairro-popular:1493",
+      "kind": "bairro-popular",
+      "name": "Jardim Leblon"
+    },
+    {
+      "id": "3106200:bairro-popular:2036",
+      "kind": "bairro-popular",
+      "name": "Jardim Liberdade"
+    },
+    {
+      "id": "3106200:bairro-popular:704",
+      "kind": "bairro-popular",
+      "name": "Jardim Montanhês"
+    },
+    {
+      "id": "3106200:bairro-popular:787",
+      "kind": "bairro-popular",
+      "name": "Jardim São José"
+    },
+    {
+      "id": "3106200:bairro-popular:831",
+      "kind": "bairro-popular",
+      "name": "Jardim Vitória"
+    },
+    {
+      "id": "3106200:bairro-popular:705",
+      "kind": "bairro-popular",
+      "name": "Jardinópolis"
+    },
+    {
+      "id": "3106200:bairro-popular:706",
+      "kind": "bairro-popular",
+      "name": "Jatobá"
+    },
+    {
+      "id": "3106200:bairro-popular:1336",
+      "kind": "bairro-popular",
+      "name": "João Alfredo"
+    },
+    {
+      "id": "3106200:bairro-popular:1146",
+      "kind": "bairro-popular",
+      "name": "João Paulo II"
+    },
+    {
+      "id": "3106200:bairro-popular:707",
+      "kind": "bairro-popular",
+      "name": "João Pinheiro"
+    },
+    {
+      "id": "3106200:bairro-popular:1258",
+      "kind": "bairro-popular",
+      "name": "Jonas Veiga"
+    },
+    {
+      "id": "3106200:bairro-popular:688",
+      "kind": "bairro-popular",
+      "name": "Juliana"
+    },
+    {
+      "id": "3106200:bairro-popular:708",
+      "kind": "bairro-popular",
+      "name": "Lagoa"
+    },
+    {
+      "id": "3106200:bairro-popular:1972",
+      "kind": "bairro-popular",
+      "name": "Lagoa da Pampulha"
+    },
+    {
+      "id": "3106200:bairro-popular:710",
+      "kind": "bairro-popular",
+      "name": "Lagoinha"
+    },
+    {
+      "id": "3106200:bairro-popular:709",
+      "kind": "bairro-popular",
+      "name": "Lagoinha Leblon"
+    },
+    {
+      "id": "3106200:bairro-popular:1337",
+      "kind": "bairro-popular",
+      "name": "Lajedo"
+    },
+    {
+      "id": "3106200:bairro-popular:1339",
+      "kind": "bairro-popular",
+      "name": "Leonina"
+    },
+    {
+      "id": "3106200:bairro-popular:712",
+      "kind": "bairro-popular",
+      "name": "Letícia"
+    },
+    {
+      "id": "3106200:bairro-popular:713",
+      "kind": "bairro-popular",
+      "name": "Liberdade"
+    },
+    {
+      "id": "3106200:bairro-popular:714",
+      "kind": "bairro-popular",
+      "name": "Lindéia"
+    },
+    {
+      "id": "3106200:bairro-popular:1340",
+      "kind": "bairro-popular",
+      "name": "Lorena"
+    },
+    {
+      "id": "3106200:bairro-popular:715",
+      "kind": "bairro-popular",
+      "name": "Lourdes"
+    },
+    {
+      "id": "3106200:bairro-popular:716",
+      "kind": "bairro-popular",
+      "name": "Luxemburgo"
+    },
+    {
+      "id": "3106200:bairro-popular:717",
+      "kind": "bairro-popular",
+      "name": "Madre Gertrudes"
+    },
+    {
+      "id": "3106200:bairro-popular:1341",
+      "kind": "bairro-popular",
+      "name": "Madri"
+    },
+    {
+      "id": "3106200:bairro-popular:1342",
+      "kind": "bairro-popular",
+      "name": "Mala e Cuia"
+    },
+    {
+      "id": "3106200:bairro-popular:1343",
+      "kind": "bairro-popular",
+      "name": "Manacás"
+    },
+    {
+      "id": "3106200:bairro-popular:718",
+      "kind": "bairro-popular",
+      "name": "Mangabeiras"
+    },
+    {
+      "id": "3106200:bairro-popular:1164",
+      "kind": "bairro-popular",
+      "name": "Mangueiras"
+    },
+    {
+      "id": "3106200:bairro-popular:719",
+      "kind": "bairro-popular",
+      "name": "Mantiqueira"
+    },
+    {
+      "id": "3106200:bairro-popular:720",
+      "kind": "bairro-popular",
+      "name": "Marajó"
+    },
+    {
+      "id": "3106200:bairro-popular:1346",
+      "kind": "bairro-popular",
+      "name": "Maravilha"
+    },
+    {
+      "id": "3106200:bairro-popular:1348",
+      "kind": "bairro-popular",
+      "name": "Marçola"
+    },
+    {
+      "id": "3106200:bairro-popular:771",
+      "kind": "bairro-popular",
+      "name": "Maria Goretti"
+    },
+    {
+      "id": "3106200:bairro-popular:721",
+      "kind": "bairro-popular",
+      "name": "Maria Helena"
+    },
+    {
+      "id": "3106200:bairro-popular:1349",
+      "kind": "bairro-popular",
+      "name": "Maria Teresa"
+    },
+    {
+      "id": "3106200:bairro-popular:816",
+      "kind": "bairro-popular",
+      "name": "Maria Virgínia"
+    },
+    {
+      "id": "3106200:bairro-popular:1350",
+      "kind": "bairro-popular",
+      "name": "Mariano de Abreu"
+    },
+    {
+      "id": "3106200:bairro-popular:1351",
+      "kind": "bairro-popular",
+      "name": "Marieta I"
+    },
+    {
+      "id": "3106200:bairro-popular:1973",
+      "kind": "bairro-popular",
+      "name": "Marieta II"
+    },
+    {
+      "id": "3106200:bairro-popular:1158",
+      "kind": "bairro-popular",
+      "name": "Marilândia"
+    },
+    {
+      "id": "3106200:bairro-popular:1353",
+      "kind": "bairro-popular",
+      "name": "Mariquinhas"
+    },
+    {
+      "id": "3106200:bairro-popular:1354",
+      "kind": "bairro-popular",
+      "name": "Marmiteiros"
+    },
+    {
+      "id": "3106200:bairro-popular:722",
+      "kind": "bairro-popular",
+      "name": "Milionários"
+    },
+    {
+      "id": "3106200:bairro-popular:723",
+      "kind": "bairro-popular",
+      "name": "Minas Brasil"
+    },
+    {
+      "id": "3106200:bairro-popular:724",
+      "kind": "bairro-popular",
+      "name": "Minascaixa"
+    },
+    {
+      "id": "3106200:bairro-popular:725",
+      "kind": "bairro-popular",
+      "name": "Minaslândia"
+    },
+    {
+      "id": "3106200:bairro-popular:1166",
+      "kind": "bairro-popular",
+      "name": "Mineirão"
+    },
+    {
+      "id": "3106200:bairro-popular:1149",
+      "kind": "bairro-popular",
+      "name": "Miramar"
+    },
+    {
+      "id": "3106200:bairro-popular:1356",
+      "kind": "bairro-popular",
+      "name": "Mirante"
+    },
+    {
+      "id": "3106200:bairro-popular:1357",
+      "kind": "bairro-popular",
+      "name": "Mirtes"
+    },
+    {
+      "id": "3106200:bairro-popular:726",
+      "kind": "bairro-popular",
+      "name": "Monsenhor Messias"
+    },
+    {
+      "id": "3106200:bairro-popular:695",
+      "kind": "bairro-popular",
+      "name": "Monte Azul"
+    },
+    {
+      "id": "3106200:bairro-popular:1006",
+      "kind": "bairro-popular",
+      "name": "Monte São José"
+    },
+    {
+      "id": "3106200:bairro-popular:2035",
+      "kind": "bairro-popular",
+      "name": "Montes Claros"
+    },
+    {
+      "id": "3106200:bairro-popular:1359",
+      "kind": "bairro-popular",
+      "name": "Morro dos Macacos"
+    },
+    {
+      "id": "3106200:bairro-popular:1240",
+      "kind": "bairro-popular",
+      "name": "Nazaré"
+    },
+    {
+      "id": "3106200:bairro-popular:1361",
+      "kind": "bairro-popular",
+      "name": "Nossa Senhora da Aparecida"
+    },
+    {
+      "id": "3106200:bairro-popular:1362",
+      "kind": "bairro-popular",
+      "name": "Nossa Senhora da Conceição"
+    },
+    {
+      "id": "3106200:bairro-popular:1363",
+      "kind": "bairro-popular",
+      "name": "Nossa Senhora de Fátima"
+    },
+    {
+      "id": "3106200:bairro-popular:1364",
+      "kind": "bairro-popular",
+      "name": "Nossa Senhora do Rosário"
+    },
+    {
+      "id": "3106200:bairro-popular:967",
+      "kind": "bairro-popular",
+      "name": "Nova América"
+    },
+    {
+      "id": "3106200:bairro-popular:824",
+      "kind": "bairro-popular",
+      "name": "Nova Cachoeirinha"
+    },
+    {
+      "id": "3106200:bairro-popular:728",
+      "kind": "bairro-popular",
+      "name": "Nova Cintra"
+    },
+    {
+      "id": "3106200:bairro-popular:729",
+      "kind": "bairro-popular",
+      "name": "Nova Esperança"
+    },
+    {
+      "id": "3106200:bairro-popular:730",
+      "kind": "bairro-popular",
+      "name": "Nova Floresta"
+    },
+    {
+      "id": "3106200:bairro-popular:731",
+      "kind": "bairro-popular",
+      "name": "Nova Gameleira"
+    },
+    {
+      "id": "3106200:bairro-popular:732",
+      "kind": "bairro-popular",
+      "name": "Nova Granada"
+    },
+    {
+      "id": "3106200:bairro-popular:733",
+      "kind": "bairro-popular",
+      "name": "Nova Pampulha"
+    },
+    {
+      "id": "3106200:bairro-popular:734",
+      "kind": "bairro-popular",
+      "name": "Nova Suissa"
+    },
+    {
+      "id": "3106200:bairro-popular:735",
+      "kind": "bairro-popular",
+      "name": "Nova Vista"
+    },
+    {
+      "id": "3106200:bairro-popular:1170",
+      "kind": "bairro-popular",
+      "name": "Novo Aarão Reis"
+    },
+    {
+      "id": "3106200:bairro-popular:1484",
+      "kind": "bairro-popular",
+      "name": "Novo Glória"
+    },
+    {
+      "id": "3106200:bairro-popular:2033",
+      "kind": "bairro-popular",
+      "name": "Novo Lajedo"
+    },
+    {
+      "id": "3106200:bairro-popular:1366",
+      "kind": "bairro-popular",
+      "name": "Novo Ouro Preto"
+    },
+    {
+      "id": "3106200:bairro-popular:1367",
+      "kind": "bairro-popular",
+      "name": "Novo Santa Cecília"
+    },
+    {
+      "id": "3106200:bairro-popular:736",
+      "kind": "bairro-popular",
+      "name": "Novo São Lucas"
+    },
+    {
+      "id": "3106200:bairro-popular:1368",
+      "kind": "bairro-popular",
+      "name": "Novo Tupi"
+    },
+    {
+      "id": "3106200:bairro-popular:1369",
+      "kind": "bairro-popular",
+      "name": "Oeste"
+    },
+    {
+      "id": "3106200:bairro-popular:833",
+      "kind": "bairro-popular",
+      "name": "Olaria"
+    },
+    {
+      "id": "3106200:bairro-popular:737",
+      "kind": "bairro-popular",
+      "name": "Olhos d'Água"
+    },
+    {
+      "id": "3106200:bairro-popular:1238",
+      "kind": "bairro-popular",
+      "name": "Ouro Minas"
+    },
+    {
+      "id": "3106200:bairro-popular:738",
+      "kind": "bairro-popular",
+      "name": "Ouro Preto"
+    },
+    {
+      "id": "3106200:bairro-popular:739",
+      "kind": "bairro-popular",
+      "name": "Padre Eustáquio"
+    },
+    {
+      "id": "3106200:bairro-popular:740",
+      "kind": "bairro-popular",
+      "name": "Palmares"
+    },
+    {
+      "id": "3106200:bairro-popular:741",
+      "kind": "bairro-popular",
+      "name": "Palmeiras"
+    },
+    {
+      "id": "3106200:bairro-popular:1370",
+      "kind": "bairro-popular",
+      "name": "Pantanal"
+    },
+    {
+      "id": "3106200:bairro-popular:743",
+      "kind": "bairro-popular",
+      "name": "Paquetá"
+    },
+    {
+      "id": "3106200:bairro-popular:744",
+      "kind": "bairro-popular",
+      "name": "Paraíso"
+    },
+    {
+      "id": "3106200:bairro-popular:1142",
+      "kind": "bairro-popular",
+      "name": "Parque São José"
+    },
+    {
+      "id": "3106200:bairro-popular:1371",
+      "kind": "bairro-popular",
+      "name": "Parque São Pedro"
+    },
+    {
+      "id": "3106200:bairro-popular:905",
+      "kind": "bairro-popular",
+      "name": "Paulo VI"
+    },
+    {
+      "id": "3106200:bairro-popular:746",
+      "kind": "bairro-popular",
+      "name": "Pedreira Prado Lopes"
+    },
+    {
+      "id": "3106200:bairro-popular:1372",
+      "kind": "bairro-popular",
+      "name": "Penha"
+    },
+    {
+      "id": "3106200:bairro-popular:1165",
+      "kind": "bairro-popular",
+      "name": "Petrópolis"
+    },
+    {
+      "id": "3106200:bairro-popular:1168",
+      "kind": "bairro-popular",
+      "name": "Pilar"
+    },
+    {
+      "id": "3106200:bairro-popular:748",
+      "kind": "bairro-popular",
+      "name": "Pindorama"
+    },
+    {
+      "id": "3106200:bairro-popular:1374",
+      "kind": "bairro-popular",
+      "name": "Pindura Saia"
+    },
+    {
+      "id": "3106200:bairro-popular:749",
+      "kind": "bairro-popular",
+      "name": "Pirajá"
+    },
+    {
+      "id": "3106200:bairro-popular:790",
+      "kind": "bairro-popular",
+      "name": "Piratininga"
+    },
+    {
+      "id": "3106200:bairro-popular:1376",
+      "kind": "bairro-popular",
+      "name": "Pirineus"
+    },
+    {
+      "id": "3106200:bairro-popular:750",
+      "kind": "bairro-popular",
+      "name": "Planalto"
+    },
+    {
+      "id": "3106200:bairro-popular:751",
+      "kind": "bairro-popular",
+      "name": "Pompéia"
+    },
+    {
+      "id": "3106200:bairro-popular:823",
+      "kind": "bairro-popular",
+      "name": "Pongelupe"
+    },
+    {
+      "id": "3106200:bairro-popular:1173",
+      "kind": "bairro-popular",
+      "name": "Pousada Santo Antônio"
+    },
+    {
+      "id": "3106200:bairro-popular:752",
+      "kind": "bairro-popular",
+      "name": "Prado"
+    },
+    {
+      "id": "3106200:bairro-popular:754",
+      "kind": "bairro-popular",
+      "name": "Primeiro de Maio"
+    },
+    {
+      "id": "3106200:bairro-popular:756",
+      "kind": "bairro-popular",
+      "name": "Providência"
+    },
+    {
+      "id": "3106200:bairro-popular:758",
+      "kind": "bairro-popular",
+      "name": "Renascença"
+    },
+    {
+      "id": "3106200:bairro-popular:759",
+      "kind": "bairro-popular",
+      "name": "Ribeiro de Abreu"
+    },
+    {
+      "id": "3106200:bairro-popular:818",
+      "kind": "bairro-popular",
+      "name": "Rio Branco"
+    },
+    {
+      "id": "3106200:bairro-popular:760",
+      "kind": "bairro-popular",
+      "name": "Sagrada Família"
+    },
+    {
+      "id": "3106200:bairro-popular:761",
+      "kind": "bairro-popular",
+      "name": "Salgado Filho"
+    },
+    {
+      "id": "3106200:bairro-popular:762",
+      "kind": "bairro-popular",
+      "name": "Santa Amélia"
+    },
+    {
+      "id": "3106200:bairro-popular:829",
+      "kind": "bairro-popular",
+      "name": "Santa Branca"
+    },
+    {
+      "id": "3106200:bairro-popular:1159",
+      "kind": "bairro-popular",
+      "name": "Santa Cecília"
+    },
+    {
+      "id": "3106200:bairro-popular:763",
+      "kind": "bairro-popular",
+      "name": "Santa Cruz"
+    },
+    {
+      "id": "3106200:bairro-popular:765",
+      "kind": "bairro-popular",
+      "name": "Santa Efigênia"
+    },
+    {
+      "id": "3106200:bairro-popular:766",
+      "kind": "bairro-popular",
+      "name": "Santa Helena"
+    },
+    {
+      "id": "3106200:bairro-popular:767",
+      "kind": "bairro-popular",
+      "name": "Santa Inês"
+    },
+    {
+      "id": "3106200:bairro-popular:1378",
+      "kind": "bairro-popular",
+      "name": "Santa Isabel"
+    },
+    {
+      "id": "3106200:bairro-popular:768",
+      "kind": "bairro-popular",
+      "name": "Santa Lúcia"
+    },
+    {
+      "id": "3106200:bairro-popular:1144",
+      "kind": "bairro-popular",
+      "name": "Santa Margarida"
+    },
+    {
+      "id": "3106200:bairro-popular:770",
+      "kind": "bairro-popular",
+      "name": "Santa Maria"
+    },
+    {
+      "id": "3106200:bairro-popular:772",
+      "kind": "bairro-popular",
+      "name": "Santa Mônica"
+    },
+    {
+      "id": "3106200:bairro-popular:1163",
+      "kind": "bairro-popular",
+      "name": "Santa Rita"
+    },
+    {
+      "id": "3106200:bairro-popular:1379",
+      "kind": "bairro-popular",
+      "name": "Santa Rita de Cássia"
+    },
+    {
+      "id": "3106200:bairro-popular:773",
+      "kind": "bairro-popular",
+      "name": "Santa Rosa"
+    },
+    {
+      "id": "3106200:bairro-popular:1380",
+      "kind": "bairro-popular",
+      "name": "Santa Sofia"
+    },
+    {
+      "id": "3106200:bairro-popular:774",
+      "kind": "bairro-popular",
+      "name": "Santa Tereza"
+    },
+    {
+      "id": "3106200:bairro-popular:775",
+      "kind": "bairro-popular",
+      "name": "Santa Terezinha"
+    },
+    {
+      "id": "3106200:bairro-popular:1381",
+      "kind": "bairro-popular",
+      "name": "Santana do Cafezal"
+    },
+    {
+      "id": "3106200:bairro-popular:776",
+      "kind": "bairro-popular",
+      "name": "Santo Agostinho"
+    },
+    {
+      "id": "3106200:bairro-popular:777",
+      "kind": "bairro-popular",
+      "name": "Santo André"
+    },
+    {
+      "id": "3106200:bairro-popular:778",
+      "kind": "bairro-popular",
+      "name": "Santo Antônio"
+    },
+    {
+      "id": "3106200:bairro-popular:1382",
+      "kind": "bairro-popular",
+      "name": "São Benedito"
+    },
+    {
+      "id": "3106200:bairro-popular:779",
+      "kind": "bairro-popular",
+      "name": "São Bento"
+    },
+    {
+      "id": "3106200:bairro-popular:780",
+      "kind": "bairro-popular",
+      "name": "São Bernardo"
+    },
+    {
+      "id": "3106200:bairro-popular:781",
+      "kind": "bairro-popular",
+      "name": "São Cristóvão"
+    },
+    {
+      "id": "3106200:bairro-popular:1383",
+      "kind": "bairro-popular",
+      "name": "São Damião"
+    },
+    {
+      "id": "3106200:bairro-popular:782",
+      "kind": "bairro-popular",
+      "name": "São Francisco"
+    },
+    {
+      "id": "3106200:bairro-popular:1373",
+      "kind": "bairro-popular",
+      "name": "São Francisco das Chagas"
+    },
+    {
+      "id": "3106200:bairro-popular:783",
+      "kind": "bairro-popular",
+      "name": "São Gabriel"
+    },
+    {
+      "id": "3106200:bairro-popular:784",
+      "kind": "bairro-popular",
+      "name": "São Geraldo"
+    },
+    {
+      "id": "3106200:bairro-popular:1384",
+      "kind": "bairro-popular",
+      "name": "São Gonçalo"
+    },
+    {
+      "id": "3106200:bairro-popular:1385",
+      "kind": "bairro-popular",
+      "name": "São João"
+    },
+    {
+      "id": "3106200:bairro-popular:785",
+      "kind": "bairro-popular",
+      "name": "São João Batista"
+    },
+    {
+      "id": "3106200:bairro-popular:1670",
+      "kind": "bairro-popular",
+      "name": "São Jorge I"
+    },
+    {
+      "id": "3106200:bairro-popular:1671",
+      "kind": "bairro-popular",
+      "name": "São Jorge II"
+    },
+    {
+      "id": "3106200:bairro-popular:1672",
+      "kind": "bairro-popular",
+      "name": "São Jorge III"
+    },
+    {
+      "id": "3106200:bairro-popular:640",
+      "kind": "bairro-popular",
+      "name": "São José"
+    },
+    {
+      "id": "3106200:bairro-popular:2039",
+      "kind": "bairro-popular",
+      "name": "São Judas Tadeu"
+    },
+    {
+      "id": "3106200:bairro-popular:788",
+      "kind": "bairro-popular",
+      "name": "São Lucas"
+    },
+    {
+      "id": "3106200:bairro-popular:641",
+      "kind": "bairro-popular",
+      "name": "São Luíz"
+    },
+    {
+      "id": "3106200:bairro-popular:789",
+      "kind": "bairro-popular",
+      "name": "São Marcos"
+    },
+    {
+      "id": "3106200:bairro-popular:791",
+      "kind": "bairro-popular",
+      "name": "São Paulo"
+    },
+    {
+      "id": "3106200:bairro-popular:792",
+      "kind": "bairro-popular",
+      "name": "São Pedro"
+    },
+    {
+      "id": "3106200:bairro-popular:793",
+      "kind": "bairro-popular",
+      "name": "São Salvador"
+    },
+    {
+      "id": "3106200:bairro-popular:1479",
+      "kind": "bairro-popular",
+      "name": "São Sebastião"
+    },
+    {
+      "id": "3106200:bairro-popular:794",
+      "kind": "bairro-popular",
+      "name": "São Tomáz"
+    },
+    {
+      "id": "3106200:bairro-popular:1388",
+      "kind": "bairro-popular",
+      "name": "São Vicente"
+    },
+    {
+      "id": "3106200:bairro-popular:1389",
+      "kind": "bairro-popular",
+      "name": "Satélite"
+    },
+    {
+      "id": "3106200:bairro-popular:796",
+      "kind": "bairro-popular",
+      "name": "Saudade"
+    },
+    {
+      "id": "3106200:bairro-popular:1133",
+      "kind": "bairro-popular",
+      "name": "Savassi"
+    },
+    {
+      "id": "3106200:bairro-popular:1390",
+      "kind": "bairro-popular",
+      "name": "Senhor dos Passos"
+    },
+    {
+      "id": "3106200:bairro-popular:797",
+      "kind": "bairro-popular",
+      "name": "Serra"
+    },
+    {
+      "id": "3106200:bairro-popular:1494",
+      "kind": "bairro-popular",
+      "name": "Serra do Curral"
+    },
+    {
+      "id": "3106200:bairro-popular:799",
+      "kind": "bairro-popular",
+      "name": "Serra Verde"
+    },
+    {
+      "id": "3106200:bairro-popular:798",
+      "kind": "bairro-popular",
+      "name": "Serrano"
+    },
+    {
+      "id": "3106200:bairro-popular:1253",
+      "kind": "bairro-popular",
+      "name": "Silveira"
+    },
+    {
+      "id": "3106200:bairro-popular:801",
+      "kind": "bairro-popular",
+      "name": "Sion"
+    },
+    {
+      "id": "3106200:bairro-popular:1167",
+      "kind": "bairro-popular",
+      "name": "Solar do Barreiro"
+    },
+    {
+      "id": "3106200:bairro-popular:802",
+      "kind": "bairro-popular",
+      "name": "Solimões"
+    },
+    {
+      "id": "3106200:bairro-popular:1392",
+      "kind": "bairro-popular",
+      "name": "Sport Club"
+    },
+    {
+      "id": "3106200:bairro-popular:674",
+      "kind": "bairro-popular",
+      "name": "Sumaré"
+    },
+    {
+      "id": "3106200:bairro-popular:907",
+      "kind": "bairro-popular",
+      "name": "Suzana"
+    },
+    {
+      "id": "3106200:bairro-popular:803",
+      "kind": "bairro-popular",
+      "name": "Taquaril"
+    },
+    {
+      "id": "3106200:bairro-popular:804",
+      "kind": "bairro-popular",
+      "name": "Teixeira Dias"
+    },
+    {
+      "id": "3106200:bairro-popular:2034",
+      "kind": "bairro-popular",
+      "name": "Tiradentes"
+    },
+    {
+      "id": "3106200:bairro-popular:805",
+      "kind": "bairro-popular",
+      "name": "Tirol"
+    },
+    {
+      "id": "3106200:bairro-popular:1394",
+      "kind": "bairro-popular",
+      "name": "Três Marias"
+    },
+    {
+      "id": "3106200:bairro-popular:827",
+      "kind": "bairro-popular",
+      "name": "Trevo"
+    },
+    {
+      "id": "3106200:bairro-popular:1155",
+      "kind": "bairro-popular",
+      "name": "Túnel de Ibirité"
+    },
+    {
+      "id": "3106200:bairro-popular:806",
+      "kind": "bairro-popular",
+      "name": "Tupi A"
+    },
+    {
+      "id": "3106200:bairro-popular:1247",
+      "kind": "bairro-popular",
+      "name": "Tupi B"
+    },
+    {
+      "id": "3106200:bairro-popular:808",
+      "kind": "bairro-popular",
+      "name": "União"
+    },
+    {
+      "id": "3106200:bairro-popular:809",
+      "kind": "bairro-popular",
+      "name": "Universitário"
+    },
+    {
+      "id": "3106200:bairro-popular:1396",
+      "kind": "bairro-popular",
+      "name": "Universo"
+    },
+    {
+      "id": "3106200:bairro-popular:1397",
+      "kind": "bairro-popular",
+      "name": "Urca"
+    },
+    {
+      "id": "3106200:bairro-popular:832",
+      "kind": "bairro-popular",
+      "name": "Vale do Jatobá"
+    },
+    {
+      "id": "3106200:bairro-popular:1398",
+      "kind": "bairro-popular",
+      "name": "Várzea da Palma"
+    },
+    {
+      "id": "3106200:bairro-popular:810",
+      "kind": "bairro-popular",
+      "name": "Venda Nova"
+    },
+    {
+      "id": "3106200:bairro-popular:1974",
+      "kind": "bairro-popular",
+      "name": "Ventosa"
+    },
+    {
+      "id": "3106200:bairro-popular:811",
+      "kind": "bairro-popular",
+      "name": "Vera Cruz"
+    },
+    {
+      "id": "3106200:bairro-popular:1401",
+      "kind": "bairro-popular",
+      "name": "Vila Aeroporto"
+    },
+    {
+      "id": "3106200:bairro-popular:1402",
+      "kind": "bairro-popular",
+      "name": "Vila Aeroporto Jaraguá"
+    },
+    {
+      "id": "3106200:bairro-popular:2027",
+      "kind": "bairro-popular",
+      "name": "Vila Alto dos Pinheiros"
+    },
+    {
+      "id": "3106200:bairro-popular:1405",
+      "kind": "bairro-popular",
+      "name": "Vila Antena"
+    },
+    {
+      "id": "3106200:bairro-popular:1406",
+      "kind": "bairro-popular",
+      "name": "Vila Antena Montanhês"
+    },
+    {
+      "id": "3106200:bairro-popular:1407",
+      "kind": "bairro-popular",
+      "name": "Vila Átila de Paiva"
+    },
+    {
+      "id": "3106200:bairro-popular:1408",
+      "kind": "bairro-popular",
+      "name": "Vila Bandeirantes"
+    },
+    {
+      "id": "3106200:bairro-popular:1409",
+      "kind": "bairro-popular",
+      "name": "Vila Barragem Santa Lúcia"
+    },
+    {
+      "id": "3106200:bairro-popular:1285",
+      "kind": "bairro-popular",
+      "name": "Vila Batik"
+    },
+    {
+      "id": "3106200:bairro-popular:1410",
+      "kind": "bairro-popular",
+      "name": "Vila Boa Vista"
+    },
+    {
+      "id": "3106200:bairro-popular:1676",
+      "kind": "bairro-popular",
+      "name": "Vila Calafate"
+    },
+    {
+      "id": "3106200:bairro-popular:1412",
+      "kind": "bairro-popular",
+      "name": "Vila Califórnia"
+    },
+    {
+      "id": "3106200:bairro-popular:1664",
+      "kind": "bairro-popular",
+      "name": "Vila Canto do Sabiá"
+    },
+    {
+      "id": "3106200:bairro-popular:673",
+      "kind": "bairro-popular",
+      "name": "Vila CEMIG"
+    },
+    {
+      "id": "3106200:bairro-popular:813",
+      "kind": "bairro-popular",
+      "name": "Vila Clóris"
+    },
+    {
+      "id": "3106200:bairro-popular:1413",
+      "kind": "bairro-popular",
+      "name": "Vila Copacabana"
+    },
+    {
+      "id": "3106200:bairro-popular:1414",
+      "kind": "bairro-popular",
+      "name": "Vila COPASA"
+    },
+    {
+      "id": "3106200:bairro-popular:1415",
+      "kind": "bairro-popular",
+      "name": "Vila Coqueiral"
+    },
+    {
+      "id": "3106200:bairro-popular:1675",
+      "kind": "bairro-popular",
+      "name": "Vila da Amizade"
+    },
+    {
+      "id": "3106200:bairro-popular:1660",
+      "kind": "bairro-popular",
+      "name": "Vila da Luz"
+    },
+    {
+      "id": "3106200:bairro-popular:1417",
+      "kind": "bairro-popular",
+      "name": "Vila da Paz"
+    },
+    {
+      "id": "3106200:bairro-popular:1419",
+      "kind": "bairro-popular",
+      "name": "Vila de Sá"
+    },
+    {
+      "id": "3106200:bairro-popular:1294",
+      "kind": "bairro-popular",
+      "name": "Vila Dias"
+    },
+    {
+      "id": "3106200:bairro-popular:1420",
+      "kind": "bairro-popular",
+      "name": "Vila do Pombal"
+    },
+    {
+      "id": "3106200:bairro-popular:1421",
+      "kind": "bairro-popular",
+      "name": "Vila dos Anjos"
+    },
+    {
+      "id": "3106200:bairro-popular:1251",
+      "kind": "bairro-popular",
+      "name": "Vila Ecológica"
+    },
+    {
+      "id": "3106200:bairro-popular:1422",
+      "kind": "bairro-popular",
+      "name": "Vila Engenho Nogueira"
+    },
+    {
+      "id": "3106200:bairro-popular:1322",
+      "kind": "bairro-popular",
+      "name": "Vila Esplanada"
+    },
+    {
+      "id": "3106200:bairro-popular:1254",
+      "kind": "bairro-popular",
+      "name": "Vila Formosa"
+    },
+    {
+      "id": "3106200:bairro-popular:1423",
+      "kind": "bairro-popular",
+      "name": "Vila FUMEC"
+    },
+    {
+      "id": "3106200:bairro-popular:1424",
+      "kind": "bairro-popular",
+      "name": "Vila Havaí"
+    },
+    {
+      "id": "3106200:bairro-popular:2037",
+      "kind": "bairro-popular",
+      "name": "Vila Horto Florestal"
+    },
+    {
+      "id": "3106200:bairro-popular:1425",
+      "kind": "bairro-popular",
+      "name": "Vila Independência I"
+    },
+    {
+      "id": "3106200:bairro-popular:1426",
+      "kind": "bairro-popular",
+      "name": "Vila Independência II"
+    },
+    {
+      "id": "3106200:bairro-popular:1427",
+      "kind": "bairro-popular",
+      "name": "Vila Independência IV"
+    },
+    {
+      "id": "3106200:bairro-popular:1428",
+      "kind": "bairro-popular",
+      "name": "Vila Inestan"
+    },
+    {
+      "id": "3106200:bairro-popular:1429",
+      "kind": "bairro-popular",
+      "name": "Vila Ipiranga"
+    },
+    {
+      "id": "3106200:bairro-popular:1404",
+      "kind": "bairro-popular",
+      "name": "Vila Jardim Alvorada"
+    },
+    {
+      "id": "3106200:bairro-popular:1430",
+      "kind": "bairro-popular",
+      "name": "Vila Jardim Leblon"
+    },
+    {
+      "id": "3106200:bairro-popular:1431",
+      "kind": "bairro-popular",
+      "name": "Vila Jardim Montanhês"
+    },
+    {
+      "id": "3106200:bairro-popular:1391",
+      "kind": "bairro-popular",
+      "name": "Vila Madre Gertrudes I"
+    },
+    {
+      "id": "3106200:bairro-popular:1320",
+      "kind": "bairro-popular",
+      "name": "Vila Madre Gertrudes II"
+    },
+    {
+      "id": "3106200:bairro-popular:1358",
+      "kind": "bairro-popular",
+      "name": "Vila Madre Gertrudes III"
+    },
+    {
+      "id": "3106200:bairro-popular:1345",
+      "kind": "bairro-popular",
+      "name": "Vila Madre Gertrudes V"
+    },
+    {
+      "id": "3106200:bairro-popular:1433",
+      "kind": "bairro-popular",
+      "name": "Vila Maloca"
+    },
+    {
+      "id": "3106200:bairro-popular:1677",
+      "kind": "bairro-popular",
+      "name": "Vila Mangueiras"
+    },
+    {
+      "id": "3106200:bairro-popular:1435",
+      "kind": "bairro-popular",
+      "name": "Vila Mantiqueira"
+    },
+    {
+      "id": "3106200:bairro-popular:1436",
+      "kind": "bairro-popular",
+      "name": "Vila Maria"
+    },
+    {
+      "id": "3106200:bairro-popular:1437",
+      "kind": "bairro-popular",
+      "name": "Vila Minaslândia"
+    },
+    {
+      "id": "3106200:bairro-popular:1360",
+      "kind": "bairro-popular",
+      "name": "Vila Nossa Senhora Aparecida"
+    },
+    {
+      "id": "3106200:bairro-popular:1438",
+      "kind": "bairro-popular",
+      "name": "Vila Nossa Senhora do Rosário"
+    },
+    {
+      "id": "3106200:bairro-popular:1439",
+      "kind": "bairro-popular",
+      "name": "Vila Nova"
+    },
+    {
+      "id": "3106200:bairro-popular:1440",
+      "kind": "bairro-popular",
+      "name": "Vila Nova Cachoeirinha I"
+    },
+    {
+      "id": "3106200:bairro-popular:1441",
+      "kind": "bairro-popular",
+      "name": "Vila Nova Cachoeirinha II"
+    },
+    {
+      "id": "3106200:bairro-popular:1443",
+      "kind": "bairro-popular",
+      "name": "Vila Nova Cachoeirinha IV"
+    },
+    {
+      "id": "3106200:bairro-popular:2029",
+      "kind": "bairro-popular",
+      "name": "Vila Nova Cintra"
+    },
+    {
+      "id": "3106200:bairro-popular:1444",
+      "kind": "bairro-popular",
+      "name": "Vila Nova dos Milionários"
+    },
+    {
+      "id": "3106200:bairro-popular:1445",
+      "kind": "bairro-popular",
+      "name": "Vila Nova Gameleira I"
+    },
+    {
+      "id": "3106200:bairro-popular:1446",
+      "kind": "bairro-popular",
+      "name": "Vila Nova Gameleira II"
+    },
+    {
+      "id": "3106200:bairro-popular:1447",
+      "kind": "bairro-popular",
+      "name": "Vila Nova Gameleira III"
+    },
+    {
+      "id": "3106200:bairro-popular:1448",
+      "kind": "bairro-popular",
+      "name": "Vila Nova Paraíso"
+    },
+    {
+      "id": "3106200:bairro-popular:1449",
+      "kind": "bairro-popular",
+      "name": "Vila Novo São Lucas"
+    },
+    {
+      "id": "3106200:bairro-popular:814",
+      "kind": "bairro-popular",
+      "name": "Vila Oeste"
+    },
+    {
+      "id": "3106200:bairro-popular:1661",
+      "kind": "bairro-popular",
+      "name": "Vila Ouro Minas"
+    },
+    {
+      "id": "3106200:bairro-popular:1451",
+      "kind": "bairro-popular",
+      "name": "Vila Paquetá"
+    },
+    {
+      "id": "3106200:bairro-popular:1452",
+      "kind": "bairro-popular",
+      "name": "Vila Paraíso"
+    },
+    {
+      "id": "3106200:bairro-popular:815",
+      "kind": "bairro-popular",
+      "name": "Vila Paris"
+    },
+    {
+      "id": "3106200:bairro-popular:1453",
+      "kind": "bairro-popular",
+      "name": "Vila Petrópolis"
+    },
+    {
+      "id": "3106200:bairro-popular:1153",
+      "kind": "bairro-popular",
+      "name": "Vila Pinho"
+    },
+    {
+      "id": "3106200:bairro-popular:1455",
+      "kind": "bairro-popular",
+      "name": "Vila Piratininga"
+    },
+    {
+      "id": "3106200:bairro-popular:1375",
+      "kind": "bairro-popular",
+      "name": "Vila Piratininga Venda Nova"
+    },
+    {
+      "id": "3106200:bairro-popular:1456",
+      "kind": "bairro-popular",
+      "name": "Vila Primeiro de Maio"
+    },
+    {
+      "id": "3106200:bairro-popular:1457",
+      "kind": "bairro-popular",
+      "name": "Vila PUC"
+    },
+    {
+      "id": "3106200:bairro-popular:1458",
+      "kind": "bairro-popular",
+      "name": "Vila Real I"
+    },
+    {
+      "id": "3106200:bairro-popular:1459",
+      "kind": "bairro-popular",
+      "name": "Vila Real II"
+    },
+    {
+      "id": "3106200:bairro-popular:1460",
+      "kind": "bairro-popular",
+      "name": "Vila Rica"
+    },
+    {
+      "id": "3106200:bairro-popular:1975",
+      "kind": "bairro-popular",
+      "name": "Vila Santa Mônica"
+    },
+    {
+      "id": "3106200:bairro-popular:1462",
+      "kind": "bairro-popular",
+      "name": "Vila Santa Rosa"
+    },
+    {
+      "id": "3106200:bairro-popular:1463",
+      "kind": "bairro-popular",
+      "name": "Vila Santo Antônio"
+    },
+    {
+      "id": "3106200:bairro-popular:1464",
+      "kind": "bairro-popular",
+      "name": "Vila Santo Antônio Barroquinha"
+    },
+    {
+      "id": "3106200:bairro-popular:1486",
+      "kind": "bairro-popular",
+      "name": "Vila São Dimas"
+    },
+    {
+      "id": "3106200:bairro-popular:1465",
+      "kind": "bairro-popular",
+      "name": "Vila São Francisco"
+    },
+    {
+      "id": "3106200:bairro-popular:1662",
+      "kind": "bairro-popular",
+      "name": "Vila São Gabriel"
+    },
+    {
+      "id": "3106200:bairro-popular:1467",
+      "kind": "bairro-popular",
+      "name": "Vila São Geraldo"
+    },
+    {
+      "id": "3106200:bairro-popular:786",
+      "kind": "bairro-popular",
+      "name": "Vila São João Batista"
+    },
+    {
+      "id": "3106200:bairro-popular:1468",
+      "kind": "bairro-popular",
+      "name": "Vila São Paulo"
+    },
+    {
+      "id": "3106200:bairro-popular:1470",
+      "kind": "bairro-popular",
+      "name": "Vila São Rafael"
+    },
+    {
+      "id": "3106200:bairro-popular:2028",
+      "kind": "bairro-popular",
+      "name": "Vila São Tomáz"
+    },
+    {
+      "id": "3106200:bairro-popular:1471",
+      "kind": "bairro-popular",
+      "name": "Vila Satélite"
+    },
+    {
+      "id": "3106200:bairro-popular:800",
+      "kind": "bairro-popular",
+      "name": "Vila SESC"
+    },
+    {
+      "id": "3106200:bairro-popular:1473",
+      "kind": "bairro-popular",
+      "name": "Vila Sumaré"
+    },
+    {
+      "id": "3106200:bairro-popular:1474",
+      "kind": "bairro-popular",
+      "name": "Vila Suzana I"
+    },
+    {
+      "id": "3106200:bairro-popular:1475",
+      "kind": "bairro-popular",
+      "name": "Vila Suzana II"
+    },
+    {
+      "id": "3106200:bairro-popular:1393",
+      "kind": "bairro-popular",
+      "name": "Vila Tiradentes"
+    },
+    {
+      "id": "3106200:bairro-popular:1476",
+      "kind": "bairro-popular",
+      "name": "Vila Tirol"
+    },
+    {
+      "id": "3106200:bairro-popular:2038",
+      "kind": "bairro-popular",
+      "name": "Vila Trevo"
+    },
+    {
+      "id": "3106200:bairro-popular:1477",
+      "kind": "bairro-popular",
+      "name": "Vila Trinta e Um de Março"
+    },
+    {
+      "id": "3106200:bairro-popular:1478",
+      "kind": "bairro-popular",
+      "name": "Vila União"
+    },
+    {
+      "id": "3106200:bairro-popular:1652",
+      "kind": "bairro-popular",
+      "name": "Vila Vera Cruz I"
+    },
+    {
+      "id": "3106200:bairro-popular:1653",
+      "kind": "bairro-popular",
+      "name": "Vila Vera Cruz II"
+    },
+    {
+      "id": "3106200:bairro-popular:2031",
+      "kind": "bairro-popular",
+      "name": "Vila Verde"
+    },
+    {
+      "id": "3106200:bairro-popular:1480",
+      "kind": "bairro-popular",
+      "name": "Vila Vista Alegre"
+    },
+    {
+      "id": "3106200:bairro-popular:2026",
+      "kind": "bairro-popular",
+      "name": "Vila Viveiro"
+    },
+    {
+      "id": "3106200:bairro-popular:817",
+      "kind": "bairro-popular",
+      "name": "Virgínia"
+    },
+    {
+      "id": "3106200:bairro-popular:819",
+      "kind": "bairro-popular",
+      "name": "Vista Alegre"
+    },
+    {
+      "id": "3106200:bairro-popular:1202",
+      "kind": "bairro-popular",
+      "name": "Vista do Sol"
+    },
+    {
+      "id": "3106200:bairro-popular:1481",
+      "kind": "bairro-popular",
+      "name": "Vitória"
+    },
+    {
+      "id": "3106200:bairro-popular:1252",
+      "kind": "bairro-popular",
+      "name": "Vitória da Conquista"
+    },
+    {
+      "id": "3106200:bairro-popular:820",
+      "kind": "bairro-popular",
+      "name": "Xangri-lá"
+    },
+    {
+      "id": "3106200:bairro-popular:675",
+      "kind": "bairro-popular",
+      "name": "Xodó-Marize"
+    },
+    {
+      "id": "3106200:bairro-popular:1482",
+      "kind": "bairro-popular",
+      "name": "Zilah Spósito"
+    }
+  ]
+}

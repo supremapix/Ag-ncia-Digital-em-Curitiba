@@ -1,0 +1,492 @@
+{
+  "status": "complete",
+  "verifiedAt": "2026-10-17",
+  "capitalId": "3550308",
+  "source": {
+    "title": "IBGE — distritos do município de São Paulo",
+    "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3550308/distritos"
+  },
+  "note": "Inventário dos 96 distritos oficiais, não de todos os bairros. Distritos têm proposta sob consulta e não entram no subtotal por bairro.",
+  "localities": [
+    {
+      "id": "3550308:distrito:355030801",
+      "name": "Água Rasa",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030802",
+      "name": "Alto de Pinheiros",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030803",
+      "name": "Anhanguera",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030804",
+      "name": "Aricanduva",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030805",
+      "name": "Artur Alvim",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030806",
+      "name": "Barra Funda",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030807",
+      "name": "Bela Vista",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030808",
+      "name": "Belém",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030809",
+      "name": "Bom Retiro",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030810",
+      "name": "Brás",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030811",
+      "name": "Brasilândia",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030812",
+      "name": "Butantã",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030813",
+      "name": "Cachoeirinha",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030814",
+      "name": "Cambuci",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030815",
+      "name": "Campo Belo",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030816",
+      "name": "Campo Grande",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030817",
+      "name": "Campo Limpo",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030818",
+      "name": "Cangaiba",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030819",
+      "name": "Capão Redondo",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030820",
+      "name": "Carrão",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030821",
+      "name": "Casa Verde",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030822",
+      "name": "Cidade Ademar",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030823",
+      "name": "Cidade Dutra",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030824",
+      "name": "Cidade Lider",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030825",
+      "name": "Cidade Tiradentes",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030826",
+      "name": "Consolação",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030827",
+      "name": "Cursino",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030828",
+      "name": "Ermelino Matarazzo",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030829",
+      "name": "Freguesia do Ó",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030830",
+      "name": "Grajaú",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030831",
+      "name": "Guaianases",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030832",
+      "name": "Moema",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030833",
+      "name": "Iguatemi",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030834",
+      "name": "Ipiranga",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030835",
+      "name": "Itaim Bibi",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030836",
+      "name": "Itaim Paulista",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030837",
+      "name": "Itaquera",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030838",
+      "name": "Jabaquara",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030839",
+      "name": "Jaçanã",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030840",
+      "name": "Jaguara",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030841",
+      "name": "Jaguaré",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030842",
+      "name": "Jaraguá",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030843",
+      "name": "Jardim Ângela",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030844",
+      "name": "Jardim Helena",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030845",
+      "name": "Jardim Paulista",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030846",
+      "name": "Jardim São Luís",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030847",
+      "name": "José Bonifácio",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030848",
+      "name": "Lapa",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030849",
+      "name": "Liberdade",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030850",
+      "name": "Limão",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030851",
+      "name": "Mandaqui",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030852",
+      "name": "Marsilac",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030853",
+      "name": "Mooca",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030854",
+      "name": "Morumbi",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030855",
+      "name": "Parelheiros",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030856",
+      "name": "Pari",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030857",
+      "name": "Parque do Carmo",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030858",
+      "name": "Pedreira",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030859",
+      "name": "Penha",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030860",
+      "name": "Perdizes",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030861",
+      "name": "Perus",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030862",
+      "name": "Pinheiros",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030863",
+      "name": "Pirituba",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030864",
+      "name": "Ponte Rasa",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030865",
+      "name": "Raposo Tavares",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030866",
+      "name": "República",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030867",
+      "name": "Rio Pequeno",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030868",
+      "name": "Sacomã",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030869",
+      "name": "Santa Cecília",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030870",
+      "name": "Santana",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030871",
+      "name": "Santo Amaro",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030872",
+      "name": "São Lucas",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030873",
+      "name": "São Mateus",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030874",
+      "name": "São Miguel",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030875",
+      "name": "São Rafael",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030876",
+      "name": "Sapopemba",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030877",
+      "name": "Saúde",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030878",
+      "name": "Sé",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030879",
+      "name": "Socorro",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030880",
+      "name": "Tatuapé",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030881",
+      "name": "Tremembé",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030882",
+      "name": "Tucuruvi",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030883",
+      "name": "Vila Andrade",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030884",
+      "name": "Vila Curuçá",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030885",
+      "name": "Vila Formosa",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030886",
+      "name": "Vila Guilherme",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030887",
+      "name": "Vila Jacuí",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030888",
+      "name": "Vila Leopoldina",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030889",
+      "name": "Vila Maria",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030890",
+      "name": "Vila Mariana",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030891",
+      "name": "Vila Matilde",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030892",
+      "name": "Vila Medeiros",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030893",
+      "name": "Vila Prudente",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030894",
+      "name": "Vila Sônia",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030895",
+      "name": "São Domingos",
+      "kind": "distrito"
+    },
+    {
+      "id": "3550308:distrito:355030896",
+      "name": "Lajeado",
+      "kind": "distrito"
+    }
+  ]
+}

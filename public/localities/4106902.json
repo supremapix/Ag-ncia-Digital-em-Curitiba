@@ -1,0 +1,387 @@
+{
+  "status": "complete",
+  "verifiedAt": "2026-10-17",
+  "capitalId": "4106902",
+  "source": {
+    "title": "IPPUC — 75 bairros de Curitiba",
+    "url": "https://ippuc.org.br/perfil-fisico-territorial-e-socioeconomico-75-bairros-de-curitiba-2"
+  },
+  "note": "75 bairros oficiais. Vilas e subdivisões não são cobradas separadamente.",
+  "localities": [
+    {
+      "id": "4106902:bairro:0",
+      "name": "Abranches",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:1",
+      "name": "Água Verde",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:2",
+      "name": "Ahú",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:3",
+      "name": "Alto Boqueirão",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:4",
+      "name": "Alto da Glória",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:5",
+      "name": "Alto da Rua XV",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:6",
+      "name": "Atuba",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:7",
+      "name": "Augusta",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:8",
+      "name": "Bacacheri",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:9",
+      "name": "Bairro Alto",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:10",
+      "name": "Barreirinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:11",
+      "name": "Batel",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:12",
+      "name": "Bigorrilho",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:13",
+      "name": "Boa Vista",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:14",
+      "name": "Bom Retiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:15",
+      "name": "Boqueirão",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:16",
+      "name": "Butiatuvinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:17",
+      "name": "Cabral",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:18",
+      "name": "Cachoeira",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:19",
+      "name": "Cajuru",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:20",
+      "name": "Campina do Siqueira",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:21",
+      "name": "Campo Comprido",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:22",
+      "name": "Campo de Santana",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:23",
+      "name": "Capão Raso",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:24",
+      "name": "Capão da Imbuia",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:25",
+      "name": "Cascatinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:26",
+      "name": "Caximba",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:27",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:28",
+      "name": "Centro Cívico",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:29",
+      "name": "Cidade Industrial (CIC)",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:30",
+      "name": "Cristo Rei",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:31",
+      "name": "Fanny",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:32",
+      "name": "Fazendinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:33",
+      "name": "Ganchinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:34",
+      "name": "Guabirotuba",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:35",
+      "name": "Guaíra",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:36",
+      "name": "Hauer",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:37",
+      "name": "Hugo Lange",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:38",
+      "name": "Jardim Botânico",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:39",
+      "name": "Jardim Social",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:40",
+      "name": "Jardim das Américas",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:41",
+      "name": "Juvevê",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:42",
+      "name": "Lamenha Pequena",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:43",
+      "name": "Lindóia",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:44",
+      "name": "Mercês",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:45",
+      "name": "Mossunguê",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:46",
+      "name": "Novo Mundo",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:47",
+      "name": "Orleans",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:48",
+      "name": "Parolin",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:49",
+      "name": "Pilarzinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:50",
+      "name": "Pinheirinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:51",
+      "name": "Portão",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:52",
+      "name": "Prado Velho",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:53",
+      "name": "Rebouças",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:54",
+      "name": "Riviera",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:55",
+      "name": "Santa Cândida",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:56",
+      "name": "Santa Felicidade",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:57",
+      "name": "Santa Quitéria",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:58",
+      "name": "Santo Inácio",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:59",
+      "name": "Seminário",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:60",
+      "name": "Sítio Cercado",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:61",
+      "name": "São Braz",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:62",
+      "name": "São Francisco",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:63",
+      "name": "São João",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:64",
+      "name": "São Lourenço",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:65",
+      "name": "São Miguel",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:66",
+      "name": "Taboão",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:67",
+      "name": "Tarumã",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:68",
+      "name": "Tatuquara",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:69",
+      "name": "Tingui",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:70",
+      "name": "Uberaba",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:71",
+      "name": "Umbará",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:72",
+      "name": "Vila Izabel",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:73",
+      "name": "Vista Alegre",
+      "kind": "bairro"
+    },
+    {
+      "id": "4106902:bairro:74",
+      "name": "Xaxim",
+      "kind": "bairro"
+    }
+  ]
+}

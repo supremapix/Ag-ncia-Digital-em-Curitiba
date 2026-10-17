@@ -1,0 +1,608 @@
+{
+  "capitalId": "5103403",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (MT)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/MT_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "5103403:bairro:5103403118",
+      "name": "Alto da Serra I",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403104",
+      "name": "Altos do Coxipó",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403041",
+      "name": "Alvorada",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403009",
+      "name": "Araés",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403007",
+      "name": "Areão",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403006",
+      "name": "Bandeirantes",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403500",
+      "name": "Barbado",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403033",
+      "name": "Barra do Pari",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403016",
+      "name": "Baú",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403048",
+      "name": "Bela Marina",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403064",
+      "name": "Bela Vista",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403044",
+      "name": "Boa Esperança",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403060",
+      "name": "Bosque da Saúde",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403083",
+      "name": "Cachoeira das Garças",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403054",
+      "name": "Campo Velho",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403066",
+      "name": "Campo Verde",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403062",
+      "name": "Canjica",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403067",
+      "name": "Carumbé",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403002",
+      "name": "Centro Norte",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403020",
+      "name": "Centro Político Administrativo",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403001",
+      "name": "Centro Sul",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403097",
+      "name": "Chácara dos Pinheiros",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403014",
+      "name": "Cidade Alta",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403031",
+      "name": "Cidade Verde",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403088",
+      "name": "Cohab São Gonçalo",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403029",
+      "name": "Coophamil",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403095",
+      "name": "Coophema",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403096",
+      "name": "Coxipó",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403040",
+      "name": "Despraiado",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403004",
+      "name": "Dom Aquino",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403065",
+      "name": "Dom Bosco",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403119",
+      "name": "Dr. Fábio Leite I",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403011",
+      "name": "Duque de Caxias",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403012",
+      "name": "Goiabeira",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403051",
+      "name": "Grande Terceiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403061",
+      "name": "Jardim Aclimação",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403047",
+      "name": "Jardim Califórnia",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403501",
+      "name": "Jardim Campus Elizius",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403102",
+      "name": "Jardim Comodoro",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403013",
+      "name": "Jardim Cuiabá",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403057",
+      "name": "Jardim das Américas",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403098",
+      "name": "Jardim das Palmeiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403105",
+      "name": "Jardim dos Ipês",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403075",
+      "name": "Jardim Eldorado",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403052",
+      "name": "Jardim Europa",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403022",
+      "name": "Jardim Florianópolis",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403110",
+      "name": "Jardim Fortaleza",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403094",
+      "name": "Jardim Gramado",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403081",
+      "name": "Jardim Imperial",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403115",
+      "name": "Jardim Industriário",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403077",
+      "name": "Jardim Itália",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403058",
+      "name": "Jardim Leblon",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403036",
+      "name": "Jardim Mariana",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403089",
+      "name": "Jardim Mossoró",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403084",
+      "name": "Jardim Passaredo",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403053",
+      "name": "Jardim Paulista",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403046",
+      "name": "Jardim Petrópolis",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403086",
+      "name": "Jardim Presidente",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403045",
+      "name": "Jardim Shangri-lá",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403055",
+      "name": "Jardim Tropical",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403039",
+      "name": "Jardim Ubirajara",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403082",
+      "name": "Jardim Universitário",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403023",
+      "name": "Jardim Vitória",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403107",
+      "name": "Lagoa Azul",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403008",
+      "name": "Lixeira",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403028",
+      "name": "Morada da Serra",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403019",
+      "name": "Morada do Ouro",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403078",
+      "name": "Morada dos Nobres",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403101",
+      "name": "Nossa Senhora Aparecida",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403025",
+      "name": "Nova Conquista",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403114",
+      "name": "Nova Esperança",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403037",
+      "name": "Novo Colorado",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403070",
+      "name": "Novo Horizonte",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403069",
+      "name": "Novo Mato Grosso",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403030",
+      "name": "Novo Terceiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403112",
+      "name": "Osmar Cabral",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403021",
+      "name": "Paiaguás",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403024",
+      "name": "Paraíso",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403091",
+      "name": "Parque Atalaia",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403090",
+      "name": "Parque Cuiabá",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403092",
+      "name": "Parque Geórgia",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403099",
+      "name": "Parque Ohara",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403116",
+      "name": "Pascoal Ramos",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403113",
+      "name": "Pedra 90",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403059",
+      "name": "Pedregal",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403056",
+      "name": "Pico do Amor",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403071",
+      "name": "Planalto",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403005",
+      "name": "Poção",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403017",
+      "name": "Popular",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403015",
+      "name": "Porto",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403049",
+      "name": "Praeirinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403050",
+      "name": "Praeiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403026",
+      "name": "Primeiro de Março",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403010",
+      "name": "Quilombo",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403080",
+      "name": "Recanto dos Pássaros",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403087",
+      "name": "Residencial Coxipó",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403072",
+      "name": "Residencial Itamaraty",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403076",
+      "name": "Residencial Santa Inês",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403074",
+      "name": "Residencial São Carlos",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403035",
+      "name": "Ribeirão da Ponte",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403038",
+      "name": "Ribeirão do Lipa",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403079",
+      "name": "Santa Cruz",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403032",
+      "name": "Santa Isabel",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403109",
+      "name": "Santa Laura",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403042",
+      "name": "Santa Marta",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403034",
+      "name": "Santa Rosa",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403085",
+      "name": "São Francisco",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403093",
+      "name": "São Gonçalo Beira Rio",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403111",
+      "name": "São João Del Rey",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403103",
+      "name": "São José",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403068",
+      "name": "São Roque",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403108",
+      "name": "São Sebastião",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403073",
+      "name": "Sol Nascente",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403003",
+      "name": "Terceiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403063",
+      "name": "Terra Nova",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403106",
+      "name": "Tijucal",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403027",
+      "name": "Três Barras",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403043",
+      "name": "Ufmt",
+      "kind": "bairro"
+    },
+    {
+      "id": "5103403:bairro:5103403100",
+      "name": "Vista Alegre",
+      "kind": "bairro"
+    }
+  ]
+}

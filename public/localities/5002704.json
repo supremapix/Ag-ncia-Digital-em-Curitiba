@@ -1,0 +1,383 @@
+{
+  "capitalId": "5002704",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (MS)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/MS_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "5002704:bairro:5002704034",
+      "name": "Aero Rancho",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704036",
+      "name": "Alves Pereira",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704011",
+      "name": "Amambaí",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704070",
+      "name": "América",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704073",
+      "name": "Autonomista",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704021",
+      "name": "Bandeirantes",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704055",
+      "name": "Batistão",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704005",
+      "name": "Bela Vista",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704012",
+      "name": "Cabreúva",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704050",
+      "name": "Caiçara",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704079",
+      "name": "Caiobá",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704061",
+      "name": "Carandá",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704028",
+      "name": "Carlota",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704010",
+      "name": "Carvalho",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704075",
+      "name": "Centenário",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704001",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704039",
+      "name": "Centro-Oeste",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704060",
+      "name": "Chácara Cachoeira",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704072",
+      "name": "Chácara dos Poderes",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704056",
+      "name": "Coophavila II",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704019",
+      "name": "Coronel Antonino",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704003",
+      "name": "Cruzeiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704029",
+      "name": "Dr. Albuquerque",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704074",
+      "name": "Estrela Dalva",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704009",
+      "name": "Glória",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704033",
+      "name": "Guanandi",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704006",
+      "name": "Itanhangá",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704032",
+      "name": "Jacy",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704004",
+      "name": "Jardim dos Estados",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704024",
+      "name": "Jardim Paulista",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704023",
+      "name": "Jóckey Club",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704014",
+      "name": "José Abrão",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704077",
+      "name": "Lageado",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704052",
+      "name": "Leblon",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704040",
+      "name": "Los Angeles",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704058",
+      "name": "Margarida",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704067",
+      "name": "Maria Aparecida Pedrossian",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704062",
+      "name": "Mata do Jacinto",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704018",
+      "name": "Mata do Segredo",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704017",
+      "name": "Monte Castelo",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704008",
+      "name": "Monte Líbano",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704038",
+      "name": "Moreninha",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704015",
+      "name": "Nasser",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704069",
+      "name": "Noroeste",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704047",
+      "name": "Nova Campo Grande",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704020",
+      "name": "Nova Lima",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704063",
+      "name": "Novos Estados",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704057",
+      "name": "Núcleo Industrial",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704045",
+      "name": "Panamá",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704076",
+      "name": "Parati",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704035",
+      "name": "Pioneiros",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704031",
+      "name": "Piratininga",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704013",
+      "name": "Planalto",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704046",
+      "name": "Popular",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704027",
+      "name": "Rita Vieira",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704059",
+      "name": "Santa Fé",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704043",
+      "name": "Santo Amaro",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704044",
+      "name": "Santo Antônio",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704007",
+      "name": "São Bento",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704054",
+      "name": "São Conrado",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704002",
+      "name": "São Francisco",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704078",
+      "name": "São Lourenço",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704016",
+      "name": "Seminário",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704042",
+      "name": "Sobrinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704022",
+      "name": "Taquarussu",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704080",
+      "name": "Tarumã",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704049",
+      "name": "Taveirópolis",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704053",
+      "name": "Tijuca",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704066",
+      "name": "Tiradentes",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704025",
+      "name": "Tv Morena",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704051",
+      "name": "União",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704037",
+      "name": "Universitário",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704064",
+      "name": "Veraneio",
+      "kind": "bairro"
+    },
+    {
+      "id": "5002704:bairro:5002704026",
+      "name": "Vilas Boas",
+      "kind": "bairro"
+    }
+  ]
+}

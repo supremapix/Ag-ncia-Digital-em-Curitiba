@@ -1,3 +1,4 @@
+import { CapitalExplorer } from '../components/CapitalExplorer';
 import React, { useState, useEffect } from 'react';
 import { RegionalOffer } from '../components/RegionalOffer';
 import { StaticFAQ } from '../components/StaticFAQ';
@@ -12,7 +13,7 @@ export const RegionalPresence = () => {
   const toggle = (name: string) => setSelected(current => current.includes(name) ? current.filter(value => value !== name) : [...current, name]);
   const subtotal = regionalSubtotal(selected.length);
 
-  return <div className="suprema-home regional-page"><div className="regional-title studio-shell"><p className="eyebrow">SITE + PRESENÇA LOCAL</p><h1>Comece pelo seu site.<br/><em>Escolha onde crescer.</em></h1><p>Criação do site e plano regional com valores separados. Escolha as localidades em que sua empresa atende.</p></div><RegionalOffer />
+  return <div className="suprema-home regional-page"><div className="regional-title studio-shell"><p className="eyebrow">SITE + PRESENÇA LOCAL</p><h1>Comece pelo seu site.<br/><em>Escolha onde crescer.</em></h1><p>Criação do site e plano regional com valores separados. Escolha as localidades em que sua empresa atende.</p></div><RegionalOffer /><CapitalExplorer />
     <section className="region-calculator studio-shell" aria-labelledby="calculator-heading"><p className="eyebrow">SUA ÁREA DE ATENDIMENTO</p><h2 id="calculator-heading">Escolha seus bairros.</h2><p>Escolha entre os 75 bairros oficiais de Curitiba. Abaixo de 30 bairros, cada localidade custa R$ 20 por mês. Curitiba já está representada pelos bairros e não é cobrada novamente como município.</p>
       <div className="calculator-layout"><div><label className="region-search">Buscar bairro<input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Ex.: Batel ou Água Verde" /></label><p role="status">{visible.length} bairros encontrados. A busca mantém suas seleções.</p>
       <fieldset className="region-options"><legend>Selecione onde sua empresa atende</legend>{visible.map(name => <label key={name}><input type="checkbox" checked={selected.includes(name)} onChange={() => toggle(name)}/><span>{name}<small>Bairro de Curitiba</small></span></label>)}{visible.length === 0 && <p>Nenhum bairro encontrado. Tente outro nome.</p>}</fieldset></div>

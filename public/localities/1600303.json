@@ -1,0 +1,318 @@
+{
+  "capitalId": "1600303",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (AP)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/AP_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "1600303:bairro:1600303030",
+      "name": "Açaí",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303013",
+      "name": "Alvorada",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303031",
+      "name": "Amazonas",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303017",
+      "name": "Araxá",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303003",
+      "name": "Beirol",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303032",
+      "name": "Bella Ville",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303019",
+      "name": "Boné Azul",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303018",
+      "name": "Brasil Novo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303033",
+      "name": "Buritis",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303012",
+      "name": "Buritizal",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303020",
+      "name": "Cabralzinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303034",
+      "name": "Cajari",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303001",
+      "name": "Central",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303061",
+      "name": "Chefe Clodoaldo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303027",
+      "name": "Cidade Nova",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303010",
+      "name": "Congós",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303035",
+      "name": "Coração",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303062",
+      "name": "Fazendinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303036",
+      "name": "Goiabal",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303063",
+      "name": "Igarapé de Fortaleza",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303037",
+      "name": "Ilha Mirim",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303025",
+      "name": "Infraero I",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303038",
+      "name": "Infraero II",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303039",
+      "name": "Ipê",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303040",
+      "name": "Jardim América",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303041",
+      "name": "Jardim das Acácias",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303021",
+      "name": "Jardim Equatorial",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303042",
+      "name": "Jardim Felicidade I",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303043",
+      "name": "Jardim Felicidade II",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303022",
+      "name": "Jardim Marco Zero",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303005",
+      "name": "Jesus de Nazaré",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303044",
+      "name": "KM 9",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303045",
+      "name": "Lago da Vaca",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303046",
+      "name": "Lagoa Azul",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303004",
+      "name": "Laguinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303047",
+      "name": "Macapaba",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303048",
+      "name": "Marabaixo I",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303049",
+      "name": "Marabaixo II",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303050",
+      "name": "Marabaixo III",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303051",
+      "name": "Morada das Palmeiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303052",
+      "name": "Muca",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303064",
+      "name": "Murici",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303011",
+      "name": "Nova Esperança",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303028",
+      "name": "Novo Buritizal",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303023",
+      "name": "Novo Horizonte",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303007",
+      "name": "Pacoval",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303054",
+      "name": "Pantanal",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303055",
+      "name": "Parque Aeroportuário",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303056",
+      "name": "Parque dos Jardins",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303015",
+      "name": "Pedrinhas",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303008",
+      "name": "Perpétuo Socorro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303057",
+      "name": "Renascer",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303009",
+      "name": "Santa Inês",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303006",
+      "name": "Santa Rita",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303058",
+      "name": "São José",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303014",
+      "name": "São Lázaro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303059",
+      "name": "Sol Nascente",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303002",
+      "name": "Trem",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303026",
+      "name": "Universidade",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303065",
+      "name": "Vale Verde",
+      "kind": "bairro"
+    },
+    {
+      "id": "1600303:bairro:1600303029",
+      "name": "Zerão",
+      "kind": "bairro"
+    }
+  ]
+}

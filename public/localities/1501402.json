@@ -1,0 +1,368 @@
+{
+  "capitalId": "1501402",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (PA)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PA_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "1501402:bairro:1501402053",
+      "name": "Aeroporto",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402052",
+      "name": "Água Boa",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402030",
+      "name": "Águas Lindas",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402040",
+      "name": "Águas Negras",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402041",
+      "name": "Agulha",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402054",
+      "name": "Arirambá",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402031",
+      "name": "Aurá",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402071",
+      "name": "Baía do Sol",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402021",
+      "name": "Barreiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402001",
+      "name": "Batista Campos",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402032",
+      "name": "Bengui",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402068",
+      "name": "Bonfim",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402051",
+      "name": "Brasília",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402033",
+      "name": "Cabanagem",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402019",
+      "name": "Campina",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402042",
+      "name": "Campina de Icoaraci",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402002",
+      "name": "Canudos",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402055",
+      "name": "Carananduba",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402056",
+      "name": "Caruara",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402028",
+      "name": "Castanheira",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402066",
+      "name": "Chapéu Virado",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402003",
+      "name": "Cidade Velha",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402004",
+      "name": "Condor",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402034",
+      "name": "Coqueiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402005",
+      "name": "Cremação",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402043",
+      "name": "Cruzeiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402024",
+      "name": "Curió-Utinga",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402057",
+      "name": "Farol",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402010",
+      "name": "Fátima",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402006",
+      "name": "Guamá",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402029",
+      "name": "Guanabara",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402050",
+      "name": "Itaiteua",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402007",
+      "name": "Jurunas",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402026",
+      "name": "Mangueirão",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402058",
+      "name": "Mangueiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402044",
+      "name": "Maracacuera",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402059",
+      "name": "Maracajá",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402022",
+      "name": "Maracangalha",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402069",
+      "name": "Marahú",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402008",
+      "name": "Marambaia",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402009",
+      "name": "Marco",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402023",
+      "name": "Miramar",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402018",
+      "name": "Montese (Terra Firme)",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402067",
+      "name": "Murubira",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402060",
+      "name": "Natal do Murubira",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402011",
+      "name": "Nazaré",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402045",
+      "name": "Paracuri",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402070",
+      "name": "Paraíso",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402046",
+      "name": "Parque Guajará",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402035",
+      "name": "Parque Verde",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402012",
+      "name": "Pedreira",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402047",
+      "name": "Ponta Grossa",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402061",
+      "name": "Porto Arthur",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402065",
+      "name": "Praia Grande",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402036",
+      "name": "Pratinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402013",
+      "name": "Reduto",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402014",
+      "name": "Sacramenta",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402015",
+      "name": "São Brás",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402037",
+      "name": "São Clemente",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402062",
+      "name": "São Francisco",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402049",
+      "name": "São João do Outeiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402016",
+      "name": "Souza",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402063",
+      "name": "Sucurijuquara",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402038",
+      "name": "Tapanã",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402017",
+      "name": "Telégrafo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402048",
+      "name": "Tenoné",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402020",
+      "name": "Umarizal",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402039",
+      "name": "Una",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402027",
+      "name": "Universitário",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402025",
+      "name": "Val-de-Cães",
+      "kind": "bairro"
+    },
+    {
+      "id": "1501402:bairro:1501402064",
+      "name": "Vila",
+      "kind": "bairro"
+    }
+  ]
+}

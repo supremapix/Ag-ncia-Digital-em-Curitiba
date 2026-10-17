@@ -1,0 +1,298 @@
+{
+  "capitalId": "1100205",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (RO)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/RO_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "1100205:bairro:1100205043",
+      "name": "Aeroclube",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205040",
+      "name": "Agenor M. de Carvalho",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205061",
+      "name": "Aponiã",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205023",
+      "name": "Areal",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205052",
+      "name": "Areia Branca",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205016",
+      "name": "Arigolândia",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205021",
+      "name": "Baixa União",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205018",
+      "name": "Caiari",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205046",
+      "name": "Caladinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205053",
+      "name": "Cascalheira",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205045",
+      "name": "Castanheira",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205017",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205049",
+      "name": "Cidade do Lobo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205063",
+      "name": "Cidade Nova",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205044",
+      "name": "Cohab",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205062",
+      "name": "Conceição",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205036",
+      "name": "Costa e Silva",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205059",
+      "name": "Cuniã",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205042",
+      "name": "Eldorado",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205050",
+      "name": "Eletronorte",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205031",
+      "name": "Embratel",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205054",
+      "name": "Escola de Polícia",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205003",
+      "name": "Flodoaldo Pontes Pinto",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205026",
+      "name": "Floresta",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205060",
+      "name": "Igarapé",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205005",
+      "name": "Industrial",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205002",
+      "name": "Juscelino Kubitschek",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205039",
+      "name": "Lagoa",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205057",
+      "name": "Lagoinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205008",
+      "name": "Liberdade",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205012",
+      "name": "Mato Grosso",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205025",
+      "name": "Militar",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205020",
+      "name": "Mocambo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205038",
+      "name": "Nacional",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205011",
+      "name": "Nossa Senhora das Graças",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205064",
+      "name": "Nova Esperança",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205047",
+      "name": "Nova Floresta",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205006",
+      "name": "Nova Porto Velho",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205051",
+      "name": "Novo Horizonte",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205015",
+      "name": "Olaria",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205027",
+      "name": "Panair",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205030",
+      "name": "Pedrinhas",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205056",
+      "name": "Planalto",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205022",
+      "name": "Quilômetro Um",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205041",
+      "name": "Rio Madeira",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205007",
+      "name": "Roque",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205019",
+      "name": "Santa Bárbara",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205010",
+      "name": "São Cristóvão",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205009",
+      "name": "São João Bosco",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205037",
+      "name": "São Sebastião",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205032",
+      "name": "Tancredo Neves",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205055",
+      "name": "Teixeirão",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205004",
+      "name": "Tiradentes",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205058",
+      "name": "Três Marias",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205024",
+      "name": "Triângulo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205014",
+      "name": "Tucumanzal",
+      "kind": "bairro"
+    },
+    {
+      "id": "1100205:bairro:1100205033",
+      "name": "Tupi",
+      "kind": "bairro"
+    }
+  ]
+}

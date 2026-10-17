@@ -1,0 +1,333 @@
+{
+  "capitalId": "2507507",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (PB)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PB_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "2507507:bairro:2507507002",
+      "name": "Aeroclube",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507001",
+      "name": "Água Fria",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507003",
+      "name": "Altiplano Cabo Branco",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507004",
+      "name": "Alto do Céu",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507005",
+      "name": "Alto do Mateus",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507006",
+      "name": "Anatólia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507010",
+      "name": "Bancários",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507060",
+      "name": "Barra de Gramame",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507011",
+      "name": "Bessa",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507012",
+      "name": "Brisamar",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507013",
+      "name": "Cabo Branco",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507014",
+      "name": "Castelo Branco",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507015",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507016",
+      "name": "Cidade dos Colibris",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507061",
+      "name": "Costa do Sol",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507018",
+      "name": "Costa e Silva",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507019",
+      "name": "Cristo Redentor",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507020",
+      "name": "Cruz das Armas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507021",
+      "name": "Cuiá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507022",
+      "name": "Distrito Industrial",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507023",
+      "name": "Ernani Sátiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507024",
+      "name": "Ernesto Geisel",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507007",
+      "name": "Estados",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507025",
+      "name": "Expedicionários",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507026",
+      "name": "Funcionários",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507062",
+      "name": "Gramame",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507027",
+      "name": "Grotão",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507028",
+      "name": "Ilha do Bispo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507008",
+      "name": "Indústrias",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507009",
+      "name": "Ipês",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507029",
+      "name": "Jaguaribe",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507033",
+      "name": "Jardim Cidade Universitária",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507034",
+      "name": "Jardim Oceania",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507035",
+      "name": "Jardim São Paulo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507036",
+      "name": "Jardim Veneza",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507031",
+      "name": "João Agripino",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507030",
+      "name": "João Paulo II",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507032",
+      "name": "José Américo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507037",
+      "name": "Manaíra",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507038",
+      "name": "Mandacarú",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507039",
+      "name": "Mangabeira",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507040",
+      "name": "Miramar",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507041",
+      "name": "Muçumagro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507063",
+      "name": "Mumbaba",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507064",
+      "name": "Mussuré",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507042",
+      "name": "Oitizeiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507017",
+      "name": "Padre Zé",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507043",
+      "name": "Paratibe",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507045",
+      "name": "Pedro Gondim",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507044",
+      "name": "Penha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507046",
+      "name": "Planalto da Boa Esperança",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507047",
+      "name": "Ponta do Seixas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507048",
+      "name": "Portal do Sol",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507049",
+      "name": "Roger",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507050",
+      "name": "São José",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507051",
+      "name": "Tambaú",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507053",
+      "name": "Tambauzinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507052",
+      "name": "Tambiá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507055",
+      "name": "Torre",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507054",
+      "name": "Treze de Maio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507056",
+      "name": "Trincheiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507058",
+      "name": "Valentina",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507059",
+      "name": "Varadouro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2507507:bairro:2507507057",
+      "name": "Varjão",
+      "kind": "bairro"
+    }
+  ]
+}

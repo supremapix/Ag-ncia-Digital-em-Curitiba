@@ -1,0 +1,618 @@
+{
+  "capitalId": "2304400",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (CE)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/CE_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "2304400:bairro:2304400091",
+      "name": "Aerolândia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400092",
+      "name": "Aeroporto",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400002",
+      "name": "Aldeota",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400093",
+      "name": "Alto da Balança",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400003",
+      "name": "Álvaro Weyne",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400004",
+      "name": "Amadeu Furtado",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400050",
+      "name": "Ancuri",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400040",
+      "name": "Antônio Bezerra",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400124",
+      "name": "Aracapé",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400041",
+      "name": "Autran Nunes",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400006",
+      "name": "Barra do Ceará",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400051",
+      "name": "Barroso",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400094",
+      "name": "Bela Vista",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400007",
+      "name": "Benfica",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400125",
+      "name": "Boa Vista / Castelão",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400008",
+      "name": "Bom Futuro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400072",
+      "name": "Bom Jardim",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400073",
+      "name": "Bonsucesso",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400110",
+      "name": "Cais do Porto",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400052",
+      "name": "Cajazeiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400053",
+      "name": "Cambeba",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400074",
+      "name": "Canindezinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400009",
+      "name": "Carlito Pamplona",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400010",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400111",
+      "name": "Cidade 2000",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400054",
+      "name": "Cidade dos Funcionários",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400055",
+      "name": "Coaçu",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400011",
+      "name": "Cocó",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400042",
+      "name": "Conjunto Ceará I",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400075",
+      "name": "Conjunto Ceará II",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400076",
+      "name": "Conjunto Esperança",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400118",
+      "name": "Conjunto Palmeiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400096",
+      "name": "Couto Fernandes",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400012",
+      "name": "Cristo Redentor",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400056",
+      "name": "Curió",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400013",
+      "name": "Damas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400115",
+      "name": "De Lourdes",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400097",
+      "name": "Demócrito Rocha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400077",
+      "name": "Dendê",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400098",
+      "name": "Dias Macedo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400014",
+      "name": "Dionísio Torres",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400043",
+      "name": "Dom Lustosa",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400057",
+      "name": "Edson Queiroz",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400038",
+      "name": "Ellery",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400058",
+      "name": "Engenheiro Luciano Cavalcante",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400015",
+      "name": "Farias Brito",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400016",
+      "name": "Fátima",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400017",
+      "name": "Floresta",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400044",
+      "name": "Genibaú",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400078",
+      "name": "Granja Lisboa",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400079",
+      "name": "Granja Portugal",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400059",
+      "name": "Guajeru",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400060",
+      "name": "Guararapes",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400045",
+      "name": "Henrique Jorge",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400099",
+      "name": "Itaoca",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400100",
+      "name": "Itaperi",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400018",
+      "name": "Jacarecanga",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400061",
+      "name": "Jangurussu",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400019",
+      "name": "Jardim América",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400080",
+      "name": "Jardim Cearense",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400062",
+      "name": "Jardim das Oliveiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400020",
+      "name": "Jardim Guanabara",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400021",
+      "name": "Jardim Iracema",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400046",
+      "name": "João XXIII",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400022",
+      "name": "Joaquim Távora",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400101",
+      "name": "Jóquei Clube",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400023",
+      "name": "José Bonifácio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400049",
+      "name": "José de Alencar",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400063",
+      "name": "Lagoa Redonda",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400081",
+      "name": "Manoel Sátiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400112",
+      "name": "Manuel Dias Branco",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400082",
+      "name": "Maraponga",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400024",
+      "name": "Meireles",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400065",
+      "name": "Messejana",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400083",
+      "name": "Mondubim",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400025",
+      "name": "Monte Castelo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400103",
+      "name": "Montese",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400005",
+      "name": "Moura Brasil",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400026",
+      "name": "Mucuripe",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400121",
+      "name": "Novo Mondubim",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400122",
+      "name": "Olavo Oliveira",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400047",
+      "name": "Padre Andrade",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400104",
+      "name": "Panamericano",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400027",
+      "name": "Papicu",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400105",
+      "name": "Parangaba",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400028",
+      "name": "Parque Araxá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400084",
+      "name": "Parque Dois Irmãos",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400066",
+      "name": "Parque Iracema",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400067",
+      "name": "Parque Manibura",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400085",
+      "name": "Parque Presidente Vargas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400123",
+      "name": "Parque Santa Maria",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400087",
+      "name": "Parque Santa Rosa",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400086",
+      "name": "Parque São José",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400029",
+      "name": "Parquelândia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400030",
+      "name": "Parreão",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400088",
+      "name": "Passaré",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400068",
+      "name": "Paupina",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400069",
+      "name": "Pedras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400106",
+      "name": "Pici",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400031",
+      "name": "Pirambu",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400116",
+      "name": "Planalto Ayrton Senna",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400032",
+      "name": "Praia de Iracema",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400113",
+      "name": "Praia do Futuro I",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400114",
+      "name": "Praia do Futuro II",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400089",
+      "name": "Prefeito José Walter",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400033",
+      "name": "Presidente Kennedy",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400048",
+      "name": "Quintino Cunha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400034",
+      "name": "Rodolfo Teófilo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400070",
+      "name": "Sabiaguaba",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400071",
+      "name": "Salinas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400119",
+      "name": "São Bento",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400001",
+      "name": "São Gerardo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400035",
+      "name": "São João do Tauape",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400064",
+      "name": "Sapiranga / Coité",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400107",
+      "name": "Serrinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400090",
+      "name": "Siqueira",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400036",
+      "name": "Varjota",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400037",
+      "name": "Vicente Pinzón",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400108",
+      "name": "Vila Peri",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400109",
+      "name": "Vila União",
+      "kind": "bairro"
+    },
+    {
+      "id": "2304400:bairro:2304400039",
+      "name": "Vila Velha",
+      "kind": "bairro"
+    }
+  ]
+}

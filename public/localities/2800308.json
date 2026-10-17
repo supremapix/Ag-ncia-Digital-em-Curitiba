@@ -1,0 +1,253 @@
+{
+  "capitalId": "2800308",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (SE)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/SE_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "2800308:bairro:2800308039",
+      "name": "17 de Março",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308002",
+      "name": "Aeroporto",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308016",
+      "name": "América",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308043",
+      "name": "Areia Branca",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308001",
+      "name": "Atalaia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308041",
+      "name": "Bairro Aruana",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308026",
+      "name": "Bugio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308017",
+      "name": "Capucho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308020",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308034",
+      "name": "Cidade Nova",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308021",
+      "name": "Cirurgia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308005",
+      "name": "Coroa do Meio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308028",
+      "name": "Dezoito do Forte",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308040",
+      "name": "Dom Luciano",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308003",
+      "name": "Farolândia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308044",
+      "name": "Gameleira",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308022",
+      "name": "Getúlio Vargas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308008",
+      "name": "Grageru",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308007",
+      "name": "Inácio Barbosa",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308031",
+      "name": "Industrial",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308006",
+      "name": "Jabotiana",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308038",
+      "name": "Japãozinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308025",
+      "name": "Jardim Centenário",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308036",
+      "name": "Jardins",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308023",
+      "name": "José Conrado de Araújo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308033",
+      "name": "Lamarão",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308009",
+      "name": "Luzia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308042",
+      "name": "Marivan",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308045",
+      "name": "Matapoã",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308046",
+      "name": "Mosqueiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308019",
+      "name": "Novo Paraíso",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308024",
+      "name": "Olaria",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308029",
+      "name": "Palestina",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308014",
+      "name": "Pereira Lobo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308010",
+      "name": "Ponto Novo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308032",
+      "name": "Porto Dantas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308047",
+      "name": "Robalo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308012",
+      "name": "Salgado Filho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308037",
+      "name": "Santa Maria",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308030",
+      "name": "Santo Antônio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308027",
+      "name": "Santos Dumont",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308004",
+      "name": "São Conrado",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308018",
+      "name": "São José",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308048",
+      "name": "São José dos Náufragos",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308015",
+      "name": "Siqueira Campos",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308035",
+      "name": "Soledade",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308013",
+      "name": "Suíça",
+      "kind": "bairro"
+    },
+    {
+      "id": "2800308:bairro:2800308011",
+      "name": "Treze de Julho",
+      "kind": "bairro"
+    }
+  ]
+}

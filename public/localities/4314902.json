@@ -1,0 +1,482 @@
+{
+  "verifiedAt": "2026-10-17",
+  "localities": [
+    {
+      "id": "4314902:bairro:25",
+      "name": "Aberta dos Morros",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:84",
+      "name": "Agronomia",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:55",
+      "name": "Anchieta",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:32",
+      "name": "Aparício Borges",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:67",
+      "name": "Arquipélago",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:46",
+      "name": "Auxiliadora",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:90",
+      "name": "Azenha",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:42",
+      "name": "Bela Vista",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:22",
+      "name": "Belém Novo",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:80",
+      "name": "Belém Velho",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:35",
+      "name": "Boa Vista",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:86",
+      "name": "Boa Vista do Sul",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:39",
+      "name": "Bom Fim",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:15",
+      "name": "Bom Jesus",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:75",
+      "name": "Camaquã",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:38",
+      "name": "Campo Novo",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:81",
+      "name": "Cascata",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:76",
+      "name": "Cavalhada",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:61",
+      "name": "Centro Histórico",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:58",
+      "name": "Chácara das Pedras",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:17",
+      "name": "Chapéu do Sol",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:94",
+      "name": "Cidade Baixa",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:5",
+      "name": "Costa e Silva",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:74",
+      "name": "Cristal",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:11",
+      "name": "Cristo Redentor",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:33",
+      "name": "Espírito Santo",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:20",
+      "name": "Extrema",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:64",
+      "name": "Farrapos",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:37",
+      "name": "Farroupilha",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:49",
+      "name": "Floresta",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:31",
+      "name": "Glória",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:24",
+      "name": "Guarujá",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:2",
+      "name": "Higienópolis",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:34",
+      "name": "Hípica",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:65",
+      "name": "Humaitá",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:44",
+      "name": "Independência",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:70",
+      "name": "Ipanema",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:79",
+      "name": "Jardim Botânico",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:14",
+      "name": "Jardim Carvalho",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:12",
+      "name": "Jardim do Salso",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:27",
+      "name": "Jardim Europa",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:54",
+      "name": "Jardim Floresta",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:71",
+      "name": "Jardim Isabel",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:9",
+      "name": "Jardim Itu",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:36",
+      "name": "Jardim Leopoldina",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:7",
+      "name": "Jardim Lindóia",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:60",
+      "name": "Jardim Sabará",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:53",
+      "name": "Jardim São Pedro",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:43",
+      "name": "Lageado",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:52",
+      "name": "Lami",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:85",
+      "name": "Lomba do Pinheiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:28",
+      "name": "Mário Quintana",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:88",
+      "name": "Medianeira",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:89",
+      "name": "Menino Deus",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:45",
+      "name": "Moinhos de Vento",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:50",
+      "name": "Montserrat",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:57",
+      "name": "Morro Santana",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:63",
+      "name": "Navegantes",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:29",
+      "name": "Nonoai",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:4",
+      "name": "Parque Santa Fé",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:66",
+      "name": "Partenon",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:10",
+      "name": "Passo D'Areia",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:1",
+      "name": "Passo das Pedras",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:72",
+      "name": "Pedra Redonda",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:40",
+      "name": "Petrópolis",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:48",
+      "name": "Pitinga",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:16",
+      "name": "Ponta Grossa",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:93",
+      "name": "Praia de Belas",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:51",
+      "name": "Restinga",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:41",
+      "name": "Rio Branco",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:6",
+      "name": "Rubem Berta",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:91",
+      "name": "Santa Cecília",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:8",
+      "name": "Santa Maria Goretti",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:13",
+      "name": "Santa Rosa de Lima",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:87",
+      "name": "Santa Tereza",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:92",
+      "name": "Santana",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:47",
+      "name": "Santo Antônio",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:21",
+      "name": "São Caetano",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:62",
+      "name": "São Geraldo",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:23",
+      "name": "São João",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:56",
+      "name": "São Sebastião",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:19",
+      "name": "Sarandi",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:18",
+      "name": "Serraria",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:68",
+      "name": "Sétimo Céu",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:30",
+      "name": "Teresópolis",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:59",
+      "name": "Três Figueiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:77",
+      "name": "Tristeza",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:69",
+      "name": "Vila Assunção",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:73",
+      "name": "Vila Conceição",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:3",
+      "name": "Vila Ipiranga",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:26",
+      "name": "Vila Jardim",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:82",
+      "name": "Vila João Pessoa",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:78",
+      "name": "Vila Nova",
+      "kind": "bairro"
+    },
+    {
+      "id": "4314902:bairro:83",
+      "name": "Vila São José",
+      "kind": "bairro"
+    }
+  ],
+  "note": "Unidades da camada municipal de bairros consultada nesta data; o cadastro pode ser atualizado pelo município.",
+  "source": {
+    "url": "https://gis-smamus.portoalegre.rs.gov.br/server/rest/services/A02_SOLO_CRIADO/bairros/FeatureServer/0",
+    "title": "Prefeitura de Porto Alegre — bairros"
+  },
+  "status": "complete",
+  "capitalId": "4314902"
+}

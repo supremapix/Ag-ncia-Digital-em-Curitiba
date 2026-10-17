@@ -1,0 +1,263 @@
+{
+  "capitalId": "2704302",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (AL)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/AL_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "2704302:bairro:2704302001",
+      "name": "Antares",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302002",
+      "name": "Barro Duro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302003",
+      "name": "Bebedouro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302004",
+      "name": "Benedito Bentes",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302005",
+      "name": "Bom Parto",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302006",
+      "name": "Canaã",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302007",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302009",
+      "name": "Chã da Jaqueira",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302008",
+      "name": "Chã de Bebedouro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302010",
+      "name": "Cidade Universitária",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302011",
+      "name": "Clima Bom",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302012",
+      "name": "Cruz das Almas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302013",
+      "name": "Farol",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302014",
+      "name": "Feitosa",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302015",
+      "name": "Fernão Velho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302016",
+      "name": "Garça Torta",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302017",
+      "name": "Gruta de Lourdes",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302018",
+      "name": "Guaxuma",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302019",
+      "name": "Ipioca",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302020",
+      "name": "Jacarecica",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302021",
+      "name": "Jacintinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302022",
+      "name": "Jaraguá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302023",
+      "name": "Jardim Petrópolis",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302024",
+      "name": "Jatiúca",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302025",
+      "name": "Levada",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302026",
+      "name": "Mangabeiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302027",
+      "name": "Mutange",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302028",
+      "name": "Ouro Preto",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302029",
+      "name": "Pajuçara",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302030",
+      "name": "Pescaria",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302031",
+      "name": "Petrópolis",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302032",
+      "name": "Pinheiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302033",
+      "name": "Pitanguinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302034",
+      "name": "Poço",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302035",
+      "name": "Ponta da Terra",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302036",
+      "name": "Ponta Grossa",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302038",
+      "name": "Ponta Verde",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302037",
+      "name": "Pontal da Barra",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302039",
+      "name": "Prado",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302040",
+      "name": "Riacho Doce",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302041",
+      "name": "Rio Novo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302042",
+      "name": "Santa Amélia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302043",
+      "name": "Santa Lúcia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302044",
+      "name": "Santo Amaro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302045",
+      "name": "Santos Dumont",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302046",
+      "name": "São Jorge",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302047",
+      "name": "Serraria",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302048",
+      "name": "Tabuleiro do Martins",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302049",
+      "name": "Trapiche da Barra",
+      "kind": "bairro"
+    },
+    {
+      "id": "2704302:bairro:2704302050",
+      "name": "Vergel do Lago",
+      "kind": "bairro"
+    }
+  ]
+}

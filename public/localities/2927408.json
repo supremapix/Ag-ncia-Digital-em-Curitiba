@@ -1,0 +1,863 @@
+{
+  "capitalId": "2927408",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (BA)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/BA_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "2927408:bairro:2927408001",
+      "name": "Acupe",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408002",
+      "name": "Aeroporto",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408003",
+      "name": "Águas Claras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408004",
+      "name": "Alto da Terezinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408005",
+      "name": "Alto das Pombas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408006",
+      "name": "Alto do Cabrito",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408007",
+      "name": "Alto do Coqueirinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408008",
+      "name": "Amaralina",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408009",
+      "name": "Areia Branca",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408010",
+      "name": "Arenoso",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408011",
+      "name": "Arraial do Retiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408012",
+      "name": "Bairro da Paz",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408013",
+      "name": "Baixa de Quintas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408014",
+      "name": "Barbalho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408015",
+      "name": "Barra",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408016",
+      "name": "Barreiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408017",
+      "name": "Barris",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408018",
+      "name": "Beiru / Tancredo Neves",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408019",
+      "name": "Boa Viagem",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408020",
+      "name": "Boa Vista de Brotas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408021",
+      "name": "Boa Vista de São Caetano",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408022",
+      "name": "Boca da Mata",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408023",
+      "name": "Boca do Rio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408024",
+      "name": "Bom Juá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408025",
+      "name": "Bonfim",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408026",
+      "name": "Brotas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408027",
+      "name": "Cabula",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408028",
+      "name": "Cabula VI",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408029",
+      "name": "Caixa D'água",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408030",
+      "name": "Cajazeiras II",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408031",
+      "name": "Cajazeiras IV",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408032",
+      "name": "Cajazeiras V",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408033",
+      "name": "Cajazeiras VI",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408034",
+      "name": "Cajazeiras VII",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408035",
+      "name": "Cajazeiras VIII",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408036",
+      "name": "Cajazeiras X",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408037",
+      "name": "Cajazeiras XI",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408038",
+      "name": "Calabar",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408039",
+      "name": "Calabetão",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408040",
+      "name": "Calçada",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408041",
+      "name": "Caminho das Árvores",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408042",
+      "name": "Caminho de Areia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408043",
+      "name": "Campinas de Pirajá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408044",
+      "name": "Canabrava",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408045",
+      "name": "Candeal",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408046",
+      "name": "Canela",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408047",
+      "name": "Capelinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408048",
+      "name": "Cassange",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408049",
+      "name": "Castelo Branco",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408050",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408051",
+      "name": "Centro Administrativo da Bahia - CAB",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408052",
+      "name": "Centro Histórico",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408164",
+      "name": "Chame-Chame",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408053",
+      "name": "Chapada do Rio Vermelho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408054",
+      "name": "Cidade Nova",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408165",
+      "name": "Colinas de Periperi",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408055",
+      "name": "Comércio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408056",
+      "name": "Cosme de Farias",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408057",
+      "name": "Costa Azul",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408058",
+      "name": "Coutos",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408059",
+      "name": "Curuzu",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408166",
+      "name": "Dois de Julho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408060",
+      "name": "Dom Avelar",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408061",
+      "name": "Doron",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408062",
+      "name": "Engenho Velho da Federação",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408063",
+      "name": "Engenho Velho de Brotas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408064",
+      "name": "Engomadeira",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408065",
+      "name": "Fazenda Coutos",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408066",
+      "name": "Fazenda Grande do Retiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408067",
+      "name": "Fazenda Grande I",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408068",
+      "name": "Fazenda Grande II",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408069",
+      "name": "Fazenda Grande III",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408070",
+      "name": "Fazenda Grande IV",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408071",
+      "name": "Federação",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408072",
+      "name": "Garcia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408073",
+      "name": "Graça",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408074",
+      "name": "Granjas Rurais Presidente Vargas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408167",
+      "name": "Horto Florestal",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408075",
+      "name": "IAPI",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408168",
+      "name": "Ilha Amarela",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408161",
+      "name": "Ilha Bom Jesus dos Passos",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408162",
+      "name": "Ilha de Maré",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408163",
+      "name": "Ilha dos Frades / Ilha de Santo Antônio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408076",
+      "name": "Imbuí",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408077",
+      "name": "Itacaranha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408078",
+      "name": "Itaigara",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408079",
+      "name": "Itapuã",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408080",
+      "name": "Itinga",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408081",
+      "name": "Jaguaripe I",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408082",
+      "name": "Jardim Armação",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408083",
+      "name": "Jardim Cajazeiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408084",
+      "name": "Jardim das Margaridas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408085",
+      "name": "Jardim Nova Esperança",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408086",
+      "name": "Jardim Santo Inácio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408087",
+      "name": "Lapinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408088",
+      "name": "Liberdade",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408089",
+      "name": "Lobato",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408090",
+      "name": "Luiz Anselmo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408091",
+      "name": "Macaúbas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408092",
+      "name": "Mangueira",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408093",
+      "name": "Marechal Rondon",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408094",
+      "name": "Mares",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408095",
+      "name": "Massaranduba",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408096",
+      "name": "Mata Escura",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408097",
+      "name": "Matatu",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408169",
+      "name": "Mirantes de Periperi",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408098",
+      "name": "Monte Serrat",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408099",
+      "name": "Moradas da Lagoa",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408100",
+      "name": "Mussurunga",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408101",
+      "name": "Narandiba",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408102",
+      "name": "Nazaré",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408103",
+      "name": "Nordeste do Amaralina",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408104",
+      "name": "Nova Brasília",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408105",
+      "name": "Nova Constituinte",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408106",
+      "name": "Nova Esperança",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408107",
+      "name": "Nova Sussuarana",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408108",
+      "name": "Novo Horizonte",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408109",
+      "name": "Novo Marotinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408110",
+      "name": "Ondina",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408111",
+      "name": "Palestina",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408112",
+      "name": "Paripe",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408113",
+      "name": "Patamares",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408114",
+      "name": "Pau da Lima",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408115",
+      "name": "Pau Miúdo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408116",
+      "name": "Periperi",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408117",
+      "name": "Pernambués",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408118",
+      "name": "Pero Vaz",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408119",
+      "name": "Piatã",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408120",
+      "name": "Pirajá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408121",
+      "name": "Pituaçu",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408122",
+      "name": "Pituba",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408123",
+      "name": "Plataforma",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408124",
+      "name": "Porto Seco Pirajá",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408125",
+      "name": "Praia Grande",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408126",
+      "name": "Resgate",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408127",
+      "name": "Retiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408128",
+      "name": "Ribeira",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408129",
+      "name": "Rio Sena",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408130",
+      "name": "Rio Vermelho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408131",
+      "name": "Roma",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408132",
+      "name": "Saboeiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408133",
+      "name": "Santa Cruz",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408134",
+      "name": "Santa Luzia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408135",
+      "name": "Santa Mônica",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408136",
+      "name": "Santo Agostinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408137",
+      "name": "Santo Antônio",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408138",
+      "name": "São Caetano",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408139",
+      "name": "São Cristóvão",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408140",
+      "name": "São Gonçalo",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408141",
+      "name": "São João do Cabrito",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408142",
+      "name": "São Marcos",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408143",
+      "name": "São Rafael",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408144",
+      "name": "São Tomé",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408145",
+      "name": "Saramandaia",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408146",
+      "name": "Saúde",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408147",
+      "name": "Sete de Abril",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408148",
+      "name": "Stella Maris",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408149",
+      "name": "STIEP",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408150",
+      "name": "Sussuarana",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408151",
+      "name": "Tororó",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408152",
+      "name": "Trobogy",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408153",
+      "name": "Uruguai",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408154",
+      "name": "Vale das Pedrinhas",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408155",
+      "name": "Vale dos Lagos",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408156",
+      "name": "Valéria",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408157",
+      "name": "Vila Canária",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408158",
+      "name": "Vila Laura",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408159",
+      "name": "Vila Ruy Barbosa / Jardim Cruzeiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408170",
+      "name": "Vista Alegre",
+      "kind": "bairro"
+    },
+    {
+      "id": "2927408:bairro:2927408160",
+      "name": "Vitória",
+      "kind": "bairro"
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "capitalId": "1400100",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (RR)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/RR_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "1400100:bairro:1400100054",
+      "name": "5 de Outubro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100014",
+      "name": "Aeroporto",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100032",
+      "name": "Alvorada",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100007",
+      "name": "Aparecida",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100020",
+      "name": "Asa Branca",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100034",
+      "name": "Bela Vista",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100018",
+      "name": "Buritis",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100017",
+      "name": "Caçari",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100023",
+      "name": "Caimbé",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100002",
+      "name": "Calunga",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100021",
+      "name": "Cambará",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100008",
+      "name": "Canarinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100024",
+      "name": "Caranã",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100031",
+      "name": "Cauamé",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100025",
+      "name": "Centenário",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100001",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100049",
+      "name": "Cidade Satélite",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100035",
+      "name": "Cinturão Verde",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100015",
+      "name": "dos Estados",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100051",
+      "name": "Doutor Airton Rocha",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100041",
+      "name": "Dr. Silvio Botelho",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100036",
+      "name": "Dr. Silvio Leite",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100026",
+      "name": "Governador Aquilino Mota Duarte",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100048",
+      "name": "Jardim Caranã",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100030",
+      "name": "Jardim Equatorial",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100013",
+      "name": "Jardim Floresta",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100037",
+      "name": "Jardim Primavera",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100028",
+      "name": "Jardim Tropical",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100038",
+      "name": "Jóquei Clube",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100052",
+      "name": "Laura Moreira",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100012",
+      "name": "Liberdade",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100019",
+      "name": "Marechal Rondon",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100004",
+      "name": "Mecejana",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100053",
+      "name": "Murilo Teixeira Cidade",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100029",
+      "name": "Nova Canaã",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100039",
+      "name": "Nova Cidade",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100050",
+      "name": "Olímpico",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100027",
+      "name": "Operário",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100016",
+      "name": "Paraviana",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100040",
+      "name": "Pintolândia",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100044",
+      "name": "Piscicultura",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100011",
+      "name": "Pricumã",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100033",
+      "name": "Professora Araceli Souto Maior",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100045",
+      "name": "Raiar do Sol",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100042",
+      "name": "Santa Luzia",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100046",
+      "name": "Santa Tereza",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100055",
+      "name": "São Bento",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100005",
+      "name": "São Francisco",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100009",
+      "name": "São Pedro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100003",
+      "name": "São Vicente",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100043",
+      "name": "Senador Hélio Campos",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100022",
+      "name": "Tancredo Neves",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100010",
+      "name": "Treze de Setembro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100006",
+      "name": "Trinta e um de Março",
+      "kind": "bairro"
+    },
+    {
+      "id": "1400100:bairro:1400100047",
+      "name": "União",
+      "kind": "bairro"
+    }
+  ]
+}

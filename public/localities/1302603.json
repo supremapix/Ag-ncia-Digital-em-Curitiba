@@ -1,0 +1,328 @@
+{
+  "capitalId": "1302603",
+  "status": "partial",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2022-07-31",
+  "source": {
+    "title": "IBGE — bairros do Censo 2022 (AM)",
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/AM_bairros_CD2022.zip"
+  },
+  "note": "Bairros presentes no recorte territorial do Censo 2022, publicado em 2024. Alterações municipais posteriores ainda não foram conciliadas. A lista não declara todos os bairros atuais.",
+  "localities": [
+    {
+      "id": "1302603:bairro:1302603040",
+      "name": "Adrianópolis",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603039",
+      "name": "Aleixo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603016",
+      "name": "Alvorada",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603052",
+      "name": "Armando Mendes",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603027",
+      "name": "Betânia",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603005",
+      "name": "Cachoeirinha",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603001",
+      "name": "Centro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603043",
+      "name": "Chapada",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603059",
+      "name": "Cidade de Deus",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603049",
+      "name": "Cidade Nova",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603034",
+      "name": "Colônia Antônio Aleixo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603028",
+      "name": "Colônia Oliveira Machado",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603044",
+      "name": "Colônia Santo Antônio",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603046",
+      "name": "Colônia Terra Nova",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603010",
+      "name": "Compensa",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603023",
+      "name": "Coroado",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603030",
+      "name": "Crespo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603018",
+      "name": "Da Paz",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603032",
+      "name": "Distrito Industrial I",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603057",
+      "name": "Distrito Industrial II",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603036",
+      "name": "Dom Pedro I",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603024",
+      "name": "Educandos",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603037",
+      "name": "Flores",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603062",
+      "name": "Gilberto Mestrinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603007",
+      "name": "Glória",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603022",
+      "name": "Japiim",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603056",
+      "name": "Jorge Teixeira",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603063",
+      "name": "Lago Azul",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603014",
+      "name": "Lírio do Vale",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603033",
+      "name": "Mauazinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603048",
+      "name": "Monte das Oliveiras",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603026",
+      "name": "Morro da Liberdade",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603002",
+      "name": "Nossa Senhora Aparecida",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603041",
+      "name": "Nossa Senhora das Graças",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603060",
+      "name": "Nova Cidade",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603013",
+      "name": "Nova Esperança",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603058",
+      "name": "Novo Aleixo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603045",
+      "name": "Novo Israel",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603038",
+      "name": "Parque 10 de Novembro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603021",
+      "name": "Petrópolis",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603015",
+      "name": "Planalto",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603050",
+      "name": "Ponta Negra",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603004",
+      "name": "Praça 14 de Janeiro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603003",
+      "name": "Presidente Vargas",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603035",
+      "name": "Puraquequara",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603019",
+      "name": "Raiz",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603017",
+      "name": "Redenção",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603047",
+      "name": "Santa Etelvina",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603025",
+      "name": "Santa Luzia",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603012",
+      "name": "Santo Agostinho",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603008",
+      "name": "Santo Antônio",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603020",
+      "name": "São Francisco",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603042",
+      "name": "São Geraldo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603011",
+      "name": "São Jorge",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603054",
+      "name": "São José Operário",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603029",
+      "name": "São Lázaro",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603006",
+      "name": "São Raimundo",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603055",
+      "name": "Tancredo Neves",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603051",
+      "name": "Tarumã",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603061",
+      "name": "Tarumã-Açu",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603031",
+      "name": "Vila Buriti",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603009",
+      "name": "Vila da Prata",
+      "kind": "bairro"
+    },
+    {
+      "id": "1302603:bairro:1302603053",
+      "name": "Zumbi dos Palmares",
+      "kind": "bairro"
+    }
+  ]
+}

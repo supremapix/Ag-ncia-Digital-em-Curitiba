@@ -1,0 +1,412 @@
+{
+  "verifiedAt": "2026-10-17",
+  "localities": [
+    {
+      "id": "3205309:bairro:91",
+      "name": "AEROPORTO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:3",
+      "name": "ANDORINHAS",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:4",
+      "name": "ANTÔNIO HONÓRIO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:2",
+      "name": "ARIOVALDO FAVALESSA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:5",
+      "name": "BARRO VERMELHO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:6",
+      "name": "BELA VISTA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:7",
+      "name": "BENTO FERREIRA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:8",
+      "name": "BOA VISTA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:9",
+      "name": "BONFIM",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:10",
+      "name": "CARATOÍRA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:11",
+      "name": "CENTRO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:12",
+      "name": "COMDUSA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:77",
+      "name": "CONQUISTA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:46",
+      "name": "CONSOLAÇÃO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:13",
+      "name": "CRUZAMENTO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:49",
+      "name": "DA PENHA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:35",
+      "name": "DE LOURDES",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:89",
+      "name": "DO CABRAL",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:79",
+      "name": "DO MOSCOSO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:53",
+      "name": "DO QUADRO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:14",
+      "name": "ENSEADA DO SUÁ",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:15",
+      "name": "ESTRELINHA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:42",
+      "name": "FONTE GRANDE",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:16",
+      "name": "FORTE SÃO JOÃO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:17",
+      "name": "FRADINHOS",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:18",
+      "name": "GOIABEIRAS",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:19",
+      "name": "GRANDE VITÓRIA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:20",
+      "name": "GURIGICA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:21",
+      "name": "HORTO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:23",
+      "name": "ILHA DAS CAIEIRAS",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:25",
+      "name": "ILHA DE SANTA MARIA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:22",
+      "name": "ILHA DO BOI",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:26",
+      "name": "ILHA DO FRADE",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:27",
+      "name": "ILHA DO PRÍNCIPE",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:28",
+      "name": "INHANGUETÁ",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:29",
+      "name": "ITARARÉ",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:30",
+      "name": "JABOUR",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:31",
+      "name": "JARDIM CAMBURI",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:32",
+      "name": "JARDIM DA PENHA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:44",
+      "name": "JESUS DE NAZARETH",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:33",
+      "name": "JOANA D´ARC",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:34",
+      "name": "JUCUTUQUARA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:37",
+      "name": "MARIA ORTIZ",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:85",
+      "name": "MÁRIO CYPRESTE",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:38",
+      "name": "MARUÍPE",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:39",
+      "name": "MATA DA PRAIA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:24",
+      "name": "MONTE BELO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:40",
+      "name": "MORADA DE CAMBURI",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:45",
+      "name": "NAZARETH",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:47",
+      "name": "NOVA PALESTINA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:50",
+      "name": "PARQUE INDUSTRIAL",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:48",
+      "name": "PARQUE MOSCOSO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:41",
+      "name": "PIEDADE",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:80",
+      "name": "PONTAL DE CAMBURI",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:52",
+      "name": "PRAIA DO CANTO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:82",
+      "name": "PRAIA DO SUÁ",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:54",
+      "name": "REDENÇÃO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:55",
+      "name": "REPÚBLICA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:56",
+      "name": "RESISTÊNCIA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:58",
+      "name": "ROMÃO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:59",
+      "name": "SANTA CECÍLIA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:90",
+      "name": "SANTA CLARA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:51",
+      "name": "SANTA HELENA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:61",
+      "name": "SANTA LÚCIA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:62",
+      "name": "SANTA LUÍZA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:63",
+      "name": "SANTA MARTHA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:64",
+      "name": "SANTA TEREZA",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:66",
+      "name": "SANTO ANDRÉ",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:67",
+      "name": "SANTO ANTÔNIO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:68",
+      "name": "SANTOS DUMONT",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:86",
+      "name": "SANTOS REIS",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:81",
+      "name": "SÃO BENEDITO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:69",
+      "name": "SÃO CRISTÓVÃO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:70",
+      "name": "SÃO JOSÉ",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:71",
+      "name": "SÃO PEDRO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:72",
+      "name": "SEGURANÇA DO LAR",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:73",
+      "name": "SOLON BORGES",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:74",
+      "name": "TABUAZEIRO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:75",
+      "name": "UNIVERSITÁRIO",
+      "kind": "bairro"
+    },
+    {
+      "id": "3205309:bairro:76",
+      "name": "VILA RUBIM",
+      "kind": "bairro"
+    }
+  ],
+  "note": "Unidades da camada municipal de bairros consultada nesta data; o cadastro pode ser atualizado pelo município.",
+  "source": {
+    "url": "https://gis.vitoria.es.gov.br/arcgis/rest/services/Opendata/HubGeoweb/MapServer/32",
+    "title": "Prefeitura de Vitória — bairros"
+  },
+  "status": "complete",
+  "capitalId": "3205309"
+}
