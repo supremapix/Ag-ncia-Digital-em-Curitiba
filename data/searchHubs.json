@@ -1,0 +1,40 @@
+[
+  {
+    "path": "/criacao-de-sites",
+    "title": "Criação de sites: projeto, localidades e escolhas | Suprema",
+    "heading": "Um site pensado para o seu negócio.",
+    "intro": "Defina o que sua empresa precisa comunicar, onde atende e qual ação o visitante deve conseguir realizar. Este guia reúne os caminhos para escolher o projeto e consultar a presença local sem confundir criação do site com mensalidade regional.",
+    "description": "Compare formatos de site e encontre os guias de localidades. Criação por R$ 1.680; plano regional separado, mínimo de 11 bairros por R$ 220/mês.",
+    "sections": [
+      {"title":"Primeiro, escolha a função do site","text":"Um site institucional apresenta a empresa, os serviços e os meios de contato. Uma landing page concentra a comunicação em uma oferta específica. Uma loja virtual precisa contemplar catálogo, pagamento e operação de pedidos. Sistemas têm requisitos próprios. A proposta deve explicitar páginas, conteúdo, integrações e responsabilidades; esses formatos não são automaticamente incluídos na mesma oferta.","links":[["Conhecer os serviços e seus escopos","/servicos"],["Guia para escolher seu projeto","/criacao-de-sites/como-escolher"]]},
+      {"title":"Depois, delimite a área de atendimento","text":"Informe as localidades em que sua empresa realmente atende e como presta o serviço: no endereço do cliente, à distância ou em um ponto físico verdadeiro. Esses dados orientam o conteúdo do site. Uma página sobre uma cidade não comprova a existência de uma filial e não representa contratação de cobertura regional.","links":[["Pesquisar por capital e UF","/criacao-de-sites/capitais"],["Consultar localidades e simular bairros de Curitiba","/presenca-local"]]},
+      {"title":"Guias estaduais já disponíveis","text":"Nesta etapa, os guias estaduais publicados são Paraná, Santa Catarina e Rio Grande do Sul. Eles organizam caminhos locais existentes. Para os demais estados, comece pelo catálogo de capitais e descreva sua necessidade; não há um preço estadual automático.","links":[["Criação de sites no Paraná","/sites-em-parana"],["Criação de sites em Santa Catarina","/sites-em-santa-catarina"],["Criação de sites no Rio Grande do Sul","/sites-em-rio-grande-do-sul"]]},
+      {"title":"O que preparar para conversar com a Suprema","text":"Separe os serviços prioritários, a área atendida, a identidade visual disponível, os textos e imagens que você pode utilizar e os canais de contato. Avise se já existe site ou domínio para que a proposta considere o que deve ser preservado. Prazos, revisões e entregas precisam estar definidos antes do início.","links":[["Ver projetos do portfólio","/portfolio"],["Solicitar contato","/contato"]]}
+    ]
+  },
+  {
+    "path":"/criacao-de-sites/capitais",
+    "title":"Criação de sites nas capitais: pesquisa por UF | Suprema",
+    "heading":"Encontre o caminho da sua capital.",
+    "intro":"Pesquise a capital e consulte a classificação das localidades antes de definir a área do projeto. O catálogo reúne fontes municipais e do IBGE, com data e limites de cada base. Uma lista geográfica não equivale a uma oferta para contratar a cidade inteira.",
+    "description":"Pesquise as 27 capitais por nome ou UF e consulte bairros, distritos e regiões administrativas com fontes e limites. Valores territoriais sob consulta.",
+    "sections":[
+      {"title":"Como usar esta pesquisa","text":"Escolha a capital no diretório abaixo. O link abre o catálogo com a capital selecionada, onde você pode buscar a localidade, conferir a fonte e informar nomes ausentes. As bases são publicadas por etapas: a ausência de uma lista não significa ausência de bairros. Confira a data territorial, especialmente nos recortes do Censo 2022.","links":[["Entender os formatos de projeto","/criacao-de-sites/como-escolher"]]},
+      {"title":"Bairro, distrito e região administrativa não são equivalentes","text":"Curitiba mantém 75 bairros no seletor. São Paulo está organizado nesta base por distritos, sem tratá-los como bairros. Para Brasília, o catálogo apresenta regiões administrativas do Distrito Federal. Belo Horizonte identifica bairros populares para endereçamento. Os rótulos da fonte são preservados; as unidades não são somadas como se tivessem o mesmo escopo comercial.","links":[["Bairros de Curitiba","/bairros-curitiba"],["Ver condições e fontes no catálogo","/presenca-local"]]},
+      {"title":"Páginas locais já publicadas no Sul","text":"As páginas de Curitiba, Florianópolis e Porto Alegre continuam nos endereços existentes. Este diretório não cria versões concorrentes para essas cidades. Para outras capitais, o caminho nesta etapa é a consulta do catálogo e o levantamento de escopo, sem anunciar escritório local nem resultados de busca.","links":[["Criação de sites em Curitiba","/site-em/curitiba"],["Criação de sites em Florianópolis","/site-em/florianopolis"],["Criação de sites em Porto Alegre","/site-em/porto-alegre"]]}
+    ]
+  },
+  {
+    "path":"/criacao-de-sites/como-escolher",
+    "title":"Como escolher site, landing page e presença local | Suprema",
+    "heading":"Escolha pelo que seu cliente precisa fazer.",
+    "intro":"Antes de escolher um formato, descreva a tarefa principal do visitante: entender um serviço, pedir um orçamento, comprar um produto ou acompanhar um processo. Essa decisão ajuda a separar o que pertence ao site e o que depende de uma operação adicional.",
+    "description":"Guia para comparar site institucional, landing page, loja virtual e presença local. Saiba o que definir na proposta e como separar os investimentos.",
+    "sections":[
+      {"title":"Apresentar a empresa ou concentrar uma oferta?","text":"Quando o visitante precisa conhecer diferentes serviços, equipe e formas de atendimento, um site institucional organiza essas informações em páginas e seções. Quando a conversa gira em torno de uma oferta específica, uma landing page pode concentrar explicação, dúvidas e contato. A escolha depende do conteúdo necessário, e não de uma promessa de conversão.","links":[["Comparar os serviços disponíveis","/servicos"]]},
+      {"title":"Vender online exige definir a operação","text":"Para uma loja, liste produtos, variações, formas de pagamento, entrega e quem atualizará o catálogo. Integrações e taxas de terceiros precisam ser discutidas separadamente. Se o objetivo é organizar rotinas, cadastros ou fluxos internos, descreva os usuários e processos antes de pedir um sistema. Não presuma que e-commerce ou software estejam incluídos na criação do site por R$ 1.680.","links":[["Ver exemplos de projetos","/portfolio"]]},
+      {"title":"Presença local é um trabalho separado","text":"O site apresenta sua empresa; o plano regional trabalha presença e visibilidade nas localidades contratadas. Na simulação de Curitiba, o mínimo é 11 bairros por R$ 220/mês. De 11 a 29, são R$ 20 por bairro; a partir de 30, todos ficam por R$ 10 cada. Não há garantia de posição no Google, prazo de ranking ou volume de vendas. Cidades, estados e regiões administrativas exigem proposta específica.","links":[["Simular e conferir condições","/presenca-local"],["Entender SEO local","/seo-local-curitiba"]]},
+      {"title":"Leve estas definições para a proposta","text":"Confirme o conteúdo a produzir, as páginas previstas, quem aprova materiais, as integrações, a manutenção e as condições de renovação. Peça que prazos e entregas sejam registrados. Enquanto o plano regional mensal estiver ativo, a Suprema assume a renovação anual do domínio e mantém a hospedagem incluída após os 60 meses iniciais; a mensalidade regional continua paga. Sem plano ativo, consulte a renovação.","links":[["Conversar sobre o projeto","/contato"],["Pesquisar localidades","/criacao-de-sites/capitais"]]}
+    ]
+  }
+]

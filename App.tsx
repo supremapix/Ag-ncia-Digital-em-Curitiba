@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { RegionalPresence } from './pages/RegionalPresence';
+import { SearchHub } from './pages/SearchHub';
 import { Home } from './pages/Home';
 import { Services } from './pages/Services';
 import { Contact } from './pages/Contact';
@@ -51,7 +52,10 @@ const App: React.FC = () => {
           <PageWrapper>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/presenca-local" element={<RegionalPresence />} />
+              <Route path="/criacao-de-sites" element={<SearchHub />} />
+<Route path="/criacao-de-sites/capitais" element={<SearchHub />} />
+<Route path="/criacao-de-sites/como-escolher" element={<SearchHub />} />
+<Route path="/presenca-local" element={<RegionalPresence />} />
               <Route path="/servicos" element={<Services />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/sobre" element={<About />} />

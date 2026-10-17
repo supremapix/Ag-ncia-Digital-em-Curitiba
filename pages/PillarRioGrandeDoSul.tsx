@@ -1,3 +1,4 @@
+import { HubLinks } from './SearchHub';
 import { CommercialTerms } from '../components/CommercialTerms';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -124,7 +125,7 @@ export const PillarRioGrandeDoSul: React.FC = () => {
           </div>
         </div>
       </div>
-      <CommercialTerms />
+      <HubLinks /><CommercialTerms />
     </div>
   );
 };

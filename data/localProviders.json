@@ -1,0 +1,127 @@
+[
+  {
+    "place": "Batel",
+    "name": "325 WEB",
+    "address": "Av. Sete de Setembro, 4214, cj. 1401",
+    "url": "https://www.325web.com.br/",
+    "service": "Sites institucionais, blogs e lojas virtuais."
+  },
+  {
+    "place": "Água Verde",
+    "name": "Evolução Digital",
+    "address": "Rua Santa Catarina, 65, sala 1211b",
+    "url": "https://marketingdigitalcuritiba.site/",
+    "service": "Sites, blogs e lojas virtuais."
+  },
+  {
+    "place": "Bigorrilho",
+    "name": "Agência Kanka",
+    "address": "Rua Francisco Rocha, 2125",
+    "url": "https://www.kanka.com.br/",
+    "service": "Sites e lojas virtuais. A antiga CGDW é apresentada aqui apenas pelo nome atual Kanka."
+  },
+  {
+    "place": "Cabral",
+    "name": "ON FOCUS",
+    "address": "Rua Doutor Manoel Pedro, 365",
+    "url": "https://www.onfocus.com.br/",
+    "service": "Criação e edição de sites."
+  },
+  {
+    "place": "Centro Cívico",
+    "name": "Agência TCA",
+    "address": "Av. Cândido de Abreu, 381, 1º andar, Aldeia Coworking",
+    "url": "https://www.tcacriacaodesites.com.br/contato/",
+    "service": "Sites e e-commerce. Endereço divulgado como ponto de atendimento em coworking; não pressupõe sede exclusiva."
+  },
+  {
+    "place": "Cristo Rei",
+    "name": "DELARA Marketing",
+    "address": "Rua Zeila Moura dos Santos, 101",
+    "url": "https://delaramarketing.com.br/",
+    "service": "Sites e e-commerce."
+  },
+  {
+    "place": "Hauer",
+    "name": "Muito Mais Digital",
+    "address": "Av. Marechal Floriano Peixoto, 5303, sala 12",
+    "url": "https://www.muitomaisdigital.com.br/servicos/criacao-de-sites-curitiba/",
+    "service": "Criação de sites."
+  },
+  {
+    "place": "Mercês",
+    "name": "POMO agência",
+    "address": "Rua Dom Alberto Gonçalves, 1015",
+    "url": "https://pomoagencia.com.br/",
+    "service": "Sites e e-commerce."
+  },
+  {
+    "place": "Novo Mundo",
+    "name": "Jidy Comunicações",
+    "address": "Travessa Ney Azevedo, 177",
+    "url": "https://www.jidycomunicacoes.com.br/",
+    "service": "Sites, landing pages e lojas virtuais."
+  },
+  {
+    "place": "Portão",
+    "name": "hzoom360",
+    "address": "Rua Theodoro Schneider, 196",
+    "url": "https://www.hzoom360.com.br/servi%C3%A7os",
+    "service": "Criação de sites."
+  },
+  {
+    "place": "Rebouças",
+    "name": "Totalize Internet Studio",
+    "address": "Rua Chile, 1578, cj. 04",
+    "url": "https://www.totalize.com.br/",
+    "service": "Sites, lojas e sistemas. O conteúdo consultado é antigo: confirme a disponibilidade atual antes de contratar."
+  },
+  {
+    "place": "Santa Felicidade",
+    "name": "ARISE Marketing Digital",
+    "address": "Rua Francisco Matzeck, 331-3",
+    "url": "https://arisedigital.com.br/contato/",
+    "service": "Sites WordPress e lojas virtuais, apresentados na página inicial. Confirme a disponibilidade atual.",
+    "serviceUrl": "https://arisedigital.com.br/"
+  },
+  {
+    "place": "São José dos Pinhais",
+    "name": "Agência Temas Marketing Digital",
+    "address": "Rua José Luciano, 406, sala 301, Pedro Moro",
+    "url": "https://agenciaseo.tech/",
+    "service": "Sites, landing pages e SEO local.",
+    "city": true
+  },
+  {
+    "place": "Pinhais",
+    "name": "Guinada Digital",
+    "address": "Rua Antônio de Castro Alves, 622, Vargem Grande",
+    "url": "https://agenciaguinadadigital.com.br/",
+    "service": "Sites e SEO local. A empresa distingue sua base em Pinhais do atendimento remoto nacional.",
+    "city": true
+  },
+  {
+    "place": "Colombo",
+    "name": "WP Safe",
+    "address": "Rua Dorval Ceccon, 809, Fátima",
+    "url": "https://wpsafe.com.br/",
+    "service": "Criação WordPress, sites institucionais, portfólios, blogs, lojas e manutenção.",
+    "city": true
+  },
+  {
+    "place": "Campo Largo",
+    "name": "CTE Digital",
+    "address": "Rua Gonçalves Dias, 1652, Centro",
+    "url": "https://ctedigital.com.br/",
+    "service": "Criação e gerenciamento de sites e landing pages.",
+    "city": true
+  },
+  {
+    "place": "Fazenda Rio Grande",
+    "name": "Fazenda Connect",
+    "address": "Rua França, 175",
+    "url": "https://www.fazendaconnect.com.br/",
+    "service": "Desenvolvimento de sites. O bairro não foi informado na fonte consultada.",
+    "city": true
+  }
+]

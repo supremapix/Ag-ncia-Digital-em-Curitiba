@@ -1,3 +1,4 @@
+import { localProvidersPost } from './localProvidersPost';
 export interface BlogPostContent {
   id: number;
   title: string;
@@ -11,6 +12,7 @@ export interface BlogPostContent {
 }
 
 export const blogPosts: BlogPostContent[] = [
+  localProvidersPost,
   {
     id: 1,
     title: "Quanto custa criar um sistema web sob medida no Brasil?",

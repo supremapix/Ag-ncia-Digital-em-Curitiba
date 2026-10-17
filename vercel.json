@@ -1,6 +1,22 @@
 {
   "rewrites": [
     {
+      "source": "/criacao-de-sites",
+      "destination": "/criacao-de-sites/index.html"
+    },
+    {
+      "source": "/criacao-de-sites/capitais",
+      "destination": "/criacao-de-sites/capitais/index.html"
+    },
+    {
+      "source": "/criacao-de-sites/como-escolher",
+      "destination": "/criacao-de-sites/como-escolher/index.html"
+    },
+    {
+      "source": "/blog/100",
+      "destination": "/blog/100/index.html"
+    },
+    {
       "source": "/sitemap.xml",
       "destination": "/sitemap.xml"
     },

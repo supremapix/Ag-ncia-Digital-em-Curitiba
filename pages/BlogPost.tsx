@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { usePageMetadata } from '../components/usePageMetadata';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Calendar, User, ArrowLeft, Tag, Share2, MessageSquare } from 'lucide-react';
 import { blogPosts } from '../data/blogData';
@@ -8,9 +9,11 @@ export const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const post = blogPosts.find(p => p.id === Number(id));
+  usePageMetadata(post?.title || 'Artigo não encontrado', post?.excerpt || '', '/blog/'+id);
 
   useEffect(() => {
     if (post) {
+      document.querySelector('link[rel="canonical"]')?.setAttribute('href', 'https://www.supremasite.com.br/blog/'+post.id);
       document.title = `${post.title} | Blog Suprema Site Express`;
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {

@@ -21,4 +21,3 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://www.supremasite.com.br/sitemap.xml
-Sitemap: https://www.supremasite.com.br/sitemap-locations.xml
