@@ -1,3 +1,4 @@
+import { verifiedMunicipalities } from './verifiedMunicipalities';
 
 export const neighborhoods = [
   // Bairros Oficiais de Curitiba (75 bairros)
@@ -146,7 +147,7 @@ export const rsCities = [
   "Barão do Triunfo", "Barra Funda", "Barracão", "Bento Gonçalves", "Boa Esperança do Sul", 
   "Boa Ventura de São Roque", "Boa Vista das Missões", "Boa Vista do Buricá", "Boa Vista do Cadeado", 
   "Boa Vista do Incra", "Boa Vista do Sul", "Bom Jesus", "Bom Princípio", "Bom Progresso", 
-  "Bom Retiro do Sul", "Boqueirão do Leão", "Bossoroca", "Botucatu", "Braga", "Broto Flor", "Cacequi", 
+  "Bom Retiro do Sul", "Boqueirão do Leão", "Bossoroca", "Braga", "Broto Flor", "Cacequi", 
   "Cachoeira do Sul", "Cachoeirinha", "Caibaté", "Caiçara", "Camaquã", "Camargo", "Cambará do Sul", 
   "Campestre da Lagoa", "Campina das Missões", "Campinas do Sul", "Campo Bom", "Campo Novo", 
   "Campos Borges", "Candiota", "Cândido Godói", "Canoas", "Canudos do Vale", "Capela de Santana", 
@@ -226,6 +227,7 @@ export const slugify = (text: string) => {
 };
 
 export const getNameFromSlug = (slug: string) => {
+  if (verifiedMunicipalities[slug]) return verifiedMunicipalities[slug].name;
   const allLocations = [...cities, ...neighborhoods, ...scCities, ...rsCities];
   const found = allLocations.find(loc => slugify(loc) === slug);
   if (found) return found;
@@ -233,6 +235,7 @@ export const getNameFromSlug = (slug: string) => {
 };
 
 export const getRegionFromSlug = (slug: string) => {
+  if (verifiedMunicipalities[slug]) return verifiedMunicipalities[slug].uf;
   const name = getNameFromSlug(slug);
   if (rsCities.includes(name)) return "RS";
   if (scCities.includes(name)) return "SC";

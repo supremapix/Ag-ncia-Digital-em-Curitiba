@@ -267,7 +267,7 @@ export const cityData: Record<string, CityDetail> = {
     state: "São Paulo",
     stateSigla: "SP",
     region: "Grande São Paulo",
-    context: "São Paulo é a maior metrópole da América Latina e o coração financeiro do Brasil. Em um mercado de concorrência extrema, um site que não carrega em 1 segundo ou não está na primeira página do Google simplesmente não existe para o consumidor paulistano.",
+    context: "Para empresas que atendem São Paulo, o site pode organizar informações sobre serviços, área de atendimento e canais de contato. O projeto deve considerar o conteúdo e as funcionalidades de que o negócio precisa, sem promessa de velocidade fixa, posição nas buscas ou volume de vendas.",
     strongSegment: "Mercado Financeiro e Serviços Corporativos",
     neighborhoods: ["Itaim Bibi", "Vila Olímpia", "Pinheiros", "Jardins", "Moema", "Brooklin", "Tatuapé", "Santana"],
     faqs: [

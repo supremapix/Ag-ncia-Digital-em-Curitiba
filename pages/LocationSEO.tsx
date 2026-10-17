@@ -1,3 +1,4 @@
+import { verifiedMunicipalities } from '../data/verifiedMunicipalities';
 import { knownLocality, supplementalRegions, supplementalNames } from '../data/routeInventory';
 import { NotFound } from './NotFound';
 import { CommercialTerms } from '../components/CommercialTerms';
@@ -93,7 +94,7 @@ function getDynamicLocalSegment(name: string, region: string, isNeighborhood: bo
     if (boqueiraoHauerXaximList.includes(slugified)) {
       return {
         strongSegment: "Distribuidoras de Autopeças, Comunicação Visual de Alta Velocidade, Metalurgia Pesada e Grandes Lojas de Varejo e Serviços",
-        context: `O tradicional cinturão comercial de Boqueirão, Hauer e Xaxim, com suas vilas ativas como o(a) ${name}, Hauer Velho ou Carmo, é o porto seguro de milhares de oficinas corporativas e distribuidores atacadistas de Curitiba. Na Suprema Site Express, estruturamos websites de altíssima performance para garantir que os empreendimentos do(a) ${name} se apropriem dos mais produtivos fluxos de buscas regionais por suprimentos e manufaturados.`,
+        context: `Para apresentar serviços e canais de contato em ${name}, organizamos páginas com informações comerciais e navegação acessível. O escopo é definido conforme a atividade e a área real de atendimento.`,
         strongKeywords: [`Empresas comerciais no ${name}`, `Gráficas expressas no ${name}`, `SEO Local focado em ${name} Curitiba`, `Orçamento de sites no ${name}`]
       };
     }
@@ -109,7 +110,7 @@ function getDynamicLocalSegment(name: string, region: string, isNeighborhood: bo
     if (norteSubdivisions.includes(slugified)) {
       return {
         strongSegment: "Consultórios Odontológicos, Clínicas de Fisioterapia, Escolas de Idiomas, Supermercados, Lojas de Conveniência e Serviços Domésticos",
-        context: `A densa Região Norte de Curitiba — interligando o Boa Vista, Bairro Alto, Tingui, Bacacheri e subdivisões dinâmicas como o(a) ${name}, Bairro Alto Norte ou Tingui Velho — abriga um fortíssimo ecossistema de consumo de proximidade e serviços cotidianos. Desenvolver portais leves e rápidos na Suprema Site Express permite que suas operações no(a) ${name} liderem as intenções de busca localizadas nos mecanismos de recomendação.`,
+        context: `Para empresas que atendem ${name}, o site pode reunir informações de serviços, área de atendimento e formas de contato. A proposta depende das necessidades de cada negócio, sem garantia de posição nas buscas.`,
         strongKeywords: [`Clínicas odontológicas no ${name}`, `Advogados no ${name} Curitiba`, `Criação de site profissional ${name}`, `E-commerce no ${name}`]
       };
     }
@@ -117,14 +118,14 @@ function getDynamicLocalSegment(name: string, region: string, isNeighborhood: bo
     if (santaFelicidadeOrleansBraz.includes(slugified)) {
       return {
         strongSegment: "Gastronomia Tradicional Italiana, Cantinas e Vinícolas, Indústrias Moveleiras, Estúdios de Arquitetura de Interiores e Construtoras de Casas",
-        context: `A célebre rota turística e residencial de Santa Felicidade, Orleans e São Braz — conectando áreas cobiçadas como o(a) ${name}, Jardim Gabineto e Orleans Velho — unifica uma potente herança de consumo gastronômico e alta expansão imobiliária. Um portal mobile-first moderno e otimizado para o(a) ${name} capta reservas imediatas de mesas e atrai investidores residenciais Premium com usabilidade impecável.`,
+        context: `Um site para empresas que atendem ${name} pode apresentar serviços, horários e canais de contato. Recursos de reserva e outras integrações dependem do escopo contratado.`,
         strongKeywords: [`Criação de sites de arquitetura no ${name}`, `SEO para restaurantes no ${name}`, `Móveis sob medida no ${name}`, `SEO Local ${name} Curitiba`]
       };
     }
 
     return {
       strongSegment: "Comércio Geral Consolidado, Prestadores de Serviços Qualificados, Clínicas Privadas e Soluções Comerciais de Bairro",
-      context: `O bairro de ${name} possui um público dinâmico que busca serviços e opções comerciais de vizinhança primordialmente pelo smartphone. Garantir que sua marca no(a) ${name} carregue abaixo de 1s e exiba chamadas para ação eficientes pelo WhatsApp potencializa sua fidelização e captação orgânica de clientes locais de Curitiba.`,
+      context: `Para negócios que atendem ${name}, organizamos informações de serviços e contato em uma interface adaptada a celulares. O desempenho depende do conteúdo, do dispositivo e da conexão, e deve ser medido no projeto.`,
       strongKeywords: [`Preço de sites no ${name}`, `Serviços por WhatsApp no ${name}`, `SEO Google Maps no ${name}`, `Sites profissionais no ${name}`]
     };
   }
@@ -176,13 +177,13 @@ function getDynamicLocalSegment(name: string, region: string, isNeighborhood: bo
       return {
         strongSegment: "Hospitais Privados, Clínicas Oftalmológicas, Indústrias Metalúrgicas de Carga, Empresas de TI e Comércio Atacadista",
         context: `Os grandes polos industriais e comerciais gaúchos como ${name} requerem inovação para se destacar no faturamento estadual. Desenvolver com React e implementar estratégias de SEO Local com Schema avançado ajuda a apresentar serviços e canais de contato em ${name}.`,
-        strongKeywords: [`Clínicas médicas prestigiadas em ${name}`, `Consultor de SEO de alta performance ${name}`, `Desenvolvimento web ${name}`, `Aparecer na primeira página ${name}`]
+        strongKeywords: [`Clínicas médicas prestigiadas em ${name}`, `Consultor de SEO de alta performance ${name}`, `Desenvolvimento web ${name}`, `Presença local em ${name}`]
       };
     }
     if (['gramado', 'canela', 'bento-goncalves', 'garibaldi', 'nova-petropolis', 'farroupilha'].includes(slugified)) {
       return {
         strongSegment: "Turismo de Charme Internacional, Hotelaria de Luxo, Alta Enogastronomia, Chocolatarias Finas e Artesanatos Regionais",
-        context: `A economia da Serra Gaúcha em ${name} atende clientes que utilizam quase que unicamente smartphones sobre redes móveis para buscar atrações. Um site com performance imbatível e mobile-first gera reservas diretas e reduz custos com agentes ou portais comissionados em ${name}.`,
+        context: `Empresas que atendem ${name} podem apresentar seus serviços e formas de contato em um site adaptado a celulares. Recursos de reserva e integrações são avaliados na proposta, sem promessa de volume de vendas.`,
         strongKeywords: [`Melhores pousadas em ${name}`, `Vinícolas em ${name}`, `Restaurante de fondue em ${name}`, `Desenvolvedor de sites em ${name}`]
       };
     }
@@ -191,7 +192,7 @@ function getDynamicLocalSegment(name: string, region: string, isNeighborhood: bo
   // Fallback Dynamic Segment
   return {
     strongSegment: "Comércio Geral Consolidado, Prestadores de Serviços Qualificados, Clínicas Privadas e Soluções Empresariais Regionais",
-    context: `A presença digital para marcas estabelecidas na região de ${name} tornou-se o principal motor de crescimento sustentável. A estrutura de alta velocidade da Suprema Site Express assegura que sua empresa em ${name} ganhe autoridade imediata frente às buscas orgânicas de compradores de alta intenção.`,
+    context: `Um site pode reunir os serviços, a área de atendimento e os canais de contato de empresas que atuam em ${name}. O trabalho de presença local considera as informações reais do negócio. Resultados de busca, indexação e vendas não são garantidos.`,
     strongKeywords: [`Criação de sites comerciais em ${name}`, `SEO Local avançado ${name}`, `Agência Web de Sucesso em ${name}`, `Lojas virtuais responsivas em ${name}`]
   };
 }
@@ -225,6 +226,7 @@ function getNeighborCities(name: string, region: string): string[] {
   }
   
   // Deterministic neighbor selection based on character weights to guarantee geographic consistency in our programmatic routes (Tarefa 1)
+  if (!['PR', 'SC', 'RS'].includes(region)) return [];
   const sameStateList = region === 'RS' ? rsCitiesList : (region === 'SC' ? scCitiesList : citiesList);
   const charSum = name.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
   
@@ -309,14 +311,14 @@ const LocalityContent: React.FC = () => {
       { title: "Criação de Sites Express", hash: "criacao-de-sites", desc: "Design exclusivo desenvolvido com React e Vite para máxima velocidade." },
       { title: "Landing Pages de Alta Conversão", hash: "landing-pages", desc: "Estruturadas para captar leads e canalizar contatos para o WhatsApp." },
       { title: "Lojas Virtuais de Performance", hash: "e-commerce", desc: "E-commerce completo integrado com gateways e checkout rápido." },
-      { title: "SEO Local & Google Maps Pro", hash: "seo-local", desc: "Posicionamento estratégico no mapa e buscas locais para encher sua agenda." },
-      { title: "Gestão de Tráfego & Google Ads", hash: "gestao-trafego", desc: "Anúncios cirúrgicos para obter resultados de vendas e orçamentos imediatos." },
+      { title: "SEO Local & Google Maps Pro", hash: "seo-local", desc: "Trabalho de presença nas buscas locais, com escopo definido na proposta." },
+      { title: "Gestão de Tráfego & Google Ads", hash: "gestao-trafego", desc: "Campanhas com escopo e orçamento próprios, sob consulta." },
       { title: "Portais de Clínicas e Advocacia", hash: "servicos-premium", desc: "Websites institucionais premium para marcas de alto padrão de atendimento." }
     ];
   }, []);
 
   useEffect(() => {
-    const stateName = richData?.state || (region === 'PR' ? 'Paraná' : (region === 'SC' ? 'Santa Catarina' : 'Rio Grande do Sul'));
+    const stateName = richData?.state || verifiedMunicipalities[slug || '']?.state || (region === 'PR' ? 'Paraná' : (region === 'SC' ? 'Santa Catarina' : 'Rio Grande do Sul'));
     const stateSigla = richData?.stateSigla || region;
     
     // 1. Precise SEO Metadata Adjustments
@@ -361,7 +363,8 @@ const LocalityContent: React.FC = () => {
         "areaServed": [
           {
             "@type": isCuritibaNeighborhood ? "AdministrativeArea" : "City",
-            "name": locationName
+            "name": `${locationName}, ${stateSigla}`,
+            "containedInPlace": { "@type": "State", "name": stateName }
           }
         ],
         "knowsAbout": ["Web Design", "Search Engine Optimization", "React", "TypeScript", "Google My Business", "Landing Page Layouts"]
@@ -420,11 +423,11 @@ const LocalityContent: React.FC = () => {
       },
       {
         question: `Como funciona o atendimento para empresas com foco no segmento de ${strongSegment}?`,
-        answer: `Temos metodologias específicas e aceleradas para atender ${strongSegment}. Adaptamos os gatilhos visuais e blocos de conteúdo para falar exatamente com as dores do seu comprador em ${locationName}, maximizando os cliques de WhatsApp.`
+        answer: `O briefing define os serviços oferecidos, o público e a área real de atendimento em ${locationName}. A proposta especifica conteúdo, funcionalidades e canais de contato adequados ao negócio.`
       },
       {
         question: `Vocês oferecem suporte continuado estruturado em Curitiba e região?`,
-        answer: `Sim, as empresas no Sul contam com suporte prioritário humanizado e em tempo real via WhatsApp. A criação do site inclui 60 meses de hospedagem. Após esse período, a hospedagem continua incluída sem cobrança adicional enquanto o plano regional mensal estiver ativo.`
+        answer: `O atendimento é feito pelo WhatsApp, com condições e prazos de suporte definidos na proposta. A criação do site inclui 60 meses de hospedagem. Após esse período, a hospedagem continua incluída sem cobrança adicional enquanto o plano regional mensal estiver ativo.`
       }
     ];
   }, [locationName, strongSegment]);
@@ -498,7 +501,7 @@ const LocalityContent: React.FC = () => {
                     {localContext}
                   </p>
                   <p>
-                    A Suprema Site Express compreende os desafios logísticos e comerciais específicos da sua região. Nossa equipe especializa-se no setor dominante de <strong className="text-brand-primary">{strongSegment}</strong>. Unimos conteúdo organizado e layouts responsivos para apresentar seus serviços. Os resultados de busca dependem de diversos fatores e não são garantidos.
+                    A proposta considera os serviços oferecidos pela sua empresa e a área real de atendimento. Unimos conteúdo organizado e layouts responsivos para apresentar seu negócio. Os resultados de busca dependem de diversos fatores e não são garantidos.
                   </p>
                 </div>
                 <div className="mt-10 flex items-center gap-4 p-6 bg-gray-50 rounded-2xl border border-gray-100">
@@ -530,21 +533,21 @@ const LocalityContent: React.FC = () => {
               Arquitetura de PageRank Integrada
             </div>
             <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-6">
-              Distribuição de Autoridade Local
+              Explore serviços e localidades
             </h2>
             <p className="text-gray-600 text-xl leading-relaxed">
-              Consolidamos a hierarquia de indexação estruturando conexões contextuais orgânicas. Navegue entre soluções, microrregiões e polos de demanda do Sul brasileiro de maneira natural.
+              Consulte serviços e outras localidades. A disponibilidade e a área de atendimento de cada projeto são definidas na proposta.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             
             {/* Box 1: Bairro -> Cidade or Cidade -> Bairros */}
-            <div className="p-8 rounded-3xl bg-white border border-gray-100 shadow-sm flex flex-col justify-between">
+            <div data-locality-areas className="p-8 rounded-3xl bg-white border border-gray-100 shadow-sm flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-3 mb-6 text-brand-primary">
                   <MapPin size={22} />
-                  <h3 className="text-xl font-black text-brand-dark">Localidades e bairros</h3>
+                  <h3 className="text-xl font-black text-brand-dark">{isCuritibaNeighborhood || slug === 'curitiba' ? 'Localidades e bairros' : 'Área de atendimento'}</h3>
                 </div>
                 
                 {isCuritibaNeighborhood ? (
@@ -554,7 +557,7 @@ const LocalityContent: React.FC = () => {
                       O bairro <strong>{locationName}</strong> faz parte da nossa cobertura e mapeamento integrado de presença na capital paranaense.
                     </p>
                     <div className="bg-brand-primary/5 p-4 rounded-2xl border border-brand-primary/10 mt-10">
-                      <span className="block text-[11px] font-black text-brand-primary uppercase tracking-wider mb-1">Voltar ao Centro de Comitê</span>
+                      <span className="block text-[11px] font-black text-brand-primary uppercase tracking-wider mb-1">Guia de Curitiba</span>
                       <p className="text-xs text-gray-600 leading-relaxed mb-3">
                         Visualize a cobertura completa de criação de sites, SEO e estratégias em nossa página central de Curitiba.
                       </p>
@@ -563,14 +566,14 @@ const LocalityContent: React.FC = () => {
                       </Link>
                     </div>
                   </div>
-                ) : (
-                  // Cidade -> Bairros mapping (Tarefa 1 - Curitiba gets real neighborhoods. Others get premium state zones)
+                ) : slug === 'curitiba' ? (
+                  // Only Curitiba has a verified neighborhood list in this block.
                   <div className="space-y-4">
                     <p className="text-gray-500 text-sm leading-relaxed">
-                      Lançamos páginas e campanhas focadas na captura de clientes em sub-regiões e bairros estratégicos de {locationName} para encurtar o ciclo de captação.
+                      Conheça páginas de bairros de Curitiba e consulte o escopo de presença local para a área em que sua empresa atende.
                     </p>
                     <div className="grid grid-cols-2 gap-2 pt-3">
-                      {(slug === 'curitiba' ? targetNeighborhoods : targetNeighborhoods.slice(0, 6)).map((bairro, idx) => (
+                      {targetNeighborhoods.map((bairro, idx) => (
                         <Link 
                           key={idx} 
                           to={`/site-em/${slugify(bairro)}`} 
@@ -581,11 +584,18 @@ const LocalityContent: React.FC = () => {
                       ))}
                     </div>
                   </div>
+                ) : (
+                  <div className="space-y-4" data-locality-consultation>
+                    <p className="text-gray-500 text-sm leading-relaxed">
+                      Atendimento em {locationName} sob consulta. Informe onde sua empresa atua para definirmos a área de atendimento e o escopo do projeto.
+                    </p>
+                    <Link to="/contato" className="text-brand-primary hover:text-blue-700 font-bold text-sm">Consultar atendimento</Link>
+                  </div>
                 )}
               </div>
               
               <div className="mt-8 pt-4 border-t border-gray-100 text-center">
-                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Controle de links: SSR-Friendly</span>
+                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Área de atendimento sob consulta</span>
               </div>
             </div>
 
@@ -614,7 +624,7 @@ const LocalityContent: React.FC = () => {
               </div>
               
               <div className="mt-8 pt-4 border-t border-gray-100 text-center">
-                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Links Máximos: Conforme CRO</span>
+                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Escopo definido na proposta</span>
               </div>
             </div>
 
@@ -626,10 +636,10 @@ const LocalityContent: React.FC = () => {
                   <h3 className="text-xl font-black text-brand-dark">Abrangência & Co-relevância</h3>
                 </div>
                 <p className="text-gray-500 text-sm mb-4 leading-relaxed">
-                  Além de {locationName}, estruturamos rotas aceleradas e suporte profissional em toda a área de influência regional no Sul:
+                  Consulte outras páginas de localidades e confirme a disponibilidade de atendimento para sua empresa.
                 </p>
                 <div className="space-y-2 mt-2">
-                  <span className="block text-[10px] font-black text-gray-400 uppercase tracking-widest">Outras cidades do estado:</span>
+                  <span className="block text-[10px] font-black text-gray-400 uppercase tracking-widest">Outras localidades para consultar:</span>
                   <div className="flex flex-wrap gap-2 pt-1 mb-5">
                     {neighborCities.filter(city => knownLocality(slugify(city))).map((city, idx) => (
                       <Link 
@@ -642,7 +652,7 @@ const LocalityContent: React.FC = () => {
                     ))}
                   </div>
 
-                  <span className="block text-[10px] font-black text-gray-400 uppercase tracking-widest">Capitais de Serviço do Sul:</span>
+                  <span className="block text-[10px] font-black text-gray-400 uppercase tracking-widest">Guias de cidades do Sul:</span>
                   <div className="grid grid-cols-2 gap-2 pt-1">
                     {mainStrategicHubs.map((hub, idx) => (
                       <Link 
@@ -658,7 +668,7 @@ const LocalityContent: React.FC = () => {
               </div>
 
               <div className="mt-8 pt-4 border-t border-gray-100 text-center">
-                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">PageRank Máximo por Página Controlado</span>
+                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Consulte disponibilidade e condições</span>
               </div>
             </div>
 
@@ -675,7 +685,7 @@ const LocalityContent: React.FC = () => {
             </span>
             <h2 className="text-3xl md:text-5xl font-black mb-6">Soberania Visual & Código Enxuto</h2>
             <p className="text-gray-400 text-xl leading-relaxed">
-              Eliminamos frameworks redundantes e códigos lentos. Seu site profissional em {locationName} usará tecnologia limpa de carregamento instantâneo.
+              Organizamos o conteúdo e a navegação do seu site em {locationName} para facilitar a leitura e o contato. O desempenho é avaliado conforme o conteúdo, os dispositivos e as conexões usados nos testes.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -687,7 +697,7 @@ const LocalityContent: React.FC = () => {
               },
               { 
                 title: "UX Design Orientada a Faturamento", 
-                desc: `Guiamos visualmente o usuário curitibano ou regional em caminhos limpos até convertê-los em propostas ativas pelo WhatsApp, reduzindo a evasão.`,
+                desc: `Organizamos os caminhos de navegação para facilitar a consulta de serviços e o contato pelo WhatsApp.`,
                 icon: <Layout className="text-brand-primary" />
               },
               { 
@@ -714,7 +724,7 @@ const LocalityContent: React.FC = () => {
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-6">Nosso Algoritmo de Criação em {locationName}</h2>
             <p className="text-gray-600 text-xl">
-              Garantimos velocidade e máxima engenharia funcional do início ao final do projeto.
+              Definimos o escopo, organizamos o conteúdo e validamos a navegação antes da entrega.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
