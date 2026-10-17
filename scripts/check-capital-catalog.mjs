@@ -14,6 +14,12 @@ for(const capital of capitals.filter(c=>c.available)) {
  if(capital.id==='4106902') assert.equal(value.localities.length,75);
  if(capital.id==='3550308') {assert.equal(value.localities.length,96);assert.ok(value.localities.every(item=>item.kind==='distrito'));}
  if(capital.id==='4205407') assert.equal(value.localities.length,56);
+ if(capital.id==='5300108') {
+  assert.equal(value.localities.length,37);
+  assert.ok(value.localities.every(item=>item.kind==='regiao-administrativa'));
+  for(const name of ['Plano Piloto','Água Quente','Arapoanga','Ponte Alta','26 de Setembro']) assert.ok(value.localities.some(item=>item.name===name));
+  assert.equal(value.additionalSources.length,2);
+ }
  if(value.source.url.includes('geoftp')) {assert.equal(value.referenceDate,'2022-07-31');assert.equal(value.status,'partial');}
 }
 assert.throws(()=>validateInventory({capitalId:'wrong'},'4106902'));

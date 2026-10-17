@@ -1,0 +1,208 @@
+{
+  "capitalId": "5300108",
+  "status": "complete",
+  "verifiedAt": "2026-10-17",
+  "referenceDate": "2026-08-27",
+  "source": {
+    "title": "GDF/SEGOV — diretório das administrações regionais",
+    "url": "https://www.segov.df.gov.br/pt/category/administracoes-regionais"
+  },
+  "additionalSources": [
+    {
+      "title": "GDF/SEGOV — 26 de Setembro (36ª RA)",
+      "url": "https://www.segov.df.gov.br/pt/26-de-setembro"
+    },
+    {
+      "title": "GDF/SEGOV — Ponte Alta (37ª RA)",
+      "url": "https://www.segov.df.gov.br/pt/ponte-alta"
+    }
+  ],
+  "note": "37 regiões administrativas do Distrito Federal documentadas no diretório e nas páginas individuais da SEGOV. O resumo geral ainda menciona 35; as páginas de 26 de Setembro e Ponte Alta registram a criação em 03/07/2026, com atualização em agosto de 2026. São regiões administrativas do DF, não bairros de Brasília. Todas têm proposta sob consulta e não entram no subtotal por bairro.",
+  "localities": [
+    {
+      "id": "5300108:ra:XXXVI",
+      "name": "26 de Setembro",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXXV",
+      "name": "Água Quente",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XX",
+      "name": "Águas Claras",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXXIV",
+      "name": "Arapoanga",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXXIII",
+      "name": "Arniqueira",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:IV",
+      "name": "Brazlândia",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XIX",
+      "name": "Candangolândia",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:IX",
+      "name": "Ceilândia",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XI",
+      "name": "Cruzeiro",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXXI",
+      "name": "Fercal",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:II",
+      "name": "Gama",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:X",
+      "name": "Guará",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXVIII",
+      "name": "Itapoã",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXVII",
+      "name": "Jardim Botânico",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XVIII",
+      "name": "Lago Norte",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XVI",
+      "name": "Lago Sul",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:VIII",
+      "name": "Núcleo Bandeirante",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:VII",
+      "name": "Paranoá",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXIV",
+      "name": "Park Way",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:VI",
+      "name": "Planaltina",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:I",
+      "name": "Plano Piloto",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXXVII",
+      "name": "Ponte Alta",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XV",
+      "name": "Recanto das Emas",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XVII",
+      "name": "Riacho Fundo",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXI",
+      "name": "Riacho Fundo II",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XII",
+      "name": "Samambaia",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XIII",
+      "name": "Santa Maria",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XIV",
+      "name": "São Sebastião",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXV",
+      "name": "SCIA/Estrutural",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXIX",
+      "name": "SIA",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:V",
+      "name": "Sobradinho",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXVI",
+      "name": "Sobradinho II",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXXII",
+      "name": "Sol Nascente e Pôr do Sol",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXII",
+      "name": "Sudoeste/Octogonal",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:III",
+      "name": "Taguatinga",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXIII",
+      "name": "Varjão",
+      "kind": "regiao-administrativa"
+    },
+    {
+      "id": "5300108:ra:XXX",
+      "name": "Vicente Pires",
+      "kind": "regiao-administrativa"
+    }
+  ]
+}
