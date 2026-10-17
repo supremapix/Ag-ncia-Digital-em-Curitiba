@@ -117,12 +117,12 @@
       "permanent": true
     },
     {
-      "source": "/bairro/Bairro Alto",
+      "source": "/bairro/Bairro%20Alto",
       "destination": "/site-em/bairro-alto",
       "permanent": true
     },
     {
-      "source": "/bairro/Sítio Cercado",
+      "source": "/bairro/S%C3%ADtio%20Cercado",
       "destination": "/site-em/sitio-cercado",
       "permanent": true
     },
@@ -202,7 +202,7 @@
       "permanent": true
     },
     {
-      "source": "/bairro/Mossunguê",
+      "source": "/bairro/Mossungu%C3%AA",
       "destination": "/site-em/mossungue",
       "permanent": true
     },
@@ -292,12 +292,12 @@
       "permanent": true
     },
     {
-      "source": "/bairro/Campo Comprido",
+      "source": "/bairro/Campo%20Comprido",
       "destination": "/site-em/campo-comprido",
       "permanent": true
     },
     {
-      "source": "/bairro/Tanguá",
+      "source": "/bairro/Tangu%C3%A1",
       "destination": "/site-em/tangua",
       "permanent": true
     },

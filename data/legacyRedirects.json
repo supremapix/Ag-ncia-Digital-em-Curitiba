@@ -110,12 +110,12 @@
     "reason": "Bairro de Curitiba identificado no catálogo existente"
   },
   {
-    "source": "/bairro/Bairro Alto",
+    "source": "/bairro/Bairro%20Alto",
     "destination": "/site-em/bairro-alto",
     "reason": "Bairro de Curitiba identificado no catálogo existente"
   },
   {
-    "source": "/bairro/Sítio Cercado",
+    "source": "/bairro/S%C3%ADtio%20Cercado",
     "destination": "/site-em/sitio-cercado",
     "reason": "Bairro de Curitiba identificado no catálogo existente"
   },
@@ -195,7 +195,7 @@
     "reason": "Bairro de Curitiba identificado no catálogo existente"
   },
   {
-    "source": "/bairro/Mossunguê",
+    "source": "/bairro/Mossungu%C3%AA",
     "destination": "/site-em/mossungue",
     "reason": "Bairro de Curitiba identificado no catálogo existente"
   },
@@ -285,12 +285,12 @@
     "reason": "Município com nome correspondente e recorte estadual não ambíguo no catálogo existente"
   },
   {
-    "source": "/bairro/Campo Comprido",
+    "source": "/bairro/Campo%20Comprido",
     "destination": "/site-em/campo-comprido",
     "reason": "Bairro de Curitiba identificado no catálogo existente"
   },
   {
-    "source": "/bairro/Tanguá",
+    "source": "/bairro/Tangu%C3%A1",
     "destination": "/site-em/tangua",
     "reason": "Bairro de Curitiba identificado no catálogo existente"
   },
