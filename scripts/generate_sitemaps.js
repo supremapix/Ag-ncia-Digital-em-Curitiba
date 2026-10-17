@@ -76,6 +76,7 @@ const currentDate = new Date().toISOString().split('T')[0];
 // 4. Generate sitemap_pages.xml
 console.log('Gerando sitemap_pages.xml...');
 const mainPages = [
+  ...['bairros-curitiba','agencia-seo-curitiba','agencia-marketing-digital-curitiba','google-ads-curitiba','ia-marketing-curitiba','seo-local-curitiba'].map(path => ({path, priority:'0.7', changefreq:'monthly'})),
   ...['criacao-de-sites','criacao-de-sites/capitais','criacao-de-sites/como-escolher','blog/100','sites-em-parana','sites-em-santa-catarina','sites-em-rio-grande-do-sul'].map(path => ({path, priority:'0.7', changefreq:'monthly'})),
   { path: '', priority: '1.0', changefreq: 'daily' },
   { path: 'presenca-local', priority: '0.9', changefreq: 'weekly' },

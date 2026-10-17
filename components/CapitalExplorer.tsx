@@ -3,7 +3,7 @@ import { capitals, localityKind, pendingNotes, validateInventory, type CapitalIn
 const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 const cache = new Map<string, CapitalInventory>();
 export const CapitalExplorer = () => {
-  const [capitalId, setCapitalId] = useState(() => { const id = new URLSearchParams(window.location.search).get('capital'); return capitals.some(c => c.id === id) ? id! : '4106902'; });
+  const [capitalId, setCapitalId] = useState(() => { const id = typeof window === 'undefined' ? null : new URLSearchParams(window.location.search).get('capital'); return capitals.some(c => c.id === id) ? id! : '4106902'; });
   const [query, setQuery] = useState('');
   const [requestedLocality, setRequestedLocality] = useState('');
   const [inventory, setInventory] = useState<CapitalInventory | null>(null);

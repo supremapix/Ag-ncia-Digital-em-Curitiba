@@ -1,4 +1,562 @@
 {
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/tijucas-do-sul",
+      "destination": "/site-em/tijucas-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/cidade-industrial-de-curitiba",
+      "destination": "/site-em/cidade-industrial-cic",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/taruma",
+      "destination": "/site-em/taruma",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/doutor-ulysses",
+      "destination": "/site-em/doutor-ulysses",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/tatuquara",
+      "destination": "/site-em/tatuquara",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/tangua",
+      "destination": "/site-em/tangua",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/ecoville",
+      "destination": "/site-em/ecoville",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/colombo",
+      "destination": "/site-em/colombo",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/jardim-social",
+      "destination": "/site-em/jardim-social",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/sao-joao",
+      "destination": "/site-em/sao-joao",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/augusta",
+      "destination": "/site-em/augusta",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/campo-largo",
+      "destination": "/site-em/campo-largo",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/cerro-azul",
+      "destination": "/site-em/cerro-azul",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/contenda",
+      "destination": "/site-em/contenda",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/cascatinha",
+      "destination": "/site-em/cascatinha",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/bairro-alto",
+      "destination": "/site-em/bairro-alto",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/vila-audi",
+      "destination": "/site-em/vila-audi",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/vila-oficinas",
+      "destination": "/site-em/vila-oficinas",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/portao",
+      "destination": "/site-em/portao",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/guaira",
+      "destination": "/site-em/guaira",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/umbara",
+      "destination": "/site-em/umbara",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/hauer",
+      "destination": "/site-em/hauer",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/Bairro Alto",
+      "destination": "/site-em/bairro-alto",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/Sítio Cercado",
+      "destination": "/site-em/sitio-cercado",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/quitandinha",
+      "destination": "/site-em/quitandinha",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/bom-retiro",
+      "destination": "/site-em/bom-retiro",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/cabral",
+      "destination": "/site-em/cabral",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/ahu",
+      "destination": "/site-em/ahu",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/uberaba",
+      "destination": "/site-em/uberaba",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/bacacheri",
+      "destination": "/site-em/bacacheri",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/alto-boqueirao",
+      "destination": "/site-em/alto-boqueirao",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/agua-verde",
+      "destination": "/site-em/agua-verde",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/vila-zumbi",
+      "destination": "/site-em/vila-zumbi",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/agudos-do-sul",
+      "destination": "/site-em/agudos-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/caximba",
+      "destination": "/site-em/caximba",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/hugo-lange",
+      "destination": "/site-em/hugo-lange",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/novo-mundo",
+      "destination": "/site-em/novo-mundo",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/pien",
+      "destination": "/site-em/pien",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/alto-da-rua-xv",
+      "destination": "/site-em/alto-da-rua-xv",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/Mossunguê",
+      "destination": "/site-em/mossungue",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/cic-central",
+      "destination": "/site-em/cic-central",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/araucaria",
+      "destination": "/site-em/araucaria",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/piraquara",
+      "destination": "/site-em/piraquara",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/fanny",
+      "destination": "/site-em/fanny",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/campo-de-santana",
+      "destination": "/site-em/campo-de-santana",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/prado-velho",
+      "destination": "/site-em/prado-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/boqueirao",
+      "destination": "/site-em/boqueirao",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/jardim-schaffer",
+      "destination": "/site-em/jardim-schaffer",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/almirante-tamandare",
+      "destination": "/site-em/almirante-tamandare",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/ganchinho",
+      "destination": "/site-em/ganchinho",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/vila-osternack",
+      "destination": "/site-em/vila-osternack",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/tunas-do-parana",
+      "destination": "/site-em/tunas-do-parana",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/cristo-rei",
+      "destination": "/site-em/cristo-rei",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/rio-branco-do-sul",
+      "destination": "/site-em/rio-branco-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/Pinhais",
+      "destination": "/site-em/pinhais",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/Quitandinha",
+      "destination": "/site-em/quitandinha",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/quatro-barras",
+      "destination": "/site-em/quatro-barras",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/Campo Comprido",
+      "destination": "/site-em/campo-comprido",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/Tanguá",
+      "destination": "/site-em/tangua",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/itaperucu",
+      "destination": "/site-em/itaperucu",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/batel",
+      "destination": "/site-em/batel",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/Uberaba",
+      "destination": "/site-em/uberaba",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/campo-do-tenente",
+      "destination": "/site-em/campo-do-tenente",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/riviera",
+      "destination": "/site-em/riviera",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/pinheirinho-velho",
+      "destination": "/site-em/pinheirinho-velho",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/rio-negro",
+      "destination": "/site-em/rio-negro",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/caiua",
+      "destination": "/site-em/caiua",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/prado-velho.html",
+      "destination": "/site-em/prado-velho",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/campo-do-tenente.html",
+      "destination": "/site-em/campo-do-tenente",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/mandirituba.html",
+      "destination": "/site-em/mandirituba",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/cascatinha.html",
+      "destination": "/site-em/cascatinha",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/contenda.html",
+      "destination": "/site-em/contenda",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/cabral.html",
+      "destination": "/site-em/cabral",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/vila-izabel.html",
+      "destination": "/site-em/vila-izabel",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/quatro-barras.html",
+      "destination": "/site-em/quatro-barras",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/tunas-do-parana.html",
+      "destination": "/site-em/tunas-do-parana",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/centro-civico.html",
+      "destination": "/site-em/centro-civico",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/guaira.html",
+      "destination": "/site-em/guaira",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/bigorrilho.html",
+      "destination": "/site-em/bigorrilho",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/quitandinha.html",
+      "destination": "/site-em/quitandinha",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/sao-jose-dos-pinhais.html",
+      "destination": "/site-em/sao-jose-dos-pinhais",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/rio-negro.html",
+      "destination": "/site-em/rio-negro",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/cristo-rei.html",
+      "destination": "/site-em/cristo-rei",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/sitio-cercado.html",
+      "destination": "/site-em/sitio-cercado",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/fazenda-rio-grande.html",
+      "destination": "/site-em/fazenda-rio-grande",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/jardim-social.html",
+      "destination": "/site-em/jardim-social",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/ganchinho.html",
+      "destination": "/site-em/ganchinho",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/cerro-azul.html",
+      "destination": "/site-em/cerro-azul",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/pilarzinho.html",
+      "destination": "/site-em/pilarzinho",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/novo-mundo.html",
+      "destination": "/site-em/novo-mundo",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/atuba.html",
+      "destination": "/site-em/atuba",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/barreirinha.html",
+      "destination": "/site-em/barreirinha",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/fazendinha.html",
+      "destination": "/site-em/fazendinha",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/pien.html",
+      "destination": "/site-em/pien",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/campina-do-siqueira.html",
+      "destination": "/site-em/campina-do-siqueira",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/mossungue.html",
+      "destination": "/site-em/mossungue",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/umbara.html",
+      "destination": "/site-em/umbara",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/sao-braz.html",
+      "destination": "/site-em/sao-braz",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/campo-comprido.html",
+      "destination": "/site-em/campo-comprido",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/agudos-do-sul.html",
+      "destination": "/site-em/agudos-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/sao-francisco.html",
+      "destination": "/site-em/sao-francisco",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/lapa",
+      "destination": "/site-em/lapa",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/balsa-nova",
+      "destination": "/site-em/balsa-nova",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/capao-raso",
+      "destination": "/site-em/capao-raso",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/bigorrilho",
+      "destination": "/site-em/bigorrilho",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/fanny.html",
+      "destination": "/site-em/fanny",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/campo-magro.html",
+      "destination": "/site-em/campo-magro",
+      "permanent": true
+    },
+    {
+      "source": "/cidades/campo-largo.html",
+      "destination": "/site-em/campo-largo",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/capao-da-imbuia.html",
+      "destination": "/site-em/capao-da-imbuia",
+      "permanent": true
+    },
+    {
+      "source": "/bairros/orleans.html",
+      "destination": "/site-em/orleans",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/criacao-de-sites",
@@ -13,20 +571,80 @@
       "destination": "/criacao-de-sites/como-escolher/index.html"
     },
     {
-      "source": "/blog/100",
-      "destination": "/blog/100/index.html"
+      "source": "/presenca-local",
+      "destination": "/presenca-local/index.html"
     },
     {
-      "source": "/sitemap.xml",
-      "destination": "/sitemap.xml"
+      "source": "/servicos",
+      "destination": "/servicos/index.html"
     },
     {
-      "source": "/robots.txt",
-      "destination": "/robots.txt"
+      "source": "/portfolio",
+      "destination": "/portfolio/index.html"
     },
     {
-      "source": "/((?!.*\\.).*)",
-      "destination": "/index.html"
+      "source": "/sobre",
+      "destination": "/sobre/index.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/contato",
+      "destination": "/contato/index.html"
+    },
+    {
+      "source": "/mapa-do-site",
+      "destination": "/mapa-do-site/index.html"
+    },
+    {
+      "source": "/privacidade",
+      "destination": "/privacidade/index.html"
+    },
+    {
+      "source": "/sites-em-parana",
+      "destination": "/sites-em-parana/index.html"
+    },
+    {
+      "source": "/sites-em-santa-catarina",
+      "destination": "/sites-em-santa-catarina/index.html"
+    },
+    {
+      "source": "/sites-em-rio-grande-do-sul",
+      "destination": "/sites-em-rio-grande-do-sul/index.html"
+    },
+    {
+      "source": "/bairros-curitiba",
+      "destination": "/bairros-curitiba/index.html"
+    },
+    {
+      "source": "/agencia-seo-curitiba",
+      "destination": "/agencia-seo-curitiba/index.html"
+    },
+    {
+      "source": "/agencia-marketing-digital-curitiba",
+      "destination": "/agencia-marketing-digital-curitiba/index.html"
+    },
+    {
+      "source": "/google-ads-curitiba",
+      "destination": "/google-ads-curitiba/index.html"
+    },
+    {
+      "source": "/seo-local-curitiba",
+      "destination": "/seo-local-curitiba/index.html"
+    },
+    {
+      "source": "/ia-marketing-curitiba",
+      "destination": "/ia-marketing-curitiba/index.html"
+    },
+    {
+      "source": "/site-em/:slug",
+      "destination": "/site-em/:slug/index.html"
+    },
+    {
+      "source": "/blog/:id",
+      "destination": "/blog/:id/index.html"
     }
   ]
 }

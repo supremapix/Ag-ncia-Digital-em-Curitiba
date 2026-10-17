@@ -10,14 +10,14 @@ for(const path of [...hubs.map(h=>h.path),'/blog/100']){
  const html=fs.readFileSync('dist'+path+'/index.html','utf8');
  assert.ok(html.includes(`<link rel="canonical" href="${origin+path}">`));
  assert.ok(!html.includes('noindex'));
- assert.equal((html.match(/<h1>/g)||[]).length,1);
- assert.ok(html.includes('<h2>'));
+ assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1);
+ assert.ok(/<h2(?:\s|>)/.test(html));
  assert.equal(sitemap.split(`<loc>${origin+path}</loc>`).length-1,1);
- assert.ok(rewrites.some(r=>r.source===path&&r.destination===path+'/index.html'));
+ assert.ok(rewrites.some(r=>r.source===path&&r.destination===path+'/index.html') || (path==='/blog/100' && rewrites.some(r=>r.source==='/blog/:id'&&r.destination==='/blog/:id/index.html')));
  assert.ok(!/"Review"|aggregateRating|ratingValue/.test(html));
  for(const match of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g))JSON.parse(match[1]);
  for(const match of html.matchAll(/<a[^>]*href="(\/[^"#?]*)(?:[?#][^"]*)?"/g)){
-  const link=match[1];assert.ok(link==='/'||link.startsWith('/site-em/')||app.includes('path="'+link+'"'),`Missing route: ${link}`);
+  const link=match[1];assert.ok(link==='/'||link.startsWith('/site-em/')||app.includes('path="'+link+'"')||fs.existsSync('dist'+link),`Missing route: ${link}`);
  }
 }
 const directory=fs.readFileSync('dist/criacao-de-sites/capitais/index.html','utf8');

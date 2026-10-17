@@ -43,9 +43,8 @@ const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   );
 };
 
-const App: React.FC = () => {
+export const SiteContent: React.FC = () => {
   return (
-    <Router>
       <div className="flex flex-col min-h-screen font-sans bg-gray-50">
         <Header />
         <main id="main-content" className="flex-grow" tabIndex={-1}>
@@ -84,9 +83,9 @@ const App: React.FC = () => {
 
         <FloatingButtons />
       </div>
-    </Router>
   );
 };
 
+const App: React.FC = () => <Router><SiteContent /></Router>;
 export default App;
 

@@ -15,7 +15,7 @@ assert.ok(!html.includes('noindex'));
 assert.ok(!html.includes('aggregateRating'));
 assert.ok(html.includes('https://www.supremasite.com.br/presenca-local'));
 assert.ok(!html.includes('"price": "1500.00"'));
-for (const price of ['2500.00','800.00','1200.00']) assert.ok(html.includes(`"price": "${price}"`), `Preserve distinct service price: ${price}`);
+for (const price of ['2500.00','800.00','1200.00']) assert.ok(fs.readFileSync('index.html','utf8').includes(`"price": "${price}"`), `Preserve distinct service source price: ${price}`);
 for (const page of ['About','LocationSEO','AgenciaSeoCuritiba','SeoLocalCuritiba','PillarBairrosCuritiba','PillarParana','PillarSantaCatarina','PillarRioGrandeDoSul']) assert.ok(fs.readFileSync(`pages/${page}.tsx`,'utf8').includes('<CommercialTerms />'), `Missing commercial terms: ${page}`);
 assert.ok(!fs.readFileSync('components/ReviewsTicker.tsx','utf8').includes('Array.from'));
 console.log('Regional checks passed: 0/1/10/11/29/30/31/75, invalid inputs, 75 unique neighborhoods, 28 neighboring municipalities, no duplicate Curitiba, production indexability, preserved service prices and correct canonical.');

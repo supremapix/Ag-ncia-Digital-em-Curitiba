@@ -1,3 +1,5 @@
+import { knownLocality, supplementalRegions, supplementalNames } from '../data/routeInventory';
+import { NotFound } from './NotFound';
 import { CommercialTerms } from '../components/CommercialTerms';
 import React, { useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
@@ -247,10 +249,10 @@ const citiesList = ["Curitiba", "Londrina", "Maringá", "Cascavel", "Foz do Igua
 const scCitiesList = ["Joinville", "Florianópolis", "Blumenau", "São José", "Chapecó", "Criciúma", "Itajaí", "Jaraguá do Sul", "Palhoça", "Lages", "Balneário Camboriú", "Brusque", "Tubarão", "São Bento do Sul", "Caçador", "Concórdia", "Navegantes", "Gaspar", "Indaial", "Itapema", "Mafra", "Araranguá", "Canoinhas", "Xanxerê", "Videira", "Curitibanos", "Biguaçu"];
 const rsCitiesList = ["Porto Alegre", "Caxias do Sul", "Canoas", "Pelotas", "Gravataí", "Santa Maria", "Viamão", "Novo Hamburgo", "São Leopoldo", "Rio Grande", "Alvorada", "Passo Fundo", "Uruguaiana", "Sapucaia do Sul", "Santa Cruz do Sul", "Cachoeirinha", "Bagé", "Bento Gonçalves", "Erechim", "Guaíba", "Camaquã", "Esteio", "Ijuí", "Sapiranga", "Farroupilha", "Lajeado", "Gramado"];
 
-export const LocationSEO: React.FC = () => {
+const LocalityContent: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const locationName = useMemo(() => getNameFromSlug(slug || ''), [slug]);
-  const region = useMemo(() => getRegionFromSlug(slug || ''), [slug]);
+  const locationName = useMemo(() => cityData[slug || '']?.name || supplementalNames[slug || ''] || getNameFromSlug(slug || ''), [slug]);
+  const region = useMemo(() => neighborhoods.some(n=>slugify(n)===slug) ? 'PR' : cityData[slug || '']?.stateSigla || supplementalRegions[slug || ''] || getRegionFromSlug(slug || ''), [slug]);
   
   // Is this specific slug a Curitiba neighborhood?
   const isCuritibaNeighborhood = useMemo(() => {
@@ -341,6 +343,7 @@ export const LocationSEO: React.FC = () => {
     document.querySelector('meta[name="twitter:title"]')?.setAttribute('content', ogTitle);
     
     const pageUrl = `https://www.supremasite.com.br/site-em/${slug}`;
+    document.querySelector('link[rel="canonical"]')?.setAttribute('href',pageUrl);
     document.querySelector('meta[property="og:url"]')?.setAttribute('content', pageUrl);
     document.querySelector('meta[name="twitter:url"]')?.setAttribute('content', pageUrl);
     
@@ -348,24 +351,13 @@ export const LocationSEO: React.FC = () => {
     const schemaMarkup = [
       {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": `Suprema Site Express - ${locationName}`,
+        "@type": "Service",
+        "name": `Criação de sites em ${locationName}`,
+        "provider": {"@type":"Organization","name":"Suprema Sites Express","url":"https://www.supremasite.com.br/"},
         "description": `Criação de sites de altíssima performance, e-commerce profissional e SEO Local em ${locationName}, ${stateSigla}. Projetos estruturados em React com entrega ágil com prazo sob consulta.`,
         "url": `https://www.supremasite.com.br/site-em/${slug}`,
         "telephone": "+5541992721004",
         "image": "https://www.supremasite.com.br/logo.png",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": isCuritibaNeighborhood ? "Curitiba" : locationName,
-          "addressRegion": stateSigla,
-          "addressCountry": "BR",
-          "streetAddress": isCuritibaNeighborhood ? `Bairro ${locationName}` : "Atendimento Regional Altamente Escalável"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": isCuritibaNeighborhood ? "-25.4284" : "-25.4300", 
-          "longitude": isCuritibaNeighborhood ? "-49.2733" : "-49.2700"
-        },
         "areaServed": [
           {
             "@type": isCuritibaNeighborhood ? "AdministrativeArea" : "City",
@@ -552,7 +544,7 @@ export const LocationSEO: React.FC = () => {
               <div>
                 <div className="flex items-center gap-3 mb-6 text-brand-primary">
                   <MapPin size={22} />
-                  <h3 className="text-xl font-black text-brand-dark">Conexão Metropolitana</h3>
+                  <h3 className="text-xl font-black text-brand-dark">Localidades e bairros</h3>
                 </div>
                 
                 {isCuritibaNeighborhood ? (
@@ -637,9 +629,9 @@ export const LocationSEO: React.FC = () => {
                   Além de {locationName}, estruturamos rotas aceleradas e suporte profissional em toda a área de influência regional no Sul:
                 </p>
                 <div className="space-y-2 mt-2">
-                  <span className="block text-[10px] font-black text-gray-400 uppercase tracking-widest">Cidades Vizinhas:</span>
+                  <span className="block text-[10px] font-black text-gray-400 uppercase tracking-widest">Outras cidades do estado:</span>
                   <div className="flex flex-wrap gap-2 pt-1 mb-5">
-                    {neighborCities.map((city, idx) => (
+                    {neighborCities.filter(city => knownLocality(slugify(city))).map((city, idx) => (
                       <Link 
                         key={idx} 
                         to={`/site-em/${slugify(city)}`} 
@@ -828,3 +820,5 @@ export const LocationSEO: React.FC = () => {
     </div>
   );
 };
+
+export const LocationSEO: React.FC = () => { const {slug}=useParams<{slug:string}>(); return slug && knownLocality(slug) ? <LocalityContent /> : <NotFound />; };
