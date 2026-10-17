@@ -65,8 +65,6 @@ export const Footer: React.FC = () => {
               <li><Link to="/portfolio" className="hover:text-cobalt">Projetos</Link></li>
               <li><Link to="/sobre" className="hover:text-cobalt">Sobre</Link></li>
               <li><Link to="/contato" className="hover:text-cobalt">Contato</Link></li>
-              <li><Link to="/mapa-do-site" className="hover:text-cobalt">Mapa do Site</Link></li>
-              <li><a href="/sitemap.xml" className="hover:text-cobalt">XML Sitemap</a></li>
             </ul>
           </div>
         </div>
