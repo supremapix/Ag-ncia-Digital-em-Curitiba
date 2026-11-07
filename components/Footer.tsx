@@ -66,6 +66,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/sobre" className="hover:text-cobalt">Sobre</Link></li>
               <li><Link to="/contato" className="hover:text-cobalt">Contato</Link></li>
               <li><a href="https://profile.google/@canalsupremavideos" target="_blank" rel="noopener noreferrer" className="hover:text-cobalt focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" aria-label="Canal Suprema Vídeos no Google (abre em nova aba)">Canal Suprema Vídeos no Google</a></li>
+              <li><a href="https://bio.supremamidia.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-cobalt focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4" aria-label="Bio Suprema: todos os nossos links (abre em nova aba)">Bio Suprema · todos os links</a></li>
             </ul>
           </div>
         </div>
