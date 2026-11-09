@@ -1,0 +1,30 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+const pages=JSON.parse(fs.readFileSync('data/curitibaServices.json','utf8'));
+const routes=JSON.parse(fs.readFileSync('.prerender/routes.json','utf8'));
+const config=JSON.parse(fs.readFileSync('vercel.json','utf8'));
+assert.equal(pages.length,7);assert.equal(new Set(pages.map(p=>p.path)).size,7);
+const result=[];
+for(const p of pages){
+ const html=fs.readFileSync('dist'+p.path+'/index.html','utf8');
+ assert.equal((html.match(/<h1\b/g)||[]).length,1,p.path);
+ assert.equal((html.match(/rel="canonical"/g)||[]).length,1,p.path);
+ assert.ok(html.includes('<title>'+p.title+'</title>'),p.path);
+ assert.ok(html.includes('href="https://www.supremasite.com.br'+p.path+'"'),p.path);
+ assert.ok(html.includes('content="'+p.description+'"'),p.path);
+ assert.ok(!html.includes('noindex'),p.path);
+ assert.ok(!html.includes('<video'),p.path);
+ assert.ok(html.includes('data-service="'+p.id+'"'),p.path);
+ assert.equal((html.match(/<details/g)||[]).length,4,p.path);
+ assert.ok(html.includes('type="tel"')&&html.includes('callback-status'),p.path);
+ assert.ok(html.includes('https://wa.me/5541992721004'),p.path);
+ const schemas=[...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
+ assert.equal(schemas.length,1);assert.ok(schemas[0]['@graph'].some(o=>o['@type']==='Service'));
+ assert.ok(!JSON.stringify(schemas).includes('AggregateRating'));
+ assert.ok(routes.some(r=>r.path===p.path));
+ assert.ok(config.rewrites.some(r=>r.source===p.path||r.source==='/site-em/:slug'));
+ for(const suffix of ['.webp','-768.webp'])assert.ok(fs.existsSync('dist/images/curitiba/'+p.image+suffix));
+ for(const s of p.sections)assert.ok(html.includes(s.title)&&html.includes(s.text.slice(0,70)));
+ result.push({path:p.path,sections:p.sections.length,faqs:p.faqs.length,heroBytes:fs.statSync('dist/images/curitiba/'+p.image+'.webp').size,htmlBytes:Buffer.byteLength(html)});
+}
+assert.ok(fs.readFileSync('pages/CuritibaService.tsx','utf8').includes("prefers-reduced-motion: reduce"));
+fs.writeFileSync('qa/curitiba-static-checks.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

@@ -21,7 +21,7 @@ import { PillarSantaCatarina } from './pages/PillarSantaCatarina';
 import { PillarRioGrandeDoSul } from './pages/PillarRioGrandeDoSul';
 import { PillarBairrosCuritiba } from './pages/PillarBairrosCuritiba';
 import { AgenciaSeoCuritiba } from './pages/AgenciaSeoCuritiba';
-import { AgenciaMarketingCuritiba } from './pages/AgenciaMarketingCuritiba';
+import { CuritibaService } from './pages/CuritibaService';
 import { GoogleAdsCuritiba } from './pages/GoogleAdsCuritiba';
 import { SeoLocalCuritiba } from './pages/SeoLocalCuritiba';
 import { IaMarketingCuritiba } from './pages/IaMarketingCuritiba';
@@ -68,7 +68,13 @@ export const SiteContent: React.FC = () => {
               <Route path="/sites-em-rio-grande-do-sul" element={<PillarRioGrandeDoSul />} />
               <Route path="/bairros-curitiba" element={<PillarBairrosCuritiba />} />
               <Route path="/agencia-seo-curitiba" element={<AgenciaSeoCuritiba />} />
-              <Route path="/agencia-marketing-digital-curitiba" element={<AgenciaMarketingCuritiba />} />
+              <Route path="/site-em/curitiba" element={<CuritibaService />} />
+<Route path="/agencia-marketing-digital-curitiba" element={<CuritibaService />} />
+<Route path="/criacao-sites-empresas-reformas-curitiba" element={<CuritibaService />} />
+<Route path="/agencia-marketing-curitiba" element={<CuritibaService />} />
+<Route path="/agencia-digital-curitiba" element={<CuritibaService />} />
+<Route path="/web-designer-curitiba" element={<CuritibaService />} />
+<Route path="/agencia-criacao-conteudo" element={<CuritibaService />} />
               <Route path="/google-ads-curitiba" element={<GoogleAdsCuritiba />} />
               <Route path="/seo-local-curitiba" element={<SeoLocalCuritiba />} />
               <Route path="/ia-marketing-curitiba" element={<IaMarketingCuritiba />} />

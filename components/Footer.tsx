@@ -1,15 +1,19 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Instagram, Facebook, Globe, FileText, MessageCircle, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { CuritibaServiceLinks } from '../pages/CuritibaService';
+import curitibaServices from '../data/curitibaServices.json';
 import { Logo } from './Logo';
 
 export const Footer: React.FC = () => {
+  const { pathname } = useLocation();
+  const lightweight = curitibaServices.some(page => page.path === pathname);
   return (
     <footer className="bg-brand-dark text-warm-white pt-20 pb-14 border-t border-white/5 relative overflow-hidden">
       
       {/* Background Video 01 (Omar SEO 01) */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <video 
+        {!lightweight && <video
           autoPlay 
           loop 
           muted 
@@ -18,13 +22,14 @@ export const Footer: React.FC = () => {
           className="w-full h-full object-cover opacity-30 filter saturate-110 contrast-105"
         >
           <source src="https://img.supremasite.com.br/omar-seo.mp4" type="video/mp4" />
-        </video>
+        </video>}
         <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/90 to-brand-dark/80" />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         
         <nav className="mb-8 flex flex-wrap gap-6" aria-label="Pesquisa de sites"><Link to="/criacao-de-sites">Guia de criação de sites</Link><Link to="/criacao-de-sites/capitais">Pesquisar capitais</Link><Link to="/criacao-de-sites/como-escolher">Como escolher seu site</Link></nav>
+<CuritibaServiceLinks />
 {/* 4 Main Footer Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           

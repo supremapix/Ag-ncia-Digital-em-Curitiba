@@ -1,3 +1,4 @@
+import { CuritibaServiceLinks } from './CuritibaService';
 import { HubLinks } from './SearchHub';
 import React, { useEffect, useState } from 'react';
 import { 
@@ -32,7 +33,7 @@ export const Services: React.FC = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <HubLinks /><RegionalOffer />
+      <HubLinks /><div className="studio-shell"><CuritibaServiceLinks /></div><RegionalOffer />
       {/* Hero Section */}
       <section className="relative pt-28 pb-20 overflow-hidden bg-brand-dark text-white">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-brand-dark to-purple-900/30 opacity-90"></div>

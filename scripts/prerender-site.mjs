@@ -1,7 +1,9 @@
 import {build} from 'esbuild';import fs from 'node:fs';
+const curitibaServices=JSON.parse(fs.readFileSync('data/curitibaServices.json','utf8'));
+
 fs.mkdirSync('.prerender',{recursive:true});
-await build({stdin:{contents:`import React from 'react';import {renderToStaticMarkup} from 'react-dom/server';import {MemoryRouter} from 'react-router-dom';import {SiteContent} from './App';import {localitySlugs,staticRoutes} from './data/routeInventory';import {blogPosts} from './data/blogData';import hubs from './data/searchHubs.json';export {localitySlugs,staticRoutes,blogPosts,hubs};export function render(path){return renderToStaticMarkup(<MemoryRouter initialEntries={[path]}><SiteContent/></MemoryRouter>)}`,resolveDir:process.cwd(),loader:'tsx'},bundle:true,platform:'node',format:'esm',packages:'external',loader:{'.css':'empty'},outfile:'.prerender/render.mjs'});
-const {render,localitySlugs,staticRoutes,blogPosts,hubs}=await import('../.prerender/render.mjs');
+await build({stdin:{contents:`import React from 'react';import {renderToStaticMarkup} from 'react-dom/server';import {MemoryRouter} from 'react-router-dom';import {SiteContent} from './App';import {localitySlugs,staticRoutes} from './data/routeInventory';import {blogPosts} from './data/blogData';import hubs from './data/searchHubs.json';import {curitibaServiceSchema} from './components/curitibaServiceSchema';export {localitySlugs,staticRoutes,blogPosts,hubs,curitibaServiceSchema};export function render(path){return renderToStaticMarkup(<MemoryRouter initialEntries={[path]}><SiteContent/></MemoryRouter>)}`,resolveDir:process.cwd(),loader:'tsx'},bundle:true,platform:'node',format:'esm',packages:'external',loader:{'.css':'empty'},outfile:'.prerender/render.mjs'});
+const {render,localitySlugs,staticRoutes,blogPosts,hubs,curitibaServiceSchema}=await import('../.prerender/render.mjs');
 const template=fs.readFileSync('dist/index.html','utf8');const origin='https://www.supremasite.com.br';
 const esc=s=>s.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
 const strip=s=>s.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').replaceAll('&amp;','&').trim();
@@ -11,11 +13,13 @@ for(const path of [...routes,'/__not-found__']){
  const body=render(path),notFound=path==='/__not-found__',url=origin+path;
  const h1=strip(body.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1]||'Suprema Sites Express');
  const hub=hubs.find(h=>h.path===path),post=blogPosts.find(p=>'/blog/'+p.id===path);
- const title=hub?.title||(post?post.title+' | Blog Suprema':notFound?'Página não encontrada | Suprema':h1+' | Suprema');
- const description=hub?.description||post?.excerpt||(path.startsWith('/site-em/')?`${h1}. Consulte escopo, prazo e condições de criação do site e presença local. Sem garantia de ranking ou vendas.`:notFound?'A página solicitada não existe.':`${h1}. Consulte informações, serviços e condições da Suprema Sites Express.`);
+ const service=curitibaServices.find(p=>p.path===path);
+ const title=service?.title||hub?.title||(post?post.title+' | Blog Suprema':notFound?'Página não encontrada | Suprema':h1+' | Suprema');
+ const description=service?.description||hub?.description||post?.excerpt||(path.startsWith('/site-em/')?`${h1}. Consulte escopo, prazo e condições de criação do site e presença local. Sem garantia de ranking ou vendas.`:notFound?'A página solicitada não existe.':`${h1}. Consulte informações, serviços e condições da Suprema Sites Express.`);
  let html=template.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g,'').replace(/<title>[\s\S]*?<\/title>/,`<title>${esc(title)}</title>`).replace(/<link rel="canonical" href="[^"]*"\s*\/?>/,notFound?'':`<link rel="canonical" href="${url}">`);
  for(const [key,value]of Object.entries({description,'og:title':title,'og:description':description,'og:url':url,'twitter:title':title,'twitter:description':description,'twitter:url':url}))html=html.replace(new RegExp(`<meta (name|property)="${key}" content="[^"]*"\\s*\\/?>`,'g'),`<meta ${key.startsWith('og:')?'property':'name'}="${key}" content="${esc(value)}">`);
- const schema={'@context':'https://schema.org','@type':post?'Article':'WebPage',name:h1,headline:h1,description,url,...(post?{author:{'@type':'Organization',name:post.author},publisher:{'@type':'Organization',name:'Suprema Sites Express',url:origin}}:{})};
+ const schema=service?curitibaServiceSchema(service):{'@context':'https://schema.org','@type':post?'Article':'WebPage',name:h1,headline:h1,description,url,...(post?{author:{'@type':'Organization',name:post.author},publisher:{'@type':'Organization',name:'Suprema Sites Express',url:origin}}:{})};
+ if(service){for(const key of ['og:image','twitter:image'])html=html.replace(new RegExp(`<meta (name|property)="${key}" content="[^"]*"\\s*\\/?>`,'g'),`<meta ${key.startsWith('og:')?'property':'name'}="${key}" content="${origin}/images/curitiba/${service.image}.webp">`);}
  html=html.replace('</head>',notFound?'<meta name="robots" content="noindex"></head>':`<script type="application/ld+json">${JSON.stringify(schema).replaceAll('<','\\u003c')}</script></head>`).replace('<div id="root"></div>',`<div id="root">${body}</div>`);
  const file=notFound?'dist/404.html':path==='/'?'dist/index.html':'dist'+path+'/index.html';fs.mkdirSync(file.slice(0,file.lastIndexOf('/')),{recursive:true});fs.writeFileSync(file,html);if(!notFound)records.push({path,title,description,file});
 }

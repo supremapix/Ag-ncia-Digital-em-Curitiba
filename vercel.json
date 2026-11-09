@@ -555,9 +555,34 @@
       "source": "/bairros/orleans.html",
       "destination": "/site-em/orleans",
       "permanent": true
+    },
+    {
+      "source": "/bairros/cidade-industrial",
+      "destination": "/site-em/cidade-industrial-cic",
+      "permanent": true
     }
   ],
   "rewrites": [
+    {
+      "source": "/criacao-sites-empresas-reformas-curitiba",
+      "destination": "/criacao-sites-empresas-reformas-curitiba/index.html"
+    },
+    {
+      "source": "/agencia-marketing-curitiba",
+      "destination": "/agencia-marketing-curitiba/index.html"
+    },
+    {
+      "source": "/agencia-digital-curitiba",
+      "destination": "/agencia-digital-curitiba/index.html"
+    },
+    {
+      "source": "/web-designer-curitiba",
+      "destination": "/web-designer-curitiba/index.html"
+    },
+    {
+      "source": "/agencia-criacao-conteudo",
+      "destination": "/agencia-criacao-conteudo/index.html"
+    },
     {
       "source": "/criacao-de-sites",
       "destination": "/criacao-de-sites/index.html"

@@ -1,3 +1,4 @@
+import { CuritibaServiceLinks } from './CuritibaService';
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -40,6 +41,7 @@ export const Sitemap: React.FC = () => {
         </div>
       </section>
 
+      <div className="studio-shell"><CuritibaServiceLinks /></div>
       {/* Search Bar */}
       <div className="container mx-auto px-4 -mt-8 relative z-20">
         <div className="bg-white p-4 rounded-2xl shadow-2xl border border-gray-100 flex items-center gap-4 max-w-2xl">
