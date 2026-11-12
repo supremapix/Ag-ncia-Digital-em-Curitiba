@@ -5,9 +5,9 @@ import hubs from '../data/searchHubs.json';
 import { capitals } from '../data/capitalCatalog';
 import { CommercialTerms } from '../components/CommercialTerms';
 import '../src/hubs.css';
-export const HubLinks = () => <nav className="hub-nav studio-shell" aria-label="Guias de criação de sites">{hubs.map(hub=><Link key={hub.path} to={hub.path}>{hub.path.endsWith('capitais')?'Pesquisar capitais':hub.path.endsWith('como-escolher')?'Como escolher seu site':'Guia de criação de sites'}</Link>)}</nav>;
+export const HubLinks = () => <nav className="hub-nav studio-shell" aria-label="Guias de criação de sites">{hubs.filter(hub=>!hub.path.startsWith('/como-encontrar-clientes/')).map(hub=><Link key={hub.path} to={hub.path}>{hub.path==='/como-encontrar-clientes'?'Como encontrar clientes':hub.path.endsWith('capitais')?'Pesquisar capitais':hub.path.endsWith('como-escolher')?'Como escolher seu site':'Guia de criação de sites'}</Link>)}</nav>;
 export const SearchHub = () => {
- const {pathname}=useLocation(); const hub=hubs.find(item=>item.path===pathname)!;
+ const {pathname}=useLocation(); const hub=hubs.find(item=>item.path===pathname.replace(/\/$/,''))!;
  const [query,setQuery]=useState('');
  usePageMetadata(hub.title,hub.description,hub.path,'CollectionPage');
  useEffect(()=>{document.title=hub.title;document.querySelector('meta[name="description"]')?.setAttribute('content',hub.description);document.querySelector('link[rel="canonical"]')?.setAttribute('href','https://www.supremasite.com.br'+hub.path);setQuery('');},[hub]);

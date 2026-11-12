@@ -564,6 +564,30 @@
   ],
   "rewrites": [
     {
+      "source": "/como-encontrar-clientes",
+      "destination": "/como-encontrar-clientes/index.html"
+    },
+    {
+      "source": "/como-encontrar-clientes/grupos",
+      "destination": "/como-encontrar-clientes/grupos/index.html"
+    },
+    {
+      "source": "/como-encontrar-clientes/google-linkedin",
+      "destination": "/como-encontrar-clientes/google-linkedin/index.html"
+    },
+    {
+      "source": "/como-encontrar-clientes/planilha",
+      "destination": "/como-encontrar-clientes/planilha/index.html"
+    },
+    {
+      "source": "/como-encontrar-clientes/site-e-conteudo",
+      "destination": "/como-encontrar-clientes/site-e-conteudo/index.html"
+    },
+    {
+      "source": "/como-encontrar-clientes/boas-praticas",
+      "destination": "/como-encontrar-clientes/boas-praticas/index.html"
+    },
+    {
       "source": "/criacao-sites-empresas-reformas-curitiba",
       "destination": "/criacao-sites-empresas-reformas-curitiba/index.html"
     },

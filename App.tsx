@@ -51,7 +51,13 @@ export const SiteContent: React.FC = () => {
           <PageWrapper>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/criacao-de-sites" element={<SearchHub />} />
+              <Route path="/como-encontrar-clientes" element={<SearchHub />} />
+<Route path="/como-encontrar-clientes/grupos" element={<SearchHub />} />
+<Route path="/como-encontrar-clientes/google-linkedin" element={<SearchHub />} />
+<Route path="/como-encontrar-clientes/planilha" element={<SearchHub />} />
+<Route path="/como-encontrar-clientes/site-e-conteudo" element={<SearchHub />} />
+<Route path="/como-encontrar-clientes/boas-praticas" element={<SearchHub />} />
+<Route path="/criacao-de-sites" element={<SearchHub />} />
 <Route path="/criacao-de-sites/capitais" element={<SearchHub />} />
 <Route path="/criacao-de-sites/como-escolher" element={<SearchHub />} />
 <Route path="/presenca-local" element={<RegionalPresence />} />

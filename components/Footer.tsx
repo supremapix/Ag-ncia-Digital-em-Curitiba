@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         
-        <nav className="mb-8 flex flex-wrap gap-6" aria-label="Pesquisa de sites"><Link to="/criacao-de-sites">Guia de criação de sites</Link><Link to="/criacao-de-sites/capitais">Pesquisar capitais</Link><Link to="/criacao-de-sites/como-escolher">Como escolher seu site</Link></nav>
+        <nav className="mb-8 flex flex-wrap gap-6" aria-label="Pesquisa de sites"><Link to="/como-encontrar-clientes">Como encontrar clientes</Link><Link to="/criacao-de-sites">Guia de criação de sites</Link><Link to="/criacao-de-sites/capitais">Pesquisar capitais</Link><Link to="/criacao-de-sites/como-escolher">Como escolher seu site</Link></nav>
 <CuritibaServiceLinks />
 {/* 4 Main Footer Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">

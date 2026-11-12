@@ -10,3 +10,5 @@ export const staticRoutes=['/','/presenca-local','/servicos','/portfolio','/sobr
 
 export const curitibaServicePaths=["/criacao-sites-empresas-reformas-curitiba", "/agencia-marketing-curitiba", "/agencia-digital-curitiba", "/web-designer-curitiba", "/agencia-criacao-conteudo"];
 staticRoutes.push(...curitibaServicePaths);
+
+staticRoutes.push("/como-encontrar-clientes","/como-encontrar-clientes/grupos","/como-encontrar-clientes/google-linkedin","/como-encontrar-clientes/planilha","/como-encontrar-clientes/site-e-conteudo","/como-encontrar-clientes/boas-praticas");

@@ -53,6 +53,7 @@ export const Blog: React.FC = () => {
         </div>
       </section>
 
+      <section className="container mx-auto px-4 pt-10"><Link className="text-brand-primary font-bold underline" to="/como-encontrar-clientes">Novo guia: encontre oportunidades em grupos e buscas, sem spam →</Link></section>
       {/* Blog Grid */}
       <section className="py-16 container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

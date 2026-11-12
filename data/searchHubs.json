@@ -6,35 +6,499 @@
     "intro": "Defina o que sua empresa precisa comunicar, onde atende e qual ação o visitante deve conseguir realizar. Este guia reúne os caminhos para escolher o projeto e consultar a presença local sem confundir criação do site com mensalidade regional.",
     "description": "Compare formatos de site e encontre os guias de localidades. Criação por R$ 1.680; plano regional separado, mínimo de 11 bairros por R$ 220/mês.",
     "sections": [
-      {"title":"Primeiro, escolha a função do site","text":"Um site institucional apresenta a empresa, os serviços e os meios de contato. Uma landing page concentra a comunicação em uma oferta específica. Uma loja virtual precisa contemplar catálogo, pagamento e operação de pedidos. Sistemas têm requisitos próprios. A proposta deve explicitar páginas, conteúdo, integrações e responsabilidades; esses formatos não são automaticamente incluídos na mesma oferta.","links":[["Conhecer os serviços e seus escopos","/servicos"],["Guia para escolher seu projeto","/criacao-de-sites/como-escolher"]]},
-      {"title":"Depois, delimite a área de atendimento","text":"Informe as localidades em que sua empresa realmente atende e como presta o serviço: no endereço do cliente, à distância ou em um ponto físico verdadeiro. Esses dados orientam o conteúdo do site. Uma página sobre uma cidade não comprova a existência de uma filial e não representa contratação de cobertura regional.","links":[["Pesquisar por capital e UF","/criacao-de-sites/capitais"],["Consultar localidades e simular bairros de Curitiba","/presenca-local"]]},
-      {"title":"Guias estaduais já disponíveis","text":"Nesta etapa, os guias estaduais publicados são Paraná, Santa Catarina e Rio Grande do Sul. Eles organizam caminhos locais existentes. Para os demais estados, comece pelo catálogo de capitais e descreva sua necessidade; não há um preço estadual automático.","links":[["Criação de sites no Paraná","/sites-em-parana"],["Criação de sites em Santa Catarina","/sites-em-santa-catarina"],["Criação de sites no Rio Grande do Sul","/sites-em-rio-grande-do-sul"]]},
-      {"title":"O que preparar para conversar com a Suprema","text":"Separe os serviços prioritários, a área atendida, a identidade visual disponível, os textos e imagens que você pode utilizar e os canais de contato. Avise se já existe site ou domínio para que a proposta considere o que deve ser preservado. Prazos, revisões e entregas precisam estar definidos antes do início.","links":[["Ver projetos do portfólio","/portfolio"],["Solicitar contato","/contato"]]}
+      {
+        "title": "Primeiro, escolha a função do site",
+        "text": "Um site institucional apresenta a empresa, os serviços e os meios de contato. Uma landing page concentra a comunicação em uma oferta específica. Uma loja virtual precisa contemplar catálogo, pagamento e operação de pedidos. Sistemas têm requisitos próprios. A proposta deve explicitar páginas, conteúdo, integrações e responsabilidades; esses formatos não são automaticamente incluídos na mesma oferta.",
+        "links": [
+          [
+            "Conhecer os serviços e seus escopos",
+            "/servicos"
+          ],
+          [
+            "Guia para escolher seu projeto",
+            "/criacao-de-sites/como-escolher"
+          ]
+        ]
+      },
+      {
+        "title": "Depois, delimite a área de atendimento",
+        "text": "Informe as localidades em que sua empresa realmente atende e como presta o serviço: no endereço do cliente, à distância ou em um ponto físico verdadeiro. Esses dados orientam o conteúdo do site. Uma página sobre uma cidade não comprova a existência de uma filial e não representa contratação de cobertura regional.",
+        "links": [
+          [
+            "Pesquisar por capital e UF",
+            "/criacao-de-sites/capitais"
+          ],
+          [
+            "Consultar localidades e simular bairros de Curitiba",
+            "/presenca-local"
+          ]
+        ]
+      },
+      {
+        "title": "Guias estaduais já disponíveis",
+        "text": "Nesta etapa, os guias estaduais publicados são Paraná, Santa Catarina e Rio Grande do Sul. Eles organizam caminhos locais existentes. Para os demais estados, comece pelo catálogo de capitais e descreva sua necessidade; não há um preço estadual automático.",
+        "links": [
+          [
+            "Criação de sites no Paraná",
+            "/sites-em-parana"
+          ],
+          [
+            "Criação de sites em Santa Catarina",
+            "/sites-em-santa-catarina"
+          ],
+          [
+            "Criação de sites no Rio Grande do Sul",
+            "/sites-em-rio-grande-do-sul"
+          ]
+        ]
+      },
+      {
+        "title": "O que preparar para conversar com a Suprema",
+        "text": "Separe os serviços prioritários, a área atendida, a identidade visual disponível, os textos e imagens que você pode utilizar e os canais de contato. Avise se já existe site ou domínio para que a proposta considere o que deve ser preservado. Prazos, revisões e entregas precisam estar definidos antes do início.",
+        "links": [
+          [
+            "Ver projetos do portfólio",
+            "/portfolio"
+          ],
+          [
+            "Solicitar contato",
+            "/contato"
+          ]
+        ]
+      }
     ]
   },
   {
-    "path":"/criacao-de-sites/capitais",
-    "title":"Criação de sites nas capitais: pesquisa por UF | Suprema",
-    "heading":"Encontre o caminho da sua capital.",
-    "intro":"Pesquise a capital e consulte a classificação das localidades antes de definir a área do projeto. O catálogo reúne fontes municipais e do IBGE, com data e limites de cada base. Uma lista geográfica não equivale a uma oferta para contratar a cidade inteira.",
-    "description":"Pesquise as 27 capitais por nome ou UF e consulte bairros, distritos e regiões administrativas com fontes e limites. Valores territoriais sob consulta.",
-    "sections":[
-      {"title":"Como usar esta pesquisa","text":"Escolha a capital no diretório abaixo. O link abre o catálogo com a capital selecionada, onde você pode buscar a localidade, conferir a fonte e informar nomes ausentes. As bases são publicadas por etapas: a ausência de uma lista não significa ausência de bairros. Confira a data territorial, especialmente nos recortes do Censo 2022.","links":[["Entender os formatos de projeto","/criacao-de-sites/como-escolher"]]},
-      {"title":"Bairro, distrito e região administrativa não são equivalentes","text":"Curitiba mantém 75 bairros no seletor. São Paulo está organizado nesta base por distritos, sem tratá-los como bairros. Para Brasília, o catálogo apresenta regiões administrativas do Distrito Federal. Belo Horizonte identifica bairros populares para endereçamento. Os rótulos da fonte são preservados; as unidades não são somadas como se tivessem o mesmo escopo comercial.","links":[["Bairros de Curitiba","/bairros-curitiba"],["Ver condições e fontes no catálogo","/presenca-local"]]},
-      {"title":"Páginas locais já publicadas no Sul","text":"As páginas de Curitiba, Florianópolis e Porto Alegre continuam nos endereços existentes. Este diretório não cria versões concorrentes para essas cidades. Para outras capitais, o caminho nesta etapa é a consulta do catálogo e o levantamento de escopo, sem anunciar escritório local nem resultados de busca.","links":[["Criação de sites em Curitiba","/site-em/curitiba"],["Criação de sites em Florianópolis","/site-em/florianopolis"],["Criação de sites em Porto Alegre","/site-em/porto-alegre"]]}
+    "path": "/criacao-de-sites/capitais",
+    "title": "Criação de sites nas capitais: pesquisa por UF | Suprema",
+    "heading": "Encontre o caminho da sua capital.",
+    "intro": "Pesquise a capital e consulte a classificação das localidades antes de definir a área do projeto. O catálogo reúne fontes municipais e do IBGE, com data e limites de cada base. Uma lista geográfica não equivale a uma oferta para contratar a cidade inteira.",
+    "description": "Pesquise as 27 capitais por nome ou UF e consulte bairros, distritos e regiões administrativas com fontes e limites. Valores territoriais sob consulta.",
+    "sections": [
+      {
+        "title": "Como usar esta pesquisa",
+        "text": "Escolha a capital no diretório abaixo. O link abre o catálogo com a capital selecionada, onde você pode buscar a localidade, conferir a fonte e informar nomes ausentes. As bases são publicadas por etapas: a ausência de uma lista não significa ausência de bairros. Confira a data territorial, especialmente nos recortes do Censo 2022.",
+        "links": [
+          [
+            "Entender os formatos de projeto",
+            "/criacao-de-sites/como-escolher"
+          ]
+        ]
+      },
+      {
+        "title": "Bairro, distrito e região administrativa não são equivalentes",
+        "text": "Curitiba mantém 75 bairros no seletor. São Paulo está organizado nesta base por distritos, sem tratá-los como bairros. Para Brasília, o catálogo apresenta regiões administrativas do Distrito Federal. Belo Horizonte identifica bairros populares para endereçamento. Os rótulos da fonte são preservados; as unidades não são somadas como se tivessem o mesmo escopo comercial.",
+        "links": [
+          [
+            "Bairros de Curitiba",
+            "/bairros-curitiba"
+          ],
+          [
+            "Ver condições e fontes no catálogo",
+            "/presenca-local"
+          ]
+        ]
+      },
+      {
+        "title": "Páginas locais já publicadas no Sul",
+        "text": "As páginas de Curitiba, Florianópolis e Porto Alegre continuam nos endereços existentes. Este diretório não cria versões concorrentes para essas cidades. Para outras capitais, o caminho nesta etapa é a consulta do catálogo e o levantamento de escopo, sem anunciar escritório local nem resultados de busca.",
+        "links": [
+          [
+            "Criação de sites em Curitiba",
+            "/site-em/curitiba"
+          ],
+          [
+            "Criação de sites em Florianópolis",
+            "/site-em/florianopolis"
+          ],
+          [
+            "Criação de sites em Porto Alegre",
+            "/site-em/porto-alegre"
+          ]
+        ]
+      }
     ]
   },
   {
-    "path":"/criacao-de-sites/como-escolher",
-    "title":"Como escolher site, landing page e presença local | Suprema",
-    "heading":"Escolha pelo que seu cliente precisa fazer.",
-    "intro":"Antes de escolher um formato, descreva a tarefa principal do visitante: entender um serviço, pedir um orçamento, comprar um produto ou acompanhar um processo. Essa decisão ajuda a separar o que pertence ao site e o que depende de uma operação adicional.",
-    "description":"Guia para comparar site institucional, landing page, loja virtual e presença local. Saiba o que definir na proposta e como separar os investimentos.",
-    "sections":[
-      {"title":"Apresentar a empresa ou concentrar uma oferta?","text":"Quando o visitante precisa conhecer diferentes serviços, equipe e formas de atendimento, um site institucional organiza essas informações em páginas e seções. Quando a conversa gira em torno de uma oferta específica, uma landing page pode concentrar explicação, dúvidas e contato. A escolha depende do conteúdo necessário, e não de uma promessa de conversão.","links":[["Comparar os serviços disponíveis","/servicos"]]},
-      {"title":"Vender online exige definir a operação","text":"Para uma loja, liste produtos, variações, formas de pagamento, entrega e quem atualizará o catálogo. Integrações e taxas de terceiros precisam ser discutidas separadamente. Se o objetivo é organizar rotinas, cadastros ou fluxos internos, descreva os usuários e processos antes de pedir um sistema. Não presuma que e-commerce ou software estejam incluídos na criação do site por R$ 1.680.","links":[["Ver exemplos de projetos","/portfolio"]]},
-      {"title":"Presença local é um trabalho separado","text":"O site apresenta sua empresa; o plano regional trabalha presença e visibilidade nas localidades contratadas. Na simulação de Curitiba, o mínimo é 11 bairros por R$ 220/mês. De 11 a 29, são R$ 20 por bairro; a partir de 30, todos ficam por R$ 10 cada. Não há garantia de posição no Google, prazo de ranking ou volume de vendas. Cidades, estados e regiões administrativas exigem proposta específica.","links":[["Simular e conferir condições","/presenca-local"],["Entender SEO local","/seo-local-curitiba"]]},
-      {"title":"Leve estas definições para a proposta","text":"Confirme o conteúdo a produzir, as páginas previstas, quem aprova materiais, as integrações, a manutenção e as condições de renovação. Peça que prazos e entregas sejam registrados. Enquanto o plano regional mensal estiver ativo, a Suprema assume a renovação anual do domínio e mantém a hospedagem incluída após os 60 meses iniciais; a mensalidade regional continua paga. Sem plano ativo, consulte a renovação.","links":[["Conversar sobre o projeto","/contato"],["Pesquisar localidades","/criacao-de-sites/capitais"]]}
+    "path": "/criacao-de-sites/como-escolher",
+    "title": "Como escolher site, landing page e presença local | Suprema",
+    "heading": "Escolha pelo que seu cliente precisa fazer.",
+    "intro": "Antes de escolher um formato, descreva a tarefa principal do visitante: entender um serviço, pedir um orçamento, comprar um produto ou acompanhar um processo. Essa decisão ajuda a separar o que pertence ao site e o que depende de uma operação adicional.",
+    "description": "Guia para comparar site institucional, landing page, loja virtual e presença local. Saiba o que definir na proposta e como separar os investimentos.",
+    "sections": [
+      {
+        "title": "Apresentar a empresa ou concentrar uma oferta?",
+        "text": "Quando o visitante precisa conhecer diferentes serviços, equipe e formas de atendimento, um site institucional organiza essas informações em páginas e seções. Quando a conversa gira em torno de uma oferta específica, uma landing page pode concentrar explicação, dúvidas e contato. A escolha depende do conteúdo necessário, e não de uma promessa de conversão.",
+        "links": [
+          [
+            "Comparar os serviços disponíveis",
+            "/servicos"
+          ]
+        ]
+      },
+      {
+        "title": "Vender online exige definir a operação",
+        "text": "Para uma loja, liste produtos, variações, formas de pagamento, entrega e quem atualizará o catálogo. Integrações e taxas de terceiros precisam ser discutidas separadamente. Se o objetivo é organizar rotinas, cadastros ou fluxos internos, descreva os usuários e processos antes de pedir um sistema. Não presuma que e-commerce ou software estejam incluídos na criação do site por R$ 1.680.",
+        "links": [
+          [
+            "Ver exemplos de projetos",
+            "/portfolio"
+          ]
+        ]
+      },
+      {
+        "title": "Presença local é um trabalho separado",
+        "text": "O site apresenta sua empresa; o plano regional trabalha presença e visibilidade nas localidades contratadas. Na simulação de Curitiba, o mínimo é 11 bairros por R$ 220/mês. De 11 a 29, são R$ 20 por bairro; a partir de 30, todos ficam por R$ 10 cada. Não há garantia de posição no Google, prazo de ranking ou volume de vendas. Cidades, estados e regiões administrativas exigem proposta específica.",
+        "links": [
+          [
+            "Simular e conferir condições",
+            "/presenca-local"
+          ],
+          [
+            "Entender SEO local",
+            "/seo-local-curitiba"
+          ]
+        ]
+      },
+      {
+        "title": "Leve estas definições para a proposta",
+        "text": "Confirme o conteúdo a produzir, as páginas previstas, quem aprova materiais, as integrações, a manutenção e as condições de renovação. Peça que prazos e entregas sejam registrados. Enquanto o plano regional mensal estiver ativo, a Suprema assume a renovação anual do domínio e mantém a hospedagem incluída após os 60 meses iniciais; a mensalidade regional continua paga. Sem plano ativo, consulte a renovação.",
+        "links": [
+          [
+            "Conversar sobre o projeto",
+            "/contato"
+          ],
+          [
+            "Pesquisar localidades",
+            "/criacao-de-sites/capitais"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/como-encontrar-clientes",
+    "title": "Como encontrar clientes para serviços sem depender de mensagens em massa | Suprema",
+    "heading": "Como encontrar clientes para serviços sem depender de mensagens em massa",
+    "intro": "Um guia prático para identificar pedidos reais, organizar oportunidades e conectar grupos, buscas e um site claro. Comece por um canal e respeite a privacidade de quem participa.",
+    "description": "Um guia prático para identificar pedidos reais, organizar oportunidades e conectar grupos, buscas e um site claro. Comece por um canal e respeite a privacidade de quem participa.",
+    "sections": [
+      {
+        "title": "Comece pelo problema que você resolve",
+        "text": "Escolha um serviço, uma região em que realmente atende e o perfil de cliente. “Preciso de um site para minha clínica” é diferente de uma conversa genérica sobre marketing. Anote o problema apresentado, o contexto e a data antes de oferecer algo. Uma manifestação de interesse não autoriza adicionar a pessoa a campanhas.",
+        "links": [
+          [
+            "Encontrar pedidos em grupos",
+            "/como-encontrar-clientes/grupos"
+          ]
+        ]
+      },
+      {
+        "title": "Encontre intenção, não apenas uma lista de contatos",
+        "text": "Um pedido de indicação, uma pergunta sobre orçamento e uma dificuldade relatada podem abrir uma conversa. Pesquise combinações do serviço com cidade e necessidade. A existência de uma empresa no Google ou de um perfil no LinkedIn não prova interesse em contratar. Priorize pedidos explícitos e não compre listas.",
+        "links": [
+          [
+            "Pesquisar no Google e no LinkedIn",
+            "/como-encontrar-clientes/google-linkedin"
+          ]
+        ]
+      },
+      {
+        "title": "Faça seu site responder à próxima pergunta",
+        "text": "Depois de uma indicação, a pessoa precisa confirmar o que você faz, onde atende, ver exemplos autorizados e encontrar um contato. Organize serviços reais em páginas claras, com dúvidas frequentes e condições verificáveis. Isso ajuda visitantes e mecanismos de busca a entender a oferta, mas não garante ranking, indicação por IA ou vendas.",
+        "links": [
+          [
+            "Transformar interesse em conversa",
+            "/como-encontrar-clientes/site-e-conteudo"
+          ],
+          [
+            "Conhecer os serviços da Suprema",
+            "/servicos"
+          ]
+        ]
+      },
+      {
+        "title": "Registre o mínimo necessário e acompanhe o resultado",
+        "text": "Use um controle simples de oportunidades com origem, necessidade e próxima ação. Separe contato encontrado, conversa iniciada, orçamento e contratação. Uma resposta negativa encerra a abordagem. Compare os canais pelas conversas pertinentes e propostas reais, não pelo tamanho da lista.",
+        "links": [
+          [
+            "Organizar uma planilha",
+            "/como-encontrar-clientes/planilha"
+          ],
+          [
+            "Privacidade e abordagem responsável",
+            "/como-encontrar-clientes/boas-praticas"
+          ]
+        ]
+      },
+      {
+        "title": "Uma rotina que cabe no dia a dia",
+        "text": "Reserve um período para ler os canais autorizados, outro para responder aos pedidos adequados e outro para atualizar o controle. Releia as regras do grupo antes de divulgar. Ao final da semana, veja quais dúvidas se repetiram e transforme as perguntas em conteúdo útil no seu site, sem identificar participantes.",
+        "links": [
+          [
+            "Conversar com a Suprema sobre seu projeto",
+            "/contato"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/como-encontrar-clientes/grupos",
+    "title": "Como encontrar oportunidades em grupos sem fazer spam | Suprema",
+    "heading": "Como encontrar oportunidades em grupos sem fazer spam",
+    "intro": "Saiba reconhecer pedidos de indicação em grupos de negócios, responder com contexto e respeitar as regras do WhatsApp, Facebook e outras comunidades.",
+    "description": "Saiba reconhecer pedidos de indicação em grupos de negócios, responder com contexto e respeitar as regras do WhatsApp, Facebook e outras comunidades.",
+    "sections": [
+      {
+        "title": "Entre por afinidade e com permissão",
+        "text": "Escolha comunidades do seu segmento ou região e leia as regras fixadas. Em grupos privados, participe apenas com acesso autorizado; não tente obter mensagens de terceiros nem contornar restrições. Acompanhar um grupo significa ler o que você tem permissão para ver, não vigiar seus integrantes.",
+        "links": []
+      },
+      {
+        "title": "Busque frases que revelam uma necessidade",
+        "text": "Na busca interna disponível, experimente “preciso de um site”, “alguém indica”, “minha empresa não aparece no Google”, “orçamento de site” e o nome da cidade. Adapte ao seu serviço. Confira quando a mensagem foi publicada e se alguém já resolveu o pedido. Nem toda menção ao tema é uma oportunidade comercial.",
+        "links": []
+      },
+      {
+        "title": "Responda primeiro à pergunta",
+        "text": "Uma resposta possível: “Olá! Você precisa apresentar os serviços ou também vender pelo site? Trabalho com criação de sites e posso explicar as opções, se fizer sentido.” Use isso somente quando a conversa e as regras permitirem. Não publique a mesma oferta repetidamente; mostre um exemplo pertinente, sem expor dados de clientes.",
+        "links": []
+      },
+      {
+        "title": "Peça abertura antes de mudar de canal",
+        "text": "Se o grupo permite ofertas, responda ali de forma breve. Antes de enviar uma proposta em particular, pergunte se a pessoa quer receber e em qual canal. Não copie telefones de participantes, exporte listas ou adicione pessoas a grupos e disparos. Se não houver abertura, não insista.",
+        "links": [
+          [
+            "Boas práticas de contato",
+            "/como-encontrar-clientes/boas-praticas"
+          ]
+        ]
+      },
+      {
+        "title": "Transforme perguntas recorrentes em conteúdo próprio",
+        "text": "Dúvidas sobre prazo, manutenção e o que enviar para criar um site podem virar artigos ou uma seção de perguntas frequentes. Explique o tema sem copiar a publicação nem identificar quem perguntou. Seu site passa a oferecer uma referência útil quando surgir outra conversa semelhante.",
+        "links": [
+          [
+            "Conteúdo e site para apoiar vendas",
+            "/como-encontrar-clientes/site-e-conteudo"
+          ],
+          [
+            "Voltar ao guia principal",
+            "/como-encontrar-clientes"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/como-encontrar-clientes/google-linkedin",
+    "title": "Como pesquisar oportunidades no Google e no LinkedIn | Suprema",
+    "heading": "Como pesquisar oportunidades no Google e no LinkedIn",
+    "intro": "Combine buscas por necessidade e localidade com leitura de publicações profissionais. Separe pesquisa de mercado de autorização para entrar em contato.",
+    "description": "Combine buscas por necessidade e localidade com leitura de publicações profissionais. Separe pesquisa de mercado de autorização para entrar em contato.",
+    "sections": [
+      {
+        "title": "Use buscas específicas como ponto de partida",
+        "text": "Pesquise combinações como “preciso de site Curitiba”, “indicação criação de site” e “como divulgar empresa de serviços”. As sugestões exibidas pelo buscador ajudam a formular perguntas, mas não são comprovação de volume de busca. Os resultados mudam com data, localização e contexto; confira a fonte e a atualidade.",
+        "links": []
+      },
+      {
+        "title": "Leia o contexto no LinkedIn",
+        "text": "Procure publicações sobre expansão, lançamento de serviços ou dificuldades de comunicação. Use filtros disponíveis para o seu setor e região e leia a postagem inteira antes de comentar. Cargo e empresa podem ajudar a entender o contexto profissional, mas não significam que a pessoa queira uma proposta. Não use robôs para extrair perfis ou disparar convites.",
+        "links": []
+      },
+      {
+        "title": "Google Maps ajuda a entender a jornada do cliente",
+        "text": "Observe informações públicas de empresas do setor: serviços divulgados, área de atendimento e facilidade de encontrar o site. Não copie avaliações ou dados para formar listas de disparo. Um site ausente ou antigo é um ponto a investigar, não prova de problema nem autorização de contato. Use exemplos de melhorias sem inventar perdas financeiras.",
+        "links": []
+      },
+      {
+        "title": "Valide os temas com dados da própria empresa",
+        "text": "No Search Console, quando você tem acesso autorizado, compare consultas, impressões e cliques do seu site. No Google Trends, compare temas, região e período lembrando que o índice é relativo, não uma contagem absoluta de clientes. Combine esses sinais com dúvidas recebidas; não anuncie que determinada expressão é a mais buscada sem evidência.",
+        "links": [
+          [
+            "Entender SEO local",
+            "/seo-local-curitiba"
+          ]
+        ]
+      },
+      {
+        "title": "Priorize antes de responder",
+        "text": "Pergunte: existe pedido explícito? O serviço corresponde ao que ofereço? A região faz parte do atendimento? Há uma forma de contato apropriada? Se a resposta for não, guarde apenas o aprendizado de mercado. Se for sim, responda ao pedido com uma orientação e uma pergunta útil, sem prometer resultados.",
+        "links": [
+          [
+            "Registrar oportunidades",
+            "/como-encontrar-clientes/planilha"
+          ],
+          [
+            "Voltar ao guia principal",
+            "/como-encontrar-clientes"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/como-encontrar-clientes/planilha",
+    "title": "Planilha de oportunidades: o que registrar e como acompanhar | Suprema",
+    "heading": "Planilha de oportunidades: o que registrar e como acompanhar",
+    "intro": "Organize pedidos, conversas e propostas sem acumular dados desnecessários. Um controle simples ajuda a saber o que foi combinado e quando encerrar o contato.",
+    "description": "Organize pedidos, conversas e propostas sem acumular dados desnecessários. Um controle simples ajuda a saber o que foi combinado e quando encerrar o contato.",
+    "sections": [
+      {
+        "title": "Campos que ajudam na próxima ação",
+        "text": "Registre data, canal de origem, empresa quando pertinente, necessidade relatada, serviço de interesse, etapa e próxima ação combinada. Um link para a publicação pública pode substituir a cópia da conversa. Inclua um contato somente quando for necessário e houver fundamento adequado para utilizá-lo; nunca registre dados sensíveis para vender serviços.",
+        "links": []
+      },
+      {
+        "title": "Use etapas com significado claro",
+        "text": "Separe: pedido identificado, contato permitido, conversa iniciada, proposta solicitada, proposta enviada, contratado e encerrado. “Mensagem enviada” não significa entrega, leitura ou interesse. Registre devoluções e pedidos de não receber novas mensagens para não repetir uma abordagem indevida.",
+        "links": []
+      },
+      {
+        "title": "Exemplo sem dados de uma pessoa real",
+        "text": "Uma linha fictícia: 12/11/2026; grupo empresarial autorizado; pedido de site institucional; proposta solicitada; enviar escopo pelo canal escolhido na sexta-feira. Sem autorização para contato, a próxima ação deve ser responder ao pedido no próprio espaço permitido, não procurar o telefone da pessoa.",
+        "links": []
+      },
+      {
+        "title": "Compartilhe apenas com quem precisa",
+        "text": "Restrinja o arquivo à equipe responsável e não publique a planilha na internet. Evite copiar conversas inteiras, telefones de grupos e listas de membros. Defina um prazo de revisão conforme a finalidade e remova dados que deixaram de ser necessários, preservando apenas o mínimo adequado para respeitar recusas e obrigações aplicáveis.",
+        "links": [
+          [
+            "Privacidade na prospecção",
+            "/como-encontrar-clientes/boas-praticas"
+          ]
+        ]
+      },
+      {
+        "title": "Revise a qualidade, não só o volume",
+        "text": "Conte quantos pedidos tinham relação com seu serviço, quantas pessoas pediram proposta e quantas contratações ocorreram. Registre o motivo de encerramento quando conhecido, sem deduzi-lo do silêncio. Use isso para melhorar o conteúdo e a proposta, não para aumentar insistência. Integrações ou CRM exigem escopo e permissões próprios.",
+        "links": [
+          [
+            "Conhecer serviços e projetos",
+            "/servicos"
+          ],
+          [
+            "Voltar ao guia principal",
+            "/como-encontrar-clientes"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/como-encontrar-clientes/site-e-conteudo",
+    "title": "Como preparar seu site para receber clientes de grupos e buscas | Suprema",
+    "heading": "Como preparar seu site para receber clientes de grupos e buscas",
+    "intro": "Uma recomendação precisa encontrar uma página que explique a oferta. Organize serviços, provas autorizadas e contatos para que a pessoa possa decidir com clareza.",
+    "description": "Uma recomendação precisa encontrar uma página que explique a oferta. Organize serviços, provas autorizadas e contatos para que a pessoa possa decidir com clareza.",
+    "sections": [
+      {
+        "title": "Crie páginas para serviços reais",
+        "text": "Cada página deve explicar o problema atendido, o que está incluído, limites, informações necessárias para orçamento e próximo passo. Evite publicar dezenas de páginas iguais trocando apenas o bairro. Cite somente localidades atendidas de verdade e não apresente escritórios que não existem.",
+        "links": [
+          [
+            "Guia de criação de sites",
+            "/criacao-de-sites"
+          ]
+        ]
+      },
+      {
+        "title": "Responda às perguntas antes da contratação",
+        "text": "Para criação de sites, explique diferenças entre site institucional, landing page e loja virtual, além de domínio, hospedagem, conteúdo e manutenção. Quando preços e prazos dependem do projeto, diga quais fatores influenciam a proposta. Não anuncie condições que sua operação não pode cumprir.",
+        "links": [
+          [
+            "Como escolher o projeto",
+            "/criacao-de-sites/como-escolher"
+          ]
+        ]
+      },
+      {
+        "title": "Facilite o contato no celular",
+        "text": "Use texto legível, contraste adequado e botões identificados como pedir orçamento ou falar sobre o projeto. Confira se o telefone está correto, se o formulário funciona e se a página abre bem em telas pequenas. Animações não devem dificultar a leitura nem esconder o contato.",
+        "links": [
+          [
+            "Ver o portfólio da Suprema",
+            "/portfolio"
+          ]
+        ]
+      },
+      {
+        "title": "Ajude buscadores e leitores a entender o conteúdo",
+        "text": "Use um título específico, uma descrição fiel, seções claras e links para assuntos relacionados. Identifique a empresa responsável e mantenha as informações atualizadas. Dados estruturados precisam representar o conteúdo visível. Nenhuma marcação, arquivo ou texto garante presença nas respostas de IAs, Google ou Bing.",
+        "links": [
+          [
+            "SEO local em Curitiba",
+            "/seo-local-curitiba"
+          ],
+          [
+            "IA e marketing",
+            "/ia-marketing-curitiba"
+          ]
+        ]
+      },
+      {
+        "title": "Leve a conversa para a página certa",
+        "text": "Ao responder a um pedido autorizado, compartilhe a página do serviço que resolve aquela dúvida, em vez de um catálogo genérico. Meça os contatos pelo contexto e revise o que ficou confuso. A Suprema pode ajudar a organizar o site e sua presença digital com escopo definido, sem promessa de vendas ou posição garantida.",
+        "links": [
+          [
+            "Conversar sobre seu site",
+            "/contato"
+          ],
+          [
+            "Voltar ao guia principal",
+            "/como-encontrar-clientes"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/como-encontrar-clientes/boas-praticas",
+    "title": "Prospecção responsável: privacidade, permissão e boas práticas | Suprema",
+    "heading": "Prospecção responsável: privacidade, permissão e boas práticas",
+    "intro": "Encontrar uma informação pública não autoriza qualquer uso. Respeite as regras dos canais, a finalidade do contato e a escolha de quem não quer receber uma oferta.",
+    "description": "Encontrar uma informação pública não autoriza qualquer uso. Respeite as regras dos canais, a finalidade do contato e a escolha de quem não quer receber uma oferta.",
+    "sections": [
+      {
+        "title": "Diferencie acompanhar e coletar",
+        "text": "Ler uma publicação que você está autorizado a acessar é diferente de copiar membros, extrair telefones ou monitorar conversas privadas. Não use acessos emprestados, extensões que contornam restrições ou robôs para coletar participantes. Ferramentas de monitoramento só devem usar fontes e integrações permitidas, com finalidade definida.",
+        "links": []
+      },
+      {
+        "title": "Não trate dados públicos como autorização geral",
+        "text": "A LGPD também pode se aplicar a dados pessoais disponíveis na internet. Defina finalidade, necessidade e base legal adequada antes de tratar dados; consentimento não é a única base legal, mas interesse legítimo não é um passe livre para disparos. Se houver dúvidas sobre uma operação de prospecção, procure orientação jurídica. Este guia não substitui essa análise.",
+        "links": []
+      },
+      {
+        "title": "Identifique-se e respeite a resposta",
+        "text": "Diga quem você é e por que aquela oferta se relaciona ao pedido. Use apenas o canal apropriado e facilite a recusa. Não finja ser cliente, não invente parceria e não use urgência falsa. Ausência de resposta não equivale a autorização para insistir; combine o próximo contato quando houver interesse.",
+        "links": []
+      },
+      {
+        "title": "Cuide de exemplos, capturas e depoimentos",
+        "text": "Não publique capturas de grupos privados ou conversas com nomes e números. Para mostrar resultados e depoimentos, obtenha autorização e preserve o contexto. Não atribua aumentos de vendas a um trabalho sem medição que sustente a afirmação. Prefira exemplos fictícios claramente identificados quando quiser ensinar.",
+        "links": []
+      },
+      {
+        "title": "Onde conferir regras e continuar",
+        "text": "Consulte as políticas oficiais de cada plataforma e as orientações da Autoridade Nacional de Proteção de Dados em gov.br/anpd. Revise permissões e registros periodicamente. Uma rotina pequena, pertinente e respeitosa tende a preservar melhor a relação com a comunidade do que uma lista crescente de mensagens não solicitadas.",
+        "links": [
+          [
+            "Consultar o guia principal",
+            "/como-encontrar-clientes"
+          ],
+          [
+            "Controle de oportunidades",
+            "/como-encontrar-clientes/planilha"
+          ],
+          [
+            "Falar com a Suprema",
+            "/contato"
+          ]
+        ]
+      }
     ]
   }
 ]
