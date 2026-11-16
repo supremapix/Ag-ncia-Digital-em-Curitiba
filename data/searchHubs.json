@@ -240,6 +240,16 @@
             "/contato"
           ]
         ]
+      },
+      {
+        "title": "Seu site é só o Instagram?",
+        "text": "Entenda como site próprio, redes sociais e Perfil da Empresa no Google podem trabalhar juntos. O objetivo é organizar informações e contatos, sem descartar sua audiência atual nem prometer posições nas buscas.",
+        "links": [
+          [
+            "Ler o guia: Meu site é o Instagram",
+            "/como-encontrar-clientes/meu-site-e-o-instagram"
+          ]
+        ]
       }
     ]
   },
@@ -496,6 +506,89 @@
           [
             "Falar com a Suprema",
             "/contato"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/como-encontrar-clientes/meu-site-e-o-instagram",
+    "title": "Meu site é o Instagram: por que ter um site próprio? | Suprema",
+    "heading": "“Meu site é o Instagram.” Mas cada canal tem um papel.",
+    "intro": "O Instagram pode apresentar sua marca e iniciar conversas. Um site próprio organiza serviços, informações e contatos. Entenda como conectar os dois ao Perfil da Empresa no Google, sem abandonar o que já funciona.",
+    "description": "Instagram substitui um site? Entenda os papéis do site próprio, da rede social e do Perfil da Empresa no Google para organizar sua presença digital.",
+    "sections": [
+      {
+        "title": "O problema não é ter Instagram. É depender somente dele.",
+        "text": "Quando alguém pede o site da empresa e recebe apenas um perfil social, pode encontrar boas fotos, mas também precisar procurar entre publicações antigas para descobrir serviços, área de atendimento e como pedir orçamento. Isso depende de como o perfil foi organizado. O Instagram pode gerar contatos e suas páginas públicas podem aparecer em buscas; dizer que ele nunca aparece no Google seria incorreto. A questão é oferecer um caminho claro para quem quer contratar, e não escolher um canal para eliminar o outro.",
+        "links": []
+      },
+      {
+        "title": "Site, Instagram e Google: três funções complementares",
+        "text": "O Instagram ajuda a mostrar novidades, bastidores e trabalhos autorizados. O site reúne informações estáveis em páginas próprias: o que a empresa faz, o que está incluído e qual o próximo passo. O Perfil da Empresa no Google apresenta dados do negócio na Pesquisa e no Maps quando ele é elegível. Ter um site não é requisito universal para aparecer no Google, nem garante posicionamento. A combinação deve facilitar a vida de quem pesquisa e manter os dados coerentes.",
+        "links": [
+          [
+            "Entender SEO local",
+            "/seo-local-curitiba"
+          ]
+        ]
+      },
+      {
+        "title": "Por que começar pelo site na organização da presença digital",
+        "text": "Começar pelo site significa definir a base da comunicação antes de espalhar links: serviços reais, público, localidades atendidas, condições e contatos. Em um domínio administrado pela empresa, essa estrutura pode ser organizada sem depender do formato de um feed. Isso não elimina dependência de hospedagem, manutenção ou outros fornecedores. Garanta acesso ao domínio, cópias de segurança e responsabilidades documentadas. Para alguns negócios, um projeto enxuto é suficiente; uma loja virtual ou sistema tem necessidades diferentes.",
+        "links": [
+          [
+            "Escolher o formato do projeto",
+            "/criacao-de-sites/como-escolher"
+          ]
+        ]
+      },
+      {
+        "title": "O que muda no Perfil da Empresa no Google",
+        "text": "Quando existe um site adequado, o campo de website pode levar a uma página que represente aquele negócio e ajude o visitante a decidir. Confira nome, telefone, horário e área atendida para evitar contradições. Se houver várias unidades, o destino deve corresponder à unidade correta, conforme as diretrizes do Google. Links sociais têm finalidade própria, quando o recurso estiver disponível. Não invente endereços, filiais ou avaliações. Trocar o link sozinho não assegura melhora de posição: relevância, distância e destaque também fazem parte dos resultados locais.",
+        "links": []
+      },
+      {
+        "title": "Um exemplo simples da jornada de quem precisa contratar",
+        "text": "Imagine uma pessoa procurando um serviço em Curitiba. Ela encontra a empresa, abre o site, confirma se atende sua região e lê o que precisa informar para receber uma proposta. Depois consulta o Instagram para conhecer trabalhos recentes ou entra diretamente em contato. Esse é um exemplo de caminho possível, não uma garantia de venda. O importante é não obrigar o visitante a adivinhar onde está a informação. Cada botão precisa levar ao destino anunciado.",
+        "links": [
+          [
+            "Preparar conteúdo que apoia a decisão",
+            "/como-encontrar-clientes/site-e-conteudo"
+          ]
+        ]
+      },
+      {
+        "title": "Checklist para conectar os canais",
+        "text": "Primeiro, confirme os acessos e quem é responsável pelo domínio e perfis. Depois, publique páginas claras de serviços, contato e informações da empresa. Teste tudo no celular, incluindo links e formulários. No Instagram, direcione a pessoa à página pertinente e mantenha a bio clara. No perfil do Google, revise dados e o link do site com acesso autorizado. Por fim, acompanhe consultas e contatos com ferramentas adequadas, respeitando a privacidade; compare períodos sem atribuir qualquer mudança a uma única ação.",
+        "links": [
+          [
+            "Organizar oportunidades em uma planilha",
+            "/como-encontrar-clientes/planilha"
+          ]
+        ]
+      },
+      {
+        "title": "Já tenho um Instagram bom. Preciso começar do zero?",
+        "text": "Não. Preserve o conteúdo útil, a identidade e o relacionamento construído. O site pode complementar o perfil com informações que hoje estão espalhadas. Fotos e depoimentos só devem ser reutilizados com os direitos e autorizações necessários. Evite copiar posts inteiros apenas para aumentar o número de páginas. Transforme dúvidas reais em orientações completas e mantenha links entre os temas relacionados.",
+        "links": [
+          [
+            "Conhecer o guia de criação de sites",
+            "/criacao-de-sites"
+          ]
+        ]
+      },
+      {
+        "title": "Site próprio garante aparecer nas respostas das IAs?",
+        "text": "Não. Conteúdo claro, acessível e atualizado ajuda pessoas e sistemas a compreender a empresa, mas não assegura indexação, citação por inteligência artificial, posição no Google ou resultado no Bing. A Suprema pode avaliar a estrutura existente e propor um projeto coerente com os serviços e a área de atendimento. O escopo deve definir entregas e condições, sem promessas de ranking ou volume de vendas.",
+        "links": [
+          [
+            "Conversar com a Suprema sobre meu site",
+            "/contato"
+          ],
+          [
+            "Voltar ao guia de oportunidades",
+            "/como-encontrar-clientes"
           ]
         ]
       }
