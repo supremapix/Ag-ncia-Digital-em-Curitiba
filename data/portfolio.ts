@@ -12,9 +12,11 @@ export interface PortfolioProject {
   services: string[];
   growth: string;
   featured?: boolean;
+  url?: string;
 }
 
 export const portfolioProjects: PortfolioProject[] = [
+{ id: 'engeum', image: 'https://engeumengenharia.com.br/assets/engeum-compartilhar.png', title: 'Engeum Engenharia', category: 'site', categoryLabel: 'Renovação e migração', segment: 'Engenharia e construção a seco', city: 'Curitiba - PR', iconType: 'building', technologies: ['Design responsivo', 'Galeria de projetos', 'Navegação mobile'], goal: 'Apresentar os serviços de construção a seco e facilitar a consulta aos projetos e o contato com a equipe.', services: ['Renovação visual do site existente', 'Migração de hospedagem', 'Galeria ampliada para celular', 'Organização dos canais de contato'], growth: 'Site renovado', url: 'https://engeumengenharia.com.br/' },
   {
     id: '1',
     image: '/cases/car-plus.png',
