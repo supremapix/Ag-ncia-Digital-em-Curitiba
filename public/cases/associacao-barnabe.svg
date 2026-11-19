@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E4270"/>
+      <stop offset="100%" stop-color="#2B5F9E"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F39C12"/>
+      <stop offset="100%" stop-color="#E67E22"/>
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1E4270" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Solid white rounded square background -->
+  <rect width="512" height="512" rx="112" fill="#ffffff"/>
+  
+  <!-- Subtle border outline -->
+  <rect x="8" y="8" width="496" height="496" rx="104" fill="none" stroke="#2B5F9E" stroke-opacity="0.12" stroke-width="8"/>
+
+  <!-- Main House Roof + Shelter Arc -->
+  <g filter="url(#subtleShadow)">
+    <path d="M 120 200 L 256 90 L 392 200 L 350 200 L 256 125 L 162 200 Z" fill="url(#orangeGrad)"/>
+  </g>
+
+  <!-- Center ABA Stylized Monogram -->
+  <g transform="translate(0, 10)">
+    <!-- AB in Deep Blue -->
+    <text x="135" y="325" font-family="'Inter', 'Arial Black', sans-serif" font-weight="900" font-style="italic" font-size="140" fill="url(#blueGrad)" letter-spacing="-6">AB</text>
+    <!-- A in Warm Orange -->
+    <text x="325" y="325" font-family="'Inter', 'Arial Black', sans-serif" font-weight="900" font-style="italic" font-size="140" fill="url(#orangeGrad)" letter-spacing="-6">A</text>
+  </g>
+
+  <!-- Subtitle emblem text -->
+  <text x="256" y="420" text-anchor="middle" font-family="'Inter', 'Arial', sans-serif" font-weight="800" font-size="34" fill="#1E4270" letter-spacing="8">BARNABÉ</text>
+</svg>
