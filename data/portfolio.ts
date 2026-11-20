@@ -16,6 +16,7 @@ export interface PortfolioProject {
 }
 
 export const portfolioProjects: PortfolioProject[] = [
+  {"id":"8","image":"https://www.agroarkafla.com/og-agro-arkafla.png","title":"Agro Arkafla","category":"site","categoryLabel":"Site institucional","segment":"Agronegócio","city":"Castro - PR","iconType":"agro","technologies":["Site responsivo","Conteúdo institucional","Blog"],"goal":"Apresentar a agricultura, a pecuária leiteira e a silvicultura da Agro Arkafla em Castro (PR), com as atividades das fazendas Karina e Fundamento.","services":["Apresentação das fazendas e atividades","Galeria e Caderno de Campo","Canais de contato por unidade"],"growth":"Site publicado","url":"https://www.agroarkafla.com/"},
   {"id":"associacao-barnabe","image":"/cases/associacao-barnabe.svg","title":"Associação Barnabé ABA","category":"site","categoryLabel":"Site institucional","segment":"Terceiro setor","city":"Gravataí - RS","iconType":"building","technologies":["Site responsivo","Conteúdo institucional","Canais de apoio"],"goal":"Site institucional da Associação Barnabé, de Gravataí (RS), com informações sobre o Projeto República para Jovens, atividades sociais e formas de apoiar a iniciativa.","services":["Apresentação da associação","Projeto República para Jovens","Doações e voluntariado"],"growth":"Site publicado","url":"https://associacaobarnabe.site1.digital/"},
 {"id":"contenedores-sopela","image":"/cases/contenedores-sopela.jpg","title":"Contenedores Sopela SL","category":"ecommerce","categoryLabel":"Loja virtual","segment":"Contêineres marítimos","city":"Site em espanhol","iconType":"building","technologies":["Catálogo de produtos","Navegação em espanhol"],"goal":"Apresentar contêineres marítimos e facilitar a consulta aos produtos disponíveis na loja.","services":["Apresentação de produtos","Catálogo de contêineres marítimos"],"growth":"Site publicado","url":"https://contenedoressopelasl.es/"},
 { id: 'logyc', image: 'https://logyccontabilidade.com/logo.png', title: 'Logyc Contabilidade', category: 'site', categoryLabel: 'Site de serviços', segment: 'Contabilidade', city: 'Curitiba - PR', iconType: 'building', technologies: ['Site responsivo', 'Perguntas frequentes', 'Canais de contato'], goal: 'Apresentar os serviços contábeis e facilitar o contato de quem procura atendimento.', services: ['Apresentação dos serviços', 'Seção de perguntas frequentes', 'Telefone e formulário de contato'], growth: 'Site publicado', url: 'https://logyccontabilidade.com/' },
@@ -121,20 +122,6 @@ export const portfolioProjects: PortfolioProject[] = [
     goal: 'Venda de persianas sob medida online com simulador de preço por metro quadrado.',
     services: ['E-commerce sob medida', 'Calculadora dinâmica de m²', 'Integração com Frete e Correios', 'SEO para Decoração'],
     growth: '+950% Vendas Nacionais'
-  },
-  {
-    id: '8',
-    image: '/cases/agro-arkafla.png',
-    title: 'Agro Arkafla Global',
-    category: 'site',
-    categoryLabel: 'Portal B2B Internacional',
-    segment: 'Agronegócio',
-    city: 'Maringá & Londrina - PR',
-    iconType: 'agro',
-    technologies: ['React', 'TypeScript', 'i18n Multilingual', 'Tailwind CSS', 'Schema.org'],
-    goal: 'Conectar produtores de grãos e commodities ao mercado de exportação em inglês e português.',
-    services: ['Design Institucional Internacional', 'Versão Multilíngue (PT/EN)', 'Catálogo de Grãos e Fertilizantes', 'Formulário de Cotação B2B'],
-    growth: '+380% Contratos de Exportação'
   },
   {
     id: '9',
