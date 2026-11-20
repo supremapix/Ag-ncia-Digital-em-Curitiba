@@ -18,3 +18,14 @@
 .site-localities-drawing{margin-top:48px;padding:32px;background:#fff;border:1px solid #d7d7d2}.site-localities-drawing h3{font-size:clamp(30px,4vw,48px);line-height:1.1;margin:15px 0}.site-localities-drawing svg{width:100%;max-width:720px;display:block;margin:auto}.site-localities-drawing small{font-size:11px;display:block;color:#444}@media(max-width:760px){.site-localities-drawing{padding:20px 12px}.site-localities-drawing svg{overflow:visible}}
 .capital-explorer{padding-block:48px}.capital-explorer h2{font-size:clamp(32px,5vw,60px);line-height:1.1;margin:18px 0}.capital-explorer p{line-height:1.7;margin:16px 0}.capital-explorer label{display:block;font-weight:700;margin:24px 0 12px}.capital-explorer select,.capital-explorer input{display:block;width:100%;max-width:600px;min-height:48px;padding:12px;border:1px solid #666;background:#fff;color:#111;margin-top:8px}.capital-explorer a{overflow-wrap:anywhere}.capital-localities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-height:440px;overflow:auto;margin:20px 0;padding:4px;list-style:none}.capital-localities li{border:1px solid #ccc;padding:14px;min-width:0;overflow-wrap:anywhere}.capital-localities span,.capital-localities small{display:block;font-size:13px;margin-top:6px}.catalog-provenance{font-size:13px}.capital-explorer :focus-visible{outline:3px solid #2456f5;outline-offset:3px}@media(max-width:760px){.capital-localities{grid-template-columns:1fr}.capital-explorer .studio-button{white-space:normal}}
 .region-summary .studio-button{white-space:normal;max-width:100%}.region-summary .studio-button:disabled{opacity:.65;cursor:not-allowed}.summary-price .incomplete-plan{font-size:28px;overflow-wrap:anywhere}
+
+/* The illustration supports the live offer; prices remain readable as HTML. */
+.regional-plan-guide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.78fr);align-items:center;gap:clamp(1.25rem,4vw,3.25rem);margin:clamp(1.5rem,4vw,3rem) 0;padding:clamp(1rem,4vw,2.5rem);border:1px solid #d6deec;border-radius:1rem;background:#f4f7fc;color:#142137}
+.regional-plan-guide h3{font-size:clamp(1.35rem,3vw,2rem);line-height:1.15;margin:.65rem 0 1rem}
+.regional-plan-guide p:not(.eyebrow){margin:.75rem 0 0;line-height:1.55}
+.regional-plan-guide figure{margin:0}
+.regional-plan-guide img{display:block;width:100%;height:auto;border-radius:.65rem;border:1px solid #d6deec}
+.regional-plan-examples{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+.regional-plan-examples li{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:.35rem 1rem;border-radius:.5rem;background:#fff;padding:.55rem .75rem}
+.regional-plan-examples strong{color:#1642a2}
+@media(max-width:700px){.regional-plan-guide{grid-template-columns:minmax(0,1fr)}}
