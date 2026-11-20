@@ -6,7 +6,7 @@ import { capitals } from '../data/capitalCatalog';
 import { CommercialTerms } from '../components/CommercialTerms';
 import '../src/hubs.css';
 import { ChannelJourney } from '../components/ChannelJourney';
-export const HubLinks = () => <nav className="hub-nav studio-shell" aria-label="Guias de criação de sites">{hubs.filter(hub=>!hub.path.startsWith('/como-encontrar-clientes/')).map(hub=><Link key={hub.path} to={hub.path}>{hub.path==='/como-encontrar-clientes'?'Como encontrar clientes':hub.path.endsWith('capitais')?'Pesquisar capitais':hub.path.endsWith('como-escolher')?'Como escolher seu site':'Guia de criação de sites'}</Link>)}</nav>;
+export const HubLinks = () => <nav className="hub-nav studio-shell" aria-label="Guias de criação de sites">{hubs.filter(hub=>!hub.path.startsWith('/como-encontrar-clientes/')).map(hub=><Link key={hub.path} to={hub.path}>{hub.path==='/como-encontrar-clientes'?'Como encontrar clientes':hub.path.endsWith('capitais')?'Pesquisar capitais':hub.path.endsWith('como-escolher')?'Como escolher seu site':hub.path.endsWith('oeste-paulista')?'Oeste Paulista':'Guia de criação de sites'}</Link>)}</nav>;
 export const SearchHub = () => {
  const {pathname}=useLocation(); const hub=hubs.find(item=>item.path===pathname.replace(/\/$/,''))!;
  const [query,setQuery]=useState('');

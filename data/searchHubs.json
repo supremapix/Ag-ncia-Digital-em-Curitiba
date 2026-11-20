@@ -53,6 +53,16 @@
         ]
       },
       {
+        "title": "Guia para empresas do Oeste Paulista",
+        "text": "Confira exemplos práticos para estruturar o site de empresas em Presidente Prudente, Araçatuba, Assis e Birigui. A proposta local dessas cidades é separada do simulador de Curitiba.",
+        "links": [
+          [
+            "Criação de sites no Oeste Paulista",
+            "/criacao-de-sites/oeste-paulista"
+          ]
+        ]
+      },
+      {
         "title": "O que preparar para conversar com a Suprema",
         "text": "Separe os serviços prioritários, a área atendida, a identidade visual disponível, os textos e imagens que você pode utilizar e os canais de contato. Avise se já existe site ou domínio para que a proposta considere o que deve ser preservado. Prazos, revisões e entregas precisam estar definidos antes do início.",
         "links": [
@@ -589,6 +599,69 @@
           [
             "Voltar ao guia de oportunidades",
             "/como-encontrar-clientes"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/criacao-de-sites/oeste-paulista",
+    "title": "Criação de sites no Oeste Paulista | Suprema Sites Express",
+    "heading": "Criação de sites no Oeste Paulista",
+    "intro": "Planeje um site para sua empresa em Presidente Prudente, Araçatuba, Assis ou Birigui. Comece pelo que o cliente precisa encontrar e pela região que você realmente atende. O projeto pode ser combinado à distância, sem depender de uma filial local.",
+    "description": "Guia para criar um site em Presidente Prudente, Araçatuba, Assis ou Birigui. Compare estratégias locais, catálogo, orçamento e áreas de atendimento.",
+    "sections": [
+      {
+        "title": "Presidente Prudente: do serviço ao agendamento",
+        "text": "Para uma empresa que recebe clientes no endereço, o site deve mostrar como chegar, horário e como agendar. Para quem presta serviço no local do cliente, vale mais explicar o que está incluso, em quais bairros atende e o que informar para pedir orçamento. Uma página por serviço ajuda a separar, por exemplo, manutenção recorrente de atendimento avulso.",
+        "links": [
+          [
+            "Comparar formatos de site",
+            "/criacao-de-sites/como-escolher"
+          ]
+        ]
+      },
+      {
+        "title": "Araçatuba: orçamento técnico sem idas e vindas",
+        "text": "Fornecedores e prestadores que atendem empresas podem organizar a página por tipo de solução. Uma oficina que recebe pedidos de peças, por exemplo, pode pedir modelo, aplicação, quantidade e destino logo no contato. Separe atendimento em Araçatuba de entrega ou visitas a outros municípios e publique apenas o que de fato pode cumprir.",
+        "links": [
+          [
+            "Conhecer os serviços digitais",
+            "/servicos"
+          ]
+        ]
+      },
+      {
+        "title": "Assis: catálogo local e retirada sem dúvidas",
+        "text": "Uma loja de Assis que divulga a maior parte dos produtos pelo Instagram pode usar o site como catálogo permanente. Agrupe as linhas, informe se é preciso confirmar estoque e deixe claras as opções de retirada e entrega. Quando o cliente abrir o WhatsApp, inclua o nome do item no pedido para evitar perguntas repetidas.",
+        "links": [
+          [
+            "Entender como site e Instagram se complementam",
+            "/como-encontrar-clientes/meu-site-e-o-instagram"
+          ]
+        ]
+      },
+      {
+        "title": "Birigui: mostre o produto e facilite pedidos por volume",
+        "text": "Para uma marca que vende por modelo, cor ou numeração, como uma loja de calçados, o site pode mostrar variações, medidas e instruções de compra. Se atende lojistas, separe a consulta de atacado do pedido de varejo e deixe claro como consultar lotes, quantidades e envio. Só inclua tabela ou condições que a empresa consiga manter atualizadas.",
+        "links": [
+          [
+            "Ver exemplos no portfólio",
+            "/portfolio"
+          ]
+        ]
+      },
+      {
+        "title": "Como contratar presença local nessas cidades?",
+        "text": "Informe a cidade, os serviços prioritários e a área de atendimento real. Se houver uma loja física, confirme endereço e horário; se atende por visita ou entrega, informe o limite de cobertura. A tabela de bairros da calculadora é de Curitiba. Para Presidente Prudente, Araçatuba, Assis, Birigui e outras cidades paulistas, a presença regional tem proposta sob consulta. O trabalho pode melhorar a visibilidade, mas não garante posição no Google, indexação ou vendas.",
+        "links": [
+          [
+            "Solicitar proposta para sua cidade",
+            "/contato"
+          ],
+          [
+            "Entender a diferença entre o site e o plano regional",
+            "/presenca-local"
           ]
         ]
       }

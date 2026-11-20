@@ -59,6 +59,7 @@ export const SiteContent: React.FC = () => {
 <Route path="/como-encontrar-clientes/boas-praticas" element={<SearchHub />} />
 <Route path="/como-encontrar-clientes/meu-site-e-o-instagram" element={<SearchHub />} />
 <Route path="/criacao-de-sites" element={<SearchHub />} />
+<Route path="/criacao-de-sites/oeste-paulista" element={<SearchHub />} />
 <Route path="/criacao-de-sites/capitais" element={<SearchHub />} />
 <Route path="/criacao-de-sites/como-escolher" element={<SearchHub />} />
 <Route path="/presenca-local" element={<RegionalPresence />} />
