@@ -80,7 +80,7 @@ const mainPages = [
   ...opportunityPaths.map(path => ({path, priority:'0.7', changefreq:'monthly'})),
   ...["criacao-sites-empresas-reformas-curitiba", "agencia-marketing-curitiba", "agencia-digital-curitiba", "web-designer-curitiba", "agencia-criacao-conteudo"].map(path => ({path, priority: '0.7', changefreq: 'monthly'})),
   ...['bairros-curitiba','agencia-seo-curitiba','agencia-marketing-digital-curitiba','google-ads-curitiba','ia-marketing-curitiba','seo-local-curitiba'].map(path => ({path, priority:'0.7', changefreq:'monthly'})),
-  ...['criacao-de-sites','criacao-de-sites/capitais','criacao-de-sites/como-escolher','blog/100','sites-em-parana','sites-em-santa-catarina','sites-em-rio-grande-do-sul'].map(path => ({path, priority:'0.7', changefreq:'monthly'})),
+  ...['criacao-de-sites','criacao-de-sites/capitais','criacao-de-sites/como-escolher','criacao-de-sites/curitiba/passo-a-passo','blog/100','sites-em-parana','sites-em-santa-catarina','sites-em-rio-grande-do-sul'].map(path => ({path, priority:'0.7', changefreq:'monthly'})),
   { path: '', priority: '1.0', changefreq: 'daily' },
   { path: 'presenca-local', priority: '0.9', changefreq: 'weekly' },
     { path: 'servicos', priority: '0.9', changefreq: 'weekly' },
