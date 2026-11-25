@@ -826,6 +826,7 @@ const LocalityContent: React.FC = () => {
           </div>
         </div>
       </section>
+      {slug === 'curitiba' && <aside className="studio-shell py-10"><Link className="underline underline-offset-4" to="/criacao-de-sites/curitiba/passo-a-passo">Veja o passo a passo para criar um site em Curitiba</Link></aside>}
       <CommercialTerms />
     </div>
   );

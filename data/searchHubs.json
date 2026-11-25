@@ -17,6 +17,10 @@
           [
             "Guia para escolher seu projeto",
             "/criacao-de-sites/como-escolher"
+          ],
+          [
+            "Criação de sites em Curitiba: passo a passo",
+            "/criacao-de-sites/curitiba/passo-a-passo"
           ]
         ]
       },
@@ -664,6 +668,94 @@
             "/presenca-local"
           ]
         ]
+      }
+    ]
+  },
+  {
+    "path": "/criacao-de-sites/curitiba/passo-a-passo",
+    "title": "Criação de sites em Curitiba: passo a passo | Suprema",
+    "heading": "Criação de sites em Curitiba: passo a passo",
+    "intro": "Para colocar o site da sua empresa no ar, comece definindo o que o visitante precisa fazer. Escolha o formato, organize o domínio e o conteúdo, teste no celular e só então publique. Este guia mostra o que decidir e o que conferir em cada etapa.",
+    "description": "Aprenda a criar um site em Curitiba: escolha o formato, prepare domínio e conteúdo, compare propostas e use um checklist para publicar e medir.",
+    "sections": [
+      {
+        "title": "1. Defina o que o visitante precisa fazer",
+        "text": "Escolha uma ação principal: pedir orçamento, agendar, consultar um catálogo ou comprar. Um prestador que atende no Portão e em bairros vizinhos pode pedir ao visitante que informe o bairro e descreva o serviço no WhatsApp. Já uma loja no Centro pode priorizar os horários e a rota. Essa escolha define o menu, os botões e as páginas do projeto.",
+        "links": [
+          [
+            "Ver serviços e formatos de projeto",
+            "/servicos"
+          ]
+        ]
+      },
+      {
+        "title": "2. Escolha o formato: institucional, landing page ou loja",
+        "text": "Use um site institucional se o cliente precisa conhecer sua empresa e comparar serviços antes de entrar em contato. Uma landing page funciona para uma oferta com um único objetivo. Uma loja virtual faz sentido quando o cliente precisa consultar produtos, pagar e acompanhar o pedido. Antes de contratar uma loja, confirme quem cuidará de estoque, frete, trocas e atualização do catálogo.",
+        "links": [
+          [
+            "Compare os formatos de site",
+            "/criacao-de-sites/como-escolher"
+          ]
+        ]
+      },
+      {
+        "title": "3. Organize domínio, hospedagem e e-mail",
+        "text": "Domínio é o endereço; hospedagem é onde o site funciona. Combine em nome de quem será registrado o domínio, quem terá acesso e quanto custa renovar cada serviço. Se já usa e-mails no domínio, peça que a publicação preserve os registros de e-mail e preveja um teste depois da mudança. Confirme também HTTPS, backups e como restaurar o site se algo der errado.",
+        "links": []
+      },
+      {
+        "title": "4. Prepare as páginas e a área de atendimento",
+        "text": "Reúna logo, fotos autorizadas, serviços, dúvidas frequentes, horários e contatos. Faça uma página própria para cada serviço importante quando houver informação suficiente para responder às dúvidas de quem procura. Se atende em Curitiba e em Pinhais, por exemplo, explique o que muda na prática: visita, entrega, deslocamento ou agendamento. Só indique um endereço físico quando o cliente realmente puder encontrar a empresa ali.",
+        "links": [
+          [
+            "Simule a presença em bairros de Curitiba",
+            "/presenca-local"
+          ],
+          [
+            "Consulte a página da Suprema em Curitiba",
+            "/site-em/curitiba"
+          ]
+        ]
+      },
+      {
+        "title": "5. Compare propostas pelo que será entregue",
+        "text": "Peça a lista de páginas, o responsável pelos textos e fotos, o número de revisões e as condições de manutenção. Compare o valor de criação com os custos de renovar domínio, hospedagem e suporte; não some tudo como se fosse uma mensalidade única. Veja projetos publicados no próprio celular e pergunte como receberá os acessos e os arquivos na entrega.",
+        "links": [
+          [
+            "Veja projetos publicados no portfólio",
+            "/portfolio"
+          ]
+        ]
+      },
+      {
+        "title": "6. Teste a prévia antes de publicar",
+        "text": "Abra as páginas em um celular e em um computador. Confira menu, contraste, tamanho dos textos e tempo de carregamento. Teste o link do WhatsApp, o telefone, os formulários e as confirmações de envio. Se for substituir um site antigo, liste as páginas que já recebem visitas e combine redirecionamentos para os novos endereços. Guarde uma cópia que possa ser restaurada.",
+        "links": []
+      },
+      {
+        "title": "7. Verifique se o site pode ser encontrado",
+        "text": "Depois da publicação, confirme que as páginas principais abrem no domínio definitivo, que os links internos funcionam e que o sitemap lista os endereços corretos. Use o Google Search Console para acompanhar descoberta e desempenho. Compare impressões, cliques e contatos de períodos semelhantes. Um sitemap ajuda os buscadores a descobrir páginas, mas não garante indexação, posição ou vendas.",
+        "links": [
+          [
+            "Entenda o trabalho de SEO local",
+            "/seo-local-curitiba"
+          ]
+        ]
+      },
+      {
+        "title": "O que levar para a primeira conversa com a agência?",
+        "text": "Envie os três serviços prioritários, os bairros ou cidades atendidos, o contato comercial e, se já tiver, o endereço do site. Inclua duas dúvidas que os clientes sempre fazem e diga qual resultado espera: mais pedidos de orçamento, agendamentos ou vendas. Não envie senhas nessa conversa.",
+        "links": [
+          [
+            "Converse com a Suprema",
+            "/contato"
+          ]
+        ]
+      },
+      {
+        "title": "Preciso trocar de domínio para refazer meu site?",
+        "text": "Não, se o domínio atual ainda serve para a marca. Na maioria dos casos, é possível manter o endereço e trocar só o site. Peça que a proposta detalhe o que será preservado: contas de e-mail, páginas já divulgadas e redirecionamentos necessários.",
+        "links": []
       }
     ]
   }

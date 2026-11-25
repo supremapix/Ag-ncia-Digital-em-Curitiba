@@ -6,7 +6,7 @@ export const supplementalRegions:Record<string,string>={'fazenda-rio-grande':'PR
 export const supplementalNames:Record<string,string>={'fazenda-rio-grande':'Fazenda Rio Grande','guarapuava':'Guarapuava','passo-fundo':'Passo Fundo','bage':'Bagé','farroupilha':'Farroupilha','erechim':'Erechim'};
 export const localitySlugs=[...new Set([...cities,...scCities,...rsCities,...neighborhoods].map(slugify).concat(Object.keys(cityData),Object.keys(supplementalRegions),Object.keys(verifiedMunicipalities)))];
 export const knownLocality=(slug:string)=>localitySlugs.includes(slug);
-export const staticRoutes=['/','/presenca-local','/servicos','/portfolio','/sobre','/blog','/contato','/mapa-do-site','/privacidade','/sites-em-parana','/sites-em-santa-catarina','/sites-em-rio-grande-do-sul','/bairros-curitiba','/agencia-seo-curitiba','/agencia-marketing-digital-curitiba','/google-ads-curitiba','/seo-local-curitiba','/ia-marketing-curitiba','/criacao-de-sites','/criacao-de-sites/capitais','/criacao-de-sites/como-escolher'];
+export const staticRoutes=['/','/presenca-local','/servicos','/portfolio','/sobre','/blog','/contato','/mapa-do-site','/privacidade','/sites-em-parana','/sites-em-santa-catarina','/sites-em-rio-grande-do-sul','/bairros-curitiba','/agencia-seo-curitiba','/agencia-marketing-digital-curitiba','/google-ads-curitiba','/seo-local-curitiba','/ia-marketing-curitiba','/criacao-de-sites','/criacao-de-sites/capitais','/criacao-de-sites/como-escolher','/criacao-de-sites/curitiba/passo-a-passo'];
 
 export const curitibaServicePaths=["/criacao-sites-empresas-reformas-curitiba", "/agencia-marketing-curitiba", "/agencia-digital-curitiba", "/web-designer-curitiba", "/agencia-criacao-conteudo"];
 staticRoutes.push(...curitibaServicePaths);

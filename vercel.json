@@ -620,6 +620,10 @@
       "destination": "/criacao-de-sites/capitais/index.html"
     },
     {
+      "source": "/criacao-de-sites/curitiba/passo-a-passo",
+      "destination": "/criacao-de-sites/curitiba/passo-a-passo/index.html"
+    },
+    {
       "source": "/criacao-de-sites/como-escolher",
       "destination": "/criacao-de-sites/como-escolher/index.html"
     },
