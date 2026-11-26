@@ -100,7 +100,7 @@ export const Home: React.FC = () => {
       <RegionalOffer />
       <section className="selected-work studio-shell" id="portfolio">
         <Reveal><div className="section-intro"><div><p className="eyebrow">01 / TRABALHOS SELECIONADOS</p><h2>Menos promessa.<br /><em>Mais presença.</em></h2></div><div><p>De negócios locais a plataformas digitais. Uma seleção do nosso portfólio, com diferentes desafios e identidades.</p><Link className="text-link dark-link" to="/portfolio">Explore o portfólio completo <ArrowUpRight size={20}/></Link></div></div></Reveal>
-        <div className="project-grid">{['1','4','6','7'].map((id,i)=><ProjectCard key={id} project={portfolioProjects.find(p=>p.id===id)!} index={i} />)}</div>
+        <div className="project-grid">{['kaminholz-sieben','1','4','6','7'].map((id,i)=><ProjectCard key={id} project={portfolioProjects.find(p=>p.id===id)!} index={i} />)}</div>
       </section>
       <section className="capabilities"><div className="studio-shell capabilities-layout"><Reveal><p className="eyebrow">02 / O QUE MOVE SUA MARCA</p><h2>Bonito é<br />só o <em>começo.</em></h2><p>Design, desenvolvimento e estratégia trabalhando juntos. Do primeiro clique à próxima etapa do seu negócio.</p><Link className="studio-button orange" to="/servicos">Conheça nossas soluções <ArrowUpRight size={19}/></Link></Reveal><div className="service-list">{[
         ['Sites & e-commerce','Uma presença digital com a identidade da sua empresa.','/servicos'],
