@@ -15,3 +15,5 @@ staticRoutes.push('/como-encontrar-clientes/meu-site-e-o-instagram');
 staticRoutes.push("/como-encontrar-clientes","/como-encontrar-clientes/grupos","/como-encontrar-clientes/google-linkedin","/como-encontrar-clientes/planilha","/como-encontrar-clientes/site-e-conteudo","/como-encontrar-clientes/boas-praticas");
 
 staticRoutes.push('/criacao-de-sites/oeste-paulista');
+
+staticRoutes.push('/monetizacao-de-conteudo-com-ia');

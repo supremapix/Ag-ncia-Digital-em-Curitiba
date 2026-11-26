@@ -564,6 +564,10 @@
   ],
   "rewrites": [
     {
+      "source": "/monetizacao-de-conteudo-com-ia",
+      "destination": "/monetizacao-de-conteudo-com-ia/index.html"
+    },
+    {
       "source": "/como-encontrar-clientes/meu-site-e-o-instagram",
       "destination": "/como-encontrar-clientes/meu-site-e-o-instagram/index.html"
     },

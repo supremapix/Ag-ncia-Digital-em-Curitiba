@@ -1,6 +1,9 @@
 
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AiContentCallout, AiContentMonetization } from './pages/AiContentMonetization';
+import { knownLocality } from './data/routeInventory';
+import curitibaServices from './data/curitibaServices.json';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { RegionalPresence } from './pages/RegionalPresence';
@@ -43,6 +46,15 @@ const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   );
 };
 
+const ShowAiContentCallout = () => {
+  const path = useLocation().pathname.replace(/\/$/, '') || '/';
+  const localMatch = path.match(/^\/site-em\/([^/]+)$/);
+  const local = (localMatch && knownLocality(localMatch[1])) ||
+    ['/sites-em-parana', '/sites-em-santa-catarina', '/sites-em-rio-grande-do-sul', '/bairros-curitiba', '/presenca-local', '/criacao-de-sites/oeste-paulista', '/criacao-de-sites/capitais', '/criacao-de-sites/curitiba/passo-a-passo', '/agencia-seo-curitiba', '/google-ads-curitiba', '/seo-local-curitiba', '/ia-marketing-curitiba'].includes(path) ||
+    curitibaServices.some(service => service.path === path);
+  return (local || path === '/' || path === '/servicos') ? <AiContentCallout /> : null;
+};
+
 export const SiteContent: React.FC = () => {
   return (
       <div className="flex flex-col min-h-screen font-sans bg-gray-50">
@@ -51,6 +63,7 @@ export const SiteContent: React.FC = () => {
           <PageWrapper>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/monetizacao-de-conteudo-com-ia" element={<AiContentMonetization />} />
               <Route path="/como-encontrar-clientes" element={<SearchHub />} />
 <Route path="/como-encontrar-clientes/grupos" element={<SearchHub />} />
 <Route path="/como-encontrar-clientes/google-linkedin" element={<SearchHub />} />
@@ -90,6 +103,7 @@ export const SiteContent: React.FC = () => {
               <Route path="/site-em/:slug" element={<LocationSEO />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
+            <ShowAiContentCallout />
           </PageWrapper>
         </main>
         <GlobalPromotion />

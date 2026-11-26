@@ -10,15 +10,20 @@ const strip=s=>s.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').replaceAll('&amp;',
 const routes=[...staticRoutes,...blogPosts.map(p=>'/blog/'+p.id),...localitySlugs.map(s=>'/site-em/'+s)];
 const records=[];
 for(const path of [...routes,'/__not-found__']){
- const body=render(path),notFound=path==='/__not-found__',url=origin+path;
+ const body=render(path);
+ if(path.startsWith('/site-em/')&&!body.includes('href="/monetizacao-de-conteudo-com-ia"'))throw Error('Missing local AI content link: '+path);
+ const notFound=path==='/__not-found__',url=origin+path;
  const h1=strip(body.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1]||'Suprema Sites Express');
  const hub=hubs.find(h=>h.path===path),post=blogPosts.find(p=>'/blog/'+p.id===path);
+ const ai=path==='/monetizacao-de-conteudo-com-ia';
+ const aiTitle='Monetização de conteúdo com bots e IA | Suprema Sites';
+ const aiDescription='Descubra quais bots acessam seu site, o que vale licenciar e como preservar a busca orgânica. Diagnóstico técnico em Curitiba e atendimento remoto.';
  const service=curitibaServices.find(p=>p.path===path);
- const title=service?.title||hub?.title||(post?post.title+' | Blog Suprema':notFound?'Página não encontrada | Suprema':h1+' | Suprema');
- const description=service?.description||hub?.description||post?.excerpt||(path.startsWith('/site-em/')?`${h1}. Consulte escopo, prazo e condições de criação do site e presença local. Sem garantia de ranking ou vendas.`:notFound?'A página solicitada não existe.':`${h1}. Consulte informações, serviços e condições da Suprema Sites Express.`);
+ const title=ai?aiTitle:service?.title||hub?.title||(post?post.title+' | Blog Suprema':notFound?'Página não encontrada | Suprema':h1+' | Suprema');
+ const description=ai?aiDescription:service?.description||hub?.description||post?.excerpt||(path.startsWith('/site-em/')?`${h1}. Consulte escopo, prazo e condições de criação do site e presença local. Sem garantia de ranking ou vendas.`:notFound?'A página solicitada não existe.':`${h1}. Consulte informações, serviços e condições da Suprema Sites Express.`);
  let html=template.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g,'').replace(/<title>[\s\S]*?<\/title>/,`<title>${esc(title)}</title>`).replace(/<link rel="canonical" href="[^"]*"\s*\/?>/,notFound?'':`<link rel="canonical" href="${url}">`);
  for(const [key,value]of Object.entries({description,'og:title':title,'og:description':description,'og:url':url,'twitter:title':title,'twitter:description':description,'twitter:url':url}))html=html.replace(new RegExp(`<meta (name|property)="${key}" content="[^"]*"\\s*\\/?>`,'g'),`<meta ${key.startsWith('og:')?'property':'name'}="${key}" content="${esc(value)}">`);
- const schema=service?curitibaServiceSchema(service):{'@context':'https://schema.org','@type':post?'Article':'WebPage',name:h1,headline:h1,description,url,...(post?{author:{'@type':'Organization',name:post.author},publisher:{'@type':'Organization',name:'Suprema Sites Express',url:origin}}:{})};
+ const schema=ai?{'@context':'https://schema.org','@type':'Service','@id':url+'#servico',name:h1,description,url,serviceType:'Diagnóstico técnico de monetização de conteúdo com IA',provider:{'@type':'Organization',name:'Suprema Sites Express',url:origin,telephone:'+55 41 99272-1004'},areaServed:[{'@type':'City',name:'Curitiba'},{'@type':'Country',name:'Brasil'}]}:service?curitibaServiceSchema(service):{'@context':'https://schema.org','@type':post?'Article':'WebPage',name:h1,headline:h1,description,url,...(post?{author:{'@type':'Organization',name:post.author},publisher:{'@type':'Organization',name:'Suprema Sites Express',url:origin}}:{})};
  if(path==='/como-encontrar-clientes/meu-site-e-o-instagram'){for(const key of ['og:image','twitter:image'])html=html.replace(new RegExp(`<meta (name|property)="${key}" content="[^"]*"\\s*\\/?>`,'g'),`<meta ${key.startsWith('og:')?'property':'name'}="${key}" content="${origin}/images/meu-site-instagram-suprema.webp">`);}
  if(service){for(const key of ['og:image','twitter:image'])html=html.replace(new RegExp(`<meta (name|property)="${key}" content="[^"]*"\\s*\\/?>`,'g'),`<meta ${key.startsWith('og:')?'property':'name'}="${key}" content="${origin}/images/curitiba/${service.image}.webp">`);}
  html=html.replace('</head>',notFound?'<meta name="robots" content="noindex"></head>':`<script type="application/ld+json">${JSON.stringify(schema).replaceAll('<','\\u003c')}</script></head>`).replace('<div id="root"></div>',`<div id="root">${body}</div>`);
